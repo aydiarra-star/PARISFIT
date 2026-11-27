@@ -73,3 +73,7 @@ Huit clips Rocketbox corrigés, consignes synchronisées et 64 vidéos avant/apr
 ## Coach — phase 3 (candidates, pas de validation finale)
 
 [Galerie de transitions](docs/coach/phase3/index.html) · [Rapport](docs/coach/phase3/REPORT.md) · [Dossier professionnel](docs/coach/phase3/professional-review.html). Deux clips officiels Rocketbox MIT retargetés, 16 vidéos comparatives, statut **HOLD** : inactifs dans le parcours. Les cinq autres passages demandés restent non réalisés. Caméra orbitale fluide et dossier de revue ajoutés ; aucun test physique ni avis professionnel inventé. PR #11 toujours en brouillon.
+
+## Coach — phase 4 (appuis corrigés, raccords bloqués)
+
+[Galerie avant/après](docs/coach/phase4/index.html) · [Rapport](docs/coach/phase4/REPORT.md) · [Complément professionnel](docs/coach/phase4/PRO-ADDENDUM.md). Deux candidates corrigées sur des points matériels de semelle, 16 nouvelles vidéos, audit 60 Hz et admission de raccords en refus par défaut. **Aucune transition activée** : raccords/récupération non approuvés et cinq passages encore `NOT_AVAILABLE`. Les tests réussis des appuis ciblés ne constituent pas une validation biomécanique ni une acceptation complète du mouvement.

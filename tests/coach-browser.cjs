@@ -9,7 +9,7 @@ const base=process.env.BASE_URL||'http://localhost:3000';
   await page.goto(base);assert.equal(await page.locator('canvas').count(),0,'No GPU context on the home page');
   await page.locator('#workout-rec').click();await page.locator('#coach-stage-visual').scrollIntoViewIfNeeded();
   await page.waitForFunction(()=>document.querySelector('#coach-stage-visual').dataset.state==='ready',{},{timeout:60000});
-  const inspect=()=>page.evaluate(async()=> (await import('/coach-3d.js?v=20261127-9')).inspectCoach());
+  const inspect=()=>page.evaluate(async()=> (await import('/coach-3d.js?v=20261127-10')).inspectCoach());
   const initial=await inspect();assert.equal(initial.clips.length,8);assert(initial.skinnedMeshes>0);assert.equal(initial.textures,4);assert(Object.keys(initial.joints).length>=60);
   await page.evaluate(()=>window.originalCanvas=document.querySelector('canvas'));
   for(const id of initial.clips){
@@ -21,7 +21,7 @@ const base=process.env.BASE_URL||'http://localhost:3000';
     assert(await page.evaluate(()=>document.querySelector('canvas')===window.originalCanvas));results.push({exercise:id,loaded:true,views:3});
   }
   await page.locator('#coach-stage-reset').click();await page.locator('#coach-stage-step').click();assert((await inspect()).paused);assert((await inspect()).time>0);
-  await page.evaluate(()=>window.renderCoachStage('fentes'));await page.locator('#coach-stage-timeline').fill('0.62');assert.match(await page.locator('#coach-stage-phase').textContent(),/droite/);await page.evaluate(()=>window.renderCoachStage('mobiliteepaules'));assert((await inspect()).paused,'exercise cut must pause for setup');await page.locator('#coach-stage-step').click();await page.locator('#coach-stage-speed').selectOption('0.25');assert.equal((await inspect()).speed,.25);
+  await page.evaluate(()=>window.renderCoachStage('fentes'));await page.locator('#coach-stage-timeline').fill('0.62');assert.match(await page.locator('#coach-stage-phase').textContent(),/droite/);await page.evaluate(()=>window.renderCoachStage('mobiliteepaules'));assert((await inspect()).paused,'exercise cut must pause for setup');assert.equal(await page.locator('#coach-stage-visual').getAttribute('data-transition-gate'),'no-route');await page.locator('#coach-stage-step').click();await page.locator('#coach-stage-speed').selectOption('0.25');assert.equal((await inspect()).speed,.25);
   await page.locator('#coach-stage-toggle').click();await page.waitForFunction(()=>Number(document.querySelector('#coach-stage-visual').dataset.time)>2.1);await page.locator('#coach-stage-toggle').click();const stopped=(await inspect()).time;
   await page.locator('#coach-stage-view').click();assert.equal((await inspect()).time,stopped);assert((await inspect()).paused);
   await page.locator('#coach-stage-zoom').fill('0.85');

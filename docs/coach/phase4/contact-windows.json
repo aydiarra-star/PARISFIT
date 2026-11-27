@@ -1,0 +1,136 @@
+[
+  {
+    "id": "stand-to-crouch",
+    "duration": 4.5,
+    "contactWindows": [
+      {
+        "side": "L",
+        "start": 0,
+        "end": 1,
+        "ramp": 0.2,
+        "marker": {
+          "mesh": 6,
+          "vertex": 22375
+        },
+        "anchor": [
+          0.17916997418677313,
+          0.0019999893698532875,
+          0.10611376704336228
+        ]
+      },
+      {
+        "side": "L",
+        "start": 1.8,
+        "end": 4.5,
+        "ramp": 0.2,
+        "marker": {
+          "mesh": 6,
+          "vertex": 22375
+        },
+        "anchor": [
+          0.1526277858455375,
+          0.002000015401695794,
+          0.6121963474133427
+        ]
+      },
+      {
+        "side": "R",
+        "start": 0,
+        "end": 1.25,
+        "ramp": 0.2,
+        "marker": {
+          "mesh": 6,
+          "vertex": 21577
+        },
+        "anchor": [
+          -0.2486963784926357,
+          0.002109017829703142,
+          0.1445354687185424
+        ]
+      },
+      {
+        "side": "R",
+        "start": 2.2,
+        "end": 4.5,
+        "ramp": 0.2,
+        "marker": {
+          "mesh": 6,
+          "vertex": 21607
+        },
+        "anchor": [
+          -0.2121406637840918,
+          0.005410870016614826,
+          0.19415595684578868
+        ]
+      }
+    ],
+    "contactScheduleStatus": "engineering hypothesis, not professionally reviewed"
+  },
+  {
+    "id": "crouch-to-stand",
+    "duration": 4.5,
+    "contactWindows": [
+      {
+        "side": "L",
+        "start": 0,
+        "end": 1.5,
+        "ramp": 0.2,
+        "marker": {
+          "mesh": 6,
+          "vertex": 22375
+        },
+        "anchor": [
+          0.15262454168735515,
+          0.0019999872572251387,
+          0.42177229869176575
+        ]
+      },
+      {
+        "side": "L",
+        "start": 2.8,
+        "end": 4.5,
+        "ramp": 0.2,
+        "marker": {
+          "mesh": 6,
+          "vertex": 22375
+        },
+        "anchor": [
+          0.17934864827490354,
+          0.0019999254648375344,
+          -0.07685780608905746
+        ]
+      },
+      {
+        "side": "R",
+        "start": 0,
+        "end": 1.3,
+        "ramp": 0.2,
+        "marker": {
+          "mesh": 6,
+          "vertex": 21611
+        },
+        "anchor": [
+          -0.24795519015205966,
+          0.005201925932107652,
+          -0.03141301376738334
+        ]
+      },
+      {
+        "side": "R",
+        "start": 2.5,
+        "end": 4.5,
+        "ramp": 0.2,
+        "marker": {
+          "mesh": 6,
+          "vertex": 21559
+        },
+        "anchor": [
+          -0.10014074874654537,
+          0.0019998875314233178,
+          -0.14370183209395315
+        ]
+      }
+    ],
+    "contactScheduleStatus": "engineering hypothesis, not professionally reviewed"
+  }
+]

@@ -1,0 +1,10 @@
+const fs=require('node:fs'),assert=require('node:assert/strict');
+(async()=>{const gate=await import('data:text/javascript;base64,'+Buffer.from(fs.readFileSync('coach-transition-gate.js')).toString('base64'));const report=JSON.parse(fs.readFileSync('docs/coach/phase4/after-stand-to-crouch-report.json'));const pose=report.endpoints[0],exit=report.endpoints[1];
+const route={id:'test-only',enabled:true,technicalStatus:'PASS',joinStatus:'PASS',entryPose:pose,exitPose:exit,requiredContacts:['L_Foot','R_Foot'],duration:4.5,speed:1,modelSHA256:'fixture-model',clipSHA256:'fixture-clip',recovery:{status:'PASS',pose}};const input={route,pose,contacts:['L_Foot','R_Foot'],speedMS:0,modelSHA256:'fixture-model',clipSHA256:'fixture-clip'};
+assert(gate.admitTransition(input).allowed);
+for(const change of [{speedMS:.5},{speedMS:NaN},{contacts:[]},{modelSHA256:'other'},{clipSHA256:'other'},{interrupted:true},{reducedMotion:true},{route:null},{route:{...route,enabled:false}},{route:{...route,technicalStatus:'HOLD'}},{route:{...route,recovery:null}},{route:{...route,exitPose:null}}])assert(!gate.admitTransition({...input,...change}).allowed);
+const moved=structuredClone(pose);moved.Bip01_Pelvis.position[0]+=.05;assert(!gate.admitTransition({...input,pose:moved}).allowed);const rotated=structuredClone(pose);rotated.Bip01_Pelvis.quaternion=[0,0,0,1];assert(!gate.admitTransition({...input,pose:rotated}).allowed);const invalid=structuredClone(pose);invalid.Bip01_Pelvis.position[0]=NaN;assert(!gate.admitTransition({...input,pose:invalid}).allowed);
+const equivalent=structuredClone(pose);for(const v of Object.values(equivalent))v.quaternion=v.quaternion.map(x=>-x);assert(gate.compareTransitionPose(equivalent,pose).ok);
+for(const r of gate.TRANSITION_ROUTES)assert(!gate.admitTransition({...input,route:r}).allowed);
+assert.equal(gate.findTransitionRoute('squat','gainage'),null);assert(!gate.compareTransitionPose({},{}).ok);
+console.log('PASS: fail-closed entry, supports, asset hashes, orientation, interruption and recovery; no runtime route approved');})().catch(e=>{console.error(e);process.exitCode=1});

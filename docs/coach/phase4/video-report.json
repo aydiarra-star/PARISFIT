@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "method": "Full FFmpeg decode; phase3 before versus contact-repaired after",
+  "files": [
+    {
+      "path": "before/stand-to-crouch-face.mp4",
+      "sha256": "de4ad9e49be1858fb373862521f41aa5ff10b6ae70677477168ea47e016e5923",
+      "bytes": 73773,
+      "frames": 109,
+      "durationSeconds": 4.541667
+    },
+    {
+      "path": "before/stand-to-crouch-profil.mp4",
+      "sha256": "4df0190d0f6492c604438c7b3e49afff5cb351f235b8cc5f06fe447483f57394",
+      "bytes": 72850,
+      "frames": 109,
+      "durationSeconds": 4.541667
+    },
+    {
+      "path": "before/stand-to-crouch-trois-quarts.mp4",
+      "sha256": "07eb541109ecd78d63d77c77460a5b0996e29be7562cfe06363b20170fef0e69",
+      "bytes": 74488,
+      "frames": 109,
+      "durationSeconds": 4.541667
+    },
+    {
+      "path": "before/stand-to-crouch-slow.mp4",
+      "sha256": "f161c030a10ff5fbaab1cc38b4100ebf5be80f821e09cba4ffda1f419d183a58",
+      "bytes": 89266,
+      "frames": 109,
+      "durationSeconds": 9.083333
+    },
+    {
+      "path": "before/crouch-to-stand-face.mp4",
+      "sha256": "40e5712b18d9c20d85086efb419710f1a38fdf54e0951ce3bef973cdc03be8e6",
+      "bytes": 77785,
+      "frames": 109,
+      "durationSeconds": 4.541667
+    },
+    {
+      "path": "before/crouch-to-stand-profil.mp4",
+      "sha256": "d64cb830b69d93e1124076d0bc3c76fa89337aa53b26405d9aebc5c911fb0c85",
+      "bytes": 74588,
+      "frames": 109,
+      "durationSeconds": 4.541667
+    },
+    {
+      "path": "before/crouch-to-stand-trois-quarts.mp4",
+      "sha256": "02ef02d228993e1e7e32d3c9af6beca0df8cc2312e80a225ac971552a7369c46",
+      "bytes": 75725,
+      "frames": 109,
+      "durationSeconds": 4.541667
+    },
+    {
+      "path": "before/crouch-to-stand-slow.mp4",
+      "sha256": "23b99025f47e905a6ccb2b73d85a42037da28bba5605260ea90425c407c61591",
+      "bytes": 92103,
+      "frames": 109,
+      "durationSeconds": 9.083333
+    },
+    {
+      "path": "after/stand-to-crouch-face.mp4",
+      "sha256": "752d2ab272b8bd96c48ab8be94c15438bc407411f5293ab2a983030670c51ed3",
+      "bytes": 75623,
+      "frames": 109,
+      "durationSeconds": 4.541667
+    },
+    {
+      "path": "after/stand-to-crouch-profil.mp4",
+      "sha256": "264d051ef4aa4cb52d56dcb44749b5468dd22bb27d159d2cef9717c6077b9c25",
+      "bytes": 73790,
+      "frames": 109,
+      "durationSeconds": 4.541667
+    },
+    {
+      "path": "after/stand-to-crouch-trois-quarts.mp4",
+      "sha256": "9f565abbfeba91a025980c2aa4768e6853b7806ad470a18926d9550421a3e4f3",
+      "bytes": 73667,
+      "frames": 109,
+      "durationSeconds": 4.541667
+    },
+    {
+      "path": "after/stand-to-crouch-slow.mp4",
+      "sha256": "64a1fe82f46d3142ee54aca64696801534187a36aab41243c6fb3d5d472490d9",
+      "bytes": 88728,
+      "frames": 109,
+      "durationSeconds": 9.083333
+    },
+    {
+      "path": "after/crouch-to-stand-face.mp4",
+      "sha256": "ce1309622f7731de545f213d7e0d4ebd82a99b465411a5a0fabc9770f75b2d63",
+      "bytes": 76679,
+      "frames": 109,
+      "durationSeconds": 4.541667
+    },
+    {
+      "path": "after/crouch-to-stand-profil.mp4",
+      "sha256": "062d0a62600d3b44f80671f17e7c0e0a4eb571b16d697c6c6cfd86b792fbfb93",
+      "bytes": 74890,
+      "frames": 109,
+      "durationSeconds": 4.541667
+    },
+    {
+      "path": "after/crouch-to-stand-trois-quarts.mp4",
+      "sha256": "d5fdacaa734bbf24b53402e6399eddda272c4ba1f38d11d2ba208e83d134c3ed",
+      "bytes": 73371,
+      "frames": 109,
+      "durationSeconds": 4.541667
+    },
+    {
+      "path": "after/crouch-to-stand-slow.mp4",
+      "sha256": "02402c3074f6f042bd12efc52c061acc5a418f61c936be2c34cccaf20a28d4a4",
+      "bytes": 89899,
+      "frames": 109,
+      "durationSeconds": 9.083333
+    }
+  ]
+}

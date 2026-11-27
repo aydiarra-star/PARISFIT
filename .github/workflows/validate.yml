@@ -23,6 +23,8 @@ jobs:
           node --input-type=module --check < coach-content.js
           node tests/coach-evidence.cjs
           node tests/coach-transition-evidence.cjs
+          node tests/coach-transition-gate.cjs
+          node tests/coach-contact-evidence.cjs
           node tests/coach-asset.cjs
           node --input-type=module --check < coach-3d.js
       - name: Vérifier le manifeste PWA
@@ -54,3 +56,4 @@ jobs:
           path: |
             .cache/coach-review/
             docs/coach/phase3/*report.json
+            docs/coach/phase4/*report.json

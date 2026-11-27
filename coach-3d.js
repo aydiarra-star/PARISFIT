@@ -1,6 +1,7 @@
 import * as THREE from './vendor/three/three.module.js';
 import {GLTFLoader} from './vendor/three/loaders/GLTFLoader.js';
 import {COACH_CONTENT} from './coach-content.js';
+import {admitTransition,findTransitionRoute} from './coach-transition-gate.js';
 import {OrbitControls} from './vendor/three/controls/OrbitControls.js';
 
 // One renderer, one skinned model, eight baked clips. No procedural body geometry.
@@ -56,7 +57,11 @@ function updateGuidance(){
 }
 function select(id){
  if(!COACH_CONTENT[id])return;
- const changed=active!==id&&!!action;active=id;stepIndex=0;lastPhaseKey='';
+ const changed=active!==id&&!!action;
+ // No exercise route is approved: admission is evaluated BEFORE the existing safe cut.
+ // A matching posture name alone never grants admission. Playback integration remains disabled.
+ if(changed){const admission=admitTransition({route:findTransitionRoute(active,id),reducedMotion:reduced.matches});host.dataset.transitionGate=admission.reason;}
+ active=id;stepIndex=0;lastPhaseKey='';
  const guide=COACH_CONTENT[id];$('coach-stage-desc').textContent=guide.summary;
  for(const key of ['setup','error','correction','caution','accessible'])$('coach-'+key).textContent=guide[key];
  if(!ready){updateGuidance();return;}
