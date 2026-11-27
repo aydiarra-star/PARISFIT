@@ -11,6 +11,8 @@ Compagnon numérique dédié au sport, au fitness, à la nutrition, au bien-êtr
 - [Architecture initiale](ARCHITECTURE.md)
 - [Modèle logique des données](DATA_MODEL.md)
 - [Contrat logique de l'API](API_CONTRACT.md)
+- [Décision d'architecture backend](BACKEND_DECISION.md)
+- [Authentification, sécurité et synchronisation](AUTH_SYNC_SECURITY.md)
 - [Feuille de route](ROADMAP.md)
 
 ## Lancer
@@ -22,3 +24,6 @@ Interface responsive Aujourd'hui / Switch / Nutrition / Mental, navigation mobil
 Backend, synchronisation, comptes, IA, bibliothèque sportive professionnelle, coach 3D, paiements et intégrations santé restent à construire.
 
 L'interface PARISFIT validée reste la référence ; les fonctions nouvelles doivent s'y intégrer sans refonte arbitraire.
+
+## État de la décision backend
+Les options Supabase, Render + PostgreSQL et Firebase sont comparées dans BACKEND_DECISION.md. Supabase/PostgreSQL est l'option proposée pour un prototype technique isolé, mais aucun fournisseur n'est approuvé et aucun service cloud n'a été créé. Les exigences de sécurité et de synchronisation sont spécifiées dans AUTH_SYNC_SECURITY.md.
