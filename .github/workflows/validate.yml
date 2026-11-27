@@ -34,3 +34,4 @@ jobs:
           test -s API_CONTRACT.md
           test -s BACKEND_DECISION.md
           test -s AUTH_SYNC_SECURITY.md
+          test -s database/0001_core_schema.sql
