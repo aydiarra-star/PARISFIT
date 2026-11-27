@@ -2,10 +2,10 @@ const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],KEY
 const defaults={habits:[],water:0,energy:null,journal:"",name:""};let data;try{data={...defaults,...JSON.parse(localStorage.getItem(KEY)||"{}")}}catch{data={...defaults}}
 const save=()=>localStorage.setItem(KEY,JSON.stringify(data));
 function toast(t){const e=$("#toast");e.textContent=t;e.classList.add("show");clearTimeout(toast.timer);toast.timer=setTimeout(()=>e.classList.remove("show"),2200)}
-function view(n){$$(".view").forEach(x=>x.classList.toggle("active",x.id==="view-"+n));$$("[data-view]").forEach(x=>x.classList.toggle("active",x.dataset.view===n));window.scrollTo({top:0,behavior:"smooth"})}
+function view(n){$$(".view").forEach(x=>x.classList.toggle("active",x.id==="view-"+n));$$("[data-view]").forEach(x=>x.classList.toggle("active",x.dataset.view===n));$$(".nav [data-view], .mobile-nav [data-view]").forEach(x=>{if(x.dataset.view===n)x.setAttribute("aria-current","page");else x.removeAttribute("aria-current")});window.scrollTo({top:0,behavior:"smooth"})}
 $$("[data-view]").forEach(x=>x.addEventListener("click",()=>view(x.dataset.view)));
 $("#date").textContent=new Intl.DateTimeFormat("fr-FR",{weekday:"long",day:"numeric",month:"long"}).format(new Date());
-function dialog(html){$("#modal-content").innerHTML=html;$("#modal").showModal()}
+function dialog(html){const modal=$("#modal"),content=$("#modal-content");content.innerHTML=html;content.querySelectorAll("button").forEach(button=>button.type="button");if(!modal.open)modal.showModal()}
 $("#modal").addEventListener("click",e=>{if(e.target===$("#modal"))$("#modal").close()});
 function energy(){dialog('<p class="eyebrow">MON RESSENTI</p><h2>Comment est ton énergie aujourd’hui ?</h2><p>Il n’y a pas de bonne ou de mauvaise réponse.</p><div class="choices"><button data-e="low">🌿<br>Douce</button><button data-e="medium">☁<br>Modérée</button><button data-e="high">☀<br>Bonne</button></div>');$$("[data-e]").forEach(b=>b.onclick=()=>{data.energy=b.dataset.e;save();render();$("#modal").close();toast("Ressenti enregistré.")})}
 $$("[data-energy]").forEach(b=>b.onclick=energy);

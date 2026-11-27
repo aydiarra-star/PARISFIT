@@ -1,7 +1,7 @@
 name: PARISFIT — validation du socle
 on:
   push:
-    branches: [main, "feat/**"]
+    branches: [main, "feat/**", "test/**", "docs/**"]
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -17,13 +17,21 @@ jobs:
           node-version: 22
       - name: Vérifier la syntaxe JavaScript
         run: node --check app.js
+      - name: Vérifier la structure de l'application
+        run: node scripts/validate.mjs
+      - name: Exécuter les tests automatisés
+        run: node --test
       - name: Vérifier le manifeste PWA
         run: node -e "JSON.parse(require('fs').readFileSync('manifest.webmanifest','utf8')); console.log('Manifest JSON valide')"
-      - name: Vérifier les fichiers essentiels et les quatre vues
+      - name: Vérifier la documentation de référence
         run: |
-          test -s index.html && test -s styles.css && test -s app.js && test -s service-worker.js
-          grep -q 'id="view-today"' index.html
-          grep -q 'id="view-switch"' index.html
-          grep -q 'id="view-nutrition"' index.html
-          grep -q 'id="view-mental"' index.html
-          echo "Socle PARISFIT présent"
+          test -s README.md
+          test -s CAHIER_DES_CHARGES.md
+          test -s PROMPT_MAITRE.md
+          test -s ARCHITECTURE.md
+          test -s ROADMAP.md
+          test -s DATA_MODEL.md
+          test -s API_CONTRACT.md
+          test -s BACKEND_DECISION.md
+          test -s AUTH_SYNC_SECURITY.md
+          test -s database/0001_core_schema.sql
