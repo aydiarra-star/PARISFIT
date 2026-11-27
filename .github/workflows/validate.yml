@@ -78,13 +78,24 @@ jobs:
       - name: Install real Blender Python runtime dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libxrender1 libxxf86vm1 libxfixes3 libxi6 libxkbcommon0 libsm6 libice6 libgl1 libegl1 libx11-6 libxext6 libgomp1
-          python -m pip install bpy==4.2.0 numpy==1.26.4
+          sudo apt-get install -y blender libxrender1 libxxf86vm1 libxfixes3 libxi6 libxkbcommon0 libsm6 libice6 libgl1 libegl1 libx11-6 libxext6 libgomp1
+          blender --version
           mkdir -p .cache/phase9
           python -m pip freeze > .cache/phase9/python-packages.txt
           dpkg-query -W > .cache/phase9/system-packages.txt
       - name: Execute BVH calibration and Rocketbox retarget in Blender
-        run: python tools/blender-pipeline/retarget.py
+        run: blender --background --factory-startup --python-exit-code 1 --python tools/blender-pipeline/retarget.py > .cache/phase9/blender.log 2>&1
+      - name: Expose diagnostic evidence through check annotations
+        if: always()
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          for name in ["blender-report.json", "blender.log"]:
+              p=Path(".cache/phase9")/name
+              if p.exists():
+                  text=p.read_text()[-14000:]
+                  print("::warning title="+name+"::"+text.replace("%","%25").replace("\r","%0D").replace("\n","%0A"))
+          PY
       - uses: actions/setup-node@v4
         with:
           node-version: 22

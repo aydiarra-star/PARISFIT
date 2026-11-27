@@ -3,7 +3,7 @@ No source data cleanup, IK, smoothing, or production admission.
 """
 import argparse,json,hashlib,platform,traceback,time,sys,subprocess
 from pathlib import Path
-p=argparse.ArgumentParser();p.add_argument('--out',default='.cache/phase9');a=p.parse_args();out=Path(a.out).resolve();repo=Path(__file__).resolve().parents[2]
+p=argparse.ArgumentParser();p.add_argument('--out',default='.cache/phase9');a=p.parse_args(sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else ([] if 'blender' in Path(sys.argv[0]).name else None));out=Path(a.out).resolve();repo=Path(__file__).resolve().parents[2]
 if out!=repo/'.cache/phase9':raise SystemExit('Only isolated .cache/phase9 output is allowed')
 out.mkdir(parents=True,exist_ok=True)
 source=repo/'docs/coach/phase6/source-14_06.bvh';model=repo/'assets/coach/coach.glb'
@@ -12,6 +12,7 @@ r={'status':'STARTING','dataKind':'CMU licensed optical control, NOT dedicated P
 started=time.time()
 def step(n,**kw):r['steps'].append({'step':n,'seconds':round(time.time()-started,3),**kw});print('STEP',n,json.dumps(kw),flush=True)
 try:
+ assert r['sourceSHA256']=='e75bcdec4d6fdeac91571020d0b75d45cd4b2532113e699f465b5b297373ac05'
  assert r['modelSHA256']=='1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb'
  import bpy
  from mathutils import Vector,Quaternion
