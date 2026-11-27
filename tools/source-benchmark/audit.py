@@ -4,7 +4,7 @@ import json,hashlib,numpy as np
 from bvh import parse,fk
 SCALE=.056444;NORMAL=.9469891623878913
 ROOT=Path('.cache/phase12');DOC=Path('docs/coach/phase12')
-def metrics(p,dt,names,parents):
+def metrics(p,dt,names,parents,to_m=1):
  v=np.diff(p,axis=0)/dt;a=np.diff(v,axis=0)/dt;sn=np.linalg.norm(v,axis=2);an=np.linalg.norm(a,axis=2);i,j=np.unravel_index(an.argmax(),an.shape)
  out={'frames':len(p),'sampleHz':1/dt,'maxSpeed':float(sn.max()),'maxAcceleration':float(an.max()),'peakAccelerationJoint':names[j],'peakAccelerationSample':int(i+1),'p95Acceleration':float(np.quantile(an,.95)),'maxStep':float(np.linalg.norm(np.diff(p,axis=0),axis=2).max()),'finite':bool(np.isfinite(p).all())}
  lengths=[np.linalg.norm(p[:,j]-p[:,par],axis=1) for j,par in enumerate(parents) if par is not None];out['maxSegmentLengthChange']=float(max(np.ptp(x) for x in lengths))
@@ -15,13 +15,13 @@ def metrics(p,dt,names,parents):
  trunk=p[:,ix('Neck')]-p[:,ix('Hips')];tilt=np.rad2deg(np.arccos(np.clip(trunk[:,1]/np.linalg.norm(trunk,axis=1),-1,1)));out['trunkTiltDeg']={'min':float(tilt.min()),'max':float(tilt.max())}
  out['pelvisAcceleration']=float(an[:,ix('Hips')].max());out['entryExitMaxJointDistance']=float(np.linalg.norm(p[-1]-p[0],axis=1).max());out['feet']={}
  for s in ['Left','Right']:
-  j=ix(s+'Foot');toe=ix(s+'ToeBase');speed=np.linalg.norm(v[:,j],axis=1);candidate=speed<.08;drift=0.;anchor=None
+  j=ix(s+'Foot');toe=ix(s+'ToeBase');speed=np.linalg.norm(v[:,j],axis=1);candidate=speed<(.08/to_m);drift=0.;anchor=None
   for k,c in enumerate(candidate):
    if c:
     if anchor is None:anchor=p[k,j]
     drift=max(drift,float(np.linalg.norm((p[k+1,j]-anchor)[[0,2]])))
    else:anchor=None
-  out['feet'][s]={'pivotMinY':float(p[:,j,1].min()),'toeMinY':float(p[:,toe,1].min()),'horizontalRange':np.ptp(p[:,j,[0,2]],axis=0).tolist(),'candidateFrames':int(candidate.sum()),'candidateDrift':drift,'meaning':'low-speed pivot only; not sole contact or force; ground unknown'}
+  out['feet'][s]={'pivotMinY':float(p[:,j,1].min()),'toeMinY':float(p[:,toe,1].min()),'horizontalRange':np.ptp(p[:,j,[0,2]],axis=0).tolist(),'candidateVelocityThresholdInReportedUnits':.08/to_m,'candidateFrames':int(candidate.sum()),'candidateDrift':drift,'meaning':'low-speed pivot only; not sole contact or force; ground unknown'}
  return out
 def interpolate(p,dt,times):
  x=times/dt;i=np.floor(x).astype(int);u=(x-i)[:,None,None];return p[i]*(1-u)+p[np.minimum(i+1,len(p)-1)]*u
@@ -31,10 +31,12 @@ def run():
  ROOT.mkdir(parents=True,exist_ok=True);reports=[]
  fixtures=[('14_06',Path('docs/coach/phase6/source-14_06.bvh'))]+[(n,ROOT/(n+'.bvh')) for n in ['14_14','13_30','86_08']]
  for name,path in fixtures:
-  raw=path.read_bytes();nodes,ch,dt=parse(raw.decode());pos=fk(nodes,ch);keep=[i for i,b in enumerate(nodes) if not b['name'].endswith('__End')];names=[nodes[i]['name'] for i in keep];parents=[keep.index(nodes[i]['parent']) if nodes[i]['parent'] is not None else None for i in keep];p=pos[:,keep]
+  raw=path.read_bytes()
+  if name=='14_06':assert hashlib.sha256(raw).hexdigest()=='e75bcdec4d6fdeac91571020d0b75d45cd4b2532113e699f465b5b297373ac05'
+  nodes,ch,dt=parse(raw.decode());pos=fk(nodes,ch);keep=[i for i,b in enumerate(nodes) if not b['name'].endswith('__End')];names=[nodes[i]['name'] for i in keep];parents=[keep.index(nodes[i]['parent']) if nodes[i]['parent'] is not None else None for i in keep];p=pos[:,keep]
   # No raw marker claims: this is the unmodified converted BVH fixture.
   base=p[1:];m=base*SCALE
-  report={'id':name,'status':'EN ATTENTE DE VALIDATION HUMAINE','selectedReference':False,'inputSHA256':hashlib.sha256(raw).hexdigest(),'format':'converted BVH, NOT original marker capture','declaredHz':1/dt,'timing':'single declared Frame Time, no per-frame capture timestamps','frames':len(p),'durationS':(len(p)-1)*dt,'artificialFrame0TransitionMaxRawUnits':float(np.linalg.norm(p[1]-p[0],axis=1).max()),'axes':'BVH Y-up, X/Z ground plane; no heading rotation for invariant speed norms','names':names,'parents':parents,'zeroParentOffsets':[nodes[i]['name'] for i in keep if nodes[i]['parent'] is not None and np.linalg.norm(nodes[i]['offset'])<1e-6],'rawUnitsFullExcludingArtificialFrame0':metrics(base,dt,names,parents),'meterFullExcludingArtificialFrame0':metrics(m,dt,names,parents),'missingMeasurement':['capture timestamps','forces','sole patches','original marker residuals'],'branches':{}}
+  report={'id':name,'status':'EN ATTENTE DE VALIDATION HUMAINE','selectedReference':False,'inputSHA256':hashlib.sha256(raw).hexdigest(),'format':'converted BVH, NOT original marker capture','declaredHz':1/dt,'timing':'single declared Frame Time, no per-frame capture timestamps','frames':len(p),'durationS':(len(p)-1)*dt,'artificialFrame0TransitionMaxRawUnits':float(np.linalg.norm(p[1]-p[0],axis=1).max()),'axes':'BVH Y-up, X/Z ground plane; no heading rotation for invariant speed norms','names':names,'parents':parents,'zeroParentOffsets':[nodes[i]['name'] for i in keep if nodes[i]['parent'] is not None and np.linalg.norm(nodes[i]['offset'])<1e-6],'rawUnitsFullExcludingArtificialFrame0':metrics(base,dt,names,parents,SCALE),'meterFullExcludingArtificialFrame0':metrics(m,dt,names,parents),'nonCapturedConvenienceJoints':[n for n in names if 'Finger' in n or 'Thumb' in n],'missingMeasurement':['capture timestamps','forces','sole patches','original marker residuals'],'branches':{}}
   if name=='14_06':
    # Native window and 60Hz window share exact bounds only to nearest native sample.
    start,end=8.6,11.;lo=int(np.ceil(start/dt));hi=int(np.floor(end/dt));native=p[lo:hi+1]*SCALE;ts=np.arange(145)/60+start

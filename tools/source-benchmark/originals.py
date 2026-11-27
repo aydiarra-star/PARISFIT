@@ -26,7 +26,7 @@ def main():
   reports.append(r)
  z=ROOT/'zenodo.zip';r={'id':'Zenodo23979972/S01/P001','url':'https://zenodo.org/records/23979972/files/Fatigue_Squat_2026_dataset.zip?download=1','status':'NON TESTÉ','rights':'CC BY4.0, Florian Michaud2026; dataset only, OpenSim model not extracted'}
  try:
-  r['archiveSHA256']=fetch(r['url'],z,150000000);assert hashlib.md5(z.read_bytes()).hexdigest()=='ae51793940720bcd0877bdad8c155e82','ZENODO_MD5_MISMATCH'
+  r['archiveSHA256']=fetch(r['url'],z,150000000);assert r['archiveSHA256']=='901112330ed234ad97ce24cb866bd5e7e33bef766861d21264953b3ac1875782','ZENODO_SHA256_MISMATCH';assert hashlib.md5(z.read_bytes()).hexdigest()=='ae51793940720bcd0877bdad8c155e82','ZENODO_MD5_MISMATCH'
   r['files']=[]
   with zipfile.ZipFile(z) as archive:
    for name in archive.namelist():
