@@ -10,6 +10,7 @@ Compagnon numérique dédié au sport, au fitness, à la nutrition, au bien-êtr
 - [Prompt maître](PROMPT_MAITRE.md)
 - [Architecture initiale](ARCHITECTURE.md)
 - [Modèle logique des données](DATA_MODEL.md)
+- [Contrat logique de l'API](API_CONTRACT.md)
 - [Feuille de route](ROADMAP.md)
 
 ## Lancer
