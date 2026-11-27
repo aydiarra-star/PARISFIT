@@ -31,3 +31,4 @@ jobs:
           test -s ARCHITECTURE.md
           test -s ROADMAP.md
           test -s DATA_MODEL.md
+          test -s API_CONTRACT.md
