@@ -81,9 +81,19 @@ try:
  step('calibration-and-retarget',mappedBones=len(mapping),scale=scale,frames=len(records))
  bpy.data.objects.remove(src,do_unlink=True)
  target.animation_data.action.name='phase9-cmu-control'
+ for action in list(bpy.data.actions):
+  if action!=target.animation_data.action:bpy.data.actions.remove(action)
  for fc in target.animation_data.action.fcurves:
   for k in fc.keyframe_points:k.interpolation='LINEAR'
  bpy.context.scene.render.fps=60;bpy.context.scene.render.fps_base=1;bpy.context.scene.frame_start=0;bpy.context.scene.frame_end=144;bpy.context.scene.frame_set(0)
+ referenceFrames=[]
+ for i in range(145):
+  bpy.context.scene.frame_set(i);bpy.context.view_layer.update();joints={}
+  for b in bones:
+   v=(target.matrix_world@b.matrix).translation;joints[b.name]=[v.x,v.z,-v.y]
+  referenceFrames.append({'time':i/60,'joints':joints})
+ (out/'blender-joints.json').write_text(json.dumps(referenceFrames)+'\n')
+ bpy.context.scene.frame_set(0)
  target['source']='CMU14_06 8.6-11s, licensed control only';target['admission']='BLOCKED';target['runtimeEnabled']=False
  bpy.ops.export_scene.gltf(filepath=str(out/'rocketbox-control.glb'),export_format='GLB',export_animations=True,export_frame_range=True,export_force_sampling=True,export_nla_strips=False,export_extras=True)
  step('glb-export',bytes=(out/'rocketbox-control.glb').stat().st_size)
