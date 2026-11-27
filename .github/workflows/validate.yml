@@ -66,3 +66,40 @@ jobs:
             docs/coach/phase5/*report.json
             docs/coach/phase6/*report.json
             docs/coach/phase7/*report.json
+  blender-control:
+    # Public licensed fixtures ONLY. Never upload personal capture to this workflow.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install real Blender Python runtime dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libxrender1 libxxf86vm1 libxfixes3 libxi6 libxkbcommon0 libsm6 libice6 libgl1 libegl1 libx11-6 libxext6 libgomp1
+          python -m pip install bpy==4.2.0 numpy==1.26.4
+          mkdir -p .cache/phase9
+          python -m pip freeze > .cache/phase9/python-packages.txt
+          dpkg-query -W > .cache/phase9/system-packages.txt
+      - name: Execute BVH calibration and Rocketbox retarget in Blender
+        run: python tools/blender-pipeline/retarget.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verify GLB in real Three.js browser
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+          python -m http.server 3000 --bind 0.0.0.0 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          node tools/blender-pipeline/check.cjs
+      - name: Preserve control evidence even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase9-blender-control
+          path: .cache/phase9/
+          retention-days: 30
