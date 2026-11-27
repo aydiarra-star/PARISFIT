@@ -1,0 +1,92 @@
+{
+  "status": "EN ATTENTE DE VALIDATION HUMAINE",
+  "qualifiedReference": false,
+  "id": "Zenodo23979972/v1/S01/P001/rep1",
+  "times": {
+    "start": 10.45,
+    "bottom": 11.08,
+    "end": 11.94
+  },
+  "frames": 150,
+  "sampleHz": 100.00000000000213,
+  "axes": "Z-up inferred from ground-plane x/y plate centres and marker/force axes; confirm with depositor before retarget",
+  "units": "m per dataset README; N for forces",
+  "maxMarkerSpeedMS": 1.1771614162892183,
+  "maxMarkerAccelerationMS2": 6.603786792440922,
+  "peakMarker": "Left_2nd_metacarpal_head",
+  "peakTime": 11.09,
+  "feet": {
+    "Right": {
+      "plateAssignmentHypothesis": 1,
+      "minFzN": 237.8965,
+      "maxFzN": 554.4614,
+      "fractionAbove20N": 1.0,
+      "heelHorizontalRangeM": [
+        0.018099999999999894,
+        0.012189999999999993
+      ],
+      "heelMaxDisplacementFromStartM": 0.021805403000173976,
+      "heelHeightRangeM": [
+        0.04791,
+        0.05807
+      ],
+      "metatarsalHeightRangeM": [
+        0.05611,
+        0.06269
+      ],
+      "notSoleGap": true
+    },
+    "Left": {
+      "plateAssignmentHypothesis": 2,
+      "minFzN": 230.5191,
+      "maxFzN": 528.6187,
+      "fractionAbove20N": 1.0,
+      "heelHorizontalRangeM": [
+        0.023309999999999997,
+        0.011020000000000002
+      ],
+      "heelMaxDisplacementFromStartM": 0.025031390292990122,
+      "heelHeightRangeM": [
+        0.04448,
+        0.05316
+      ],
+      "metatarsalHeightRangeM": [
+        0.05397,
+        0.0651
+      ],
+      "notSoleGap": true
+    }
+  },
+  "kneeProxyDeg": {
+    "Right": {
+      "min": 8.798813759292841,
+      "max": 102.955062913642,
+      "meaning": "skin-marker three-point proxy, NOT anatomical knee angle"
+    },
+    "Left": {
+      "min": 11.037946896418703,
+      "max": 101.28040103316852,
+      "meaning": "skin-marker three-point proxy, NOT anatomical knee angle"
+    }
+  },
+  "trunkProxyTiltDeg": {
+    "min": 4.7813198696227195,
+    "max": 38.19906521329299
+  },
+  "pelvisProxyMaxAccelerationMS2": 5.0202714070054295,
+  "entryExitMarkerMaxDistanceM": 0.08855071033029593,
+  "comparison": "do NOT rank marker acceleration against BVH pivot acceleration; no joint-centre model or matched variant",
+  "blockers": [
+    "no stable preparation/final hold in this cropped repetition",
+    "loaded fatigue squat, not unweighted control",
+    "anatomical joint axes uncalibrated",
+    "plate-to-foot mapping and ground reference pending review",
+    "no professional review"
+  ],
+  "video": {
+    "file": "marker-rep1.mp4",
+    "frames": 150,
+    "sha256": "6801f536e9f0503cadb0562060622a310b1d48e1d46ba448277a262e3484a052",
+    "decode": "VALIDÉ"
+  }
+}

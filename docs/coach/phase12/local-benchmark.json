@@ -1,0 +1,2353 @@
+{
+  "status": "REFUSÉ",
+  "qualifiedSecondReference": null,
+  "reason": "No candidate has established contacts, complete annotated squat cycle and visual/professional review; whole-clip screening is NOT matched-cycle benchmarking",
+  "sources": [
+    {
+      "id": "14_06",
+      "status": "EN ATTENTE DE VALIDATION HUMAINE",
+      "selectedReference": false,
+      "inputSHA256": "e75bcdec4d6fdeac91571020d0b75d45cd4b2532113e699f465b5b297373ac05",
+      "format": "converted BVH, NOT original marker capture",
+      "declaredHz": 120.00048000192001,
+      "timing": "single declared Frame Time, no per-frame capture timestamps",
+      "frames": 5358,
+      "durationS": 44.641488100000004,
+      "artificialFrame0TransitionMaxRawUnits": 11.711315089311276,
+      "axes": "BVH Y-up, X/Z ground plane; no heading rotation for invariant speed norms",
+      "names": [
+        "Hips",
+        "LHipJoint",
+        "LeftUpLeg",
+        "LeftLeg",
+        "LeftFoot",
+        "LeftToeBase",
+        "RHipJoint",
+        "RightUpLeg",
+        "RightLeg",
+        "RightFoot",
+        "RightToeBase",
+        "LowerBack",
+        "Spine",
+        "Spine1",
+        "Neck",
+        "Neck1",
+        "Head",
+        "LeftShoulder",
+        "LeftArm",
+        "LeftForeArm",
+        "LeftHand",
+        "LeftFingerBase",
+        "LeftHandIndex1",
+        "LThumb",
+        "RightShoulder",
+        "RightArm",
+        "RightForeArm",
+        "RightHand",
+        "RightFingerBase",
+        "RightHandIndex1",
+        "RThumb"
+      ],
+      "parents": [
+        null,
+        0,
+        1,
+        2,
+        3,
+        4,
+        0,
+        6,
+        7,
+        8,
+        9,
+        0,
+        11,
+        12,
+        13,
+        14,
+        15,
+        13,
+        17,
+        18,
+        19,
+        20,
+        21,
+        20,
+        13,
+        24,
+        25,
+        26,
+        27,
+        28,
+        27
+      ],
+      "zeroParentOffsets": [
+        "LHipJoint",
+        "RHipJoint",
+        "LowerBack",
+        "Neck",
+        "LeftShoulder",
+        "LeftFingerBase",
+        "LThumb",
+        "RightShoulder",
+        "RightFingerBase",
+        "RThumb"
+      ],
+      "rawUnitsFullExcludingArtificialFrame0": {
+        "frames": 5357,
+        "sampleHz": 120.00048000192001,
+        "maxSpeed": 75.22206320855274,
+        "maxAcceleration": 5130.11765701065,
+        "peakAccelerationJoint": "RightForeArm",
+        "peakAccelerationSample": 2365,
+        "p95Acceleration": 397.11324972553064,
+        "maxStep": 0.6268480193358325,
+        "finite": true,
+        "maxSegmentLengthChange": 9.769962616701378e-15,
+        "kneeFlexionDeg": {
+          "Left": {
+            "min": 4.2216495330649195e-05,
+            "max": 158.1280110483637
+          },
+          "Right": {
+            "min": 13.270177477712963,
+            "max": 161.1610325738559
+          }
+        },
+        "trunkTiltDeg": {
+          "min": 0.30215465328964425,
+          "max": 47.60333370182796
+        },
+        "pelvisAcceleration": 953.5399212024546,
+        "entryExitMaxJointDistance": 5.521630793999734,
+        "feet": {
+          "Left": {
+            "pivotMinY": 1.3658773886425832,
+            "toeMinY": -0.11648587301553337,
+            "horizontalRange": [
+              10.48135794999088,
+              13.207079726342029
+            ],
+            "candidateVelocityThresholdInReportedUnits": 1.4173339947558643,
+            "candidateFrames": 3287,
+            "candidateDrift": 0.17155286663409705,
+            "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+          },
+          "Right": {
+            "pivotMinY": 1.3810221657568178,
+            "toeMinY": 0.25515699758657506,
+            "horizontalRange": [
+              11.105409426716754,
+              11.834083300783533
+            ],
+            "candidateVelocityThresholdInReportedUnits": 1.4173339947558643,
+            "candidateFrames": 3369,
+            "candidateDrift": 0.3723478967528997,
+            "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+          }
+        }
+      },
+      "meterFullExcludingArtificialFrame0": {
+        "frames": 5357,
+        "sampleHz": 120.00048000192001,
+        "maxSpeed": 4.245834135743547,
+        "maxAcceleration": 289.564361032309,
+        "peakAccelerationJoint": "RightForeArm",
+        "peakAccelerationSample": 2365,
+        "p95Acceleration": 22.414660267508452,
+        "maxStep": 0.03538180960339171,
+        "finite": true,
+        "maxSegmentLengthChange": 6.661338147750939e-16,
+        "kneeFlexionDeg": {
+          "Left": {
+            "min": 4.219922536208287e-05,
+            "max": 158.1280110483637
+          },
+          "Right": {
+            "min": 13.270177477712963,
+            "max": 161.16103257385586
+          }
+        },
+        "trunkTiltDeg": {
+          "min": 0.30215465329085045,
+          "max": 47.603333701827935
+        },
+        "pelvisAcceleration": 53.82160731235251,
+        "entryExitMaxJointDistance": 0.31166292853652106,
+        "feet": {
+          "Left": {
+            "pivotMinY": 0.07709558332454197,
+            "toeMinY": -0.006574928616488765,
+            "horizontalRange": [
+              0.5916097681292853,
+              0.7454604080736495
+            ],
+            "candidateVelocityThresholdInReportedUnits": 0.08,
+            "candidateFrames": 3287,
+            "candidateDrift": 0.009683130004294972,
+            "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+          },
+          "Right": {
+            "pivotMinY": 0.07795041512397782,
+            "toeMinY": 0.014402081571776642,
+            "horizontalRange": [
+              0.6268337296816006,
+              0.6679629978294257
+            ],
+            "candidateVelocityThresholdInReportedUnits": 0.08,
+            "candidateFrames": 3369,
+            "candidateDrift": 0.021016804684320673,
+            "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+          }
+        }
+      },
+      "nonCapturedConvenienceJoints": [
+        "LeftFingerBase",
+        "LThumb",
+        "RightFingerBase",
+        "RThumb"
+      ],
+      "missingMeasurement": [
+        "capture timestamps",
+        "forces",
+        "sole patches",
+        "original marker residuals"
+      ],
+      "branches": {
+        "native_m": {
+          "parameters": {
+            "input": "unfiltered BVH FK",
+            "startS": 8.6082989,
+            "endS": 10.999956000000001
+          },
+          "sha256": "185dbacfe98e91358c9e606aaecf03c5eefcac5f7fd2d1e1c67baa4877925973",
+          "metrics": {
+            "frames": 288,
+            "sampleHz": 120.00048000192001,
+            "maxSpeed": 1.5364627347709083,
+            "maxAcceleration": 98.3811867580135,
+            "peakAccelerationJoint": "LeftLeg",
+            "peakAccelerationSample": 177,
+            "p95Acceleration": 17.325249480002903,
+            "maxStep": 0.012803804907666413,
+            "finite": true,
+            "maxSegmentLengthChange": 5.551115123125783e-16,
+            "kneeFlexionDeg": {
+              "Left": {
+                "min": 29.969991312274658,
+                "max": 154.43796273501567
+              },
+              "Right": {
+                "min": 35.340610469027666,
+                "max": 156.7090502039192
+              }
+            },
+            "trunkTiltDeg": {
+              "min": 7.385979694918494,
+              "max": 27.86969593091981
+            },
+            "pelvisAcceleration": 34.27232135780867,
+            "entryExitMaxJointDistance": 0.12259106713641918,
+            "feet": {
+              "Left": {
+                "pivotMinY": 0.08598379917966657,
+                "toeMinY": 0.03916517862521173,
+                "horizontalRange": [
+                  0.061748663411297054,
+                  0.08665722092143743
+                ],
+                "candidateVelocityThresholdInReportedUnits": 0.08,
+                "candidateFrames": 107,
+                "candidateDrift": 0.005191252189236007,
+                "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+              },
+              "Right": {
+                "pivotMinY": 0.08176577498169732,
+                "toeMinY": 0.03652679825751787,
+                "horizontalRange": [
+                  0.04539917088154441,
+                  0.097542219927817
+                ],
+                "candidateVelocityThresholdInReportedUnits": 0.08,
+                "candidateFrames": 101,
+                "candidateDrift": 0.003995970234943373,
+                "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+              }
+            }
+          }
+        },
+        "filtered_only_m": {
+          "parameters": {
+            "input": "native_m",
+            "kernel": [
+              0.25,
+              0.5,
+              0.25
+            ],
+            "edge": "drop1sample per side",
+            "warning": "diagnostic Cartesian filter distorts bone lengths; never retargeted"
+          },
+          "sha256": "27c6c67dbde2206debae038f53ccfa1f4cd2772769ba47e7a5cdfae66fa4a5b1",
+          "metrics": {
+            "frames": 286,
+            "sampleHz": 120.00048000192001,
+            "maxSpeed": 1.3595654457073305,
+            "maxAcceleration": 34.107151917899856,
+            "peakAccelerationJoint": "LeftLeg",
+            "peakAccelerationSample": 184,
+            "p95Acceleration": 9.228640705575593,
+            "maxStep": 0.011329666728712896,
+            "finite": true,
+            "maxSegmentLengthChange": 0.00010311254740852371,
+            "kneeFlexionDeg": {
+              "Left": {
+                "min": 29.97675122287592,
+                "max": 154.42897065676743
+              },
+              "Right": {
+                "min": 35.5226332688174,
+                "max": 156.68049247996328
+              }
+            },
+            "trunkTiltDeg": {
+              "min": 7.451450302569409,
+              "max": 27.859149422229255
+            },
+            "pelvisAcceleration": 11.812704530849375,
+            "entryExitMaxJointDistance": 0.11694761487233106,
+            "feet": {
+              "Left": {
+                "pivotMinY": 0.0860276816911096,
+                "toeMinY": 0.039293634979889955,
+                "horizontalRange": [
+                  0.061702387216403386,
+                  0.08650389198257859
+                ],
+                "candidateVelocityThresholdInReportedUnits": 0.08,
+                "candidateFrames": 113,
+                "candidateDrift": 0.00543968756407857,
+                "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+              },
+              "Right": {
+                "pivotMinY": 0.08186978121941771,
+                "toeMinY": 0.03674721863403477,
+                "horizontalRange": [
+                  0.04512349534816151,
+                  0.09745633644301527
+                ],
+                "candidateVelocityThresholdInReportedUnits": 0.08,
+                "candidateFrames": 97,
+                "candidateDrift": 0.004855468928696154,
+                "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+              }
+            }
+          }
+        },
+        "resampled_position60_m": {
+          "parameters": {
+            "input": "unfiltered BVH FK",
+            "method": "linear joint-position interpolation",
+            "startS": 8.6,
+            "endS": 11.0
+          },
+          "sha256": "d3c16c435142fdc747baead2ac40e90664352d5c387c18742750656cf639cb50",
+          "metrics": {
+            "frames": 145,
+            "sampleHz": 60.0,
+            "maxSpeed": 1.3854422349287885,
+            "maxAcceleration": 33.96938017624113,
+            "peakAccelerationJoint": "LeftLeg",
+            "peakAccelerationSample": 93,
+            "p95Acceleration": 9.060114432667833,
+            "maxStep": 0.023090703915479807,
+            "finite": true,
+            "maxSegmentLengthChange": 1.3219020592591946e-06,
+            "kneeFlexionDeg": {
+              "Left": {
+                "min": 29.969994581799057,
+                "max": 154.4280219621647
+              },
+              "Right": {
+                "min": 35.3398198179309,
+                "max": 156.70867941428375
+              }
+            },
+            "trunkTiltDeg": {
+              "min": 7.38603166712153,
+              "max": 27.86962386286292
+            },
+            "pelvisAcceleration": 11.787942892048148,
+            "entryExitMaxJointDistance": 0.12761015785682583,
+            "feet": {
+              "Left": {
+                "pivotMinY": 0.08598472889722053,
+                "toeMinY": 0.039261976265559544,
+                "horizontalRange": [
+                  0.06168621418472972,
+                  0.08655902394925584
+                ],
+                "candidateVelocityThresholdInReportedUnits": 0.08,
+                "candidateFrames": 57,
+                "candidateDrift": 0.005427708561389504,
+                "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+              },
+              "Right": {
+                "pivotMinY": 0.08174941107646626,
+                "toeMinY": 0.03652771100407903,
+                "horizontalRange": [
+                  0.04539661999740832,
+                  0.09752588174471089
+                ],
+                "candidateVelocityThresholdInReportedUnits": 0.08,
+                "candidateFrames": 51,
+                "candidateDrift": 0.004711111500751538,
+                "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+              }
+            }
+          }
+        },
+        "normalized_only_m": {
+          "parameters": {
+            "input": "native_m",
+            "uniformScale": 0.9469891623878913
+          },
+          "sha256": "a285d58fc0408efb2e09bc9b28ecf7743730fa4f144443115962338a9db1f5b4",
+          "metrics": {
+            "frames": 288,
+            "sampleHz": 120.00048000192001,
+            "maxSpeed": 1.4550135582409158,
+            "maxAcceleration": 93.1659176426978,
+            "peakAccelerationJoint": "LeftLeg",
+            "peakAccelerationSample": 177,
+            "p95Acceleration": 16.406823493229457,
+            "maxStep": 0.012125064484889023,
+            "finite": true,
+            "maxSegmentLengthChange": 8.326672684688674e-16,
+            "kneeFlexionDeg": {
+              "Left": {
+                "min": 29.969991312274658,
+                "max": 154.43796273501567
+              },
+              "Right": {
+                "min": 35.340610469027695,
+                "max": 156.70905020391916
+              }
+            },
+            "trunkTiltDeg": {
+              "min": 7.385979694918445,
+              "max": 27.8696959309198
+            },
+            "pelvisAcceleration": 32.4555168957203,
+            "entryExitMaxJointDistance": 0.11609241198375533,
+            "feet": {
+              "Left": {
+                "pivotMinY": 0.08142572596408111,
+                "toeMinY": 0.0370889997010614,
+                "horizontalRange": [
+                  0.058475315042436034,
+                  0.0820634490552545
+                ],
+                "candidateVelocityThresholdInReportedUnits": 0.08,
+                "candidateFrames": 115,
+                "candidateDrift": 0.004916059562428913,
+                "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+              },
+              "Right": {
+                "pivotMinY": 0.07743130276191434,
+                "toeMinY": 0.03459048208659833,
+                "horizontalRange": [
+                  0.042992522806218486,
+                  0.0923714251468989
+                ],
+                "candidateVelocityThresholdInReportedUnits": 0.08,
+                "candidateFrames": 107,
+                "candidateDrift": 0.003784140505715951,
+                "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+              }
+            }
+          }
+        },
+        "resampled_channels60_m": {
+          "parameters": {
+            "input": "unfiltered BVH channels",
+            "method": "unwrapped Euler linear interpolation then FK"
+          },
+          "sha256": "7f161188a53fdfdd659ae773d05172be995a2f0c460fbafa16aeb5152e4608b3",
+          "metrics": {
+            "frames": 145,
+            "sampleHz": 60.0,
+            "maxSpeed": 1.3854484310324688,
+            "maxAcceleration": 33.967846381190675,
+            "peakAccelerationJoint": "LeftLeg",
+            "peakAccelerationSample": 93,
+            "p95Acceleration": 9.060107037916167,
+            "maxStep": 0.02309080718387448,
+            "finite": true,
+            "maxSegmentLengthChange": 4.996003610813204e-16,
+            "kneeFlexionDeg": {
+              "Left": {
+                "min": 29.96999460179154,
+                "max": 154.42802195478487
+              },
+              "Right": {
+                "min": 35.33981992124856,
+                "max": 156.7086800450024
+              }
+            },
+            "trunkTiltDeg": {
+              "min": 7.386031637452377,
+              "max": 27.869624039773356
+            },
+            "pelvisAcceleration": 11.787942892037467,
+            "entryExitMaxJointDistance": 0.12761027624829027,
+            "feet": {
+              "Left": {
+                "pivotMinY": 0.08598472708757922,
+                "toeMinY": 0.03926197473766604,
+                "horizontalRange": [
+                  0.06168618906800376,
+                  0.08655904563352258
+                ],
+                "candidateVelocityThresholdInReportedUnits": 0.08,
+                "candidateFrames": 57,
+                "candidateDrift": 0.005427632898934476,
+                "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+              },
+              "Right": {
+                "pivotMinY": 0.08174940812685885,
+                "toeMinY": 0.036527383349661234,
+                "horizontalRange": [
+                  0.045396461059051485,
+                  0.09752588448232563
+                ],
+                "candidateVelocityThresholdInReportedUnits": 0.08,
+                "candidateFrames": 51,
+                "candidateDrift": 0.004711049032425437,
+                "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+              }
+            }
+          }
+        },
+        "historical_normalized60_m": {
+          "parameters": {
+            "input": "resampled_channels60_m",
+            "uniformScale": 0.9469891623878913,
+            "purpose": "reproduce historical combination, not independent ablation"
+          },
+          "sha256": "4f0188d30ebf96727c20fd44e92354369586a968ba14b54adcc617ff1b73a26d",
+          "metrics": {
+            "frames": 145,
+            "sampleHz": 60.0,
+            "maxSpeed": 1.3120046492350554,
+            "maxAcceleration": 32.16718239264424,
+            "peakAccelerationJoint": "LeftLeg",
+            "peakAccelerationSample": 93,
+            "p95Acceleration": 8.579823174980937,
+            "maxStep": 0.02186674415391759,
+            "finite": true,
+            "maxSegmentLengthChange": 6.661338147750939e-16,
+            "kneeFlexionDeg": {
+              "Left": {
+                "min": 29.96999460179157,
+                "max": 154.42802195478484
+              },
+              "Right": {
+                "min": 35.33981992124859,
+                "max": 156.7086800450024
+              }
+            },
+            "trunkTiltDeg": {
+              "min": 7.386031637452328,
+              "max": 27.869624039773367
+            },
+            "pelvisAcceleration": 11.16305416560704,
+            "entryExitMaxJointDistance": 0.12084554861645584,
+            "feet": {
+              "Left": {
+                "pivotMinY": 0.08142660468281808,
+                "toeMinY": 0.03718066457051691,
+                "horizontalRange": [
+                  0.05841615251640997,
+                  0.08197047812158481
+                ],
+                "candidateVelocityThresholdInReportedUnits": 0.08,
+                "candidateFrames": 58,
+                "candidateDrift": 0.005139909532710921,
+                "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+              },
+              "Right": {
+                "pivotMinY": 0.07741580352775994,
+                "toeMinY": 0.0345910361625171,
+                "horizontalRange": [
+                  0.04298995663368568,
+                  0.0923559556570558
+                ],
+                "candidateVelocityThresholdInReportedUnits": 0.08,
+                "candidateFrames": 54,
+                "candidateDrift": 0.007374608590635536,
+                "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+              }
+            }
+          }
+        }
+      },
+      "highFrequencyResidualProxyRMSM": 0.00018919770265047787,
+      "noiseInterpretation": "second-difference residual mixes genuine acceleration and noise; NOT measured sensor noise",
+      "secondDifferenceAgreement": 1.5987766666114567e-12,
+      "normalizationLinearScalingResidual": 9.947598300641403e-14
+    },
+    {
+      "id": "14_14",
+      "status": "EN ATTENTE DE VALIDATION HUMAINE",
+      "selectedReference": false,
+      "inputSHA256": "d73c71b652e09d133e06d7a0a71d27a53cbb5cc7bb16eb154a69e2cb1c3cd783",
+      "format": "converted BVH, NOT original marker capture",
+      "declaredHz": 120.00048000192001,
+      "timing": "single declared Frame Time, no per-frame capture timestamps",
+      "frames": 4654,
+      "durationS": 38.7748449,
+      "artificialFrame0TransitionMaxRawUnits": 11.922795290436612,
+      "axes": "BVH Y-up, X/Z ground plane; no heading rotation for invariant speed norms",
+      "names": [
+        "Hips",
+        "LHipJoint",
+        "LeftUpLeg",
+        "LeftLeg",
+        "LeftFoot",
+        "LeftToeBase",
+        "RHipJoint",
+        "RightUpLeg",
+        "RightLeg",
+        "RightFoot",
+        "RightToeBase",
+        "LowerBack",
+        "Spine",
+        "Spine1",
+        "Neck",
+        "Neck1",
+        "Head",
+        "LeftShoulder",
+        "LeftArm",
+        "LeftForeArm",
+        "LeftHand",
+        "LeftFingerBase",
+        "LeftHandIndex1",
+        "LThumb",
+        "RightShoulder",
+        "RightArm",
+        "RightForeArm",
+        "RightHand",
+        "RightFingerBase",
+        "RightHandIndex1",
+        "RThumb"
+      ],
+      "parents": [
+        null,
+        0,
+        1,
+        2,
+        3,
+        4,
+        0,
+        6,
+        7,
+        8,
+        9,
+        0,
+        11,
+        12,
+        13,
+        14,
+        15,
+        13,
+        17,
+        18,
+        19,
+        20,
+        21,
+        20,
+        13,
+        24,
+        25,
+        26,
+        27,
+        28,
+        27
+      ],
+      "zeroParentOffsets": [
+        "LHipJoint",
+        "RHipJoint",
+        "LowerBack",
+        "Neck",
+        "LeftShoulder",
+        "LeftFingerBase",
+        "LThumb",
+        "RightShoulder",
+        "RightFingerBase",
+        "RThumb"
+      ],
+      "rawUnitsFullExcludingArtificialFrame0": {
+        "frames": 4653,
+        "sampleHz": 120.00048000192001,
+        "maxSpeed": 68.2872970451317,
+        "maxAcceleration": 3837.0273783171615,
+        "peakAccelerationJoint": "LeftArm",
+        "peakAccelerationSample": 3614,
+        "p95Acceleration": 392.22937644101995,
+        "maxStep": 0.569058532466196,
+        "finite": true,
+        "maxSegmentLengthChange": 7.993605777301127e-15,
+        "kneeFlexionDeg": {
+          "Left": {
+            "min": 16.49322383310846,
+            "max": 156.5840186826577
+          },
+          "Right": {
+            "min": 9.505592970913796,
+            "max": 159.80197227356595
+          }
+        },
+        "trunkTiltDeg": {
+          "min": 1.1821751804210732,
+          "max": 38.60030126112342
+        },
+        "pelvisAcceleration": 2213.5042826136564,
+        "entryExitMaxJointDistance": 6.871518994975786,
+        "feet": {
+          "Left": {
+            "pivotMinY": 1.4016763871188953,
+            "toeMinY": 0.5299689039689213,
+            "horizontalRange": [
+              8.37042200964186,
+              12.140206799925004
+            ],
+            "candidateVelocityThresholdInReportedUnits": 1.4173339947558643,
+            "candidateFrames": 2695,
+            "candidateDrift": 0.39017100329896226,
+            "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+          },
+          "Right": {
+            "pivotMinY": 1.3632129278691414,
+            "toeMinY": 0.21665452733430124,
+            "horizontalRange": [
+              9.36708184670426,
+              10.532251075033056
+            ],
+            "candidateVelocityThresholdInReportedUnits": 1.4173339947558643,
+            "candidateFrames": 2735,
+            "candidateDrift": 0.25217761631511704,
+            "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+          }
+        }
+      },
+      "meterFullExcludingArtificialFrame0": {
+        "frames": 4653,
+        "sampleHz": 120.00048000192001,
+        "maxSpeed": 3.8544081944154134,
+        "maxAcceleration": 216.57717334173375,
+        "peakAccelerationJoint": "LeftArm",
+        "peakAccelerationSample": 3614,
+        "p95Acceleration": 22.138994923837963,
+        "maxStep": 0.03211993980652196,
+        "finite": true,
+        "maxSegmentLengthChange": 6.661338147750939e-16,
+        "kneeFlexionDeg": {
+          "Left": {
+            "min": 16.49322383310843,
+            "max": 156.58401868265767
+          },
+          "Right": {
+            "min": 9.505592970913767,
+            "max": 159.80197227356598
+          }
+        },
+        "trunkTiltDeg": {
+          "min": 1.1821751804210732,
+          "max": 38.60030126112342
+        },
+        "pelvisAcceleration": 124.93903572784534,
+        "entryExitMaxJointDistance": 0.38785601815241316,
+        "feet": {
+          "Left": {
+            "pivotMinY": 0.07911622199453892,
+            "toeMinY": 0.029913564815621792,
+            "horizontalRange": [
+              0.47246009991222526,
+              0.685241832614967
+            ],
+            "candidateVelocityThresholdInReportedUnits": 0.08,
+            "candidateFrames": 2695,
+            "candidateDrift": 0.02202281211020663,
+            "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+          },
+          "Right": {
+            "pivotMinY": 0.07694519050064581,
+            "toeMinY": 0.012228848140857299,
+            "horizontalRange": [
+              0.5287155677553753,
+              0.5944823796791658
+            ],
+            "candidateVelocityThresholdInReportedUnits": 0.08,
+            "candidateFrames": 2735,
+            "candidateDrift": 0.014233913375290468,
+            "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+          }
+        }
+      },
+      "nonCapturedConvenienceJoints": [
+        "LeftFingerBase",
+        "LThumb",
+        "RightFingerBase",
+        "RThumb"
+      ],
+      "missingMeasurement": [
+        "capture timestamps",
+        "forces",
+        "sole patches",
+        "original marker residuals"
+      ],
+      "branches": {}
+    },
+    {
+      "id": "13_30",
+      "status": "EN ATTENTE DE VALIDATION HUMAINE",
+      "selectedReference": false,
+      "inputSHA256": "00d597df6c2aae9a16b5261c40907c169d95f7810f244ac0738b021adbca84d4",
+      "format": "converted BVH, NOT original marker capture",
+      "declaredHz": 120.00048000192001,
+      "timing": "single declared Frame Time, no per-frame capture timestamps",
+      "frames": 2466,
+      "durationS": 20.5415845,
+      "artificialFrame0TransitionMaxRawUnits": 10.882276890398744,
+      "axes": "BVH Y-up, X/Z ground plane; no heading rotation for invariant speed norms",
+      "names": [
+        "Hips",
+        "LHipJoint",
+        "LeftUpLeg",
+        "LeftLeg",
+        "LeftFoot",
+        "LeftToeBase",
+        "RHipJoint",
+        "RightUpLeg",
+        "RightLeg",
+        "RightFoot",
+        "RightToeBase",
+        "LowerBack",
+        "Spine",
+        "Spine1",
+        "Neck",
+        "Neck1",
+        "Head",
+        "LeftShoulder",
+        "LeftArm",
+        "LeftForeArm",
+        "LeftHand",
+        "LeftFingerBase",
+        "LeftHandIndex1",
+        "LThumb",
+        "RightShoulder",
+        "RightArm",
+        "RightForeArm",
+        "RightHand",
+        "RightFingerBase",
+        "RightHandIndex1",
+        "RThumb"
+      ],
+      "parents": [
+        null,
+        0,
+        1,
+        2,
+        3,
+        4,
+        0,
+        6,
+        7,
+        8,
+        9,
+        0,
+        11,
+        12,
+        13,
+        14,
+        15,
+        13,
+        17,
+        18,
+        19,
+        20,
+        21,
+        20,
+        13,
+        24,
+        25,
+        26,
+        27,
+        28,
+        27
+      ],
+      "zeroParentOffsets": [
+        "LHipJoint",
+        "RHipJoint",
+        "LowerBack",
+        "Neck",
+        "LeftShoulder",
+        "LeftFingerBase",
+        "LThumb",
+        "RightShoulder",
+        "RightFingerBase",
+        "RThumb"
+      ],
+      "rawUnitsFullExcludingArtificialFrame0": {
+        "frames": 2465,
+        "sampleHz": 120.00048000192001,
+        "maxSpeed": 59.54062610541539,
+        "maxAcceleration": 3803.6301904886777,
+        "peakAccelerationJoint": "RightToeBase",
+        "peakAccelerationSample": 39,
+        "p95Acceleration": 402.7665456359676,
+        "maxStep": 0.49616989952425805,
+        "finite": true,
+        "maxSegmentLengthChange": 8.881784197001252e-15,
+        "kneeFlexionDeg": {
+          "Left": {
+            "min": 17.503243087920822,
+            "max": 139.9229612112132
+          },
+          "Right": {
+            "min": 16.524968121250254,
+            "max": 138.512012299211
+          }
+        },
+        "trunkTiltDeg": {
+          "min": 0.06601580225758777,
+          "max": 41.13680245966909
+        },
+        "pelvisAcceleration": 1579.5981216259172,
+        "entryExitMaxJointDistance": 12.005157791036506,
+        "feet": {
+          "Left": {
+            "pivotMinY": 1.3571549098033433,
+            "toeMinY": 0.4941716675171529,
+            "horizontalRange": [
+              9.417009384964178,
+              6.728266959079058
+            ],
+            "candidateVelocityThresholdInReportedUnits": 1.4173339947558643,
+            "candidateFrames": 1205,
+            "candidateDrift": 0.2293127517486108,
+            "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+          },
+          "Right": {
+            "pivotMinY": 1.4339473829696,
+            "toeMinY": 0.4321657852411185,
+            "horizontalRange": [
+              5.103304429889347,
+              7.258924709186146
+            ],
+            "candidateVelocityThresholdInReportedUnits": 1.4173339947558643,
+            "candidateFrames": 1116,
+            "candidateDrift": 0.18117244428655574,
+            "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+          }
+        }
+      },
+      "meterFullExcludingArtificialFrame0": {
+        "frames": 2465,
+        "sampleHz": 120.00048000192001,
+        "maxSpeed": 3.360711099894063,
+        "maxAcceleration": 214.69210247194272,
+        "peakAccelerationJoint": "RightToeBase",
+        "peakAccelerationSample": 39,
+        "p95Acceleration": 22.733754901876587,
+        "maxStep": 0.028005813808747195,
+        "finite": true,
+        "maxSegmentLengthChange": 7.216449660063518e-16,
+        "kneeFlexionDeg": {
+          "Left": {
+            "min": 17.503243087920794,
+            "max": 139.9229612112132
+          },
+          "Right": {
+            "min": 16.524968121250282,
+            "max": 138.512012299211
+          }
+        },
+        "trunkTiltDeg": {
+          "min": 0.0660158022520669,
+          "max": 41.1368024596691
+        },
+        "pelvisAcceleration": 89.15883637705284,
+        "entryExitMaxJointDistance": 0.6776191263572646,
+        "feet": {
+          "Left": {
+            "pivotMinY": 0.0766032517289399,
+            "toeMinY": 0.02789302560133818,
+            "horizontalRange": [
+              0.531533677724918,
+              0.3797703002382583
+            ],
+            "candidateVelocityThresholdInReportedUnits": 0.08,
+            "candidateFrames": 1205,
+            "candidateDrift": 0.01294332895969858,
+            "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+          },
+          "Right": {
+            "pivotMinY": 0.0809377260843361,
+            "toeMinY": 0.02439316558214969,
+            "horizontalRange": [
+              0.2880509152406743,
+              0.4097227462853028
+            ],
+            "candidateVelocityThresholdInReportedUnits": 0.08,
+            "candidateFrames": 1116,
+            "candidateDrift": 0.010226097445310351,
+            "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+          }
+        }
+      },
+      "nonCapturedConvenienceJoints": [
+        "LeftFingerBase",
+        "LThumb",
+        "RightFingerBase",
+        "RThumb"
+      ],
+      "missingMeasurement": [
+        "capture timestamps",
+        "forces",
+        "sole patches",
+        "original marker residuals"
+      ],
+      "branches": {}
+    },
+    {
+      "id": "86_08",
+      "status": "EN ATTENTE DE VALIDATION HUMAINE",
+      "selectedReference": false,
+      "inputSHA256": "4451bbe16e6c8e55897a9cb0fee887b02167a1b5b1001f248ff4c852559114cc",
+      "format": "converted BVH, NOT original marker capture",
+      "declaredHz": 120.00048000192001,
+      "timing": "single declared Frame Time, no per-frame capture timestamps",
+      "frames": 9207,
+      "durationS": 76.7163598,
+      "artificialFrame0TransitionMaxRawUnits": 15.794984459789656,
+      "axes": "BVH Y-up, X/Z ground plane; no heading rotation for invariant speed norms",
+      "names": [
+        "Hips",
+        "LHipJoint",
+        "LeftUpLeg",
+        "LeftLeg",
+        "LeftFoot",
+        "LeftToeBase",
+        "RHipJoint",
+        "RightUpLeg",
+        "RightLeg",
+        "RightFoot",
+        "RightToeBase",
+        "LowerBack",
+        "Spine",
+        "Spine1",
+        "Neck",
+        "Neck1",
+        "Head",
+        "LeftShoulder",
+        "LeftArm",
+        "LeftForeArm",
+        "LeftHand",
+        "LeftFingerBase",
+        "LeftHandIndex1",
+        "LThumb",
+        "RightShoulder",
+        "RightArm",
+        "RightForeArm",
+        "RightHand",
+        "RightFingerBase",
+        "RightHandIndex1",
+        "RThumb"
+      ],
+      "parents": [
+        null,
+        0,
+        1,
+        2,
+        3,
+        4,
+        0,
+        6,
+        7,
+        8,
+        9,
+        0,
+        11,
+        12,
+        13,
+        14,
+        15,
+        13,
+        17,
+        18,
+        19,
+        20,
+        21,
+        20,
+        13,
+        24,
+        25,
+        26,
+        27,
+        28,
+        27
+      ],
+      "zeroParentOffsets": [
+        "LHipJoint",
+        "RHipJoint",
+        "LowerBack",
+        "Neck",
+        "LeftShoulder",
+        "LeftFingerBase",
+        "LThumb",
+        "RightShoulder",
+        "RightFingerBase",
+        "RThumb"
+      ],
+      "rawUnitsFullExcludingArtificialFrame0": {
+        "frames": 9206,
+        "sampleHz": 120.00048000192001,
+        "maxSpeed": 118.76334472633802,
+        "maxAcceleration": 13900.303694856162,
+        "peakAccelerationJoint": "RightHandIndex1",
+        "peakAccelerationSample": 7033,
+        "p95Acceleration": 263.5106895738877,
+        "maxStep": 0.9896905806079926,
+        "finite": true,
+        "maxSegmentLengthChange": 1.1546319456101628e-14,
+        "kneeFlexionDeg": {
+          "Left": {
+            "min": 28.584302450080997,
+            "max": 120.99303667068912
+          },
+          "Right": {
+            "min": 14.269394936962271,
+            "max": 129.35700189879032
+          }
+        },
+        "trunkTiltDeg": {
+          "min": 0.03120498594711935,
+          "max": 74.503551309918
+        },
+        "pelvisAcceleration": 502.8507032082167,
+        "entryExitMaxJointDistance": 30.181012063675826,
+        "feet": {
+          "Left": {
+            "pivotMinY": 0.7680141278522026,
+            "toeMinY": -0.5581459309317867,
+            "horizontalRange": [
+              55.62233071346361,
+              38.20509361376695
+            ],
+            "candidateVelocityThresholdInReportedUnits": 1.4173339947558643,
+            "candidateFrames": 5579,
+            "candidateDrift": 0.5768014629319075,
+            "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+          },
+          "Right": {
+            "pivotMinY": 0.7011213167468906,
+            "toeMinY": -0.745421544382235,
+            "horizontalRange": [
+              58.748636867952186,
+              41.32061922735369
+            ],
+            "candidateVelocityThresholdInReportedUnits": 1.4173339947558643,
+            "candidateFrames": 5662,
+            "candidateDrift": 0.5601307859558023,
+            "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+          }
+        }
+      },
+      "meterFullExcludingArtificialFrame0": {
+        "frames": 9206,
+        "sampleHz": 120.00048000192001,
+        "maxSpeed": 6.703478229733424,
+        "maxAcceleration": 784.5887417524617,
+        "peakAccelerationJoint": "RightHandIndex1",
+        "peakAccelerationSample": 7033,
+        "p95Acceleration": 14.873597362307443,
+        "maxStep": 0.05586209513183755,
+        "finite": true,
+        "maxSegmentLengthChange": 9.298117831235686e-16,
+        "kneeFlexionDeg": {
+          "Left": {
+            "min": 28.58430245008097,
+            "max": 120.9930366706891
+          },
+          "Right": {
+            "min": 14.2693949369623,
+            "max": 129.3570018987903
+          }
+        },
+        "trunkTiltDeg": {
+          "min": 0.03120498594711935,
+          "max": 74.503551309918
+        },
+        "pelvisAcceleration": 28.382905091881874,
+        "entryExitMaxJointDistance": 1.703537044922118,
+        "feet": {
+          "Left": {
+            "pivotMinY": 0.043349789432489724,
+            "toeMinY": -0.031503988925513766,
+            "horizontalRange": [
+              3.1395468347907403,
+              2.156448303935462
+            ],
+            "candidateVelocityThresholdInReportedUnits": 0.08,
+            "candidateFrames": 5579,
+            "candidateDrift": 0.03255698177372861,
+            "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+          },
+          "Right": {
+            "pivotMinY": 0.039574091602461496,
+            "toeMinY": -0.04207457365111087,
+            "horizontalRange": [
+              3.316008059374693,
+              2.332301031668752
+            ],
+            "candidateVelocityThresholdInReportedUnits": 0.08,
+            "candidateFrames": 5662,
+            "candidateDrift": 0.0316160220824894,
+            "meaning": "low-speed pivot only; not sole contact or force; ground unknown"
+          }
+        }
+      },
+      "nonCapturedConvenienceJoints": [
+        "LeftFingerBase",
+        "LThumb",
+        "RightFingerBase",
+        "RThumb"
+      ],
+      "missingMeasurement": [
+        "capture timestamps",
+        "forces",
+        "sole patches",
+        "original marker residuals"
+      ],
+      "branches": {}
+    }
+  ],
+  "retargeting": {
+    "A": {
+      "criteria": {
+        "version": 1,
+        "scope": "Engineering triage for slow squat control, not clinical limits",
+        "units": "m",
+        "up": "Y",
+        "sampleHz": 60,
+        "maxPenetrationM": 0.003,
+        "maxSupportGapM": 0.005,
+        "maxCandidateFootDriftM": 0.005,
+        "maxSegmentErrorM": 0.0001,
+        "maxJointSpeedMS": 2,
+        "maxJointAccelerationMS2": 20,
+        "maxRotationStepDeg": 10,
+        "maxJointStepM": 0.05,
+        "kneeFlexionRangeDeg": [
+          0,
+          165
+        ],
+        "maxSymmetryDifferenceDeg": 15,
+        "stanceCandidateSpeedMS": 0.08,
+        "stanceCandidateHeightM": 0.015,
+        "symmetryExpected": false,
+        "contactWindowsReviewed": false,
+        "professionalReview": false,
+        "visualReview": false,
+        "fidelityReview": false,
+        "transitionRecoveryReviewed": false
+      },
+      "sampledMeshes": [
+        {
+          "name": "m026_hipoly_81_bones",
+          "vertices": 22560
+        }
+      ],
+      "excludedMeshes": [
+        "Icosphere"
+      ],
+      "status": "REFUSÉ",
+      "runtimeEnabled": false,
+      "samples": 145,
+      "sourceType": "CMU14_06 licensed control NOT PARISFIT capture",
+      "observedModelGeometry": {
+        "maxSurfacePenetrationM": 0.27795720384356915,
+        "maxFootGapM": 0.05696916501285432,
+        "maxCandidateStanceDriftM": 0.005797758648212117,
+        "candidateFrames": {
+          "L": 2,
+          "R": 37
+        },
+        "maxSegmentErrorM": 3.6254855001471853e-07,
+        "maxJointSpeedMS": 1.4518496614336942,
+        "p95JointSpeedMS": 1.0171600402377705,
+        "maxJointAccelerationMS2": 34.030549049342035,
+        "maxRotationStepDeg": 5.717276253783004,
+        "maxAngularSpeedDegS": 343.0365752269803,
+        "maxJointStepM": 0.024197494357228237,
+        "maxPelvisSpeedMS": 0.987531618796789,
+        "maxPelvisAccelerationMS2": 11.162862262657884,
+        "kneeFlexionDeg": {
+          "L": {
+            "min": 29.96999931994074,
+            "max": 154.42801704403158
+          },
+          "R": {
+            "min": 35.33980130063017,
+            "max": 156.70869732839103
+          }
+        },
+        "geometricAngleRangesDeg": {
+          "L_hipProxy": {
+            "min": 97.14096589066605,
+            "max": 177.15286199946698
+          },
+          "L_elbow": {
+            "min": 20.452160331453655,
+            "max": 69.75783912566372
+          },
+          "L_ankleProxy": {
+            "min": 74.15094493497148,
+            "max": 96.07920811121735
+          },
+          "R_hipProxy": {
+            "min": 71.1908193300836,
+            "max": 128.7082875808032
+          },
+          "R_elbow": {
+            "min": 22.333922748264257,
+            "max": 69.2396077332149
+          },
+          "R_ankleProxy": {
+            "min": 80.50106579346594,
+            "max": 101.20050565642092
+          }
+        },
+        "trunkTiltFromVerticalDeg": {
+          "min": 113.70180769080291,
+          "max": 126.46073339180194
+        },
+        "maxKneeAsymmetryDeg": 10.24586485450385,
+        "entryExitMaxJointGapM": 0.1784028295898695
+      },
+      "estimates": {
+        "COMMethod": "unvalidated fixed segment-midpoint weights .50/.08/.10/.10/.05/.05/.06/.06",
+        "COMOutsideAssumedFootHullFrames": 145,
+        "COMOutsideFootAABBFrames": 115,
+        "collisionCandidateFrames": 0,
+        "contactTruth": "unknown"
+      },
+      "checks": {
+        "floor": {
+          "status": "REFUSÉ",
+          "value": 0.27795720384356915,
+          "limit": 0.003,
+          "scope": "geometric screening only"
+        },
+        "segments": {
+          "status": "VALIDÉ",
+          "value": 3.6254855001471853e-07,
+          "limit": 0.0001,
+          "scope": "geometric screening only"
+        },
+        "speed": {
+          "status": "VALIDÉ",
+          "value": 1.4518496614336942,
+          "limit": 2,
+          "scope": "geometric screening only"
+        },
+        "acceleration": {
+          "status": "REFUSÉ",
+          "value": 34.030549049342035,
+          "limit": 20,
+          "scope": "geometric screening only"
+        },
+        "rotationContinuity": {
+          "status": "VALIDÉ",
+          "value": 5.717276253783004,
+          "limit": 10,
+          "scope": "geometric screening only"
+        },
+        "positionContinuity": {
+          "status": "VALIDÉ",
+          "value": 0.024197494357228237,
+          "limit": 0.05,
+          "scope": "geometric screening only"
+        },
+        "kneeROM": {
+          "status": "VALIDÉ",
+          "scope": "unsigned flexion only; hyperextension/axial rotation not established"
+        },
+        "support": {
+          "status": "EN ATTENTE DE VALIDATION HUMAINE",
+          "reason": "candidate windows and selected skin points are not reviewed contacts",
+          "gapM": 0.05696916501285432,
+          "candidateDriftM": 0.005797758648212117
+        },
+        "balance": {
+          "status": "EN ATTENTE DE VALIDATION HUMAINE",
+          "reason": "COM is heuristic; foot convex hull assumes both contacts unverified, AABB also reported; no forces or balance certification"
+        },
+        "collisions": {
+          "status": "EN ATTENTE DE VALIDATION HUMAINE",
+          "candidateFrames": 0,
+          "reason": "spheres only; exhaustive surface self-collision NON TESTÉ"
+        },
+        "axialTorsion": {
+          "status": "NON TESTÉ",
+          "reason": "anatomical joint frames unqualified; quaternion speed is not anatomical twist"
+        },
+        "symmetry": {
+          "status": "NON TESTÉ",
+          "reason": "do not impose symmetry absent source annotation",
+          "differenceDeg": 10.24586485450385
+        },
+        "transitionRecovery": {
+          "status": "EN ATTENTE DE VALIDATION HUMAINE"
+        },
+        "visual": {
+          "status": "EN ATTENTE DE VALIDATION HUMAINE"
+        },
+        "professional": {
+          "status": "EN ATTENTE DE VALIDATION HUMAINE"
+        },
+        "sourceFidelity": {
+          "status": "EN ATTENTE DE VALIDATION HUMAINE"
+        }
+      },
+      "reviewRequired": true,
+      "limits": [
+        "not medical or professional validation",
+        "input geometry sampled by Blender; independent algorithm is not independent physical evidence",
+        "floor reference and contact patches unqualified",
+        "no automatic corrections"
+      ],
+      "IKSolverResidualMaxM": 0,
+      "IKReachResidualMaxM": 0,
+      "method": "A",
+      "extra": {
+        "sourceDiscreteDynamics": {
+          "maxSpeedMS": 1.3120751152099974,
+          "maxAccelerationMS2": 32.16648799678719,
+          "maxRootAccelerationMS2": 11.162862448340721,
+          "perJointMaxAccelerationMS2": {
+            "Hips": 11.162862448340721,
+            "LowerBack": 11.162862448340721,
+            "Spine": 10.44594197478948,
+            "Spine1": 10.523546732754404,
+            "Neck": 10.523546732754404,
+            "Head": 11.168592001678569,
+            "LeftUpLeg": 12.86714710335425,
+            "LeftLeg": 32.16648799678719,
+            "LeftFoot": 16.354119445062477,
+            "LeftToeBase": 20.957763432885166,
+            "LeftShoulder": 10.523546732754404,
+            "LeftArm": 11.16239929219075,
+            "LeftForeArm": 11.544663075000342,
+            "LeftHand": 10.64905671515205,
+            "RightUpLeg": 13.677593329965875,
+            "RightLeg": 26.101202651756076,
+            "RightFoot": 9.67955415124193,
+            "RightToeBase": 10.5979190920457,
+            "RightShoulder": 10.523546732754404,
+            "RightArm": 9.967396729576713,
+            "RightForeArm": 13.873900750351563,
+            "RightHand": 13.871204360551591
+          },
+          "meaning": "same normalized source positions at 60Hz, without target FK or smoothing"
+        },
+        "sourceTrajectoryProxy": {
+          "rmsM": 0.18715237958930897,
+          "maxM": 0.34352751991749986,
+          "perJoint": {
+            "Pelvis": {
+              "rmsM": 1.3820438129649046e-08,
+              "maxM": 5.972276205135536e-08
+            },
+            "Spine": {
+              "rmsM": 0.12027043748216867,
+              "maxM": 0.12027050810264212
+            },
+            "Spine1": {
+              "rmsM": 0.07956684344789831,
+              "maxM": 0.08101345170198701
+            },
+            "Spine2": {
+              "rmsM": 0.04366639750386621,
+              "maxM": 0.05077205119190697
+            },
+            "Neck": {
+              "rmsM": 0.23522994578832562,
+              "maxM": 0.23677537855428313
+            },
+            "Head": {
+              "rmsM": 0.3420731385922211,
+              "maxM": 0.34352751991749986
+            },
+            "L_Thigh": {
+              "rmsM": 0.1791672810297641,
+              "maxM": 0.17916733462181092
+            },
+            "L_Calf": {
+              "rmsM": 0.1814918238656678,
+              "maxM": 0.18196957393396804
+            },
+            "L_Foot": {
+              "rmsM": 0.1814686648433519,
+              "maxM": 0.1827610801151145
+            },
+            "L_Toe0": {
+              "rmsM": 0.13882188009429097,
+              "maxM": 0.142413294237099
+            },
+            "L_Clavicle": {
+              "rmsM": 0.17928873204458243,
+              "maxM": 0.1883191311129355
+            },
+            "L_UpperArm": {
+              "rmsM": 0.19160199317888013,
+              "maxM": 0.1997654451690797
+            },
+            "L_Forearm": {
+              "rmsM": 0.1926949868629027,
+              "maxM": 0.20085774306848983
+            },
+            "L_Hand": {
+              "rmsM": 0.24562980090797265,
+              "maxM": 0.2667928534880182
+            },
+            "R_Thigh": {
+              "rmsM": 0.13630917271021478,
+              "maxM": 0.1363092593511076
+            },
+            "R_Calf": {
+              "rmsM": 0.14150416775260152,
+              "maxM": 0.14402329336880126
+            },
+            "R_Foot": {
+              "rmsM": 0.1422506671254606,
+              "maxM": 0.14521549184927873
+            },
+            "R_Toe0": {
+              "rmsM": 0.14563436132308613,
+              "maxM": 0.15934311829366485
+            },
+            "R_Clavicle": {
+              "rmsM": 0.19806112434990913,
+              "maxM": 0.20325423790415967
+            },
+            "R_UpperArm": {
+              "rmsM": 0.21741421829795884,
+              "maxM": 0.22197540454306258
+            },
+            "R_Forearm": {
+              "rmsM": 0.21786684344583304,
+              "maxM": 0.2224081426986748
+            },
+            "R_Hand": {
+              "rmsM": 0.27919069742468955,
+              "maxM": 0.28333193899699205
+            }
+          },
+          "meaning": "fixed normalized source pivots vs target pivots; includes morphology and non-equivalent spine pivots; NOT anatomical fidelity"
+        },
+        "torsion": "NON TESTÉ: anatomical axes unavailable",
+        "meshCollision": "NON TESTÉ: only inherited sparse sphere candidates",
+        "smoothing": false,
+        "admission": "REFUSÉ"
+      },
+      "inferredContactFrames": {
+        "L": [],
+        "R": []
+      },
+      "exportSHA256": "fac4d26f57590f99951058c2532d6a96c4195cd8d39fbb797b35b19e3fcb7e7e",
+      "repeatedExportEqual": true
+    },
+    "B": {
+      "criteria": {
+        "version": 1,
+        "scope": "Engineering triage for slow squat control, not clinical limits",
+        "units": "m",
+        "up": "Y",
+        "sampleHz": 60,
+        "maxPenetrationM": 0.003,
+        "maxSupportGapM": 0.005,
+        "maxCandidateFootDriftM": 0.005,
+        "maxSegmentErrorM": 0.0001,
+        "maxJointSpeedMS": 2,
+        "maxJointAccelerationMS2": 20,
+        "maxRotationStepDeg": 10,
+        "maxJointStepM": 0.05,
+        "kneeFlexionRangeDeg": [
+          0,
+          165
+        ],
+        "maxSymmetryDifferenceDeg": 15,
+        "stanceCandidateSpeedMS": 0.08,
+        "stanceCandidateHeightM": 0.015,
+        "symmetryExpected": false,
+        "contactWindowsReviewed": false,
+        "professionalReview": false,
+        "visualReview": false,
+        "fidelityReview": false,
+        "transitionRecoveryReviewed": false
+      },
+      "sampledMeshes": [
+        {
+          "name": "m026_hipoly_81_bones",
+          "vertices": 22560
+        }
+      ],
+      "excludedMeshes": [
+        "Icosphere"
+      ],
+      "status": "REFUSÉ",
+      "runtimeEnabled": false,
+      "samples": 145,
+      "sourceType": "CMU14_06 licensed control NOT PARISFIT capture",
+      "observedModelGeometry": {
+        "maxSurfacePenetrationM": 0.009066371230743941,
+        "maxFootGapM": 0.06223146347915387,
+        "maxCandidateStanceDriftM": 0.007521531111237327,
+        "candidateFrames": {
+          "L": 32,
+          "R": 26
+        },
+        "maxSegmentErrorM": 2.61873426554704e-07,
+        "maxJointSpeedMS": 1.478429078404623,
+        "p95JointSpeedMS": 1.0725736020781664,
+        "maxJointAccelerationMS2": 33.54908968733086,
+        "maxRotationStepDeg": 5.7173179140558785,
+        "maxAngularSpeedDegS": 343.0390748433527,
+        "maxJointStepM": 0.02464048464007705,
+        "maxPelvisSpeedMS": 0.987531618796789,
+        "maxPelvisAccelerationMS2": 11.162862262657884,
+        "kneeFlexionDeg": {
+          "L": {
+            "min": 29.96998368820954,
+            "max": 154.4280440189792
+          },
+          "R": {
+            "min": 35.33981296522117,
+            "max": 156.7086704000622
+          }
+        },
+        "geometricAngleRangesDeg": {
+          "L_hipProxy": {
+            "min": 37.946744827039424,
+            "max": 62.7078498629249
+          },
+          "L_elbow": {
+            "min": 20.452180646777606,
+            "max": 69.75786500189609
+          },
+          "L_ankleProxy": {
+            "min": 74.15095570224693,
+            "max": 96.07921718804914
+          },
+          "R_hipProxy": {
+            "min": 35.6409152942243,
+            "max": 59.53225634554195
+          },
+          "R_elbow": {
+            "min": 22.333938015689796,
+            "max": 69.23964192058183
+          },
+          "R_ankleProxy": {
+            "min": 80.50103637177308,
+            "max": 101.2005008050247
+          }
+        },
+        "trunkTiltFromVerticalDeg": {
+          "min": 7.178365319794904,
+          "max": 24.37638597114844
+        },
+        "maxKneeAsymmetryDeg": 10.245928271618425,
+        "entryExitMaxJointGapM": 0.18132534545539886
+      },
+      "estimates": {
+        "COMMethod": "unvalidated fixed segment-midpoint weights .50/.08/.10/.10/.05/.05/.06/.06",
+        "COMOutsideAssumedFootHullFrames": 145,
+        "COMOutsideFootAABBFrames": 145,
+        "collisionCandidateFrames": 0,
+        "contactTruth": "unknown"
+      },
+      "checks": {
+        "floor": {
+          "status": "REFUSÉ",
+          "value": 0.009066371230743941,
+          "limit": 0.003,
+          "scope": "geometric screening only"
+        },
+        "segments": {
+          "status": "VALIDÉ",
+          "value": 2.61873426554704e-07,
+          "limit": 0.0001,
+          "scope": "geometric screening only"
+        },
+        "speed": {
+          "status": "VALIDÉ",
+          "value": 1.478429078404623,
+          "limit": 2,
+          "scope": "geometric screening only"
+        },
+        "acceleration": {
+          "status": "REFUSÉ",
+          "value": 33.54908968733086,
+          "limit": 20,
+          "scope": "geometric screening only"
+        },
+        "rotationContinuity": {
+          "status": "VALIDÉ",
+          "value": 5.7173179140558785,
+          "limit": 10,
+          "scope": "geometric screening only"
+        },
+        "positionContinuity": {
+          "status": "VALIDÉ",
+          "value": 0.02464048464007705,
+          "limit": 0.05,
+          "scope": "geometric screening only"
+        },
+        "kneeROM": {
+          "status": "VALIDÉ",
+          "scope": "unsigned flexion only; hyperextension/axial rotation not established"
+        },
+        "support": {
+          "status": "EN ATTENTE DE VALIDATION HUMAINE",
+          "reason": "candidate windows and selected skin points are not reviewed contacts",
+          "gapM": 0.06223146347915387,
+          "candidateDriftM": 0.007521531111237327
+        },
+        "balance": {
+          "status": "EN ATTENTE DE VALIDATION HUMAINE",
+          "reason": "COM is heuristic; foot convex hull assumes both contacts unverified, AABB also reported; no forces or balance certification"
+        },
+        "collisions": {
+          "status": "EN ATTENTE DE VALIDATION HUMAINE",
+          "candidateFrames": 0,
+          "reason": "spheres only; exhaustive surface self-collision NON TESTÉ"
+        },
+        "axialTorsion": {
+          "status": "NON TESTÉ",
+          "reason": "anatomical joint frames unqualified; quaternion speed is not anatomical twist"
+        },
+        "symmetry": {
+          "status": "NON TESTÉ",
+          "reason": "do not impose symmetry absent source annotation",
+          "differenceDeg": 10.245928271618425
+        },
+        "transitionRecovery": {
+          "status": "EN ATTENTE DE VALIDATION HUMAINE"
+        },
+        "visual": {
+          "status": "EN ATTENTE DE VALIDATION HUMAINE"
+        },
+        "professional": {
+          "status": "EN ATTENTE DE VALIDATION HUMAINE"
+        },
+        "sourceFidelity": {
+          "status": "EN ATTENTE DE VALIDATION HUMAINE"
+        }
+      },
+      "reviewRequired": true,
+      "limits": [
+        "not medical or professional validation",
+        "input geometry sampled by Blender; independent algorithm is not independent physical evidence",
+        "floor reference and contact patches unqualified",
+        "no automatic corrections"
+      ],
+      "IKSolverResidualMaxM": 0,
+      "IKReachResidualMaxM": 0,
+      "method": "B",
+      "extra": {
+        "sourceDiscreteDynamics": {
+          "maxSpeedMS": 1.3120751152099974,
+          "maxAccelerationMS2": 32.16648799678719,
+          "maxRootAccelerationMS2": 11.162862448340721,
+          "perJointMaxAccelerationMS2": {
+            "Hips": 11.162862448340721,
+            "LowerBack": 11.162862448340721,
+            "Spine": 10.44594197478948,
+            "Spine1": 10.523546732754404,
+            "Neck": 10.523546732754404,
+            "Head": 11.168592001678569,
+            "LeftUpLeg": 12.86714710335425,
+            "LeftLeg": 32.16648799678719,
+            "LeftFoot": 16.354119445062477,
+            "LeftToeBase": 20.957763432885166,
+            "LeftShoulder": 10.523546732754404,
+            "LeftArm": 11.16239929219075,
+            "LeftForeArm": 11.544663075000342,
+            "LeftHand": 10.64905671515205,
+            "RightUpLeg": 13.677593329965875,
+            "RightLeg": 26.101202651756076,
+            "RightFoot": 9.67955415124193,
+            "RightToeBase": 10.5979190920457,
+            "RightShoulder": 10.523546732754404,
+            "RightArm": 9.967396729576713,
+            "RightForeArm": 13.873900750351563,
+            "RightHand": 13.871204360551591
+          },
+          "meaning": "same normalized source positions at 60Hz, without target FK or smoothing"
+        },
+        "sourceTrajectoryProxy": {
+          "rmsM": 0.21603210952606275,
+          "maxM": 0.4032217096744573,
+          "perJoint": {
+            "Pelvis": {
+              "rmsM": 1.3820438129649046e-08,
+              "maxM": 5.972276205135536e-08
+            },
+            "Spine": {
+              "rmsM": 0.12027042281910265,
+              "maxM": 0.12027047963640786
+            },
+            "Spine1": {
+              "rmsM": 0.16088195024438323,
+              "maxM": 0.16208415366013984
+            },
+            "Spine2": {
+              "rmsM": 0.2031245454044644,
+              "maxM": 0.20402777621687476
+            },
+            "Neck": {
+              "rmsM": 0.4015760275488849,
+              "maxM": 0.4032217096744573
+            },
+            "Head": {
+              "rmsM": 0.2953288430618964,
+              "maxM": 0.30323729017617546
+            },
+            "L_Thigh": {
+              "rmsM": 0.10524388885409967,
+              "maxM": 0.10524398523330007
+            },
+            "L_Calf": {
+              "rmsM": 0.10725087566953988,
+              "maxM": 0.10807247779488527
+            },
+            "L_Foot": {
+              "rmsM": 0.10567658201481037,
+              "maxM": 0.10631809652005317
+            },
+            "L_Toe0": {
+              "rmsM": 0.07624303197906615,
+              "maxM": 0.08758389355441468
+            },
+            "L_Clavicle": {
+              "rmsM": 0.35124928396021465,
+              "maxM": 0.3528083825555547
+            },
+            "L_UpperArm": {
+              "rmsM": 0.27157183031115756,
+              "maxM": 0.27359320153939826
+            },
+            "L_Forearm": {
+              "rmsM": 0.2704239911883063,
+              "maxM": 0.2724349192092938
+            },
+            "L_Hand": {
+              "rmsM": 0.21877062462334784,
+              "maxM": 0.2448833012295093
+            },
+            "R_Thigh": {
+              "rmsM": 0.10168705680866107,
+              "maxM": 0.10168719130077507
+            },
+            "R_Calf": {
+              "rmsM": 0.11026384979587849,
+              "maxM": 0.1140323680071377
+            },
+            "R_Foot": {
+              "rmsM": 0.11110234442442178,
+              "maxM": 0.11525363944495899
+            },
+            "R_Toe0": {
+              "rmsM": 0.0815983653547268,
+              "maxM": 0.10179920906302747
+            },
+            "R_Clavicle": {
+              "rmsM": 0.3458972458508272,
+              "maxM": 0.34781330397856824
+            },
+            "R_UpperArm": {
+              "rmsM": 0.2591090449772116,
+              "maxM": 0.26088733712115497
+            },
+            "R_Forearm": {
+              "rmsM": 0.25854512095662363,
+              "maxM": 0.260314188327235
+            },
+            "R_Hand": {
+              "rmsM": 0.2093853311635901,
+              "maxM": 0.24093267807713972
+            }
+          },
+          "meaning": "fixed normalized source pivots vs target pivots; includes morphology and non-equivalent spine pivots; NOT anatomical fidelity"
+        },
+        "torsion": "NON TESTÉ: anatomical axes unavailable",
+        "meshCollision": "NON TESTÉ: only inherited sparse sphere candidates",
+        "smoothing": false,
+        "admission": "REFUSÉ"
+      },
+      "inferredContactFrames": {
+        "L": [],
+        "R": []
+      },
+      "exportSHA256": "4cbf75c4f259f5fbf0bd8b52c301fa522dbcf044056888add13eab20199c9d07",
+      "repeatedExportEqual": true
+    },
+    "C": {
+      "criteria": {
+        "version": 1,
+        "scope": "Engineering triage for slow squat control, not clinical limits",
+        "units": "m",
+        "up": "Y",
+        "sampleHz": 60,
+        "maxPenetrationM": 0.003,
+        "maxSupportGapM": 0.005,
+        "maxCandidateFootDriftM": 0.005,
+        "maxSegmentErrorM": 0.0001,
+        "maxJointSpeedMS": 2,
+        "maxJointAccelerationMS2": 20,
+        "maxRotationStepDeg": 10,
+        "maxJointStepM": 0.05,
+        "kneeFlexionRangeDeg": [
+          0,
+          165
+        ],
+        "maxSymmetryDifferenceDeg": 15,
+        "stanceCandidateSpeedMS": 0.08,
+        "stanceCandidateHeightM": 0.015,
+        "symmetryExpected": false,
+        "contactWindowsReviewed": false,
+        "professionalReview": false,
+        "visualReview": false,
+        "fidelityReview": false,
+        "transitionRecoveryReviewed": false
+      },
+      "sampledMeshes": [
+        {
+          "name": "m026_hipoly_81_bones",
+          "vertices": 22560
+        }
+      ],
+      "excludedMeshes": [
+        "Icosphere"
+      ],
+      "status": "REFUSÉ",
+      "runtimeEnabled": false,
+      "samples": 145,
+      "sourceType": "CMU14_06 licensed control NOT PARISFIT capture",
+      "observedModelGeometry": {
+        "maxSurfacePenetrationM": 0.008656138695968707,
+        "maxFootGapM": 0.06468103312661344,
+        "maxCandidateStanceDriftM": 0.0027008603564781897,
+        "candidateFrames": {
+          "L": 24,
+          "R": 21
+        },
+        "maxSegmentErrorM": 3.226086532914785e-07,
+        "maxJointSpeedMS": 1.6500862355505583,
+        "p95JointSpeedMS": 1.0748140905731538,
+        "maxJointAccelerationMS2": 186.2923550250145,
+        "maxRotationStepDeg": 6.081590044360574,
+        "maxAngularSpeedDegS": 364.8954026616344,
+        "maxJointStepM": 0.027501437259175972,
+        "maxPelvisSpeedMS": 0.987531618796789,
+        "maxPelvisAccelerationMS2": 11.162862262657884,
+        "kneeFlexionDeg": {
+          "L": {
+            "min": 29.727594428143192,
+            "max": 154.6276320714729
+          },
+          "R": {
+            "min": 34.91309560813269,
+            "max": 156.76267228585507
+          }
+        },
+        "geometricAngleRangesDeg": {
+          "L_hipProxy": {
+            "min": 37.98810695235534,
+            "max": 63.5332267788351
+          },
+          "L_elbow": {
+            "min": 20.452182460992532,
+            "max": 69.75784720524744
+          },
+          "L_ankleProxy": {
+            "min": 74.15095493875184,
+            "max": 96.07922428064307
+          },
+          "R_hipProxy": {
+            "min": 35.76409738993772,
+            "max": 62.145177452798364
+          },
+          "R_elbow": {
+            "min": 22.333929360163182,
+            "max": 69.23963685639723
+          },
+          "R_ankleProxy": {
+            "min": 80.50104540741206,
+            "max": 101.20050263035986
+          }
+        },
+        "trunkTiltFromVerticalDeg": {
+          "min": 7.178365277246315,
+          "max": 24.37638597114844
+        },
+        "maxKneeAsymmetryDeg": 10.24099064756922,
+        "entryExitMaxJointGapM": 0.18132538634493411
+      },
+      "estimates": {
+        "COMMethod": "unvalidated fixed segment-midpoint weights .50/.08/.10/.10/.05/.05/.06/.06",
+        "COMOutsideAssumedFootHullFrames": 145,
+        "COMOutsideFootAABBFrames": 145,
+        "collisionCandidateFrames": 0,
+        "contactTruth": "unknown"
+      },
+      "checks": {
+        "floor": {
+          "status": "REFUSÉ",
+          "value": 0.008656138695968707,
+          "limit": 0.003,
+          "scope": "geometric screening only"
+        },
+        "segments": {
+          "status": "VALIDÉ",
+          "value": 3.226086532914785e-07,
+          "limit": 0.0001,
+          "scope": "geometric screening only"
+        },
+        "speed": {
+          "status": "VALIDÉ",
+          "value": 1.6500862355505583,
+          "limit": 2,
+          "scope": "geometric screening only"
+        },
+        "acceleration": {
+          "status": "REFUSÉ",
+          "value": 186.2923550250145,
+          "limit": 20,
+          "scope": "geometric screening only"
+        },
+        "rotationContinuity": {
+          "status": "VALIDÉ",
+          "value": 6.081590044360574,
+          "limit": 10,
+          "scope": "geometric screening only"
+        },
+        "positionContinuity": {
+          "status": "VALIDÉ",
+          "value": 0.027501437259175972,
+          "limit": 0.05,
+          "scope": "geometric screening only"
+        },
+        "kneeROM": {
+          "status": "VALIDÉ",
+          "scope": "unsigned flexion only; hyperextension/axial rotation not established"
+        },
+        "support": {
+          "status": "EN ATTENTE DE VALIDATION HUMAINE",
+          "reason": "candidate windows and selected skin points are not reviewed contacts",
+          "gapM": 0.06468103312661344,
+          "candidateDriftM": 0.0027008603564781897
+        },
+        "balance": {
+          "status": "EN ATTENTE DE VALIDATION HUMAINE",
+          "reason": "COM is heuristic; foot convex hull assumes both contacts unverified, AABB also reported; no forces or balance certification"
+        },
+        "collisions": {
+          "status": "EN ATTENTE DE VALIDATION HUMAINE",
+          "candidateFrames": 0,
+          "reason": "spheres only; exhaustive surface self-collision NON TESTÉ"
+        },
+        "axialTorsion": {
+          "status": "NON TESTÉ",
+          "reason": "anatomical joint frames unqualified; quaternion speed is not anatomical twist"
+        },
+        "symmetry": {
+          "status": "NON TESTÉ",
+          "reason": "do not impose symmetry absent source annotation",
+          "differenceDeg": 10.24099064756922
+        },
+        "transitionRecovery": {
+          "status": "EN ATTENTE DE VALIDATION HUMAINE"
+        },
+        "visual": {
+          "status": "EN ATTENTE DE VALIDATION HUMAINE"
+        },
+        "professional": {
+          "status": "EN ATTENTE DE VALIDATION HUMAINE"
+        },
+        "sourceFidelity": {
+          "status": "EN ATTENTE DE VALIDATION HUMAINE"
+        }
+      },
+      "reviewRequired": true,
+      "limits": [
+        "not medical or professional validation",
+        "input geometry sampled by Blender; independent algorithm is not independent physical evidence",
+        "floor reference and contact patches unqualified",
+        "no automatic corrections"
+      ],
+      "IKSolverResidualMaxM": 2.8361180887631e-07,
+      "IKReachResidualMaxM": 0.0,
+      "method": "C",
+      "extra": {
+        "sourceDiscreteDynamics": {
+          "maxSpeedMS": 1.3120751152099974,
+          "maxAccelerationMS2": 32.16648799678719,
+          "maxRootAccelerationMS2": 11.162862448340721,
+          "perJointMaxAccelerationMS2": {
+            "Hips": 11.162862448340721,
+            "LowerBack": 11.162862448340721,
+            "Spine": 10.44594197478948,
+            "Spine1": 10.523546732754404,
+            "Neck": 10.523546732754404,
+            "Head": 11.168592001678569,
+            "LeftUpLeg": 12.86714710335425,
+            "LeftLeg": 32.16648799678719,
+            "LeftFoot": 16.354119445062477,
+            "LeftToeBase": 20.957763432885166,
+            "LeftShoulder": 10.523546732754404,
+            "LeftArm": 11.16239929219075,
+            "LeftForeArm": 11.544663075000342,
+            "LeftHand": 10.64905671515205,
+            "RightUpLeg": 13.677593329965875,
+            "RightLeg": 26.101202651756076,
+            "RightFoot": 9.67955415124193,
+            "RightToeBase": 10.5979190920457,
+            "RightShoulder": 10.523546732754404,
+            "RightArm": 9.967396729576713,
+            "RightForeArm": 13.873900750351563,
+            "RightHand": 13.871204360551591
+          },
+          "meaning": "same normalized source positions at 60Hz, without target FK or smoothing"
+        },
+        "sourceTrajectoryProxy": {
+          "rmsM": 0.21617697995695784,
+          "maxM": 0.4032217096744573,
+          "perJoint": {
+            "Pelvis": {
+              "rmsM": 1.3820438129649046e-08,
+              "maxM": 5.972276205135536e-08
+            },
+            "Spine": {
+              "rmsM": 0.12027042274618778,
+              "maxM": 0.12027047891968654
+            },
+            "Spine1": {
+              "rmsM": 0.16088195022016424,
+              "maxM": 0.16208415239867624
+            },
+            "Spine2": {
+              "rmsM": 0.20312454412432304,
+              "maxM": 0.20402777621687476
+            },
+            "Neck": {
+              "rmsM": 0.40157602838447787,
+              "maxM": 0.4032217096744573
+            },
+            "Head": {
+              "rmsM": 0.29532883928743614,
+              "maxM": 0.30323729017617546
+            },
+            "L_Thigh": {
+              "rmsM": 0.10524388880325607,
+              "maxM": 0.10524398520277192
+            },
+            "L_Calf": {
+              "rmsM": 0.10904142713764318,
+              "maxM": 0.11717839591439652
+            },
+            "L_Foot": {
+              "rmsM": 0.10528146463263452,
+              "maxM": 0.10655819734105813
+            },
+            "L_Toe0": {
+              "rmsM": 0.07744223140390909,
+              "maxM": 0.08815387074496077
+            },
+            "L_Clavicle": {
+              "rmsM": 0.35124928358336077,
+              "maxM": 0.3528083825555547
+            },
+            "L_UpperArm": {
+              "rmsM": 0.27157182796799983,
+              "maxM": 0.27359320153939826
+            },
+            "L_Forearm": {
+              "rmsM": 0.2704239888370479,
+              "maxM": 0.2724349197279696
+            },
+            "L_Hand": {
+              "rmsM": 0.21877062030020622,
+              "maxM": 0.24488321456983378
+            },
+            "R_Thigh": {
+              "rmsM": 0.10168705682403964,
+              "maxM": 0.10168719130077507
+            },
+            "R_Calf": {
+              "rmsM": 0.11333011505075094,
+              "maxM": 0.12672911318003902
+            },
+            "R_Foot": {
+              "rmsM": 0.11047628801826077,
+              "maxM": 0.11527697673339754
+            },
+            "R_Toe0": {
+              "rmsM": 0.08367026531526657,
+              "maxM": 0.10323860895777517
+            },
+            "R_Clavicle": {
+              "rmsM": 0.3458972449419984,
+              "maxM": 0.34781330397856824
+            },
+            "R_UpperArm": {
+              "rmsM": 0.2591090434761079,
+              "maxM": 0.26088733712115497
+            },
+            "R_Forearm": {
+              "rmsM": 0.2585451185022682,
+              "maxM": 0.260314188327235
+            },
+            "R_Hand": {
+              "rmsM": 0.20938532667665846,
+              "maxM": 0.2409326980875932
+            }
+          },
+          "meaning": "fixed normalized source pivots vs target pivots; includes morphology and non-equivalent spine pivots; NOT anatomical fidelity"
+        },
+        "torsion": "NON TESTÉ: anatomical axes unavailable",
+        "meshCollision": "NON TESTÉ: only inherited sparse sphere candidates",
+        "smoothing": false,
+        "admission": "REFUSÉ"
+      },
+      "inferredContactFrames": {
+        "L": [
+          1,
+          2,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          23,
+          25,
+          26,
+          27,
+          29,
+          30,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          79,
+          80,
+          81,
+          82,
+          83,
+          92,
+          94,
+          97,
+          98,
+          99,
+          100,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          111,
+          137,
+          138,
+          139,
+          142,
+          143,
+          144
+        ],
+        "R": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          22,
+          23,
+          24,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          83,
+          84,
+          85,
+          86,
+          87,
+          89,
+          92,
+          96,
+          97,
+          100,
+          101,
+          102,
+          139,
+          141,
+          142,
+          144
+        ]
+      },
+      "exportSHA256": "c82a3b8061d38c1a548c5e7816fe47b6f5f4fae214f47266348012e1c290ccad",
+      "repeatedExportEqual": true
+    }
+  }
+}

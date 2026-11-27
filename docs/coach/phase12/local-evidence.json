@@ -1,0 +1,53 @@
+{
+  "status": "VALID\u00c9",
+  "scope": "local numerical execution + generated/decoded previews, NOT full visual or professional approval",
+  "python": "3.11.2",
+  "numpy": "1.26.4",
+  "pillow": "13.0.0",
+  "ffmpeg": "imageio_ffmpeg bundled9.0.2",
+  "inputSHA256": "e75bcdec4d6fdeac91571020d0b75d45cd4b2532113e699f465b5b297373ac05",
+  "files": {
+    "local-benchmark.json": "854eae0078a66457f5e289c4f9f99858f063d26882f2e62bacdaf04676fb517e",
+    "downloads.json": "3f522c0c759b3a16fcb9ae4a1b2fb4185caa457e9e1b78dce18f3b1285629422",
+    "previews/filtered_only_m-143.png": "0a5c1eb3015dca8e5d359f598ac3e0bd6138c4c13edefeb2faa9dc3bfa318788",
+    "previews/filtered_only_m.mp4": "d84145fead1d2192974581dbfb6a7383dec6c6c8e138a16997890273d40a7ffc",
+    "previews/historical_normalized60_m-72.png": "634174c2e2c0710c41933ca6e7ebd204dca6ff0b99c41b87552df172136b4274",
+    "previews/historical_normalized60_m.mp4": "f12dafc52f1bab1ccd370eb510eaf8875e418b4e083b02382520d3353ea6209b",
+    "previews/native_m-0.png": "46b6cbf250e51832dd22d3e6e11123a39b4d61bca3e2aa0c3577f95e8042721f",
+    "previews/native_m-144.png": "16147b8e7a7a938a59b2bb466d410a77a5fc060b06f4836f9c0cfc90b2101052",
+    "previews/native_m-287.png": "ef636234d95ea37bb86d261aa9847e5980abcef454574cf27bba55c3d52c4f95",
+    "previews/native_m.mp4": "18b48fc8380aefb079b8665fff9a048651517432ee1d0b633f6ff08a1bb39e1e",
+    "previews/overlay.png": "3a2ab44f1a44b961d3b7d03e2b12b691f27258e26c6366a61a7db2bb6eac5c39",
+    "previews/resampled_channels60_m.mp4": "9d40900afc86e06c2413bfec29dbc600e0082f1dda3f5f3dad7a9dceb1468c22"
+  },
+  "videoDecoding": {
+    "status": "VALID\u00c9",
+    "scope": "render and complete decode only, NOT visual/professional approval",
+    "videos": [
+      {
+        "file": "native_m.mp4",
+        "frames": 288,
+        "seconds": 2.39999,
+        "sha256": "18b48fc8380aefb079b8665fff9a048651517432ee1d0b633f6ff08a1bb39e1e"
+      },
+      {
+        "file": "filtered_only_m.mp4",
+        "frames": 286,
+        "seconds": 2.383324,
+        "sha256": "d84145fead1d2192974581dbfb6a7383dec6c6c8e138a16997890273d40a7ffc"
+      },
+      {
+        "file": "resampled_channels60_m.mp4",
+        "frames": 145,
+        "seconds": 2.416667,
+        "sha256": "9d40900afc86e06c2413bfec29dbc600e0082f1dda3f5f3dad7a9dceb1468c22"
+      },
+      {
+        "file": "historical_normalized60_m.mp4",
+        "frames": 145,
+        "seconds": 2.416667,
+        "sha256": "f12dafc52f1bab1ccd370eb510eaf8875e418b4e083b02382520d3353ea6209b"
+      }
+    ]
+  }
+}

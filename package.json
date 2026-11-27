@@ -4,12 +4,13 @@
   "version": "0.1.0",
   "description": "Static PARISFIT app; dependencies are development and asset-authoring tools only",
   "scripts": {
-    "test": "node --check app.js && node --check demo-data.js && node --check service-worker.js && node --input-type=module --check < coach-3d.js && node --input-type=module --check < coach-content.js && node tests/coach-asset.cjs && node tests/coach-evidence.cjs && node tests/coach-transition-evidence.cjs && node tests/coach-transition-gate.cjs && node tests/coach-contact-evidence.cjs && node tests/coach-mocap-evidence.cjs && node tests/coach-cmu-evidence.cjs && node tests/coach-production-pipeline.cjs && node tests/coach-capture-readiness.cjs && node tests/coach-blender-evidence.cjs && node tests/coach-biomechanics-evidence.cjs && node tests/coach-anatomy-evidence.cjs",
+    "test": "node --check app.js && node --check demo-data.js && node --check service-worker.js && node --input-type=module --check < coach-3d.js && node --input-type=module --check < coach-content.js && node tests/coach-asset.cjs && node tests/coach-evidence.cjs && node tests/coach-transition-evidence.cjs && node tests/coach-transition-gate.cjs && node tests/coach-contact-evidence.cjs && node tests/coach-mocap-evidence.cjs && node tests/coach-cmu-evidence.cjs && node tests/coach-production-pipeline.cjs && node tests/coach-capture-readiness.cjs && node tests/coach-blender-evidence.cjs && node tests/coach-biomechanics-evidence.cjs && node tests/coach-anatomy-evidence.cjs && node tests/coach-source-qualification.cjs",
     "test:browser": "node tests/smoke.cjs && node tests/coach-browser.cjs && node tests/coach-fallback.cjs && node tests/coach-trajectories.cjs && node tests/coach-mobile.cjs && node tests/coach-gallery.cjs && node tests/coach-camera.cjs && node tests/coach-transitions.cjs && node tests/coach-transition-gallery.cjs && node tests/coach-contact-audit.cjs && node tests/coach-contact-gallery.cjs && node tests/coach-mocap-prototype.cjs && node tests/coach-mocap-gallery.cjs && node tests/coach-cmu-calibrated.cjs && node tests/coach-cmu-player.cjs && node tests/coach-production-gallery.cjs",
     "test:pipeline": "python3 tools/animation-pipeline/test_gate.py",
     "test:capture": "python3 tools/capture-pipeline/test_intake.py && node tests/coach-capture-readiness.cjs && python3 tools/capture-pipeline/test_permissions.py",
     "test:biomechanics": "python3 tools/biomechanics/test_contracts.py",
-    "test:anatomy": "python3 tools/anatomy/test_metrics.py && node tests/coach-anatomy-evidence.cjs"
+    "test:anatomy": "python3 tools/anatomy/test_metrics.py && node tests/coach-anatomy-evidence.cjs",
+    "test:sources": "node tests/coach-source-qualification.cjs"
   },
   "devDependencies": {
     "@playwright/test": "1.65.1",

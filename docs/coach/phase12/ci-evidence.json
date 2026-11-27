@@ -1,0 +1,14 @@
+{
+  "run": "46084715860",
+  "check": "140791476104",
+  "commit": "8c162c94ea63b13a6981a8dbd5960f92641f5276",
+  "reports": {
+    "marker-preview.png": "d45692aeba7ab6b800367e7fa05c4ab1c146c837ef00463ff2c8a067d67a836b",
+    "marker-benchmark.json": "eccb1808bea6c99e66f72e9eeace95e09d717cf9828ab7890d58099e7c196fee",
+    "original-analysis.json": "34d982cc65436929593961790e2bfd9edda6d5dde0f5ba2f6e5a837a0d8dfd51",
+    "visual-report.json": "c494be14dfd1fb2fe821bdf54d0017b428a9cf3cc0900a5f8c7b96b82b75ad06",
+    "original-retrieval.json": "68d6f4353da2b77509bb21c601fac55ab0a01663b19ce09c685de8b839df6403",
+    "14_06-report.json": "1250317d349ff4e7af3107f25c28d1d4b963ccc3ff0804297b24a35429629bd6"
+  },
+  "scope": "CI source qualification; source and motion approval are separate"
+}
