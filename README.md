@@ -9,6 +9,7 @@ Compagnon numérique dédié au sport, au fitness, à la nutrition, au bien-êtr
 - [Cahier des charges](CAHIER_DES_CHARGES.md)
 - [Prompt maître](PROMPT_MAITRE.md)
 - [Architecture initiale](ARCHITECTURE.md)
+- [Modèle logique des données](DATA_MODEL.md)
 - [Feuille de route](ROADMAP.md)
 
 ## Lancer
