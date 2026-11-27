@@ -191,3 +191,25 @@
 .coach-entry-copy small{font-size:9px;color:#718078;line-height:1.4}
 .coach-entry-card button{border:0;border-radius:9px;background:var(--g);color:#fff;padding:11px 13px;font-size:10px;font-weight:800;white-space:nowrap}
 @media(max-width:720px){.coach-entry-card{gap:10px;padding:12px}.coach-entry-visual{width:42px;height:42px;font-size:23px}.coach-entry-copy strong{font-size:12px}.coach-entry-copy small{font-size:8px}.coach-entry-card button{padding:10px 9px;font-size:9px}}
+
+/* Coach IA 3D — scène Three.js responsive */
+.coach-stage-visual{position:relative;min-height:320px;background:radial-gradient(ellipse at 50% 40%,#fff 0%,#edf5ef 72%,#e6f0e8 100%);overflow:hidden;isolation:isolate}
+.coach-stage-visual canvas{display:block;width:100%;height:100%;min-height:320px;outline:none;touch-action:pan-y}
+.coach-stage-visual .coach-3d-fallback{height:320px;display:grid;place-items:center}
+.coach-3d-status{position:absolute;left:12px;top:12px;z-index:2;border:1px solid #dce9df;background:#ffffffdf;color:#1d5b45;border-radius:20px;padding:7px 10px;font-size:8px;font-weight:900;letter-spacing:1px;backdrop-filter:blur(8px)}
+.coach-3d-status:before{content:"";display:inline-block;width:6px;height:6px;margin-right:6px;border-radius:50%;background:#20b879}
+.coach-3d-hint{position:absolute;right:12px;bottom:10px;z-index:2;border-radius:8px;background:#ffffffd9;color:#60756a;padding:6px 8px;font-size:8px;pointer-events:none}
+.coach-stage-controls{flex-wrap:wrap}
+.coach-stage-controls button{min-height:40px}
+.coach-3d-fallback .fallback-human{position:relative;width:90px;height:230px}
+.fallback-human span{position:absolute;display:block;background:#1d5b45}
+.fallback-head{width:30px;height:30px;border-radius:50%;top:0;left:30px;background:#d99a72!important}
+.fallback-torso{width:42px;height:83px;top:35px;left:24px;border-radius:18px}
+.fallback-arm{width:13px;height:70px;top:43px;border-radius:10px;transform-origin:top}
+.fallback-arm.left{left:18px;transform:rotate(25deg);background:#d99a72}
+.fallback-arm.right{right:18px;transform:rotate(-25deg);background:#d99a72}
+.fallback-leg{width:17px;height:95px;top:111px;border-radius:10px;transform-origin:top}
+.fallback-leg.left{left:28px;transform:rotate(5deg)}
+.fallback-leg.right{right:28px;transform:rotate(-5deg)}
+@media(max-width:720px){.coach-stage-visual{min-height:300px}.coach-stage-visual canvas{min-height:300px}.coach-stage-controls{display:grid;grid-template-columns:1fr 1.15fr 1fr 1fr}.coach-stage-controls button{padding:9px 3px;font-size:8px}.coach-stage-main{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.coach-stage-visual canvas{animation:none}}
