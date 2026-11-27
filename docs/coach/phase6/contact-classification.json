@@ -1,0 +1,2079 @@
+{
+  "sampleHz": 60,
+  "thresholds": {
+    "stanceHeightM": 0.015,
+    "stanceSpeedMS": 0.08,
+    "airCandidateHeightM": 0.04,
+    "minWindowSeconds": 0.15
+  },
+  "method": "Toe-joint proxy height and horizontal speed, median ground from first 0.2 s; feet not video-verified; no correction for uncertain/moving/air-candidate samples",
+  "frames": [
+    {
+      "time": 0,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.007268295408428993,
+      "horizontalSpeedMS": 0.045693778609168414
+    },
+    {
+      "time": 0.016666666666666666,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0064463746960232715,
+      "horizontalSpeedMS": 0.025811620477394055
+    },
+    {
+      "time": 0.03333333333333333,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.004677737371293622,
+      "horizontalSpeedMS": 0.04312389168299267
+    },
+    {
+      "time": 0.05,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.002445278826976205,
+      "horizontalSpeedMS": 0.04360817004059564
+    },
+    {
+      "time": 0.06666666666666667,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0007340699446179988,
+      "horizontalSpeedMS": 0.027960713755638307
+    },
+    {
+      "time": 0.08333333333333333,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.00015130089048320805,
+      "horizontalSpeedMS": 0.04454104690093223
+    },
+    {
+      "time": 0.1,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": -0.00015084095578299372,
+      "horizontalSpeedMS": 0.029795017649339096
+    },
+    {
+      "time": 0.11666666666666667,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0004612394103126194,
+      "horizontalSpeedMS": 0.02671750036549308
+    },
+    {
+      "time": 0.13333333333333333,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": -0.00042269526692040316,
+      "horizontalSpeedMS": 0.017461940383518528
+    },
+    {
+      "time": 0.15,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0003936225500315027,
+      "horizontalSpeedMS": 0.0010986703650184431
+    },
+    {
+      "time": 0.16666666666666666,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0,
+      "horizontalSpeedMS": 0.008813967738515487
+    },
+    {
+      "time": 0.18333333333333332,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": -0.000496031233059635,
+      "horizontalSpeedMS": 0.010860810788610741
+    },
+    {
+      "time": 0.2,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0003731050595562335,
+      "horizontalSpeedMS": 0.011902298502340676
+    },
+    {
+      "time": 0.21666666666666667,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0005028942526881242,
+      "horizontalSpeedMS": 0.0036057637187856917
+    },
+    {
+      "time": 0.23333333333333334,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0004037744154025136,
+      "horizontalSpeedMS": 0.012624992388539504
+    },
+    {
+      "time": 0.25,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": -0.00019134017934452352,
+      "horizontalSpeedMS": 0.009697882592629867
+    },
+    {
+      "time": 0.26666666666666666,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0004895940959599443,
+      "horizontalSpeedMS": 0.03912553381475584
+    },
+    {
+      "time": 0.2833333333333333,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.00022988321379013854,
+      "horizontalSpeedMS": 0.02635261311247868
+    },
+    {
+      "time": 0.3,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0004790312110433126,
+      "horizontalSpeedMS": 0.0221964349188143
+    },
+    {
+      "time": 0.31666666666666665,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0006966637790402075,
+      "horizontalSpeedMS": 0.04329859259481081
+    },
+    {
+      "time": 0.3333333333333333,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.000789876630812425,
+      "horizontalSpeedMS": 0.057622724941976934
+    },
+    {
+      "time": 0.35,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0010761885193861787,
+      "horizontalSpeedMS": 0.0620612080667065
+    },
+    {
+      "time": 0.36666666666666664,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0010928880451314127,
+      "horizontalSpeedMS": 0.053176285804899914
+    },
+    {
+      "time": 0.38333333333333336,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0008661435369097248,
+      "horizontalSpeedMS": 0.05161341877911582
+    },
+    {
+      "time": 0.4,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0013221973600541226,
+      "horizontalSpeedMS": 0.0583658027243665
+    },
+    {
+      "time": 0.4166666666666667,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0015889086609655045,
+      "horizontalSpeedMS": 0.047382875237226646
+    },
+    {
+      "time": 0.43333333333333335,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.001475144140259177,
+      "horizontalSpeedMS": 0.05156545087378437
+    },
+    {
+      "time": 0.45,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.001522164236551271,
+      "horizontalSpeedMS": 0.07510409910452104
+    },
+    {
+      "time": 0.4666666666666667,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0009060570000044565,
+      "horizontalSpeedMS": 0.0390211186661468
+    },
+    {
+      "time": 0.48333333333333334,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0009950972592479568,
+      "horizontalSpeedMS": 0.01765809620578643
+    },
+    {
+      "time": 0.5,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0011179587122326362,
+      "horizontalSpeedMS": 0.06023955647373299
+    },
+    {
+      "time": 0.5166666666666667,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.000997249200346051,
+      "horizontalSpeedMS": 0.08319637354493785
+    },
+    {
+      "time": 0.5333333333333333,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0015041700612359321,
+      "horizontalSpeedMS": 0.07469900149960063
+    },
+    {
+      "time": 0.55,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0006761286724484838,
+      "horizontalSpeedMS": 0.06277579513151157
+    },
+    {
+      "time": 0.5666666666666667,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 8.028262443737777e-05,
+      "horizontalSpeedMS": 0.037113611037249195
+    },
+    {
+      "time": 0.5833333333333334,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0008970860361133814,
+      "horizontalSpeedMS": 0.07517086947543557
+    },
+    {
+      "time": 0.6,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.001620314445498816,
+      "horizontalSpeedMS": 0.19945105817974682
+    },
+    {
+      "time": 0.6166666666666667,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.0036332619546868283,
+      "horizontalSpeedMS": 0.13084206362477702
+    },
+    {
+      "time": 0.6333333333333333,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0027050038199019077,
+      "horizontalSpeedMS": 0.05721079378672084
+    },
+    {
+      "time": 0.65,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.002612911150744468,
+      "horizontalSpeedMS": 0.07269108774789282
+    },
+    {
+      "time": 0.6666666666666666,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.001412895024534233,
+      "horizontalSpeedMS": 0.05897620241642576
+    },
+    {
+      "time": 0.6833333333333333,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.0010376214873153433,
+      "horizontalSpeedMS": 0.09699187312703458
+    },
+    {
+      "time": 0.7,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.0016729967737031393,
+      "horizontalSpeedMS": 0.08440391701923296
+    },
+    {
+      "time": 0.7166666666666667,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.0021835595853365586,
+      "horizontalSpeedMS": 0.09594874114101772
+    },
+    {
+      "time": 0.7333333333333333,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.002622157484875931,
+      "horizontalSpeedMS": 0.08864824183924622
+    },
+    {
+      "time": 0.75,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.003563497619150535,
+      "horizontalSpeedMS": 0.09576361779303395
+    },
+    {
+      "time": 0.7666666666666667,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.004687979872978532,
+      "horizontalSpeedMS": 0.12660685010512734
+    },
+    {
+      "time": 0.7833333333333333,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.004725689428782598,
+      "horizontalSpeedMS": 0.10966990419583364
+    },
+    {
+      "time": 0.8,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.005439441682938195,
+      "horizontalSpeedMS": 0.08238438450063883
+    },
+    {
+      "time": 0.8166666666666667,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.006052363768906499,
+      "horizontalSpeedMS": 0.06852180474498967
+    },
+    {
+      "time": 0.8333333333333334,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.005950862209892938,
+      "horizontalSpeedMS": 0.077831142971596
+    },
+    {
+      "time": 0.85,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.006525441909693619,
+      "horizontalSpeedMS": 0.09210619625195278
+    },
+    {
+      "time": 0.8666666666666667,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.007003611803011012,
+      "horizontalSpeedMS": 0.11026400963896832
+    },
+    {
+      "time": 0.8833333333333333,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.007461960744484464,
+      "horizontalSpeedMS": 0.08949455627876994
+    },
+    {
+      "time": 0.9,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.007727028881932441,
+      "horizontalSpeedMS": 0.09772408313227
+    },
+    {
+      "time": 0.9166666666666666,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.010541645032339897,
+      "horizontalSpeedMS": 0.18409597595617333
+    },
+    {
+      "time": 0.9333333333333333,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.01226248884483594,
+      "horizontalSpeedMS": 0.15197978703705872
+    },
+    {
+      "time": 0.95,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.013963413277986225,
+      "horizontalSpeedMS": 0.15866238939712343
+    },
+    {
+      "time": 0.9666666666666667,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.015616787873943938,
+      "horizontalSpeedMS": 0.19014286259336724
+    },
+    {
+      "time": 0.9833333333333333,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.017271082512275604,
+      "horizontalSpeedMS": 0.15762380895156036
+    },
+    {
+      "time": 1,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.017629078284040145,
+      "horizontalSpeedMS": 0.22548401203124535
+    },
+    {
+      "time": 1.0166666666666666,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.020050552922260323,
+      "horizontalSpeedMS": 0.2770616943403891
+    },
+    {
+      "time": 1.0333333333333334,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.020587924245473288,
+      "horizontalSpeedMS": 0.24960639515103225
+    },
+    {
+      "time": 1.05,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.02292208692463249,
+      "horizontalSpeedMS": 0.21260827148994985
+    },
+    {
+      "time": 1.0666666666666667,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.024527911623563048,
+      "horizontalSpeedMS": 0.13541208877208916
+    },
+    {
+      "time": 1.0833333333333333,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.025050510628769063,
+      "horizontalSpeedMS": 0.1364734788282856
+    },
+    {
+      "time": 1.1,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.026230748410409177,
+      "horizontalSpeedMS": 0.2585081048623925
+    },
+    {
+      "time": 1.1166666666666667,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.028974133414773173,
+      "horizontalSpeedMS": 0.2422799800124548
+    },
+    {
+      "time": 1.1333333333333333,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.030171856623007143,
+      "horizontalSpeedMS": 0.1381293992612734
+    },
+    {
+      "time": 1.15,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.031249755552450575,
+      "horizontalSpeedMS": 0.16232928596380908
+    },
+    {
+      "time": 1.1666666666666667,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.03270827240531071,
+      "horizontalSpeedMS": 0.19319563970615217
+    },
+    {
+      "time": 1.1833333333333333,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.03433963577829591,
+      "horizontalSpeedMS": 0.16571535178309074
+    },
+    {
+      "time": 1.2,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.03538557445915058,
+      "horizontalSpeedMS": 0.09654470531674472
+    },
+    {
+      "time": 1.2166666666666666,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.036046901518468344,
+      "horizontalSpeedMS": 0.062138997918535645
+    },
+    {
+      "time": 1.2333333333333334,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.037123465752551876,
+      "horizontalSpeedMS": 0.030451575338621376
+    },
+    {
+      "time": 1.25,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.03746232284138351,
+      "horizontalSpeedMS": 0.09526124789964725
+    },
+    {
+      "time": 1.2666666666666666,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.03899293191145026,
+      "horizontalSpeedMS": 0.17838345566490152
+    },
+    {
+      "time": 1.2833333333333334,
+      "side": "L",
+      "state": "air_candidate",
+      "toeHeightM": 0.040008953277307135,
+      "horizontalSpeedMS": 0.03759246817281105
+    },
+    {
+      "time": 1.3,
+      "side": "L",
+      "state": "air_candidate",
+      "toeHeightM": 0.040184181711887756,
+      "horizontalSpeedMS": 0.10736873691315234
+    },
+    {
+      "time": 1.3166666666666667,
+      "side": "L",
+      "state": "air_candidate",
+      "toeHeightM": 0.04017843657692888,
+      "horizontalSpeedMS": 0.06375747382406843
+    },
+    {
+      "time": 1.3333333333333333,
+      "side": "L",
+      "state": "air_candidate",
+      "toeHeightM": 0.04024921073236776,
+      "horizontalSpeedMS": 0.031661502429893774
+    },
+    {
+      "time": 1.35,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.039882158866516026,
+      "horizontalSpeedMS": 0.05321315901673113
+    },
+    {
+      "time": 1.3666666666666667,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.038715461413690755,
+      "horizontalSpeedMS": 0.09924116421212474
+    },
+    {
+      "time": 1.3833333333333333,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.038530069392184285,
+      "horizontalSpeedMS": 0.13656018763877265
+    },
+    {
+      "time": 1.4,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.03720864934492818,
+      "horizontalSpeedMS": 0.18709950680700474
+    },
+    {
+      "time": 1.4166666666666667,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.03561714723477338,
+      "horizontalSpeedMS": 0.20221643330682804
+    },
+    {
+      "time": 1.4333333333333333,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.03388856099253801,
+      "horizontalSpeedMS": 0.2845882573024211
+    },
+    {
+      "time": 1.45,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.030914878030093407,
+      "horizontalSpeedMS": 0.3599569594297139
+    },
+    {
+      "time": 1.4666666666666666,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.02788434515622462,
+      "horizontalSpeedMS": 0.2556399542272693
+    },
+    {
+      "time": 1.4833333333333334,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.02710693093006411,
+      "horizontalSpeedMS": 0.2029525352017107
+    },
+    {
+      "time": 1.5,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.024852042012039832,
+      "horizontalSpeedMS": 0.28868261046419574
+    },
+    {
+      "time": 1.5166666666666666,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.022485873477918528,
+      "horizontalSpeedMS": 0.29280152746470645
+    },
+    {
+      "time": 1.5333333333333334,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.019862460254979397,
+      "horizontalSpeedMS": 0.3193199184999544
+    },
+    {
+      "time": 1.55,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.015823648179782768,
+      "horizontalSpeedMS": 0.23213915046953257
+    },
+    {
+      "time": 1.5666666666666667,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.015125959742158135,
+      "horizontalSpeedMS": 0.1101078137491341
+    },
+    {
+      "time": 1.5833333333333333,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.014253606460715829,
+      "horizontalSpeedMS": 0.12342496853682271
+    },
+    {
+      "time": 1.6,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.013468849826263063,
+      "horizontalSpeedMS": 0.12475081133404224
+    },
+    {
+      "time": 1.6166666666666667,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.012354560048816188,
+      "horizontalSpeedMS": 0.12831417854107793
+    },
+    {
+      "time": 1.6333333333333333,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.011559375166051211,
+      "horizontalSpeedMS": 0.08846555467308373
+    },
+    {
+      "time": 1.65,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.01079751569381926,
+      "horizontalSpeedMS": 0.0600711414168214
+    },
+    {
+      "time": 1.6666666666666667,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.01011876211077245,
+      "horizontalSpeedMS": 0.09249306694099524
+    },
+    {
+      "time": 1.6833333333333333,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.009344449191543425,
+      "horizontalSpeedMS": 0.11167297944058018
+    },
+    {
+      "time": 1.7,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.008532285071585988,
+      "horizontalSpeedMS": 0.06864781243375136
+    },
+    {
+      "time": 1.7166666666666666,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.008362218423043521,
+      "horizontalSpeedMS": 0.036109824045287564
+    },
+    {
+      "time": 1.7333333333333334,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.008389901235615227,
+      "horizontalSpeedMS": 0.05490339924353835
+    },
+    {
+      "time": 1.75,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0078600057434568,
+      "horizontalSpeedMS": 0.05867907059779009
+    },
+    {
+      "time": 1.7666666666666666,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0074128124849032195,
+      "horizontalSpeedMS": 0.043375066247145606
+    },
+    {
+      "time": 1.7833333333333334,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.006982350467275689,
+      "horizontalSpeedMS": 0.05764572792154887
+    },
+    {
+      "time": 1.8,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.006484170656887889,
+      "horizontalSpeedMS": 0.0744197787773797
+    },
+    {
+      "time": 1.8166666666666667,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.006622310101237594,
+      "horizontalSpeedMS": 0.09540297195731955
+    },
+    {
+      "time": 1.8333333333333333,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.00682503824417624,
+      "horizontalSpeedMS": 0.051254763836011075
+    },
+    {
+      "time": 1.85,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.006769131801383721,
+      "horizontalSpeedMS": 0.03145319540944367
+    },
+    {
+      "time": 1.8666666666666667,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.006785979240695017,
+      "horizontalSpeedMS": 0.028790579926197733
+    },
+    {
+      "time": 1.8833333333333333,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.006314253420917071,
+      "horizontalSpeedMS": 0.05901696065878198
+    },
+    {
+      "time": 1.9,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.006673226871133586,
+      "horizontalSpeedMS": 0.11706525830368301
+    },
+    {
+      "time": 1.9166666666666667,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.006699290962871585,
+      "horizontalSpeedMS": 0.11147725690513127
+    },
+    {
+      "time": 1.9333333333333333,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.007208211593781488,
+      "horizontalSpeedMS": 0.11891954969536747
+    },
+    {
+      "time": 1.95,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.0069358557005494426,
+      "horizontalSpeedMS": 0.10946148227825049
+    },
+    {
+      "time": 1.9666666666666666,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.007890092779108238,
+      "horizontalSpeedMS": 0.1177483074438169
+    },
+    {
+      "time": 1.9833333333333334,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.008562791658108804,
+      "horizontalSpeedMS": 0.1384870037026678
+    },
+    {
+      "time": 2,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.008143409964832204,
+      "horizontalSpeedMS": 0.12289124833025551
+    },
+    {
+      "time": 2.0166666666666666,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.007833795987185588,
+      "horizontalSpeedMS": 0.11000015441332799
+    },
+    {
+      "time": 2.033333333333333,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.007874607518408183,
+      "horizontalSpeedMS": 0.1336300212893916
+    },
+    {
+      "time": 2.05,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.008246410201641186,
+      "horizontalSpeedMS": 0.11866066019117495
+    },
+    {
+      "time": 2.066666666666667,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.007876051904425085,
+      "horizontalSpeedMS": 0.11351143980971404
+    },
+    {
+      "time": 2.0833333333333335,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.00817641793249635,
+      "horizontalSpeedMS": 0.08291305459462883
+    },
+    {
+      "time": 2.1,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.007500615304919522,
+      "horizontalSpeedMS": 0.05662126735465541
+    },
+    {
+      "time": 2.1166666666666667,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.008220707257464266,
+      "horizontalSpeedMS": 0.05790150326768114
+    },
+    {
+      "time": 2.1333333333333333,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.008364398756606772,
+      "horizontalSpeedMS": 0.07163806508400741
+    },
+    {
+      "time": 2.15,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.007533452151790687,
+      "horizontalSpeedMS": 0.095269679478396
+    },
+    {
+      "time": 2.1666666666666665,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.006342609827493462,
+      "horizontalSpeedMS": 0.031265063293824585
+    },
+    {
+      "time": 2.183333333333333,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.006655611225270253,
+      "horizontalSpeedMS": 0.08266855671916008
+    },
+    {
+      "time": 2.2,
+      "side": "L",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.004668041184713756,
+      "horizontalSpeedMS": 0.11650166226450173
+    },
+    {
+      "time": 2.216666666666667,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0028005196681059052,
+      "horizontalSpeedMS": 0.03756153863076852
+    },
+    {
+      "time": 2.2333333333333334,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0017724788530882885,
+      "horizontalSpeedMS": 0.036600482107996615
+    },
+    {
+      "time": 2.25,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": 8.77327199876321e-05,
+      "horizontalSpeedMS": 0.033342214540396924
+    },
+    {
+      "time": 2.2666666666666666,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": -0.001228512363443901,
+      "horizontalSpeedMS": 0.028446561939064235
+    },
+    {
+      "time": 2.283333333333333,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0012362823435780879,
+      "horizontalSpeedMS": 0.019827386457403787
+    },
+    {
+      "time": 2.3,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0015964766142461118,
+      "horizontalSpeedMS": 0.007028378699760703
+    },
+    {
+      "time": 2.316666666666667,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0008808662866581773,
+      "horizontalSpeedMS": 0.027048324488501294
+    },
+    {
+      "time": 2.3333333333333335,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": -0.00035755619957045237,
+      "horizontalSpeedMS": 0.02126770997078692
+    },
+    {
+      "time": 2.35,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0005309295134325875,
+      "horizontalSpeedMS": 0.018031374152116864
+    },
+    {
+      "time": 2.3666666666666667,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0007642834052797864,
+      "horizontalSpeedMS": 0.01163722515692574
+    },
+    {
+      "time": 2.3833333333333333,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": -0.00036601068318686814,
+      "horizontalSpeedMS": 0.030710299708316596
+    },
+    {
+      "time": 2.4,
+      "side": "L",
+      "state": "stance_candidate",
+      "toeHeightM": -0.000540059071511334,
+      "horizontalSpeedMS": 0.03864179044412723
+    },
+    {
+      "time": 0,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0015714474136375722,
+      "horizontalSpeedMS": 0.016112894732548854
+    },
+    {
+      "time": 0.016666666666666666,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0018903718709981643,
+      "horizontalSpeedMS": 0.01643446641282589
+    },
+    {
+      "time": 0.03333333333333333,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0019745798969964534,
+      "horizontalSpeedMS": 0.024140336336096496
+    },
+    {
+      "time": 0.05,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0014319407437274334,
+      "horizontalSpeedMS": 0.03218081538187027
+    },
+    {
+      "time": 0.06666666666666667,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": -0.000666905265829576,
+      "horizontalSpeedMS": 0.0184501716865684
+    },
+    {
+      "time": 0.08333333333333333,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0007245872920896845,
+      "horizontalSpeedMS": 0.021370750534936537
+    },
+    {
+      "time": 0.1,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0,
+      "horizontalSpeedMS": 0.029459281741766114
+    },
+    {
+      "time": 0.11666666666666667,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.00029922844514584934,
+      "horizontalSpeedMS": 0.01951163222619357
+    },
+    {
+      "time": 0.13333333333333333,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0006981718687569805,
+      "horizontalSpeedMS": 0.018458711502126874
+    },
+    {
+      "time": 0.15,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.001144606049016783,
+      "horizontalSpeedMS": 0.016718677345479344
+    },
+    {
+      "time": 0.16666666666666666,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0009974274241700831,
+      "horizontalSpeedMS": 0.021095823082262495
+    },
+    {
+      "time": 0.18333333333333332,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0013537436014592341,
+      "horizontalSpeedMS": 0.012632108374636884
+    },
+    {
+      "time": 0.2,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0012498786237099546,
+      "horizontalSpeedMS": 0.013162029497322448
+    },
+    {
+      "time": 0.21666666666666667,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0014555652928359697,
+      "horizontalSpeedMS": 0.005992853374653585
+    },
+    {
+      "time": 0.23333333333333334,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0009404158512617,
+      "horizontalSpeedMS": 0.025674853804717023
+    },
+    {
+      "time": 0.25,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0006278148673127815,
+      "horizontalSpeedMS": 0.05351946870411057
+    },
+    {
+      "time": 0.26666666666666666,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0005322522564932264,
+      "horizontalSpeedMS": 0.05304898695088991
+    },
+    {
+      "time": 0.2833333333333333,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.00029457189677961626,
+      "horizontalSpeedMS": 0.0522836973386084
+    },
+    {
+      "time": 0.3,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0008097308323627983,
+      "horizontalSpeedMS": 0.06913160799832294
+    },
+    {
+      "time": 0.31666666666666665,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0007085548667327135,
+      "horizontalSpeedMS": 0.07701631228486472
+    },
+    {
+      "time": 0.3333333333333333,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0005463927930218215,
+      "horizontalSpeedMS": 0.0717527876571658
+    },
+    {
+      "time": 0.35,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.00035537540033314663,
+      "horizontalSpeedMS": 0.053595516920838894
+    },
+    {
+      "time": 0.36666666666666664,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.00020400414855237248,
+      "horizontalSpeedMS": 0.02928067307511373
+    },
+    {
+      "time": 0.38333333333333336,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.00016960004948529672,
+      "horizontalSpeedMS": 0.03446543788214955
+    },
+    {
+      "time": 0.4,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0007696644863257607,
+      "horizontalSpeedMS": 0.042011924093172205
+    },
+    {
+      "time": 0.4166666666666667,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0004590948549002549,
+      "horizontalSpeedMS": 0.04606205014926161
+    },
+    {
+      "time": 0.43333333333333335,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0005526124867442084,
+      "horizontalSpeedMS": 0.05748407102540233
+    },
+    {
+      "time": 0.45,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.0007811465732467937,
+      "horizontalSpeedMS": 0.0847217893746654
+    },
+    {
+      "time": 0.4666666666666667,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0010004735656831132,
+      "horizontalSpeedMS": 0.06550783977003095
+    },
+    {
+      "time": 0.48333333333333334,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0012963648112321868,
+      "horizontalSpeedMS": 0.0400856422557343
+    },
+    {
+      "time": 0.5,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0019350528767192454,
+      "horizontalSpeedMS": 0.05713293328342288
+    },
+    {
+      "time": 0.5166666666666667,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.002017399291969535,
+      "horizontalSpeedMS": 0.06807774617657794
+    },
+    {
+      "time": 0.5333333333333333,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0023002751470396765,
+      "horizontalSpeedMS": 0.07547112001337096
+    },
+    {
+      "time": 0.55,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0017032598073026817,
+      "horizontalSpeedMS": 0.06250831385977713
+    },
+    {
+      "time": 0.5666666666666667,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.001803891701021132,
+      "horizontalSpeedMS": 0.02325916056982782
+    },
+    {
+      "time": 0.5833333333333334,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0020272867808894812,
+      "horizontalSpeedMS": 0.029818069828643677
+    },
+    {
+      "time": 0.6,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0020743465827369745,
+      "horizontalSpeedMS": 0.05132756733080004
+    },
+    {
+      "time": 0.6166666666666667,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.0026048488328141994,
+      "horizontalSpeedMS": 0.09364581150535914
+    },
+    {
+      "time": 0.6333333333333333,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.00261233710633868,
+      "horizontalSpeedMS": 0.12922396965525323
+    },
+    {
+      "time": 0.65,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.002972930142607799,
+      "horizontalSpeedMS": 0.09565017124952493
+    },
+    {
+      "time": 0.6666666666666666,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0028996512626827675,
+      "horizontalSpeedMS": 0.07799137246950617
+    },
+    {
+      "time": 0.6833333333333333,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.0033188174500444756,
+      "horizontalSpeedMS": 0.0848020679692488
+    },
+    {
+      "time": 0.7,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0037465591554243227,
+      "horizontalSpeedMS": 0.05672323264452153
+    },
+    {
+      "time": 0.7166666666666667,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.003601744934257911,
+      "horizontalSpeedMS": 0.05876633002761206
+    },
+    {
+      "time": 0.7333333333333333,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.00426103285249968,
+      "horizontalSpeedMS": 0.05659731862716361
+    },
+    {
+      "time": 0.75,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.005223506414707257,
+      "horizontalSpeedMS": 0.05035425367828541
+    },
+    {
+      "time": 0.7666666666666667,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.005060715002787486,
+      "horizontalSpeedMS": 0.08946054887505324
+    },
+    {
+      "time": 0.7833333333333333,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.005969385642827674,
+      "horizontalSpeedMS": 0.11380144017671312
+    },
+    {
+      "time": 0.8,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.007036032891598376,
+      "horizontalSpeedMS": 0.07002651284627585
+    },
+    {
+      "time": 0.8166666666666667,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.008141493613043949,
+      "horizontalSpeedMS": 0.04097979206550473
+    },
+    {
+      "time": 0.8333333333333334,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.008984112231252839,
+      "horizontalSpeedMS": 0.04628823838242272
+    },
+    {
+      "time": 0.85,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.009219298578389434,
+      "horizontalSpeedMS": 0.040537199762343934
+    },
+    {
+      "time": 0.8666666666666667,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.009995118500898292,
+      "horizontalSpeedMS": 0.07759465677562279
+    },
+    {
+      "time": 0.8833333333333333,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.010324448037999145,
+      "horizontalSpeedMS": 0.08364679009866671
+    },
+    {
+      "time": 0.9,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.011078425868668917,
+      "horizontalSpeedMS": 0.08117124237770297
+    },
+    {
+      "time": 0.9166666666666666,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.011617257412532722,
+      "horizontalSpeedMS": 0.08753775953746398
+    },
+    {
+      "time": 0.9333333333333333,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.01213919239920258,
+      "horizontalSpeedMS": 0.08253543890178157
+    },
+    {
+      "time": 0.95,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.013376522603828045,
+      "horizontalSpeedMS": 0.0977478635892022
+    },
+    {
+      "time": 0.9666666666666667,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.013983219588767581,
+      "horizontalSpeedMS": 0.09509349726269692
+    },
+    {
+      "time": 0.9833333333333333,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.01450913218415295,
+      "horizontalSpeedMS": 0.09511545222645092
+    },
+    {
+      "time": 1,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.015415432506131421,
+      "horizontalSpeedMS": 0.11219301149893003
+    },
+    {
+      "time": 1.0166666666666666,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.016059050344067294,
+      "horizontalSpeedMS": 0.12470576957683308
+    },
+    {
+      "time": 1.0333333333333334,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.016934978339123052,
+      "horizontalSpeedMS": 0.13336309387475745
+    },
+    {
+      "time": 1.05,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.018085434211054574,
+      "horizontalSpeedMS": 0.14495226453731708
+    },
+    {
+      "time": 1.0666666666666667,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.01878750105705629,
+      "horizontalSpeedMS": 0.12492699730058134
+    },
+    {
+      "time": 1.0833333333333333,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.019807071543740173,
+      "horizontalSpeedMS": 0.11016366913787808
+    },
+    {
+      "time": 1.1,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.0210235307353136,
+      "horizontalSpeedMS": 0.10950324199577337
+    },
+    {
+      "time": 1.1166666666666667,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.021768816371661615,
+      "horizontalSpeedMS": 0.10169742375466335
+    },
+    {
+      "time": 1.1333333333333333,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.022671028799050807,
+      "horizontalSpeedMS": 0.10718024618046525
+    },
+    {
+      "time": 1.15,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.023473307855458647,
+      "horizontalSpeedMS": 0.1030987427382837
+    },
+    {
+      "time": 1.1666666666666667,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.024647521318327814,
+      "horizontalSpeedMS": 0.082192601979577
+    },
+    {
+      "time": 1.1833333333333333,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.024914532353466745,
+      "horizontalSpeedMS": 0.054145639361821596
+    },
+    {
+      "time": 1.2,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.024822516654630533,
+      "horizontalSpeedMS": 0.03413853756809566
+    },
+    {
+      "time": 1.2166666666666666,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.025215109311801376,
+      "horizontalSpeedMS": 0.03010984297590903
+    },
+    {
+      "time": 1.2333333333333334,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.025303192126705287,
+      "horizontalSpeedMS": 0.058182855229757365
+    },
+    {
+      "time": 1.25,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.025968781571574007,
+      "horizontalSpeedMS": 0.05159655339441234
+    },
+    {
+      "time": 1.2666666666666666,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.026263799302734703,
+      "horizontalSpeedMS": 0.018616660067650195
+    },
+    {
+      "time": 1.2833333333333334,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.026338912234524003,
+      "horizontalSpeedMS": 0.03419031060666011
+    },
+    {
+      "time": 1.3,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.026198714456831307,
+      "horizontalSpeedMS": 0.03900333251834383
+    },
+    {
+      "time": 1.3166666666666667,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.025511840829373078,
+      "horizontalSpeedMS": 0.055756704897283786
+    },
+    {
+      "time": 1.3333333333333333,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.024722949625391677,
+      "horizontalSpeedMS": 0.022465938791685534
+    },
+    {
+      "time": 1.35,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.024749829293231884,
+      "horizontalSpeedMS": 0.04654458602347963
+    },
+    {
+      "time": 1.3666666666666667,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.024077463813356514,
+      "horizontalSpeedMS": 0.1479408103480492
+    },
+    {
+      "time": 1.3833333333333333,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.02286350841526341,
+      "horizontalSpeedMS": 0.13025883207916086
+    },
+    {
+      "time": 1.4,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.022164861102189293,
+      "horizontalSpeedMS": 0.08819255026200418
+    },
+    {
+      "time": 1.4166666666666667,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.021199899989480908,
+      "horizontalSpeedMS": 0.12143711554088168
+    },
+    {
+      "time": 1.4333333333333333,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.020195935066641635,
+      "horizontalSpeedMS": 0.15587861197295108
+    },
+    {
+      "time": 1.45,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.019157685304907246,
+      "horizontalSpeedMS": 0.1530521504781654
+    },
+    {
+      "time": 1.4666666666666666,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.018169714261318082,
+      "horizontalSpeedMS": 0.15178184892658228
+    },
+    {
+      "time": 1.4833333333333334,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.016614299032577495,
+      "horizontalSpeedMS": 0.15461724158176166
+    },
+    {
+      "time": 1.5,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.015573444366267064,
+      "horizontalSpeedMS": 0.12815745547232626
+    },
+    {
+      "time": 1.5166666666666666,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.015030174385941675,
+      "horizontalSpeedMS": 0.12490694120420935
+    },
+    {
+      "time": 1.5333333333333334,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.014057720151557263,
+      "horizontalSpeedMS": 0.15572075671153013
+    },
+    {
+      "time": 1.55,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.012204590958944994,
+      "horizontalSpeedMS": 0.12991126978447223
+    },
+    {
+      "time": 1.5666666666666667,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.011605178118696102,
+      "horizontalSpeedMS": 0.13270935229071315
+    },
+    {
+      "time": 1.5833333333333333,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.010431793413944401,
+      "horizontalSpeedMS": 0.14097767941060216
+    },
+    {
+      "time": 1.6,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.009451406809887763,
+      "horizontalSpeedMS": 0.08691256026557555
+    },
+    {
+      "time": 1.6166666666666667,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.008200463129168112,
+      "horizontalSpeedMS": 0.11100910841405885
+    },
+    {
+      "time": 1.6333333333333333,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.007224345619438299,
+      "horizontalSpeedMS": 0.12497210280594039
+    },
+    {
+      "time": 1.65,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.006316584677311665,
+      "horizontalSpeedMS": 0.11006974640034319
+    },
+    {
+      "time": 1.6666666666666667,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.005095370039965963,
+      "horizontalSpeedMS": 0.09203672051787848
+    },
+    {
+      "time": 1.6833333333333333,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.004186620294884702,
+      "horizontalSpeedMS": 0.0892346817337719
+    },
+    {
+      "time": 1.7,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.003548527768886145,
+      "horizontalSpeedMS": 0.08333227868389088
+    },
+    {
+      "time": 1.7166666666666666,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.003004056274637512,
+      "horizontalSpeedMS": 0.06977311132715326
+    },
+    {
+      "time": 1.7333333333333334,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.002221069869455472,
+      "horizontalSpeedMS": 0.07610311874332898
+    },
+    {
+      "time": 1.75,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0016042271840098765,
+      "horizontalSpeedMS": 0.0695461400840751
+    },
+    {
+      "time": 1.7666666666666666,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0008715390048612548,
+      "horizontalSpeedMS": 0.03690199727548404
+    },
+    {
+      "time": 1.7833333333333334,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.00042140226525333446,
+      "horizontalSpeedMS": 0.04424444270979538
+    },
+    {
+      "time": 1.8,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.00012031828871184036,
+      "horizontalSpeedMS": 0.08910022643371794
+    },
+    {
+      "time": 1.8166666666666667,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": -0.0008444153561550927,
+      "horizontalSpeedMS": 0.10638847497630373
+    },
+    {
+      "time": 1.8333333333333333,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": -0.0013497388303442825,
+      "horizontalSpeedMS": 0.09580603904217452
+    },
+    {
+      "time": 1.85,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": -0.001953698261816239,
+      "horizontalSpeedMS": 0.06826654900398937
+    },
+    {
+      "time": 1.8666666666666667,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0021950907833684363,
+      "horizontalSpeedMS": 0.05178233842854675
+    },
+    {
+      "time": 1.8833333333333333,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0027900507477602865,
+      "horizontalSpeedMS": 0.044393006351765886
+    },
+    {
+      "time": 1.9,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0022942794765172803,
+      "horizontalSpeedMS": 0.023391753555191238
+    },
+    {
+      "time": 1.9166666666666667,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0021527584514322573,
+      "horizontalSpeedMS": 0.013968222787399688
+    },
+    {
+      "time": 1.9333333333333333,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0017697894653690982,
+      "horizontalSpeedMS": 0.04499921372282938
+    },
+    {
+      "time": 1.95,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0021598897171363207,
+      "horizontalSpeedMS": 0.07088316033917365
+    },
+    {
+      "time": 1.9666666666666666,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0012683144040499528,
+      "horizontalSpeedMS": 0.04761894355899903
+    },
+    {
+      "time": 1.9833333333333334,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.00034339238708369635,
+      "horizontalSpeedMS": 0.0411642025688554
+    },
+    {
+      "time": 2,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0009046008378206238,
+      "horizontalSpeedMS": 0.02013960334152723
+    },
+    {
+      "time": 2.0166666666666666,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.001156547480430481,
+      "horizontalSpeedMS": 0.008057101913347985
+    },
+    {
+      "time": 2.033333333333333,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.002041459772577525,
+      "horizontalSpeedMS": 0.014504489791186475
+    },
+    {
+      "time": 2.05,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.003325847273268012,
+      "horizontalSpeedMS": 0.02660384596538403
+    },
+    {
+      "time": 2.066666666666667,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.004708879458786508,
+      "horizontalSpeedMS": 0.034931564099195324
+    },
+    {
+      "time": 2.0833333333333335,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.005997609681074656,
+      "horizontalSpeedMS": 0.05880363994921813
+    },
+    {
+      "time": 2.1,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.005562537871972695,
+      "horizontalSpeedMS": 0.06200821554065403
+    },
+    {
+      "time": 2.1166666666666667,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0073980745461760256,
+      "horizontalSpeedMS": 0.04816021579269879
+    },
+    {
+      "time": 2.1333333333333333,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.008256044466418477,
+      "horizontalSpeedMS": 0.10505606303167808
+    },
+    {
+      "time": 2.15,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.00697733637191611,
+      "horizontalSpeedMS": 0.16526769297550262
+    },
+    {
+      "time": 2.1666666666666665,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.005588715434423408,
+      "horizontalSpeedMS": 0.14560682483160658
+    },
+    {
+      "time": 2.183333333333333,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.005482580411584004,
+      "horizontalSpeedMS": 0.0844669153715569
+    },
+    {
+      "time": 2.2,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.004239281937722161,
+      "horizontalSpeedMS": 0.1334227478961244
+    },
+    {
+      "time": 2.216666666666667,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.0018510727372929026,
+      "horizontalSpeedMS": 0.15264591229868457
+    },
+    {
+      "time": 2.2333333333333334,
+      "side": "R",
+      "state": "moving_or_uncertain",
+      "toeHeightM": 0.0005647209943351328,
+      "horizontalSpeedMS": 0.09611505327076256
+    },
+    {
+      "time": 2.25,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0007312877183164312,
+      "horizontalSpeedMS": 0.06701044744289564
+    },
+    {
+      "time": 2.2666666666666666,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0011093446208897406,
+      "horizontalSpeedMS": 0.05378391382792148
+    },
+    {
+      "time": 2.283333333333333,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": -0.001520573243866341,
+      "horizontalSpeedMS": 0.056786548990082765
+    },
+    {
+      "time": 2.3,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0017177198527440485,
+      "horizontalSpeedMS": 0.053964393814456446
+    },
+    {
+      "time": 2.316666666666667,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0007254601670311223,
+      "horizontalSpeedMS": 0.039843157689491905
+    },
+    {
+      "time": 2.3333333333333335,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": -0.0003235423425645978,
+      "horizontalSpeedMS": 0.05801431507917325
+    },
+    {
+      "time": 2.35,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.00015374117890953887,
+      "horizontalSpeedMS": 0.034877027434640655
+    },
+    {
+      "time": 2.3666666666666667,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.00030843318991080615,
+      "horizontalSpeedMS": 0.04613080928259658
+    },
+    {
+      "time": 2.3833333333333333,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0007874984499072202,
+      "horizontalSpeedMS": 0.050681365703156116
+    },
+    {
+      "time": 2.4,
+      "side": "R",
+      "state": "stance_candidate",
+      "toeHeightM": 0.0006061555195701063,
+      "horizontalSpeedMS": 0.04653825609357656
+    }
+  ],
+  "windows": [
+    {
+      "side": "L",
+      "start": 0.0,
+      "end": 0.5,
+      "ramp": 0.08,
+      "status": "estimated-not-professionally-reviewed"
+    },
+    {
+      "side": "L",
+      "start": 2.216666666666667,
+      "end": 2.4,
+      "ramp": 0.04583333333333333,
+      "status": "estimated-not-professionally-reviewed"
+    },
+    {
+      "side": "R",
+      "start": 0.0,
+      "end": 0.43333333333333335,
+      "ramp": 0.08,
+      "status": "estimated-not-professionally-reviewed"
+    },
+    {
+      "side": "R",
+      "start": 1.85,
+      "end": 2.1166666666666667,
+      "ramp": 0.06666666666666667,
+      "status": "estimated-not-professionally-reviewed"
+    },
+    {
+      "side": "R",
+      "start": 2.25,
+      "end": 2.4,
+      "ramp": 0.0375,
+      "status": "estimated-not-professionally-reviewed"
+    }
+  ]
+}

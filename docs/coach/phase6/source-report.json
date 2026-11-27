@@ -1,0 +1,13 @@
+{
+  "source": "CMU 14_06, 8.6\u201311.0s",
+  "samples": 145,
+  "sampleHz": 60,
+  "nativeNominalHz": 120,
+  "scaleNormalization": "target/source leg-length ratio; source relative translation and heading normalized once",
+  "maxJointSpeedMS": 1.3119511560768082,
+  "maxJointAccelerationMS2": 32.16798655383783,
+  "maxSegmentLengthErrorM": 5.7691845189999924e-08,
+  "loopMaxJointErrorM": 0.12084573614321915,
+  "soleContactMeasurements": null,
+  "limit": "BVH foot/toe joints are proxies; no skin, sole pressure or raw marker confidence. No source-video visibility assessment."
+}

@@ -1,0 +1,141 @@
+{
+  "contracts": [
+    {
+      "id": "cmu-complete-raw",
+      "duration": 2.4,
+      "contactWindows": [
+        {
+          "side": "L",
+          "start": 0,
+          "end": 0.5,
+          "ramp": 0.08,
+          "status": "estimated-not-professionally-reviewed",
+          "markers": [
+            {
+              "mesh": 0,
+              "vertex": 22169
+            },
+            {
+              "mesh": 0,
+              "vertex": 22069
+            },
+            {
+              "mesh": 0,
+              "vertex": 21797
+            }
+          ],
+          "anchor": [
+            0.12960745059962991,
+            0.009818444525591679,
+            -0.09002711499981704
+          ]
+        },
+        {
+          "side": "L",
+          "start": 2.216666666666667,
+          "end": 2.4,
+          "ramp": 0.04583333333333333,
+          "status": "estimated-not-professionally-reviewed",
+          "markers": [
+            {
+              "mesh": 0,
+              "vertex": 22169
+            },
+            {
+              "mesh": 0,
+              "vertex": 22069
+            },
+            {
+              "mesh": 0,
+              "vertex": 21797
+            }
+          ],
+          "anchor": [
+            0.13358639908171532,
+            0.008752084600101713,
+            -0.09710086707885204
+          ]
+        },
+        {
+          "side": "R",
+          "start": 0,
+          "end": 0.43333333333333335,
+          "ramp": 0.08,
+          "status": "estimated-not-professionally-reviewed",
+          "markers": [
+            {
+              "mesh": 0,
+              "vertex": 21013
+            },
+            {
+              "mesh": 0,
+              "vertex": 21374
+            },
+            {
+              "mesh": 0,
+              "vertex": 21265
+            }
+          ],
+          "anchor": [
+            -0.04103754439893994,
+            0.016996050517790826,
+            -0.0982966562657272
+          ]
+        },
+        {
+          "side": "R",
+          "start": 1.85,
+          "end": 2.1166666666666667,
+          "ramp": 0.06666666666666667,
+          "status": "estimated-not-professionally-reviewed",
+          "markers": [
+            {
+              "mesh": 0,
+              "vertex": 21307
+            },
+            {
+              "mesh": 0,
+              "vertex": 21020
+            },
+            {
+              "mesh": 0,
+              "vertex": 21124
+            }
+          ],
+          "anchor": [
+            -0.0989146729144681,
+            0.017281062304643057,
+            0.14106117628824202
+          ]
+        },
+        {
+          "side": "R",
+          "start": 2.25,
+          "end": 2.4,
+          "ramp": 0.0375,
+          "status": "estimated-not-professionally-reviewed",
+          "markers": [
+            {
+              "mesh": 0,
+              "vertex": 21013
+            },
+            {
+              "mesh": 0,
+              "vertex": 21265
+            },
+            {
+              "mesh": 0,
+              "vertex": 21374
+            }
+          ],
+          "anchor": [
+            -0.032906495667754575,
+            0.018050980095338273,
+            -0.10002870161440419
+          ]
+        }
+      ],
+      "contactScheduleStatus": "engineering hypothesis, not professionally reviewed"
+    }
+  ]
+}

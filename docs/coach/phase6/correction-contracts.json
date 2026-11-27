@@ -1,0 +1,63 @@
+{
+  "contracts": [
+    {
+      "id": "cmu-complete-raw",
+      "duration": 2.4,
+      "contactWindows": [
+        {
+          "side": "L",
+          "start": 0,
+          "end": 0.5,
+          "ramp": 0.15,
+          "status": "estimated-not-professionally-reviewed",
+          "markers": [
+            {
+              "mesh": 0,
+              "vertex": 22169
+            },
+            {
+              "mesh": 0,
+              "vertex": 22069
+            },
+            {
+              "mesh": 0,
+              "vertex": 21797
+            }
+          ],
+          "anchor": [
+            0.12960745059962991,
+            0.009818444525591679,
+            -0.09002711499981704
+          ]
+        },
+        {
+          "side": "R",
+          "start": 0,
+          "end": 0.43333333333333335,
+          "ramp": 0.15,
+          "status": "estimated-not-professionally-reviewed",
+          "markers": [
+            {
+              "mesh": 0,
+              "vertex": 21013
+            },
+            {
+              "mesh": 0,
+              "vertex": 21374
+            },
+            {
+              "mesh": 0,
+              "vertex": 21265
+            }
+          ],
+          "anchor": [
+            -0.04103754439893994,
+            0.016996050517790826,
+            -0.0982966562657272
+          ]
+        }
+      ],
+      "contactScheduleStatus": "engineering hypothesis, not professionally reviewed"
+    }
+  ]
+}
