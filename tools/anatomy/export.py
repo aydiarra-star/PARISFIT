@@ -10,7 +10,7 @@ shutil.copyfile(repo/'assets/coach/licenses/ROCKETBOX-MIT.txt',out/'ROCKETBOX-MI
 (out/'CMU-NOTICE.txt').write_text('CMU Graphics Lab motion capture, 14_06; BVH conversion Bruce Hahne/cgspeed 2010.\nThe data used in this project was obtained from mocap.cs.cmu.edu. The database was created with funding from NSF EIA-0196217.\nCommercial products allowed; no standalone data resale, even converted. See https://mocap.cs.cmu.edu/ and https://mocap.cs.cmu.edu/faqs.php .\nThis is a rejected technical control, not a dedicated PARISFIT capture or professional approval.\n')
 source=repo/'docs/coach/phase6/source-14_06.bvh';model=repo/'assets/coach/coach.glb'
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
-r={'status':'STARTING','dataKind':'CMU licensed optical control, NOT dedicated PARISFIT capture','sourceSHA256':sha(source),'modelSHA256':sha(model),'runtimeEnabled':False,'professionalApproval':False,'platform':platform.platform(),'python':platform.python_version(),'steps':[],'corrections':{'IK':False,'smoothing':False,'manual':[]}}
+r={'status':'STARTING','dataKind':'CMU licensed optical control, NOT dedicated PARISFIT capture','sourceSHA256':sha(source),'modelSHA256':sha(model),'runtimeEnabled':False,'professionalApproval':False,'platform':platform.platform(),'python':platform.python_version(),'steps':[],'corrections':{'IK':opts.method=='C','smoothing':False,'manual':[]}}
 started=time.time()
 def step(n,**kw):r['steps'].append({'step':n,'seconds':round(time.time()-started,3),**kw});print('STEP',n,json.dumps(kw),flush=True)
 try:
@@ -108,16 +108,15 @@ try:
      anchors.setdefault(side,(target.matrix_world@ankle.matrix).translation.copy());goal=anchors[side].copy();contact_frames[side].append(i)
     else:anchors.pop(side,None)
     last_source[side]=S.copy()
-    direction=goal-H;raw_distance=direction.length;d=max(abs(l1-l2)+1e-5,min(l1+l2-1e-5,raw_distance));axis=direction.normalized()
-    pole=heading@(sp(long+'Leg')-sp(long+'UpLeg'));pole-=axis*pole.dot(axis)
-    if pole.length<1e-6:raise ValueError('DEGENERATE_IK_POLE')
-    x=(l1*l1-l2*l2+d*d)/(2*d);K=H+axis*x+pole.normalized()*max(0,l1*l1-x*x)**.5;G=H+axis*d
+    from ik import solve
+    kval,gval,residual=solve(list(H),list(goal),list(heading@(sp(long+'Leg')-sp(long+'UpLeg'))),l1,l2);K=Vector(kval);G=Vector(gval)
     for bone,end in [(hip,K),(knee,G)]:
      worldmatrix=target.matrix_world@bone.matrix;startpos=worldmatrix.translation
      nextbone=knee if bone==hip else ankle;current=(target.matrix_world@nextbone.matrix).translation-startpos
      rotation=current.normalized().rotation_difference((end-startpos).normalized())@worldmatrix.to_quaternion()
-     worldmatrix=rotation.to_matrix().to_4x4();worldmatrix.translation=startpos;bone.matrix=target.matrix_world.inverted()@worldmatrix;bpy.context.view_layer.update()
-    frame_goals[side]={'requested':list(goal),'reachable':list(G),'reachResidualM':abs(raw_distance-d),'inferredContact':stable}
+     parent_world=(target.matrix_world@bone.parent.matrix).to_quaternion() if bone.parent else armq
+     bone.rotation_quaternion=localRest[bone.name].inverted()@parent_world.inverted()@rotation;bpy.context.view_layer.update()
+    frame_goals[side]={'requested':list(goal),'reachable':list(G),'reachResidualM':residual,'solverResidualM':((target.matrix_world@ankle.matrix).translation-G).length,'inferredContact':stable}
   goals.append(frame_goals)
   for b in bones:
    if opts.method=='C':
@@ -156,7 +155,7 @@ try:
  (out/'geometry.json').write_text(json.dumps(data)+'\n')
  result=validate(data,criteria)
  from metrics import extra_metrics
- result['IKReachResidualMaxM']=max([g['reachResidualM'] for row in goals for g in row.values()] or [0]);result['method']=opts.method;result['extra']=extra_metrics(data,records,mapping)
+ result['IKSolverResidualMaxM']=max([g['solverResidualM'] for row in goals for g in row.values()] or [0]);result['IKReachResidualMaxM']=max([g['reachResidualM'] for row in goals for g in row.values()] or [0]);result['method']=opts.method;result['extra']=extra_metrics(data,records,mapping)
  result['inferredContactFrames']=contact_frames;result['IKGoals']=goals
  (out/'full-report.json').write_text(json.dumps(result)+'\n')
  del result['rows'];del result['IKGoals']
