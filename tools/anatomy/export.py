@@ -3,9 +3,9 @@ No source data cleanup, IK, smoothing, or production admission.
 """
 import argparse,json,hashlib,platform,traceback,time,sys,subprocess,shutil
 from pathlib import Path
-p=argparse.ArgumentParser();p.add_argument('--method',choices=['A','B','C'],default='A');p.add_argument('--out',default='.cache/phase11');a=p.parse_args(sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else ([] if 'blender' in Path(sys.argv[0]).name else None));out=Path(a.out).resolve();repo=Path(__file__).resolve().parents[2]
+p=argparse.ArgumentParser();p.add_argument('--method',choices=['A','B','C'],default='A');p.add_argument('--out',default='.cache/phase11');opts=p.parse_args(sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else ([] if 'blender' in Path(sys.argv[0]).name else None));out=Path(opts.out).resolve();repo=Path(__file__).resolve().parents[2]
 if out!=repo/'.cache/phase11':raise SystemExit('Only isolated .cache/phase11 output is allowed')
-out=out/a.method;out.mkdir(parents=True,exist_ok=True)
+out=out/opts.method;out.mkdir(parents=True,exist_ok=True)
 shutil.copyfile(repo/'assets/coach/licenses/ROCKETBOX-MIT.txt',out/'ROCKETBOX-MIT.txt')
 (out/'CMU-NOTICE.txt').write_text('CMU Graphics Lab motion capture, 14_06; BVH conversion Bruce Hahne/cgspeed 2010.\nThe data used in this project was obtained from mocap.cs.cmu.edu. The database was created with funding from NSF EIA-0196217.\nCommercial products allowed; no standalone data resale, even converted. See https://mocap.cs.cmu.edu/ and https://mocap.cs.cmu.edu/faqs.php .\nThis is a rejected technical control, not a dedicated PARISFIT capture or professional approval.\n')
 source=repo/'docs/coach/phase6/source-14_06.bvh';model=repo/'assets/coach/coach.glb'
@@ -76,7 +76,7 @@ try:
    b.location=(0,0,0);b.scale=(1,1,1)
    if key in mapping:
     name=mapping[key];desired=heading@sq(name)@reference[name]['q'].inverted()@offset[key]@(target.matrix_world@rest[b.name]).to_quaternion()
-    if a.method in ['B','C']:
+    if opts.method in ['B','C']:
      # Remove the static source-direction offset: delta must be conjugated
      # into target heading, not pre-multiplied with a rest-pose mismatch.
      delta=heading@sq(name)@reference[name]['q'].inverted()@heading.inverted()
@@ -95,7 +95,7 @@ try:
   root.location=rest[root.name].to_3x3().inverted()@(target.matrix_world.to_3x3().inverted()@displacement)
   bpy.context.view_layer.update()
   frame_goals={}
-  if a.method=='C':
+  if opts.method=='C':
    for side,long in [('L','Left'),('R','Right')]:
     hip=target.pose.bones['Bip01_'+side+'_Thigh'];knee=target.pose.bones['Bip01_'+side+'_Calf'];ankle=target.pose.bones['Bip01_'+side+'_Foot']
     H=(target.matrix_world@hip.matrix).translation;S=sp(long+'Foot');sourcev=heading@(S-sp(long+'UpLeg'))
@@ -120,7 +120,7 @@ try:
     frame_goals[side]={'requested':list(goal),'reachable':list(G),'reachResidualM':abs(raw_distance-d),'inferredContact':stable}
   goals.append(frame_goals)
   for b in bones:
-   if a.method=='C':
+   if opts.method=='C':
     q=b.rotation_quaternion.copy();q.normalize()
     if b.name in baked_previous and q.dot(baked_previous[b.name])<0:q.negate()
     b.rotation_quaternion=q;baked_previous[b.name]=q.copy()
@@ -156,7 +156,7 @@ try:
  (out/'geometry.json').write_text(json.dumps(data)+'\n')
  result=validate(data,criteria)
  from metrics import extra_metrics
- result['IKReachResidualMaxM']=max([g['reachResidualM'] for row in goals for g in row.values()] or [0]);result['method']=a.method;result['extra']=extra_metrics(data,records,mapping)
+ result['IKReachResidualMaxM']=max([g['reachResidualM'] for row in goals for g in row.values()] or [0]);result['method']=opts.method;result['extra']=extra_metrics(data,records,mapping)
  result['inferredContactFrames']=contact_frames;result['IKGoals']=goals
  (out/'full-report.json').write_text(json.dumps(result)+'\n')
  del result['rows'];del result['IKGoals']
@@ -170,7 +170,7 @@ try:
   else:assert sha(filepath)==first_hash,'NONDETERMINISTIC_EXPORT'
  result['exportSHA256']=first_hash;result['repeatedExportEqual']=True
  (out/'report.json').write_text(json.dumps(result,ensure_ascii=False)+'\n')
- r.update(status='DIAGNOSTIC_ONLY',method=a.method,mapping=mapping,scale=scale)
+ r.update(status='DIAGNOSTIC_ONLY',method=opts.method,mapping=mapping,scale=scale)
  assert sha(model)==r['modelSHA256'];assert sha(source)==r['sourceSHA256']
 except Exception:
  r.update(status='FAILED',error=traceback.format_exc());print(r['error'],flush=True)
