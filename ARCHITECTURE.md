@@ -25,3 +25,9 @@ Le dépôt ne contenait aucun code applicatif au début du chantier. Le premier 
 3. Définir les contrats API et le modèle de données.
 4. Mettre en place tests automatisés, accessibilité et CI.
 5. Intégrer des contenus sportifs et nutritionnels revus et licenciés.
+
+
+## Coach 3D — première base technique
+- `coach-3d.js` : scène Three.js, personnage humanoïde construit à partir de segments et articulations, éclairage, sol, caméra responsive et cycles d'animation par exercice.
+- Rendu WebGL chargé depuis jsDelivr ; fallback visuel si WebGL indisponible.
+- Cette base n'est pas un modèle GLB de qualité studio, une mocap validée, un système de correction biomécanique ni une IA conversationnelle connectée.

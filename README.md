@@ -20,3 +20,7 @@ Interface responsive Aujourd'hui / Switch / Nutrition / Mental, navigation mobil
 Backend, synchronisation, comptes, IA, bibliothèque sportive professionnelle, coach 3D, paiements et intégrations santé restent à construire.
 
 L'interface PARISFIT validée reste la référence ; les fonctions nouvelles doivent s'y intégrer sans refonte arbitraire.
+
+
+## Coach sportif 3D — premier incrément
+Le Coach IA charge un avatar humanoïde procédural articulé via Three.js/WebGL. Les huit exercices disponibles ont des cycles de mouvement dédiés, avec commandes pause/reprise et vues de face/profil. Three.js est chargé depuis jsDelivr ; une connexion est donc nécessaire pour ce rendu. En cas d'absence de WebGL ou d'échec du CDN, un affichage de secours est conservé. Ce modèle est une base stylisée en 3D, pas un avatar photoréaliste ni une animation de capture de mouvement professionnelle.
