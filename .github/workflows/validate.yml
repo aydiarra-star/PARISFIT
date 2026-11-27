@@ -132,15 +132,22 @@ jobs:
           node tools/biomechanics/check.cjs
           FFMPEG_PATH=$(command -v ffmpeg) node tools/biomechanics/capture.cjs
           python tools/biomechanics/verify-videos.py
+          python tools/biomechanics/build-gallery.py
       - name: Phase10 public control diagnostics
         if: always()
         run: |
           python - <<'PY'
           from pathlib import Path
+          import json,base64
           for name in ["before-report.json","after-report.json","comparison-report.json","morphology-report.json","three-report.json","video-report.json","blender.log"]:
               p=Path(".cache/phase10")/name
               if p.exists():
                   text=p.read_text()[-16000:]
+                  if name.endswith(".json"):
+                      encoded=base64.b64encode(p.read_bytes()).decode()
+                      for i in range(0,len(encoded),2500):
+                          print("::warning title=phase10-b64-"+name+"-"+str(i//2500)+"::"+encoded[i:i+2500])
+                      continue
                   print("::warning title=phase10-"+name+"::"+text.replace("%","%25").replace("\r","%0D").replace("\n","%0A"))
           PY
       - name: Phase10 control artifact

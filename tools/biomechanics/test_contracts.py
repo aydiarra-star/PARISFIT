@@ -1,7 +1,7 @@
 import unittest,json,struct,copy,sys
 from pathlib import Path
 from contracts import bvh_contract,glb_contract,compare_positions,Invalid,REQUIRED
-from validate import validate
+from validate import validate,in_support_hull
 C=json.loads(Path('tools/biomechanics/criteria.json').read_text())
 def bvh(names=REQUIRED):
  h='HIERARCHY\nROOT '+names[0]+'\n{\nOFFSET 0 0 0\nCHANNELS 6 Xposition Yposition Zposition Zrotation Xrotation Yrotation\n'
@@ -29,5 +29,10 @@ class Contracts(unittest.TestCase):
  def test_difference(self):self.assertRaises(Invalid,compare_positions,[{'a':[0,0,0]}],[{'a':[0,.1,0]}])
  def test_order_invariance(self):self.assertEqual(compare_positions([{'a':[0,0,0],'b':[1,0,0]}],[{'b':[1,0,0],'a':[0,0,0]}]),0)
  def test_no_input(self):self.assertRaises(Invalid,validate,{'units':'m','up':'Y','frames':[]},C)
- def test_wrong_axes(self):self.assertRaises(Invalid,validate,{'units':'cm','up':'Z'},C)
+ def test_wrong_axes(self):self.assertRaisesRegex(Invalid,'UNITS_OR_AXES',validate,{'schemaVersion':1,'units':'cm','up':'Z'},C)
+ def test_support_hull(self):
+  pts=[[0,0,0],[1,0,0],[0,0,1]];self.assertTrue(in_support_hull(pts,[.2,0,.2]));self.assertFalse(in_support_hull(pts,[.9,0,.9]))
+ def test_degenerate_hull(self):self.assertIsNone(in_support_hull([[0,0,0],[1,0,0]],[0,0,0]))
+ def test_empty_bvh(self):self.assertRaisesRegex(Invalid,'BVH_FRAME_COUNT',bvh_contract,bvh().replace('Frames: 2','Frames: 0'))
+ def test_bad_channels(self):self.assertRaisesRegex(Invalid,'BVH_BAD_CHANNELS',bvh_contract,bvh().replace('CHANNELS 6','CHANNELS x'))
 if __name__=='__main__':unittest.main()
