@@ -15,6 +15,8 @@ Le socle actuellement fusionné est une application web/PWA légère, écrite en
 - `scripts/validate.mjs` : contrôles structurels sans dépendance.
 - `tests/*.test.mjs` : tests automatisés Node.js.
 
+La navigation met à jour les quatre espaces sur desktop et mobile, avec un état accessible pour les menus. Le dialogue natif conserve son ouverture lors des sous-actions et ses boutons internes ne déclenchent pas la fermeture implicite du formulaire.
+
 ## Données et limites
 
 Les préférences, habitudes, hydratation, ressenti et journal sont enregistrés dans `localStorage` sur l'appareil courant. Ils ne sont ni synchronisés ni sauvegardés sur un serveur. Le stockage local ne constitue pas un coffre-fort pour des données sensibles.
