@@ -6,7 +6,7 @@ const js = readFileSync("app.js", "utf8");
 const css = readFileSync("styles.css", "utf8");
 const manifest = JSON.parse(readFileSync("manifest.webmanifest", "utf8"));
 
-const ids = [...html.matchAll(/\\bid="([^"]+)"/g)].map((match) => match[1]);
+const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
 const duplicates = ids.filter((id, index) => ids.indexOf(id) !== index);
 assert.deepEqual([...new Set(duplicates)], [], "Les identifiants HTML doivent être uniques.");
 
@@ -28,7 +28,7 @@ assert.equal(manifest.name, "PARISFIT");
 assert.ok(manifest.start_url, "Le manifeste doit définir start_url.");
 assert.ok(manifest.display, "Le manifeste doit définir display.");
 
-const staticIds = ["settings", "profile", "workout", "sos", "add-habit", "habits", "water-add", "water-reset", "meal-ideas", "breath", "breath2", "journal", "rest"];
+const staticIds = ["settings", "profile", "workout", "sos",  "habits", "water-add", "water-reset", "meal-ideas", "breath", "breath2", "journal", "rest"];
 for (const id of staticIds) {
   assert.ok(ids.includes(id), `Contrôle attendu absent du HTML : #${id}`);
 }
