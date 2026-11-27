@@ -43,6 +43,7 @@ test("les aides d’accessibilité clavier et lecteurs d’écran sont présente
   for (const view of ["today", "switch", "nutrition", "mental"]) assert.match(html, new RegExp(`data-view="${view}" aria-controls="view-${view}"`));
   assert.match(html, /aria-live="polite"/);
   assert.ok(js.includes('button.type="button"'));
+  assert.ok(js.includes("if(!modal.open)modal.showModal()"));
   assert.ok(js.includes('$("[data-view]")'));
   assert.ok(js.includes('$(".nav [data-view], .mobile-nav [data-view]")'));
 });
