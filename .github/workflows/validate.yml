@@ -18,6 +18,9 @@ jobs:
       - name: Vérifier la syntaxe JavaScript
         run: |
           node --check app.js
+          node --check demo-data.js
+          node --check service-worker.js
+          node tests/coach-asset.cjs
           node --input-type=module --check < coach-3d.js
       - name: Vérifier le manifeste PWA
         run: node -e "JSON.parse(require('fs').readFileSync('manifest.webmanifest','utf8')); console.log('Manifest JSON valide')"
@@ -29,3 +32,20 @@ jobs:
           grep -q 'id="view-nutrition"' index.html
           grep -q 'id="view-mental"' index.html
           echo "Socle PARISFIT présent"
+
+      - name: Install browser test tools
+        run: npm ci
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Browser regression and 3D tests
+        run: |
+          python3 -m http.server 3000 --bind 0.0.0.0 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          npm run test:browser
+      - name: Keep review screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coach-browser-review
+          path: .cache/coach-review/

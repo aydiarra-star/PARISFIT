@@ -33,9 +33,14 @@ Le dépôt ne contenait aucun code applicatif au début du chantier. Le premier 
 - La barre d’eau utilise le compteur existant : 8 verres de 250 ml. Son pourcentage et le volume restant sont cohérents et partagés avec Nutrition.
 - Les quatre cartes ouvrent les parcours existants : lecture, Mental, pause et création d’une habitude. Le défi est une proposition, pas un suivi automatique de 30 jours.
 - `assets/coach-welcome.jpg` et `assets/workout.jpg` sont des illustrations photographiques générées par IA, inspirées de la référence fournie, pas des photographies de coachs partenaires.
-- Le service worker v4 inclut les nouvelles ressources ; typographie système disponible hors ligne.
+- Le service worker de l’accueil inclut les nouvelles ressources ; typographie système disponible hors ligne.
 
-## Coach 3D — première base technique
-- `coach-3d.js` : scène Three.js, personnage humanoïde construit à partir de segments et articulations, éclairage, sol, caméra responsive et cycles d'animation par exercice.
-- Rendu WebGL chargé depuis jsDelivr ; fallback visuel si WebGL indisponible.
-- Cette base n'est pas un modèle GLB de qualité studio, une mocap validée, un système de correction biomécanique ni une IA conversationnelle connectée.
+## Coach humain 3D — expérimental (branche dédiée, après PR #10)
+- `coach-3d.js` utilise Three.js 0.169.0 local, GLTFLoader, AnimationMixer et OrbitControls.
+- `assets/coach/coach.glb` contient le modèle Microsoft Rocketbox Sports_Male_04, 80 os, quatre textures 1024 px et huit animations. Provenance et MIT conservées dans `assets/coach/`.
+- `tools/` contient le pipeline reproductible : téléchargement figé, correction de la hiérarchie FBX, création de clips par IK et export GLB. Il ne s’agit pas de mocap.
+- Contrat préservé : `window.parisfitCoachExercise`, événement `parisfit:coach-exercise`, IDs `coach-stage-*`. `renderCoachStage` ne remplace plus le canvas ; le module 3D possède seul les commandes de lecture.
+- Chargement différé quand la scène devient visible ; rendu suspendu hors champ, onglet masqué ou en pause. Ressources WebGL libérées à la fermeture, fallback textuel et retry si échec.
+- Cache v6 : moteur local et miniatures précachés, modèle mis en cache à la demande. Hors ligne 3D seulement après une première consultation réussie.
+- Les huit clips, les commandes et les vues sont testés techniquement. La validation sportive, la fidélité des contacts, les transitions et le niveau de qualité premium ne sont pas acquis. Pas de fusion tant que les critères de sortie du rapport ne sont pas levés.
+- Détails et preuves : `docs/coach/REPORT.md`. Tests : `tests/coach-asset.cjs`, `tests/coach-browser.cjs` et régression `tests/smoke.cjs`.
