@@ -36,6 +36,7 @@ for (const id of staticIds) {
 
 assert.ok(html.includes("Aller au contenu principal"), "Le lien d’évitement doit être présent.");
 assert.ok(html.includes('aria-label="Navigation principale"') && html.includes('aria-label="Navigation mobile"'), "Les deux navigations doivent être nommées.");
+for (const view of ["today", "switch", "nutrition", "mental"]) assert.ok(html.includes(`data-view="${view}" aria-controls="view-${view}"`), `La navigation doit cibler la vue ${view}.`);
 assert.ok(html.includes('aria-live="polite"'), "Les mises à jour dynamiques doivent être annoncées.");
 assert.ok(js.includes('button.type="button"'), "Les boutons de dialogue ne doivent pas soumettre le formulaire.");
 assert.ok(css.includes(":focus-visible"), "Un style de focus clavier visible est requis.");
