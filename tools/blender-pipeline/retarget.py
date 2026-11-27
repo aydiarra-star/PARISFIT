@@ -14,7 +14,11 @@ def step(n,**kw):r['steps'].append({'step':n,'seconds':round(time.time()-started
 try:
  assert r['sourceSHA256']=='e75bcdec4d6fdeac91571020d0b75d45cd4b2532113e699f465b5b297373ac05'
  assert r['modelSHA256']=='1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb'
+ # Ubuntu's Blender embeds Python but may omit Debian's dist-packages path.
+ if Path('/usr/lib/python3/dist-packages').is_dir():sys.path.append('/usr/lib/python3/dist-packages')
  import bpy
+ import numpy
+ r['numpyVersion']=numpy.__version__
  from mathutils import Vector,Quaternion
  r['blenderVersion']=bpy.app.version_string;step('startup',version=bpy.app.version_string)
  bpy.ops.wm.read_factory_settings(use_empty=True)
