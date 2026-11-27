@@ -49,14 +49,15 @@ CREATE TABLE goals (
   version INTEGER NOT NULL DEFAULT 1 CHECK (version > 0),
   created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
   updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-  deleted_at TIMESTAMPTZ
+  deleted_at TIMESTAMPTZ,
+  CONSTRAINT goals_id_user_unique UNIQUE (id, user_id)
 );
 CREATE INDEX goals_user_updated_idx ON goals (user_id, updated_at DESC);
 
 CREATE TABLE tasks (
   id UUID PRIMARY KEY,
   user_id UUID NOT NULL REFERENCES app_users(id) ON DELETE CASCADE,
-  goal_id UUID REFERENCES goals(id) ON DELETE SET NULL,
+  goal_id UUID,
   title VARCHAR(200) NOT NULL,
   description TEXT,
   category VARCHAR(40) NOT NULL DEFAULT 'personal',
@@ -69,7 +70,9 @@ CREATE TABLE tasks (
   version INTEGER NOT NULL DEFAULT 1 CHECK (version > 0),
   created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
   updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-  deleted_at TIMESTAMPTZ
+  deleted_at TIMESTAMPTZ,
+  CONSTRAINT tasks_goal_owner_fk FOREIGN KEY (goal_id, user_id)
+    REFERENCES goals (id, user_id) ON DELETE RESTRICT
 );
 CREATE INDEX tasks_user_status_due_idx ON tasks (user_id, status, due_at);
 
@@ -85,14 +88,15 @@ CREATE TABLE habits (
   version INTEGER NOT NULL DEFAULT 1 CHECK (version > 0),
   created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
   updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-  deleted_at TIMESTAMPTZ
+  deleted_at TIMESTAMPTZ,
+  CONSTRAINT habits_id_user_unique UNIQUE (id, user_id)
 );
 CREATE INDEX habits_user_status_idx ON habits (user_id, status);
 
 CREATE TABLE habit_logs (
   id UUID PRIMARY KEY,
   user_id UUID NOT NULL REFERENCES app_users(id) ON DELETE CASCADE,
-  habit_id UUID NOT NULL REFERENCES habits(id) ON DELETE CASCADE,
+  habit_id UUID NOT NULL,
   local_date DATE NOT NULL,
   timezone VARCHAR(64) NOT NULL,
   outcome VARCHAR(16) NOT NULL
@@ -100,7 +104,9 @@ CREATE TABLE habit_logs (
   note TEXT,
   client_mutation_id UUID NOT NULL,
   created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-  CONSTRAINT habit_logs_user_mutation_unique UNIQUE (user_id, client_mutation_id)
+  CONSTRAINT habit_logs_user_mutation_unique UNIQUE (user_id, client_mutation_id),
+  CONSTRAINT habit_logs_habit_owner_fk FOREIGN KEY (habit_id, user_id)
+    REFERENCES habits (id, user_id) ON DELETE RESTRICT
 );
 CREATE INDEX habit_logs_user_date_idx ON habit_logs (user_id, local_date DESC);
 CREATE INDEX habit_logs_habit_date_idx ON habit_logs (habit_id, local_date DESC);
@@ -124,7 +130,7 @@ COMMIT;
 
 -- Obligatoire avant toute utilisation réelle :
 -- 1. Ajouter des politiques RLS et les tests d'isolation pour le fournisseur retenu.
--- 2. Vérifier la cohérence user_id/habit_id et user_id/goal_id dans les écritures API.
+-- 2. Les clés étrangères composites empêchent les associations tâche/objectif et journal/habitude entre utilisateurs.
 -- 3. Définir les règles de purge, sauvegarde, export et suppression.
 -- 4. Ajouter les tables métier restantes après validation du modèle.
 -- 5. Tester la migration sur une base jetable et documenter le rollback.
