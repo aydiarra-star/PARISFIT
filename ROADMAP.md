@@ -9,15 +9,16 @@
 | 4 | Tests structurels, tests automatisés et CI | En cours : validation Node.js et tests sans dépendance |
 | 5 | Accessibilité clavier et annonces dynamiques | Première couche ajoutée ; audit mobile et lecteur d'écran à réaliser |
 | 6 | Modèle logique de données et confidentialité | Documenté dans DATA_MODEL.md ; non déployé |
-| 7 | Authentification, API et base de données | À concevoir après décision d'architecture |
-| 8 | Bibliothèque d'exercices et programmes validés | À réaliser |
-| 9 | Coach 3D et animations | À réaliser |
-| 10 | Nutrition enrichie et contenus vérifiés | À réaliser |
-| 11 | Moment Intelligent, tâches et équilibre de vie | À réaliser |
-| 12 | Coach IA sécurisé | À réaliser |
-| 13 | Abonnements et administration | À réaliser |
-| 14 | HealthKit / Health Connect | À réaliser |
-| 15 | Publication mobile et conformité finale | À réaliser |
+| 7 | Contrat logique de l'API | Documenté dans API_CONTRACT.md ; non implémenté |
+| 8 | Authentification, API et base de données | À concevoir après décision d'architecture |
+| 9 | Bibliothèque d'exercices et programmes validés | À réaliser |
+| 10 | Coach 3D et animations | À réaliser |
+| 11 | Nutrition enrichie et contenus vérifiés | À réaliser |
+| 12 | Moment Intelligent, tâches et équilibre de vie | À réaliser |
+| 13 | Coach IA sécurisé | À réaliser |
+| 14 | Abonnements et administration | À réaliser |
+| 15 | HealthKit / Health Connect | À réaliser |
+| 16 | Publication mobile et conformité finale | À réaliser |
 
 ## État réel actuel
 
