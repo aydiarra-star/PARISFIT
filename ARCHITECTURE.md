@@ -27,7 +27,7 @@ Aucun backend, authentification, IA, paiement, suivi santé, analyse caméra ou 
 
 ## Modèle de données
 
-Le modèle logique des données et les règles de confidentialité sont décrits dans DATA_MODEL.md. Il s'agit d'une spécification de conception ; aucune base de données ni migration SQL n'est encore déployée.
+Le modèle logique des données et les règles de confidentialité sont décrits dans DATA_MODEL.md. Le fichier database/0001_core_schema.sql est un brouillon PostgreSQL portable ; il n'a pas été exécuté et ne constitue pas une base déployée.
 
 ## Cible backend proposée (non déployée)
 
@@ -48,4 +48,4 @@ Les règles d'authentification, d'autorisation, de consentement, de synchronisat
 
 ## Prochaine étape
 
-Construire un prototype backend isolé et jetable uniquement après validation du fournisseur, puis démontrer l'isolation des utilisateurs, l'export, l'effacement, la restauration et la synchronisation avant toute migration du prototype local.
+Faire relire le brouillon SQL, ajouter les tests RLS après sélection du fournisseur, puis exécuter une migration sur une base jetable et démontrer l'isolation des utilisateurs, l'export, l'effacement, la restauration et la synchronisation avant toute migration du prototype local.
