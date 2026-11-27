@@ -42,9 +42,11 @@ const coachAnim={squat:"coach-squat",pushup:"coach-pushup",plank:"coach-plank",l
 function coachInit(){
   if(!$("#view-coach"))return;
   if(data.name)$("#coach-greeting-text").innerHTML="Bonjour "+escape(data.name)+" ! <i>✦</i>";
-  renderCoachStats();
-  renderCoachExercises("all");
-  $("#coach-start-session").onclick=coachStartSession;
+  renderCoachStats();renderCoachStage("squat");renderCoachExercises("all");
+  $("#coach-stage-prev").onclick=()=>{const i=coachExercises.findIndex(x=>x.id===window.parisfitCoachExercise);renderCoachStage(coachExercises[(i-1+coachExercises.length)%coachExercises.length].id);};
+  $("#coach-stage-next").onclick=()=>{const i=coachExercises.findIndex(x=>x.id===window.parisfitCoachExercise);renderCoachStage(coachExercises[(i+1)%coachExercises.length].id);};
+  $("#coach-stage-toggle").onclick=()=>{const v=$("#coach-stage-visual");v.classList.toggle("is-paused");$("#coach-stage-toggle").textContent=v.classList.contains("is-paused")?"▶ Reprendre":"Ⅱ Pause animation";};
+  $("#coach-stage-start").onclick=coachStartSingleExercise;$("#coach-start-session").onclick=coachStartSession;
   $("#coach-chat-send").onclick=coachChatSend;
   $("#coach-chat-input").addEventListener("keydown",e=>{if(e.key==="Enter")coachChatSend();});
   $("#coach-settings").onclick=settings;
@@ -58,32 +60,30 @@ function renderCoachStats(){
   if(data.energy){el.innerHTML="✓<small> noté</small>";note.textContent=labels[data.energy]?labels[data.energy][1]:"Ressenti déclaré par toi.";energy.textContent=labels[data.energy]?labels[data.energy][0]:"À renseigner";}
   else{el.innerHTML="—<small>/100</small>";note.textContent="Complète ton ressenti pour démarrer";energy.textContent="À renseigner";}
 }
+function coachFigure(anim){
+ return '<svg class="coach-figure pose-'+anim+'" viewBox="0 0 200 220" role="img" aria-label="Coach sportif illustrant '+escape(anim)+'"><defs><linearGradient id="coachSuit" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#36c98b"/><stop offset="1" stop-color="#14734f"/></linearGradient></defs><ellipse cx="100" cy="205" rx="62" ry="8" fill="#153f3218"/><g class="figure-body"><circle class="figure-head" cx="100" cy="31" r="17" fill="#d99a72"/><path d="M94 46h12v12H94z" fill="#c98560"/><path class="figure-torso" d="M76 58Q100 48 124 58L132 116Q100 128 68 116Z" fill="url(#coachSuit)"/><path class="figure-arm figure-arm-left" d="M77 64Q62 75 54 100" fill="none" stroke="#d99a72" stroke-width="13" stroke-linecap="round"/><path class="figure-arm figure-arm-right" d="M123 64Q138 75 146 100" fill="none" stroke="#d99a72" stroke-width="13" stroke-linecap="round"/><path class="figure-leg figure-leg-left" d="M82 115Q77 145 70 177" fill="none" stroke="#244b3b" stroke-width="17" stroke-linecap="round"/><path class="figure-leg figure-leg-right" d="M118 115Q123 145 130 177" fill="none" stroke="#244b3b" stroke-width="17" stroke-linecap="round"/><path d="M70 179l-12 5M130 179l12 5" stroke="#d99a72" stroke-width="10" stroke-linecap="round"/></g><path d="M28 195h144" stroke="#9bb9a5" stroke-width="2" stroke-linecap="round" opacity=".45"/></svg>';
+}
+function renderCoachStage(id){
+ const x=coachExercises.find(e=>e.id===id)||coachExercises[0],index=coachExercises.findIndex(e=>e.id===x.id);
+ $("#coach-stage-title").textContent=x.title;$("#coach-stage-subtitle").textContent="Démonstration du mouvement · vue de face";
+ $("#coach-stage-visual").innerHTML=coachFigure(x.anim);$("#coach-stage-desc").textContent=x.desc;
+ $("#coach-stage-muscles").textContent=x.muscles;$("#coach-stage-level").textContent=x.level+" · "+x.time;
+ $("#coach-stage-index").textContent="EXERCICE "+(index+1)+" / "+coachExercises.length;
+ $("#coach-stage-visual").classList.remove("is-paused");$("#coach-stage-toggle").textContent="Ⅱ Pause animation";window.parisfitCoachExercise=x.id;
+}
 function renderCoachExercises(filter){
-  const grid=$("#coach-exercises"),list=filter==="all"?coachExercises:coachExercises.filter(x=>x.cat===filter);
-  grid.innerHTML=list.map(x=>`
-    <article class="coach-exercise-card" data-ex="${x.id}">
-      <div class="coach-exercise-demo"><div class="anim-part" style="animation:${coachAnim[x.anim]||"coach-pulse"} 2s ease-in-out infinite">▲</div></div>
-      <h4>${escape(x.title)}</h4>
-      <div class="ex-meta">${escape(x.level)} · ${escape(x.time)}</div>
-      <p>${escape(x.desc)}</p>
-      <div class="ex-foot">${escape(x.muscles)}${x.noMateriel?" · Sans matériel":""}</div>
-    </article>
-  `).join("");
-  $$("[data-ex]").forEach(card=>{card.onclick=function(){coachOpenExercise(this.dataset.ex);}});
+ const grid=$("#coach-exercises"),list=filter==="all"?coachExercises:coachExercises.filter(x=>x.cat===filter);
+ grid.innerHTML=list.map(x=>`<article class="coach-exercise-card" data-ex="${x.id}"><div class="coach-exercise-demo">${coachFigure(x.anim)}</div><h4>${escape(x.title)}</h4><div class="ex-meta">${escape(x.level)} · ${escape(x.time)}</div><p>${escape(x.desc)}</p><div class="ex-foot">${escape(x.muscles)}${x.noMateriel?" · Sans matériel":""}</div></article>`).join("");
+ $$("[data-ex]").forEach(card=>card.onclick=function(){renderCoachStage(this.dataset.ex);$("#coach-stage-visual").scrollIntoView({behavior:"smooth",block:"center"});});
 }
-function coachOpenExercise(id){
-  const x=coachExercises.find(e=>e.id===id);
-  if(!x)return;
-  dialog('<div style="max-width:420px"><p class="eyebrow">EXERCICE · '+escape(x.cat)+'</p><h2 style="margin:4px 0 6px">'+escape(x.title)+'</h2><div style="height:150px;border-radius:12px;border:1px solid #164533;background:#061b14;display:flex;align-items:center;justify-content:center;color:#64748b;font-size:11px;margin-bottom:10px">▶ Démonstration animée de l\'exercice</div><p style="font-size:11.5px;color:#cbd5e1;margin:0 0 10px">'+escape(x.desc)+'</p><div style="font-size:9px;color:#94a3b2;margin-bottom:6px"><b>Muscles :</b> '+escape(x.muscles)+' · <b>Niveau :</b> '+escape(x.level)+' · <b>Temps :</b> '+escape(x.time)+'</div><p style="font-size:10px;color:#94a3b2;margin:0 0 12px"><b>Précaution :</b> va à ton rythme et arrête-toi en cas de douleur. Ce contenu est indicatif, pas un avis médical.</p><button class="coach-primary" id="coach-ex-done">J’ai terminé</button></div>');
-  $("#coach-ex-done").onclick=()=>{$("#modal").close();toast("Exercice noté. Bien joué !");};
-}
-
 $("#workout-rec").onclick=()=>view("coach");
+let coachSessionIndex=-1;
+function coachStartSingleExercise(){const id=window.parisfitCoachExercise||"squat";renderCoachStage(id);toast("Démonstration lancée. Suis le mouvement à ton rythme.");}
 function coachStartSession(){
-  dialog('<div style="max-width:420px"><p class="eyebrow">SÉANCE — RENFORCEMENT &amp; CARDIO</p><h2 style="margin:4px 0 8px">20 min · Débutant</h2><p style="font-size:11px;color:#94a3b2;margin:0 0 12px">Ton coach te guide exercice par exercice. Va à ton rythme, repose-toi entre chaque mouvement.</p><div id="coach-session-list" style="display:flex;flex-direction:column;gap:8px"></div><p style="font-size:10px;color:#94a3b2;margin:8px 0 0">Indicatif : adapte ou saute tout exercice qui ne te convient pas.</p><button class="coach-primary" id="coach-session-done" style="margin-top:12px">J’ai terminé la séance</button></div>');
-  const list=$("#coach-session-list");
-  coachExercises.slice(0,5).forEach((x,i)=>{list.innerHTML+=`<div style="display:flex;gap:10px;align-items:center;font-size:11px;padding:6px 0;border-bottom:1px solid #164533"><div style="width:24px;height:24px;border-radius:6px;background:#10b981;color:#000;display:grid;place-items:center;font-weight:800">${i+1}</div><div><div style="color:#fff;font-weight:700">${escape(x.title)}</div><div style="color:#94a3b2;font-size:10px">${escape(x.time)} · ${escape(x.level)}</div></div></div>`;});
-  $("#coach-session-done").onclick=()=>{$("#modal").close();toast("Séance terminée. Bravo pour ta régularité !");};
+ coachSessionIndex=0;renderCoachStage(coachExercises[0].id);$("#coach-stage-index").textContent="SÉANCE GUIDÉE · 1 / 5";
+ $("#coach-stage-start").textContent="Exercice suivant →";
+ $("#coach-stage-start").onclick=()=>{coachSessionIndex++;if(coachSessionIndex>=5){coachSessionIndex=-1;$("#coach-stage-start").textContent="Commencer cette séance";$("#coach-stage-start").onclick=coachStartSession;toast("Séance terminée. Merci d'avoir pris ce temps.");return;}renderCoachStage(coachExercises[coachSessionIndex].id);$("#coach-stage-index").textContent="SÉANCE GUIDÉE · "+(coachSessionIndex+1)+" / 5";};
+ $("#coach-stage-visual").scrollIntoView({behavior:"smooth",block:"center"});toast("Séance guidée démarrée. Premier exercice : "+coachExercises[0].title+".");
 }
 function coachChatSend(){
   const input=$("#coach-chat-input");const q=input.value.trim();if(!q)return;
