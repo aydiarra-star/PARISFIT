@@ -2,7 +2,7 @@ const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],KEY
 const defaults={habits:[],water:0,energy:null,journal:"",name:""};let data;try{data={...defaults,...JSON.parse(localStorage.getItem(KEY)||"{}")}}catch{data={...defaults}}
 const save=()=>localStorage.setItem(KEY,JSON.stringify(data));
 function toast(t){const e=$("#toast");e.textContent=t;e.classList.add("show");clearTimeout(toast.timer);toast.timer=setTimeout(()=>e.classList.remove("show"),2200)}
-function view(n){$(".view").forEach(x=>x.classList.toggle("active",x.id==="view-"+n));$("[data-view]").forEach(x=>{const active=x.dataset.view===n;x.classList.toggle("active",active);if(active)x.setAttribute("aria-current","page");else x.removeAttribute("aria-current")});window.scrollTo({top:0,behavior:"smooth"})}
+function view(n){$$(".view").forEach(x=>x.classList.toggle("active",x.id==="view-"+n));$$("[data-view]").forEach(x=>x.classList.toggle("active",x.dataset.view===n));$$(".nav [data-view], .mobile-nav [data-view]").forEach(x=>{if(x.dataset.view===n)x.setAttribute("aria-current","page");else x.removeAttribute("aria-current")});window.scrollTo({top:0,behavior:"smooth"})}
 $$("[data-view]").forEach(x=>x.addEventListener("click",()=>view(x.dataset.view)));
 $("#date").textContent=new Intl.DateTimeFormat("fr-FR",{weekday:"long",day:"numeric",month:"long"}).format(new Date());
 function dialog(html){$("#modal-content").innerHTML=html;$("#modal-content").querySelectorAll("button").forEach(button=>button.type="button");$("#modal").showModal()}
