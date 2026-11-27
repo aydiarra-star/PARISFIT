@@ -24,11 +24,12 @@ for (const file of ["styles.css", "app.js", "service-worker.js", "manifest.webma
 }
 assert.ok(css.length > 1000, "La feuille de styles semble vide ou incomplète.");
 assert.ok(js.includes("function render()"), "Le rendu principal de l'interface est absent.");
-assert.equal(manifest.name, "PARISFIT");
+assert.equal(manifest.short_name, "PARISFIT");
+assert.ok(manifest.name.startsWith("PARISFIT"), "Le nom du manifeste doit conserver la marque PARISFIT.");
 assert.ok(manifest.start_url, "Le manifeste doit définir start_url.");
 assert.ok(manifest.display, "Le manifeste doit définir display.");
 
-const staticIds = ["settings", "profile", "workout", "sos",  "habits", "water-add", "water-reset", "meal-ideas", "breath", "breath2", "journal", "rest"];
+const staticIds = ["settings", "profile", "workout", "sos", "add-habit", "habits", "water-add", "water-reset", "meal-ideas", "breath", "breath2", "journal", "rest"];
 for (const id of staticIds) {
   assert.ok(ids.includes(id), `Contrôle attendu absent du HTML : #${id}`);
 }
