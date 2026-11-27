@@ -3,10 +3,94 @@
 <body><div class="shell">
 <aside class="sidebar"><a class="brand" href="#today"><span class="logo">P<span>F</span></span><span><b>PARISFIT</b><small>MOVE. GROW. LIVE.</small></span></a><p class="side-label">TON ESPACE</p><nav class="nav"><button class="active" data-view="today">⌂ <span>Aujourd'hui</span></button><button data-view="switch">↗ <span>Switch</span></button><button data-view="nutrition">◒ <span>Nutrition</span></button><button data-view="mental">♡ <span>Mental</span></button></nav><div class="side-bottom"><p>✳ Chaque petit pas compte.<br><b>Avance à ton rythme.</b></p><button id="profile">◉ &nbsp; Mon espace <span>›</span></button></div></aside>
 <main><header class="topbar"><div class="mobile-brand"><span class="logo">P<span>F</span></span><b>PARISFIT</b></div><span id="date"></span><button id="settings" aria-label="Paramètres">⚙</button></header>
-<section class="view active" id="view-today"><div class="intro"><div><p class="eyebrow">TON ESPACE, TON RYTHME</p><h1 id="greeting">Bonjour ! <i>✦</i></h1><p class="muted">Prêt à prendre soin de toi aujourd'hui ?</p></div><span class="day-chip">● Une étape à la fois</span></div>
-<div class="stats"><article class="vitality"><div class="card-top">MON ÉTAT DE FORME <span>PERSONNEL</span></div><div class="score" id="score">—<small>/100</small></div><p id="score-note">Complète ton ressenti pour démarrer</p><div class="card-foot">Ton bilan évoluera avec tes données.<button data-energy>Faire mon point →</button></div></article><article class="stat"><label>✦ &nbsp; MA RÉGULARITÉ</label><strong>0 <small>jour</small></strong><p>Ta série commence quand tu le souhaites.</p><div class="track"><span></span></div><small>Aucune pression : reprends quand tu veux.</small></article><article class="stat"><label>◉ &nbsp; MON ÉNERGIE</label><strong id="energy">À renseigner</strong><p id="energy-note">Comment te sens-tu aujourd'hui ?</p><button class="outline" data-energy>Évaluer mon énergie →</button></article></div>
-<div class="section-title"><div><p class="eyebrow">PASSER À L'ACTION</p><h2>Ton programme du jour</h2></div><button class="quiet" data-view="switch">Voir mes habitudes →</button></div>
-<article class="workout"><div class="workout-art"><div class="rings"></div><span>🏃</span><small>À TON RYTHME</small></div><div class="workout-copy"><label>MOUVEMENT · DÉCOUVERTE</label><h3>Une reprise en douceur</h3><p>Une courte séance de mobilité pour délier le corps et retrouver de bonnes sensations.</p><div class="meta">◷ 8–10 min &nbsp; · &nbsp; ◈ Sans matériel &nbsp; · &nbsp; ◎ Débutant</div><button class="primary" id="workout">Découvrir la séance →</button></div></article>
+<section class="view active" id="view-today"><div class="today-hero">
+  <div class="hero-art"><div class="hero-badge">PARISFIT</div><span class="hero-coach">💪</span></div>
+  <div class="hero-copy">
+    <p class="hero-eyebrow">TON ESPACE, TON RYTHME</p>
+    <h1 id="greeting">Bonjour ! <i>✦</i></h1><span class="hero-wave">👋</span>
+    <p class="hero-sub" id="hero-sub">Prêt à prendre soin de toi aujourd'hui ?</p>
+    <div class="hero-quote">
+      <span class="hero-quote-mark">“</span>
+      <p id="hero-quote">« La discipline est la clé d'une libération durable. »</p>
+    </div>
+  </div>
+</div>
+<div class="today-stats">
+  <article class="vitality premium">
+    <div class="vitality-top">Score de vitalité</div>
+    <div class="score-ring-wrap">
+      <svg class="score-ring" viewBox="0 0 100 100">
+        <circle class="score-ring-bg" cx="50" cy="50" r="38"></circle>
+        <circle class="score-ring-progress" cx="50" cy="50" r="38" style="--pct:92"></circle>
+      </svg>
+      <div class="score-number" id="score">92<small>/100</small></div>
+    </div>
+    <p id="score-note" class="score-note">Complète ton ressenti pour démarrer</p>
+    <div class="vitality-meta">
+      <span class="vitality-delta">↑ <span>+12%</span></span>
+      <span class="vitality-streak">3 jours d'affiliée <span>🔥</span></span>
+    </div>
+  </article>
+  <article class="stat">
+    <label>✦ &nbsp; MA RÉGULARITÉ</label>
+    <strong id="streak">0 <small>jour</small></strong>
+    <p>Ta série commence quand tu le souhaite.</p>
+    <small>Aucune pression : reprends quand tu veux.</small>
+  </article>
+  <article class="energy premium">
+    <div class="energy-top">Énergie du jour</div>
+    <div class="energy-value" id="energy">À renseigner</div>
+    <p id="energy-note" class="energy-note">Comment te sens-tu aujourd'hui ?</p>
+    <div class="energy-dots" id="energy-dots"></div>
+    <button class="energy-btn" data-energy>Évaluer mon énergie →</button>
+  </article>
+</div>
+<div class="today-actions-head">
+  <div><p class="eyebrow">ACTIONS DU JOUR</p><h2>Ton programme du jour</h2></div>
+  <button class="quiet" data-view="switch">Voir tout →</button>
+</div>
+<div class="action-list">
+  <article class="action-row">
+    <div class="action-icon">🏋️‍♂️</div>
+    <div class="action-copy">
+      <div class="action-label">Séance Full Body - 20 min</div>
+      <div class="action-desc">Renforce ton corps</div>
+    </div>
+    <button class="action-btn" id="workout">Commencer</button>
+  </article>
+  <article class="action-row">
+    <div class="action-icon">📖</div>
+    <div class="action-copy">
+      <div class="action-label">Lire : 5 principes de discipline</div>
+      <div class="action-desc">10 min · Développement personnel</div>
+    </div>
+    <button class="action-btn">Lire</button>
+  </article>
+  <article class="action-row action-water">
+    <div class="action-icon">💧</div>
+    <div class="action-copy">
+      <div class="action-label">Boire de l'eau</div>
+      <div class="action-desc" id="water-desc">Encore 1,2 L aujourd'hui</div>
+    </div>
+    <div class="action-water-controls">
+      <span id="water-count">0</span><small>/8 verres</small>
+      <div id="glasses" class="glasses compact"></div>
+    </div>
+  </article>
+</div>
+
+<div class="today-recommended">
+  <article class="rec-card">
+    <div class="rec-art"><span>🏃‍♀️</span></div>
+    <div class="rec-copy">
+      <span class="rec-tag">⭐ Séance recommandée</span>
+      <div class="rec-meta">⏱ 20 min &nbsp;·&nbsp; 🟢 Débutant</div>
+      <h3 id="rec-title">Renforcement &amp; Cardio</h3>
+      <p id="rec-desc">Boost ton énergie et ton endurance.</p>
+      <button class="rec-btn" id="workout-rec">Lancer la séance</button>
+    </div>
+  </article>
+</div>
 <div class="section-title"><div><p class="eyebrow">PRENDRE SOIN DE SOI</p><h2>Mes essentiels</h2></div></div><div class="essentials"><button data-view="nutrition"><i>◒</i><b>Nutrition</b><small>Repas, eau et équilibre</small></button><button data-view="mental"><i>♡</i><b>Mental</b><small>Respirer, souffler, se recentrer</small></button><button data-view="switch"><i>↗</i><b>Mes habitudes</b><small>Construire mes routines</small></button></div>
 <div class="section-title coach-section-title"><div><p class="eyebrow">COACH IA PARISFIT</p><h2>Ton entraîneur personnel</h2></div><button class="primary" data-view="coach">Ouvrir le Coach IA →</button></div>
 <div class="sos"><span>♡</span><div><label>UN MOMENT DIFFICILE ?</label><b>Tu peux faire une pause.</b><p>Pas de jugement. Juste un petit moment pour souffler.</p></div><button id="sos">SOS CRAQUAGE →</button></div><footer>MOVE. GROW. LIVE. — Ton corps. Ton esprit. Ta progression.</footer></section>

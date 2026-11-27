@@ -75,3 +75,94 @@
 .coach-demo-person::after{content:"";position:absolute;top:-14px;left:-6px;width:14px;height:14px;background:#e2e8f0;border-radius:50%}
 .coach-demo-person .coach-demo-arm{position:absolute;top:6px;width:22px;height:4px;background:#0ea58e;border-radius:2px}
 @media(max-width:720px){.coach-stats{grid-template-columns:1fr}.coach-session{grid-template-columns:1fr}.coach-session-art{min-height:110px}.coach-page{padding:16px 0 80px}}
+/* ===== TODAY — DESIGN PREMIUM (d'après l'image PARISFIT), interface existante préservée ===== */
+.today-hero{display:grid;grid-template-columns:250px 1fr;gap:22px;align-items:center;background:linear-gradient(135deg,#0b3427 0%,#07221a 100%);border:1px solid #164533;border-radius:20px;padding:26px 28px;color:#fff;margin-bottom:24px;position:relative;overflow:hidden;box-shadow:0 24px 60px #00000022}
+.today-hero::before{content:"";position:absolute;inset:-10px -10%;background:linear-gradient(to right,transparent,#10b98140,transparent);opacity:0.35}
+.hero-art{width:210px;height:210px;border-radius:16px;background:#07221a;border:1px solid #164533;display:grid;place-items:center;position:relative;overflow:hidden;flex:none}
+.hero-coach{font-size:80px;filter:drop-shadow(0 4px 12px #0004)}
+.hero-badge{position:absolute;top:14px;left:14px;font:800 11px Manrope;letter-spacing:1.5px;color:#22d39d;background:#061b14;border:1px solid #10b98133;padding:6px 10px;border-radius:100px}
+.hero-copy{display:flex;flex-direction:column;gap:10px}
+.hero-eyebrow{font-size:10px;font-weight:800;letter-spacing:1.4px;color:#7aa789;margin:0}
+.hero-copy h1{font:800 27px Manrope;color:#fff;margin:0 0 2px;letter-spacing:-0.5px}
+.hero-copy h1 i{color:#f97316;font-style:normal}
+.hero-wave{font-size:20px}
+.hero-sub{font-size:13px;color:#94a3b2;margin:0;line-height:1.5}
+.hero-quote{margin-top:8px;padding:14px 16px;border-radius:14px;background:#061b14;border:1px solid #164533}
+.hero-quote-mark{font:800 28px Manrope;color:#10b981}
+.hero-quote p{font-size:13px;color:#cbd5e1;margin:2px 0 0;line-height:1.5;display:inline}
+
+/* Stats premium */
+.today-stats{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:14px;margin-bottom:26px}
+.today-stats .vitality.premium{background:#0a2a20;border:1px solid #164533;border-radius:18px;padding:22px;color:#fff;min-height:auto}
+.today-stats .vitality.premium .vitality-top{font-size:9px;font-weight:800;letter-spacing:1.3px;color:#91a298;margin:0 0 10px}
+.score-ring-wrap{position:relative;width:94px;height:94px;margin:0 auto 12px}
+.score-ring{width:100%;height:100%;transform:rotate(-90deg)}
+.score-ring-bg{fill:none;stroke:#164533;stroke-width:11}
+.score-ring-progress{fill:none;stroke:#22d39d;stroke-width:11;stroke-linecap:round;stroke-dasharray:239;stroke-dashoffset:calc(239 - (239 * var(--pct,0) / 100));transition:stroke-dashoffset 1s ease}
+.score-number{position:absolute;inset:0;display:grid;place-items:center;font:800 30px Manrope;color:#fff}
+.score-number small{font-size:13px;color:#94a3b2}
+.score-note{font-size:10px;color:#94a3b2;margin:6px 0 0}
+.vitality-meta{display:flex;gap:14px;margin-top:10px;font-size:10px;font-weight:800;color:#cbd5e1}
+.vitality-meta span{color:#22d39d}
+
+.today-stats .energy.premium{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;background:#0a2a20;border:1px solid #164533;border-radius:18px;padding:22px;color:#fff;min-height:auto}
+.today-stats .energy.premium .energy-top{font-size:9px;font-weight:800;letter-spacing:1.3px;color:#91a298;margin:0 0 6px}
+.today-stats .energy.premium .energy-value{font:800 20px Manrope;color:#fff}
+.today-stats .energy.premium .energy-note{font-size:10px;color:#94a3b2;margin:0}
+.energy-dots{display:flex;gap:6px;justify-content:center;margin:8px 0 0}
+.edot{width:10px;height:10px;border-radius:50%;background:#164533;border:1px solid #22d39d33}
+.edot.filled{background:#22d39d;border-color:#22d39d;box-shadow:0 0 10px #22d39d55}
+.energy-btn{margin-top:6px;padding:8px 12px;background:transparent;border:1px solid #22d39d;color:#22d39d;border-radius:10px;font-size:10px;font-weight:800;cursor:pointer}
+.energy-btn:hover{background:#22d39d;color:#000}
+
+.today-stats .stat{background:#0a2a20;border:1px solid #164533;border-radius:16px;padding:18px;color:#fff;min-height:auto}
+.today-stats .stat label{color:#91a298}
+.today-stats .stat strong{font:800 24px Manrope;color:#fff;margin:10px 0 4px}
+.today-stats .stat strong small{font-size:12px;color:#94a3b2}
+.today-stats .stat p,.today-stats .stat small{color:#94a3b2;margin:2px 0 0}
+
+/* Actions du jour */
+.today-actions-head{display:flex;justify-content:space-between;align-items:end;margin:8px 0 14px}
+.today-actions-head .eyebrow{font-size:10px;font-weight:800;letter-spacing:1.4px;color:#7aa789;margin:0 0 4px}
+.today-actions-head h2{font:800 19px Manrope;color:var(--g);margin:0}
+.action-list{display:grid;gap:12px;margin-bottom:22px}
+.action-row{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow)}
+.action-icon{font-size:26px;width:44px;height:44px;border-radius:12px;background:#edf5ef;color:var(--g);display:grid;place-items:center;flex:none}
+.action-row.action-water .action-icon{background:#fff1e5;color:#d9934e}
+.action-copy{flex:1}
+.action-label{font:800 13px Manrope;color:var(--g);margin:0 0 3px}
+.action-desc{font-size:10.5px;color:#7f8c83;margin:0}
+.action-btn{background:var(--g);color:#fff;border:none;border-radius:10px;padding:9px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap}
+.action-btn:hover{background:var(--g2)}
+.action-water-controls{display:flex;align-items:center;gap:10px}
+.action-water-controls #water-count{font:800 13px Manrope;color:var(--g)}
+.action-water-controls small{font-size:9px;color:#7f8c83}
+.action-water-controls .glasses.compact{margin-left:8px}
+.action-water-controls .glasses.compact .glass{height:20px;flex:none;width:20px}
+
+/* Séance recommandée premium */
+.today-recommended{margin-bottom:10px}
+.rec-card{display:grid;grid-template-columns:200px 1fr;gap:0;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.rec-art{background:#fdecea;min-height:150px;display:grid;place-items:center;font-size:62px;position:relative;overflow:hidden}
+.rec-copy{padding:20px 22px;display:flex;flex-direction:column;justify-content:center;gap:8px}
+.rec-tag{font-size:9px;font-weight:800;letter-spacing:1.2px;color:#d97706;background:#fef3c7;padding:5px 10px;border-radius:100px;width:fit-content}
+.rec-meta{font-size:9.5px;color:#7f8c83;font-weight:800}
+.rec-card h3{font:800 17px Manrope;color:var(--g);margin:2px 0 6px;letter-spacing:-0.3px}
+.rec-card p{font-size:11px;color:#7f8c83;margin:0}
+.rec-btn{background:#f97316;color:#fff;border:none;border-radius:10px;padding:10px 14px;font-size:11px;font-weight:800;cursor:pointer;align-self:flex-start;width:fit-content}
+.rec-btn:hover{background:#ea580c}
+
+/* Mobile adaptations today */
+@media(max-width:720px){
+  .today-hero{grid-template-columns:1fr;gap:16px;padding:22px}
+  .hero-art{width:150px;height:150px}
+  .hero-coach{font-size:56px}
+  .today-stats{grid-template-columns:1fr 1fr}
+  .vitality.premium{grid-column:span 2}
+  .action-row{flex-direction:column;align-items:flex-start;gap:10px;padding:16px}
+  .action-icon{width:38px;height:38px;font-size:22px}
+  .action-btn{width:100%;white-space:normal}
+  .action-water-controls{width:100%;justify-content:space-between;margin-top:8px}
+  .rec-card{grid-template-columns:1fr}
+  .rec-art{min-height:120px}
+}
