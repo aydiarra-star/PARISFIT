@@ -36,3 +36,6 @@ node tests/smoke.cjs
 Le test vérifie six largeurs (320–1440 px), la persistance de l’eau, le ressenti, la lecture, l’ajout d’une habitude, le Coach et le rechargement hors ligne. `BASE_URL` et `CHROMIUM_PATH` permettent d’utiliser un serveur ou un navigateur existant.
 
 Les valeurs de vitalité sont des exemples explicitement signalés, isolés dans `demo-data.js`. Les photos illustratives de l’accueil sont générées par IA.
+
+## Coach sportif 3D — premier incrément
+Le Coach IA charge un avatar humanoïde procédural articulé via Three.js/WebGL. Les huit exercices disponibles ont des cycles de mouvement dédiés, avec commandes pause/reprise et vues de face/profil. Three.js est chargé depuis jsDelivr ; une connexion est donc nécessaire pour ce rendu. En cas d'absence de WebGL ou d'échec du CDN, un affichage de secours est conservé. Ce modèle est une base stylisée en 3D, pas un avatar photoréaliste ni une animation de capture de mouvement professionnelle.

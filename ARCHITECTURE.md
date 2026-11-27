@@ -34,3 +34,8 @@ Le dépôt ne contenait aucun code applicatif au début du chantier. Le premier 
 - Les quatre cartes ouvrent les parcours existants : lecture, Mental, pause et création d’une habitude. Le défi est une proposition, pas un suivi automatique de 30 jours.
 - `assets/coach-welcome.jpg` et `assets/workout.jpg` sont des illustrations photographiques générées par IA, inspirées de la référence fournie, pas des photographies de coachs partenaires.
 - Le service worker v4 inclut les nouvelles ressources ; typographie système disponible hors ligne.
+
+## Coach 3D — première base technique
+- `coach-3d.js` : scène Three.js, personnage humanoïde construit à partir de segments et articulations, éclairage, sol, caméra responsive et cycles d'animation par exercice.
+- Rendu WebGL chargé depuis jsDelivr ; fallback visuel si WebGL indisponible.
+- Cette base n'est pas un modèle GLB de qualité studio, une mocap validée, un système de correction biomécanique ni une IA conversationnelle connectée.

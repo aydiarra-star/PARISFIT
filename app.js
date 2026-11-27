@@ -70,15 +70,22 @@ function renderCoachStats(){
   else{el.innerHTML="—<small>/100</small>";note.textContent="Complète ton ressenti pour démarrer";energy.textContent="À renseigner";}
 }
 function coachFigure(anim){
- return '<svg class="coach-figure pose-'+anim+'" viewBox="0 0 200 220" role="img" aria-label="Coach sportif illustrant '+escape(anim)+'"><defs><linearGradient id="coachSuit" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#36c98b"/><stop offset="1" stop-color="#14734f"/></linearGradient></defs><ellipse cx="100" cy="205" rx="62" ry="8" fill="#153f3218"/><g class="figure-body"><circle class="figure-head" cx="100" cy="31" r="17" fill="#d99a72"/><path d="M94 46h12v12H94z" fill="#c98560"/><path class="figure-torso" d="M76 58Q100 48 124 58L132 116Q100 128 68 116Z" fill="url(#coachSuit)"/><path class="figure-arm figure-arm-left" d="M77 64Q62 75 54 100" fill="none" stroke="#d99a72" stroke-width="13" stroke-linecap="round"/><path class="figure-arm figure-arm-right" d="M123 64Q138 75 146 100" fill="none" stroke="#d99a72" stroke-width="13" stroke-linecap="round"/><path class="figure-leg figure-leg-left" d="M82 115Q77 145 70 177" fill="none" stroke="#244b3b" stroke-width="17" stroke-linecap="round"/><path class="figure-leg figure-leg-right" d="M118 115Q123 145 130 177" fill="none" stroke="#244b3b" stroke-width="17" stroke-linecap="round"/><path d="M70 179l-12 5M130 179l12 5" stroke="#d99a72" stroke-width="10" stroke-linecap="round"/></g><path d="M28 195h144" stroke="#9bb9a5" stroke-width="2" stroke-linecap="round" opacity=".45"/></svg>';
+ return '<div class="coach-3d-fallback" aria-hidden="true"><div class="fallback-human"><span class="fallback-head"></span><span class="fallback-torso"></span><span class="fallback-arm left"></span><span class="fallback-arm right"></span><span class="fallback-leg left"></span><span class="fallback-leg right"></span></div></div>';
 }
 function renderCoachStage(id){
  const x=coachExercises.find(e=>e.id===id)||coachExercises[0],index=coachExercises.findIndex(e=>e.id===x.id);
- $("#coach-stage-title").textContent=x.title;$("#coach-stage-subtitle").textContent="Démonstration du mouvement · vue de face";
- $("#coach-stage-visual").innerHTML=coachFigure(x.anim);$("#coach-stage-desc").textContent=x.desc;
- $("#coach-stage-muscles").textContent=x.muscles;$("#coach-stage-level").textContent=x.level+" · "+x.time;
+ $("#coach-stage-title").textContent=x.title;
+ $("#coach-stage-subtitle").textContent="Coach humain 3D · mouvement guidé";
+ $("#coach-stage-visual").innerHTML=coachFigure(x.anim);
+ $("#coach-stage-visual").dataset.exercise=x.id;
+ $("#coach-stage-desc").textContent=x.desc;
+ $("#coach-stage-muscles").textContent=x.muscles;
+ $("#coach-stage-level").textContent=x.level+" · "+x.time;
  $("#coach-stage-index").textContent="EXERCICE "+(index+1)+" / "+coachExercises.length;
- $("#coach-stage-visual").classList.remove("is-paused");$("#coach-stage-toggle").textContent="Ⅱ Pause animation";window.parisfitCoachExercise=x.id;
+ $("#coach-stage-visual").classList.remove("is-paused");
+ $("#coach-stage-toggle").textContent="Ⅱ Pause animation";
+ window.parisfitCoachExercise=x.id;
+ window.dispatchEvent(new CustomEvent("parisfit:coach-exercise",{detail:{id:x.id,anim:x.anim,title:x.title}}));
 }
 function renderCoachExercises(filter){
  const grid=$("#coach-exercises"),list=filter==="all"?coachExercises:coachExercises.filter(x=>x.cat===filter);
@@ -121,7 +128,7 @@ function coachQuick(q){
   coachChatAdd(map[q],true);coachChatReply(map[q]);
 }
 coachInit();
-if("serviceWorker"in navigator&&location.protocol.startsWith("http"))addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js?v=20261127-4",{updateViaCache:"none"}).catch(()=>{}));
+if("serviceWorker"in navigator&&location.protocol.startsWith("http"))addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js?v=20261127-5",{updateViaCache:"none"}).catch(()=>{}));
 // Reuse existing journeys; no duplicate pages or persisted illustrative measurements.
 $("#water-quick").onclick=()=>$("#water-add").click();
 $("#workout").onclick=()=>view("coach");
