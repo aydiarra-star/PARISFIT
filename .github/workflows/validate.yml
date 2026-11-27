@@ -80,7 +80,7 @@ jobs:
       - name: Install real Blender Python runtime dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y blender python3-numpy python3-requests libxrender1 libxxf86vm1 libxfixes3 libxi6 libxkbcommon0 libsm6 libice6 libgl1 libegl1 libx11-6 libxext6 libgomp1
+          sudo apt-get install -y ffmpeg blender python3-numpy python3-requests libxrender1 libxxf86vm1 libxfixes3 libxi6 libxkbcommon0 libsm6 libice6 libgl1 libegl1 libx11-6 libxext6 libgomp1
           blender --version
           mkdir -p .cache/phase9
           python -m pip freeze > .cache/phase9/python-packages.txt
@@ -118,6 +118,38 @@ jobs:
           if p.exists():
               print("::warning title=three-report.json::"+p.read_text().replace("%","%25").replace("\n","%0A"))
           PY
+      - name: Phase10 independent pre-export audit and controlled floor comparison
+        run: |
+          mkdir -p .cache/phase10
+          python tools/biomechanics/test_contracts.py
+          blender --background --factory-startup --python-exit-code 1 --python tools/biomechanics/export.py > .cache/phase10/blender.log 2>&1
+          python tools/biomechanics/test_generated.py
+      - name: Phase10 Three.js and complete comparison videos
+        run: |
+          python -m http.server 3000 --bind 0.0.0.0 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          node tools/biomechanics/check.cjs
+          FFMPEG_PATH=$(command -v ffmpeg) node tools/biomechanics/capture.cjs
+          python tools/biomechanics/verify-videos.py
+      - name: Phase10 public control diagnostics
+        if: always()
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          for name in ["before-report.json","after-report.json","comparison-report.json","morphology-report.json","three-report.json","video-report.json","blender.log"]:
+              p=Path(".cache/phase10")/name
+              if p.exists():
+                  text=p.read_text()[-16000:]
+                  print("::warning title=phase10-"+name+"::"+text.replace("%","%25").replace("\r","%0D").replace("\n","%0A"))
+          PY
+      - name: Phase10 control artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase10-control-review
+          path: .cache/phase10/
+          retention-days: 30
       - name: Preserve control evidence even on failure
         if: always()
         uses: actions/upload-artifact@v4
