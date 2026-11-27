@@ -40,6 +40,7 @@ test("les aides d’accessibilité clavier et lecteurs d’écran sont présente
   assert.match(html, /id="main-content"/);
   assert.match(html, /aria-label="Navigation principale"/);
   assert.match(html, /aria-label="Navigation mobile"/);
+  for (const view of ["today", "switch", "nutrition", "mental"]) assert.match(html, new RegExp(`data-view="${view}" aria-controls="view-${view}"`));
   assert.match(html, /aria-live="polite"/);
   assert.ok(js.includes('button.type="button"'));
 });
