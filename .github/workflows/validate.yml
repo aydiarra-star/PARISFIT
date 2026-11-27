@@ -33,6 +33,7 @@ jobs:
           python3 tools/capture-pipeline/test_permissions.py
           node tests/coach-capture-readiness.cjs
           node tests/coach-blender-evidence.cjs
+          node tests/coach-biomechanics-evidence.cjs
           node tests/coach-asset.cjs
           node --input-type=module --check < coach-3d.js
       - name: Vérifier le manifeste PWA

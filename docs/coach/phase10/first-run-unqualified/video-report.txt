@@ -1,0 +1,54 @@
+{
+  "status": "VALID\É",
+  "scope": "complete decode, not visual approval",
+  "videos": [
+    {
+      "file": "before-face.mp4",
+      "sha256": "3ad4a9207ad278cebea25aa95db5fabe9d4d29232a80e86d9d3ce21c61c8442e",
+      "frames": 59,
+      "seconds": 2.416667
+    },
+    {
+      "file": "before-profil.mp4",
+      "sha256": "5ea0cc5897871833811ec18796feddcae8a673f330109aa8922983a49b37f251",
+      "frames": 59,
+      "seconds": 2.416667
+    },
+    {
+      "file": "before-trois-quarts.mp4",
+      "sha256": "e84379f21a336e6709fc8f5359b7cf876e6cf2ca3064857fbcee59641cda3b81",
+      "frames": 59,
+      "seconds": 2.416667
+    },
+    {
+      "file": "before-slow.mp4",
+      "sha256": "5e00a810b4d0def8332ae0e2eceddbfb8200bd7e05bd92516e00b7ff3ba3ce75",
+      "frames": 117,
+      "seconds": 4.833333
+    },
+    {
+      "file": "after-face.mp4",
+      "sha256": "5cc5c7d7e49ce59be00b5e6fe4bd96b46d4abdfb42329bad50dee18210ff81a4",
+      "frames": 59,
+      "seconds": 2.416667
+    },
+    {
+      "file": "after-profil.mp4",
+      "sha256": "09c8a6ed2f7adc78e4672af8c8591053b7bbc51f482d6d48282590b5be5b1ca9",
+      "frames": 59,
+      "seconds": 2.416667
+    },
+    {
+      "file": "after-trois-quarts.mp4",
+      "sha256": "4dc53e76e169face839b1166d53a41bc266673b3b6c40ee6b01aab8849fcd2a7",
+      "frames": 59,
+      "seconds": 2.416667
+    },
+    {
+      "file": "after-slow.mp4",
+      "sha256": "a313505e59a9f433506403735768632ee12be25c881e9111a7e4729922acf39e",
+      "frames": 117,
+      "seconds": 4.833333
+    }
+  ]
+}

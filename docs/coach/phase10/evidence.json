@@ -1,0 +1,14 @@
+{
+  "run": "46052597634",
+  "check": "140687329517",
+  "commit": "e5c34eae848377db4e80cd08a7078b23882c828b",
+  "method": "base64 JSON chunks from check annotations; no binary artifacts claimed local",
+  "reports": {
+    "video-report.json": "4f190c43b83754d332c913c179707d359c66318e7ef98ff0c3438ac692f83ae1",
+    "three-report.json": "9ec3e3704f4cdc9762fd161ec8034bf4a354f978a6e34804b8949c22431286fe",
+    "morphology-report.json": "2d14a38bbd7cff0587eb3399dae84f320b28b9a03afb8ee7d24194a7c20ba7bc",
+    "comparison-report.json": "f6ef99380de936c8bbe2169b2d37c6a2296f60740a42b9b02e3d0fb77d373ae6",
+    "after-report.json": "a54d458880fe66446dbac238ceebafef6cfc26674e287660a171b309651ea9a9",
+    "before-report.json": "e815f1e440ca20d92598e7929951904ae06ae043c6d04966e399eceb20472541"
+  }
+}

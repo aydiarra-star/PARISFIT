@@ -1,0 +1,1 @@
+Run46051456625 : calculs exécutés, annotations de certains rapports tronquées. Enveloppe API conservée, non utilisée comme rapport final. Le transport compressé du run46052597634 fournit les rapports complets liés par evidence.json.
