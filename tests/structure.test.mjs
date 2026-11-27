@@ -19,7 +19,7 @@ test("la navigation mobile et desktop expose les mêmes destinations", () => {
 });
 
 test("les actions essentielles ont leurs points d'entrée", () => {
-  for (const id of ["settings", "profile", "workout", "sos",  "water-add", "meal-ideas", "breath", "journal", "rest"]) {
+  for (const id of ["settings", "profile", "workout", "sos", "add-habit", "water-add", "meal-ideas", "breath", "journal", "rest"]) {
     assert.match(html, new RegExp(`id="${id}"`));
   }
   for (const action of ["habitDialog", "function breath()", "function settings()", "function render()"]) {
@@ -28,7 +28,8 @@ test("les actions essentielles ont leurs points d'entrée", () => {
 });
 
 test("le manifeste décrit une application installable", () => {
-  assert.equal(manifest.name, "PARISFIT");
+  assert.equal(manifest.short_name, "PARISFIT");
+  assert.ok(manifest.name.startsWith("PARISFIT"));
   assert.ok(manifest.start_url);
   assert.ok(manifest.display);
   assert.ok(Array.isArray(manifest.icons) && manifest.icons.length > 0);
