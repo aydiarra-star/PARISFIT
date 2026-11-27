@@ -29,6 +29,23 @@ Aucun backend, authentification, IA, paiement, suivi santé, analyse caméra ou 
 
 Le modèle logique des données et les règles de confidentialité sont décrits dans DATA_MODEL.md. Il s'agit d'une spécification de conception ; aucune base de données ni migration SQL n'est encore déployée.
 
-## Prochaine décision d'architecture
+## Cible backend proposée (non déployée)
 
-Avant de connecter un backend ou de migrer la technologie, comparer les besoins PWA et natifs, les coûts d'exploitation, la sécurité, les possibilités hors ligne et les contraintes de publication. Les choix doivent être documentés avant implémentation.
+L'architecture cible sépare le client PWA/mobile, une couche API versionnée, les services métier, la passerelle IA et le stockage. PostgreSQL est privilégié pour les relations entre profils, objectifs, tâches, habitudes, séances, nutrition, bien-être et équilibre de vie.
+
+La comparaison des fournisseurs et les limites de la recommandation sont consignées dans BACKEND_DECISION.md. Supabase/PostgreSQL est l'option à évaluer en premier ; ce n'est pas encore une décision approuvée. Render + PostgreSQL reste l'alternative pour une API entièrement maîtrisée. Firebase reste une option si ses fonctions temps réel et mobile justifient le modèle NoSQL.
+
+Les règles d'authentification, d'autorisation, de consentement, de synchronisation hors ligne, d'export et d'effacement sont détaillées dans AUTH_SYNC_SECURITY.md. L'API logique existante reste décrite dans API_CONTRACT.md.
+
+## Règles d'architecture
+
+- Ne jamais exposer de clé privilégiée ou de secret serveur dans le frontend.
+- Isoler le fournisseur derrière une couche d'accès pour limiter le verrouillage.
+- Faire appliquer les autorisations côté serveur et, si disponible, au niveau des lignes en base.
+- Utiliser IndexedDB pour les données structurées hors ligne ; réserver le cache service worker aux ressources statiques publiques.
+- Ne pas migrer de données sensibles réelles avant validation des droits, du consentement, des sauvegardes et du parcours de suppression.
+- Ne créer aucun service payant ou abonnement sans accord explicite.
+
+## Prochaine étape
+
+Construire un prototype backend isolé et jetable uniquement après validation du fournisseur, puis démontrer l'isolation des utilisateurs, l'export, l'effacement, la restauration et la synchronisation avant toute migration du prototype local.
