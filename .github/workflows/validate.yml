@@ -235,3 +235,39 @@ jobs:
           name: phase9-blender-control
           path: .cache/phase9/
           retention-days: 30
+  source-qualification:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Source audit environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-numpy python3-pil ffmpeg
+      - name: Public pinned source screening
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 tools/source-benchmark/download.py
+          python3 tools/source-benchmark/test_audit.py
+          python3 tools/source-benchmark/audit.py
+          python3 tools/source-benchmark/visuals.py
+          python3 tools/source-benchmark/originals.py
+      - name: Source audit evidence
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json,zlib,base64
+          from pathlib import Path
+          root=Path('.cache/phase12')
+          for name in ['14_06-report.json','original-retrieval.json','visual-report.json']:
+              p=root/name
+              if p.exists():
+                  raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+                  for i in range(0,len(raw),3800):print('::warning title=phase12-'+name+'-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: phase12-source-benchmark
+          path: .cache/phase12/
+          retention-days: 30
