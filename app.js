@@ -112,4 +112,4 @@ function coachQuick(q){
   coachChatAdd(map[q],true);coachChatReply(map[q]);
 }
 coachInit();
-if("serviceWorker"in navigator&&location.protocol.startsWith("http"))addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js").catch(()=>{}));
+if("serviceWorker"in navigator&&location.protocol.startsWith("http"))addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js?v=20261127-2",{updateViaCache:"none"}).catch(()=>{}));
