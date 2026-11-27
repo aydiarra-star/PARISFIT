@@ -196,7 +196,18 @@ jobs:
           p=Path('.cache/phase11/anatomy-summary.json')
           if p.exists():
               raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
-              for i in range(0,len(raw),3800):print('::warning title=phase11-anatomy-summary.json-'+str(i//3800)+'::'+raw[i:i+3800])
+              for i in range(0,min(len(raw),38000),3800):print('::warning title=phase11-anatomy-summary.json-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - name: Phase11 skeleton inventory continuation
+        if: always()
+        run: |
+          python - <<'PY'
+          import zlib,base64
+          from pathlib import Path
+          p=Path('.cache/phase11/anatomy-summary.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              for i in range(38000,len(raw),3800):print('::warning title=phase11-anatomy-summary.json-'+str(i//3800)+'::'+raw[i:i+3800])
           PY
       - name: Phase11 video inventory transport
         if: always()
