@@ -1,0 +1,11 @@
+{
+  "status": "BLOCKED",
+  "duration": 5,
+  "samples": 301,
+  "tracks": 82,
+  "quaternionSignFlips": 224,
+  "sourceType": "authored-procedural-control-not-mocap",
+  "manualEdits": [],
+  "smoothing": false,
+  "contactIK": false
+}

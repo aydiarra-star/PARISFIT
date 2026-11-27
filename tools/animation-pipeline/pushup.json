@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "id": "pushup-control",
+  "source": "assets/coach/coach.glb",
+  "sourceSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+  "sourceType": "authored-procedural-control-not-mocap",
+  "clip": "pompes",
+  "start": 0,
+  "end": 5,
+  "sampleHz": 60,
+  "license": {"model": "MIT Microsoft Rocketbox 2020", "motion": "PARISFIT experimental authored motion", "commercialUseVerified": true, "redistributionVerified": true},
+  "corrections": {"quaternionHemisphere": true, "temporalSmoothing": false, "contactIK": false, "manualEdits": []},
+  "thresholds": {"segmentErrorM": 0.0001, "penetrationM": 0.003, "supportDriftM": 0.005, "supportGapM": 0.005, "rotationStepRad": 0.1745329252, "jointSpeedMS": 2, "jointAccelerationMS2": 20, "loopPositionM": 0.002},
+  "reviews": {"contactAnnotation": false, "anatomy": false, "visual": false, "pedagogy": false, "collisions": false, "physicalDevices": false, "entryExitRecovery": false},
+  "output": "docs/coach/phase7"
+}
