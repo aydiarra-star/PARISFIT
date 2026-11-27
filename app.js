@@ -54,7 +54,7 @@ function coachInit(){
   renderCoachStats();renderCoachStage("squat");renderCoachExercises("all");
   $("#coach-stage-prev").onclick=()=>{const i=coachExercises.findIndex(x=>x.id===window.parisfitCoachExercise);renderCoachStage(coachExercises[(i-1+coachExercises.length)%coachExercises.length].id);};
   $("#coach-stage-next").onclick=()=>{const i=coachExercises.findIndex(x=>x.id===window.parisfitCoachExercise);renderCoachStage(coachExercises[(i+1)%coachExercises.length].id);};
-  $("#coach-stage-toggle").onclick=()=>{const v=$("#coach-stage-visual");v.classList.toggle("is-paused");$("#coach-stage-toggle").textContent=v.classList.contains("is-paused")?"▶ Reprendre":"Ⅱ Pause animation";};
+
   $("#coach-stage-start").onclick=coachStartSingleExercise;$("#coach-start-session").onclick=coachStartSession;
   $("#coach-chat-send").onclick=coachChatSend;
   $("#coach-chat-input").addEventListener("keydown",e=>{if(e.key==="Enter")coachChatSend();});
@@ -69,27 +69,27 @@ function renderCoachStats(){
   if(data.energy){el.innerHTML="✓<small> noté</small>";note.textContent=labels[data.energy]?labels[data.energy][1]:"Ressenti déclaré par toi.";energy.textContent=labels[data.energy]?labels[data.energy][0]:"À renseigner";}
   else{el.innerHTML="—<small>/100</small>";note.textContent="Complète ton ressenti pour démarrer";energy.textContent="À renseigner";}
 }
-function coachFigure(anim){
- return '<div class="coach-3d-fallback" aria-hidden="true"><div class="fallback-human"><span class="fallback-head"></span><span class="fallback-torso"></span><span class="fallback-arm left"></span><span class="fallback-arm right"></span><span class="fallback-leg left"></span><span class="fallback-leg right"></span></div></div>';
+function coachFigure(id){
+ return '<div class="coach-library-preview"><img src="./assets/coach/previews/'+id+'.jpg" alt="" loading="lazy"><span>Ouvrir la démonstration 3D</span></div>';
 }
 function renderCoachStage(id){
  const x=coachExercises.find(e=>e.id===id)||coachExercises[0],index=coachExercises.findIndex(e=>e.id===x.id);
  $("#coach-stage-title").textContent=x.title;
- $("#coach-stage-subtitle").textContent="Coach humain 3D · mouvement guidé";
- $("#coach-stage-visual").innerHTML=coachFigure(x.anim);
+ $("#coach-stage-subtitle").textContent="Modèle humain 3D · animation expérimentale";
+ // Keep the renderer mounted: switching exercises must not destroy its canvas.
  $("#coach-stage-visual").dataset.exercise=x.id;
  $("#coach-stage-desc").textContent=x.desc;
  $("#coach-stage-muscles").textContent=x.muscles;
  $("#coach-stage-level").textContent=x.level+" · "+x.time;
  $("#coach-stage-index").textContent="EXERCICE "+(index+1)+" / "+coachExercises.length;
  $("#coach-stage-visual").classList.remove("is-paused");
- $("#coach-stage-toggle").textContent="Ⅱ Pause animation";
+
  window.parisfitCoachExercise=x.id;
  window.dispatchEvent(new CustomEvent("parisfit:coach-exercise",{detail:{id:x.id,anim:x.anim,title:x.title}}));
 }
 function renderCoachExercises(filter){
  const grid=$("#coach-exercises"),list=filter==="all"?coachExercises:coachExercises.filter(x=>x.cat===filter);
- grid.innerHTML=list.map(x=>`<article class="coach-exercise-card" data-ex="${x.id}"><div class="coach-exercise-demo">${coachFigure(x.anim)}</div><h4>${escape(x.title)}</h4><div class="ex-meta">${escape(x.level)} · ${escape(x.time)}</div><p>${escape(x.desc)}</p><div class="ex-foot">${escape(x.muscles)}${x.noMateriel?" · Sans matériel":""}</div></article>`).join("");
+ grid.innerHTML=list.map(x=>`<article class="coach-exercise-card" data-ex="${x.id}"><div class="coach-exercise-demo">${coachFigure(x.id)}</div><h4>${escape(x.title)}</h4><div class="ex-meta">${escape(x.level)} · ${escape(x.time)}</div><p>${escape(x.desc)}</p><div class="ex-foot">${escape(x.muscles)}${x.noMateriel?" · Sans matériel":""}</div></article>`).join("");
  $$("[data-ex]").forEach(card=>card.onclick=function(){renderCoachStage(this.dataset.ex);$("#coach-stage-visual").scrollIntoView({behavior:"smooth",block:"center"});});
 }
 $("#workout-rec").onclick=()=>view("coach");
@@ -128,7 +128,7 @@ function coachQuick(q){
   coachChatAdd(map[q],true);coachChatReply(map[q]);
 }
 coachInit();
-if("serviceWorker"in navigator&&location.protocol.startsWith("http"))addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js?v=20261127-5",{updateViaCache:"none"}).catch(()=>{}));
+if("serviceWorker"in navigator&&location.protocol.startsWith("http"))addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js?v=20261127-6",{updateViaCache:"none"}).catch(()=>{}));
 // Reuse existing journeys; no duplicate pages or persisted illustrative measurements.
 $("#water-quick").onclick=()=>$("#water-add").click();
 $("#workout").onclick=()=>view("coach");
