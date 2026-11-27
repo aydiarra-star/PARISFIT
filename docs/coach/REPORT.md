@@ -1,5 +1,7 @@
 # PARISFIT — Coach humain 3D : livraison partielle, non approuvée pour production
 
+> **Archive phase 1 (10eb8bf).** Les tailles, clips et tests ci-dessous décrivent la version précédente. Pour l’état actuel, voir le [rapport phase 2](phase2/REPORT.md) et la [galerie avant/après](phase2/index.html).
+
 **Date : 27 novembre 2026. Statut : PR en brouillon, aucune fusion ni publication de ce chantier.**
 
 Le personnage géométrique a réellement été remplacé par un maillage humain professionnel texturé et skinné. Cela ne suffit pas à valider la mission complète : les mouvements sont des animations originales expérimentales, pas de la motion capture ni des démonstrations approuvées par un professionnel. Le rendu reste celui d’un modèle temps réel de génération Rocketbox, pas un humain photoréaliste contemporain. Aucune promesse de qualité studio atteinte.

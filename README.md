@@ -65,3 +65,7 @@ node tools/export-coach.cjs
 npm test
 ```
 Le téléchargement source utilise `gh` et une révision Rocketbox figée. Le FBX et les TGA restent dans `.cache/`, jamais dans Git. Pour recréer les planches et miniatures après les tests navigateur : `.venv/bin/python tools/review-contact-sheet.py`.
+
+## Coach — perfectionnement phase 2 (PR #11, brouillon)
+
+Huit clips Rocketbox corrigés, consignes synchronisées et 64 vidéos avant/après : [rapport actuel](docs/coach/phase2/REPORT.md), [galerie](docs/coach/phase2/index.html). `npm test` et `npm run test:browser` couvrent également trajectoires à 60 Hz, preuves vidéo et émulation mobile. Animations IK, **pas de mocap ni de validation professionnelle**. Transferts debout/sol naturels et tests iPhone/Android physiques restent à faire. Pas de fusion ni déploiement autorisés pour cette phase. Les anciens chiffres du dossier coach correspondent à la phase 1.

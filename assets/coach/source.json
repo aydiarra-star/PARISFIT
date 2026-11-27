@@ -34,9 +34,17 @@
   "adaptations": [
     "Centimeters to meters",
     "Reparent thighs to pelvis and clavicles to thorax preserving rest transforms",
-    "Diffuse and normal maps at 1024px, JPEG embedding",
-    "Original Parisfit IK-authored skeletal clips, 30 samples/second"
+    "Phase 2: 2048px head colour, 1024px body colour and lossless PNG normal maps",
+    "Original Parisfit IK-authored skeletal clips, 30 samples/second, sampled regression at 60 Hz",
+    "Surface-based foot/palm contact correction; fingers extended for floor supports",
+    "Alternating reverse lunges, staged jump/landing, moderate shoulder circles and upper-back stretch"
   ],
   "animationProvenance": "Authored in tools/coach-motion-authoring.js; not motion capture; not professionally validated",
-  "approval": "experimental — not approved for coaching instruction"
+  "approval": "experimental — phase 2 engineering checks pass; no qualified professional or physical-device approval",
+  "export": {
+    "bytes": 5789744,
+    "sha256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+    "phase": 2,
+    "report": "docs/coach/phase2/REPORT.md"
+  }
 }

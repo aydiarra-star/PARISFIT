@@ -4,8 +4,8 @@
   "version": "0.1.0",
   "description": "Static PARISFIT app; dependencies are development and asset-authoring tools only",
   "scripts": {
-    "test": "node --check app.js && node --check demo-data.js && node --check service-worker.js && node --input-type=module --check < coach-3d.js && node tests/coach-asset.cjs",
-    "test:browser": "node tests/smoke.cjs && node tests/coach-browser.cjs && node tests/coach-fallback.cjs"
+    "test": "node --check app.js && node --check demo-data.js && node --check service-worker.js && node --input-type=module --check < coach-3d.js && node --input-type=module --check < coach-content.js && node tests/coach-asset.cjs && node tests/coach-evidence.cjs",
+    "test:browser": "node tests/smoke.cjs && node tests/coach-browser.cjs && node tests/coach-fallback.cjs && node tests/coach-trajectories.cjs && node tests/coach-mobile.cjs && node tests/coach-gallery.cjs"
   },
   "devDependencies": {
     "@playwright/test": "1.65.1",

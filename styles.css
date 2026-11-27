@@ -148,3 +148,9 @@ main{max-width:1250px;padding-bottom:115px}.view{padding-top:24px}.topbar{border
 .coach-library-preview img{width:72px;height:98px;object-fit:contain;background:#edf5ef}.coach-model-status{font-size:10px}
 
 .coach-credits{margin-top:16px;font-size:11px;line-height:1.6;color:#405d4e}.coach-credits summary{cursor:pointer;padding:10px 0}.coach-credits a{color:#006845;text-decoration:underline}
+
+.coach-current-phase{background:#edf5ef;border-left:3px solid #07875d;border-radius:8px;padding:12px;margin:12px 0}.coach-current-phase b{font-size:13px;color:#07573e}.coach-stage-info .coach-current-phase p{font-size:12px;line-height:1.6;margin:7px 0 0}.coach-teaching{margin:14px 0;color:#385b47;font-size:12px}.coach-teaching summary{padding:10px 0;cursor:pointer;font-weight:700}.coach-teaching dl{margin:10px 0;line-height:1.6}.coach-teaching dt{font-weight:700;margin-top:12px}.coach-teaching dd{margin:3px 0 0}.coach-stage-main{align-items:start}
+
+.coach-stage-main{grid-template-areas:"visual info" "controls info";align-items:start}.coach-stage-visual{grid-area:visual}.coach-stage-controls{grid-area:controls}.coach-stage-info{grid-area:info}.coach-stage-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}@media(max-width:720px){.coach-stage-main{grid-template-areas:"visual" "controls" "info";gap:12px}}
+
+.coach-view-cut canvas{animation:coach-demonstration-cut .22s ease-out}@keyframes coach-demonstration-cut{0%,30%{opacity:0}100%{opacity:1}}

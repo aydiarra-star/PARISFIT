@@ -16,5 +16,5 @@ for item in files:
  data=base64.b64decode(reply['content']);assert hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()==item['sha']
  p=cache/Path(item['path']).name;p.write_bytes(data)
  if p.suffix=='.tga':
-  image=Image.open(io.BytesIO(data)).convert('RGB');image.thumbnail((1024,1024));image.save(p.with_suffix('.jpg'),quality=92)
+  image=Image.open(io.BytesIO(data)).convert('RGB');size=2048 if p.name=='m026_head_color.tga' else 1024;image.thumbnail((size,size));image.save(p.with_suffix('.png'))
  print(p)

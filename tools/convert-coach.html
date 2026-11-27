@@ -13,13 +13,13 @@ try {
  for(const side of ['L','R']){model.getObjectByName('Bip01_Pelvis').attach(model.getObjectByName('Bip01_'+side+'_Thigh'));model.getObjectByName('Bip01_Spine2').attach(model.getObjectByName('Bip01_'+side+'_Clavicle'));}
  const loader=new THREE.TextureLoader(),materials={};
  for(const part of ['body','head']){
-   const map=await loader.loadAsync('/.cache/rocketbox/m026_'+part+'_color.jpg');map.colorSpace=THREE.SRGBColorSpace;
-   const normalMap=await loader.loadAsync('/.cache/rocketbox/m026_'+part+'_normal.jpg');
-   materials['m026_'+part]=new THREE.MeshStandardMaterial({name:'Rocketbox '+part,map,normalMap,normalScale:new THREE.Vector2(.45,.45),roughness:.82,metalness:0});
+   const map=await loader.loadAsync('/.cache/rocketbox/m026_'+part+'_color.png');map.colorSpace=THREE.SRGBColorSpace;
+   const normalMap=await loader.loadAsync('/.cache/rocketbox/m026_'+part+'_normal.png');
+   materials['m026_'+part]=new THREE.MeshStandardMaterial({name:'Rocketbox '+part,map,normalMap,normalScale:new THREE.Vector2(part==='head'?.35:.45,part==='head'?.35:.45),roughness:part==='head'?.72:.82,metalness:0});
  }
  model.traverse(o=>{if(o.isMesh){o.material=Array.isArray(o.material)?o.material.map(m=>materials[m.name]):materials[o.material.name];o.frustumCulled=false;}});
  const clips=bakeExercises(model);model.animations=clips;
  const binary=await new GLTFExporter().parseAsync(model,{binary:true,animations:clips,onlyVisible:false});
- window.asset=Array.from(new Uint8Array(binary));window.ready=true;
+ window.assetURL=URL.createObjectURL(new Blob([binary],{type:'model/gltf-binary'}));window.assetBytes=binary.byteLength;window.ready=true;
 } catch(e){window.failure=e.stack;console.error(e);}
 </script>

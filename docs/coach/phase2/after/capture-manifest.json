@@ -1,0 +1,49 @@
+{
+  "stage": "after",
+  "modelSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+  "sourceCommit": null,
+  "fps": 24,
+  "method": "Offline timestamp sampling of real WebGL renders; not mocap or measured device FPS",
+  "clips": [
+    {
+      "name": "squat",
+      "duration": 5,
+      "frames": 121
+    },
+    {
+      "name": "pompes",
+      "duration": 5,
+      "frames": 121
+    },
+    {
+      "name": "gainage",
+      "duration": 6,
+      "frames": 145
+    },
+    {
+      "name": "fentes",
+      "duration": 10,
+      "frames": 241
+    },
+    {
+      "name": "jumpingjacks",
+      "duration": 3.200000047683716,
+      "frames": 78
+    },
+    {
+      "name": "mountainclimber",
+      "duration": 4,
+      "frames": 97
+    },
+    {
+      "name": "etirementdos",
+      "duration": 8,
+      "frames": 193
+    },
+    {
+      "name": "mobiliteepaules",
+      "duration": 6,
+      "frames": 145
+    }
+  ]
+}

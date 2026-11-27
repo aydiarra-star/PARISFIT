@@ -20,6 +20,8 @@ jobs:
           node --check app.js
           node --check demo-data.js
           node --check service-worker.js
+          node --input-type=module --check < coach-content.js
+          node tests/coach-evidence.cjs
           node tests/coach-asset.cjs
           node --input-type=module --check < coach-3d.js
       - name: Vérifier le manifeste PWA
