@@ -1,0 +1,39 @@
+<!doctype html><meta charset="utf-8"><title>Retarget Rocketbox — offline</title>
+<script type="importmap">{"imports":{"three":"/vendor/three/three.module.js"}}</script>
+<script type="module">
+import * as T from 'three';
+import {FBXLoader} from '../node_modules/three/examples/jsm/loaders/FBXLoader.js';
+import {GLTFLoader} from '../vendor/three/loaders/GLTFLoader.js';
+try {
+ const {scene:target}=await new GLTFLoader().loadAsync('/assets/coach/coach.glb');target.updateMatrixWorld(true);
+ const bones=[];target.traverse(b=>{if(b.isBone)bones.push(b)});const root=target.getObjectByName('Bip01');
+ const rest=bones.map(b=>({b,p:b.position.clone(),q:b.quaternion.clone()}));
+ const clips=[],rawClips=[],audit=[];
+ for(const [file,name] of [['m_crouch_in.max.fbx','stand-to-crouch'],['m_crouch_out.max.fbx','crouch-to-stand']]){
+  const source=await new FBXLoader().loadAsync('/.cache/phase3/'+file);source.scale.setScalar(.01);source.updateMatrixWorld(true);
+  const src={};source.traverse(b=>{if(b.isBone)src[b.name]=b});const clip=source.animations[0],mixer=new T.AnimationMixer(source);const action=mixer.clipAction(clip);action.setLoop(T.LoopOnce);action.clampWhenFinished=true;action.play();
+  const times=[],data={},raw={};for(const b of bones){data[b.name]=[];raw[b.name]=[];}
+  const positions=[],rawPositions=[],feet=[];
+  const length=(a,b)=>a.getWorldPosition(new T.Vector3()).distanceTo(b.getWorldPosition(new T.Vector3()));
+  const leg=m=>length(m('Bip01_L_Thigh'),m('Bip01_L_Calf'))+length(m('Bip01_L_Calf'),m('Bip01_L_Foot'));
+  const ratio=leg(n=>target.getObjectByName(n))/leg(n=>src[n]);
+  const skins=[];target.traverse(m=>{if(m.isSkinnedMesh)skins.push(m)});
+  function floor(){target.updateMatrixWorld(true);let min=Infinity;for(const m of skins){m.skeleton.update();const p=new T.Vector3();for(let i=0;i<m.geometry.attributes.position.count;i++){m.getVertexPosition(i,p);p.applyMatrix4(m.matrixWorld);min=Math.min(min,p.y)}}return min;}
+  for(let frame=0;frame<=Math.round(clip.duration*60);frame++){
+   const time=Math.min(frame/60,clip.duration);mixer.setTime(time);source.updateMatrixWorld(true);
+   for(const {b,p,q} of rest){b.position.copy(p);b.quaternion.copy(q)}target.updateMatrixWorld(true);
+   const sourceRoot=src.Bip01.getWorldPosition(new T.Vector3()).multiplyScalar(ratio);
+   root.position.copy(root.parent.worldToLocal(sourceRoot));root.updateWorldMatrix(false,true);
+   // World rotation transfer accommodates the repaired target hierarchy. Bone lengths stay unchanged.
+   for(const b of bones){if(!src[b.name])continue;const q=src[b.name].getWorldQuaternion(new T.Quaternion());b.quaternion.copy(b.parent.getWorldQuaternion(new T.Quaternion()).invert().multiply(q));b.updateWorldMatrix(false,true);}
+   times.push(time);rawPositions.push(...root.position.toArray());for(const b of bones)raw[b.name].push(...b.quaternion.toArray());
+   const min=floor();const p=root.getWorldPosition(new T.Vector3());p.y+=.002-min;root.position.copy(root.parent.worldToLocal(p));target.updateMatrixWorld(true);
+   positions.push(...root.position.toArray());for(const b of bones)data[b.name].push(...b.quaternion.toArray());
+   feet.push({time,sourceFloorCorrectionM:.002-min,left:target.getObjectByName('Bip01_L_Foot').getWorldPosition(new T.Vector3()).toArray(),right:target.getObjectByName('Bip01_R_Foot').getWorldPosition(new T.Vector3()).toArray()});
+  }
+  function build(rot,pos){const tracks=[new T.VectorKeyframeTrack('Bip01.position',times,pos)];for(const b of bones)tracks.push(new T.QuaternionKeyframeTrack(b.name+'.quaternion',times,rot[b.name]));const json=T.AnimationClip.toJSON(new T.AnimationClip(name,clip.duration,tracks).optimize());delete json.uuid;return json}
+  rawClips.push(build(raw,rawPositions));clips.push(build(data,positions));audit.push({name,source:file,duration:clip.duration,frames:times.length,missingBones:bones.filter(b=>!src[b.name]).map(b=>b.name),feet});
+ }
+ window.result={clips,rawClips,audit};window.ready=true;
+}catch(e){window.failure=e.stack}
+</script>

@@ -69,3 +69,7 @@ Le téléchargement source utilise `gh` et une révision Rocketbox figée. Le FB
 ## Coach — perfectionnement phase 2 (PR #11, brouillon)
 
 Huit clips Rocketbox corrigés, consignes synchronisées et 64 vidéos avant/après : [rapport actuel](docs/coach/phase2/REPORT.md), [galerie](docs/coach/phase2/index.html). `npm test` et `npm run test:browser` couvrent également trajectoires à 60 Hz, preuves vidéo et émulation mobile. Animations IK, **pas de mocap ni de validation professionnelle**. Transferts debout/sol naturels et tests iPhone/Android physiques restent à faire. Pas de fusion ni déploiement autorisés pour cette phase. Les anciens chiffres du dossier coach correspondent à la phase 1.
+
+## Coach — phase 3 (candidates, pas de validation finale)
+
+[Galerie de transitions](docs/coach/phase3/index.html) · [Rapport](docs/coach/phase3/REPORT.md) · [Dossier professionnel](docs/coach/phase3/professional-review.html). Deux clips officiels Rocketbox MIT retargetés, 16 vidéos comparatives, statut **HOLD** : inactifs dans le parcours. Les cinq autres passages demandés restent non réalisés. Caméra orbitale fluide et dossier de revue ajoutés ; aucun test physique ni avis professionnel inventé. PR #11 toujours en brouillon.

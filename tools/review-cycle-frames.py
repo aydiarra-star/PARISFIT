@@ -1,7 +1,7 @@
 from pathlib import Path
 import subprocess,os,io
 from PIL import Image,ImageDraw
-stage=os.environ.get('STAGE','before');ff=os.environ['FFMPEG_PATH'];root=Path('docs/coach/phase2')/stage
+stage=os.environ.get('STAGE','before');ff=os.environ['FFMPEG_PATH'];root=Path(os.environ.get('EVIDENCE_ROOT','docs/coach/phase2'))/stage
 import json
 for clip in json.loads((root/'capture-manifest.json').read_text())['clips']:
  sheet=Image.new('RGB',(1440,750),'white');draw=ImageDraw.Draw(sheet)

@@ -128,7 +128,7 @@ function coachQuick(q){
   coachChatAdd(map[q],true);coachChatReply(map[q]);
 }
 coachInit();
-if("serviceWorker"in navigator&&location.protocol.startsWith("http"))addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js?v=20261127-8",{updateViaCache:"none"}).catch(()=>{}));
+if("serviceWorker"in navigator&&location.protocol.startsWith("http"))addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js?v=20261127-9",{updateViaCache:"none"}).catch(()=>{}));
 // Reuse existing journeys; no duplicate pages or persisted illustrative measurements.
 $("#water-quick").onclick=()=>$("#water-add").click();
 $("#workout").onclick=()=>view("coach");

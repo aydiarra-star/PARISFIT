@@ -22,6 +22,7 @@ jobs:
           node --check service-worker.js
           node --input-type=module --check < coach-content.js
           node tests/coach-evidence.cjs
+          node tests/coach-transition-evidence.cjs
           node tests/coach-asset.cjs
           node --input-type=module --check < coach-3d.js
       - name: Vérifier le manifeste PWA
@@ -50,4 +51,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: coach-browser-review
-          path: .cache/coach-review/
+          path: |
+            .cache/coach-review/
+            docs/coach/phase3/*report.json

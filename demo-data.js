@@ -11,7 +11,7 @@ const PARISFIT_DEMO=Object.freeze({
 {id:"fentes",title:"Fentes",cat:"renforcement",level:"Débutant",time:"10 par jambe",muscles:"Quadriceps, fessiers",desc:"Fentes arrière alternées : recule un pied, descends modérément, reviens debout, puis change de côté.",noMateriel:true,anim:"lunge"},
 {id:"jumpingjacks",title:"Jumping Jacks",cat:"cardio",level:"Débutant",time:"30 à 60 secondes",muscles:"Cardio, corps entier",desc:"Jumping jacks modérés : ouvre les bras et les jambes pendant le saut, amortis la réception, puis referme.",noMateriel:true,anim:"jumpingjack"},
 {id:"mountainclimber",title:"Mountain Climbers",cat:"cardio",level:"Intermédiaire",time:"30 secondes",muscles:"Cardio, abdos, épaules",desc:"Mountain climbers contrôlés : depuis l’appui sur les mains, avance un genou puis l’autre sans précipitation.",noMateriel:true,anim:"mountain"},
-{id:"etirementdos",title:"Haut du dos · debout",cat:"etirement",level:"Débutant",time:"30 à 60 secondes",muscles:"Dos, lombaires",desc:"Étirement debout du haut du dos : avance les bras et arrondis légèrement le haut du dos, puis relâche.",noMateriel:true,anim:"stretch"},
+{id:"etirementdos",title:"Haut du dos · debout",cat:"etirement",level:"Débutant",time:"30 à 60 secondes",muscles:"Haut du dos, épaules",desc:"Étirement debout du haut du dos : avance les bras et arrondis légèrement le haut du dos, puis relâche.",noMateriel:true,anim:"stretch"},
 {id:"mobiliteepaules",title:"Mobilité · petits cercles des bras",cat:"mobilite",level:"Débutant",time:"1 à 2 minutes",muscles:"Épaules, haut du dos",desc:"Petits cercles des bras : coudes souples, dessine lentement un cercle de chaque côté à hauteur confortable.",noMateriel:true,anim:"shoulders"}
 ]
 });

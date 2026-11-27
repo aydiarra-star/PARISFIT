@@ -1,0 +1,52 @@
+{
+  "modelSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+  "candidateSHA256": "e5a948dc4d97554d4099584d819c0c718baadcce88c5ef32d9f119f3b988c65a",
+  "sampleHz": 60,
+  "status": "HOLD",
+  "runtimeEnabled": false,
+  "professionalReview": false,
+  "clips": [
+    {
+      "name": "stand-to-crouch",
+      "duration": 4.5,
+      "samples": 271,
+      "minSurfaceY": 0.0019998548502243424,
+      "maxJointSpeedMS": 1.1857114255315657,
+      "maxPlantedPivotStepM": 0.011029770741593978,
+      "maxFootGapM": {
+        "L": 0.03857571490540938,
+        "R": 0.009726435257476379
+      },
+      "pelvisHeightDeltaM": -0.46405391693115244,
+      "concerns": [
+        "support-foot clearance requires contact-phase review",
+        "planted-foot pivot drift exceeds per-sample guardrail",
+        "no reviewed contact schedule or centre-of-mass/balance model",
+        "exercise entry/exit poses not matched",
+        "professional continuous-video review absent"
+      ],
+      "status": "HOLD"
+    },
+    {
+      "name": "crouch-to-stand",
+      "duration": 4.5,
+      "samples": 271,
+      "minSurfaceY": 0.0019998548502243424,
+      "maxJointSpeedMS": 1.1857114255315657,
+      "maxPlantedPivotStepM": 0.011029770741593978,
+      "maxFootGapM": {
+        "L": 0.03857571490540938,
+        "R": 0.009726435257476379
+      },
+      "pelvisHeightDeltaM": -0.46405391693115244,
+      "concerns": [
+        "support-foot clearance requires contact-phase review",
+        "planted-foot pivot drift exceeds per-sample guardrail",
+        "no reviewed contact schedule or centre-of-mass/balance model",
+        "exercise entry/exit poses not matched",
+        "professional continuous-video review absent"
+      ],
+      "status": "HOLD"
+    }
+  ]
+}

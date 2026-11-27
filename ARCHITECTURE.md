@@ -48,3 +48,7 @@ Le dépôt ne contenait aucun code applicatif au début du chantier. Le premier 
 ### Coach phase 2
 
 `coach-content.js` définit les phases normalisées et consignes affichées selon le temps du clip. Les changements d’exercice sont des coupures explicites avec pause, pas des transferts corporels ni des crossfades. Le cache shell-v8 précache le contenu ; les réponses Range vidéo restent hors Cache API. Le lab hors production `tools/coach-lab.html` échantillonne les os et les appuis skinnés ; `tests/coach-trajectories.cjs` contrôle les cycles à 60 Hz. Galerie et preuves : `docs/coach/phase2/`. Les rapports de phase 1 sont historiques ; voir le rapport phase 2 pour les limites et l’actuel SHA du modèle.
+
+### Coach phase 3 : recherche isolée
+
+Le GLB à huit exercices ne change pas. `assets/coach/transitions/` contient les candidates Rocketbox officielles retargetées, non référencées par le runtime ni le précache (shell-v9). Le laboratoire accepte un paramètre `transitions` pour charger les clips JSON et les jouer en one-shot. La chaîne `download-coach-transitions.py` → `coach-transition-retarget.html` → `export-coach-transitions.cjs` conserve la provenance. Les tests d’audit écrivent explicitement HOLD ; leur exécution réussie ne signifie pas une acceptation du geste. Le runtime ajoute uniquement une interpolation orbitale de caméra bornée, interrompue par interaction et désactivée en mouvement réduit. Rapports et protocole : `docs/coach/phase3/`.

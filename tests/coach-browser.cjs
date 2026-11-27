@@ -9,7 +9,7 @@ const base=process.env.BASE_URL||'http://localhost:3000';
   await page.goto(base);assert.equal(await page.locator('canvas').count(),0,'No GPU context on the home page');
   await page.locator('#workout-rec').click();await page.locator('#coach-stage-visual').scrollIntoViewIfNeeded();
   await page.waitForFunction(()=>document.querySelector('#coach-stage-visual').dataset.state==='ready',{},{timeout:60000});
-  const inspect=()=>page.evaluate(async()=> (await import('/coach-3d.js?v=20261127-8')).inspectCoach());
+  const inspect=()=>page.evaluate(async()=> (await import('/coach-3d.js?v=20261127-9')).inspectCoach());
   const initial=await inspect();assert.equal(initial.clips.length,8);assert(initial.skinnedMeshes>0);assert.equal(initial.textures,4);assert(Object.keys(initial.joints).length>=60);
   await page.evaluate(()=>window.originalCanvas=document.querySelector('canvas'));
   for(const id of initial.clips){
