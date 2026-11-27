@@ -1,0 +1,14 @@
+{
+  "run": "46055100935",
+  "check": "140695552910",
+  "commit": "b8a32ab10feddfb1aec36e911691086ab9d78ad9",
+  "method": "zlib/base64 JSON annotations, SHA256 preserved; binary videos not retrieved",
+  "reports": {
+    "video-report.json": "18cdea83677d148c31ace33ec28a6b2c4146605bd9aa26b6d2bd0a4242eae352",
+    "anatomy-summary.json": "6bb1f8323632d00be0d115f10c2e3a2098dcfc0f8ab38a93403fd71b602f1994",
+    "three-report.json": "137225c253f8ac0a1209ecfb4373d9adb051528e394438d0cc4a508803478e5a",
+    "C_report.json": "5e667dc677d7a6aed71590e344da171ac238524f39578f27403ef6fee1169aeb",
+    "B_report.json": "3b54752e5924e8b66fe41e57181fa3ac0c49ad51ba1adb9a9055e71f695a2910",
+    "A_report.json": "57ca95ddbaf1aac0881b825bf3248aace6831c993e4791af17b1ae15930e5fa3"
+  }
+}
