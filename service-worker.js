@@ -1,1 +1,47 @@
-const CACHE="parisfit-shell-v1";const FILES=["./","./index.html","./styles.css","./app.js","./manifest.webmanifest","./assets/icon.svg"];self.addEventListener("install",e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting())));self.addEventListener("activate",e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));self.addEventListener("fetch",e=>{if(e.request.method!=="GET")return;const u=new URL(e.request.url);if(u.origin!==location.origin)return;e.respondWith(caches.match(e.request).then(hit=>hit||fetch(e.request).then(r=>{if(r.ok)caches.open(CACHE).then(c=>c.put(e.request,r.clone()));return r}).catch(()=>caches.match("./index.html")))))});
+const CACHE="parisfit-shell-v2";
+const FILES=["./","./index.html","./styles.css?v=20261127-2","./app.js?v=20261127-2","./manifest.webmanifest","./assets/icon.svg"];
+
+self.addEventListener("install",event=>{
+  event.waitUntil(
+    caches.open(CACHE)
+      .then(cache=>cache.addAll(FILES))
+      .then(()=>self.skipWaiting())
+  );
+});
+
+self.addEventListener("activate",event=>{
+  event.waitUntil(
+    caches.keys()
+      .then(keys=>Promise.all(keys.filter(key=>key.startsWith("parisfit-shell-")&&key!==CACHE).map(key=>caches.delete(key))))
+      .then(()=>self.clients.claim())
+  );
+});
+
+self.addEventListener("fetch",event=>{
+  const request=event.request;
+  if(request.method!=="GET")return;
+  const url=new URL(request.url);
+  if(url.origin!==self.location.origin)return;
+
+  if(request.mode==="navigate"){
+    event.respondWith(
+      fetch(new Request(request,{cache:"no-store"}))
+        .then(response=>{
+          if(response.ok){
+            const copy=response.clone();
+            caches.open(CACHE).then(cache=>cache.put("./index.html",copy));
+          }
+          return response;
+        })
+        .catch(()=>caches.match("./index.html"))
+    );
+    return;
+  }
+
+  event.respondWith(
+    caches.match(request).then(cached=>cached||fetch(request).then(response=>{
+      if(response.ok)caches.open(CACHE).then(cache=>cache.put(request,response.clone()));
+      return response;
+    }))
+  );
+});
