@@ -7,16 +7,17 @@
 | 2 | Navigation Aujourd'hui / Switch / Nutrition / Mental | Prototype interactif présent |
 | 3 | Persistance locale et préférences | Prototype local présent, sans synchronisation |
 | 4 | Tests structurels, tests automatisés et CI | En cours : validation Node.js et tests sans dépendance |
-| 5 | Audit accessibilité et parcours mobiles | À réaliser |
-| 6 | Authentification, API et base de données | À concevoir après décision d'architecture |
-| 7 | Bibliothèque d'exercices et programmes validés | À réaliser |
-| 8 | Coach 3D et animations | À réaliser |
-| 9 | Nutrition enrichie et contenus vérifiés | À réaliser |
-| 10 | Moment Intelligent, tâches et équilibre de vie | À réaliser |
-| 11 | Coach IA sécurisé | À réaliser |
-| 12 | Abonnements et administration | À réaliser |
-| 13 | HealthKit / Health Connect | À réaliser |
-| 14 | Publication mobile et conformité finale | À réaliser |
+| 5 | Accessibilité clavier et annonces dynamiques | Première couche ajoutée ; audit mobile et lecteur d'écran à réaliser |
+| 6 | Modèle logique de données et confidentialité | Documenté dans DATA_MODEL.md ; non déployé |
+| 7 | Authentification, API et base de données | À concevoir après décision d'architecture |
+| 8 | Bibliothèque d'exercices et programmes validés | À réaliser |
+| 9 | Coach 3D et animations | À réaliser |
+| 10 | Nutrition enrichie et contenus vérifiés | À réaliser |
+| 11 | Moment Intelligent, tâches et équilibre de vie | À réaliser |
+| 12 | Coach IA sécurisé | À réaliser |
+| 13 | Abonnements et administration | À réaliser |
+| 14 | HealthKit / Health Connect | À réaliser |
+| 15 | Publication mobile et conformité finale | À réaliser |
 
 ## État réel actuel
 
