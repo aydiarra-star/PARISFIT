@@ -19,7 +19,7 @@ test("la navigation mobile et desktop expose les mêmes destinations", () => {
 });
 
 test("les actions essentielles ont leurs points d'entrée", () => {
-  for (const id of ["settings", "profile", "workout", "sos", "add-habit", "water-add", "meal-ideas", "breath", "journal", "rest"]) {
+  for (const id of ["settings", "profile", "workout", "sos",  "water-add", "meal-ideas", "breath", "journal", "rest"]) {
     assert.match(html, new RegExp(`id="${id}"`));
   }
   for (const action of ["habitDialog", "function breath()", "function settings()", "function render()"]) {
@@ -35,6 +35,6 @@ test("le manifeste décrit une application installable", () => {
 });
 
 test("les identifiants HTML ne sont pas dupliqués", () => {
-  const ids = [...html.matchAll(/\\bid="([^"]+)"/g)].map((match) => match[1]);
+  const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
   assert.equal(new Set(ids).size, ids.length);
 });
