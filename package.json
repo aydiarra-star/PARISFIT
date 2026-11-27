@@ -1,0 +1,14 @@
+{
+  "name": "parisfit",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Static PARISFIT app; dependencies are development and asset-authoring tools only",
+  "scripts": {
+    "test": "node --check app.js && node --check demo-data.js && node --check service-worker.js && node --input-type=module --check < coach-3d.js && node tests/coach-asset.cjs",
+    "test:browser": "node tests/smoke.cjs && node tests/coach-browser.cjs && node tests/coach-fallback.cjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1",
+    "three": "0.169.0"
+  }
+}
