@@ -1,0 +1,24 @@
+{
+  "run": "https://github.com/aydiarra-star/PARISFIT/actions/runs/46048502964",
+  "commit": "6fb5e456904ab9bf73d4d24df0baa2ac6876655d",
+  "checkId": 140673661120,
+  "artifact": {
+    "created_at": "2026-11-27T18:20:38Z",
+    "expired": false,
+    "id": 15223785605,
+    "name": "phase9-blender-control",
+    "size_in_bytes": 4197343
+  },
+  "reports": [
+    {
+      "file": "blender-report.json",
+      "sha256": "0a229e5ca6c4af31cd1a535b31d991d1e184bab519ad46e9459416d9da3801f1"
+    },
+    {
+      "file": "three-report.json",
+      "sha256": "2b754418a3339c5be86183f6265d8921a0eeb659dce234df90dcfe036d5418f3"
+    }
+  ],
+  "captureKind": "public CMU control, not dedicated capture",
+  "runtimeEnabled": false
+}

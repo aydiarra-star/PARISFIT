@@ -1,0 +1,78 @@
+{
+  "status": "EXPORTED_PENDING_THREEJS",
+  "dataKind": "CMU licensed optical control, NOT dedicated PARISFIT capture",
+  "sourceSHA256": "e75bcdec4d6fdeac91571020d0b75d45cd4b2532113e699f465b5b297373ac05",
+  "modelSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+  "runtimeEnabled": false,
+  "professionalApproval": false,
+  "platform": "Linux-7.0.0-1018-aws-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "steps": [
+    {
+      "step": "startup",
+      "seconds": 0.043,
+      "version": "4.0.2"
+    },
+    {
+      "step": "rocketbox-import",
+      "seconds": 0.285,
+      "armature": "Bip01",
+      "bones": 80
+    },
+    {
+      "step": "bvh-import",
+      "seconds": 1.009,
+      "bones": 31,
+      "nativeHz": 120.00048000192001
+    },
+    {
+      "step": "calibration-and-retarget",
+      "seconds": 1.852,
+      "mappedBones": 22,
+      "scale": 0.9469891623878913,
+      "frames": 145
+    },
+    {
+      "step": "glb-export",
+      "seconds": 3.025,
+      "bytes": 4961852
+    }
+  ],
+  "corrections": {
+    "IK": false,
+    "smoothing": false,
+    "manual": []
+  },
+  "numpyVersion": "1.26.4",
+  "blenderVersion": "4.0.2",
+  "duration": 2.4,
+  "samples": 145,
+  "mapping": {
+    "Pelvis": "Hips",
+    "Spine": "LowerBack",
+    "Spine1": "Spine",
+    "Spine2": "Spine1",
+    "Neck": "Neck",
+    "Head": "Head",
+    "L_Thigh": "LeftUpLeg",
+    "L_Calf": "LeftLeg",
+    "L_Foot": "LeftFoot",
+    "L_Toe0": "LeftToeBase",
+    "L_Clavicle": "LeftShoulder",
+    "L_UpperArm": "LeftArm",
+    "L_Forearm": "LeftForeArm",
+    "L_Hand": "LeftHand",
+    "R_Thigh": "RightUpLeg",
+    "R_Calf": "RightLeg",
+    "R_Foot": "RightFoot",
+    "R_Toe0": "RightToeBase",
+    "R_Clavicle": "RightShoulder",
+    "R_UpperArm": "RightArm",
+    "R_Forearm": "RightForeArm",
+    "R_Hand": "RightHand"
+  },
+  "scale": 0.9469891623878913,
+  "outputSHA256": "fac4d26f57590f99951058c2532d6a96c4195cd8d39fbb797b35b19e3fcb7e7e",
+  "groundCorrection": "none; floor/contact must be measured, not silently projected",
+  "elapsedSeconds": 3.039
+}

@@ -1,11 +1,13 @@
 """CMU control BVH → calibrated FK Rocketbox → baked GLB, offline only.
 No source data cleanup, IK, smoothing, or production admission.
 """
-import argparse,json,hashlib,platform,traceback,time,sys,subprocess
+import argparse,json,hashlib,platform,traceback,time,sys,subprocess,shutil
 from pathlib import Path
 p=argparse.ArgumentParser();p.add_argument('--out',default='.cache/phase9');a=p.parse_args(sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else ([] if 'blender' in Path(sys.argv[0]).name else None));out=Path(a.out).resolve();repo=Path(__file__).resolve().parents[2]
 if out!=repo/'.cache/phase9':raise SystemExit('Only isolated .cache/phase9 output is allowed')
 out.mkdir(parents=True,exist_ok=True)
+shutil.copyfile(repo/'assets/coach/licenses/ROCKETBOX-MIT.txt',out/'ROCKETBOX-MIT.txt')
+(out/'CMU-NOTICE.txt').write_text('CMU Graphics Lab motion capture, 14_06; BVH conversion Bruce Hahne/cgspeed 2010.\nThe data used in this project was obtained from mocap.cs.cmu.edu. The database was created with funding from NSF EIA-0196217.\nCommercial products allowed; no standalone data resale, even converted. See https://mocap.cs.cmu.edu/ and https://mocap.cs.cmu.edu/faqs.php .\nThis is a rejected technical control, not a dedicated PARISFIT capture or professional approval.\n')
 source=repo/'docs/coach/phase6/source-14_06.bvh';model=repo/'assets/coach/coach.glb'
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 r={'status':'STARTING','dataKind':'CMU licensed optical control, NOT dedicated PARISFIT capture','sourceSHA256':sha(source),'modelSHA256':sha(model),'runtimeEnabled':False,'professionalApproval':False,'platform':platform.platform(),'python':platform.python_version(),'steps':[],'corrections':{'IK':False,'smoothing':False,'manual':[]}}

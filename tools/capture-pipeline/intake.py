@@ -2,6 +2,7 @@
 Consent fields are operator attestations, not cryptographic/legal verification.
 """
 import argparse,json,hashlib,math
+from permissions import authorize
 from pathlib import Path
 REQUIRED_RIGHTS=['verifiedByOperator','participantAdult','recording','localPoseProcessing','commercialAvatarAnimation','operatorCopyright','professionalReview']
 def digest(path):
@@ -38,7 +39,9 @@ def private_file(root,name):
  return p
 
 def run(m,root):
- issues=validate(m);result={'status':'BLOCKED','runtimeEnabled':False,'inferenceExecuted':False,'captureVerifiedByAssistant':False,'issues':issues,'streams':[],'professionalReviewObtained':False}
+ issues=validate(m);allowed,permission_errors=authorize(m,'local-analysis')
+ if not allowed:issues.extend(permission_errors)
+ result={'status':'BLOCKED','runtimeEnabled':False,'inferenceExecuted':False,'captureVerifiedByAssistant':False,'issues':issues,'streams':[],'professionalReviewObtained':False}
  if issues:return result # Do not read or decode any footage without rights attestation.
  cal=private_file(root,m['calibration']['file'])
  if digest(cal)!=m['calibration']['sha256']:result['issues'].append('calibrationHashMismatch');return result
