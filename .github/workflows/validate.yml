@@ -32,3 +32,5 @@ jobs:
           test -s ROADMAP.md
           test -s DATA_MODEL.md
           test -s API_CONTRACT.md
+          test -s BACKEND_DECISION.md
+          test -s AUTH_SYNC_SECURITY.md
