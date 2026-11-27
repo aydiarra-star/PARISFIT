@@ -242,7 +242,9 @@ jobs:
       - name: Source audit environment
         run: |
           sudo apt-get update
-          sudo apt-get install -y python3-numpy python3-pil ffmpeg
+          sudo apt-get install -y python3-numpy python3-pil python3-venv ffmpeg
+          python3 -m venv --system-site-packages .cache/source-env
+          .cache/source-env/bin/pip install c3d==0.6.0
       - name: Public pinned source screening
         env:
           GH_TOKEN: ${{ github.token }}
@@ -252,6 +254,8 @@ jobs:
           python3 tools/source-benchmark/audit.py
           python3 tools/source-benchmark/visuals.py
           python3 tools/source-benchmark/originals.py
+          .cache/source-env/bin/python tools/source-benchmark/analyze-originals.py
+          python3 tools/source-benchmark/gallery.py
       - name: Source audit evidence
         if: always()
         run: |
@@ -264,6 +268,17 @@ jobs:
               if p.exists():
                   raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
                   for i in range(0,len(raw),3800):print('::warning title=phase12-'+name+'-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - name: Original file analysis evidence
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import zlib,base64
+          from pathlib import Path
+          p=Path('.cache/phase12/original-analysis.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              for i in range(0,len(raw),3800):print('::warning title=phase12-original-analysis.json-'+str(i//3800)+'::'+raw[i:i+3800])
           PY
       - uses: actions/upload-artifact@v4
         if: always()
