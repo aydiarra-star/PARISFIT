@@ -20,3 +20,19 @@ Interface responsive Aujourd'hui / Switch / Nutrition / Mental, navigation mobil
 Backend, synchronisation, comptes, IA, bibliothèque sportive professionnelle, coach 3D, paiements et intégrations santé restent à construire.
 
 L'interface PARISFIT validée reste la référence ; les fonctions nouvelles doivent s'y intégrer sans refonte arbitraire.
+
+## Vérification de l’interface
+Le site reste sans dépendances d’exécution ni étape de compilation. Un test navigateur est fourni dans `tests/smoke.cjs` :
+
+```sh
+# Terminal 1
+python -m http.server 3000 --bind 0.0.0.0
+# Terminal 2 — outils de test uniquement
+npm install --no-save --package-lock=false @playwright/test
+npx playwright install chromium
+node tests/smoke.cjs
+```
+
+Le test vérifie six largeurs (320–1440 px), la persistance de l’eau, le ressenti, la lecture, l’ajout d’une habitude, le Coach et le rechargement hors ligne. `BASE_URL` et `CHROMIUM_PATH` permettent d’utiliser un serveur ou un navigateur existant.
+
+Les valeurs de vitalité sont des exemples explicitement signalés, isolés dans `demo-data.js`. Les photos illustratives de l’accueil sont générées par IA.

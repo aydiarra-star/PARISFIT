@@ -9,35 +9,44 @@ function dialog(html){$("#modal-content").innerHTML=html;$("#modal").showModal()
 $("#modal").addEventListener("click",e=>{if(e.target===$("#modal"))$("#modal").close()});
 function energy(){dialog('<p class="eyebrow">MON RESSENTI</p><h2>Comment est ton énergie aujourd’hui ?</h2><p>Il n’y a pas de bonne ou de mauvaise réponse.</p><div class="choices"><button data-e="low">🌿<br>Douce</button><button data-e="medium">☁<br>Modérée</button><button data-e="high">☀<br>Bonne</button></div>');$$("[data-e]").forEach(b=>b.onclick=()=>{data.energy=b.dataset.e;save();render();$("#modal").close();toast("Ressenti enregistré.")})}
 $$("[data-energy]").forEach(b=>b.onclick=energy);
-function render(){const labels={low:["Énergie douce","Aujourd’hui, privilégie la récupération."],medium:["Énergie modérée","Un rythme adapté peut te convenir."],high:["Bonne énergie","Choisis une activité qui te fait plaisir."]};$("#energy").textContent=data.energy?labels[data.energy][0]:"À renseigner";$("#energy-note").textContent=data.energy?labels[data.energy][1]:"Comment te sens-tu aujourd’hui ?";$("#score").innerHTML=data.energy?"✓<small> noté</small>":"—<small>/100</small>";$("#score-note").textContent=data.energy?"Ressenti déclaré par toi, pas une mesure médicale.":"Complète ton ressenti pour démarrer";$("#water-count").textContent=data.water;$("#glasses").innerHTML=Array.from({length:8},(_,i)=>'<span class="glass '+(i<data.water?"filled":"")+'"></span>').join("");const ed=$("#energy-dots");if(ed){const n=data.energy==="low"?2:data.energy==="medium"?5:data.energy==="high"?8:0;ed.innerHTML=Array.from({length:8},(_,i)=>'<span class="edot '+(i<n?"filled":"")+'"></span>').join("");}const h=$("#habits");h.innerHTML=data.habits.length?data.habits.map(x=>'<div class="habit"><button data-check="'+x.id+'">'+(x.done?"✓":"○")+'</button><div><b>'+escape(x.title)+'</b><small>'+(x.frequency||"À mon rythme")+'</small></div><button class="delete" data-delete="'+x.id+'">×</button></div>').join(""):'<div class="empty"><b>Ton espace est prêt.</b><p>Ajoute une première habitude qui te ferait du bien.</p><button class="outline" id="empty-add">Créer une habitude</button></div>';if(data.name)$("#greeting").innerHTML="Bonjour "+escape(data.name)+" ! <i>✦</i>";const add=$("#empty-add");if(add)add.onclick=habitDialog}
+function render(){
+ const sample=PARISFIT_DEMO.dashboard;
+ const labels={low:["Douce","Un peu de récupération fait du bien."],medium:["Modérée","Avance à ton rythme."],high:["Pleine","Ton ressenti, enregistré sur cet appareil."]};
+ const feeling=labels[data.energy];
+ $("#energy").textContent=feeling?feeling[0]:sample.energy;
+ $("#energy-note").textContent=feeling?feeling[1]:"Exemple · évalue ton énergie";
+ $("#score").innerHTML=sample.score+'<small>/100</small>';
+ $(".score-ring-progress").style.setProperty("--pct",sample.score);
+ $("#score-note").textContent="Démonstration · score non mesuré";
+ $("#vitality-delta").textContent=sample.delta;
+ $("#vitality-streak").textContent=sample.streak+" jours d’affilée";
+ $("#water-count").textContent=data.water;
+ $("#glasses").innerHTML=Array.from({length:8},(_,i)=>'<span class="glass '+(i<data.water?"filled":"")+'"></span>').join("");
+ $("#water-progress").value=data.water;
+ $("#water-percent").textContent=Math.round(data.water/8*100)+"%";
+ $("#water-desc").textContent=data.water>=8?"Objectif atteint · bravo !":"Encore "+((8-data.water)*0.25).toLocaleString("fr-FR")+" L · "+data.water+"/8 verres";
+ const n=feeling?({low:2,medium:4,high:6}[data.energy]):6;
+ $("#energy-dots").innerHTML=Array.from({length:6},(_,i)=>'<span class="edot '+(i<n?"filled":"")+'"></span>').join("");
+ $("#greeting").textContent="Bonjour"+(data.name?", "+data.name:" ")+" 👋";
+ const h=$("#habits");h.innerHTML=data.habits.length?data.habits.map(x=>'<div class="habit"><button data-check="'+x.id+'">'+(x.done?"✓":"○")+'</button><div><b>'+escape(x.title)+'</b><small>'+(x.frequency||"À mon rythme")+'</small></div><button class="delete" data-delete="'+x.id+'">×</button></div>').join(""):'<div class="empty"><b>Ton espace est prêt.</b><p>Ajoute une première habitude qui te ferait du bien.</p><button class="outline" id="empty-add">Créer une habitude</button></div>';const add=$("#empty-add");if(add)add.onclick=habitDialog}
 function escape(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 function habitDialog(){dialog('<p class="eyebrow">NOUVELLE HABITUDE</p><h2>Un petit pas qui te fait du bien.</h2><div class="field"><label>Mon habitude</label><input id="habit-title" maxlength="70" placeholder="Ex. Lire quelques pages"></div><div class="field"><label>Mon rythme</label><select id="habit-frequency"><option>Chaque jour</option><option>Quelques fois par semaine</option><option>À mon rythme</option></select></div><button class="primary" id="habit-save">Ajouter cette habitude</button>');$("#habit-save").onclick=()=>{const title=$("#habit-title").value.trim();if(!title)return toast("Donne un nom à ton habitude.");data.habits.push({id:Date.now().toString(),title,frequency:$("#habit-frequency").value,done:false});save();render();$("#modal").close();toast("Habitude créée.")}}
 $("#add-habit").onclick=habitDialog;
 $("#habits").addEventListener("click",e=>{if(e.target.dataset.check){const h=data.habits.find(x=>x.id===e.target.dataset.check);h.done=!h.done;save();render()}if(e.target.dataset.delete){data.habits=data.habits.filter(x=>x.id!==e.target.dataset.delete);save();render()}});
 $("#water-add").onclick=()=>{data.water=Math.min(8,data.water+1);save();render();toast("Verre ajouté.")};$("#water-reset").onclick=()=>{data.water=0;save();render()};
-$("#meal-ideas").onclick=()=>dialog('<p class="eyebrow">IDÉES DE REPAS</p><h2>Composer simplement</h2><ul><li>Riz, légumes de saison et lentilles.</li><li>Omelette, salade et pain complet.</li><li>Poisson ou tofu, patate douce et légumes.</li><li>Yaourt nature, fruit et flocons d’avoine.</li></ul><p>Vérifie les allergènes et adapte les portions à tes besoins.</p>');
+$("#meal-ideas").onclick=()=>dialog('<p class="eyebrow">IDÉES DE REPAS</p><h2>Composer simplement</h2><ul>'+PARISFIT_DEMO.meals.map(t=>'<li>'+escape(t)+'</li>').join('')+'</ul><p>Vérifie les allergènes et adapte les portions à tes besoins.</p>');
 function breath(){dialog('<div style="text-align:center"><p class="eyebrow">PAUSE RESPIRATION</p><h2>Respire tranquillement</h2><div class="breath-orb" id="breath-label">INSPIRE</div><p>Inspire doucement, puis expire sans forcer. Arrête si tu ressens un inconfort.</p><button class="outline" id="breath-stop">Terminer</button></div>');let phase=false;clearInterval(breath.timer);breath.timer=setInterval(()=>{const el=$("#breath-label");if(!el){clearInterval(breath.timer);return}phase=!phase;el.textContent=phase?"INSPIRE":"EXPIRE"},4000);$("#breath-stop").onclick=()=>{$("#modal").close();clearInterval(breath.timer)}}
 $("#breath").onclick=breath;$("#breath2").onclick=breath;
 $("#journal").onclick=()=>{dialog('<p class="eyebrow">MON JOURNAL</p><h2>Qu’as-tu envie de déposer ici ?</h2><div class="field"><textarea id="journal-entry" rows="5" placeholder="Écris librement. Ce texte reste sur cet appareil.">'+escape(data.journal)+'</textarea></div><button class="primary" id="journal-save">Enregistrer</button>');$("#journal-save").onclick=()=>{data.journal=$("#journal-entry").value;save();$("#modal").close();toast("Journal enregistré sur cet appareil.")}};
 $("#rest").onclick=()=>dialog('<div style="text-align:center"><div class="breath-orb">PAUSE</div><h2>Tu as le droit de ne rien faire.</h2><p>Profite d’une musique, d’un moment calme ou ferme simplement les yeux.</p></div>');
 $("#sos").onclick=()=>dialog('<p class="eyebrow">SOS CRAQUAGE</p><h2>On fait une pause ensemble.</h2><p>Tu n’as rien raté. Pose les épaules, relâche la mâchoire. Tu peux prendre ton temps.</p><div class="actions"><button class="primary" id="sos-breath">Faire trois respirations</button><button class="outline" id="sos-kind">Me parler avec douceur</button></div>');
 $("#modal-content").addEventListener("click",e=>{if(e.target.id==="sos-breath")breath();if(e.target.id==="sos-kind")dialog('<div style="text-align:center"><div class="breath-orb">TU FAIS DE TON MIEUX</div><h2>Et c’est déjà important.</h2><p>Tu peux choisir une petite action, appeler quelqu’un ou simplement te reposer. Rien ne presse.</p></div>')});
-$("#workout").onclick=()=>{dialog('<p class="eyebrow">SÉANCE DÉCOUVERTE · 8 À 10 MIN</p><h2>Mobilité en douceur</h2><p>Cette fiche est une proposition de découverte, pas un programme médical. Va lentement et arrête si tu ressens une douleur.</p><ol><li>Respiration calme — 1 min.</li><li>Mobilisation douce des épaules — 2 min.</li><li>Mobilité du haut du dos sans forcer — 2 min.</li><li>Marche tranquille sur place ou repos — 2 min.</li><li>Retour au calme — 1 min.</li></ol><button class="primary" id="workout-done">J’ai terminé</button>');$("#workout-done").onclick=()=>{$("#modal").close();toast("Séance notée. Merci d’avoir pris ce temps.")}};
 function settings(){dialog('<p class="eyebrow">MON ESPACE</p><h2>Préférences PARISFIT</h2><div class="field"><label>Comment veux-tu qu’on t’appelle ?</label><input id="name" maxlength="40" value="'+escape(data.name)+'" placeholder="Prénom facultatif"></div><p>Dans cette première version, tes données sont conservées localement dans ce navigateur, sans synchronisation.</p><div class="actions"><button class="primary" id="save-profile">Enregistrer</button><button class="outline" id="clear-data">Effacer mes données</button></div>')}
 $("#settings").onclick=settings;$("#profile").onclick=settings;
 $("#modal-content").addEventListener("click",e=>{if(e.target.id==="save-profile"){data.name=$("#name").value.trim();save();render();$("#modal").close();toast("Préférences enregistrées.")}if(e.target.id==="clear-data"&&confirm("Effacer les données PARISFIT sur cet appareil ?")){localStorage.removeItem(KEY);data={...defaults};render();$("#modal").close();toast("Données locales effacées.")}});
 render();
 /* ===== COACH IA PARISFIT — ajout premium, interface existante préservée ===== */
-const coachExercises=[
-{id:"squat",title:"Squat",cat:"renforcement",level:"Débutant",time:"12 répétitions",muscles:"Quadriceps, fessiers",desc:"Descends lentement les hanches comme pour t'asseoir, puis remonte. Garde le dos droit et le regard devant toi.",noMateriel:true,anim:"squat"},
-{id:"pompes",title:"Pompes",cat:"renforcement",level:"Intermédiaire",time:"8 à 12 répétitions",muscles:"Pectoraux, triceps, épaules",desc:"Pose les mains au sol, baisse le corps jusqu'à ce que la poitrine effleure le sol, puis remonte en poussant.",noMateriel:true,anim:"pushup"},
-{id:"gainage",title:"Gainage (plank)",cat:"renforcement",level:"Débutant",time:"30 à 60 secondes",muscles:"Abdos, gainage",desc:"Tiens la position sur les avant-bras et les pointes de pieds, corps bien gainé, sans creuser le dos ni lever les fesses.",noMateriel:true,anim:"plank"},
-{id:"fentes",title:"Fentes",cat:"renforcement",level:"Débutant",time:"10 par jambe",muscles:"Quadriceps, fessiers",desc:"Fais un pas en avant, descends le genou arrière vers le sol sans le toucher, puis remonte. Dos droit.",noMateriel:true,anim:"lunge"},
-{id:"jumpingjacks",title:"Jumping Jacks",cat:"cardio",level:"Débutant",time:"30 à 60 secondes",muscles:"Cardio, corps entier",desc:"Saute en écartant bras et jambes, puis ramène les pieds et les bras. Maintiens un rythme régulier.",noMateriel:true,anim:"jumpingjack"},
-{id:"mountainclimber",title:"Mountain Climbers",cat:"cardio",level:"Intermédiaire",time:"30 secondes",muscles:"Cardio, abdos, épaules",desc:"En position de pompes, amène alternativement les genoux vers la poitrine rapidement, comme si tu courais au sol.",noMateriel:true,anim:"mountain"},
-{id:"etirementdos",title:"Étirement du dos",cat:"etirement",level:"Débutant",time:"30 à 60 secondes",muscles:"Dos, lombaires",desc:"Assis ou debout, étire doucement les bras vers le haut, puis penche-toi en avant sans forcer, dos arrondi.",noMateriel:true,anim:"stretch"},
-{id:"mobiliteepaules",title:"Mobilité épaules",cat:"mobilite",level:"Débutant",time:"1 à 2 minutes",muscles:"Épaules, haut du dos",desc:"Fais des cercles lents et amples avec les épaules, dans un sens puis dans l'autre.",noMateriel:true,anim:"shoulders"}
-];
+const coachExercises=PARISFIT_DEMO.exercises;
 const coachAnim={squat:"coach-squat",pushup:"coach-pushup",plank:"coach-plank",lunge:"coach-lunge",jumpingjack:"coach-jumpingjack",mountainclimber:"coach-mountain",stretch:"coach-stretch",shoulders:"coach-shoulders"};
 function coachInit(){
   if(!$("#view-coach"))return;
@@ -112,4 +121,12 @@ function coachQuick(q){
   coachChatAdd(map[q],true);coachChatReply(map[q]);
 }
 coachInit();
-if("serviceWorker"in navigator&&location.protocol.startsWith("http"))addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js?v=20261127-3",{updateViaCache:"none"}).catch(()=>{}));
+if("serviceWorker"in navigator&&location.protocol.startsWith("http"))addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js?v=20261127-4",{updateViaCache:"none"}).catch(()=>{}));
+// Reuse existing journeys; no duplicate pages or persisted illustrative measurements.
+$("#water-quick").onclick=()=>$("#water-add").click();
+$("#workout").onclick=()=>view("coach");
+function reading(){dialog('<p class="eyebrow">MOMENT INTELLIGENT · LECTURE</p><h2>5 principes de discipline</h2><ol>'+PARISFIT_DEMO.reading.map(t=>'<li>'+escape(t)+'</li>').join('')+'</ol><p>Un petit pas suffit pour commencer.</p>');}
+$("#read-discipline").onclick=reading;$("#moment").onclick=reading;
+$("#balance").onclick=()=>$("#rest").click();
+$("#challenges").onclick=()=>{dialog('<p class="eyebrow">DÉFI 30 JOURS · PROPOSITION</p><h2>Moins de scroll, plus de présence.</h2><p>Chaque jour, remplace dix minutes d’écran par une activité qui te fait du bien. Ajoute cette intention à tes habitudes pour la suivre localement.</p><button type="button" class="primary" id="challenge-add">Créer mon habitude</button>');$("#challenge-add").onclick=()=>{habitDialog();$("#habit-title").value=PARISFIT_DEMO.challenge;};};
+$(".mobile-brand").onclick=e=>{e.preventDefault();view("today");};

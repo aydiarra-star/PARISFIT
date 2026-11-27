@@ -1,5 +1,5 @@
-const CACHE="parisfit-shell-v3";
-const FILES=["./","./index.html","./styles.css?v=20261127-3","./app.js?v=20261127-3","./manifest.webmanifest","./assets/icon.svg"];
+const CACHE="parisfit-shell-v4";
+const FILES=["./","./index.html","./styles.css?v=20261127-4","./app.js?v=20261127-4","./demo-data.js?v=20261127-4","./assets/coach-welcome.jpg","./assets/workout.jpg","./manifest.webmanifest","./assets/icon.svg"];
 
 self.addEventListener("install",event=>{
   event.waitUntil(
