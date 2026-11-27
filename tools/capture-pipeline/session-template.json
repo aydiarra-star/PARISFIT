@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "sessionId": "PF-SQUAT-001",
+  "sourceType": "dedicated-consented-human-video",
+  "rights": {
+    "verifiedByOperator": false,
+    "participantAdult": false,
+    "recording": false,
+    "localPoseProcessing": false,
+    "commercialAvatarAnimation": false,
+    "operatorCopyright": false,
+    "professionalReview": false,
+    "sourceVideoPublication": false,
+    "publicMotionRedistribution": false,
+    "externalServiceUpload": false,
+    "privateRecordSHA256": null
+  },
+  "streams": [
+    {"view":"front","file":"front-original.mp4","sha256":null,"syncStartFrame":null,"syncEndFrame":null},
+    {"view":"profile","file":"profile-original.mp4","sha256":null,"syncStartFrame":null,"syncEndFrame":null}
+  ],
+  "calibration": {"file":"calibration.json","sha256":null,"reviewed":false,"metricScaleMeasured":false,"camerasUnmoved":false},
+  "operatorReview": {"sameTake":false,"fullBodyAndFeetVisible":false,"oneAdultOnly":false,"completeSquatAndReturn":false,"noPainReported":false},
+  "professional": {"reviewObtained":false,"qualificationVerified":false,"privateReviewSHA256":null}
+}

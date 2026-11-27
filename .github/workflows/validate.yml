@@ -29,6 +29,8 @@ jobs:
           node tests/coach-cmu-evidence.cjs
           node tests/coach-production-pipeline.cjs
           python3 tools/animation-pipeline/test_gate.py
+          python3 tools/capture-pipeline/test_intake.py
+          node tests/coach-capture-readiness.cjs
           node tests/coach-asset.cjs
           node --input-type=module --check < coach-3d.js
       - name: Vérifier le manifeste PWA

@@ -1,0 +1,33 @@
+{
+  "status": "BLOCKED",
+  "runtimeEnabled": false,
+  "inferenceExecuted": false,
+  "captureVerifiedByAssistant": false,
+  "issues": [
+    "rights:verifiedByOperator",
+    "rights:participantAdult",
+    "rights:recording",
+    "rights:localPoseProcessing",
+    "rights:commercialAvatarAnimation",
+    "rights:operatorCopyright",
+    "rights:professionalReview",
+    "rights:privateRecordSHA256",
+    "streamHash:front",
+    "sync:front:syncStartFrame",
+    "sync:front:syncEndFrame",
+    "streamHash:profile",
+    "sync:profile:syncStartFrame",
+    "sync:profile:syncEndFrame",
+    "operatorReview:sameTake",
+    "operatorReview:fullBodyAndFeetVisible",
+    "operatorReview:oneAdultOnly",
+    "operatorReview:completeSquatAndReturn",
+    "operatorReview:noPainReported",
+    "calibration:reviewed",
+    "calibration:metricScaleMeasured",
+    "calibration:camerasUnmoved",
+    "calibration:sha256"
+  ],
+  "streams": [],
+  "professionalReviewObtained": false
+}
