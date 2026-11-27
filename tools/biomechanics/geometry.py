@@ -2,7 +2,9 @@
 def sample_geometry(bpy,target,bones):
  from mathutils import Vector
  import numpy as np
- meshes=[o for o in bpy.context.scene.objects if o.type=='MESH'];parts={s:[] for s in ['L_Foot','R_Foot','L_Hand','R_Hand']};markers={}
+ meshes=[o for o in bpy.context.scene.objects if o.type=='MESH' and any(m.type=='ARMATURE' and m.object==target for m in o.modifiers)];
+ if not meshes:raise ValueError('NO_ROCKETBOX_SKINNED_MESH')
+ parts={s:[] for s in ['L_Foot','R_Foot','L_Hand','R_Hand']};markers={}
  for mi,m in enumerate(meshes):
   for v in m.data.vertices:
    if not v.groups:continue
@@ -32,4 +34,4 @@ def sample_geometry(bpy,target,bones):
   for b in bones:
    world=target.matrix_world@b.matrix;q=world.to_quaternion();joints[b.name]={'position':xyz(world.translation),'rotation':[q.x,q.z,-q.y,q.w]}
   frames.append({'time':i/60,'joints':joints,'supports':supports,'surfaceMinY':min(float(c[:,2].min()) for c in coords)})
- return {'schemaVersion':1,'sourceType':'CMU14_06 licensed control NOT PARISFIT capture','units':'m','up':'Y','sampleHz':60,'parents':{b.name:b.parent.name if b.parent else None for b in bones},'supportMarkers':markers,'supportMeaning':'three low skin vertices selected once, not anatomically reviewed sole/palm patches','frames':frames}
+ return {'schemaVersion':1,'excludedMeshes':[o.name for o in bpy.context.scene.objects if o.type=='MESH' and o not in meshes],'sampledMeshes':[{'name':m.name,'vertices':len(m.data.vertices)} for m in meshes],'sourceType':'CMU14_06 licensed control NOT PARISFIT capture','units':'m','up':'Y','sampleHz':60,'parents':{b.name:b.parent.name if b.parent else None for b in bones},'supportMarkers':markers,'supportMeaning':'three low skin vertices selected once, not anatomically reviewed sole/palm patches','frames':frames}

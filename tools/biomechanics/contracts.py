@@ -19,6 +19,7 @@ def bvh_contract(text,units='cmu-converted'):
  channels=0
  for row in re.findall(r'CHANNELS\s+([^\n\r]+)',hierarchy):
   items=row.split()
+  if not items or not items[0].isdigit():raise Invalid('BVH_BAD_CHANNELS')
   if int(items[0])!=len(items)-1 or any(c not in [a+b for a in 'XYZ' for b in ['position','rotation']] for c in items[1:]):raise Invalid('BVH_BAD_CHANNELS')
   channels+=int(items[0])
  try:

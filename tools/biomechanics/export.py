@@ -121,7 +121,7 @@ try:
   (out/(stage+'-geometry.json')).write_text(json.dumps(data)+'\n')
   result=validate(data,criteria)
   (out/(stage+'-validator-full.json')).write_text(json.dumps(result)+'\n')
-  del result['rows'];(out/(stage+'-report.json')).write_text(json.dumps(result,indent=2)+'\n');reports[stage]=result
+  del result['rows'];(out/(stage+'-report.json')).write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n');reports[stage]=result
   # Rejected kinematics are exported only as explicitly isolated diagnostics.
   bpy.context.scene.frame_set(0)
   filepath=out/(stage+'.glb')
@@ -131,17 +131,17 @@ try:
    if repetition==0:first_hash=sha(filepath)
    else:assert sha(filepath)==first_hash,'NONDETERMINISTIC_EXPORT'
   result['exportSHA256']=first_hash
-  (out/(stage+'-report.json')).write_text(json.dumps(result,indent=2)+'\n')
+  (out/(stage+'-report.json')).write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n')
   step(stage+'-export',bytes=filepath.stat().st_size,sha256=first_hash,admission=result['status'])
  after=json.loads((out/'after-geometry.json').read_text());max_q=max(abs(x-y) for f,g in zip(before['frames'],after['frames']) for n in f['joints'] for x,y in zip(f['joints'][n]['rotation'],g['joints'][n]['rotation']))
  max_relative=max(abs((g['joints'][n]['position'][k]-f['joints'][n]['position'][k])-(offset if k==1 else 0)) for f,g in zip(before['frames'],after['frames']) for n in f['joints'] for k in range(3))
  assert max_relative<.00001 and max_q<.00001,'CORRECTION_CHANGED_MOTION'
  comparison={'status':'REFUSÉ','constantFloorOffsetM':offset,'maxQuaternionComponentChange':max_q,'maxDeviationFromConstantTranslationM':max_relative,'corrections':['single world Z translation based on first-frame foot-group minimum, ground reference hypothesis'],'notCorrected':['contact sliding','axial rotations','COM','collisions','entry/exit joins'],'beforePenetrationM':reports['before']['observedModelGeometry']['maxSurfacePenetrationM'],'afterPenetrationM':reports['after']['observedModelGeometry']['maxSurfacePenetrationM']}
- (out/'comparison-report.json').write_text(json.dumps(comparison,indent=2)+'\n')
+ (out/'comparison-report.json').write_text(json.dumps(comparison,indent=2,ensure_ascii=False)+'\n')
  r.update(status='EXPORTED_PENDING_THREEJS',duration=duration,samples=145,mapping=mapping,scale=scale,groundCorrection=comparison)
  assert sha(model)==r['modelSHA256'];assert sha(source)==r['sourceSHA256']
 except Exception:
  r.update(status='FAILED',error=traceback.format_exc());print(r['error'],flush=True)
 finally:
- r['elapsedSeconds']=round(time.time()-started,3);(out/'blender-report.json').write_text(json.dumps(r,indent=2)+'\n');print('BLENDER_REPORT_JSON='+json.dumps(r),flush=True)
+ r['elapsedSeconds']=round(time.time()-started,3);(out/'blender-report.json').write_text(json.dumps(r,indent=2,ensure_ascii=False)+'\n');print('BLENDER_REPORT_JSON='+json.dumps(r),flush=True)
 if r['status']=='FAILED':raise SystemExit(1)
