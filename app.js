@@ -27,4 +27,87 @@ function settings(){dialog('<p class="eyebrow">MON ESPACE</p><h2>Préférences P
 $("#settings").onclick=settings;$("#profile").onclick=settings;
 $("#modal-content").addEventListener("click",e=>{if(e.target.id==="save-profile"){data.name=$("#name").value.trim();save();render();$("#modal").close();toast("Préférences enregistrées.")}if(e.target.id==="clear-data"&&confirm("Effacer les données PARISFIT sur cet appareil ?")){localStorage.removeItem(KEY);data={...defaults};render();$("#modal").close();toast("Données locales effacées.")}});
 render();
+/* ===== COACH IA PARISFIT — ajout premium, interface existante préservée ===== */
+const coachExercises=[
+{id:"squat",title:"Squat",cat:"renforcement",level:"Débutant",time:"12 répétitions",muscles:"Quadriceps, fessiers",desc:"Descends lentement les hanches comme pour t'asseoir, puis remonte. Garde le dos droit et le regard devant toi.",noMateriel:true,anim:"squat"},
+{id:"pompes",title:"Pompes",cat:"renforcement",level:"Intermédiaire",time:"8 à 12 répétitions",muscles:"Pectoraux, triceps, épaules",desc:"Pose les mains au sol, baisse le corps jusqu'à ce que la poitrine effleure le sol, puis remonte en poussant.",noMateriel:true,anim:"pushup"},
+{id:"gainage",title:"Gainage (plank)",cat:"renforcement",level:"Débutant",time:"30 à 60 secondes",muscles:"Abdos, gainage",desc:"Tiens la position sur les avant-bras et les pointes de pieds, corps bien gainé, sans creuser le dos ni lever les fesses.",noMateriel:true,anim:"plank"},
+{id:"fentes",title:"Fentes",cat:"renforcement",level:"Débutant",time:"10 par jambe",muscles:"Quadriceps, fessiers",desc:"Fais un pas en avant, descends le genou arrière vers le sol sans le toucher, puis remonte. Dos droit.",noMateriel:true,anim:"lunge"},
+{id:"jumpingjacks",title:"Jumping Jacks",cat:"cardio",level:"Débutant",time:"30 à 60 secondes",muscles:"Cardio, corps entier",desc:"Saute en écartant bras et jambes, puis ramène les pieds et les bras. Maintiens un rythme régulier.",noMateriel:true,anim:"jumpingjack"},
+{id:"mountainclimber",title:"Mountain Climbers",cat:"cardio",level:"Intermédiaire",time:"30 secondes",muscles:"Cardio, abdos, épaules",desc:"En position de pompes, amène alternativement les genoux vers la poitrine rapidement, comme si tu courais au sol.",noMateriel:true,anim:"mountain"},
+{id:"etirementdos",title:"Étirement du dos",cat:"etirement",level:"Débutant",time:"30 à 60 secondes",muscles:"Dos, lombaires",desc:"Assis ou debout, étire doucement les bras vers le haut, puis penche-toi en avant sans forcer, dos arrondi.",noMateriel:true,anim:"stretch"},
+{id:"mobiliteepaules",title:"Mobilité épaules",cat:"mobilite",level:"Débutant",time:"1 à 2 minutes",muscles:"Épaules, haut du dos",desc:"Fais des cercles lents et amples avec les épaules, dans un sens puis dans l'autre.",noMateriel:true,anim:"shoulders"}
+];
+const coachAnim={squat:"coach-squat",pushup:"coach-pushup",plank:"coach-plank",lunge:"coach-lunge",jumpingjack:"coach-jumpingjack",mountainclimber:"coach-mountain",stretch:"coach-stretch",shoulders:"coach-shoulders"};
+function coachInit(){
+  if(!$("#view-coach"))return;
+  if(data.name)$("#coach-greeting-text").innerHTML="Bonjour "+escape(data.name)+" ! <i>✦</i>";
+  renderCoachStats();
+  renderCoachExercises("all");
+  $("#coach-start-session").onclick=coachStartSession;
+  $("#coach-chat-send").onclick=coachChatSend;
+  $("#coach-chat-input").addEventListener("keydown",e=>{if(e.key==="Enter")coachChatSend();});
+  $("#coach-settings").onclick=settings;
+  $$("[data-view='coach']").forEach(b=>b.addEventListener("click",renderCoachStats));
+  $$("[data-q]").forEach(b=>b.onclick=()=>coachQuick(b.dataset.q));
+  $$("[data-filter]").forEach(b=>b.onclick=function(){$$("[data-filter]").forEach(x=>x.classList.toggle("active",x===this));renderCoachExercises(this.dataset.filter);});
+}
+function renderCoachStats(){
+  const labels={low:["Énergie douce","Privilégie la récupération aujourd'hui."],medium:["Énergie modérée","Un rythme adapté peut te convenir."],high:["Bonne énergie","Choisis une activité qui te fait plaisir."]};
+  const el=$("#coach-score"),note=$("#coach-score-note"),energy=$("#coach-energy");
+  if(data.energy){el.innerHTML="✓<small> noté</small>";note.textContent=labels[data.energy]?labels[data.energy][1]:"Ressenti déclaré par toi.";energy.textContent=labels[data.energy]?labels[data.energy][0]:"À renseigner";}
+  else{el.innerHTML="—<small>/100</small>";note.textContent="Complète ton ressenti pour démarrer";energy.textContent="À renseigner";}
+}
+function renderCoachExercises(filter){
+  const grid=$("#coach-exercises"),list=filter==="all"?coachExercises:coachExercises.filter(x=>x.cat===filter);
+  grid.innerHTML=list.map(x=>`
+    <article class="coach-exercise-card" data-ex="${x.id}">
+      <div class="coach-exercise-demo"><div class="anim-part" style="animation:${coachAnim[x.anim]||"coach-pulse"} 2s ease-in-out infinite">▲</div></div>
+      <h4>${escape(x.title)}</h4>
+      <div class="ex-meta">${escape(x.level)} · ${escape(x.time)}</div>
+      <p>${escape(x.desc)}</p>
+      <div class="ex-foot">${escape(x.muscles)}${x.noMateriel?" · Sans matériel":""}</div>
+    </article>
+  `).join("");
+  $$("[data-ex]").forEach(card=>{card.onclick=function(){coachOpenExercise(this.dataset.ex);}});
+}
+function coachOpenExercise(id){
+  const x=coachExercises.find(e=>e.id===id);
+  if(!x)return;
+  dialog('<div style="max-width:420px"><p class="eyebrow">EXERCICE · '+escape(x.cat)+'</p><h2 style="margin:4px 0 6px">'+escape(x.title)+'</h2><div style="height:150px;border-radius:12px;border:1px solid #164533;background:#061b14;display:flex;align-items:center;justify-content:center;color:#64748b;font-size:11px;margin-bottom:10px">▶ Démonstration animée de l\'exercice</div><p style="font-size:11.5px;color:#cbd5e1;margin:0 0 10px">'+escape(x.desc)+'</p><div style="font-size:9px;color:#94a3b2;margin-bottom:6px"><b>Muscles :</b> '+escape(x.muscles)+' · <b>Niveau :</b> '+escape(x.level)+' · <b>Temps :</b> '+escape(x.time)+'</div><p style="font-size:10px;color:#94a3b2;margin:0 0 12px"><b>Précaution :</b> va à ton rythme et arrête-toi en cas de douleur. Ce contenu est indicatif, pas un avis médical.</p><button class="coach-primary" id="coach-ex-done">J’ai terminé</button></div>');
+  $("#coach-ex-done").onclick=()=>{$("#modal").close();toast("Exercice noté. Bien joué !");};
+}
+function coachStartSession(){
+  dialog('<div style="max-width:420px"><p class="eyebrow">SÉANCE — RENFORCEMENT &amp; CARDIO</p><h2 style="margin:4px 0 8px">20 min · Débutant</h2><p style="font-size:11px;color:#94a3b2;margin:0 0 12px">Ton coach te guide exercice par exercice. Va à ton rythme, repose-toi entre chaque mouvement.</p><div id="coach-session-list" style="display:flex;flex-direction:column;gap:8px"></div><p style="font-size:10px;color:#94a3b2;margin:8px 0 0">Indicatif : adapte ou saute tout exercice qui ne te convient pas.</p><button class="coach-primary" id="coach-session-done" style="margin-top:12px">J’ai terminé la séance</button></div>');
+  const list=$("#coach-session-list");
+  coachExercises.slice(0,5).forEach((x,i)=>{list.innerHTML+=`<div style="display:flex;gap:10px;align-items:center;font-size:11px;padding:6px 0;border-bottom:1px solid #164533"><div style="width:24px;height:24px;border-radius:6px;background:#10b981;color:#000;display:grid;place-items:center;font-weight:800">${i+1}</div><div><div style="color:#fff;font-weight:700">${escape(x.title)}</div><div style="color:#94a3b2;font-size:10px">${escape(x.time)} · ${escape(x.level)}</div></div></div>`;});
+  $("#coach-session-done").onclick=()=>{$("#modal").close();toast("Séance terminée. Bravo pour ta régularité !");};
+}
+function coachChatSend(){
+  const input=$("#coach-chat-input");const q=input.value.trim();if(!q)return;
+  coachChatAdd(q,true);input.value="";
+  setTimeout(()=>coachChatReply(q),500);
+}
+function coachChatAdd(text,me){
+  const box=$("#coach-chat-box");const div=document.createElement("div");div.className="coach-message"+(me?" coach-message-me":" coach-message-coach");
+  if(me){div.style.flexDirection="row-reverse";div.innerHTML='<div class="coach-message-bubble" style="background:#10b981;color:#000;border-bottom-right-radius:2px">'+escape(text)+'</div><div class="coach-message-avatar" style="background:#cbd5e1;color:#061b14">'+(data.name?data.name[0].toUpperCase():"A")+'</div>';}
+  else{div.innerHTML='<div class="coach-message-avatar">🤖</div><div class="coach-message-bubble">'+escape(text)+'</div>';}
+  box.appendChild(div);box.scrollTop=box.scrollHeight;
+}
+function coachChatReply(q){
+  const lq=q.toLowerCase();
+  let reply="Je suis là pour t'aider. Tu peux me demander une séance, un exercice ciblé ou un conseil selon ton énergie.";
+  if(lq.match(/cardio|endurance|souffle/))reply="Je te suggère : Jumping Jacks 30 s, Mountain Climbers 30 s, puis 1 min de marche récupération. Répète 3 fois selon ton énergie. Hydrate-toi.";
+  else if(lq.match(/renforcement|muscu|bras|pectoraux|fessiers|jambes/))reply="Essaie : Squat 12 reps, Pompes 8–12 reps, Gainage 30–60 s, Fentes 10 par jambe. Garde le dos droit et va à ton rythme.";
+  else if(lq.match(/dos|lombaire/))reply="Privilégie l'étirement du dos et la mobilité épaules. Bouge lentement et ne force jamais sur une douleur.";
+  else if(lq.match(/etir|soupl|récup|récupération|relax/))reply="Fais des étirements doux : dos, épaules, jambes. Respire calmement et reste dans chaque position 30–60 s.";
+  else if(lq.match(/débutant|commencer|facile|reprendre/))reply="Commence par la séance « Renforcement & Cardio » 20 min niveau débutant, sans matériel. C'est idéal pour reprendre en douceur.";
+  else if(lq.match(/énergie|fatigue|forme/))reply="Selon ton énergie déclarée, je te propose un rythme adapté : douce = récupération, modérée = séance légère, bonne = séance complète.";
+  coachChatAdd(reply,false);
+}
+function coachQuick(q){
+  const map={fullbody:"Je veux une séance Full Body 20 min",cardio:"Propose-moi un cardio débutant",dos:"Comment soulager le dos ?",etirement:"Une routine d'étirements"};
+  coachChatAdd(map[q],true);coachChatReply(map[q]);
+}
+coachInit();
 if("serviceWorker"in navigator&&location.protocol.startsWith("http"))addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js").catch(()=>{}));
