@@ -23,6 +23,10 @@ Le ressenti est une déclaration de l'utilisateur, pas une mesure médicale. La 
 
 Aucun backend, authentification, IA, paiement, suivi santé, analyse caméra ou coach 3D n'est connecté. Le socle web/PWA ne doit pas être présenté comme une application native iOS/Android.
 
+## Modèle de données
+
+Le modèle logique des données et les règles de confidentialité sont décrits dans DATA_MODEL.md. Il s'agit d'une spécification de conception ; aucune base de données ni migration SQL n'est encore déployée.
+
 ## Prochaine décision d'architecture
 
 Avant de connecter un backend ou de migrer la technologie, comparer les besoins PWA et natifs, les coûts d'exploitation, la sécurité, les possibilités hors ligne et les contraintes de publication. Les choix doivent être documentés avant implémentation.
