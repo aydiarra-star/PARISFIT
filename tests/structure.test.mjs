@@ -35,6 +35,15 @@ test("le manifeste décrit une application installable", () => {
   assert.ok(Array.isArray(manifest.icons) && manifest.icons.length > 0);
 });
 
+test("les aides d’accessibilité clavier et lecteurs d’écran sont présentes", () => {
+  assert.match(html, /class="skip-link"/);
+  assert.match(html, /id="main-content"/);
+  assert.match(html, /aria-label="Navigation principale"/);
+  assert.match(html, /aria-label="Navigation mobile"/);
+  assert.match(html, /aria-live="polite"/);
+  assert.ok(js.includes('button.type="button"'));
+});
+
 test("les identifiants HTML ne sont pas dupliqués", () => {
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
   assert.equal(new Set(ids).size, ids.length);
