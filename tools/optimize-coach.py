@@ -1,8 +1,8 @@
 """Repack colour textures as JPEG and preserve lossless PNG normals; keep the rig and clips untouched."""
 from pathlib import Path
-import struct,json,io
+import struct,json,io,sys
 from PIL import Image
-p=Path('assets/coach/coach.glb');raw=p.read_bytes();n=struct.unpack_from('<I',raw,12)[0];doc=json.loads(raw[20:20+n]);binary=raw[28+n:];replacements={}
+p=Path(sys.argv[1] if len(sys.argv)>1 else 'assets/coach/coach.glb');raw=p.read_bytes();n=struct.unpack_from('<I',raw,12)[0];doc=json.loads(raw[20:20+n]);binary=raw[28+n:];replacements={}
 normalSources={doc['textures'][m['normalTexture']['index']]['source'] for m in doc['materials'] if 'normalTexture' in m}
 headSources={doc['textures'][m['pbrMetallicRoughness']['baseColorTexture']['index']]['source'] for m in doc['materials'] if m.get('name')=='Rocketbox head'}
 for index,image in enumerate(doc.get('images',[])):

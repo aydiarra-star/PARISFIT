@@ -1,0 +1,852 @@
+
+> parisfit@0.1.0 test:browser
+> node tests/smoke.cjs && node tests/coach-browser.cjs && node tests/coach-fallback.cjs && node tests/coach-trajectories.cjs && node tests/coach-mobile.cjs && node tests/coach-gallery.cjs && node tests/coach-camera.cjs && node tests/coach-transitions.cjs && node tests/coach-transition-gallery.cjs && node tests/coach-contact-audit.cjs && node tests/coach-contact-gallery.cjs && node tests/coach-mocap-prototype.cjs && node tests/coach-mocap-gallery.cjs
+
+PASS: responsive widths, hydration persistence, energy, reading, challenge, coach, offline cache.
+{
+  "status": "PASS",
+  "results": [
+    {
+      "exercise": "squat",
+      "loaded": true,
+      "views": 3
+    },
+    {
+      "exercise": "pompes",
+      "loaded": true,
+      "views": 3
+    },
+    {
+      "exercise": "gainage",
+      "loaded": true,
+      "views": 3
+    },
+    {
+      "exercise": "fentes",
+      "loaded": true,
+      "views": 3
+    },
+    {
+      "exercise": "jumpingjacks",
+      "loaded": true,
+      "views": 3
+    },
+    {
+      "exercise": "mountainclimber",
+      "loaded": true,
+      "views": 3
+    },
+    {
+      "exercise": "etirementdos",
+      "loaded": true,
+      "views": 3
+    },
+    {
+      "exercise": "mobiliteepaules",
+      "loaded": true,
+      "views": 3
+    }
+  ],
+  "widths": [
+    320,
+    390,
+    430,
+    768,
+    1200
+  ],
+  "offline": true,
+  "retry": true,
+  "reducedMotion": true,
+  "errors": [],
+  "missing": [],
+  "external": []
+}
+{
+  "webglUnavailable": "La 3D ne peut pas être chargée. Les exercices et leurs consignes restent disponibles.",
+  "nutritionAfterFailure": true,
+  "emulations": [
+    {
+      "width": 390,
+      "loadMsLocalSoftwareGPU": 2827,
+      "renderer": {
+        "frames": 8,
+        "memory": {
+          "geometries": 8,
+          "textures": 6
+        },
+        "calls": 8,
+        "triangles": 7522,
+        "pixelRatio": 1.25
+      }
+    },
+    {
+      "width": 412,
+      "loadMsLocalSoftwareGPU": 550,
+      "renderer": {
+        "frames": 11,
+        "memory": {
+          "geometries": 8,
+          "textures": 6
+        },
+        "calls": 8,
+        "triangles": 7522,
+        "pixelRatio": 1.25
+      }
+    }
+  ]
+}
+{
+  "modelSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+  "method": "60 Hz sampling of the actual GLB skin and skeleton; no medical/sports validation",
+  "tolerances": {
+    "groundPenetrationM": 0.004,
+    "plantedSupportGapM": 0.007,
+    "plantedStepM": 0.008,
+    "loopJointErrorM": 0.001,
+    "maxJointSpeedMS": 4.5,
+    "kneeFlexMaxDeg": 145,
+    "elbowFlexMaxDeg": 155
+  },
+  "clips": [
+    {
+      "id": "squat",
+      "samples": 301,
+      "duration": 5,
+      "support": {
+        "R_Forearm": {
+          "min": 0.97897,
+          "max": 1.08295
+        },
+        "R_Hand": {
+          "min": 0.86908,
+          "max": 1.10429
+        },
+        "R_Digits": {
+          "min": 0.86908,
+          "max": 1.10429
+        },
+        "R_Palm": {
+          "min": 0.91565,
+          "max": 1.11615
+        },
+        "R_Thigh": {
+          "min": 0.42437,
+          "max": 0.48036
+        },
+        "L_Forearm": {
+          "min": 0.97897,
+          "max": 1.08295
+        },
+        "L_Hand": {
+          "min": 0.86909,
+          "max": 1.10429
+        },
+        "L_Digits": {
+          "min": 0.86909,
+          "max": 1.10429
+        },
+        "L_Palm": {
+          "min": 0.91566,
+          "max": 1.11615
+        },
+        "L_Thigh": {
+          "min": 0.42437,
+          "max": 0.48036
+        },
+        "R_Calf": {
+          "min": 0.11863,
+          "max": 0.12675
+        },
+        "R_Foot": {
+          "min": 0.00196,
+          "max": 0.002
+        },
+        "L_Calf": {
+          "min": 0.11863,
+          "max": 0.12675
+        },
+        "L_Foot": {
+          "min": 0.00196,
+          "max": 0.002
+        }
+      },
+      "loopErrorM": 0,
+      "maxJointSpeedMS": 0.48151,
+      "maxPlantedStepM": 0.00004,
+      "kneeFlexDeg": [
+        25.26786,
+        89.39617
+      ],
+      "elbowFlexDeg": [
+        63.96453,
+        93.91553
+      ],
+      "hipDriftM": 0.2843
+    },
+    {
+      "id": "pompes",
+      "samples": 301,
+      "duration": 5,
+      "support": {
+        "R_Forearm": {
+          "min": 0.02318,
+          "max": 0.03061
+        },
+        "R_Hand": {
+          "min": 0.00198,
+          "max": 0.002
+        },
+        "R_Digits": {
+          "min": 0.00526,
+          "max": 0.00527
+        },
+        "R_Palm": {
+          "min": 0.00198,
+          "max": 0.002
+        },
+        "R_Thigh": {
+          "min": 0.13901,
+          "max": 0.20351
+        },
+        "L_Forearm": {
+          "min": 0.02318,
+          "max": 0.03061
+        },
+        "L_Hand": {
+          "min": 0.00198,
+          "max": 0.002
+        },
+        "L_Digits": {
+          "min": 0.00526,
+          "max": 0.00527
+        },
+        "L_Palm": {
+          "min": 0.00198,
+          "max": 0.002
+        },
+        "L_Thigh": {
+          "min": 0.13901,
+          "max": 0.20351
+        },
+        "R_Calf": {
+          "min": 0.16791,
+          "max": 0.19214
+        },
+        "R_Foot": {
+          "min": 0.002,
+          "max": 0.002
+        },
+        "L_Calf": {
+          "min": 0.16791,
+          "max": 0.19213
+        },
+        "L_Foot": {
+          "min": 0.002,
+          "max": 0.002
+        }
+      },
+      "loopErrorM": 0,
+      "maxJointSpeedMS": 0.21724,
+      "maxPlantedStepM": 0.00002,
+      "kneeFlexDeg": [
+        10.64493,
+        11.08944
+      ],
+      "elbowFlexDeg": [
+        40.2763,
+        101.49686
+      ],
+      "hipDriftM": 0.10289
+    },
+    {
+      "id": "gainage",
+      "samples": 361,
+      "duration": 6,
+      "support": {
+        "R_Forearm": {
+          "min": 0.00162,
+          "max": 0.00186
+        },
+        "R_Hand": {
+          "min": 0.002,
+          "max": 0.002
+        },
+        "R_Digits": {
+          "min": 0.00527,
+          "max": 0.00527
+        },
+        "R_Palm": {
+          "min": 0.002,
+          "max": 0.002
+        },
+        "R_Thigh": {
+          "min": 0.12432,
+          "max": 0.12432
+        },
+        "L_Forearm": {
+          "min": 0.00162,
+          "max": 0.00186
+        },
+        "L_Hand": {
+          "min": 0.002,
+          "max": 0.002
+        },
+        "L_Digits": {
+          "min": 0.00527,
+          "max": 0.00527
+        },
+        "L_Palm": {
+          "min": 0.002,
+          "max": 0.002
+        },
+        "L_Thigh": {
+          "min": 0.12432,
+          "max": 0.12432
+        },
+        "R_Calf": {
+          "min": 0.15815,
+          "max": 0.15815
+        },
+        "R_Foot": {
+          "min": 0.002,
+          "max": 0.002
+        },
+        "L_Calf": {
+          "min": 0.15815,
+          "max": 0.15815
+        },
+        "L_Foot": {
+          "min": 0.002,
+          "max": 0.002
+        }
+      },
+      "loopErrorM": 0,
+      "maxJointSpeedMS": 0.00031,
+      "maxPlantedStepM": 0,
+      "kneeFlexDeg": [
+        10.53871,
+        10.53919
+      ],
+      "elbowFlexDeg": [
+        76.52908,
+        76.61108
+      ],
+      "hipDriftM": 0
+    },
+    {
+      "id": "fentes",
+      "samples": 601,
+      "duration": 10,
+      "support": {
+        "R_Forearm": {
+          "min": 1.0061,
+          "max": 1.01424
+        },
+        "R_Hand": {
+          "min": 0.92408,
+          "max": 0.96409
+        },
+        "R_Digits": {
+          "min": 0.92408,
+          "max": 0.96409
+        },
+        "R_Palm": {
+          "min": 0.95952,
+          "max": 0.97826
+        },
+        "R_Thigh": {
+          "min": 0.19319,
+          "max": 0.48805
+        },
+        "L_Forearm": {
+          "min": 1.0061,
+          "max": 1.01424
+        },
+        "L_Hand": {
+          "min": 0.92408,
+          "max": 0.9641
+        },
+        "L_Digits": {
+          "min": 0.92408,
+          "max": 0.9641
+        },
+        "L_Palm": {
+          "min": 0.95952,
+          "max": 0.97826
+        },
+        "L_Thigh": {
+          "min": 0.19319,
+          "max": 0.48805
+        },
+        "R_Calf": {
+          "min": 0.11375,
+          "max": 0.2238
+        },
+        "R_Foot": {
+          "min": 0.00196,
+          "max": 0.07184
+        },
+        "L_Calf": {
+          "min": 0.11375,
+          "max": 0.2238
+        },
+        "L_Foot": {
+          "min": 0.00196,
+          "max": 0.07184
+        }
+      },
+      "loopErrorM": 0,
+      "maxJointSpeedMS": 1.23191,
+      "maxPlantedStepM": 0.0011,
+      "kneeFlexDeg": [
+        25.26786,
+        95.26014
+      ],
+      "elbowFlexDeg": [
+        74.67303,
+        102.05154
+      ],
+      "hipDriftM": 0.28182
+    },
+    {
+      "id": "jumpingjacks",
+      "samples": 193,
+      "duration": 3.200000047683716,
+      "support": {
+        "R_Forearm": {
+          "min": 0.89806,
+          "max": 1.62631
+        },
+        "R_Hand": {
+          "min": 0.74059,
+          "max": 1.87922
+        },
+        "R_Digits": {
+          "min": 0.74059,
+          "max": 1.90802
+        },
+        "R_Palm": {
+          "min": 0.80566,
+          "max": 1.87922
+        },
+        "R_Thigh": {
+          "min": 0.423,
+          "max": 0.53181
+        },
+        "L_Forearm": {
+          "min": 0.89806,
+          "max": 1.62631
+        },
+        "L_Hand": {
+          "min": 0.74059,
+          "max": 1.87922
+        },
+        "L_Digits": {
+          "min": 0.74059,
+          "max": 1.90802
+        },
+        "L_Palm": {
+          "min": 0.80566,
+          "max": 1.87922
+        },
+        "L_Thigh": {
+          "min": 0.423,
+          "max": 0.53181
+        },
+        "R_Calf": {
+          "min": 0.11513,
+          "max": 0.19648
+        },
+        "R_Foot": {
+          "min": 0.00171,
+          "max": 0.07682
+        },
+        "L_Calf": {
+          "min": 0.11513,
+          "max": 0.19648
+        },
+        "L_Foot": {
+          "min": 0.00171,
+          "max": 0.07682
+        }
+      },
+      "loopErrorM": 0,
+      "maxJointSpeedMS": 4.10583,
+      "maxPlantedStepM": 0.00093,
+      "kneeFlexDeg": [
+        34.39493,
+        55.29021
+      ],
+      "elbowFlexDeg": [
+        1.91172,
+        67.41247
+      ],
+      "hipDriftM": 0.08987
+    },
+    {
+      "id": "mountainclimber",
+      "samples": 241,
+      "duration": 4,
+      "support": {
+        "R_Forearm": {
+          "min": 0.03323,
+          "max": 0.03323
+        },
+        "R_Hand": {
+          "min": 0.002,
+          "max": 0.002
+        },
+        "R_Digits": {
+          "min": 0.00527,
+          "max": 0.00527
+        },
+        "R_Palm": {
+          "min": 0.002,
+          "max": 0.002
+        },
+        "R_Thigh": {
+          "min": 0.03806,
+          "max": 0.24574
+        },
+        "L_Forearm": {
+          "min": 0.03323,
+          "max": 0.03323
+        },
+        "L_Hand": {
+          "min": 0.002,
+          "max": 0.002
+        },
+        "L_Digits": {
+          "min": 0.00527,
+          "max": 0.00527
+        },
+        "L_Palm": {
+          "min": 0.002,
+          "max": 0.002
+        },
+        "L_Thigh": {
+          "min": 0.03806,
+          "max": 0.24574
+        },
+        "R_Calf": {
+          "min": 0.03765,
+          "max": 0.19729
+        },
+        "R_Foot": {
+          "min": 0.002,
+          "max": 0.062
+        },
+        "L_Calf": {
+          "min": 0.03765,
+          "max": 0.19729
+        },
+        "L_Foot": {
+          "min": 0.002,
+          "max": 0.062
+        }
+      },
+      "loopErrorM": 0,
+      "maxJointSpeedMS": 0.96464,
+      "maxPlantedStepM": 0.00476,
+      "kneeFlexDeg": [
+        1.80783,
+        140.66955
+      ],
+      "elbowFlexDeg": [
+        15.22791,
+        15.22856
+      ],
+      "hipDriftM": 0
+    },
+    {
+      "id": "etirementdos",
+      "samples": 481,
+      "duration": 8,
+      "support": {
+        "R_Forearm": {
+          "min": 0.96171,
+          "max": 1.19866
+        },
+        "R_Hand": {
+          "min": 0.80267,
+          "max": 1.21154
+        },
+        "R_Digits": {
+          "min": 0.80267,
+          "max": 1.21154
+        },
+        "R_Palm": {
+          "min": 0.86403,
+          "max": 1.22372
+        },
+        "R_Thigh": {
+          "min": 0.47728,
+          "max": 0.48036
+        },
+        "L_Forearm": {
+          "min": 0.96171,
+          "max": 1.19866
+        },
+        "L_Hand": {
+          "min": 0.80267,
+          "max": 1.21154
+        },
+        "L_Digits": {
+          "min": 0.80267,
+          "max": 1.21154
+        },
+        "L_Palm": {
+          "min": 0.86403,
+          "max": 1.22372
+        },
+        "L_Thigh": {
+          "min": 0.47728,
+          "max": 0.48036
+        },
+        "R_Calf": {
+          "min": 0.12625,
+          "max": 0.12675
+        },
+        "R_Foot": {
+          "min": 0.002,
+          "max": 0.002
+        },
+        "L_Calf": {
+          "min": 0.12625,
+          "max": 0.12675
+        },
+        "L_Foot": {
+          "min": 0.002,
+          "max": 0.002
+        }
+      },
+      "loopErrorM": 0,
+      "maxJointSpeedMS": 0.73042,
+      "maxPlantedStepM": 0,
+      "kneeFlexDeg": [
+        25.26786,
+        33.52349
+      ],
+      "elbowFlexDeg": [
+        59.70453,
+        84.7619
+      ],
+      "hipDriftM": 0.02915
+    },
+    {
+      "id": "mobiliteepaules",
+      "samples": 361,
+      "duration": 6,
+      "support": {
+        "R_Forearm": {
+          "min": 1.01819,
+          "max": 1.27141
+        },
+        "R_Hand": {
+          "min": 0.87543,
+          "max": 1.23599
+        },
+        "R_Digits": {
+          "min": 0.87543,
+          "max": 1.23599
+        },
+        "R_Palm": {
+          "min": 0.9424,
+          "max": 1.26008
+        },
+        "R_Thigh": {
+          "min": 0.48036,
+          "max": 0.48036
+        },
+        "L_Forearm": {
+          "min": 1.01819,
+          "max": 1.27141
+        },
+        "L_Hand": {
+          "min": 0.87543,
+          "max": 1.23599
+        },
+        "L_Digits": {
+          "min": 0.87543,
+          "max": 1.23599
+        },
+        "L_Palm": {
+          "min": 0.9424,
+          "max": 1.26008
+        },
+        "L_Thigh": {
+          "min": 0.48036,
+          "max": 0.48036
+        },
+        "R_Calf": {
+          "min": 0.12675,
+          "max": 0.12675
+        },
+        "R_Foot": {
+          "min": 0.002,
+          "max": 0.002
+        },
+        "L_Calf": {
+          "min": 0.12675,
+          "max": 0.12675
+        },
+        "L_Foot": {
+          "min": 0.002,
+          "max": 0.002
+        }
+      },
+      "loopErrorM": 0,
+      "maxJointSpeedMS": 0.25634,
+      "maxPlantedStepM": 0,
+      "kneeFlexDeg": [
+        25.26786,
+        25.2681
+      ],
+      "elbowFlexDeg": [
+        56.77252,
+        115.12535
+      ],
+      "hipDriftM": 0
+    }
+  ],
+  "failures": [],
+  "status": "PASS"
+}
+{
+  "environment": "Headless Chromium + software WebGL, local server, mobile viewport emulation; no physical devices",
+  "physicalIPhone": false,
+  "physicalAndroid": false,
+  "thermal": null,
+  "gpuMemoryBytes": null,
+  "cases": [
+    {
+      "width": 390,
+      "dprRequested": 3,
+      "dprUsed": 1.25,
+      "localLoadMs": 2391,
+      "softwareRenderedFPS": 25.2,
+      "rendererAllocations": {
+        "geometries": 8,
+        "textures": 6
+      },
+      "jsHeapUsedBytes": 12955584,
+      "pausedRenderingStopped": true,
+      "offscreenRenderingStopped": true,
+      "contextRestored": true,
+      "errors": []
+    },
+    {
+      "width": 412,
+      "dprRequested": 3,
+      "dprUsed": 1.25,
+      "localLoadMs": 585,
+      "softwareRenderedFPS": 22.9,
+      "rendererAllocations": {
+        "geometries": 8,
+        "textures": 6
+      },
+      "jsHeapUsedBytes": 12913820,
+      "pausedRenderingStopped": true,
+      "offscreenRenderingStopped": true,
+      "contextRestored": true,
+      "errors": []
+    }
+  ]
+}
+PASS: 64 browser-decoded MP4 files, playback and gallery reset (service worker active)
+PASS: orbit view change, paused pose preserved, finite rendering, reduced motion
+{
+  "modelSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+  "candidateSHA256": "e5a948dc4d97554d4099584d819c0c718baadcce88c5ef32d9f119f3b988c65a",
+  "sampleHz": 60,
+  "status": "HOLD",
+  "runtimeEnabled": false,
+  "professionalReview": false,
+  "clips": [
+    {
+      "name": "stand-to-crouch",
+      "duration": 4.5,
+      "samples": 271,
+      "minSurfaceY": 0.0019998548502243424,
+      "maxJointSpeedMS": 1.1857114255315657,
+      "maxPlantedPivotStepM": 0.011029770741593978,
+      "maxFootGapM": {
+        "L": 0.03857571490540938,
+        "R": 0.009726435257476379
+      },
+      "pelvisHeightDeltaM": -0.46405391693115244,
+      "concerns": [
+        "support-foot clearance requires contact-phase review",
+        "planted-foot pivot drift exceeds per-sample guardrail",
+        "no reviewed contact schedule or centre-of-mass/balance model",
+        "exercise entry/exit poses not matched",
+        "professional continuous-video review absent"
+      ],
+      "status": "HOLD"
+    },
+    {
+      "name": "crouch-to-stand",
+      "duration": 4.5,
+      "samples": 271,
+      "minSurfaceY": 0.0019998563609444375,
+      "maxJointSpeedMS": 1.8102095920264725,
+      "maxPlantedPivotStepM": 0.0121783863954599,
+      "maxFootGapM": {
+        "L": 0.05716914372922849,
+        "R": 0.013041431091695038
+      },
+      "pelvisHeightDeltaM": 0.4640541076660157,
+      "concerns": [
+        "support-foot clearance requires contact-phase review",
+        "planted-foot pivot drift exceeds per-sample guardrail",
+        "no reviewed contact schedule or centre-of-mass/balance model",
+        "exercise entry/exit poses not matched",
+        "professional continuous-video review absent"
+      ],
+      "status": "HOLD"
+    }
+  ]
+}
+PASS: 16 browser-decoded MP4 files, playback and gallery reset (service worker active)
+stand-to-crouch {"minY":0.00199982659760749,"speed":1.1857012656834862,"acceleration":21.36893895441685,"drift":[4.210811300614942e-8,1.729580406880981e-7,4.185005350831104e-8,8.565651169717382e-8],"beforeDrift":[0.001879347078145289,0.0000853494699015484,0.0000149841421163055,0.0009557980803856297],"status":"HOLD"}
+crouch-to-stand {"minY":0.001999853510978021,"speed":1.810188740083424,"acceleration":28.905997319965163,"drift":[9.76316222467274e-8,5.435370701692082e-8,6.532493790103284e-8,4.752564087324222e-8],"beforeDrift":[0.0030578510691970937,0.0037485578633906047,0.0028503177703120266,0.022666350211717513],"status":"HOLD"}
+PASS: 16 browser-decoded MP4 files, playback and gallery reset (service worker active)
+[
+  {
+    id: 'A',
+    samples: 151,
+    speed: 0.48151327020038287,
+    acc: 2.0015079993634544,
+    gaps: { L: 0.002000124479697458, R: 0.0020001266815563314 },
+    drift: { L: 0.000022248596186568353, R: 0.000022236770569329314 },
+    status: 'EXISTING_REFERENCE'
+  },
+  {
+    id: 'B',
+    samples: 271,
+    speed: 1.1857012656834862,
+    acc: 21.36893895441685,
+    gaps: { L: 0.03857572093509902, R: 0.009726435308505072 },
+    drift: { L: 0.5068011483016132, R: 0.05227407422441925 },
+    status: 'EXISTING_REFERENCE'
+  },
+  {
+    id: 'C',
+    samples: 103,
+    speed: 2.4637757746147746,
+    acc: 80.09483167645043,
+    gaps: { L: 0.002261037964982799, R: 0.18202945787068273 },
+    drift: { L: 0.5287133771860003, R: 0.35721887248978723 },
+    status: 'REJECTED_FOR_RUNTIME'
+  },
+  {
+    id: 'D',
+    samples: 61,
+    speed: 3.530374651692008,
+    acc: 134.08161672723202,
+    gaps: { L: 0.015962868628434906, R: 0.030018351981924887 },
+    drift: { L: 0.07884426931476532, R: 0.07930967302317499 },
+    status: 'HOLD'
+  }
+]
+PASS: source, overlay and A/B/C/D videos browser-decode; responsive gallery

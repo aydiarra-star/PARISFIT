@@ -77,3 +77,7 @@ Huit clips Rocketbox corrigés, consignes synchronisées et 64 vidéos avant/apr
 ## Coach — phase 4 (appuis corrigés, raccords bloqués)
 
 [Galerie avant/après](docs/coach/phase4/index.html) · [Rapport](docs/coach/phase4/REPORT.md) · [Complément professionnel](docs/coach/phase4/PRO-ADDENDUM.md). Deux candidates corrigées sur des points matériels de semelle, 16 nouvelles vidéos, audit 60 Hz et admission de raccords en refus par défaut. **Aucune transition activée** : raccords/récupération non approuvés et cinq passages encore `NOT_AVAILABLE`. Les tests réussis des appuis ciblés ne constituent pas une validation biomécanique ni une acceptation complète du mouvement.
+
+## Coach — phase 5 : vidéo réelle et mocap optique (recherche)
+
+[Galerie A/B/C/D](docs/coach/phase5/index.html) · [Rapport](docs/coach/phase5/REPORT.md) · [Solutions/licences](docs/coach/phase5/SOLUTIONS.md). Chaîne locale MediaPipe → Rocketbox → GLB réellement exécutée sur une vidéo publique FitnessScape CC BY 3.0 ; référence CMU optique acquise sous ses conditions. **Prototype vidéo rejeté pour le parcours**, retargeting CMU en revue ; aucun nouveau clip activé. Source/overlay, 16 vidéos comparatives, landmarks et métriques disponibles. Voir les droits et limites avant toute réutilisation.

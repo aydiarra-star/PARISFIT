@@ -1,0 +1,26 @@
+{
+  "sourceVideo": {
+    "author": "FitnessScape",
+    "license": "CC BY 3.0",
+    "primaryURL": "https://commons.wikimedia.org/wiki/File:Squat_-_exercise_demonstration_video.webm",
+    "githubMirror": "HUSNAIN-MUNAWAR/motionforge-3d",
+    "revision": "970715decf7160f7d051236dcb59e49bbdde7ffe",
+    "gitBlob": "f9f7551ecc00c41ac1779c7d4a2c02272f35a139",
+    "sha256": "2440985661c3533a4ce78472b0f4577dbdf023aff3f8f9a225bbb5ff8071b1e9"
+  },
+  "sourceMocap": {
+    "owner": "CMU Graphics Lab",
+    "trial": "22_14",
+    "conversion": "Bruce Hahne BVH 2010",
+    "mirror": "una-dinosauria/cmu-mocap",
+    "revision": "09a07f54f3bbb58797325f009282d0b2048a2871",
+    "gitBlob": "fd551a6b3e25d3a801f2de37ebb89aa2c8698083",
+    "sha256": "5ec9df4a83f7691cb056c3bc2b3476ee93fd93025bdc44366c2ee743a043353d",
+    "terms": "Copy/modify/redistribute; commercial products allowed; no standalone data resale, including conversions"
+  },
+  "runtimeModelSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+  "captureIsLocal": true,
+  "personalVideoUploaded": false,
+  "runtimeEnabled": false,
+  "professionalApproval": false
+}

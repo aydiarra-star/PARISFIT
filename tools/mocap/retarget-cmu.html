@@ -1,0 +1,36 @@
+<!doctype html><meta charset="utf-8"><title>Video pose to Rocketbox — offline research</title><script type="importmap">{"imports":{"three":"/vendor/three/three.module.js"}}</script><script type="module">
+import * as T from 'three';import {BVHLoader} from '../../node_modules/three/examples/jsm/loaders/BVHLoader.js';import {GLTFLoader} from '../../vendor/three/loaders/GLTFLoader.js';import {GLTFExporter} from '../../node_modules/three/examples/jsm/exporters/GLTFExporter.js';
+try{
+ const bvh=new BVHLoader().parse(await(await fetch('/.cache/phase5/cmu-22_14.bvh')).text());const sourceRoot=bvh.skeleton.bones[0],sourceMixer=new T.AnimationMixer(sourceRoot);sourceMixer.clipAction(bvh.clip).play();const sourceBones=Object.fromEntries(bvh.skeleton.bones.filter(b=>b.name!=='ENDSITE').map(b=>[b.name,b]));
+ const data={fps:60,framesData:[]};for(let i=0;i<=60;i++){sourceMixer.setTime(.7+i/60);sourceRoot.updateMatrixWorld(true);const positions=Array(33).fill(null);for(const [j,name]of Object.entries({7:'Head',8:'Head',11:'LeftArm',12:'RightArm',13:'LeftForeArm',14:'RightForeArm',15:'LeftHand',16:'RightHand',23:'LeftUpLeg',24:'RightUpLeg',25:'LeftLeg',26:'RightLeg',27:'LeftFoot',28:'RightFoot',29:'LeftFoot',30:'RightFoot',31:'LeftToeBase',32:'RightToeBase'})){const p=sourceBones[name].getWorldPosition(new T.Vector3()).multiplyScalar(.056444);positions[Number(j)]=[p.x,-p.y,-p.z,1];}data.framesData.push({time:.7+i/60,worldFiltered:positions.map(p=>p||[0,0,0,0]),root:sourceRoot.position.clone().multiplyScalar(.056444).toArray()});}
+ const gltf=await new GLTFLoader().loadAsync('/assets/coach/coach.glb'),model=gltf.scene;model.animations=[];model.updateMatrixWorld(true);const root=model.getObjectByName('Bip01'),bones=[],meshes=[];model.traverse(o=>{if(o.isBone)bones.push(o);if(o.isSkinnedMesh)meshes.push(o)});
+ const get=n=>model.getObjectByName('Bip01_'+n),vec=(p)=>new T.Vector3(p[0],-p[1],-p[2]),pos=b=>b.getWorldPosition(new T.Vector3());const rest=new Map(bones.map(b=>[b.name,{p:b.position.clone(),q:b.quaternion.clone(),w:b.getWorldQuaternion(new T.Quaternion()),point:pos(b)}]));const rootP=root.position.clone(),rootQ=root.quaternion.clone();
+ const worldQ=(b,q)=>{b.quaternion.copy(b.parent.getWorldQuaternion(new T.Quaternion()).invert().multiply(q));b.updateWorldMatrix(false,true)};
+ function direction(name,child,desired){const b=get(name);const from=rest.get(get(child).name).point.clone().sub(rest.get(b.name).point).normalize();worldQ(b,new T.Quaternion().setFromUnitVectors(from,desired.clone().normalize()).multiply(rest.get(b.name).w));}
+ const start=0,end=60,initial=data.framesData[start];const mid=(p,a,b)=>p[a].clone().add(p[b]).multiplyScalar(.5);
+ const first=initial.worldFiltered.map(vec),lateral=first[23].clone().sub(first[24]);const yaw=Math.atan2(lateral.z,lateral.x),rotation=new T.Quaternion().setFromAxisAngle(new T.Vector3(0,1,0),yaw);
+ const legLength=pos(get('L_Thigh')).distanceTo(pos(get('L_Calf')))+pos(get('L_Calf')).distanceTo(pos(get('L_Foot')));const sourceLeg=first[23].distanceTo(first[25])+first[25].distanceTo(first[27]);const scale=legLength/sourceLeg;
+  const times=[],values=Object.fromEntries(bones.map(b=>[b.name,[]])),positions=[],rawPositions=[],corrections=[];
+ for(let index=start;index<=end;index++){
+  const f=data.framesData[index];root.position.copy(rootP);root.quaternion.copy(rootQ);for(const b of bones){const r=rest.get(b.name);b.position.copy(r.p);b.quaternion.copy(r.q)}model.updateMatrixWorld(true);
+  const points=f.worldFiltered.map(vec).map(p=>p.applyQuaternion(rotation));const pelvis=mid(points,23,24),shoulders=mid(points,11,12),up=shoulders.clone().sub(pelvis).normalize();
+  const displacement=new T.Vector3(...f.root).sub(new T.Vector3(...initial.root)).multiplyScalar(scale).applyQuaternion(rotation);const rootWorld=displacement.add(new T.Vector3(0,.875,0));root.position.copy(root.parent.worldToLocal(rootWorld));root.updateWorldMatrix(false,true);
+  const trunkQ=new T.Quaternion().setFromUnitVectors(new T.Vector3(0,1,0),up);for(const n of ['Pelvis','Spine','Spine1','Spine2'])worldQ(get(n),trunkQ.clone().multiply(rest.get(get(n).name).w));
+  const head=mid(points,7,8).sub(shoulders).normalize();for(const n of ['Neck','Head'])worldQ(get(n),new T.Quaternion().setFromUnitVectors(new T.Vector3(0,1,0),head).multiply(rest.get(get(n).name).w));
+  for(const [s,h,k,a,sh,e,w,heel,toe]of [['L',23,25,27,11,13,15,29,31],['R',24,26,28,12,14,16,30,32]]){
+   direction(s+'_Thigh',s+'_Calf',points[k].clone().sub(points[h]));direction(s+'_Calf',s+'_Foot',points[a].clone().sub(points[k]));
+   direction(s+'_Foot',s+'_Toe0',points[toe].clone().sub(points[heel]));
+   direction(s+'_UpperArm',s+'_Forearm',points[e].clone().sub(points[sh]));direction(s+'_Forearm',s+'_Hand',points[w].clone().sub(points[e]));
+   // Pose has no finger articulation: preserve wrist-relative bind pose, never invent a grip.
+   const hand=get(s+'_Hand');hand.quaternion.copy(rest.get(hand.name).q);hand.updateWorldMatrix(false,true);
+  }
+  model.updateMatrixWorld(true);rawPositions.push(root.position.toArray());let floor=Infinity;for(const m of meshes){m.skeleton.update();for(let i=0;i<m.geometry.attributes.position.count;i++){const p=m.getVertexPosition(i,new T.Vector3()).applyMatrix4(m.matrixWorld);floor=Math.min(floor,p.y)}}
+  const correction=.002-floor;const p=pos(root);p.y+=correction;root.position.copy(root.parent.worldToLocal(p));model.updateMatrixWorld(true);corrections.push({sourceTime:f.time,verticalShiftM:correction});times.push((index-start)/data.fps);positions.push(...root.position.toArray());for(const b of bones)values[b.name].push(...b.quaternion.toArray());
+ }
+ const tracks=[new T.VectorKeyframeTrack('Bip01.position',times,positions),...bones.map(b=>new T.QuaternionKeyframeTrack(b.name+'.quaternion',times,values[b.name]))];const clip=new T.AnimationClip('mocap-stand-to-crouch',times.at(-1),tracks).optimize();clip.uuid='phase5-mocap-stand-to-crouch';model.animations=[clip];
+ // Return to first exported pose before serializing; source exercise model is never overwritten.
+ const mixer=new T.AnimationMixer(model);mixer.clipAction(clip).play();mixer.update(0);
+ const binary=await new GLTFExporter().parseAsync(model,{binary:true,animations:[clip],onlyVisible:false});window.assetURL=URL.createObjectURL(new Blob([binary],{type:'model/gltf-binary'}));
+ window.report={source:'CMU 22_14, BVH conversion B. Hahne',sourceTimeStart:.7,sourceTimeEnd:1.7,duration:clip.duration,sourceFps:120,exportSampleHz:60,samples:times.length,legScaleRatio:scale,yawAlignmentRad:yaw,corrections,status:'HOLD',reasons:['Optical mocap, but retargeting is experimental','No measured fingers; hand grip not reconstructed','Global floor correction, no contact schedule approved','No approved exercise joins or recovery']};window.ready=true;
+}catch(e){window.failure=e.stack}
+</script>

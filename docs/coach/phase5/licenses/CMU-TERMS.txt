@@ -1,0 +1,17 @@
+CMU Graphics Lab Motion Capture Database — source pages consulted 2026-11-27
+https://mocap.cs.cmu.edu/
+"This data is free for use in research projects.
+You may include this data in commercially-sold products,
+but you may not resell this data directly, even in converted form."
+
+https://mocap.cs.cmu.edu/faqs.php
+"The motion capture data may be copied, modified, or redistributed
+without permission."
+"Disclaimer 1: We do not guarantee the quality of the data."
+
+Acknowledgment:
+The data used in this project was obtained from mocap.cs.cmu.edu.
+The database was created with funding from NSF EIA-0196217.
+
+BVH conversion: Bruce Hahne, cgspeed, 2010. See CMU-BVH-READMEFIRST.txt.
+This text records the cited source terms; it does not relicense CMU data as CC0/MIT.
