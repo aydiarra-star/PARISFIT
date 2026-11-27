@@ -56,7 +56,7 @@ try:
  targetLateral=tp('Bip01_L_Thigh')-tp('Bip01_R_Thigh');targetLateral.z=0;heading=lateral.normalized().rotation_difference(targetLateral.normalized())
  bones=list(target.pose.bones)
  def depth(b):return 0 if b.parent is None else 1+depth(b.parent)
- bones.sort(key=depth);root=target.pose.bones.get('Bip01');assert root and root.parent is None,[(b.name,b.parent.name if b.parent else None) for b in bones[:3]]
+ bones.sort(key=depth);root=target.pose.bones.get('Bip01_Pelvis');assert root and root.parent is None,[(b.name,b.parent.name if b.parent else None) for b in bones[:3]]
  armq=target.matrix_world.to_quaternion();localRest={b.name:(rest[b.parent.name].inverted()@rest[b.name] if b.parent else rest[b.name]).to_quaternion() for b in bones}
  previous={};records=[]
  for i in range(145):
