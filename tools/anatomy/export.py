@@ -67,7 +67,7 @@ try:
  def depth(b):return 0 if b.parent is None else 1+depth(b.parent)
  bones.sort(key=depth);root=target.pose.bones.get('Bip01_Pelvis');assert root and root.parent is None,[(b.name,b.parent.name if b.parent else None) for b in bones[:3]]
  armq=target.matrix_world.to_quaternion();localRest={b.name:(rest[b.parent.name].inverted()@rest[b.name] if b.parent else rest[b.name]).to_quaternion() for b in bones}
- previous={};records=[];goals=[];anchors={};last_source={};contact_frames={'L':[],'R':[]};target_origin=tp('Bip01_Pelvis')
+ baked_previous={};previous={};records=[];goals=[];anchors={};last_source={};contact_frames={'L':[],'R':[]};target_origin=tp('Bip01_Pelvis')
  (out/'anatomy.json').write_text(json.dumps({**rig_audit,'mapping':correspondence(mapping,child,reference,tp,scale)},indent=2)+'\n')
  for i in range(145):
   frame(start+i/60);world={}
@@ -120,6 +120,10 @@ try:
     frame_goals[side]={'requested':list(goal),'reachable':list(G),'reachResidualM':abs(raw_distance-d),'inferredContact':stable}
   goals.append(frame_goals)
   for b in bones:
+   if a.method=='C':
+    q=b.rotation_quaternion.copy();q.normalize()
+    if b.name in baked_previous and q.dot(baked_previous[b.name])<0:q.negate()
+    b.rotation_quaternion=q;baked_previous[b.name]=q.copy()
    b.keyframe_insert(data_path='rotation_quaternion',frame=i,group=b.name)
    if b==root:b.keyframe_insert(data_path='location',frame=i,group=b.name)
   records.append({'time':i/60,'sourceTime':start+i/60,'sourcePositions':{name:list(target_origin+heading@(sp(name)-origin)*scale) for name in reference}})
@@ -152,7 +156,7 @@ try:
  (out/'geometry.json').write_text(json.dumps(data)+'\n')
  result=validate(data,criteria)
  from metrics import extra_metrics
- result['method']=a.method;result['extra']=extra_metrics(data,records,mapping)
+ result['IKReachResidualMaxM']=max([g['reachResidualM'] for row in goals for g in row.values()] or [0]);result['method']=a.method;result['extra']=extra_metrics(data,records,mapping)
  result['inferredContactFrames']=contact_frames;result['IKGoals']=goals
  (out/'full-report.json').write_text(json.dumps(result)+'\n')
  del result['rows'];del result['IKGoals']

@@ -170,6 +170,8 @@ jobs:
           node tools/anatomy/check.cjs
           FFMPEG_PATH=$(command -v ffmpeg) node tools/anatomy/capture.cjs
           node tools/anatomy/diagnostic-video.cjs
+          python tools/anatomy/package.py
+          python tools/anatomy/test_metrics.py
       - name: Phase11 evidence transport
         if: always()
         run: |
@@ -184,6 +186,28 @@ jobs:
                   for i in range(0,len(raw),3000):print('::warning title=phase11-'+name.replace('/','_')+'-'+str(i//3000)+'::'+raw[i:i+3000])
           for p in root.glob('*.log'):
               print('::notice title=phase11-log-'+p.stem+'::'+p.read_text()[-2500:].replace('%','%25').replace('\n','%0A'))
+          PY
+      - name: Phase11 skeleton inventory transport
+        if: always()
+        run: |
+          python - <<'PY'
+          import zlib,base64
+          from pathlib import Path
+          p=Path('.cache/phase11/anatomy-summary.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              for i in range(0,len(raw),3800):print('::warning title=phase11-anatomy-summary.json-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - name: Phase11 video inventory transport
+        if: always()
+        run: |
+          python - <<'PY'
+          import zlib,base64
+          from pathlib import Path
+          p=Path('.cache/phase11/video-report.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              for i in range(0,len(raw),3000):print('::warning title=phase11-video-report.json-'+str(i//3000)+'::'+raw[i:i+3000])
           PY
       - uses: actions/upload-artifact@v4
         if: always()
