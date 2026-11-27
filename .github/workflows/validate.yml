@@ -30,3 +30,4 @@ jobs:
           test -s PROMPT_MAITRE.md
           test -s ARCHITECTURE.md
           test -s ROADMAP.md
+          test -s DATA_MODEL.md
