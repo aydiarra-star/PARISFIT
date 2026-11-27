@@ -39,6 +39,7 @@ assert.ok(html.includes('aria-label="Navigation principale"') && html.includes('
 for (const view of ["today", "switch", "nutrition", "mental"]) assert.ok(html.includes(`data-view="${view}" aria-controls="view-${view}"`), `La navigation doit cibler la vue ${view}.`);
 assert.ok(html.includes('aria-live="polite"'), "Les mises à jour dynamiques doivent être annoncées.");
 assert.ok(js.includes('button.type="button"'), "Les boutons de dialogue ne doivent pas soumettre le formulaire.");
+assert.ok(js.includes("if(!modal.open)modal.showModal()"), "Un dialogue déjà ouvert ne doit pas être ouvert une seconde fois.");
 assert.ok(js.includes('$("[data-view]")'), "Tous les contrôles de navigation doivent être actualisés.");
 assert.ok(js.includes('$(".nav [data-view], .mobile-nav [data-view]")'), "aria-current doit rester limité aux navigations.");
 assert.ok(css.includes(":focus-visible"), "Un style de focus clavier visible est requis.");
