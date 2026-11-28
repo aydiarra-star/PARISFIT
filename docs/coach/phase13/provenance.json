@@ -1,0 +1,36 @@
+{
+  "status": "VALID\u00c9",
+  "scope": "integrity/public subset only",
+  "url": "https://zenodo.org/records/23979972/files/Fatigue_Squat_2026_dataset.zip?download=1",
+  "version": "v1 / record23979972",
+  "archiveSHA256": "901112330ed234ad97ce24cb866bd5e7e33bef766861d21264953b3ac1875782",
+  "files": {
+    "README.md": {
+      "sha256": "cb65ee390ccde63cf876c6d27ce5583ea42bb0a8ed5b832dc921dc99acf0813f",
+      "archivePath": "Fatigue_Squat_2026_dataset/README.md",
+      "bytes": 2365
+    },
+    "P001_force_plates.csv.gz": {
+      "sha256": "a08c957955a49c5e578c2ac9b047a392ce12b6f0e97e95eb4997947898179d40",
+      "archivePath": "Fatigue_Squat_2026_dataset/participants/S01/P001_force_plates.csv.gz",
+      "bytes": 157575
+    },
+    "P001_markers.csv.gz": {
+      "sha256": "b3099afbb56ecf024807129969fb202b441968d14959b0e9598189c1c2aa339e",
+      "archivePath": "Fatigue_Squat_2026_dataset/participants/S01/P001_markers.csv.gz",
+      "bytes": 1119274
+    },
+    "squat_repetitions.csv": {
+      "sha256": "11e8c7fbcc55622850ce89154510d049a53e894060c286dd7db152891b734b2a",
+      "archivePath": "Fatigue_Squat_2026_dataset/participants/S01/squat_repetitions.csv",
+      "bytes": 3498
+    },
+    "static_markers.csv.gz": {
+      "sha256": "09511dabccd98c94ffe714bb926f052ae4ecd8f6c071fb3fbe33021823d0f784",
+      "archivePath": "Fatigue_Squat_2026_dataset/participants/S01/static_markers.csv.gz",
+      "bytes": 93023
+    }
+  },
+  "personalFilesExtracted": false,
+  "licenseBasis": "dataset README + Zenodo record CC BY4.0, not article license alone"
+}

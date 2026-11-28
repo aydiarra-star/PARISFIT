@@ -1,0 +1,252 @@
+{
+  "status": "EN ATTENTE DE VALIDATION HUMAINE",
+  "frames": 150,
+  "maxFileTimestampDifferenceS": 0.0,
+  "hardwareSync": "NON TESTÉ: identical timestamps are not a trigger validation",
+  "plates": [
+    {
+      "plate": 1,
+      "components": {
+        "PLATE_1_Fx": {
+          "min": 36.1502,
+          "max": 90.0457,
+          "secondDifferenceRMS": 1.7301369107674684
+        },
+        "PLATE_1_Fy": {
+          "min": -18.3994,
+          "max": 11.7122,
+          "secondDifferenceRMS": 1.9645527709544648
+        },
+        "PLATE_1_Fz": {
+          "min": 237.8965,
+          "max": 554.4614,
+          "secondDifferenceRMS": 3.528850585884872
+        },
+        "PLATE_1_Mx": {
+          "min": -21.7436,
+          "max": 8.8474,
+          "secondDifferenceRMS": 0.21940353479623112
+        },
+        "PLATE_1_My": {
+          "min": -19.4383,
+          "max": -7.0328,
+          "secondDifferenceRMS": 0.23019775443876264
+        },
+        "PLATE_1_Mz": {
+          "min": -1.9835,
+          "max": 16.0335,
+          "secondDifferenceRMS": 0.42968023780103837
+        }
+      },
+      "forceUnits": "N",
+      "momentUnits": "N m",
+      "thresholdSensitivity": {
+        "10": {
+          "loadedFrames": 150,
+          "fraction": 1.0
+        },
+        "20": {
+          "loadedFrames": 150,
+          "fraction": 1.0
+        },
+        "50": {
+          "loadedFrames": 150,
+          "fraction": 1.0
+        },
+        "100": {
+          "loadedFrames": 150,
+          "fraction": 1.0
+        }
+      },
+      "calibration": "NON TESTÉ: no matrix, zero trial or uncertainty certificate",
+      "momentsReference": "NON TESTÉ: sensor-origin height, rotation and sign not established; COP not computed"
+    },
+    {
+      "plate": 2,
+      "components": {
+        "PLATE_2_Fx": {
+          "min": -85.8013,
+          "max": -24.8385,
+          "secondDifferenceRMS": 1.6039448419064721
+        },
+        "PLATE_2_Fy": {
+          "min": -14.7685,
+          "max": 14.5383,
+          "secondDifferenceRMS": 1.7211228305296142
+        },
+        "PLATE_2_Fz": {
+          "min": 230.5191,
+          "max": 528.6187,
+          "secondDifferenceRMS": 2.7637369751914798
+        },
+        "PLATE_2_Mx": {
+          "min": -28.7546,
+          "max": 5.0903,
+          "secondDifferenceRMS": 0.2190868041901888
+        },
+        "PLATE_2_My": {
+          "min": 28.2941,
+          "max": 71.6056,
+          "secondDifferenceRMS": 0.3737703683322739
+        },
+        "PLATE_2_Mz": {
+          "min": -15.7234,
+          "max": 0.5733,
+          "secondDifferenceRMS": 0.4956586762186362
+        }
+      },
+      "forceUnits": "N",
+      "momentUnits": "N m",
+      "thresholdSensitivity": {
+        "10": {
+          "loadedFrames": 150,
+          "fraction": 1.0
+        },
+        "20": {
+          "loadedFrames": 150,
+          "fraction": 1.0
+        },
+        "50": {
+          "loadedFrames": 150,
+          "fraction": 1.0
+        },
+        "100": {
+          "loadedFrames": 150,
+          "fraction": 1.0
+        }
+      },
+      "calibration": "NON TESTÉ: no matrix, zero trial or uncertainty certificate",
+      "momentsReference": "NON TESTÉ: sensor-origin height, rotation and sign not established; COP not computed"
+    }
+  ],
+  "plate1FractionOfTotalFz": {
+    "min": 0.45674315461796056,
+    "max": 0.5705968722434873,
+    "mean": 0.5074155647178152
+  },
+  "forceDoesNotIdentifyDescent": "both plates remain loaded; phases require markers and depositor annotation",
+  "feet": {
+    "Right": {
+      "nearestPlateFrames": {
+        "1": 150,
+        "2": 0
+      },
+      "heelDisplacementMaxM": 0.021805403000173976,
+      "heelZRangeM": [
+        0.04791,
+        0.05807
+      ],
+      "meaning": "nearest known plate centre, not proof of sole area or foot assignment; marker motion is not sliding"
+    },
+    "Left": {
+      "nearestPlateFrames": {
+        "1": 0,
+        "2": 150
+      },
+      "heelDisplacementMaxM": 0.025031390292990122,
+      "heelZRangeM": [
+        0.04448,
+        0.05316
+      ],
+      "meaning": "nearest known plate centre, not proof of sole area or foot assignment; marker motion is not sliding"
+    }
+  },
+  "lagDiagnostic": {
+    "values": [
+      {
+        "lagSamples": -10,
+        "correlation": 0.9092299135460086
+      },
+      {
+        "lagSamples": -9,
+        "correlation": 0.9284600799724281
+      },
+      {
+        "lagSamples": -8,
+        "correlation": 0.9454348692950606
+      },
+      {
+        "lagSamples": -7,
+        "correlation": 0.9602344301365958
+      },
+      {
+        "lagSamples": -6,
+        "correlation": 0.9728590457273905
+      },
+      {
+        "lagSamples": -5,
+        "correlation": 0.9831072303872831
+      },
+      {
+        "lagSamples": -4,
+        "correlation": 0.9907328742884799
+      },
+      {
+        "lagSamples": -3,
+        "correlation": 0.9955712035538086
+      },
+      {
+        "lagSamples": -2,
+        "correlation": 0.9974437638814113
+      },
+      {
+        "lagSamples": -1,
+        "correlation": 0.9963340689815723
+      },
+      {
+        "lagSamples": 0,
+        "correlation": 0.9921565729958148
+      },
+      {
+        "lagSamples": 1,
+        "correlation": 0.9849092612437144
+      },
+      {
+        "lagSamples": 2,
+        "correlation": 0.9746954992553613
+      },
+      {
+        "lagSamples": 3,
+        "correlation": 0.9615615004402381
+      },
+      {
+        "lagSamples": 4,
+        "correlation": 0.9458316247998816
+      },
+      {
+        "lagSamples": 5,
+        "correlation": 0.9275750482958278
+      },
+      {
+        "lagSamples": 6,
+        "correlation": 0.9069884546564897
+      },
+      {
+        "lagSamples": 7,
+        "correlation": 0.8841903211827128
+      },
+      {
+        "lagSamples": 8,
+        "correlation": 0.8592143753103552
+      },
+      {
+        "lagSamples": 9,
+        "correlation": 0.832102348594611
+      },
+      {
+        "lagSamples": 10,
+        "correlation": 0.8027972107268083
+      }
+    ],
+    "best": {
+      "lagSamples": -2,
+      "correlation": 0.9974437638814113
+    },
+    "meaning": "proxy pelvis acceleration vs Fz, not COM; do not shift data or infer hardware delay"
+  },
+  "COP": {
+    "status": "NON TESTÉ",
+    "reason": "moment origin/surface elevation/sign/plate frame unqualified"
+  },
+  "forceUsedToCorrectGeometry": false
+}

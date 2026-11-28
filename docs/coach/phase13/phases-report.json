@@ -1,0 +1,28 @@
+{
+  "status": "EN ATTENTE DE VALIDATION HUMAINE",
+  "sourceAnnotations": {
+    "start": 10.45,
+    "bottom": 11.08,
+    "end": 11.94
+  },
+  "initial": "NON TESTÉ: cropped set begins at repetition start, no preceding hold",
+  "descent": {
+    "start": 10.45,
+    "end": 11.08,
+    "fractionNegativePelvisProxyVelocity": 1.0
+  },
+  "bottom": {
+    "annotatedS": 11.08,
+    "pelvisProxyMinimumS": 11.08,
+    "differenceS": 0.0,
+    "plateau": "NON TESTÉ: no assumed dwell"
+  },
+  "ascent": {
+    "start": 11.08,
+    "end": 11.94,
+    "fractionPositivePelvisProxyVelocity": 1.0
+  },
+  "finalStabilization": "NON TESTÉ: next repetition starts at11.94s, no recorded hold certified",
+  "pelvisInitialVelocityMS": -0.3674999999999951,
+  "pelvisFinalVelocityMS": 0.022000000000011368
+}
