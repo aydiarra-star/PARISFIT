@@ -5,6 +5,11 @@ on:
   pull_request:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      legacy_authoring:
+        description: "Explicitly authorize historical authoring (not part of passive review)"
+        type: boolean
+        default: false
 permissions:
   contents: read
 jobs:
@@ -95,6 +100,7 @@ jobs:
             docs/coach/phase6/*report.json
             docs/coach/phase7/*report.json
   blender-control:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.legacy_authoring == true }}
     # Public licensed fixtures ONLY. Never upload personal capture to this workflow.
     runs-on: ubuntu-24.04
     timeout-minutes: 15
@@ -260,6 +266,7 @@ jobs:
           path: .cache/phase9/
           retention-days: 30
   source-qualification:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.legacy_authoring == true }}
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
@@ -325,6 +332,7 @@ jobs:
           retention-days: 30
 
   michaud-qualification:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.legacy_authoring == true }}
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
@@ -447,6 +455,7 @@ jobs:
           retention-days: 30
 
   model-qualification:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.legacy_authoring == true }}
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4

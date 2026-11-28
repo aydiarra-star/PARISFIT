@@ -1,0 +1,27 @@
+name: PARISFIT — passive evidence only
+on:
+  pull_request:
+    branches: [main]
+    paths: ['tools/evidence-closure/**', 'docs/coach/phase19/**', '.github/workflows/passive-evidence.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  public-archive-metadata:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read bounded public ZIP indexes and selected text, never execute contents
+        run: python3 tools/evidence-closure/archive_probe.py
+      - name: Record passive runner versions
+        run: |
+          python3 --version
+          python3 - <<'PY'
+          import platform,sys
+          print('::notice title=phase19-runner::'+sys.version.replace('\n',' ')+'; '+platform.platform())
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: phase19-passive-archive-metadata
+          path: .cache/phase19/archive-probe.json
