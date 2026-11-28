@@ -58,13 +58,15 @@ const path = require('node:path');
     const report = await page.evaluate(() => {
       const output = [];
       for (const clip of lab.clips) {
-        for (const hz of [60, 120]) {
+        for (const hz of [60, 120, 240]) {
           lab.select(clip.name);
           const dt = 1 / hz;
           const count = Math.round(clip.duration * hz);
           let previous = null;
           let previousVelocity = null;
+          let previousAngularVelocity = null;
           const peaks = new Map();
+          const angularPeaks = new Map();
           for (let frame = 0; frame <= count; frame++) {
             const time = Math.min(frame * dt, clip.duration);
             const current = lab.skeleton(time);
@@ -73,6 +75,13 @@ const path = require('node:path');
               for (const [name, joint] of Object.entries(current)) {
                 const before = previous[name].position;
                 velocity[name] = joint.position.map((value, axis) => (value - before[axis]) / dt);
+              }
+              const angularVelocity = {};
+              for (const [name, joint] of Object.entries(current)) {
+                const a = previous[name].quaternion;
+                const b = joint.quaternion;
+                const dot = Math.min(1, Math.abs(a.reduce((sum, value, i) => sum + value * b[i], 0)));
+                angularVelocity[name] = 2 * Math.acos(dot) / dt;
               }
               if (previousVelocity) {
                 for (const [name, vector] of Object.entries(velocity)) {
@@ -84,8 +93,16 @@ const path = require('node:path');
                     entry.time = time;
                   }
                   peaks.set(name, entry);
+                  const angularAcceleration = Math.abs(angularVelocity[name] - previousAngularVelocity[name]) / dt;
+                  const angularEntry = angularPeaks.get(name) || { bone: name, peak: 0, time: 0 };
+                  if (angularAcceleration > angularEntry.peak) {
+                    angularEntry.peak = angularAcceleration;
+                    angularEntry.time = time;
+                  }
+                  angularPeaks.set(name, angularEntry);
                 }
               }
+              previousAngularVelocity = angularVelocity;
               previousVelocity = velocity;
             }
             previous = current;
@@ -93,12 +110,14 @@ const path = require('node:path');
           const ranked = [...peaks.values()].sort((a, b) => b.peak - a.peak);
           const bodyPattern = /^Bip01_(?:Pelvis|Spine\\d*|Neck|Head|[LR]_(?:Thigh|Calf|Foot|Toe\\d*|Clavicle|UpperArm|Forearm|Hand))$/;
           const bodyJointPeaks = ranked.filter(item => bodyPattern.test(item.bone)).slice(0, 20);
+          const bodyAngularPeaks = [...angularPeaks.values()].filter(item => bodyPattern.test(item.bone)).sort((a, b) => b.peak - a.peak).slice(0, 20);
           output.push({
             exercise: clip.name,
             duration: clip.duration,
             sampleHz: hz,
             highestJointPeaks: ranked.slice(0, 20),
-            bodyJointPeaks
+            bodyJointPeaks,
+            bodyAngularPeaks
           });
         }
       }
@@ -107,7 +126,7 @@ const path = require('node:path');
     const target = 'docs/development/motion-review/joint-diagnostics.json';
     fs.mkdirSync(path.dirname(target), { recursive: true });
     fs.writeFileSync(target, JSON.stringify({
-      method: 'World-space bone-origin linear acceleration; finite differences; 60 and 120 Hz; diagnostic only, not a safety or biomechanical metric.',
+      method: 'World-space bone-origin linear acceleration and quaternion angular acceleration; finite differences; 60, 120 and 240 Hz; diagnostic only, not a safety or biomechanical metric.',
       source: 'Original coach.glb; no candidate loaded or changed.',
       servedAssets: diagnostics.served,
       exercises: report
