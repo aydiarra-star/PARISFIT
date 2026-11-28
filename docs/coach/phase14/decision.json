@@ -1,0 +1,12 @@
+{
+  "status": "REFUSÉ",
+  "scenario": "C",
+  "reason": "documentation insuffisante pour relier rigoureusement CSV et MarkerSet ; incompatibilité biologique non démontrée",
+  "confirmedPairs": 0,
+  "usableMarkersForIK": [],
+  "IK": "NON TESTÉ",
+  "retarget": "NON TESTÉ",
+  "runtimeEnabled": false,
+  "allowIK": false,
+  "nextAction": "demander aux auteurs le MarkerSet37 original, mapping/placement, paramètres ScaleTool et repères ; aucun autre template générique ne résout à lui seul ces lacunes"
+}

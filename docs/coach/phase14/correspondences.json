@@ -1,0 +1,1128 @@
+{
+  "status": "EN ATTENTE DE VALIDATION HUMAINE",
+  "scope": "hypothèses revues manuellement ; les candidats ne sont PAS un mapping exécutable",
+  "counts": {
+    "CONFIRMÉE PAR DOCUMENTATION": 0,
+    "PLAUSIBLE MAIS NON CONFIRMÉE": 12,
+    "AMBIGUË": 18,
+    "AUCUNE CORRESPONDANCE": 7
+  },
+  "rows": [
+    {
+      "csv": "Right_5th_metatarsal_head",
+      "status": "PLAUSIBLE MAIS NON CONFIRMÉE",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "tête du 5e métatarsien",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "pied",
+      "candidates": [
+        {
+          "opensim": "RMT5",
+          "attachedFrame": "/bodyset/calcn_r",
+          "localPositionM": [
+            0.145,
+            0.02491,
+            0.059
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "MT5 évoque le 5e métatarsien ; site exact et offset cutané non documentés",
+      "ambiguity": "MT5 évoque le 5e métatarsien ; site exact et offset cutané non documentés",
+      "usableForIK": false
+    },
+    {
+      "csv": "Right_calcaneal_tuberosity",
+      "status": "PLAUSIBLE MAIS NON CONFIRMÉE",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "tubérosité calcanéenne",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "pied",
+      "candidates": [
+        {
+          "opensim": "RCAL",
+          "attachedFrame": "/bodyset/calcn_r",
+          "localPositionM": [
+            -0.024999999999999998,
+            0.02,
+            -0.005
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "CAL évoque le calcanéus ; tubérosité, face et offset non certifiés",
+      "ambiguity": "CAL évoque le calcanéus ; tubérosité, face et offset non certifiés",
+      "usableForIK": false
+    },
+    {
+      "csv": "Right_lateral_malleolus",
+      "status": "PLAUSIBLE MAIS NON CONFIRMÉE",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "malléole latérale",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "jambe",
+      "candidates": [
+        {
+          "opensim": "RLMAL",
+          "attachedFrame": "/bodyset/tibia_r",
+          "localPositionM": [
+            -0.005,
+            -0.3887999999999999,
+            0.053
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "abréviation concordante, pas de table auteur CSV→MarkerSet",
+      "ambiguity": "abréviation concordante, pas de table auteur CSV→MarkerSet",
+      "usableForIK": false
+    },
+    {
+      "csv": "Right_tibial_tuberosity",
+      "status": "AMBIGUË",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "tubérosité tibiale",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "jambe",
+      "candidates": [
+        {
+          "opensim": "R_tibial_plateau",
+          "attachedFrame": "/bodyset/tibia_r",
+          "localPositionM": [
+            -0.00808954,
+            -0.017,
+            -0.00148474
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "plateau tibial ≠ tubérosité tibiale ; proximité segmentaire seulement, substitution interdite",
+      "ambiguity": "plateau tibial ≠ tubérosité tibiale ; proximité segmentaire seulement, substitution interdite",
+      "usableForIK": false
+    },
+    {
+      "csv": "Right_lateral_epicondyle",
+      "status": "PLAUSIBLE MAIS NON CONFIRMÉE",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "épicondyle latéral (membre inférieur d’après contexte)",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "cuisse",
+      "candidates": [
+        {
+          "opensim": "RLFC",
+          "attachedFrame": "/bodyset/femur_r",
+          "localPositionM": [
+            0.0,
+            -0.40399999999999997,
+            0.049999999999999996
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "LFC évoque condyle fémoral latéral ; condyle et épicondyle ne sont pas synonymes exacts",
+      "ambiguity": "LFC évoque condyle fémoral latéral ; condyle et épicondyle ne sont pas synonymes exacts",
+      "usableForIK": false
+    },
+    {
+      "csv": "Right_greater_trochanter",
+      "status": "AMBIGUË",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "grand trochanter",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "cuisse",
+      "candidates": [
+        {
+          "opensim": "RHJC",
+          "attachedFrame": "/bodyset/femur_r",
+          "localPositionM": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "HJC est un centre virtuel de hanche à origine fémur ; trochanter cutané ≠ centre articulaire, substitution interdite",
+      "ambiguity": "HJC est un centre virtuel de hanche à origine fémur ; trochanter cutané ≠ centre articulaire, substitution interdite",
+      "usableForIK": false
+    },
+    {
+      "csv": "Right_ASIC",
+      "status": "PLAUSIBLE MAIS NON CONFIRMÉE",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "ASIC : expansion anatomique non explicitée dans README",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "bassin",
+      "candidates": [
+        {
+          "opensim": "RASI",
+          "attachedFrame": "/bodyset/pelvis",
+          "localPositionM": [
+            0.00953047,
+            0.0180816,
+            0.128464
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "ASI évoque ASIS ; ASIC ne doit pas être silencieusement corrigé en ASIS",
+      "ambiguity": "ASI évoque ASIS ; ASIC ne doit pas être silencieusement corrigé en ASIS",
+      "usableForIK": false
+    },
+    {
+      "csv": "Left_5th_metatarsal_head",
+      "status": "PLAUSIBLE MAIS NON CONFIRMÉE",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "tête du 5e métatarsien",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "pied",
+      "candidates": [
+        {
+          "opensim": "LMT5",
+          "attachedFrame": "/bodyset/calcn_l",
+          "localPositionM": [
+            0.145,
+            0.024909,
+            -0.059
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "MT5 évoque le 5e métatarsien ; site exact et offset cutané non documentés",
+      "ambiguity": "MT5 évoque le 5e métatarsien ; site exact et offset cutané non documentés",
+      "usableForIK": false
+    },
+    {
+      "csv": "Left_calcaneal_tuberosity",
+      "status": "PLAUSIBLE MAIS NON CONFIRMÉE",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "tubérosité calcanéenne",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "pied",
+      "candidates": [
+        {
+          "opensim": "LCAL",
+          "attachedFrame": "/bodyset/calcn_l",
+          "localPositionM": [
+            -0.024999999999999998,
+            0.02,
+            0.005
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "CAL évoque le calcanéus ; tubérosité, face et offset non certifiés",
+      "ambiguity": "CAL évoque le calcanéus ; tubérosité, face et offset non certifiés",
+      "usableForIK": false
+    },
+    {
+      "csv": "Left_lateral_malleolus",
+      "status": "PLAUSIBLE MAIS NON CONFIRMÉE",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "malléole latérale",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "jambe",
+      "candidates": [
+        {
+          "opensim": "LLMAL",
+          "attachedFrame": "/bodyset/tibia_l",
+          "localPositionM": [
+            -0.005,
+            -0.3887999999999999,
+            -0.053
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "abréviation concordante, pas de table auteur CSV→MarkerSet",
+      "ambiguity": "abréviation concordante, pas de table auteur CSV→MarkerSet",
+      "usableForIK": false
+    },
+    {
+      "csv": "Left_tibial_tuberosity",
+      "status": "AMBIGUË",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "tubérosité tibiale",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "jambe",
+      "candidates": [
+        {
+          "opensim": "L_tibial_plateau",
+          "attachedFrame": "/bodyset/tibia_l",
+          "localPositionM": [
+            -0.00808954,
+            -0.017,
+            0.00148474
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "plateau tibial ≠ tubérosité tibiale ; proximité segmentaire seulement, substitution interdite",
+      "ambiguity": "plateau tibial ≠ tubérosité tibiale ; proximité segmentaire seulement, substitution interdite",
+      "usableForIK": false
+    },
+    {
+      "csv": "Left_lateral_epicondyle",
+      "status": "PLAUSIBLE MAIS NON CONFIRMÉE",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "épicondyle latéral (membre inférieur d’après contexte)",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "cuisse",
+      "candidates": [
+        {
+          "opensim": "LLFC",
+          "attachedFrame": "/bodyset/femur_l",
+          "localPositionM": [
+            0.0,
+            -0.40399999999999997,
+            -0.049999999999999996
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "LFC évoque condyle fémoral latéral ; condyle et épicondyle ne sont pas synonymes exacts",
+      "ambiguity": "LFC évoque condyle fémoral latéral ; condyle et épicondyle ne sont pas synonymes exacts",
+      "usableForIK": false
+    },
+    {
+      "csv": "Left_greater_trochanter",
+      "status": "AMBIGUË",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "grand trochanter",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "cuisse",
+      "candidates": [
+        {
+          "opensim": "LHJC",
+          "attachedFrame": "/bodyset/femur_l",
+          "localPositionM": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "HJC est un centre virtuel de hanche à origine fémur ; trochanter cutané ≠ centre articulaire, substitution interdite",
+      "ambiguity": "HJC est un centre virtuel de hanche à origine fémur ; trochanter cutané ≠ centre articulaire, substitution interdite",
+      "usableForIK": false
+    },
+    {
+      "csv": "Left_ASIC",
+      "status": "PLAUSIBLE MAIS NON CONFIRMÉE",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "ASIC : expansion anatomique non explicitée dans README",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "bassin",
+      "candidates": [
+        {
+          "opensim": "LASI",
+          "attachedFrame": "/bodyset/pelvis",
+          "localPositionM": [
+            0.00953047,
+            0.0180816,
+            -0.128464
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "ASI évoque ASIS ; ASIC ne doit pas être silencieusement corrigé en ASIS",
+      "ambiguity": "ASI évoque ASIS ; ASIC ne doit pas être silencieusement corrigé en ASIS",
+      "usableForIK": false
+    },
+    {
+      "csv": "Right_sacral_crest",
+      "status": "AMBIGUË",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "crête sacrée",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "bassin",
+      "candidates": [
+        {
+          "opensim": "RPSI",
+          "attachedFrame": "/bodyset/pelvis",
+          "localPositionM": [
+            -0.15499999999999997,
+            0.035,
+            0.045000000000000005
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "PSI évoque PSIS ; crête sacrée ≠ PSIS certifiée, ambiguïté de palpation",
+      "ambiguity": "PSI évoque PSIS ; crête sacrée ≠ PSIS certifiée, ambiguïté de palpation",
+      "usableForIK": false
+    },
+    {
+      "csv": "Left_sacral_crest",
+      "status": "AMBIGUË",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "crête sacrée",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "bassin",
+      "candidates": [
+        {
+          "opensim": "LPSI",
+          "attachedFrame": "/bodyset/pelvis",
+          "localPositionM": [
+            -0.15499999999999997,
+            0.035,
+            -0.045000000000000005
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "PSI évoque PSIS ; crête sacrée ≠ PSIS certifiée, ambiguïté de palpation",
+      "ambiguity": "PSI évoque PSIS ; crête sacrée ≠ PSIS certifiée, ambiguïté de palpation",
+      "usableForIK": false
+    },
+    {
+      "csv": "Right_acromioclavicular_joint",
+      "status": "PLAUSIBLE MAIS NON CONFIRMÉE",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "articulation acromio-claviculaire",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "épaule / tronc",
+      "candidates": [
+        {
+          "opensim": "RACR",
+          "attachedFrame": "/bodyset/torso",
+          "localPositionM": [
+            -0.003,
+            0.425,
+            0.13
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "acromion et articulation acromio-claviculaire ne fixent pas le même placement exact",
+      "ambiguity": "acromion et articulation acromio-claviculaire ne fixent pas le même placement exact",
+      "usableForIK": false
+    },
+    {
+      "csv": "Right_deltoid_tuberosity",
+      "status": "AMBIGUË",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "tubérosité deltoïdienne",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "bras",
+      "candidates": [
+        {
+          "opensim": "RUA1",
+          "attachedFrame": "/bodyset/humerus_r",
+          "localPositionM": [
+            0.0,
+            -0.05,
+            0.02
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        },
+        {
+          "opensim": "RUA2",
+          "attachedFrame": "/bodyset/humerus_r",
+          "localPositionM": [
+            0.0,
+            -0.2,
+            0.02
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        },
+        {
+          "opensim": "RUA3",
+          "attachedFrame": "/bodyset/humerus_r",
+          "localPositionM": [
+            0.03,
+            -0.13,
+            0.02
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "trois points techniques du bras ; aucune identité anatomique de UA1/2/3 établie",
+      "ambiguity": "trois points techniques du bras ; aucune identité anatomique de UA1/2/3 établie",
+      "usableForIK": false
+    },
+    {
+      "csv": "Right_olecranon",
+      "status": "AMBIGUË",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "olécrâne",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "avant-bras / coude",
+      "candidates": [
+        {
+          "opensim": "RLEL",
+          "attachedFrame": "/bodyset/humerus_r",
+          "localPositionM": [
+            0.015,
+            -0.28,
+            0.04
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        },
+        {
+          "opensim": "RMEL",
+          "attachedFrame": "/bodyset/humerus_r",
+          "localPositionM": [
+            0.00225,
+            -0.286,
+            -0.046
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        },
+        {
+          "opensim": "REJC",
+          "attachedFrame": "/bodyset/ulna_r",
+          "localPositionM": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "olécrâne ≠ épicondyles ni centre du coude ; candidats régionaux seulement, exclus de toute association",
+      "ambiguity": "olécrâne ≠ épicondyles ni centre du coude ; candidats régionaux seulement, exclus de toute association",
+      "usableForIK": false
+    },
+    {
+      "csv": "Right_forearm_centre",
+      "status": "AMBIGUË",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "centre de l’avant-bras : définition opérationnelle inconnue",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "avant-bras",
+      "candidates": [
+        {
+          "opensim": "RFAsuperior",
+          "attachedFrame": "/bodyset/ulna_r",
+          "localPositionM": [
+            0.00460453,
+            -0.0800579,
+            0.0453196
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        },
+        {
+          "opensim": "RFAradius",
+          "attachedFrame": "/bodyset/radius_r",
+          "localPositionM": [
+            0.0005,
+            -0.225,
+            0.05
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        },
+        {
+          "opensim": "RFAulna",
+          "attachedFrame": "/bodyset/radius_r",
+          "localPositionM": [
+            -0.022,
+            -0.225,
+            -0.022
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "plusieurs points de surface ; pas de définition du centre ni de leur équivalence",
+      "ambiguity": "plusieurs points de surface ; pas de définition du centre ni de leur équivalence",
+      "usableForIK": false
+    },
+    {
+      "csv": "Right_ulna_head",
+      "status": "AMBIGUË",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "tête ulnaire",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "avant-bras",
+      "candidates": [
+        {
+          "opensim": "RFAulna",
+          "attachedFrame": "/bodyset/radius_r",
+          "localPositionM": [
+            -0.022,
+            -0.225,
+            -0.022
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "FAulna attaché au radius dans XML ; nom seul insuffisant pour identifier un point sur ulna",
+      "ambiguity": "FAulna attaché au radius dans XML ; nom seul insuffisant pour identifier un point sur ulna",
+      "usableForIK": false
+    },
+    {
+      "csv": "Right_5th_metacarpal_head",
+      "status": "AUCUNE CORRESPONDANCE",
+      "resultStatus": "NON TESTÉ",
+      "anatomicalDefinition": "tête du 5e métacarpien",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "main",
+      "candidates": [],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "aucun marqueur du MarkerSet attaché à la main ; ne pas confondre MT5 pied et métacarpien",
+      "ambiguity": "aucun marqueur du MarkerSet attaché à la main ; ne pas confondre MT5 pied et métacarpien",
+      "usableForIK": false
+    },
+    {
+      "csv": "Right_2nd_metacarpal_head",
+      "status": "AUCUNE CORRESPONDANCE",
+      "resultStatus": "NON TESTÉ",
+      "anatomicalDefinition": "tête du 2e métacarpien",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "main",
+      "candidates": [],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "pas de marqueur de main dans le MarkerSet inspecté",
+      "ambiguity": "pas de marqueur de main dans le MarkerSet inspecté",
+      "usableForIK": false
+    },
+    {
+      "csv": "Left_acromioclavicular_joint",
+      "status": "PLAUSIBLE MAIS NON CONFIRMÉE",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "articulation acromio-claviculaire",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "épaule / tronc",
+      "candidates": [
+        {
+          "opensim": "LACR",
+          "attachedFrame": "/bodyset/torso",
+          "localPositionM": [
+            -0.003,
+            0.425,
+            -0.13
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "acromion et articulation acromio-claviculaire ne fixent pas le même placement exact",
+      "ambiguity": "acromion et articulation acromio-claviculaire ne fixent pas le même placement exact",
+      "usableForIK": false
+    },
+    {
+      "csv": "Left_deltoid_tuberosity",
+      "status": "AMBIGUË",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "tubérosité deltoïdienne",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "bras",
+      "candidates": [
+        {
+          "opensim": "LUA1",
+          "attachedFrame": "/bodyset/humerus_l",
+          "localPositionM": [
+            0.0,
+            -0.05,
+            -0.02
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        },
+        {
+          "opensim": "LUA2",
+          "attachedFrame": "/bodyset/humerus_l",
+          "localPositionM": [
+            0.0,
+            -0.2,
+            -0.02
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        },
+        {
+          "opensim": "LUA3",
+          "attachedFrame": "/bodyset/humerus_l",
+          "localPositionM": [
+            0.03,
+            -0.13,
+            -0.02
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "trois points techniques du bras ; aucune identité anatomique de UA1/2/3 établie",
+      "ambiguity": "trois points techniques du bras ; aucune identité anatomique de UA1/2/3 établie",
+      "usableForIK": false
+    },
+    {
+      "csv": "Left_olecranon",
+      "status": "AMBIGUË",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "olécrâne",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "avant-bras / coude",
+      "candidates": [
+        {
+          "opensim": "LLEL",
+          "attachedFrame": "/bodyset/humerus_l",
+          "localPositionM": [
+            0.015,
+            -0.28,
+            -0.04
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        },
+        {
+          "opensim": "LMEL",
+          "attachedFrame": "/bodyset/humerus_l",
+          "localPositionM": [
+            0.00225005,
+            -0.286,
+            0.046
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        },
+        {
+          "opensim": "LEJC",
+          "attachedFrame": "/bodyset/ulna_l",
+          "localPositionM": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "olécrâne ≠ épicondyles ni centre du coude ; candidats régionaux seulement, exclus de toute association",
+      "ambiguity": "olécrâne ≠ épicondyles ni centre du coude ; candidats régionaux seulement, exclus de toute association",
+      "usableForIK": false
+    },
+    {
+      "csv": "Left_forearm_centre",
+      "status": "AMBIGUË",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "centre de l’avant-bras : définition opérationnelle inconnue",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "avant-bras",
+      "candidates": [
+        {
+          "opensim": "LFAsuperior",
+          "attachedFrame": "/bodyset/ulna_l",
+          "localPositionM": [
+            0.00460453,
+            -0.0800579,
+            -0.0453196
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        },
+        {
+          "opensim": "LFAradius",
+          "attachedFrame": "/bodyset/radius_l",
+          "localPositionM": [
+            0.0005,
+            -0.225,
+            -0.05
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        },
+        {
+          "opensim": "LFAulna",
+          "attachedFrame": "/bodyset/radius_l",
+          "localPositionM": [
+            -0.022,
+            -0.225,
+            0.022
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "plusieurs points de surface ; pas de définition du centre ni de leur équivalence",
+      "ambiguity": "plusieurs points de surface ; pas de définition du centre ni de leur équivalence",
+      "usableForIK": false
+    },
+    {
+      "csv": "Left_ulna_head",
+      "status": "AMBIGUË",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "tête ulnaire",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "avant-bras",
+      "candidates": [
+        {
+          "opensim": "LFAulna",
+          "attachedFrame": "/bodyset/radius_l",
+          "localPositionM": [
+            -0.022,
+            -0.225,
+            0.022
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "FAulna attaché au radius dans XML ; nom seul insuffisant pour identifier un point sur ulna",
+      "ambiguity": "FAulna attaché au radius dans XML ; nom seul insuffisant pour identifier un point sur ulna",
+      "usableForIK": false
+    },
+    {
+      "csv": "Left_5th_metacarpal_head",
+      "status": "AUCUNE CORRESPONDANCE",
+      "resultStatus": "NON TESTÉ",
+      "anatomicalDefinition": "tête du 5e métacarpien",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "main",
+      "candidates": [],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "aucun marqueur du MarkerSet attaché à la main ; ne pas confondre MT5 pied et métacarpien",
+      "ambiguity": "aucun marqueur du MarkerSet attaché à la main ; ne pas confondre MT5 pied et métacarpien",
+      "usableForIK": false
+    },
+    {
+      "csv": "Left_2nd_metacarpal_head",
+      "status": "AUCUNE CORRESPONDANCE",
+      "resultStatus": "NON TESTÉ",
+      "anatomicalDefinition": "tête du 2e métacarpien",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "main",
+      "candidates": [],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "pas de marqueur de main dans le MarkerSet inspecté",
+      "ambiguity": "pas de marqueur de main dans le MarkerSet inspecté",
+      "usableForIK": false
+    },
+    {
+      "csv": "Right_temporal_bone",
+      "status": "AUCUNE CORRESPONDANCE",
+      "resultStatus": "NON TESTÉ",
+      "anatomicalDefinition": "os temporal",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "tête",
+      "candidates": [],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "pas de tête indépendante ou marqueur crânien dans le modèle inspecté",
+      "ambiguity": "pas de tête indépendante ou marqueur crânien dans le modèle inspecté",
+      "usableForIK": false
+    },
+    {
+      "csv": "Skull_vertex",
+      "status": "AUCUNE CORRESPONDANCE",
+      "resultStatus": "NON TESTÉ",
+      "anatomicalDefinition": "vertex crânien",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "tête",
+      "candidates": [],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "pas de marqueur crânien dans le template",
+      "ambiguity": "pas de marqueur crânien dans le template",
+      "usableForIK": false
+    },
+    {
+      "csv": "Left_temporal_bone",
+      "status": "AUCUNE CORRESPONDANCE",
+      "resultStatus": "NON TESTÉ",
+      "anatomicalDefinition": "os temporal",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "tête",
+      "candidates": [],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "pas de tête indépendante ou marqueur crânien dans le modèle inspecté",
+      "ambiguity": "pas de tête indépendante ou marqueur crânien dans le modèle inspecté",
+      "usableForIK": false
+    },
+    {
+      "csv": "Right_1st_metatarsal_head",
+      "status": "AMBIGUË",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "tête du 1er métatarsien",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "pied",
+      "candidates": [
+        {
+          "opensim": "RTOE",
+          "attachedFrame": "/bodyset/calcn_r",
+          "localPositionM": [
+            0.205,
+            0.029730799999999998,
+            -0.03
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "TOE est générique et attaché au calcn ; concurrence avec phalange distale, pas de substitution",
+      "ambiguity": "TOE est générique et attaché au calcn ; concurrence avec phalange distale, pas de substitution",
+      "usableForIK": false
+    },
+    {
+      "csv": "Right_toe_distal_phalanx",
+      "status": "AMBIGUË",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "phalange distale d’orteil (orteil non spécifié)",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "orteil",
+      "candidates": [
+        {
+          "opensim": "RTOE",
+          "attachedFrame": "/bodyset/calcn_r",
+          "localPositionM": [
+            0.205,
+            0.029730799999999998,
+            -0.03
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "même candidat TOE que métatarsien1 ; manque définition du point, attaché au calcn et non toes",
+      "ambiguity": "même candidat TOE que métatarsien1 ; manque définition du point, attaché au calcn et non toes",
+      "usableForIK": false
+    },
+    {
+      "csv": "Left_1st_metatarsal_head",
+      "status": "AMBIGUË",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "tête du 1er métatarsien",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "pied",
+      "candidates": [
+        {
+          "opensim": "LTOE",
+          "attachedFrame": "/bodyset/calcn_l",
+          "localPositionM": [
+            0.205,
+            0.029729999999999996,
+            0.03
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "TOE est générique et attaché au calcn ; concurrence avec phalange distale, pas de substitution",
+      "ambiguity": "TOE est générique et attaché au calcn ; concurrence avec phalange distale, pas de substitution",
+      "usableForIK": false
+    },
+    {
+      "csv": "Left_toe_distal_phalanx",
+      "status": "AMBIGUË",
+      "resultStatus": "EN ATTENTE DE VALIDATION HUMAINE",
+      "anatomicalDefinition": "phalange distale d’orteil (orteil non spécifié)",
+      "definitionBasis": "traduction du label, PAS protocole de palpation confirmé",
+      "bodyRegion": "orteil",
+      "candidates": [
+        {
+          "opensim": "LTOE",
+          "attachedFrame": "/bodyset/calcn_l",
+          "localPositionM": [
+            0.205,
+            0.029729999999999996,
+            0.03
+          ],
+          "positionMeaning": "XML générique, pas position anatomique S01"
+        }
+      ],
+      "source": [
+        "phase13/model-inspection.json#42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "phase13/review-data.json",
+        "Michaud v1 README (ne fournit pas de table de correspondance)"
+      ],
+      "certainty": "aucune autorité documentaire CSV→MarkerSet identifiée",
+      "justification": "même candidat TOE que métatarsien1 ; manque définition du point, attaché au calcn et non toes",
+      "ambiguity": "même candidat TOE que métatarsien1 ; manque définition du point, attaché au calcn et non toes",
+      "usableForIK": false
+    }
+  ]
+}

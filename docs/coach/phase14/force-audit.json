@@ -1,0 +1,1948 @@
+{
+  "status": "VALIDÉ",
+  "scope": "numerical component audit only; lab common frame and physical contact NOT validated",
+  "sourceSHA256": "a08c957955a49c5e578c2ac9b047a392ce12b6f0e97e95eb4997947898179d40",
+  "equalFileTimestamps": true,
+  "sampleHz": 100.00000000000213,
+  "windows": {
+    "fullP001": {
+      "frames": 3350,
+      "start": 10.45,
+      "end": 43.94,
+      "components": {
+        "PLATE_1_Fx": {
+          "min": 30.5194,
+          "max": 111.3064,
+          "mean": 70.6054584477612
+        },
+        "PLATE_1_Fy": {
+          "min": -23.8665,
+          "max": 12.4836,
+          "mean": -5.082769999999999
+        },
+        "PLATE_1_Fz": {
+          "min": 237.8965,
+          "max": 554.73,
+          "mean": 382.3359639402985
+        },
+        "PLATE_1_Mx": {
+          "min": -29.4471,
+          "max": 14.795,
+          "mean": -7.703741343283581
+        },
+        "PLATE_1_My": {
+          "min": -22.8636,
+          "max": 7.1618,
+          "mean": -5.8292639701492535
+        },
+        "PLATE_1_Mz": {
+          "min": -6.3233,
+          "max": 17.0124,
+          "mean": 5.845959432835821
+        },
+        "PLATE_2_Fx": {
+          "min": -112.5475,
+          "max": -24.8385,
+          "mean": -68.15132301492538
+        },
+        "PLATE_2_Fy": {
+          "min": -32.0555,
+          "max": 25.2607,
+          "mean": 3.234994208955224
+        },
+        "PLATE_2_Fz": {
+          "min": 206.5068,
+          "max": 528.6187,
+          "mean": 356.309030119403
+        },
+        "PLATE_2_Mx": {
+          "min": -37.04,
+          "max": 11.0298,
+          "mean": -13.947773402985076
+        },
+        "PLATE_2_My": {
+          "min": 20.3462,
+          "max": 71.6056,
+          "mean": 39.916752477611944
+        },
+        "PLATE_2_Mz": {
+          "min": -18.2067,
+          "max": 10.2351,
+          "mean": -6.753975582089551
+        }
+      },
+      "plates": {
+        "1": {
+          "maxHorizontalN": 112.76350054769495,
+          "minFzN": 237.8965,
+          "maxFzN": 554.73,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        },
+        "2": {
+          "maxHorizontalN": 114.20884021545793,
+          "minFzN": 206.5068,
+          "maxFzN": 528.6187,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        }
+      },
+      "plate1ShareWhereTotalAbove200N": {
+        "frames": 3350,
+        "min": 0.4403566521695038,
+        "max": 0.6057205514710107,
+        "mean": 0.5180310380724494
+      }
+    },
+    "rep1": {
+      "frames": 150,
+      "start": 10.45,
+      "end": 11.94,
+      "components": {
+        "PLATE_1_Fx": {
+          "min": 36.1502,
+          "max": 90.0457,
+          "mean": 63.36527333333333
+        },
+        "PLATE_1_Fy": {
+          "min": -18.3994,
+          "max": 11.7122,
+          "mean": -4.842992
+        },
+        "PLATE_1_Fz": {
+          "min": 237.8965,
+          "max": 554.4614,
+          "mean": 383.34714199999996
+        },
+        "PLATE_1_Mx": {
+          "min": -21.7436,
+          "max": 8.8474,
+          "mean": -7.055748666666667
+        },
+        "PLATE_1_My": {
+          "min": -19.4383,
+          "max": -7.0328,
+          "mean": -12.675102
+        },
+        "PLATE_1_Mz": {
+          "min": -1.9835,
+          "max": 16.0335,
+          "mean": 6.108432666666666
+        },
+        "PLATE_2_Fx": {
+          "min": -85.8013,
+          "max": -24.8385,
+          "mean": -61.362164666666665
+        },
+        "PLATE_2_Fy": {
+          "min": -14.7685,
+          "max": 14.5383,
+          "mean": 3.401982
+        },
+        "PLATE_2_Fz": {
+          "min": 230.5191,
+          "max": 528.6187,
+          "mean": 369.9456046666666
+        },
+        "PLATE_2_Mx": {
+          "min": -28.7546,
+          "max": 5.0903,
+          "mean": -15.210671333333334
+        },
+        "PLATE_2_My": {
+          "min": 28.2941,
+          "max": 71.6056,
+          "mean": 44.72805533333334
+        },
+        "PLATE_2_Mz": {
+          "min": -15.7234,
+          "max": 0.5733,
+          "mean": -6.521674666666667
+        }
+      },
+      "plates": {
+        "1": {
+          "maxHorizontalN": 90.44801850090471,
+          "minFzN": 237.8965,
+          "maxFzN": 554.4614,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        },
+        "2": {
+          "maxHorizontalN": 86.36096883251136,
+          "minFzN": 230.5191,
+          "maxFzN": 528.6187,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        }
+      },
+      "plate1ShareWhereTotalAbove200N": {
+        "frames": 150,
+        "min": 0.45674315461796056,
+        "max": 0.5705968722434873,
+        "mean": 0.5074155647178152
+      }
+    },
+    "rep2": {
+      "frames": 221,
+      "start": 11.94,
+      "end": 14.14,
+      "components": {
+        "PLATE_1_Fx": {
+          "min": 30.5194,
+          "max": 88.3425,
+          "mean": 62.20743891402715
+        },
+        "PLATE_1_Fy": {
+          "min": -21.9647,
+          "max": 12.4836,
+          "mean": -6.5296868778280555
+        },
+        "PLATE_1_Fz": {
+          "min": 238.4402,
+          "max": 551.546,
+          "mean": 384.8998090497738
+        },
+        "PLATE_1_Mx": {
+          "min": -17.0828,
+          "max": 12.2514,
+          "mean": -1.3241864253393663
+        },
+        "PLATE_1_My": {
+          "min": -22.8636,
+          "max": -7.172,
+          "mean": -14.993778280542987
+        },
+        "PLATE_1_Mz": {
+          "min": -4.8213,
+          "max": 13.1687,
+          "mean": 2.747506787330317
+        },
+        "PLATE_2_Fx": {
+          "min": -88.3329,
+          "max": -28.7575,
+          "mean": -59.554084615384625
+        },
+        "PLATE_2_Fy": {
+          "min": -10.1861,
+          "max": 17.1872,
+          "mean": 4.21608597285068
+        },
+        "PLATE_2_Fz": {
+          "min": 206.5068,
+          "max": 495.3573,
+          "mean": 350.876756561086
+        },
+        "PLATE_2_Mx": {
+          "min": -28.9436,
+          "max": 2.5707,
+          "mean": -8.699447963800905
+        },
+        "PLATE_2_My": {
+          "min": 23.9743,
+          "max": 64.3726,
+          "mean": 41.4327592760181
+        },
+        "PLATE_2_Mz": {
+          "min": -15.0838,
+          "max": 3.3329,
+          "mean": -4.53890407239819
+        }
+      },
+      "plates": {
+        "1": {
+          "maxHorizontalN": 88.58041610655258,
+          "minFzN": 238.4402,
+          "maxFzN": 551.546,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        },
+        "2": {
+          "maxHorizontalN": 89.53735051167193,
+          "minFzN": 206.5068,
+          "maxFzN": 495.3573,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        }
+      },
+      "plate1ShareWhereTotalAbove200N": {
+        "frames": 221,
+        "min": 0.4403566521695038,
+        "max": 0.5874913835722447,
+        "mean": 0.5214751106277643
+      }
+    },
+    "rep3": {
+      "frames": 227,
+      "start": 14.14,
+      "end": 16.4,
+      "components": {
+        "PLATE_1_Fx": {
+          "min": 34.0834,
+          "max": 86.4822,
+          "mean": 65.35873039647576
+        },
+        "PLATE_1_Fy": {
+          "min": -19.2044,
+          "max": 8.5187,
+          "mean": -4.750277533039647
+        },
+        "PLATE_1_Fz": {
+          "min": 262.0991,
+          "max": 517.3022,
+          "mean": 384.7145775330397
+        },
+        "PLATE_1_Mx": {
+          "min": -16.313,
+          "max": 14.795,
+          "mean": -2.6329555066079293
+        },
+        "PLATE_1_My": {
+          "min": -17.5325,
+          "max": -8.8252,
+          "mean": -13.460330837004406
+        },
+        "PLATE_1_Mz": {
+          "min": -6.0863,
+          "max": 12.3917,
+          "mean": 3.6199035242290747
+        },
+        "PLATE_2_Fx": {
+          "min": -83.5271,
+          "max": -37.6898,
+          "mean": -62.25363436123348
+        },
+        "PLATE_2_Fy": {
+          "min": -14.5586,
+          "max": 17.0075,
+          "mean": 3.3252
+        },
+        "PLATE_2_Fz": {
+          "min": 233.2088,
+          "max": 484.3301,
+          "mean": 351.75326960352425
+        },
+        "PLATE_2_Mx": {
+          "min": -18.0305,
+          "max": 6.7062,
+          "mean": -7.8718
+        },
+        "PLATE_2_My": {
+          "min": 24.6754,
+          "max": 58.8415,
+          "mean": 40.83931762114537
+        },
+        "PLATE_2_Mz": {
+          "min": -13.5322,
+          "max": 7.6423,
+          "mean": -4.4655325991189425
+        }
+      },
+      "plates": {
+        "1": {
+          "maxHorizontalN": 87.08638674953738,
+          "minFzN": 262.0991,
+          "maxFzN": 517.3022,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        },
+        "2": {
+          "maxHorizontalN": 83.52850110501205,
+          "minFzN": 233.2088,
+          "maxFzN": 484.3301,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        }
+      },
+      "plate1ShareWhereTotalAbove200N": {
+        "frames": 227,
+        "min": 0.44891437253000954,
+        "max": 0.6057205514710107,
+        "mean": 0.5220288452089166
+      }
+    },
+    "rep4": {
+      "frames": 222,
+      "start": 16.4,
+      "end": 18.61,
+      "components": {
+        "PLATE_1_Fx": {
+          "min": 31.6417,
+          "max": 90.1021,
+          "mean": 65.12499954954954
+        },
+        "PLATE_1_Fy": {
+          "min": -23.1125,
+          "max": 6.8118,
+          "mean": -7.018534234234234
+        },
+        "PLATE_1_Fz": {
+          "min": 276.8749,
+          "max": 536.4427,
+          "mean": 382.6663720720721
+        },
+        "PLATE_1_Mx": {
+          "min": -12.249,
+          "max": 12.0384,
+          "mean": -0.5099504504504508
+        },
+        "PLATE_1_My": {
+          "min": -20.9243,
+          "max": -8.089,
+          "mean": -13.9998490990991
+        },
+        "PLATE_1_Mz": {
+          "min": -6.3233,
+          "max": 13.1707,
+          "mean": 3.148600450450451
+        },
+        "PLATE_2_Fx": {
+          "min": -85.2292,
+          "max": -29.7466,
+          "mean": -62.88715495495495
+        },
+        "PLATE_2_Fy": {
+          "min": -10.5832,
+          "max": 17.3931,
+          "mean": 4.08699009009009
+        },
+        "PLATE_2_Fz": {
+          "min": 226.7335,
+          "max": 500.6873,
+          "mean": 353.5238072072072
+        },
+        "PLATE_2_Mx": {
+          "min": -18.4011,
+          "max": 1.217,
+          "mean": -7.744870270270271
+        },
+        "PLATE_2_My": {
+          "min": 24.2719,
+          "max": 61.9018,
+          "mean": 40.64201666666666
+        },
+        "PLATE_2_Mz": {
+          "min": -15.1064,
+          "max": 3.9703,
+          "mean": -4.964932432432433
+        }
+      },
+      "plates": {
+        "1": {
+          "maxHorizontalN": 91.93222403406762,
+          "minFzN": 276.8749,
+          "maxFzN": 536.4427,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        },
+        "2": {
+          "maxHorizontalN": 85.43503884027912,
+          "minFzN": 226.7335,
+          "maxFzN": 500.6873,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        }
+      },
+      "plate1ShareWhereTotalAbove200N": {
+        "frames": 222,
+        "min": 0.48745595031013084,
+        "max": 0.5779758379714173,
+        "mean": 0.5204054420821935
+      }
+    },
+    "rep5": {
+      "frames": 225,
+      "start": 18.61,
+      "end": 20.85,
+      "components": {
+        "PLATE_1_Fx": {
+          "min": 48.1762,
+          "max": 93.9512,
+          "mean": 68.96708755555557
+        },
+        "PLATE_1_Fy": {
+          "min": -22.0514,
+          "max": 10.0157,
+          "mean": -3.980821333333333
+        },
+        "PLATE_1_Fz": {
+          "min": 296.7172,
+          "max": 553.4343,
+          "mean": 390.0559231111111
+        },
+        "PLATE_1_Mx": {
+          "min": -26.9072,
+          "max": 7.9662,
+          "mean": -8.172286666666666
+        },
+        "PLATE_1_My": {
+          "min": -14.9107,
+          "max": -4.8703,
+          "mean": -10.002846666666667
+        },
+        "PLATE_1_Mz": {
+          "min": -0.4472,
+          "max": 14.7848,
+          "mean": 5.453624444444444
+        },
+        "PLATE_2_Fx": {
+          "min": -84.4461,
+          "max": -43.0202,
+          "mean": -65.57772666666668
+        },
+        "PLATE_2_Fy": {
+          "min": -17.1791,
+          "max": 15.8228,
+          "mean": 1.5276742222222222
+        },
+        "PLATE_2_Fz": {
+          "min": 213.3428,
+          "max": 484.4136,
+          "mean": 346.3104715555556
+        },
+        "PLATE_2_Mx": {
+          "min": -27.2544,
+          "max": 2.923,
+          "mean": -12.166169333333334
+        },
+        "PLATE_2_My": {
+          "min": 21.2263,
+          "max": 58.1684,
+          "mean": 38.91857155555555
+        },
+        "PLATE_2_Mz": {
+          "min": -14.5511,
+          "max": 5.2451,
+          "mean": -5.481660444444444
+        }
+      },
+      "plates": {
+        "1": {
+          "maxHorizontalN": 93.95599683788151,
+          "minFzN": 296.7172,
+          "maxFzN": 553.4343,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        },
+        "2": {
+          "maxHorizontalN": 84.5818471258461,
+          "minFzN": 213.3428,
+          "maxFzN": 484.4136,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        }
+      },
+      "plate1ShareWhereTotalAbove200N": {
+        "frames": 225,
+        "min": 0.47728832745999006,
+        "max": 0.6033901203905443,
+        "mean": 0.5302735088441252
+      }
+    },
+    "rep6": {
+      "frames": 219,
+      "start": 20.85,
+      "end": 23.03,
+      "components": {
+        "PLATE_1_Fx": {
+          "min": 39.2527,
+          "max": 86.3101,
+          "mean": 65.20423926940639
+        },
+        "PLATE_1_Fy": {
+          "min": -20.5364,
+          "max": 5.914,
+          "mean": -4.816199086757991
+        },
+        "PLATE_1_Fz": {
+          "min": 259.6002,
+          "max": 554.73,
+          "mean": 379.1769118721461
+        },
+        "PLATE_1_Mx": {
+          "min": -17.1369,
+          "max": 6.427,
+          "mean": -6.943419634703197
+        },
+        "PLATE_1_My": {
+          "min": -15.3391,
+          "max": -5.1999,
+          "mean": -10.308830136986302
+        },
+        "PLATE_1_Mz": {
+          "min": -2.2959,
+          "max": 14.761,
+          "mean": 5.347564383561644
+        },
+        "PLATE_2_Fx": {
+          "min": -84.8112,
+          "max": -35.675,
+          "mean": -64.31209452054794
+        },
+        "PLATE_2_Fy": {
+          "min": -22.4943,
+          "max": 17.1469,
+          "mean": 1.3143004566210048
+        },
+        "PLATE_2_Fz": {
+          "min": 214.2566,
+          "max": 510.3353,
+          "mean": 357.9341369863014
+        },
+        "PLATE_2_Mx": {
+          "min": -21.1064,
+          "max": 8.5138,
+          "mean": -12.11226210045662
+        },
+        "PLATE_2_My": {
+          "min": 20.3462,
+          "max": 61.5212,
+          "mean": 40.14374018264839
+        },
+        "PLATE_2_Mz": {
+          "min": -15.9516,
+          "max": 8.8021,
+          "mean": -5.538397716894978
+        }
+      },
+      "plates": {
+        "1": {
+          "maxHorizontalN": 86.82655808691256,
+          "minFzN": 259.6002,
+          "maxFzN": 554.73,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        },
+        "2": {
+          "maxHorizontalN": 85.10658730439143,
+          "minFzN": 214.2566,
+          "maxFzN": 510.3353,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        }
+      },
+      "plate1ShareWhereTotalAbove200N": {
+        "frames": 219,
+        "min": 0.4766307916767597,
+        "max": 0.5801852832694948,
+        "mean": 0.5143185242177415
+      }
+    },
+    "rep7": {
+      "frames": 258,
+      "start": 23.03,
+      "end": 25.6,
+      "components": {
+        "PLATE_1_Fx": {
+          "min": 36.2275,
+          "max": 93.9581,
+          "mean": 66.5941003875969
+        },
+        "PLATE_1_Fy": {
+          "min": -23.8665,
+          "max": 7.7889,
+          "mean": -6.307099612403101
+        },
+        "PLATE_1_Fz": {
+          "min": 304.147,
+          "max": 505.9059,
+          "mean": 387.90623139534887
+        },
+        "PLATE_1_Mx": {
+          "min": -17.7159,
+          "max": 4.3209,
+          "mean": -6.652203100775194
+        },
+        "PLATE_1_My": {
+          "min": -17.6836,
+          "max": -5.0389,
+          "mean": -10.726591085271318
+        },
+        "PLATE_1_Mz": {
+          "min": 1.5172,
+          "max": 14.7118,
+          "mean": 6.040726744186046
+        },
+        "PLATE_2_Fx": {
+          "min": -79.2491,
+          "max": -35.4674,
+          "mean": -63.86834031007752
+        },
+        "PLATE_2_Fy": {
+          "min": -9.869,
+          "max": 22.5891,
+          "mean": 4.084849612403101
+        },
+        "PLATE_2_Fz": {
+          "min": 267.2919,
+          "max": 469.2396,
+          "mean": 348.0869918604651
+        },
+        "PLATE_2_Mx": {
+          "min": -24.5398,
+          "max": -6.1045,
+          "mean": -14.475537209302326
+        },
+        "PLATE_2_My": {
+          "min": 26.6767,
+          "max": 58.1519,
+          "mean": 38.58839534883721
+        },
+        "PLATE_2_Mz": {
+          "min": -16.8619,
+          "max": -0.8141,
+          "mean": -7.611963565891472
+        }
+      },
+      "plates": {
+        "1": {
+          "maxHorizontalN": 94.01118323396425,
+          "minFzN": 304.147,
+          "maxFzN": 505.9059,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        },
+        "2": {
+          "maxHorizontalN": 80.02715394620753,
+          "minFzN": 267.2919,
+          "maxFzN": 469.2396,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        }
+      },
+      "plate1ShareWhereTotalAbove200N": {
+        "frames": 258,
+        "min": 0.4840082491493365,
+        "max": 0.5721352198177361,
+        "mean": 0.5278304665780009
+      }
+    },
+    "rep8": {
+      "frames": 243,
+      "start": 25.6,
+      "end": 28.02,
+      "components": {
+        "PLATE_1_Fx": {
+          "min": 36.8342,
+          "max": 82.136,
+          "mean": 67.31908971193415
+        },
+        "PLATE_1_Fy": {
+          "min": -18.2321,
+          "max": 11.0505,
+          "mean": -3.4475000000000002
+        },
+        "PLATE_1_Fz": {
+          "min": 264.7502,
+          "max": 506.3514,
+          "mean": 378.5676991769547
+        },
+        "PLATE_1_Mx": {
+          "min": -24.882,
+          "max": -0.6634,
+          "mean": -14.170627160493826
+        },
+        "PLATE_1_My": {
+          "min": -14.4486,
+          "max": 5.9891,
+          "mean": -6.702317695473251
+        },
+        "PLATE_1_Mz": {
+          "min": -0.8299,
+          "max": 14.32,
+          "mean": 6.74121646090535
+        },
+        "PLATE_2_Fx": {
+          "min": -85.3798,
+          "max": -35.7734,
+          "mean": -65.78191975308641
+        },
+        "PLATE_2_Fy": {
+          "min": -24.1851,
+          "max": 20.6503,
+          "mean": 3.5014423868312754
+        },
+        "PLATE_2_Fz": {
+          "min": 221.1161,
+          "max": 471.6526,
+          "mean": 359.12541399176956
+        },
+        "PLATE_2_Mx": {
+          "min": -32.1547,
+          "max": 11.0298,
+          "mean": -16.671701646090536
+        },
+        "PLATE_2_My": {
+          "min": 20.8452,
+          "max": 55.4839,
+          "mean": 39.12470164609054
+        },
+        "PLATE_2_Mz": {
+          "min": -15.5828,
+          "max": 10.2351,
+          "mean": -7.36181851851852
+        }
+      },
+      "plates": {
+        "1": {
+          "maxHorizontalN": 82.86733414186799,
+          "minFzN": 264.7502,
+          "maxFzN": 506.3514,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        },
+        "2": {
+          "maxHorizontalN": 87.1586433628358,
+          "minFzN": 221.1161,
+          "maxFzN": 471.6526,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        }
+      },
+      "plate1ShareWhereTotalAbove200N": {
+        "frames": 243,
+        "min": 0.45036347912160135,
+        "max": 0.5987179145158987,
+        "mean": 0.513255262035802
+      }
+    },
+    "rep9": {
+      "frames": 228,
+      "start": 28.02,
+      "end": 30.29,
+      "components": {
+        "PLATE_1_Fx": {
+          "min": 40.113,
+          "max": 80.3754,
+          "mean": 66.9738
+        },
+        "PLATE_1_Fy": {
+          "min": -15.1308,
+          "max": 11.3068,
+          "mean": -3.681351315789474
+        },
+        "PLATE_1_Fz": {
+          "min": 245.1019,
+          "max": 538.4584,
+          "mean": 373.5041763157895
+        },
+        "PLATE_1_Mx": {
+          "min": -22.8767,
+          "max": 9.7542,
+          "mean": -3.1489381578947375
+        },
+        "PLATE_1_My": {
+          "min": -7.7171,
+          "max": 5.6795,
+          "mean": -2.031941228070176
+        },
+        "PLATE_1_Mz": {
+          "min": -0.4308,
+          "max": 14.3356,
+          "mean": 6.444119298245614
+        },
+        "PLATE_2_Fx": {
+          "min": -85.2282,
+          "max": -33.8436,
+          "mean": -64.52319342105264
+        },
+        "PLATE_2_Fy": {
+          "min": -18.887,
+          "max": 10.6791,
+          "mean": -0.31339999999999973
+        },
+        "PLATE_2_Fz": {
+          "min": 228.7904,
+          "max": 525.2513,
+          "mean": 364.4498149122808
+        },
+        "PLATE_2_Mx": {
+          "min": -16.6513,
+          "max": 0.8659,
+          "mean": -7.70850350877193
+        },
+        "PLATE_2_My": {
+          "min": 25.6584,
+          "max": 67.3454,
+          "mean": 42.72463464912281
+        },
+        "PLATE_2_Mz": {
+          "min": -14.6923,
+          "max": 1.2309,
+          "mean": -5.400562719298247
+        }
+      },
+      "plates": {
+        "1": {
+          "maxHorizontalN": 80.95715120710462,
+          "minFzN": 245.1019,
+          "maxFzN": 538.4584,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        },
+        "2": {
+          "maxHorizontalN": 85.23606925756255,
+          "minFzN": 228.7904,
+          "maxFzN": 525.2513,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        }
+      },
+      "plate1ShareWhereTotalAbove200N": {
+        "frames": 228,
+        "min": 0.470820515814558,
+        "max": 0.5950549934685938,
+        "mean": 0.5065375924607514
+      }
+    },
+    "rep10": {
+      "frames": 223,
+      "start": 30.29,
+      "end": 32.51,
+      "components": {
+        "PLATE_1_Fx": {
+          "min": 52.6982,
+          "max": 93.2583,
+          "mean": 72.8416596412556
+        },
+        "PLATE_1_Fy": {
+          "min": -16.7551,
+          "max": 6.5475,
+          "mean": -3.4619609865470844
+        },
+        "PLATE_1_Fz": {
+          "min": 278.4411,
+          "max": 521.9974,
+          "mean": 384.20043766816144
+        },
+        "PLATE_1_Mx": {
+          "min": -20.5808,
+          "max": 1.3644,
+          "mean": -9.989851121076232
+        },
+        "PLATE_1_My": {
+          "min": -2.4279,
+          "max": 4.7733,
+          "mean": 0.5061887892376682
+        },
+        "PLATE_1_Mz": {
+          "min": 2.4027,
+          "max": 15.2249,
+          "mean": 7.224477130044843
+        },
+        "PLATE_2_Fx": {
+          "min": -89.8233,
+          "max": -47.3446,
+          "mean": -69.58211838565022
+        },
+        "PLATE_2_Fy": {
+          "min": -9.6144,
+          "max": 17.6707,
+          "mean": 3.0083031390134534
+        },
+        "PLATE_2_Fz": {
+          "min": 236.3147,
+          "max": 509.2287,
+          "mean": 353.21063766816144
+        },
+        "PLATE_2_Mx": {
+          "min": -26.1325,
+          "max": -7.0163,
+          "mean": -16.843748878923765
+        },
+        "PLATE_2_My": {
+          "min": 24.2035,
+          "max": 59.1567,
+          "mean": 38.0558062780269
+        },
+        "PLATE_2_Mz": {
+          "min": -15.6418,
+          "max": -2.54,
+          "mean": -7.825374887892376
+        }
+      },
+      "plates": {
+        "1": {
+          "maxHorizontalN": 93.58829592518501,
+          "minFzN": 278.4411,
+          "maxFzN": 521.9974,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        },
+        "2": {
+          "maxHorizontalN": 89.85781167450051,
+          "minFzN": 236.3147,
+          "maxFzN": 509.2287,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        }
+      },
+      "plate1ShareWhereTotalAbove200N": {
+        "frames": 223,
+        "min": 0.4970907341321293,
+        "max": 0.5649544443012119,
+        "mean": 0.5221876961929257
+      }
+    },
+    "rep11": {
+      "frames": 230,
+      "start": 32.51,
+      "end": 34.8,
+      "components": {
+        "PLATE_1_Fx": {
+          "min": 50.113,
+          "max": 102.8554,
+          "mean": 75.8815043478261
+        },
+        "PLATE_1_Fy": {
+          "min": -14.2471,
+          "max": 9.4517,
+          "mean": -3.7088500000000004
+        },
+        "PLATE_1_Fz": {
+          "min": 284.971,
+          "max": 524.5201,
+          "mean": 383.39092304347827
+        },
+        "PLATE_1_Mx": {
+          "min": -17.8132,
+          "max": 2.9954,
+          "mean": -8.517828695652176
+        },
+        "PLATE_1_My": {
+          "min": -3.84,
+          "max": 4.8121,
+          "mean": 0.4569060869565218
+        },
+        "PLATE_1_Mz": {
+          "min": 2.126,
+          "max": 15.4758,
+          "mean": 6.882606956521739
+        },
+        "PLATE_2_Fx": {
+          "min": -97.8494,
+          "max": -42.7134,
+          "mean": -73.30830217391305
+        },
+        "PLATE_2_Fy": {
+          "min": -12.6858,
+          "max": 13.1078,
+          "mean": 1.584494347826087
+        },
+        "PLATE_2_Fz": {
+          "min": 233.9587,
+          "max": 481.7709,
+          "mean": 354.3513260869565
+        },
+        "PLATE_2_Mx": {
+          "min": -18.9238,
+          "max": -6.1079,
+          "mean": -14.10184347826087
+        },
+        "PLATE_2_My": {
+          "min": 26.4601,
+          "max": 58.8418,
+          "mean": 39.71372130434783
+        },
+        "PLATE_2_Mz": {
+          "min": -13.8876,
+          "max": -0.458,
+          "mean": -6.789436086956522
+        }
+      },
+      "plates": {
+        "1": {
+          "maxHorizontalN": 102.87686625966987,
+          "minFzN": 284.971,
+          "maxFzN": 524.5201,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        },
+        "2": {
+          "maxHorizontalN": 98.1974084605597,
+          "minFzN": 233.9587,
+          "maxFzN": 481.7709,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        }
+      },
+      "plate1ShareWhereTotalAbove200N": {
+        "frames": 230,
+        "min": 0.4828940032800905,
+        "max": 0.5871110645209558,
+        "mean": 0.5203567649104991
+      }
+    },
+    "rep12": {
+      "frames": 230,
+      "start": 34.8,
+      "end": 37.09,
+      "components": {
+        "PLATE_1_Fx": {
+          "min": 57.0543,
+          "max": 96.2595,
+          "mean": 79.8149504347826
+        },
+        "PLATE_1_Fy": {
+          "min": -19.2386,
+          "max": 7.0773,
+          "mean": -4.289134347826088
+        },
+        "PLATE_1_Fz": {
+          "min": 274.286,
+          "max": 517.6812,
+          "mean": 379.77189347826084
+        },
+        "PLATE_1_Mx": {
+          "min": -29.4471,
+          "max": 4.9912,
+          "mean": -15.04583347826087
+        },
+        "PLATE_1_My": {
+          "min": -4.008,
+          "max": 5.9201,
+          "mean": 2.401138695652174
+        },
+        "PLATE_1_Mz": {
+          "min": 1.9945,
+          "max": 17.0124,
+          "mean": 7.753786086956523
+        },
+        "PLATE_2_Fx": {
+          "min": -96.1323,
+          "max": -38.8269,
+          "mean": -77.21838782608697
+        },
+        "PLATE_2_Fy": {
+          "min": -32.0555,
+          "max": 17.3718,
+          "mean": 2.904848260869566
+        },
+        "PLATE_2_Fz": {
+          "min": 244.2276,
+          "max": 479.3639,
+          "mean": 358.2958713043479
+        },
+        "PLATE_2_Mx": {
+          "min": -37.04,
+          "max": 9.3058,
+          "mean": -19.348143043478263
+        },
+        "PLATE_2_My": {
+          "min": 23.2113,
+          "max": 54.5306,
+          "mean": 39.22027608695652
+        },
+        "PLATE_2_Mz": {
+          "min": -17.3315,
+          "max": 9.9981,
+          "mean": -8.353700434782608
+        }
+      },
+      "plates": {
+        "1": {
+          "maxHorizontalN": 96.76129501226201,
+          "minFzN": 274.286,
+          "maxFzN": 517.6812,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        },
+        "2": {
+          "maxHorizontalN": 96.14527838318426,
+          "minFzN": 244.2276,
+          "maxFzN": 479.3639,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        }
+      },
+      "plate1ShareWhereTotalAbove200N": {
+        "frames": 230,
+        "min": 0.4709125670673933,
+        "max": 0.5921632212219634,
+        "mean": 0.5151690355972623
+      }
+    },
+    "rep13": {
+      "frames": 238,
+      "start": 37.09,
+      "end": 39.46,
+      "components": {
+        "PLATE_1_Fx": {
+          "min": 51.7269,
+          "max": 106.8677,
+          "mean": 76.38067731092436
+        },
+        "PLATE_1_Fy": {
+          "min": -21.3759,
+          "max": 6.8702,
+          "mean": -5.834755882352942
+        },
+        "PLATE_1_Fz": {
+          "min": 260.3861,
+          "max": 501.5712,
+          "mean": 374.71478781512604
+        },
+        "PLATE_1_Mx": {
+          "min": -17.2427,
+          "max": -1.2077,
+          "mean": -8.583683193277311
+        },
+        "PLATE_1_My": {
+          "min": -5.5128,
+          "max": 3.571,
+          "mean": -0.09225252100840332
+        },
+        "PLATE_1_Mz": {
+          "min": 2.6618,
+          "max": 15.5041,
+          "mean": 6.345390336134454
+        },
+        "PLATE_2_Fx": {
+          "min": -108.7547,
+          "max": -48.6432,
+          "mean": -74.40350462184874
+        },
+        "PLATE_2_Fy": {
+          "min": -15.4812,
+          "max": 19.6428,
+          "mean": 3.833584873949581
+        },
+        "PLATE_2_Fz": {
+          "min": 242.1758,
+          "max": 488.348,
+          "mean": 362.13785
+        },
+        "PLATE_2_Mx": {
+          "min": -29.9203,
+          "max": -0.9427,
+          "mean": -15.975840756302523
+        },
+        "PLATE_2_My": {
+          "min": 22.8081,
+          "max": 58.2731,
+          "mean": 39.81126512605042
+        },
+        "PLATE_2_Mz": {
+          "min": -18.2067,
+          "max": 2.6355,
+          "mean": -7.574390756302523
+        }
+      },
+      "plates": {
+        "1": {
+          "maxHorizontalN": 106.91321695492097,
+          "minFzN": 260.3861,
+          "maxFzN": 501.5712,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        },
+        "2": {
+          "maxHorizontalN": 108.76286894473684,
+          "minFzN": 242.1758,
+          "maxFzN": 488.348,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        }
+      },
+      "plate1ShareWhereTotalAbove200N": {
+        "frames": 238,
+        "min": 0.45018355446219604,
+        "max": 0.5736834832082305,
+        "mean": 0.5093229517697123
+      }
+    },
+    "rep14": {
+      "frames": 225,
+      "start": 39.46,
+      "end": 41.7,
+      "components": {
+        "PLATE_1_Fx": {
+          "min": 53.0271,
+          "max": 96.1349,
+          "mean": 76.953264
+        },
+        "PLATE_1_Fy": {
+          "min": -17.6434,
+          "max": 4.794,
+          "mean": -7.114351555555555
+        },
+        "PLATE_1_Fz": {
+          "min": 246.5419,
+          "max": 518.1404,
+          "mean": 374.1431364444444
+        },
+        "PLATE_1_Mx": {
+          "min": -18.0719,
+          "max": 0.4124,
+          "mean": -8.314393777777779
+        },
+        "PLATE_1_My": {
+          "min": -4.6492,
+          "max": 4.223,
+          "mean": -0.21722622222222224
+        },
+        "PLATE_1_Mz": {
+          "min": 2.3348,
+          "max": 15.3403,
+          "mean": 6.807513333333333
+        },
+        "PLATE_2_Fx": {
+          "min": -96.8527,
+          "max": -43.2324,
+          "mean": -74.799548
+        },
+        "PLATE_2_Fy": {
+          "min": -10.1125,
+          "max": 17.5226,
+          "mean": 4.3878493333333335
+        },
+        "PLATE_2_Fz": {
+          "min": 222.6636,
+          "max": 492.8947,
+          "mean": 363.462168
+        },
+        "PLATE_2_Mx": {
+          "min": -28.0478,
+          "max": -10.2419,
+          "mean": -17.83700977777778
+        },
+        "PLATE_2_My": {
+          "min": 21.4392,
+          "max": 59.0529,
+          "mean": 39.403172444444444
+        },
+        "PLATE_2_Mz": {
+          "min": -17.6195,
+          "max": -2.7098,
+          "mean": -8.690197333333334
+        }
+      },
+      "plates": {
+        "1": {
+          "maxHorizontalN": 97.5766874925051,
+          "minFzN": 246.5419,
+          "maxFzN": 518.1404,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        },
+        "2": {
+          "maxHorizontalN": 97.07337089119756,
+          "minFzN": 222.6636,
+          "maxFzN": 492.8947,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        }
+      },
+      "plate1ShareWhereTotalAbove200N": {
+        "frames": 225,
+        "min": 0.4613502913649852,
+        "max": 0.5603877301723748,
+        "mean": 0.5083199585894862
+      }
+    },
+    "rep15": {
+      "frames": 225,
+      "start": 41.7,
+      "end": 43.94,
+      "components": {
+        "PLATE_1_Fx": {
+          "min": 55.3149,
+          "max": 111.3064,
+          "mean": 83.49242177777776
+        },
+        "PLATE_1_Fy": {
+          "min": -20.2748,
+          "max": 11.7851,
+          "mean": -6.2668133333333325
+        },
+        "PLATE_1_Fz": {
+          "min": 296.2202,
+          "max": 507.569,
+          "mean": 391.9853635555556
+        },
+        "PLATE_1_Mx": {
+          "min": -23.179,
+          "max": 1.3812,
+          "mean": -13.490951555555556
+        },
+        "PLATE_1_My": {
+          "min": -2.0623,
+          "max": 7.1618,
+          "mean": 2.088786222222222
+        },
+        "PLATE_1_Mz": {
+          "min": 2.0504,
+          "max": 14.5672,
+          "mean": 6.624497333333333
+        },
+        "PLATE_2_Fx": {
+          "min": -112.5475,
+          "max": -44.6789,
+          "mean": -80.41696355555555
+        },
+        "PLATE_2_Fy": {
+          "min": -9.625,
+          "max": 25.2607,
+          "mean": 7.381695555555555
+        },
+        "PLATE_2_Fz": {
+          "min": 238.2535,
+          "max": 476.9434,
+          "mean": 354.79336977777774
+        },
+        "PLATE_2_Mx": {
+          "min": -31.6041,
+          "max": -9.1275,
+          "mean": -22.04189333333333
+        },
+        "PLATE_2_My": {
+          "min": 24.6869,
+          "max": 52.2468,
+          "mean": 37.05306844444444
+        },
+        "PLATE_2_Mz": {
+          "min": -16.6255,
+          "max": -2.3004,
+          "mean": -9.495788000000001
+        }
+      },
+      "plates": {
+        "1": {
+          "maxHorizontalN": 112.76350054769495,
+          "minFzN": 296.2202,
+          "maxFzN": 507.569,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        },
+        "2": {
+          "maxHorizontalN": 114.20884021545793,
+          "minFzN": 238.2535,
+          "maxFzN": 476.9434,
+          "thresholds": {
+            "10": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "20": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "50": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            },
+            "100": {
+              "belowOrEqualFrames": 0,
+              "transitions": 0
+            }
+          }
+        }
+      },
+      "plate1ShareWhereTotalAbove200N": {
+        "frames": 225,
+        "min": 0.49084678412493266,
+        "max": 0.5971795145559087,
+        "mean": 0.5269820067228084
+      }
+    }
+  },
+  "COP": "NON TESTÉ",
+  "footAssignment": "EN ATTENTE DE VALIDATION HUMAINE",
+  "IK": "NON TESTÉ"
+}

@@ -1,0 +1,42 @@
+{
+  "status": "EN ATTENTE DE VALIDATION HUMAINE",
+  "scope": "valeurs publiques S01 rapportées par déposant, pas mesures PARISFIT ni paramètres complets individualisés",
+  "sourceSHA256": "64f61477376ef6ccea7d1ddb33f141a032e29566cae2122662e0e2fcda51049d",
+  "sourceColumns": [
+    "participant",
+    "body_mass_kg",
+    "dumbbell_kg",
+    "mvc_lever_arm_m",
+    "P1",
+    "P2",
+    "P3",
+    "Fem",
+    "Tib",
+    "Foot"
+  ],
+  "documentedS01": {
+    "participant": "S01",
+    "body_mass_kg": "64.9",
+    "dumbbell_kg": "11.856",
+    "mvc_lever_arm_m": "0.4317",
+    "P1": "1.07737",
+    "P2": "1.08037",
+    "P3": "1.08637",
+    "Fem": "1.07018",
+    "Tib": "1.08885",
+    "Foot": "1.14237"
+  },
+  "unknown": [
+    "stature individuelle (aucune colonne présente)",
+    "dimensions anatomiques segmentaires mesurées",
+    "largeur absolue anatomique bassin",
+    "centres articulaires individuels",
+    "inerties individuelles",
+    "ordre signé P1/P2/P3 par rapport au XML",
+    "procédure complète de scaling et marker registration"
+  ],
+  "notRequiredForPureIK": [
+    "masse et inerties ne sont pas nécessaires au solveur cinématique ; elles sont nécessaires à la dynamique et à la qualification complète"
+  ],
+  "scalingExecutable": false
+}
