@@ -36,10 +36,10 @@ def main():
    report['files'].append(entry)
    try:
     items,h=rr.directory();entry['centralDirectorySHA256']=h;entry['entryCount']=len(items)
-    targets=[x for x in items if not x['path'].endswith('/') and (name=='AB01.zip' and any(t in x['path'].lower() for t in ['squat/1/','static/1/','log','calib','quality','sync']) or name=='MATLAB tools.zip' and x['path'].split('/')[-1].lower() in ['scale.m','ik.m','osimc3d.m','trial_class.m','version.txt','license','license.txt','readme.md','one_leg_squat_shoe_lace_samples.mat'])]
+    targets=[x for x in items if not x['path'].endswith('/') and (name=='AB01.zip' and any(t in x['path'].replace('\\','/').lower() for t in ['squat/1/','static/1/','log','calib','quality','sync']) or name=='MATLAB tools.zip' and x['path'].replace('\\','/').split('/')[-1].lower() in ['scale.m','ik.m','osimc3d.m','trial_class.m','version.txt','license','license.txt','readme.md','one_leg_squat_shoe_lace_samples.mat'])]
     entry['targetInventory']=targets
     for x in targets:
-     leaf=x['path'].split('/')[-1].lower()
+     leaf=x['path'].replace('\\','/').split('/')[-1].lower()
      allowed=leaf in ['scale.m','ik.m','osimc3d.m','trial_class.m','version.txt','license','license.txt','readme.md'] or name=='AB01.zip' and leaf.endswith(('.log','.txt','.xml'))
      if not allowed or x['bytes']>250000 or x['compressed']==0:continue
      data=rr.member(x);record={'path':x['path'],'sha256':hashlib.sha256(data).hexdigest(),'bytes':len(data)}
