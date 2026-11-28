@@ -1,6 +1,28 @@
 {
   "method": "World-space bone-origin linear acceleration; finite differences; 60 and 120 Hz; diagnostic only, not a safety or biomechanical metric.",
   "source": "Original coach.glb; no candidate loaded or changed.",
+  "servedAssets": [
+    {
+      "path": "tools/coach-lab.html",
+      "bytes": 6112
+    },
+    {
+      "path": "vendor/three/three.module.js",
+      "bytes": 687458
+    },
+    {
+      "path": "vendor/three/loaders/GLTFLoader.js",
+      "bytes": 110042
+    },
+    {
+      "path": "vendor/three/utils/BufferGeometryUtils.js",
+      "bytes": 31781
+    },
+    {
+      "path": "assets/coach/coach.glb",
+      "bytes": 5789744
+    }
+  ],
   "exercises": [
     {
       "exercise": "squat",
