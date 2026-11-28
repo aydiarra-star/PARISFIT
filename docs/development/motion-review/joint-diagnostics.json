@@ -1,5 +1,5 @@
 {
-  "method": "World-space bone-origin linear acceleration; finite differences; 60 and 120 Hz; diagnostic only, not a safety or biomechanical metric.",
+  "method": "World-space bone-origin linear acceleration and quaternion angular acceleration; finite differences; 60, 120 and 240 Hz; diagnostic only, not a safety or biomechanical metric.",
   "source": "Original coach.glb; no candidate loaded or changed.",
   "servedAssets": [
     {
@@ -216,6 +216,93 @@
           "peak": 0.2920275189134054,
           "time": 1.2166666666666666
         }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 7.23719975201661,
+          "time": 1.5166666666666666
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 7.235178202636203,
+          "time": 1.5166666666666666
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 7.23415632540599,
+          "time": 1.5166666666666666
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 7.234039405625818,
+          "time": 1.5166666666666666
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 6.1962435643880225,
+          "time": 1.95
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 6.180807455488078,
+          "time": 1.95
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 3.8606260158116403,
+          "time": 0.75
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 3.8539928310703555,
+          "time": 0.75
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 2.657290668418495,
+          "time": 0.7166666666666667
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 2.61128511425792,
+          "time": 0.7166666666666667
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 2.0491055150296575,
+          "time": 1.9666666666666666
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 1.1163317687128012,
+          "time": 4.633333333333333
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0.9961342414879959,
+          "time": 1.9166666666666667
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0.9959022146604705,
+          "time": 1.95
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0.8914929991275926,
+          "time": 4.633333333333333
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 0.73347065308346,
+          "time": 4.633333333333333
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 0.648321856408805,
+          "time": 1.6333333333333333
+        }
       ]
     },
     {
@@ -409,6 +496,374 @@
           "bone": "Bip01_L_Foot",
           "peak": 0.8759735334470502,
           "time": 1.2083333333333333
+        }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 14.524120653624237,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 14.50674790470854,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 14.502848472968953,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 14.502068429626567,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 12.396826475654867,
+          "time": 1.9416666666666667
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 12.316360622004634,
+          "time": 1.9416666666666667
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 8.583850825754741,
+          "time": 0.6083333333333333
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 7.67367739852566,
+          "time": 0.7416666666666667
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 6.128492955250981,
+          "time": 3.966666666666667
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 5.488157413328717,
+          "time": 0.7083333333333334
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 5.083226962805583,
+          "time": 0.7083333333333334
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 2.854334838855528,
+          "time": 2.85
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 2.5854701533747892,
+          "time": 2.85
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 2.0058510397986584,
+          "time": 1.9083333333333332
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 1.9460547570794962,
+          "time": 1.9749999999999999
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 1.7901842520039406,
+          "time": 4.6
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 1.6818487192992815,
+          "time": 1.6166666666666667
+        }
+      ]
+    },
+    {
+      "exercise": "squat",
+      "duration": 5,
+      "sampleHz": 240,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_R_Finger22",
+          "peak": 9.856079430203994,
+          "time": 1.5375
+        },
+        {
+          "bone": "Bip01_L_Finger22",
+          "peak": 9.8555556572575,
+          "time": 1.5375
+        },
+        {
+          "bone": "Bip01_R_Finger12",
+          "peak": 9.55452576700709,
+          "time": 1.5375
+        },
+        {
+          "bone": "Bip01_L_Finger12",
+          "peak": 9.55402273605583,
+          "time": 1.5375
+        },
+        {
+          "bone": "Bip01_R_Finger32",
+          "peak": 9.514907879470076,
+          "time": 1.5375
+        },
+        {
+          "bone": "Bip01_L_Finger32",
+          "peak": 9.514393757890772,
+          "time": 1.5375
+        },
+        {
+          "bone": "Bip01_R_Finger21",
+          "peak": 9.252553174684337,
+          "time": 1.5375
+        },
+        {
+          "bone": "Bip01_L_Finger21",
+          "peak": 9.252061696023995,
+          "time": 1.5375
+        },
+        {
+          "bone": "Bip01_R_Finger11",
+          "peak": 9.042369272709655,
+          "time": 1.5375
+        },
+        {
+          "bone": "Bip01_L_Finger11",
+          "peak": 9.041894279060358,
+          "time": 1.5375
+        },
+        {
+          "bone": "Bip01_R_Finger31",
+          "peak": 9.024775814303819,
+          "time": 1.5375
+        },
+        {
+          "bone": "Bip01_L_Finger31",
+          "peak": 9.024288878243263,
+          "time": 1.5375
+        },
+        {
+          "bone": "Bip01_R_Finger42",
+          "peak": 8.907742770952355,
+          "time": 1.5708333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger42",
+          "peak": 8.906547402673855,
+          "time": 1.5708333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger41",
+          "peak": 8.64023324529969,
+          "time": 1.5708333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger41",
+          "peak": 8.639054813772209,
+          "time": 1.5708333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger2",
+          "peak": 8.370617524215033,
+          "time": 1.5375
+        },
+        {
+          "bone": "Bip01_L_Finger2",
+          "peak": 8.370167312326739,
+          "time": 1.5375
+        },
+        {
+          "bone": "Bip01_R_Finger3",
+          "peak": 8.294989743793913,
+          "time": 1.5375
+        },
+        {
+          "bone": "Bip01_L_Finger3",
+          "peak": 8.29453855867811,
+          "time": 1.5375
+        }
+      ],
+      "bodyJointPeaks": [
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 6.4651120108472835,
+          "time": 1.1375
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 6.464962432331417,
+          "time": 1.1375
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 6.4402010226330955,
+          "time": 1.2375
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 6.440111457934515,
+          "time": 1.2375
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 4.244682152720559,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 4.244339070303397,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 4.044520211584426,
+          "time": 0.8708333333333333
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 4.0445078444117835,
+          "time": 1.9375
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 4.044489343798166,
+          "time": 1.9375
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 4.036158918258594,
+          "time": 1.9375
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 3.9373768562441938,
+          "time": 1.9375
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 3.8288551926275374,
+          "time": 1.9375
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 3.8288460629266248,
+          "time": 1.9375
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 3.794438307076099,
+          "time": 1.9375
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 3.794418162996302,
+          "time": 1.9375
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 2.044402198114539,
+          "time": 1.2041666666666666
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 2.0438586159966823,
+          "time": 1.2041666666666666
+        }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 29.108032205770602,
+          "time": 1.5041666666666667
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 28.974220244259758,
+          "time": 1.5041666666666667
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 28.95383438023721,
+          "time": 1.5041666666666667
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 28.952866018517895,
+          "time": 1.5041666666666667
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 24.830631720514404,
+          "time": 1.9375
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 24.294341770659535,
+          "time": 1.9375
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 19.339792204355483,
+          "time": 0.6375
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 19.122571361192296,
+          "time": 3.9625
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 18.117187676185218,
+          "time": 0.6375
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 15.394096948185537,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 14.025889044953363,
+          "time": 1.5041666666666667
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 10.535777672343338,
+          "time": 1.9749999999999999
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 10.478810716124503,
+          "time": 4.475
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 6.523157170768525,
+          "time": 0.7
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 4.661627016338708,
+          "time": 2.1041666666666665
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 4.082839737932496,
+          "time": 0.8666666666666667
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 3.740229204306409,
+          "time": 1.9708333333333332
         }
       ]
     },
@@ -604,6 +1059,93 @@
           "peak": 0.014760953519226492,
           "time": 1.4166666666666667
         }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 2.8882647354335815,
+          "time": 0.6166666666666667
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 2.6365874575841644,
+          "time": 0.7833333333333333
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 2.5725077975699913,
+          "time": 0.7833333333333333
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 2.5653794506530425,
+          "time": 0.7833333333333333
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 0.9222470913134648,
+          "time": 4.7
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 0.6304834356590828,
+          "time": 3.3
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 0.579689189172192,
+          "time": 2.183333333333333
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 0.5463497535338989,
+          "time": 1.3333333333333333
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 0.5227339417026902,
+          "time": 4.583333333333333
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 0.5139493680342238,
+          "time": 4.566666666666666
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 0.5041146590569269,
+          "time": 4.5
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 0.47291988639282384,
+          "time": 1.9166666666666667
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0.463092424432824,
+          "time": 1.95
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0.46261195905478614,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0.4620337726638725,
+          "time": 1.95
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 0.4601609523191765,
+          "time": 1.9166666666666667
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 0.4497709883260517,
+          "time": 0.85
+        }
       ]
     },
     {
@@ -797,6 +1339,374 @@
           "bone": "Bip01_L_Foot",
           "peak": 0.044179666526990825,
           "time": 1.4083333333333332
+        }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 7.854812080852253,
+          "time": 0.6416666666666666
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 5.278002233387476,
+          "time": 0.775
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 5.1909889012106305,
+          "time": 0.8083333333333333
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 4.987004667357258,
+          "time": 0.775
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 2.5264089297666965,
+          "time": 1.3916666666666666
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 2.077441506237785,
+          "time": 1.3166666666666667
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 1.8489154563139447,
+          "time": 4.508333333333333
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 1.8063900884445827,
+          "time": 3.2916666666666665
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 1.4705761630552017,
+          "time": 4.258333333333333
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 1.3840609700949298,
+          "time": 3.0083333333333333
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 1.2841995925490253,
+          "time": 0.675
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 1.1011399964755049,
+          "time": 0.6416666666666666
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 1.0050117388979904,
+          "time": 0.8083333333333333
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0.9302441845787971,
+          "time": 1.9416666666666667
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0.9270546035947602,
+          "time": 0.875
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0.9222107098838161,
+          "time": 1.9416666666666667
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 0.9067809815280364,
+          "time": 1.9083333333333332
+        }
+      ]
+    },
+    {
+      "exercise": "pompes",
+      "duration": 5,
+      "sampleHz": 240,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_RInnerEyebrow",
+          "peak": 2.970376770054106,
+          "time": 0.8708333333333333
+        },
+        {
+          "bone": "Bip01_LInnerEyebrow",
+          "peak": 2.9703024203837116,
+          "time": 0.8708333333333333
+        },
+        {
+          "bone": "Bip01_MMiddleEyebrow",
+          "peak": 2.9643429702880133,
+          "time": 0.8708333333333333
+        },
+        {
+          "bone": "Bip01_ROuterEyebrow",
+          "peak": 2.9629796093586487,
+          "time": 0.8708333333333333
+        },
+        {
+          "bone": "Bip01_LOuterEyebrow",
+          "peak": 2.962841081159067,
+          "time": 0.8708333333333333
+        },
+        {
+          "bone": "Bip01_REyeBlinkTop",
+          "peak": 2.950365885524697,
+          "time": 0.8708333333333333
+        },
+        {
+          "bone": "Bip01_LEyeBlinkTop",
+          "peak": 2.9502720802314637,
+          "time": 0.8708333333333333
+        },
+        {
+          "bone": "Bip01_REye",
+          "peak": 2.93746890266479,
+          "time": 0.8708333333333333
+        },
+        {
+          "bone": "Bip01_LEye",
+          "peak": 2.9373793712497007,
+          "time": 0.8708333333333333
+        },
+        {
+          "bone": "Bip01_REyeBlinkBottom",
+          "peak": 2.9224808775634554,
+          "time": 0.8708333333333333
+        },
+        {
+          "bone": "Bip01_LEyeBlinkBottom",
+          "peak": 2.9223849351095468,
+          "time": 0.8708333333333333
+        },
+        {
+          "bone": "Bip01_MNose",
+          "peak": 2.888887217381231,
+          "time": 0.8708333333333333
+        },
+        {
+          "bone": "Bip01_RCheek",
+          "peak": 2.8865576588798096,
+          "time": 0.8708333333333333
+        },
+        {
+          "bone": "Bip01_LCheek",
+          "peak": 2.8864411997539974,
+          "time": 0.8708333333333333
+        },
+        {
+          "bone": "Bip01_RCaninus",
+          "peak": 2.8444219614802426,
+          "time": 0.8708333333333333
+        },
+        {
+          "bone": "Bip01_LCaninus",
+          "peak": 2.8443389932397842,
+          "time": 0.8708333333333333
+        },
+        {
+          "bone": "Bip01_MUpperLip",
+          "peak": 2.822091811090733,
+          "time": 0.8708333333333333
+        },
+        {
+          "bone": "Bip01_RUpperlip",
+          "peak": 2.8211611036162383,
+          "time": 0.8708333333333333
+        },
+        {
+          "bone": "Bip01_LUpperlip",
+          "peak": 2.8211209084859186,
+          "time": 0.8708333333333333
+        },
+        {
+          "bone": "Bip01_RMasseter",
+          "peak": 2.816653787585898,
+          "time": 0.8708333333333333
+        }
+      ],
+      "bodyJointPeaks": [
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 2.775859950191201,
+          "time": 0.7708333333333334
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 2.775618659272104,
+          "time": 0.7708333333333334
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 2.7450616587269514,
+          "time": 1.9375
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 2.622025448726635,
+          "time": 1.9375
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 2.5089532289601655,
+          "time": 1.9375
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 2.508851344393299,
+          "time": 1.9375
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 2.4512402667812,
+          "time": 1.9375
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 2.450946009674978,
+          "time": 1.9375
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 1.4647333212162765,
+          "time": 1.9375
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 1.4646713125962798,
+          "time": 1.9375
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 1.4646094052100134,
+          "time": 1.9375
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 1.0901215058149685,
+          "time": 1.2375
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 1.0900049970270864,
+          "time": 1.2375
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 0.7144988043854698,
+          "time": 0.9041666666666667
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 0.7142224270830304,
+          "time": 0.9041666666666667
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 0.10435064013645133,
+          "time": 1.4041666666666666
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 0.10301690337247138,
+          "time": 1.4041666666666666
+        }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 23.602300949051948,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 21.99969602686351,
+          "time": 4.504166666666666
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 12.693351725020067,
+          "time": 0.6375
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 10.059484119656014,
+          "time": 1.3041666666666667
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 9.045342379139637,
+          "time": 0.7708333333333334
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 8.519636113831792,
+          "time": 4.3375
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 5.93377241237879,
+          "time": 2.8333333333333335
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 5.784657296841166,
+          "time": 3.158333333333333
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 4.707205680490345,
+          "time": 4.508333333333333
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 4.22576653780394,
+          "time": 3.1041666666666665
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 3.9658939597926373,
+          "time": 4.508333333333333
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 3.5310390566592407,
+          "time": 0.5041666666666667
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 3.292647785411819,
+          "time": 0.5416666666666666
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 3.102232659411802,
+          "time": 2.1375
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 2.1841675807415464,
+          "time": 0.6375
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 1.8318367182969197,
+          "time": 1.9041666666666666
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 1.715636167887753,
+          "time": 1.9041666666666666
         }
       ]
     },
@@ -992,6 +1902,93 @@
           "peak": 3.9968028886505635e-13,
           "time": 0.16666666666666666
         }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 0.4401116064805794,
+          "time": 2.1333333333333333
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 0.20367677967546344,
+          "time": 3.533333333333333
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0.013170047797781236,
+          "time": 5.383333333333333
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0.0012270211573920612,
+          "time": 2.216666666666667
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 0,
+          "time": 0
+        }
       ]
     },
     {
@@ -1185,6 +2182,374 @@
           "bone": "Bip01_R_Foot",
           "peak": 1.5987211554602254e-12,
           "time": 0.2833333333333333
+        }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 1.4559855137122968,
+          "time": 1.5
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 0.5287491818378413,
+          "time": 0.4166666666666667
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0.0013718115115277964,
+          "time": 2.2083333333333335
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 0,
+          "time": 0
+        }
+      ]
+    },
+    {
+      "exercise": "gainage",
+      "duration": 6,
+      "sampleHz": 240,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_R_Finger22",
+          "peak": 0.004679043324051419,
+          "time": 3.5041666666666664
+        },
+        {
+          "bone": "Bip01_R_Finger12",
+          "peak": 0.00460237323690122,
+          "time": 3.5041666666666664
+        },
+        {
+          "bone": "Bip01_R_Finger32",
+          "peak": 0.004476332870097425,
+          "time": 3.5041666666666664
+        },
+        {
+          "bone": "Bip01_R_Finger21",
+          "peak": 0.004380148141876075,
+          "time": 3.5041666666666664
+        },
+        {
+          "bone": "Bip01_R_Finger11",
+          "peak": 0.004355451931267464,
+          "time": 3.5041666666666664
+        },
+        {
+          "bone": "Bip01_R_Finger31",
+          "peak": 0.004220947428810362,
+          "time": 3.5041666666666664
+        },
+        {
+          "bone": "Bip01_R_Finger42",
+          "peak": 0.004182729395050009,
+          "time": 3.5041666666666664
+        },
+        {
+          "bone": "Bip01_R_Finger1",
+          "peak": 0.004036048174339645,
+          "time": 3.5041666666666664
+        },
+        {
+          "bone": "Bip01_R_Finger41",
+          "peak": 0.004024874903016118,
+          "time": 3.5041666666666664
+        },
+        {
+          "bone": "Bip01_R_Finger2",
+          "peak": 0.0039885016169194055,
+          "time": 3.5041666666666664
+        },
+        {
+          "bone": "Bip01_R_Finger02",
+          "peak": 0.003947443178030809,
+          "time": 3.5041666666666664
+        },
+        {
+          "bone": "Bip01_R_Finger3",
+          "peak": 0.003874840591692433,
+          "time": 3.5041666666666664
+        },
+        {
+          "bone": "Bip01_R_Finger4",
+          "peak": 0.003730604249775343,
+          "time": 3.5041666666666664
+        },
+        {
+          "bone": "Bip01_R_Finger01",
+          "peak": 0.0036493736554238385,
+          "time": 3.5041666666666664
+        },
+        {
+          "bone": "Bip01_R_Finger0",
+          "peak": 0.003385054489748429,
+          "time": 3.5041666666666664
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 0.003036044165622964,
+          "time": 3.5041666666666664
+        },
+        {
+          "bone": "Bip01_LInnerEyebrow",
+          "peak": 0.0029362422869427217,
+          "time": 1.5041666666666667
+        },
+        {
+          "bone": "Bip01_RInnerEyebrow",
+          "peak": 0.0029362422743653984,
+          "time": 1.5041666666666667
+        },
+        {
+          "bone": "Bip01_MMiddleEyebrow",
+          "peak": 0.0029334398404694344,
+          "time": 1.5041666666666667
+        },
+        {
+          "bone": "Bip01_LOuterEyebrow",
+          "peak": 0.0029271331116737967,
+          "time": 1.5041666666666667
+        }
+      ],
+      "bodyJointPeaks": [
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 0.003036044165622964,
+          "time": 3.5041666666666664
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0.0027368533126545355,
+          "time": 1.5041666666666667
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 0.002632607461193774,
+          "time": 4.504166666666666
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 0.0023594040493432242,
+          "time": 2.1041666666666665
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 0.0020650697956651194,
+          "time": 4.004166666666666
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 0.0019958399393504057,
+          "time": 4.504166666666666
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0.0018220979679516446,
+          "time": 4.504166666666666
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0.0018220954488194785,
+          "time": 4.504166666666666
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 0.0014106763576516492,
+          "time": 4.504166666666666
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 0.0014106690432115244,
+          "time": 4.504166666666666
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 6.394884621840902e-12,
+          "time": 0.2791666666666667
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 6.394884621840902e-12,
+          "time": 0.2791666666666667
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 6.394884621840902e-12,
+          "time": 0.2791666666666667
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 6.394884621840902e-12,
+          "time": 0.2791666666666667
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 6.394884621840902e-12,
+          "time": 0.2791666666666667
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 6.394884621840902e-12,
+          "time": 0.2791666666666667
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 6.394884621840902e-12,
+          "time": 0.2791666666666667
+        }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 5.283303580694955,
+          "time": 3.5
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 1.267686416766054,
+          "time": 3.5
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0.0014397475767381068,
+          "time": 0.7708333333333334
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 0,
+          "time": 0
         }
       ]
     },
@@ -1380,6 +2745,93 @@
           "peak": 0.2644302006662733,
           "time": 1.6666666666666667
         }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 24.07319158696011,
+          "time": 0.05
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 23.821709031683692,
+          "time": 5.05
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 19.149281334145904,
+          "time": 5.05
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 19.087425325484695,
+          "time": 0.05
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 9.221796862742442,
+          "time": 5.716666666666667
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 9.2153922459323,
+          "time": 0.21666666666666667
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 6.232614400676345,
+          "time": 2.0166666666666666
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 6.226296804629308,
+          "time": 2.0166666666666666
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 4.464600328178583,
+          "time": 6.316666666666666
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 4.4640350009035705,
+          "time": 6.316666666666666
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 4.433584120620361,
+          "time": 6.316666666666666
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 4.413236820775114,
+          "time": 6.316666666666666
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0,
+          "time": 0
+        }
       ]
     },
     {
@@ -1573,6 +3025,374 @@
           "bone": "Bip01_R_Hand",
           "peak": 0.7886747580335471,
           "time": 1.6416666666666666
+        }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 48.71053363976276,
+          "time": 0.041666666666666664
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 46.68692168793192,
+          "time": 5.041666666666667
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 38.35381757139698,
+          "time": 5.041666666666667
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 37.86998276051357,
+          "time": 0.041666666666666664
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 18.49264241124812,
+          "time": 5.708333333333333
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 18.443619018454523,
+          "time": 0.20833333333333334
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 12.435878767982038,
+          "time": 2.0083333333333333
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 12.387959952585403,
+          "time": 2.0083333333333333
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 8.93222016583418,
+          "time": 1.3083333333333333
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 8.925096521362526,
+          "time": 1.3083333333333333
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 8.690582911403002,
+          "time": 1.3083333333333333
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 8.547798097565753,
+          "time": 1.3083333333333333
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0,
+          "time": 0
+        }
+      ]
+    },
+    {
+      "exercise": "fentes",
+      "duration": 10,
+      "sampleHz": 240,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_R_Toe0",
+          "peak": 37.502249581005785,
+          "time": 0.2708333333333333
+        },
+        {
+          "bone": "Bip01_L_Toe0",
+          "peak": 37.50210645399886,
+          "time": 5.270833333333333
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 33.57086325403463,
+          "time": 0.30416666666666664
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 33.56942198503878,
+          "time": 5.304166666666666
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 32.6832133980132,
+          "time": 0.2708333333333333
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 32.682925574300825,
+          "time": 5.270833333333333
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 8.020516079075769,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_Spine",
+          "peak": 8.020516079075769,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 8.020516079075769,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 8.020516079075769,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_Spine1",
+          "peak": 8.02051607907238,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_Spine2",
+          "peak": 8.02051607907238,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 8.02051607907238,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 8.02051607907238,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_LCaninus",
+          "peak": 8.02051607907238,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_MUpperLip",
+          "peak": 8.02051607907238,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_LMasseter",
+          "peak": 8.02051607907238,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_RCaninus",
+          "peak": 8.02051607907238,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_LEyeBlinkBottom",
+          "peak": 8.02051607907238,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_RMouthCorner",
+          "peak": 8.02051607907238,
+          "time": 0.7041666666666666
+        }
+      ],
+      "bodyJointPeaks": [
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 33.57086325403463,
+          "time": 0.30416666666666664
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 33.56942198503878,
+          "time": 5.304166666666666
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 32.6832133980132,
+          "time": 0.2708333333333333
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 32.682925574300825,
+          "time": 5.270833333333333
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 8.020516079075769,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 8.020516079075769,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 8.020516079075769,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 8.02051607907238,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 8.02051607907238,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 8.02051607907238,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 8.02051607907238,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 8.02051607907238,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 8.02051607907238,
+          "time": 0.7041666666666666
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 4.939857771658136,
+          "time": 1.3041666666666667
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 4.939854397750194,
+          "time": 1.3041666666666667
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 1.840276072532409,
+          "time": 1.6375
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 1.8402150714711585,
+          "time": 1.6375
+        }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 102.83610201879858,
+          "time": 0.0375
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 92.84359622595179,
+          "time": 5.070833333333333
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 77.14897231867867,
+          "time": 5.0375
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 73.48104334371594,
+          "time": 0.0375
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 37.754596700867864,
+          "time": 5.7375
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 36.97445998417024,
+          "time": 0.20416666666666666
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 24.806582799094002,
+          "time": 5.104166666666667
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 24.636246193083206,
+          "time": 7.004166666666666
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 24.277732131339658,
+          "time": 7.004166666666666
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 17.818088026744157,
+          "time": 1.3041666666666667
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 16.24380845712,
+          "time": 1.3375
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 15.648432593158358,
+          "time": 1.3375
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0,
+          "time": 0
         }
       ]
     },
@@ -1768,6 +3588,93 @@
           "peak": 3.6187565174524887,
           "time": 2.3833333333333333
         }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 339.6484902017154,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 339.63579232611994,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 204.3710452085964,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 204.3702780678813,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 204.35809136185367,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 204.3561569994615,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 67.27031951019127,
+          "time": 2.85
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 66.9234212314261,
+          "time": 2.85
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 66.69679101689037,
+          "time": 2.85
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 66.69000279642141,
+          "time": 2.85
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 0.5177453400640679,
+          "time": 1.4333333333333333
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 0,
+          "time": 0
+        }
       ]
     },
     {
@@ -1961,6 +3868,374 @@
           "bone": "Bip01_L_Foot",
           "peak": 7.444988817684764,
           "time": 2.375
+        }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 679.2491720041745,
+          "time": 0.975
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 679.2198500268124,
+          "time": 0.975
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 409.22425995014305,
+          "time": 0.975
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 409.2163082096784,
+          "time": 0.975
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 409.18696867136305,
+          "time": 0.975
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 409.17101692170525,
+          "time": 0.975
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 135.70048304481418,
+          "time": 2.841666666666667
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 135.05526339147107,
+          "time": 2.841666666666667
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 133.1000200964227,
+          "time": 2.841666666666667
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 131.2910284948494,
+          "time": 2.841666666666667
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 1.4467414231383047,
+          "time": 1.4333333333333333
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 0,
+          "time": 0
+        }
+      ]
+    },
+    {
+      "exercise": "jumpingjacks",
+      "duration": 3.200000047683716,
+      "sampleHz": 240,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 358.49051909645146,
+          "time": 0.9708333333333333
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 358.4809446913363,
+          "time": 0.9708333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger22",
+          "peak": 267.7244990318835,
+          "time": 0.9708333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger22",
+          "peak": 267.71464907194274,
+          "time": 0.9708333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger32",
+          "peak": 261.8456902488805,
+          "time": 0.9375
+        },
+        {
+          "bone": "Bip01_R_Finger32",
+          "peak": 261.83846052381335,
+          "time": 0.9375
+        },
+        {
+          "bone": "Bip01_L_Finger12",
+          "peak": 249.96344428520987,
+          "time": 0.9708333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger12",
+          "peak": 249.95440178804984,
+          "time": 0.9708333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger31",
+          "peak": 248.065034586374,
+          "time": 0.9375
+        },
+        {
+          "bone": "Bip01_R_Finger31",
+          "peak": 248.05811599366191,
+          "time": 0.9375
+        },
+        {
+          "bone": "Bip01_L_Finger21",
+          "peak": 247.3890203082405,
+          "time": 0.9375
+        },
+        {
+          "bone": "Bip01_R_Finger21",
+          "peak": 247.38251642079567,
+          "time": 0.9375
+        },
+        {
+          "bone": "Bip01_L_Finger42",
+          "peak": 246.9562208704327,
+          "time": 0.9375
+        },
+        {
+          "bone": "Bip01_R_Finger42",
+          "peak": 246.94922349612844,
+          "time": 0.9375
+        },
+        {
+          "bone": "Bip01_L_Finger41",
+          "peak": 239.4265919829803,
+          "time": 0.9375
+        },
+        {
+          "bone": "Bip01_R_Finger41",
+          "peak": 239.41968415768503,
+          "time": 0.9375
+        },
+        {
+          "bone": "Bip01_L_Finger11",
+          "peak": 230.2339996848715,
+          "time": 0.9375
+        },
+        {
+          "bone": "Bip01_R_Finger11",
+          "peak": 230.2284573852757,
+          "time": 0.9375
+        },
+        {
+          "bone": "Bip01_L_Finger3",
+          "peak": 228.9498431889772,
+          "time": 0.9375
+        },
+        {
+          "bone": "Bip01_R_Finger3",
+          "peak": 228.94341545766545,
+          "time": 0.9375
+        }
+      ],
+      "bodyJointPeaks": [
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 358.49051909645146,
+          "time": 0.9708333333333333
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 358.4809446913363,
+          "time": 0.9708333333333333
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 159.91065995226083,
+          "time": 0.9375
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 159.90620047824933,
+          "time": 0.9375
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 107.2120864101739,
+          "time": 2.8375
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 107.21074896184184,
+          "time": 2.8375
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 66.51222252241098,
+          "time": 2.8375
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 66.51222252241098,
+          "time": 2.8375
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 66.51222252241098,
+          "time": 2.8375
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 66.51222252241098,
+          "time": 2.8375
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 66.51222252241098,
+          "time": 2.8375
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 66.51222252241098,
+          "time": 2.8375
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 66.51222252241098,
+          "time": 2.8375
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 66.51222252241098,
+          "time": 2.8375
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 66.51222252241098,
+          "time": 2.8375
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 15.097781622218111,
+          "time": 2.370833333333333
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 15.097718171774646,
+          "time": 2.370833333333333
+        }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 1358.1216026951456,
+          "time": 0.9708333333333333
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 1358.0414557727581,
+          "time": 0.9708333333333333
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 818.7455824988872,
+          "time": 0.9708333333333333
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 818.6758568364062,
+          "time": 0.9708333333333333
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 818.5808533230862,
+          "time": 0.9708333333333333
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 818.4521754177092,
+          "time": 0.9708333333333333
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 288.9484680858791,
+          "time": 2.8375
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 287.2605113545441,
+          "time": 2.8375
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 264.11860809820274,
+          "time": 2.8375
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 251.03289436303655,
+          "time": 2.8375
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 4.230453783422379,
+          "time": 1.6416666666666666
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 0,
+          "time": 0
         }
       ]
     },
@@ -2156,6 +4431,93 @@
           "peak": 7.993605777301127e-13,
           "time": 0.1
         }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 118.74317501378235,
+          "time": 2.05
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 118.63940490782134,
+          "time": 2.05
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 117.8748364452447,
+          "time": 0.05
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 117.78063506573176,
+          "time": 0.05
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 0.5584928357168315,
+          "time": 2.6333333333333333
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 0.3584033362644489,
+          "time": 0.06666666666666667
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 0,
+          "time": 0
+        }
       ]
     },
     {
@@ -2349,6 +4711,374 @@
           "bone": "Bip01_R_Hand",
           "peak": 3.197442310920451e-12,
           "time": 0.09166666666666666
+        }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 237.46924760624395,
+          "time": 2.0416666666666665
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 237.26954745831293,
+          "time": 2.0416666666666665
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 234.01703385911804,
+          "time": 0.041666666666666664
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 233.99850083742743,
+          "time": 0.041666666666666664
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 2.6912572687430436,
+          "time": 3.4
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 0.8948858703956541,
+          "time": 1.5166666666666666
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 0,
+          "time": 0
+        }
+      ]
+    },
+    {
+      "exercise": "mountainclimber",
+      "duration": 4,
+      "sampleHz": 240,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 178.41637439931898,
+          "time": 0.0375
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 178.39828812142872,
+          "time": 2.0375
+        },
+        {
+          "bone": "Bip01_R_Toe0",
+          "peak": 21.818718746519863,
+          "time": 3.0041666666666664
+        },
+        {
+          "bone": "Bip01_L_Toe0",
+          "peak": 21.81862531955098,
+          "time": 1.0041666666666667
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 21.81856487075322,
+          "time": 1.0041666666666667
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 21.81854306672695,
+          "time": 3.0041666666666664
+        },
+        {
+          "bone": "Bip01_LMasseter",
+          "peak": 1.808746512403709e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_RCaninus",
+          "peak": 1.808746512403709e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_RMouthCorner",
+          "peak": 1.808746512403709e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_LMouthCorner",
+          "peak": 1.808746512403709e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_RCheek",
+          "peak": 1.808746512403709e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_LCheek",
+          "peak": 1.808746512403709e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_REyeBlinkTop",
+          "peak": 1.808746512403709e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_LEyeBlinkTop",
+          "peak": 1.808746512403709e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_LEye",
+          "peak": 1.808746512403709e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_REye",
+          "peak": 1.808746512403709e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_LOuterEyebrow",
+          "peak": 1.808746512403709e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_L_Finger4",
+          "peak": 1.808746512403709e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_L_Finger41",
+          "peak": 1.808746512403709e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_L_Finger42",
+          "peak": 1.808746512403709e-11,
+          "time": 0.025
+        }
+      ],
+      "bodyJointPeaks": [
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 178.41637439931898,
+          "time": 0.0375
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 178.39828812142872,
+          "time": 2.0375
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 21.81856487075322,
+          "time": 1.0041666666666667
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 21.81854306672695,
+          "time": 3.0041666666666664
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 1.4299396722704293e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 1.4299396722704293e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 1.4299396722704293e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 1.4299396722704293e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 1.4299396722704293e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 1.4299396722704293e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 1.3183392379744043e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 1.3183392379744043e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 1.3183392379744043e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 1.2789769243681803e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 1.2789769243681803e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 1.2789769243681803e-11,
+          "time": 0.025
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 1.2789769243681803e-11,
+          "time": 0.025
+        }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 474.8410526148302,
+          "time": 2.0375
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 474.4646054467158,
+          "time": 2.0375
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 461.443027677257,
+          "time": 0.0375
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 460.90056452894265,
+          "time": 0.0375
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 4.615020723130442,
+          "time": 2.591666666666667
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 1.8577513088802844,
+          "time": 0.06666666666666667
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 0,
+          "time": 0
         }
       ]
     },
@@ -2544,6 +5274,93 @@
           "peak": 0.0041255019517576,
           "time": 1.7166666666666666
         }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 10.383978509942096,
+          "time": 1.45
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 10.383226985560237,
+          "time": 1.45
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 10.383222514822723,
+          "time": 1.45
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 10.38231702046495,
+          "time": 1.45
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 3.209591014900306,
+          "time": 2.4833333333333334
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 3.196130751377916,
+          "time": 2.4833333333333334
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 1.530899578917555,
+          "time": 1
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 1.3017507484196587,
+          "time": 7.616666666666666
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 1.1374607162292736,
+          "time": 7.6
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 1.09208044487952,
+          "time": 2.1666666666666665
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0.8867551627167147,
+          "time": 7.6
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 0.8769018046107497,
+          "time": 2.2
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 0.6295216336201991,
+          "time": 0.6666666666666666
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 0.6290068762050258,
+          "time": 1.7
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 0.5236562187033459,
+          "time": 0.6666666666666666
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0.502147085758132,
+          "time": 2.35
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0.491045627161599,
+          "time": 1.0833333333333333
+        }
       ]
     },
     {
@@ -2737,6 +5554,374 @@
           "bone": "Bip01_R_Foot",
           "peak": 0.01190081465943245,
           "time": 1.7083333333333333
+        }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 20.782108129934944,
+          "time": 1.4416666666666667
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 20.77955702119261,
+          "time": 1.4416666666666667
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 20.77575314162802,
+          "time": 1.4416666666666667
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 20.770329631162358,
+          "time": 1.4416666666666667
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 6.432962477591784,
+          "time": 2.475
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 6.3002213597418155,
+          "time": 2.475
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 6.10845912759726,
+          "time": 7.316666666666666
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 4.652291612832577,
+          "time": 7.316666666666666
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 3.702400643210914,
+          "time": 0.8333333333333334
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 3.3709238847258547,
+          "time": 6.591666666666667
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 3.1410405969778292,
+          "time": 0.8333333333333334
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 2.88217226797641,
+          "time": 1.7
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 2.5435299662354915,
+          "time": 0.8333333333333334
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 2.504528607250933,
+          "time": 7.316666666666666
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 1.8776794090391913,
+          "time": 1.7
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 1.2186578048835899,
+          "time": 7.591666666666667
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 1.0187549155604532,
+          "time": 0.9416666666666667
+        }
+      ]
+    },
+    {
+      "exercise": "etirementdos",
+      "duration": 8,
+      "sampleHz": 240,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_R_Finger42",
+          "peak": 13.687787104069486,
+          "time": 1.5708333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger42",
+          "peak": 13.687529376157041,
+          "time": 1.5708333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger32",
+          "peak": 13.612047994633869,
+          "time": 1.5708333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger32",
+          "peak": 13.611809580442154,
+          "time": 1.5708333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger22",
+          "peak": 13.358818732151926,
+          "time": 1.5708333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger22",
+          "peak": 13.358590799290617,
+          "time": 1.5708333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger41",
+          "peak": 13.310137677431,
+          "time": 1.5708333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger41",
+          "peak": 13.309874980576266,
+          "time": 1.5708333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger31",
+          "peak": 13.012078855540727,
+          "time": 1.5708333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger31",
+          "peak": 13.011831829984223,
+          "time": 1.5708333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger21",
+          "peak": 12.642152973527345,
+          "time": 1.5708333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger21",
+          "peak": 12.641915226301649,
+          "time": 1.5708333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger4",
+          "peak": 12.588050584071201,
+          "time": 1.5708333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger4",
+          "peak": 12.58777583102056,
+          "time": 1.5708333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger12",
+          "peak": 12.553322293260086,
+          "time": 1.6375
+        },
+        {
+          "bone": "Bip01_R_Finger12",
+          "peak": 12.553278834886788,
+          "time": 1.6375
+        },
+        {
+          "bone": "Bip01_L_Finger02",
+          "peak": 12.524230611838462,
+          "time": 1.7041666666666666
+        },
+        {
+          "bone": "Bip01_R_Finger02",
+          "peak": 12.523718951178227,
+          "time": 1.7041666666666666
+        },
+        {
+          "bone": "Bip01_R_Finger3",
+          "peak": 12.187312940806175,
+          "time": 1.5708333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger3",
+          "peak": 12.187047580629844,
+          "time": 1.5708333333333333
+        }
+      ],
+      "bodyJointPeaks": [
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 10.57313354595505,
+          "time": 1.7041666666666666
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 10.572447509480632,
+          "time": 1.7041666666666666
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 10.53329208421209,
+          "time": 1.6375
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 10.533255408819139,
+          "time": 1.6375
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0.7451505638985966,
+          "time": 2.3375
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 0.697301898150785,
+          "time": 2.3375
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0.5738968390422385,
+          "time": 2.3375
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0.5738580473532086,
+          "time": 2.3375
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 0.5129679529536587,
+          "time": 2.3375
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 0.5128464576655211,
+          "time": 2.3375
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 0.28838614419327585,
+          "time": 1.1041666666666667
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 0.28836860831480843,
+          "time": 1.1041666666666667
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 0.28835109886316546,
+          "time": 1.1041666666666667
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 0.19292621160541099,
+          "time": 1.0375
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 0.1924119040036733,
+          "time": 1.0375
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 0.028808861497110125,
+          "time": 1.7375
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 0.02745132603745894,
+          "time": 1.7041666666666666
+        }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 44.43172148064593,
+          "time": 0.9708333333333333
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 41.57447069235511,
+          "time": 1.4375
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 41.55308617592201,
+          "time": 1.4375
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 41.51805409221396,
+          "time": 1.4375
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 17.682718055624026,
+          "time": 6.3625
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 13.476114347809203,
+          "time": 6.583333333333333
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 12.978989694533723,
+          "time": 2.470833333333333
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 11.941919355182208,
+          "time": 2.470833333333333
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 10.862688781755237,
+          "time": 1.4
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 10.429299215813892,
+          "time": 6.575
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 9.9688028618298,
+          "time": 1.7
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 9.905347725616174,
+          "time": 7.0249999999999995
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 7.477099428816972,
+          "time": 0.6458333333333334
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 5.905169831383489,
+          "time": 7.3125
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 4.940995399068107,
+          "time": 1.7
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 4.017156444662128,
+          "time": 5.4375
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 3.057116552220115,
+          "time": 0.9375
         }
       ]
     },
@@ -2932,6 +6117,93 @@
           "peak": 0,
           "time": 0
         }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 1.6245269271857121,
+          "time": 3.05
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 1.6176326454071865,
+          "time": 3.0166666666666666
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 1.6172123346427436,
+          "time": 3.05
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 1.6099599603417203,
+          "time": 3.0166666666666666
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 1.2654793280427712,
+          "time": 2.15
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 1.260036574826382,
+          "time": 2.15
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 0,
+          "time": 0
+        }
       ]
     },
     {
@@ -3123,6 +6395,374 @@
         },
         {
           "bone": "Bip01_R_UpperArm",
+          "peak": 0,
+          "time": 0
+        }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 4.368500116775359,
+          "time": 3.6416666666666666
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 3.413234047630826,
+          "time": 3.6416666666666666
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 3.2330974375168853,
+          "time": 3.0416666666666665
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 3.2020665098544576,
+          "time": 3.0083333333333333
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 2.5412254504042986,
+          "time": 2.1416666666666666
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 2.501054719158582,
+          "time": 2.1416666666666666
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 0,
+          "time": 0
+        }
+      ]
+    },
+    {
+      "exercise": "mobiliteepaules",
+      "duration": 6,
+      "sampleHz": 240,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 2.439169099632864,
+          "time": 2.4375
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 2.4389071409250835,
+          "time": 2.4375
+        },
+        {
+          "bone": "Bip01_R_Finger22",
+          "peak": 2.3898300570227504,
+          "time": 1.6041666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger22",
+          "peak": 2.38959006634204,
+          "time": 1.6041666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger42",
+          "peak": 2.363614056373978,
+          "time": 2.6708333333333334
+        },
+        {
+          "bone": "Bip01_R_Finger42",
+          "peak": 2.362930279979309,
+          "time": 2.6708333333333334
+        },
+        {
+          "bone": "Bip01_L_Finger41",
+          "peak": 2.3428837776581046,
+          "time": 2.6041666666666665
+        },
+        {
+          "bone": "Bip01_R_Finger41",
+          "peak": 2.342126689072171,
+          "time": 2.6041666666666665
+        },
+        {
+          "bone": "Bip01_L_Finger32",
+          "peak": 2.331877600322557,
+          "time": 2.7041666666666666
+        },
+        {
+          "bone": "Bip01_R_Finger32",
+          "peak": 2.3307405732608757,
+          "time": 2.6708333333333334
+        },
+        {
+          "bone": "Bip01_L_Finger4",
+          "peak": 2.3297243371821845,
+          "time": 2.5375
+        },
+        {
+          "bone": "Bip01_R_Finger4",
+          "peak": 2.329714975453221,
+          "time": 2.5375
+        },
+        {
+          "bone": "Bip01_R_Finger12",
+          "peak": 2.3296968569347465,
+          "time": 1.6375
+        },
+        {
+          "bone": "Bip01_L_Finger12",
+          "peak": 2.3294131902952517,
+          "time": 1.6041666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger31",
+          "peak": 2.3072074951089183,
+          "time": 2.5375
+        },
+        {
+          "bone": "Bip01_R_Finger31",
+          "peak": 2.307131594838223,
+          "time": 2.5375
+        },
+        {
+          "bone": "Bip01_L_Finger3",
+          "peak": 2.297526028327165,
+          "time": 2.5041666666666664
+        },
+        {
+          "bone": "Bip01_R_Finger3",
+          "peak": 2.2969814279754637,
+          "time": 2.5041666666666664
+        },
+        {
+          "bone": "Bip01_L_Finger21",
+          "peak": 2.2826162894377613,
+          "time": 2.3375
+        },
+        {
+          "bone": "Bip01_R_Finger21",
+          "peak": 2.281892765274378,
+          "time": 2.3041666666666667
+        }
+      ],
+      "bodyJointPeaks": [
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 2.439169099632864,
+          "time": 2.4375
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 2.4389071409250835,
+          "time": 2.4375
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 2.1662552917119005,
+          "time": 2.5041666666666664
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 2.1659040655595603,
+          "time": 2.5041666666666664
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 1.2789769243681803e-11,
+          "time": 0.03333333333333333
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 1.2789769243681803e-11,
+          "time": 0.03333333333333333
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 1.2789769243681803e-11,
+          "time": 0.03333333333333333
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 1.2789769243681803e-11,
+          "time": 0.03333333333333333
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 1.2789769243681803e-11,
+          "time": 0.03333333333333333
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 1.2789769243681803e-11,
+          "time": 0.03333333333333333
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 1.2789769243681803e-11,
+          "time": 0.03333333333333333
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 0,
+          "time": 0
+        }
+      ],
+      "bodyAngularPeaks": [
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 14.478418176156334,
+          "time": 3.470833333333333
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 9.264782549803632,
+          "time": 3.5708333333333333
+        },
+        {
+          "bone": "Bip01_R_Hand",
+          "peak": 6.9664289667187385,
+          "time": 4.954166666666667
+        },
+        {
+          "bone": "Bip01_L_Hand",
+          "peak": 6.599921708208223,
+          "time": 3.0375
+        },
+        {
+          "bone": "Bip01_R_UpperArm",
+          "peak": 5.162718800553456,
+          "time": 2.1375
+        },
+        {
+          "bone": "Bip01_L_UpperArm",
+          "peak": 4.857550467039196,
+          "time": 2.1375
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Clavicle",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 0,
+          "time": 0
+        },
+        {
+          "bone": "Bip01_R_Foot",
           "peak": 0,
           "time": 0
         }
