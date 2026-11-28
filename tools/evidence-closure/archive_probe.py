@@ -21,7 +21,7 @@ class Remote:
    a=struct.unpack_from('<4s6H3I5H2I',raw,p);assert a[0]==b'PK\x01\x02';name=raw[p+46:p+46+a[10]].decode('utf-8' if a[3]&2048 else 'cp437');items.append({'path':name,'flags':a[3],'method':a[4],'crc32':a[7],'compressed':a[8],'bytes':a[9],'offset':a[16]});p+=46+a[10]+a[11]+a[12]
   assert len(items)==n;return items,hashlib.sha256(raw).hexdigest()
  def member(self,x):
-  assert not(x['flags']&1) and x['bytes']<=1_000_000 and x['compressed']<=1_000_000
+  assert not(x['flags']&1) and x['bytes']<=20_000_000 and x['compressed']<=6_000_000
   h=self.get(x['offset'],x['offset']+29);a=struct.unpack('<4s5H3I2H',h);assert a[0]==b'PK\x03\x04';start=x['offset']+30+a[9]+a[10]
   raw=self.get(start,start+x['compressed']-1);data=zlib.decompress(raw,-15) if x['method']==8 else raw if x['method']==0 else None
   assert data is not None and len(data)==x['bytes'] and zlib.crc32(data)==x['crc32'];return data
@@ -41,13 +41,16 @@ def main():
     for x in targets:
      leaf=x['path'].replace('\\','/').split('/')[-1].lower()
      allowed=leaf in ['scale.m','ik.m','osimc3d.m','trial_class.m','version.txt','license','license.txt','readme.md'] or name=='AB01.zip' and leaf.endswith(('.log','.txt','.xml'))
-     if not allowed or x['bytes']>250000 or x['compressed']==0:continue
+     if not allowed or x['bytes']>(20_000_000 if leaf.endswith('.log') else 250000) or x['compressed']==0:continue
      data=rr.member(x);record={'path':x['path'],'sha256':hashlib.sha256(data).hexdigest(),'bytes':len(data)}
      # Only publicly released code/config text; redact local profile paths if present.
      text=data.decode('utf-8',errors='replace');text=re.sub(r'(?i)([A-Z]:[\\/]Users[\\/])[^\\/\s<]+',r'\1[REDACTED]',text)
      lines=text.splitlines();keep=set()
      for i,line in enumerate(lines):
       if re.search(r'(?i)version|scaleTool|set\w+|marker|model_file|time_range|butter|filt|sync|latency|error|rms|mass|calib|copyright|license',line):keep.update(range(max(0,i-1),min(len(lines),i+2)))
+     record['lineCount']=len(lines)
+     if len(data)>250000:
+      record['targetMentions']=[{'line':i+1,'text':line} for i,line in enumerate(lines) if re.search(r'(?i)squat_1|AB01.*Squat|OpenSim version|Simbody version',line)][:60]
      record['excerpts']=[{'line':i+1,'text':lines[i]} for i in sorted(keep)[:110]];entry.setdefault('acquired',[]).append(record)
    except Exception as e:entry['error']=str(e)
    entry['downloadedBytes']=rr.used
