@@ -11,20 +11,50 @@ const path = require('node:path');
   });
   try {
     const page = await browser.newPage();
+    const diagnostics = { pageErrors: [], consoleErrors: [], failedRequests: [], served: [] };
+    page.on('pageerror', error => diagnostics.pageErrors.push(error.stack || error.message));
+    page.on('console', message => {
+      if (message.type() === 'error') diagnostics.consoleErrors.push(message.text());
+    });
+    page.on('requestfailed', request => diagnostics.failedRequests.push({
+      url: request.url(), error: request.failure()?.errorText || 'unknown'
+    }));
     await page.route('**/*', async route => {
-      const name = new URL(route.request().url()).pathname.replace(/^\//, '');
+      const url = new URL(route.request().url());
+      const name = url.pathname.replace(/^\\//, '');
       const allowed = name === 'tools/coach-lab.html' ||
         name === 'assets/coach/coach.glb' ||
         name.startsWith('vendor/three/');
-      if (!allowed) return route.abort();
-      return route.fulfill({
-        body: fs.readFileSync(name),
-        contentType: name.endsWith('.js') ? 'text/javascript' :
-          name.endsWith('.html') ? 'text/html' : 'application/octet-stream'
-      });
+      if (!allowed) {
+        diagnostics.failedRequests.push({ url: route.request().url(), error: 'blocked by diagnostic allowlist' });
+        return route.abort();
+      }
+      try {
+        const body = fs.readFileSync(name);
+        diagnostics.served.push({ path: name, bytes: body.length });
+        return route.fulfill({
+          body,
+          contentType: name.endsWith('.js') ? 'text/javascript' :
+            name.endsWith('.html') ? 'text/html' : 'application/octet-stream'
+        });
+      } catch (error) {
+        diagnostics.failedRequests.push({ url: route.request().url(), error: error.message });
+        return route.abort();
+      }
     });
-    await page.goto('http://motion.internal/tools/coach-lab.html?once=1');
-    await page.waitForFunction(() => window.ready);
+    await page.goto('http://motion.internal/tools/coach-lab.html?once=1', { waitUntil: 'load' });
+    try {
+      await page.waitForFunction(() => window.ready === true, { timeout: 45000 });
+    } catch (error) {
+      const state = await page.evaluate(() => ({
+        ready: window.ready === true,
+        hasLab: !!window.lab,
+        title: document.title,
+        body: document.body?.innerText?.slice(0, 1000)
+      })).catch(e => ({ evaluationError: e.message }));
+      console.error('COACH_LAB_BOOT_FAILURE', JSON.stringify({ state, diagnostics }, null, 2));
+      throw new Error('Coach lab did not initialize; see COACH_LAB_BOOT_FAILURE above. ' + error.message);
+    }
     const report = await page.evaluate(() => {
       const output = [];
       for (const clip of lab.clips) {
@@ -75,8 +105,14 @@ const path = require('node:path');
     fs.writeFileSync(target, JSON.stringify({
       method: 'World-space bone-origin linear acceleration; finite differences; 60 and 120 Hz; diagnostic only, not a safety or biomechanical metric.',
       source: 'Original coach.glb; no candidate loaded or changed.',
+      servedAssets: diagnostics.served,
       exercises: report
     }, null, 2));
+    console.log('COACH_DIAGNOSTICS_OK', JSON.stringify({
+      assetsServed: diagnostics.served.length,
+      exercises: report.length,
+      samples: report.length * 2
+    }));
     for (const item of report.filter(x => x.exercise === 'jumpingjacks')) {
       console.log(JSON.stringify(item));
     }
