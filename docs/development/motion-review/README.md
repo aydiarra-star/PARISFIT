@@ -2,7 +2,7 @@
 
 ## Portée et état d'accès
 Huit animations auditées à 60 Hz sur le GLB réel (squelette et sommets de peau des mains/pieds), originaire du SHA256 1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb. Aucun original ni archive historique modifié. Les fichiers d'autorisation publics n'ont pas été changés.
-Aucun lien Render déployé n'est connu/vérifié dans cette session. Aucun service Render modifié. L'accès authentifié existant n'est PAS supprimé : un lien sans contrôle d'accès ne peut pas être qualifié de réservé au propriétaire. Clarifier l'URL existante et une éventuelle restriction réseau/plateforme avant changement. Pas de secret dans l'URL.
+Aucun lien Render déployé n'est connu/vérifié dans cette session. Aucun service Render modifié. Au push, deux commits distants concurrents ont été détectés : 0e3d682 (vitesses) et f225849 (accès direct PARISFIT_DEMO_OPEN=1). Ils sont intégrés sans écrasement ; l'ajout local des vitesses en double est retiré. Le mode direct côté serveur est conservé et testé isolément : il donne accès sans cookie à toute personne ayant l'URL, sans contrôle d'identité propriétaire. La protection reste le défaut lorsque la variable n'est pas activée. Ni mot de passe dans l'URL ni modification du paquet public. L'URL Render exacte reste nécessaire pour vérifier le déploiement existant.
 
 ## Constats par exercice et réserves
 Les chiffres ci-dessous sont de nouvelles mesures techniques, pas une revue professionnelle. L'excursion d'un marqueur sur tout le cycle ne signifie pas glissement si le membre est en déplacement volontaire ou en vol. Les anciennes réserves anatomiques restent ouvertes ; elles ne sont pas présentées comme nouvellement mesurées.

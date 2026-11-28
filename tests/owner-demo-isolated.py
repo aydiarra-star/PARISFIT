@@ -43,7 +43,22 @@ with tempfile.TemporaryDirectory(dir=ROOT/'.cache',prefix='isolated-demo-') as t
     finally:
         proc.terminate();stdout,stderr=proc.communicate(timeout=10)
         assert secret.encode() not in stdout+stderr
+    # Preserve and verify the concurrent owner's explicit open-demo mode.
+    opened=subprocess.Popen([sys.executable,str(server)],cwd=root,env={**env,'PARISFIT_DEMO_OPEN':'1'},stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+    try:
+        for _ in range(100):
+            try:
+                status,_,html=request('GET','/');break
+            except OSError:time.sleep(.05)
+        else:raise AssertionError('No open-demo server')
+        assert status==200 and b'view-coach' in html
+        assert request('GET','/assets/coach/coach-review.glb')[0]==200
+        assert request('GET','/motion-candidate.json')[0]==200
+        assert request('GET','/.git/config')[0]==404
+        assert request('POST','/login')[0]==404
+    finally:
+        opened.terminate();opened.communicate(timeout=10)
     missing=env.copy();missing.pop('PARISFIT_DEMO_PASSWORD')
     fail=subprocess.run([sys.executable,str(server)],env=missing,capture_output=True,timeout=5)
     assert fail.returncode!=0 and b'must be configured' in fail.stderr
-print(json.dumps({'status':'PASS','isolatedRuntime':True,'portFromEnvironment':True,'environmentSecretOnly':True,'clips':8,'authentication':'unauthenticated 401, login 303, authenticated 200','cookie':'Secure/HttpOnly/SameSite=Strict','missingRenderSecret':'fails closed','limits':['Docker not executed','Render not deployed','No physical iPhone test']},indent=2))
+print(json.dumps({'status':'PASS','isolatedRuntime':True,'portFromEnvironment':True,'environmentSecretOnly':True,'clips':8,'explicitOpenDemo':'GET app/model/candidate 200 without cookie; login/internal paths 404','authentication':'unauthenticated 401, login 303, authenticated 200','cookie':'Secure/HttpOnly/SameSite=Strict','missingRenderSecret':'fails closed','limits':['Docker not executed','Render not deployed','No physical iPhone test']},indent=2))
