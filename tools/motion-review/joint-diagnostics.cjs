@@ -14,7 +14,9 @@ const path = require('node:path');
     await page.route('**/*', async route => {
       const name = new URL(route.request().url()).pathname.replace(/^\//, '');
       const allowed = name === 'tools/coach-lab.html' ||
-        name === 'assets/coach/coach.glb' || name.startsWith('vendor/three/');
+        name === 'assets/coach/coach.glb' ||
+        name === 'vendor/three.module.js' ||
+        name === 'vendor/loaders/GLTFLoader.js';
       if (!allowed) return route.abort();
       return route.fulfill({
         body: fs.readFileSync(name),
