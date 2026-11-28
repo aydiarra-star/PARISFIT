@@ -10,6 +10,15 @@ on:
       - 'assets/coach/coach.glb'
       - 'vendor/three/**'
       - '.github/workflows/coach-joint-diagnostics.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'tools/motion-review/joint-diagnostics.cjs'
+      - 'tools/coach-lab.html'
+      - 'assets/coach/coach.glb'
+      - 'vendor/three/**'
+      - '.github/workflows/coach-joint-diagnostics.yml'
 
 permissions:
   contents: write
