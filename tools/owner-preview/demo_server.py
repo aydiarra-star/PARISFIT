@@ -11,6 +11,8 @@ PUBLIC=ROOT/'.cache/owner-demo'
 if not (PUBLIC/'review-feedback.js').exists(): raise SystemExit('Run build_demo.py first')
 PASSWORD=os.environ.get('PARISFIT_DEMO_PASSWORD')
 if not PASSWORD:
+    if os.environ.get('RENDER') or os.environ.get('RENDER_SERVICE_ID'):
+        raise SystemExit('PARISFIT_DEMO_PASSWORD must be configured in Render environment settings')
     key=ROOT/'.cache/owner-preview-access.txt'
     if not key.exists():
         key.parent.mkdir(exist_ok=True);key.write_text(secrets.token_urlsafe(24));key.chmod(0o600)

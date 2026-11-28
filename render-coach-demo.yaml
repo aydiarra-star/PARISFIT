@@ -1,0 +1,18 @@
+# Separate private demo only. Never apply to parisfit or parisfit-preview.
+# Select this blueprint path explicitly; review the free plan before applying.
+services:
+  - type: web
+    name: parisfit-coach-review
+    runtime: docker
+    plan: free
+    repo: https://github.com/aydiarra-star/PARISFIT
+    branch: arena/5aa3aaf8-parisfit
+    dockerfilePath: ./tools/owner-preview/Dockerfile
+    dockerContext: .
+    autoDeploy: false
+    healthCheckPath: /
+    envVars:
+      - key: PARISFIT_DEMO_PASSWORD
+        generateValue: true
+      - key: COOKIE_SECURE
+        value: "1"
