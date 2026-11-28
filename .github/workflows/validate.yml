@@ -309,19 +309,25 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y python3-numpy python3-pil ffmpeg
+      - name: Isolated pinned OpenSim probe environment
+        run: |
+          sudo apt-get install -y python3-venv
+          python3 -m venv .cache/opensim-probe
+          .cache/opensim-probe/bin/pip install numpy==2.1.3 'https://files.pythonhosted.org/packages/de/13/30b6ed7c67ae1a9952b53c2e3aea3c2427ab349082ff3db4d62406eb25c3/opensim-4.6-2-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl#sha256=6bb4983097323e60326f6f102ee9f385e470deba6cb3a666219bf27aacbefb6d'
       - name: Pinned data, force audit and explicit reconstruction hypotheses
         run: |
           python3 tools/michaud/acquire.py
           python3 tools/michaud/test_core.py
           python3 tools/michaud/analyze.py
           python3 tools/michaud/render.py
+          .cache/opensim-probe/bin/python tools/michaud/model_probe.py
       - name: Phase13 public numerical reports
         if: always()
         run: |
           python3 - <<'PY'
           from pathlib import Path
           import zlib,base64
-          for name in ['provenance.json','forces-report.json','reconstruction-report.json','phases-report.json']:
+          for name in ['provenance.json','forces-report.json','reconstruction-report.json','phases-report.json','model-probe.json']:
               p=Path('.cache/phase13')/name
               if p.exists():
                   raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
