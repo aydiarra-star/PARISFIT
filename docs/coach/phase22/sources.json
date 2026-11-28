@@ -1,0 +1,110 @@
+[
+  {
+    "id": "S01",
+    "title": "ZHAW — projet74439, direction, publications et contact",
+    "url": "https://www.zhaw.ch/en/research/project/74439",
+    "consulted": "2026-11-27",
+    "section": "Key data / Publications / Contact, chunks0–1",
+    "observed": "Silvio Lorenzetti, School of Engineering ; projet force training terminé05/2026 ; silvio.lorenzetti@zhaw.ch ; +41(0)589344164. Pas de tarif de revue publié sur cette page.",
+    "retrieval": "fetch_page, selected sections only; no full copyrighted page copy"
+  },
+  {
+    "id": "S02",
+    "title": "Lorenzetti et al.2018 — How to squat?",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6050697/",
+    "consulted": "2026-11-27",
+    "section": "Methods, chunks1–2 ; auteurs dans correction S03",
+    "observed": "Squats, Vicon100Hz synchronisé aux forces Kistler2000Hz, marqueurs et centres fonctionnels. Coautorat Lorenzetti/Taylor. Preuve de travaux collectifs, pas exécution personnelle de chaque mesure.",
+    "retrieval": "fetch_page, selected sections only; no full copyrighted page copy"
+  },
+  {
+    "id": "S03",
+    "title": "Correction2020 de How to squat?",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6990583/",
+    "consulted": "2026-11-27",
+    "section": "chunks0–1",
+    "observed": "DOI10.1186/s13102-020-0160-6 ; correction du signe de ΔD* dans une phrase. Ne pas masquer cette correction ni transférer ses seuils à AB01.",
+    "retrieval": "fetch_page, selected sections only; no full copyrighted page copy"
+  },
+  {
+    "id": "S04",
+    "title": "Jaeggi, Achermann, Lorenzetti2024 — Female Lower Body Muscle Forces",
+    "url": "https://www.mdpi.com/2411-5142/9/2/68",
+    "consulted": "2026-11-27",
+    "section": "Authors, Data Collection, Modeling Simulation et Scaling, chunks0–1",
+    "observed": "DOI10.3390/jfmk9020068 ; Vicon200Hz,42 marqueurs, forces1000Hz, OpenSim4.3 et scaling sur essai statique. Démonstration directe du domaine squat/OpenSim.",
+    "retrieval": "fetch_page, selected sections only; no full copyrighted page copy"
+  },
+  {
+    "id": "S05",
+    "title": "ETH — William R. Taylor",
+    "url": "https://hest.ethz.ch/en/studies/health-sciences-and-technology/master-hst/tutors/tutors-a-z/william-r-taylor.html",
+    "consulted": "2026-11-27",
+    "section": "Contact et Research projects",
+    "observed": "Professeur, ETH Zurich / Institute for Biomechanics ; mouvement, sports, capture et fluoroscopie ; bt@ethz.ch ; +41446330595. Aucun tarif de revue affiché.",
+    "retrieval": "fetch_page, selected sections only; no full copyrighted page copy"
+  },
+  {
+    "id": "S06",
+    "title": "ETH — CAMS-Knee Project",
+    "url": "https://movement.ethz.ch/data-repository/cams-knee-project.html",
+    "consulted": "2026-11-27",
+    "section": "Comprehensive Assessment / Publications / Contact",
+    "observed": "Laboratoire de Taylor, données synchrones de cinématique à marqueurs, forces sol, EMG et implants ; DOI10.1016/j.jbiomech.2017.09.022. Population implantée distincte de AB01 ; contact bt@ethz.ch.",
+    "retrieval": "fetch_page, selected sections only; no full copyrighted page copy"
+  },
+  {
+    "id": "S07",
+    "title": "KU Leuven — Friedl De Groote, HMB",
+    "url": "https://gbiomed.kuleuven.be/english/research/50000737/research/HMB/People/People/00046458",
+    "consulted": "2026-11-27",
+    "section": "Annuaire et publications, chunk0",
+    "observed": "Affiliation Human Movement Biomechanics Research Group ; téléphone+3216372682. Travaux sur modèle patellofémoral pour grandes flexions incluant squats,2026, LIRIAS4437961 : notice institutionnelle examinée, article complet non examiné.",
+    "retrieval": "fetch_page, selected sections only; no full copyrighted page copy"
+  },
+  {
+    "id": "S08",
+    "title": "OpenSim — Fellows",
+    "url": "https://opensimconfluence.atlassian.net/wiki/spaces/OpenSim/pages/53088743/OpenSim+Fellows",
+    "consulted": "2026-11-27",
+    "section": "Introduction chunk0 ; Friedl De Groote chunk1",
+    "observed": "Programme expert, possibilité générale de consulter les Fellows ; rémunération à négocier individuellement, aucun tarif. De Groote : modèles individualisés, API C++, Kalman smoothing implémenté. Notice mêle grades/biographie historiques : ne pas en déduire un grade actuel exact.",
+    "retrieval": "fetch_page, selected sections only; no full copyrighted page copy"
+  },
+  {
+    "id": "S09",
+    "title": "UBC — profil Friedl De Groote",
+    "url": "https://balancefalls.ubc.ca/about-us/researchers/friedl-de-groote",
+    "consulted": "2026-11-27",
+    "section": "Biography / Contact",
+    "observed": "Affiliation déclarée KU Leuven (pas UBC comme employeur), approche expérimentale/computationnelle ; friedl.degroote@kuleuven.be. Grade historique possible, non utilisé pour classer.",
+    "retrieval": "fetch_page, selected sections only; no full copyrighted page copy"
+  },
+  {
+    "id": "S10",
+    "title": "Rennes2/M2S — Franck Multon",
+    "url": "https://m2s.recherche.univ-rennes2.fr/user/franck-multon",
+    "consulted": "2026-11-27",
+    "section": "Member profile",
+    "observed": "Affiliation affichée Inria ; axe analyse/modélisation/simulation du mouvement ; franck.multon@inria.fr. Aucun tarif publié sur la fiche.",
+    "retrieval": "fetch_page, selected sections only; no full copyrighted page copy"
+  },
+  {
+    "id": "S11",
+    "title": "Liu, Mucherino, Hoyet, Multon2018 — Surface based motion retargeting",
+    "url": "https://inria.hal.science/hal-01919065v1/file/Surface_based_Motion_Retargeting_by_Preserving_Spatial_Relationship-hal.pdf",
+    "consulted": "2026-11-27",
+    "section": "Première page / Abstract / Introduction, chunk0",
+    "observed": "MIG2018, DOI10.1145/3274247.3274507, HAL01919065 ; transfert préservant relations entre surfaces. Ne prouve pas compétence OpenSim ou validation physiologique.",
+    "retrieval": "fetch_page, selected sections only; no full copyrighted page copy"
+  },
+  {
+    "id": "S12",
+    "title": "LLS Biomechanics GmbH — présentation et conseil",
+    "url": "https://llsbiomechanics.ch/",
+    "consulted": "2026-11-27",
+    "section": "Home / about us / Purpose",
+    "observed": "Conseil en biomécanique théorique et expérimentale ; Renate List CEO, Silvio Lorenzetti présenté ; formulaire public et adresse professionnelle Rhiweg22,8260Stein am Rhein. Pas de prix publié sur cette page ; formulaire non rempli.",
+    "retrieval": "fetch_page, selected sections only; no full copyrighted page copy"
+  }
+]

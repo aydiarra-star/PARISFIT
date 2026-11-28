@@ -1,0 +1,32 @@
+{
+  "reference": "7a301e0f61b1328b70192b3514fdae26eaaad183",
+  "tests": {
+    "newCandidateContracts": {
+      "count": 8,
+      "result": "PASS"
+    },
+    "preservedPassivePythonContracts": {
+      "count": 43,
+      "result": "PASS"
+    },
+    "npm test": "PASS"
+  },
+  "preservation": {
+    "trackedReferenceFiles": 856,
+    "changedPreexistingFiles": [],
+    "rocketboxSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb"
+  },
+  "ciReference": {
+    "runs": 3,
+    "status": "all completed/success",
+    "authoringJobsSkipped": 4,
+    "source": "ci-reference-runs.json",
+    "fullLogsInspected": false
+  },
+  "limitations": [
+    "Tests validate documentary structure and preservation, not expert availability or independence",
+    "No candidate contacted; no document sent; no quote requested",
+    "Current delivery CI not presumed successful",
+    "No biomechanical pipeline executed"
+  ]
+}

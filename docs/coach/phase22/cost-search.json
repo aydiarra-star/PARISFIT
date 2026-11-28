@@ -1,0 +1,22 @@
+{
+  "consulted": "2026-11-27",
+  "method": "No quote request. Public profile/project/consulting pages and targeted search only.",
+  "queries": [
+    "\"Silvio Lorenzetti\" \"consulting\" fee",
+    "\"William Taylor\" \"ETH\" consulting fees biomechanics",
+    "\"Friedl De Groote\" consulting rates fees",
+    "\"Franck Multon\" \"consulting\" \"price\""
+  ],
+  "sources_inspected_for_rates": [
+    "S01",
+    "S05",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S12"
+  ],
+  "result": "No public fee applicable to documentary AB01 review identified in inspected scope; devis nécessaire for all. No claim that no tariff exists anywhere.",
+  "excluded_prices": "Workshop meals/course charges, research funding and software pricing are not expert-review rates.",
+  "engagement": false
+}
