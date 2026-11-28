@@ -27,7 +27,7 @@ def main():
  for plate in [1,2]:
   cols=['PLATE_'+str(plate)+'_'+c for c in ['Fx','Fy','Fz','Mx','My','Mz']];assert all(c in f.dtype.names for c in cols)
   for c in cols:assert np.isfinite(force[c]).all(),'NONFINITE_FORCE'
-  Fz=f[cols[2]];row={'plate':plate,'components':{c:{'min':float(f[c].min()),'max':float(f[c].max()),'secondDifferenceRMS':float(np.sqrt(np.mean(np.diff(f[c],n=2)**2)))} for c in cols},'forceUnits':'N','momentUnits':'N m','thresholdSensitivity':{str(th):{'loadedFrames':int((Fz>th).sum()),'fraction':float((Fz>th).mean())} for th in [10,20,50,100]],'calibration':'NON TESTÉ: no matrix, zero trial or uncertainty certificate','momentsReference':'NON TESTÉ: sensor-origin height, rotation and sign not established; COP not computed'};force_rows.append(row)
+  Fz=f[cols[2]];row={'plate':plate,'components':{c:{'min':float(f[c].min()),'max':float(f[c].max()),'secondDifferenceRMS':float(np.sqrt(np.mean(np.diff(f[c],n=2)**2)))} for c in cols},'forceUnits':'N','momentUnits':'N m','thresholdSensitivity':{str(th):{'loadedFrames':int((Fz>th).sum()),'fraction':float((Fz>th).mean())} for th in [10,20,50,100]},'calibration':'NON TESTÉ: no matrix, zero trial or uncertainty certificate','momentsReference':'NON TESTÉ: sensor-origin height, rotation and sign not established; COP not computed'};force_rows.append(row)
  total=f['PLATE_1_Fz']+f['PLATE_2_Fz'];share=f['PLATE_1_Fz']/total
  pelvis=models['H0_skin_landmarks']['pelvis'];accel=np.diff(pelvis[:,2],n=2)/dt**2
  lag=[]
