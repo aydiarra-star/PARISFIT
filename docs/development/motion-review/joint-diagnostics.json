@@ -1,0 +1,1718 @@
+{
+  "method": "World-space bone-origin linear acceleration; finite differences; 60 and 120 Hz; diagnostic only, not a safety or biomechanical metric.",
+  "source": "Original coach.glb; no candidate loaded or changed.",
+  "exercises": [
+    {
+      "exercise": "squat",
+      "duration": 5,
+      "sampleHz": 60,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_R_Finger22",
+          "peak": 2.0015079993634544,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger22",
+          "peak": 2.0013949745344464,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger32",
+          "peak": 2.000322226489386,
+          "time": 0.9166666666666666
+        },
+        {
+          "bone": "Bip01_R_Finger32",
+          "peak": 2.0003171531805553,
+          "time": 0.9166666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger42",
+          "peak": 1.9532264425006038,
+          "time": 0.9166666666666666
+        },
+        {
+          "bone": "Bip01_R_Finger42",
+          "peak": 1.953219859117336,
+          "time": 0.9166666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger31",
+          "peak": 1.9200283979369628,
+          "time": 0.9166666666666666
+        },
+        {
+          "bone": "Bip01_R_Finger31",
+          "peak": 1.9200190360911054,
+          "time": 0.9166666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger41",
+          "peak": 1.9092098963904334,
+          "time": 0.9166666666666666
+        },
+        {
+          "bone": "Bip01_R_Finger41",
+          "peak": 1.9091999113875215,
+          "time": 0.9166666666666666
+        },
+        {
+          "bone": "Bip01_R_Finger21",
+          "peak": 1.8978457059126392,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger21",
+          "peak": 1.897731362546379,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger12",
+          "peak": 1.8754773225734125,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger12",
+          "peak": 1.87536358611618,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger4",
+          "peak": 1.8203732726515915,
+          "time": 0.9166666666666666
+        },
+        {
+          "bone": "Bip01_R_Finger4",
+          "peak": 1.8203577411491099,
+          "time": 0.9166666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger3",
+          "peak": 1.7972472457409623,
+          "time": 0.9166666666666666
+        },
+        {
+          "bone": "Bip01_R_Finger3",
+          "peak": 1.7972325938198561,
+          "time": 0.9166666666666666
+        },
+        {
+          "bone": "Bip01_R_Finger11",
+          "peak": 1.7856149773513397,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger11",
+          "peak": 1.7855003744086073,
+          "time": 0.8833333333333333
+        }
+      ]
+    },
+    {
+      "exercise": "squat",
+      "duration": 5,
+      "sampleHz": 120,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_R_Finger22",
+          "peak": 4.4841788236979765,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger22",
+          "peak": 4.483948186534382,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_R_Finger12",
+          "peak": 4.332548564612438,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger12",
+          "peak": 4.332327207561827,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_R_Finger32",
+          "peak": 4.326341879534265,
+          "time": 1.575
+        },
+        {
+          "bone": "Bip01_L_Finger32",
+          "peak": 4.325766017337189,
+          "time": 1.575
+        },
+        {
+          "bone": "Bip01_R_Finger21",
+          "peak": 4.190480430268296,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger21",
+          "peak": 4.190263355598571,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_R_Finger31",
+          "peak": 4.087705960084044,
+          "time": 1.575
+        },
+        {
+          "bone": "Bip01_L_Finger31",
+          "peak": 4.087140149298664,
+          "time": 1.575
+        },
+        {
+          "bone": "Bip01_R_Finger11",
+          "peak": 4.083076905772651,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger11",
+          "peak": 4.082867494795484,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger42",
+          "peak": 4.063530945445486,
+          "time": 0.9416666666666667
+        },
+        {
+          "bone": "Bip01_R_Finger42",
+          "peak": 4.063447397752617,
+          "time": 0.9416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger41",
+          "peak": 3.9765145800991584,
+          "time": 0.9416666666666667
+        },
+        {
+          "bone": "Bip01_R_Finger41",
+          "peak": 3.976435490956657,
+          "time": 0.9416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger4",
+          "peak": 3.8019186698682748,
+          "time": 0.9416666666666667
+        },
+        {
+          "bone": "Bip01_R_Finger4",
+          "peak": 3.8018490682121437,
+          "time": 0.9416666666666667
+        },
+        {
+          "bone": "Bip01_R_Finger2",
+          "peak": 3.758745866968226,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger2",
+          "peak": 3.7585460808810804,
+          "time": 1.5416666666666667
+        }
+      ]
+    },
+    {
+      "exercise": "pompes",
+      "duration": 5,
+      "sampleHz": 60,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_RInnerEyebrow",
+          "peak": 0.7424725719308282,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_LInnerEyebrow",
+          "peak": 0.7424542738174768,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_MMiddleEyebrow",
+          "peak": 0.7409578325887309,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_ROuterEyebrow",
+          "peak": 0.7406374561790935,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_LOuterEyebrow",
+          "peak": 0.7406033624760575,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_REyeBlinkTop",
+          "peak": 0.7374827232203484,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_LEyeBlinkTop",
+          "peak": 0.737459636538542,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_REye",
+          "peak": 0.7342764744695324,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_LEye",
+          "peak": 0.734254439139387,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_REyeBlinkBottom",
+          "peak": 0.7305085211173333,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_LEyeBlinkBottom",
+          "peak": 0.7304849086243526,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_MNose",
+          "peak": 0.7220688347085258,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_RCheek",
+          "peak": 0.7215175929029582,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_LCheek",
+          "peak": 0.7214889315528916,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_RCaninus",
+          "peak": 0.7109703445726939,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_LCaninus",
+          "peak": 0.7109499260056013,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_MUpperLip",
+          "peak": 0.7053756198160782,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_RUpperlip",
+          "peak": 0.7051447392049222,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_LUpperlip",
+          "peak": 0.7051348473143124,
+          "time": 0.8833333333333333
+        },
+        {
+          "bone": "Bip01_RMasseter",
+          "peak": 0.7040679437626399,
+          "time": 0.8833333333333333
+        }
+      ]
+    },
+    {
+      "exercise": "pompes",
+      "duration": 5,
+      "sampleHz": 120,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_RInnerEyebrow",
+          "peak": 1.4851068618293362,
+          "time": 0.875
+        },
+        {
+          "bone": "Bip01_LInnerEyebrow",
+          "peak": 1.485069879767401,
+          "time": 0.875
+        },
+        {
+          "bone": "Bip01_MMiddleEyebrow",
+          "peak": 1.4820857738823623,
+          "time": 0.875
+        },
+        {
+          "bone": "Bip01_ROuterEyebrow",
+          "peak": 1.4814177390776624,
+          "time": 0.875
+        },
+        {
+          "bone": "Bip01_LOuterEyebrow",
+          "peak": 1.4813488336917207,
+          "time": 0.875
+        },
+        {
+          "bone": "Bip01_REyeBlinkTop",
+          "peak": 1.4751100204874734,
+          "time": 0.875
+        },
+        {
+          "bone": "Bip01_LEyeBlinkTop",
+          "peak": 1.47506336081075,
+          "time": 0.875
+        },
+        {
+          "bone": "Bip01_REye",
+          "peak": 1.4686735400026518,
+          "time": 0.875
+        },
+        {
+          "bone": "Bip01_LEye",
+          "peak": 1.468629005854734,
+          "time": 0.875
+        },
+        {
+          "bone": "Bip01_REyeBlinkBottom",
+          "peak": 1.461165574779978,
+          "time": 0.875
+        },
+        {
+          "bone": "Bip01_LEyeBlinkBottom",
+          "peak": 1.461117852174035,
+          "time": 0.875
+        },
+        {
+          "bone": "Bip01_MNose",
+          "peak": 1.4443412567894813,
+          "time": 0.875
+        },
+        {
+          "bone": "Bip01_RCheek",
+          "peak": 1.4431972478387263,
+          "time": 0.875
+        },
+        {
+          "bone": "Bip01_LCheek",
+          "peak": 1.4431393204148015,
+          "time": 0.875
+        },
+        {
+          "bone": "Bip01_RCaninus",
+          "peak": 1.4221205526507332,
+          "time": 0.875
+        },
+        {
+          "bone": "Bip01_LCaninus",
+          "peak": 1.4220792840902814,
+          "time": 0.875
+        },
+        {
+          "bone": "Bip01_MUpperLip",
+          "peak": 1.4109473710584177,
+          "time": 0.875
+        },
+        {
+          "bone": "Bip01_RUpperlip",
+          "peak": 1.4104832158575544,
+          "time": 0.875
+        },
+        {
+          "bone": "Bip01_LUpperlip",
+          "peak": 1.4104632228398155,
+          "time": 0.875
+        },
+        {
+          "bone": "Bip01_RMasseter",
+          "peak": 1.4082629216030902,
+          "time": 0.875
+        }
+      ]
+    },
+    {
+      "exercise": "gainage",
+      "duration": 6,
+      "sampleHz": 60,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_LInnerEyebrow",
+          "peak": 0.0006795958398751323,
+          "time": 4.416666666666667
+        },
+        {
+          "bone": "Bip01_RInnerEyebrow",
+          "peak": 0.0006795958390221713,
+          "time": 4.416666666666667
+        },
+        {
+          "bone": "Bip01_MMiddleEyebrow",
+          "peak": 0.0006792290272579294,
+          "time": 4.416666666666667
+        },
+        {
+          "bone": "Bip01_LOuterEyebrow",
+          "peak": 0.0006789335165122598,
+          "time": 4.416666666666667
+        },
+        {
+          "bone": "Bip01_ROuterEyebrow",
+          "peak": 0.0006789335149304279,
+          "time": 4.416666666666667
+        },
+        {
+          "bone": "Bip01_LEyeBlinkTop",
+          "peak": 0.0006780545073114909,
+          "time": 4.416666666666667
+        },
+        {
+          "bone": "Bip01_REyeBlinkTop",
+          "peak": 0.0006780545062123285,
+          "time": 4.416666666666667
+        },
+        {
+          "bone": "Bip01_LEye",
+          "peak": 0.0006769607250637865,
+          "time": 4.416666666666667
+        },
+        {
+          "bone": "Bip01_REye",
+          "peak": 0.0006769607237080131,
+          "time": 4.416666666666667
+        },
+        {
+          "bone": "Bip01_LEyeBlinkBottom",
+          "peak": 0.000676106058426806,
+          "time": 4.416666666666667
+        },
+        {
+          "bone": "Bip01_REyeBlinkBottom",
+          "peak": 0.0006761060572302465,
+          "time": 4.416666666666667
+        },
+        {
+          "bone": "Bip01_MNose",
+          "peak": 0.0006740865360748068,
+          "time": 4.416666666666667
+        },
+        {
+          "bone": "Bip01_LCheek",
+          "peak": 0.0006736520547186213,
+          "time": 4.416666666666667
+        },
+        {
+          "bone": "Bip01_RCheek",
+          "peak": 0.0006736520532193733,
+          "time": 4.416666666666667
+        },
+        {
+          "bone": "Bip01_LCaninus",
+          "peak": 0.0006707823254275309,
+          "time": 4.416666666666667
+        },
+        {
+          "bone": "Bip01_RCaninus",
+          "peak": 0.0006707823245259656,
+          "time": 4.416666666666667
+        },
+        {
+          "bone": "Bip01_MUpperLip",
+          "peak": 0.0006693025275770245,
+          "time": 4.416666666666667
+        },
+        {
+          "bone": "Bip01_LUpperlip",
+          "peak": 0.0006692201023025813,
+          "time": 4.416666666666667
+        },
+        {
+          "bone": "Bip01_RUpperlip",
+          "peak": 0.0006692201019618569,
+          "time": 4.416666666666667
+        },
+        {
+          "bone": "Bip01_LMasseter",
+          "peak": 0.0006684460943627877,
+          "time": 4.416666666666667
+        }
+      ]
+    },
+    {
+      "exercise": "gainage",
+      "duration": 6,
+      "sampleHz": 120,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_LInnerEyebrow",
+          "peak": 0.0013826003473585875,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_RInnerEyebrow",
+          "peak": 0.001382600344877843,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_MMiddleEyebrow",
+          "peak": 0.001381964838495978,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_LOuterEyebrow",
+          "peak": 0.0013805265686783533,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_ROuterEyebrow",
+          "peak": 0.001380526561386327,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_LEyeBlinkTop",
+          "peak": 0.0013785026572836327,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_REyeBlinkTop",
+          "peak": 0.0013785026531924149,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_LEye",
+          "peak": 0.0013752858384586712,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_REye",
+          "peak": 0.0013752858350908753,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_LEyeBlinkBottom",
+          "peak": 0.0013740113649453954,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_REyeBlinkBottom",
+          "peak": 0.001374011361704928,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_MNose",
+          "peak": 0.00137071190917166,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_LCheek",
+          "peak": 0.0013685783554623725,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_RCheek",
+          "peak": 0.0013685783498328164,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_LCaninus",
+          "peak": 0.0013622764299200953,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_RCaninus",
+          "peak": 0.0013622764259003763,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_MUpperLip",
+          "peak": 0.001359214422323508,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_LUpperlip",
+          "peak": 0.0013589544531476911,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_RUpperlip",
+          "peak": 0.0013589544507496356,
+          "time": 1.5083333333333333
+        },
+        {
+          "bone": "Bip01_LMouthBottom",
+          "peak": 0.0013556949623906858,
+          "time": 1.5083333333333333
+        }
+      ]
+    },
+    {
+      "exercise": "fentes",
+      "duration": 10,
+      "sampleHz": 60,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_R_Toe0",
+          "peak": 8.651074993774014,
+          "time": 0.25
+        },
+        {
+          "bone": "Bip01_L_Toe0",
+          "peak": 8.65032464637206,
+          "time": 5.25
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 8.392207976296286,
+          "time": 0.31666666666666665
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 8.392106150730609,
+          "time": 5.316666666666666
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 7.76605574806394,
+          "time": 5.216666666666667
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 7.76586657299575,
+          "time": 0.21666666666666667
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 2.0051333223223895,
+          "time": 0.7166666666666667
+        },
+        {
+          "bone": "Bip01_Spine",
+          "peak": 2.0051333223223895,
+          "time": 0.7166666666666667
+        },
+        {
+          "bone": "Bip01_L_Thigh",
+          "peak": 2.0051333223223895,
+          "time": 0.7166666666666667
+        },
+        {
+          "bone": "Bip01_R_Thigh",
+          "peak": 2.0051333223223895,
+          "time": 0.7166666666666667
+        },
+        {
+          "bone": "Bip01_Spine1",
+          "peak": 2.0051333223221772,
+          "time": 0.7166666666666667
+        },
+        {
+          "bone": "Bip01_Spine2",
+          "peak": 2.0051333223221772,
+          "time": 0.7166666666666667
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 2.0051333223221772,
+          "time": 0.7166666666666667
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 2.0051333223221772,
+          "time": 0.7166666666666667
+        },
+        {
+          "bone": "Bip01_LCaninus",
+          "peak": 2.0051333223221772,
+          "time": 0.7166666666666667
+        },
+        {
+          "bone": "Bip01_MUpperLip",
+          "peak": 2.0051333223221772,
+          "time": 0.7166666666666667
+        },
+        {
+          "bone": "Bip01_LMasseter",
+          "peak": 2.0051333223221772,
+          "time": 0.7166666666666667
+        },
+        {
+          "bone": "Bip01_RCaninus",
+          "peak": 2.0051333223221772,
+          "time": 0.7166666666666667
+        },
+        {
+          "bone": "Bip01_LEyeBlinkBottom",
+          "peak": 2.0051333223221772,
+          "time": 0.7166666666666667
+        },
+        {
+          "bone": "Bip01_RMouthCorner",
+          "peak": 2.0051333223221772,
+          "time": 0.7166666666666667
+        }
+      ]
+    },
+    {
+      "exercise": "fentes",
+      "duration": 10,
+      "sampleHz": 120,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_R_Toe0",
+          "peak": 18.194269498350952,
+          "time": 0.24166666666666667
+        },
+        {
+          "bone": "Bip01_L_Toe0",
+          "peak": 18.192616182955266,
+          "time": 5.241666666666666
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 16.785106659615327,
+          "time": 0.30833333333333335
+        },
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 16.7847384315259,
+          "time": 5.308333333333334
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 15.851705006386563,
+          "time": 0.24166666666666667
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 15.850141801603831,
+          "time": 5.241666666666666
+        },
+        {
+          "bone": "Bip01_Pelvis",
+          "peak": 4.010263776276379,
+          "time": 0.7083333333333334
+        },
+        {
+          "bone": "Bip01_Spine",
+          "peak": 4.010263776276379,
+          "time": 0.7083333333333334
+        },
+        {
+          "bone": "Bip01_Spine1",
+          "peak": 4.010263776276379,
+          "time": 0.7083333333333334
+        },
+        {
+          "bone": "Bip01_Spine2",
+          "peak": 4.010263776276379,
+          "time": 0.7083333333333334
+        },
+        {
+          "bone": "Bip01_Neck",
+          "peak": 4.010263776276379,
+          "time": 0.7083333333333334
+        },
+        {
+          "bone": "Bip01_Head",
+          "peak": 4.010263776276379,
+          "time": 0.7083333333333334
+        },
+        {
+          "bone": "Bip01_LCaninus",
+          "peak": 4.010263776276379,
+          "time": 0.7083333333333334
+        },
+        {
+          "bone": "Bip01_MUpperLip",
+          "peak": 4.010263776276379,
+          "time": 0.7083333333333334
+        },
+        {
+          "bone": "Bip01_LMasseter",
+          "peak": 4.010263776276379,
+          "time": 0.7083333333333334
+        },
+        {
+          "bone": "Bip01_RCaninus",
+          "peak": 4.010263776276379,
+          "time": 0.7083333333333334
+        },
+        {
+          "bone": "Bip01_LEyeBlinkBottom",
+          "peak": 4.010263776276379,
+          "time": 0.7083333333333334
+        },
+        {
+          "bone": "Bip01_RMouthCorner",
+          "peak": 4.010263776276379,
+          "time": 0.7083333333333334
+        },
+        {
+          "bone": "Bip01_REyeBlinkBottom",
+          "peak": 4.010263776276379,
+          "time": 0.7083333333333334
+        },
+        {
+          "bone": "Bip01_RUpperlip",
+          "peak": 4.010263776276379,
+          "time": 0.7083333333333334
+        }
+      ]
+    },
+    {
+      "exercise": "jumpingjacks",
+      "duration": 3.200000047683716,
+      "sampleHz": 60,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 90.85223847438759,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 90.84979963645438,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger22",
+          "peak": 59.87480320726126,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger22",
+          "peak": 59.872695787645476,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger32",
+          "peak": 58.222246278622244,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger32",
+          "peak": 58.220171365631536,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger12",
+          "peak": 54.80004595776143,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger12",
+          "peak": 54.79817451070303,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger42",
+          "peak": 54.38614073700124,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger42",
+          "peak": 54.38419102600935,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger21",
+          "peak": 52.06824455348973,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger21",
+          "peak": 52.06645428282407,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger31",
+          "peak": 51.74415680868151,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger31",
+          "peak": 51.74234634149147,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger41",
+          "peak": 50.52197495693329,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger41",
+          "peak": 50.520192065912305,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger11",
+          "peak": 48.576206488422045,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger11",
+          "peak": 48.57462638229526,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger02",
+          "peak": 45.296443222445326,
+          "time": 0.9833333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger02",
+          "peak": 45.29527257633471,
+          "time": 0.9833333333333333
+        }
+      ]
+    },
+    {
+      "exercise": "jumpingjacks",
+      "duration": 3.200000047683716,
+      "sampleHz": 120,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 180.0045161655863,
+          "time": 0.975
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 179.99969840070332,
+          "time": 0.975
+        },
+        {
+          "bone": "Bip01_L_Finger22",
+          "peak": 128.47847659156932,
+          "time": 0.975
+        },
+        {
+          "bone": "Bip01_R_Finger22",
+          "peak": 128.47380987143922,
+          "time": 0.975
+        },
+        {
+          "bone": "Bip01_L_Finger32",
+          "peak": 124.11780515884023,
+          "time": 0.975
+        },
+        {
+          "bone": "Bip01_R_Finger32",
+          "peak": 124.1132466275646,
+          "time": 0.975
+        },
+        {
+          "bone": "Bip01_L_Finger12",
+          "peak": 119.18348764209499,
+          "time": 0.975
+        },
+        {
+          "bone": "Bip01_R_Finger12",
+          "peak": 119.17924489480562,
+          "time": 0.975
+        },
+        {
+          "bone": "Bip01_L_Finger42",
+          "peak": 115.74554294110936,
+          "time": 0.975
+        },
+        {
+          "bone": "Bip01_R_Finger42",
+          "peak": 115.74126003511823,
+          "time": 0.975
+        },
+        {
+          "bone": "Bip01_L_Finger31",
+          "peak": 115.15772831600091,
+          "time": 0.9416666666666667
+        },
+        {
+          "bone": "Bip01_R_Finger31",
+          "peak": 115.15473604882108,
+          "time": 0.9416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger21",
+          "peak": 115.00618659525826,
+          "time": 0.9416666666666667
+        },
+        {
+          "bone": "Bip01_R_Finger21",
+          "peak": 115.00339908431606,
+          "time": 0.9416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger41",
+          "peak": 110.96409785336124,
+          "time": 0.9416666666666667
+        },
+        {
+          "bone": "Bip01_R_Finger41",
+          "peak": 110.96111751812981,
+          "time": 0.9416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger11",
+          "peak": 106.65756143879926,
+          "time": 0.9416666666666667
+        },
+        {
+          "bone": "Bip01_R_Finger11",
+          "peak": 106.65527065511772,
+          "time": 0.9416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger3",
+          "peak": 105.07594377772591,
+          "time": 0.9416666666666667
+        },
+        {
+          "bone": "Bip01_R_Finger3",
+          "peak": 105.07322252761666,
+          "time": 0.9416666666666667
+        }
+      ]
+    },
+    {
+      "exercise": "mountainclimber",
+      "duration": 4,
+      "sampleHz": 60,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 44.60171604091581,
+          "time": 0.05
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 44.597440111031936,
+          "time": 3.9833333333333334
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 6.207441041879064,
+          "time": 3.9499999999999997
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 6.207302560200803,
+          "time": 1.95
+        },
+        {
+          "bone": "Bip01_R_Toe0",
+          "peak": 6.184741137606091,
+          "time": 3.9499999999999997
+        },
+        {
+          "bone": "Bip01_L_Toe0",
+          "peak": 6.184626974924318,
+          "time": 1.95
+        },
+        {
+          "bone": "Bip01_LMasseter",
+          "peak": 1.4410677752952196e-12,
+          "time": 0.35
+        },
+        {
+          "bone": "Bip01_RCaninus",
+          "peak": 1.130466570252318e-12,
+          "time": 0.1
+        },
+        {
+          "bone": "Bip01_RMouthCorner",
+          "peak": 1.130466570252318e-12,
+          "time": 0.1
+        },
+        {
+          "bone": "Bip01_LMouthCorner",
+          "peak": 1.130466570252318e-12,
+          "time": 0.1
+        },
+        {
+          "bone": "Bip01_RCheek",
+          "peak": 1.130466570252318e-12,
+          "time": 0.1
+        },
+        {
+          "bone": "Bip01_LCheek",
+          "peak": 1.130466570252318e-12,
+          "time": 0.1
+        },
+        {
+          "bone": "Bip01_REyeBlinkTop",
+          "peak": 1.130466570252318e-12,
+          "time": 0.1
+        },
+        {
+          "bone": "Bip01_LEyeBlinkTop",
+          "peak": 1.130466570252318e-12,
+          "time": 0.1
+        },
+        {
+          "bone": "Bip01_LEye",
+          "peak": 1.130466570252318e-12,
+          "time": 0.1
+        },
+        {
+          "bone": "Bip01_REye",
+          "peak": 1.130466570252318e-12,
+          "time": 0.1
+        },
+        {
+          "bone": "Bip01_LOuterEyebrow",
+          "peak": 1.130466570252318e-12,
+          "time": 0.1
+        },
+        {
+          "bone": "Bip01_L_Finger4",
+          "peak": 1.130466570252318e-12,
+          "time": 0.1
+        },
+        {
+          "bone": "Bip01_L_Finger41",
+          "peak": 1.130466570252318e-12,
+          "time": 0.1
+        },
+        {
+          "bone": "Bip01_L_Finger42",
+          "peak": 1.130466570252318e-12,
+          "time": 0.1
+        }
+      ]
+    },
+    {
+      "exercise": "mountainclimber",
+      "duration": 4,
+      "sampleHz": 120,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_L_Calf",
+          "peak": 89.20711896985354,
+          "time": 0.041666666666666664
+        },
+        {
+          "bone": "Bip01_R_Calf",
+          "peak": 89.19840013521707,
+          "time": 2.0416666666666665
+        },
+        {
+          "bone": "Bip01_R_Toe0",
+          "peak": 10.909581106531805,
+          "time": 3.0083333333333333
+        },
+        {
+          "bone": "Bip01_L_Toe0",
+          "peak": 10.909539367775546,
+          "time": 1.0083333333333333
+        },
+        {
+          "bone": "Bip01_L_Foot",
+          "peak": 10.909536323652468,
+          "time": 1.0083333333333333
+        },
+        {
+          "bone": "Bip01_R_Foot",
+          "peak": 10.909527540083829,
+          "time": 3.0083333333333333
+        },
+        {
+          "bone": "Bip01_LMasseter",
+          "peak": 4.796163466380676e-12,
+          "time": 0.31666666666666665
+        },
+        {
+          "bone": "Bip01_RCaninus",
+          "peak": 4.521866281009272e-12,
+          "time": 0.09166666666666666
+        },
+        {
+          "bone": "Bip01_RMouthCorner",
+          "peak": 4.521866281009272e-12,
+          "time": 0.09166666666666666
+        },
+        {
+          "bone": "Bip01_LMouthCorner",
+          "peak": 4.521866281009272e-12,
+          "time": 0.09166666666666666
+        },
+        {
+          "bone": "Bip01_RCheek",
+          "peak": 4.521866281009272e-12,
+          "time": 0.09166666666666666
+        },
+        {
+          "bone": "Bip01_LCheek",
+          "peak": 4.521866281009272e-12,
+          "time": 0.09166666666666666
+        },
+        {
+          "bone": "Bip01_REyeBlinkTop",
+          "peak": 4.521866281009272e-12,
+          "time": 0.09166666666666666
+        },
+        {
+          "bone": "Bip01_LEyeBlinkTop",
+          "peak": 4.521866281009272e-12,
+          "time": 0.09166666666666666
+        },
+        {
+          "bone": "Bip01_LEye",
+          "peak": 4.521866281009272e-12,
+          "time": 0.09166666666666666
+        },
+        {
+          "bone": "Bip01_REye",
+          "peak": 4.521866281009272e-12,
+          "time": 0.09166666666666666
+        },
+        {
+          "bone": "Bip01_LOuterEyebrow",
+          "peak": 4.521866281009272e-12,
+          "time": 0.09166666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger4",
+          "peak": 4.521866281009272e-12,
+          "time": 0.09166666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger41",
+          "peak": 4.521866281009272e-12,
+          "time": 0.09166666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger42",
+          "peak": 4.521866281009272e-12,
+          "time": 0.09166666666666666
+        }
+      ]
+    },
+    {
+      "exercise": "etirementdos",
+      "duration": 8,
+      "sampleHz": 60,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 2.640268420870511,
+          "time": 1.7166666666666666
+        },
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 2.640139290130883,
+          "time": 1.7166666666666666
+        },
+        {
+          "bone": "Bip01_R_Finger32",
+          "peak": 2.4083490160041983,
+          "time": 1.4833333333333334
+        },
+        {
+          "bone": "Bip01_L_Finger32",
+          "peak": 2.408210761743365,
+          "time": 1.4833333333333334
+        },
+        {
+          "bone": "Bip01_R_Finger42",
+          "peak": 2.403175888948062,
+          "time": 1.5166666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger42",
+          "peak": 2.4030958143047587,
+          "time": 1.5166666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger22",
+          "peak": 2.388768909368795,
+          "time": 1.45
+        },
+        {
+          "bone": "Bip01_R_Finger22",
+          "peak": 2.388652379629795,
+          "time": 1.45
+        },
+        {
+          "bone": "Bip01_R_Finger41",
+          "peak": 2.331242313512947,
+          "time": 1.5166666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger41",
+          "peak": 2.3311689121190886,
+          "time": 1.5166666666666666
+        },
+        {
+          "bone": "Bip01_R_Finger31",
+          "peak": 2.2834424420938904,
+          "time": 1.4833333333333334
+        },
+        {
+          "bone": "Bip01_L_Finger31",
+          "peak": 2.2833048760310595,
+          "time": 1.4833333333333334
+        },
+        {
+          "bone": "Bip01_L_Finger12",
+          "peak": 2.2294757310168536,
+          "time": 1.3833333333333333
+        },
+        {
+          "bone": "Bip01_L_Finger21",
+          "peak": 2.2294607910563573,
+          "time": 1.45
+        },
+        {
+          "bone": "Bip01_R_Finger12",
+          "peak": 2.229433728266567,
+          "time": 1.3833333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger21",
+          "peak": 2.2293248495914293,
+          "time": 1.45
+        },
+        {
+          "bone": "Bip01_R_Finger4",
+          "peak": 2.1869916690083233,
+          "time": 1.5166666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger4",
+          "peak": 2.1869293365382885,
+          "time": 1.5166666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger11",
+          "peak": 2.0985707156961717,
+          "time": 1.3833333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger11",
+          "peak": 2.0985208290811035,
+          "time": 1.3833333333333333
+        }
+      ]
+    },
+    {
+      "exercise": "etirementdos",
+      "duration": 8,
+      "sampleHz": 120,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_R_Finger42",
+          "peak": 6.081035388674775,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger42",
+          "peak": 6.080941670640384,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_R_Finger32",
+          "peak": 6.024728982494532,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger32",
+          "peak": 6.024614944149184,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_R_Finger41",
+          "peak": 5.9058191650321,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger41",
+          "peak": 5.905740598457416,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_R_Finger22",
+          "peak": 5.8535950867733835,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger22",
+          "peak": 5.853463313047595,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_R_Finger31",
+          "peak": 5.7368920090703455,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger31",
+          "peak": 5.73680260355828,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_R_Finger4",
+          "peak": 5.565344017939064,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger4",
+          "peak": 5.565293309726481,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger02",
+          "peak": 5.547611812128217,
+          "time": 1.7083333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger02",
+          "peak": 5.547386493251091,
+          "time": 1.7083333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger21",
+          "peak": 5.501347377786453,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger21",
+          "peak": 5.501245505635666,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_R_Finger3",
+          "peak": 5.327099981566909,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger3",
+          "peak": 5.327043430949831,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_R_Finger12",
+          "peak": 5.297913774239901,
+          "time": 1.5416666666666667
+        },
+        {
+          "bone": "Bip01_L_Finger12",
+          "peak": 5.297788001059817,
+          "time": 1.5416666666666667
+        }
+      ]
+    },
+    {
+      "exercise": "mobiliteepaules",
+      "duration": 6,
+      "sampleHz": 60,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 0.6068326249343396,
+          "time": 2.4166666666666665
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 0.6067586746222384,
+          "time": 2.4166666666666665
+        },
+        {
+          "bone": "Bip01_R_Finger22",
+          "peak": 0.5604479551584634,
+          "time": 1.7166666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger22",
+          "peak": 0.5603793386210533,
+          "time": 1.7166666666666666
+        },
+        {
+          "bone": "Bip01_R_Finger12",
+          "peak": 0.545509144660223,
+          "time": 1.7166666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger12",
+          "peak": 0.5454414929116524,
+          "time": 1.7166666666666666
+        },
+        {
+          "bone": "Bip01_R_Finger32",
+          "peak": 0.5404201449218892,
+          "time": 1.65
+        },
+        {
+          "bone": "Bip01_L_Finger32",
+          "peak": 0.5403212581460578,
+          "time": 1.6833333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger21",
+          "peak": 0.5285153711853101,
+          "time": 1.7166666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger21",
+          "peak": 0.5284535965606076,
+          "time": 1.7166666666666666
+        },
+        {
+          "bone": "Bip01_R_Finger11",
+          "peak": 0.5195403820810003,
+          "time": 1.7166666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger11",
+          "peak": 0.5194784596425119,
+          "time": 1.7166666666666666
+        },
+        {
+          "bone": "Bip01_R_Finger31",
+          "peak": 0.5135492933146054,
+          "time": 1.65
+        },
+        {
+          "bone": "Bip01_L_Finger31",
+          "peak": 0.5134326231104833,
+          "time": 1.65
+        },
+        {
+          "bone": "Bip01_R_Finger42",
+          "peak": 0.5132974619029486,
+          "time": 2.9166666666666665
+        },
+        {
+          "bone": "Bip01_L_Finger42",
+          "peak": 0.5132231625871323,
+          "time": 2.9166666666666665
+        },
+        {
+          "bone": "Bip01_L_Finger41",
+          "peak": 0.49476939480439974,
+          "time": 2.8833333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger41",
+          "peak": 0.4945988828581748,
+          "time": 2.8833333333333333
+        },
+        {
+          "bone": "Bip01_R_Finger2",
+          "peak": 0.48235321483137467,
+          "time": 1.7166666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger2",
+          "peak": 0.48230053942670104,
+          "time": 1.7166666666666666
+        }
+      ]
+    },
+    {
+      "exercise": "mobiliteepaules",
+      "duration": 6,
+      "sampleHz": 120,
+      "highestJointPeaks": [
+        {
+          "bone": "Bip01_R_Forearm",
+          "peak": 1.217450035385102,
+          "time": 2.408333333333333
+        },
+        {
+          "bone": "Bip01_L_Forearm",
+          "peak": 1.2174372088642744,
+          "time": 2.4416666666666664
+        },
+        {
+          "bone": "Bip01_R_Finger22",
+          "peak": 1.1685193562357887,
+          "time": 1.6416666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger22",
+          "peak": 1.1681979955312678,
+          "time": 1.6416666666666666
+        },
+        {
+          "bone": "Bip01_R_Finger12",
+          "peak": 1.1388287770363599,
+          "time": 1.6416666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger12",
+          "peak": 1.1386110544398422,
+          "time": 1.675
+        },
+        {
+          "bone": "Bip01_R_Finger32",
+          "peak": 1.1311477067553402,
+          "time": 1.575
+        },
+        {
+          "bone": "Bip01_L_Finger32",
+          "peak": 1.1309636091325985,
+          "time": 1.6083333333333334
+        },
+        {
+          "bone": "Bip01_L_Finger42",
+          "peak": 1.1127486447784962,
+          "time": 2.775
+        },
+        {
+          "bone": "Bip01_R_Finger42",
+          "peak": 1.1120954187488314,
+          "time": 2.775
+        },
+        {
+          "bone": "Bip01_R_Finger21",
+          "peak": 1.106153005675138,
+          "time": 1.6416666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger21",
+          "peak": 1.105863564990363,
+          "time": 1.6416666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger41",
+          "peak": 1.0934476462939857,
+          "time": 2.7083333333333335
+        },
+        {
+          "bone": "Bip01_R_Finger41",
+          "peak": 1.092747612085325,
+          "time": 2.675
+        },
+        {
+          "bone": "Bip01_L_Finger11",
+          "peak": 1.087436281785128,
+          "time": 1.675
+        },
+        {
+          "bone": "Bip01_R_Finger11",
+          "peak": 1.0874124174964648,
+          "time": 1.6416666666666666
+        },
+        {
+          "bone": "Bip01_L_Finger4",
+          "peak": 1.0801589974737926,
+          "time": 2.575
+        },
+        {
+          "bone": "Bip01_R_Finger4",
+          "peak": 1.0798002460622675,
+          "time": 2.575
+        },
+        {
+          "bone": "Bip01_R_Finger31",
+          "peak": 1.0791058085094865,
+          "time": 1.575
+        },
+        {
+          "bone": "Bip01_L_Finger31",
+          "peak": 1.0787924371975544,
+          "time": 1.575
+        }
+      ]
+    }
+  ]
+}
