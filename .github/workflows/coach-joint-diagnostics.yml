@@ -1,0 +1,41 @@
+name: Coach joint diagnostics
+
+on:
+  push:
+    branches:
+      - arena/5aa3aaf8-parisfit
+    paths:
+      - 'tools/motion-review/joint-diagnostics.cjs'
+      - 'tools/coach-lab.html'
+      - 'assets/coach/coach.glb'
+      - 'vendor/three/**'
+      - '.github/workflows/coach-joint-diagnostics.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout isolated preview branch
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install project dependencies
+        run: npm ci
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Diagnose original coach clips
+        run: node tools/motion-review/joint-diagnostics.cjs
+      - name: Publish diagnostic report
+        uses: actions/upload-artifact@v4
+        with:
+          name: parisfit-coach-joint-diagnostics
+          path: docs/development/motion-review/joint-diagnostics.json
+          if-no-files-found: error
+          retention-days: 14
