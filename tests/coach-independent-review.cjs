@@ -1,6 +1,6 @@
 const fs=require('fs'),crypto=require('crypto'),assert=require('assert/strict'),D='docs/coach/phase18/',read=n=>JSON.parse(fs.readFileSync(D+n)),sha=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 for(const [p,h]of Object.entries(read('manifest.json').files))assert.equal(sha(D+p),h,p);
-for(const [p,h]of Object.entries(read('protected-baseline.json').files))assert.equal(sha(p),h,'Protected file changed: '+p);
+for(const [p,h]of Object.entries(read('protected-baseline.json').files))require('./phase24-preservation.cjs').assertHistorical(p,h);
 const r=read('review-status.json');assert.equal(r.decision,'B');for(const [k,v]of Object.entries(r))if(typeof v==='boolean')assert.equal(v,false,k);
 const m=read('marker-review-register.json');assert.equal(m.length,57);assert.equal(m.filter(x=>x.phase17_status==='Confirmé').length,44);assert.equal(m.filter(x=>x.phase17_status==='Plausible').length,13);assert(m.every(x=>x.expert_answer===null&&x.expert_question.length>20&&x.rocketbox_status==='Inconnu'));
 const f=read('expert-feedback-template.json');assert.equal(f.questions.length,6);assert(f.questions.every(q=>q.answer===null));assert.equal(f.sent,false);

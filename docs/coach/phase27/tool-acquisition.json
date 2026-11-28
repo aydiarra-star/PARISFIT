@@ -1,0 +1,6 @@
+{
+  "url": "https://github.com/FiloSottile/age/releases/download/v1.3.2/age-v1.3.2-linux-amd64.tar.gz",
+  "expectedDigest": "sha256:cbe24006683f8eb669266162894b9a522a1af52f2665fbc63a4bb032ed26ac10",
+  "status": "download-failed",
+  "errorType": "URLError"
+}

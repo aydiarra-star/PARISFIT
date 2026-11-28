@@ -1,0 +1,10 @@
+commit f4d4146a372d08acca620b1a9facf54368c1fcda
+
+D	tools/passive-qualification/__pycache__/acquire.cpython-311.pyc
+D	tools/passive-qualification/__pycache__/analyze.cpython-311.pyc
+D	tools/passive-qualification/__pycache__/build.cpython-311.pyc
+D	tools/passive-qualification/__pycache__/evidence.cpython-311.pyc
+D	tools/passive-qualification/__pycache__/mapping.cpython-311.pyc
+D	tools/passive-qualification/__pycache__/metrics.cpython-311.pyc
+D	tools/passive-qualification/__pycache__/static_diagram.cpython-311.pyc
+D	tools/passive-qualification/__pycache__/test_metrics.cpython-311.pyc

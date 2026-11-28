@@ -1,0 +1,1 @@
+PASS: geometry, skeleton rest transforms, skin weights, indices, materials, four embedded textures byte-identical; no animation data references

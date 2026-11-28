@@ -17,12 +17,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # migration regression reads the fc51383 worker
       - uses: actions/setup-node@v4
         with:
           node-version: 22
       - name: Vérifier la syntaxe JavaScript
         run: |
           node --check app.js
+          node --check app-state.js
+          node tests/app-state.cjs
           node --check demo-data.js
           node --check service-worker.js
           node --input-type=module --check < coach-content.js
@@ -64,14 +68,15 @@ jobs:
       - name: Browser regression and 3D tests
         run: |
           set -o pipefail
-          python3 -m http.server 3000 --bind 0.0.0.0 &
+          python3 tools/animation-lock/build_public.py
+          python3 tools/animation-lock/test_static.py
+          node tests/coach-animation-lock.cjs
+          node tests/phase24-preservation.cjs
+          python3 -m http.server 3000 --bind 0.0.0.0 --directory .cache/public &
           SERVER_PID=$!
           trap 'kill "$SERVER_PID"' EXIT
           mkdir -p .cache
           {
-            node tests/coach-independent-review-browser.cjs &&
-            node tests/coach-passive-qualification-browser.cjs &&
-            node tests/coach-documentary-review-browser.cjs &&
             npm run test:browser
           } 2>&1 | tee .cache/phase18-browser-ci.log
       - name: Preserve browser failure diagnostics
@@ -86,19 +91,16 @@ jobs:
                   chunk=text[i:i+3500].replace('%','%25').replace('\r','%0D').replace('\n','%0A')
                   print('::warning title=phase18-browser-tail-'+str(i//3500)+'::'+chunk)
           PYCODE
-      - name: Keep review screenshots
+      - name: Keep public-safe regression results only
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: coach-browser-review
           path: |
-            .cache/coach-review/
+            .cache/final-audit/
+            .cache/phase24/browser-report.json
+            .cache/phase24/migration-report.json
             .cache/phase18-browser-ci.log
-            docs/coach/phase3/*report.json
-            docs/coach/phase4/*report.json
-            docs/coach/phase5/*report.json
-            docs/coach/phase6/*report.json
-            docs/coach/phase7/*report.json
   blender-control:
     if: ${{ github.event_name == 'workflow_dispatch' && inputs.legacy_authoring == true }}
     # Public licensed fixtures ONLY. Never upload personal capture to this workflow.

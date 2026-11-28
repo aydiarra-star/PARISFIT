@@ -1,0 +1,17 @@
+{
+  "files": {
+    "preflight-output.txt": "71bd732f0e0814053b56c9d1a126fbd73b16b5a76c24b87cef82e443a524f3f1",
+    "input-files.csv": "053d2240daed09a2447c8ef25845836c1926a086d1a621bb0eee450157b743da",
+    "input-git-objects.csv": "035d5ae59f5b3a1c73b02bacd155500a3e8368f88a1fa9fa33cd188e552cca0a",
+    "preflight-result.json": "71bd732f0e0814053b56c9d1a126fbd73b16b5a76c24b87cef82e443a524f3f1",
+    "workflow-review.json": "e548b539781b44784071a63314f5f54d1e601e22434582d0a57c23676cc40df7",
+    "archive-manifest.md": "2cf6a3524f7111ac5a69241930cae572f5e7a3e04488e718f9a0cb18116edeed",
+    "volume-checksums.txt": "3332518c7ea192282444ebee76298b19211a30e9d81b1831a31ff99fc61c63f9",
+    "encryption-report.md": "f5f5920f9c86a15eed4e37f017ee18d2f01012d2add3ec3bf7df9fceba0345e6",
+    "restore-verification.md": "b3ca73592abf66ff25b359c3fa88814a71c1e46a274c6150f7ae2cc0d895b5e2",
+    "publication-exclusion-audit.md": "c6c2f09c156cdeb8fae139779d973434c6bacb2ffbb7eededd26ce64f957b739",
+    "recovery-instructions.md": "84484dd696278cd52cc68f64114383cf5d060330e6e7ee0f45bc522a80b7118c",
+    "decision-report.md": "6d95fc2a2b7f5d41953ac5aa2b75f0eedcf92e83403646ec1c2bc65a0931143e",
+    "test-output.txt": "b06a0b8be85a66a70164bb5f5e9a2d60ea33cf3f789bcbf98841736555fbf780"
+  }
+}

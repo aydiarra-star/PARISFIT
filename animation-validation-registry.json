@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "phase24-locked-default",
+  "assetVersion": "5379624-source-unchanged",
+  "assetPathInternal": "assets/coach/coach.glb",
+  "assetSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+  "allowedStatuses": [
+    "non évaluée",
+    "en cours d’évaluation",
+    "refusée",
+    "validée"
+  ],
+  "clips": [
+    {
+      "clipId": "squat",
+      "exerciseId": "squat",
+      "fileVersion": "5379624-source-unchanged",
+      "fileSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+      "status": "non évaluée",
+      "reviewer": null,
+      "validationDate": null,
+      "report": null,
+      "scope": null,
+      "conditions": [],
+      "limits": []
+    },
+    {
+      "clipId": "pompes",
+      "exerciseId": "pompes",
+      "fileVersion": "5379624-source-unchanged",
+      "fileSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+      "status": "non évaluée",
+      "reviewer": null,
+      "validationDate": null,
+      "report": null,
+      "scope": null,
+      "conditions": [],
+      "limits": []
+    },
+    {
+      "clipId": "gainage",
+      "exerciseId": "gainage",
+      "fileVersion": "5379624-source-unchanged",
+      "fileSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+      "status": "non évaluée",
+      "reviewer": null,
+      "validationDate": null,
+      "report": null,
+      "scope": null,
+      "conditions": [],
+      "limits": []
+    },
+    {
+      "clipId": "fentes",
+      "exerciseId": "fentes",
+      "fileVersion": "5379624-source-unchanged",
+      "fileSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+      "status": "non évaluée",
+      "reviewer": null,
+      "validationDate": null,
+      "report": null,
+      "scope": null,
+      "conditions": [],
+      "limits": []
+    },
+    {
+      "clipId": "jumpingjacks",
+      "exerciseId": "jumpingjacks",
+      "fileVersion": "5379624-source-unchanged",
+      "fileSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+      "status": "non évaluée",
+      "reviewer": null,
+      "validationDate": null,
+      "report": null,
+      "scope": null,
+      "conditions": [],
+      "limits": []
+    },
+    {
+      "clipId": "mountainclimber",
+      "exerciseId": "mountainclimber",
+      "fileVersion": "5379624-source-unchanged",
+      "fileSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+      "status": "non évaluée",
+      "reviewer": null,
+      "validationDate": null,
+      "report": null,
+      "scope": null,
+      "conditions": [],
+      "limits": []
+    },
+    {
+      "clipId": "etirementdos",
+      "exerciseId": "etirementdos",
+      "fileVersion": "5379624-source-unchanged",
+      "fileSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+      "status": "non évaluée",
+      "reviewer": null,
+      "validationDate": null,
+      "report": null,
+      "scope": null,
+      "conditions": [],
+      "limits": []
+    },
+    {
+      "clipId": "mobiliteepaules",
+      "exerciseId": "mobiliteepaules",
+      "fileVersion": "5379624-source-unchanged",
+      "fileSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+      "status": "non évaluée",
+      "reviewer": null,
+      "validationDate": null,
+      "report": null,
+      "scope": null,
+      "conditions": [],
+      "limits": []
+    }
+  ]
+}

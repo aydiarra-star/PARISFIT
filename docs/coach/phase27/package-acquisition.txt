@@ -1,0 +1,9 @@
+Collecting pyrage==1.4.0
+  Downloading pyrage-1.4.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (924 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 924.7/924.7 kB 28.1 MB/s eta 0:00:00
+Saved ./.cache/phase27/wheels/pyrage-1.4.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Successfully downloaded pyrage
+Looking in links: .cache/phase27/wheels
+Processing ./.cache/phase27/wheels/pyrage-1.4.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Installing collected packages: pyrage
+Successfully installed pyrage-1.4.0

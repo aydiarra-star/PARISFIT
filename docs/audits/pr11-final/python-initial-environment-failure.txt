@@ -1,0 +1,37 @@
+Traceback (most recent call last):
+  File "/home/user/PARISFIT/tools/model-qualification/test_contracts.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/home/user/PARISFIT/tools/metadata-plan/test_plan.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/home/user/PARISFIT/tools/passive-qualification/test_metrics.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+........
+----------------------------------------------------------------------
+Ran 8 tests in 0.003s
+
+OK
+........
+----------------------------------------------------------------------
+Ran 8 tests in 0.005s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.027s
+
+OK
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK

@@ -1,0 +1,11 @@
+test_deliverables (__main__.Proof.test_deliverables) ... ok
+test_history_scope (__main__.Proof.test_history_scope) ... ok
+test_multi_volume_tool (__main__.Proof.test_multi_volume_tool) ... ok
+test_no_private_key_in_deliverables (__main__.Proof.test_no_private_key_in_deliverables) ... ok
+test_preservation (__main__.Proof.test_preservation) ... ok
+test_recorded_crypto (__main__.Proof.test_recorded_crypto) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.620s
+
+OK

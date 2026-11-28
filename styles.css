@@ -154,3 +154,6 @@ main{max-width:1250px;padding-bottom:115px}.view{padding-top:24px}.topbar{border
 .coach-stage-main{grid-template-areas:"visual info" "controls info";align-items:start}.coach-stage-visual{grid-area:visual}.coach-stage-controls{grid-area:controls}.coach-stage-info{grid-area:info}.coach-stage-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}@media(max-width:720px){.coach-stage-main{grid-template-areas:"visual" "controls" "info";gap:12px}}
 
 .coach-view-cut canvas{animation:coach-demonstration-cut .22s ease-out}@keyframes coach-demonstration-cut{0%,30%{opacity:0}100%{opacity:1}}
+/* Neutral/real data labels must fit the same mobile cards as numeric examples. */
+.today-stats > article{min-width:0}.energy-value{max-width:100%;white-space:normal;overflow-wrap:anywhere}.vitality-meta{min-width:0}.vitality-delta{font-size:14px;overflow-wrap:anywhere}.vitality-streak{white-space:normal}
+#storage-notice{padding:12px;border:1px solid #dca66b;border-radius:12px;background:#fff5e8;color:#65421f;font-size:14px;line-height:1.5}

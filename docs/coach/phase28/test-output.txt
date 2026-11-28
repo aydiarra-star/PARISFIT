@@ -1,0 +1,11 @@
+test_branch (__main__.Preparation.test_branch) ... ok
+test_deliverables (__main__.Preparation.test_deliverables) ... ok
+test_gate_closed (__main__.Preparation.test_gate_closed) ... ok
+test_no_fake_checksums (__main__.Preparation.test_no_fake_checksums) ... ok
+test_precise_scope (__main__.Preparation.test_precise_scope) ... ok
+test_prior_evidence (__main__.Preparation.test_prior_evidence) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.014s
+
+OK

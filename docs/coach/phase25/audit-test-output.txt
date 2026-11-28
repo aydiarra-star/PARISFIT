@@ -1,0 +1,11 @@
+test_artifacts (__main__.Audit.test_artifacts) ... ok
+test_backup (__main__.Audit.test_backup) ... ok
+test_history (__main__.Audit.test_history) ... ok
+test_publication (__main__.Audit.test_publication) ... ok
+test_reports (__main__.Audit.test_reports) ... ok
+test_worktree_preserved (__main__.Audit.test_worktree_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.347s
+
+OK

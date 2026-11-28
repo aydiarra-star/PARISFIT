@@ -1,0 +1,24 @@
+{
+  "account": "aydiarra-star",
+  "plan": "not exposed",
+  "visibleRepositoryCount": 19,
+  "visiblePrivateRepositoryCount": 0,
+  "parisfit": [
+    {
+      "full_name": "aydiarra-star/PARISFIT",
+      "private": false,
+      "permissions": {
+        "admin": true,
+        "maintain": true,
+        "push": true,
+        "triage": true,
+        "pull": true
+      },
+      "has_pages": false
+    }
+  ],
+  "scopeLimit": "Only repositories visible to this integration; no proof that other private repositories do not exist. No unrelated repository content inspected.",
+  "connectedApps": "none per session; GitHub connector unsupported; gh CLI read access works",
+  "diskBytesFree": 13789868032,
+  "durableDestinationVerified": false
+}

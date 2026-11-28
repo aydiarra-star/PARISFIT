@@ -1,0 +1,28 @@
+{
+  "status": "NO_PATTERN_MATCH",
+  "unitsScanned": 3802,
+  "nestedMembersScanned": 884,
+  "patterns": [
+    "private-key-material",
+    "github-token",
+    "aws-access-key-id",
+    "google-api-key",
+    "credential-literal",
+    "signed-url"
+  ],
+  "findings": [],
+  "limits": [
+    {
+      "path": ".cache/phase8/xrender.tar.gz",
+      "reason": "empty or unreadable archive"
+    }
+  ],
+  "valuesRedacted": true,
+  "sharingAuthorized": false,
+  "certifiesNoSecret": false,
+  "notes": [
+    "Pattern matching is not proof of absence of all secrets.",
+    "One nested archive level only; arbitrary encryption and recursively compressed binary content not proven safe.",
+    "Personal data, scientific rights, author emails and professional contacts require separate review."
+  ]
+}

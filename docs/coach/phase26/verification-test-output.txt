@@ -1,0 +1,10 @@
+test_archive_hashes (__main__.Backup.test_archive_hashes) ... ok
+test_file_restore_and_sources (__main__.Backup.test_file_restore_and_sources) ... ok
+test_no_overclaim (__main__.Backup.test_no_overclaim) ... ok
+test_refs_and_integrity (__main__.Backup.test_refs_and_integrity) ... ok
+test_reports (__main__.Backup.test_reports) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.516s
+
+OK

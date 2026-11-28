@@ -1,0 +1,196 @@
+{
+  "path": ".cache/phase26-work/backups/phase26-evidence.tar.gz",
+  "bytes": 270649,
+  "fileCount": 36,
+  "sha256": "2f2d6a800272f68a3dcbdff9a557a6b1c45b3c3ebe26a368f79237619b37115d",
+  "createdAtObservedUTC": "2026-11-28T11:31:56.158493+00:00",
+  "restore": "PASS",
+  "restoredFiles": 36,
+  "secretPatternMatches": [],
+  "certifiesNoSecret": false,
+  "durable": false,
+  "uploaded": false,
+  "files": [
+    {
+      "path": "docs/coach/phase26/actions-metadata.json",
+      "bytes": 48231,
+      "sha256": "d0f77ab0c5b6b75175cdfe1b3b26af889286f9655bb4bdaadc63beed33d13947"
+    },
+    {
+      "path": "docs/coach/phase26/archive-register.json",
+      "bytes": 1659,
+      "sha256": "e9cc2b3ef2a0ea0fe64e0b2949458fb012ca500a7fe4e96969c0363542333a69"
+    },
+    {
+      "path": "docs/coach/phase26/artifact-retrieval.json",
+      "bytes": 4545,
+      "sha256": "494aadf9c6fbe5fce35ed55589b6ec17b9d03a6185a1999807e5ae489ef301d6"
+    },
+    {
+      "path": "docs/coach/phase26/backup-file-manifest.json",
+      "bytes": 354744,
+      "sha256": "bd36050e534b9f9b4b1eb1ff9507581f674c8744ffae923a2865ee4c5a12487b"
+    },
+    {
+      "path": "docs/coach/phase26/backup-procedure.md",
+      "bytes": 4339,
+      "sha256": "f6d7d7252f1b0bf080b410aeb4a901b29f0361c05e2ee2246172fb58776a3b5d"
+    },
+    {
+      "path": "docs/coach/phase26/backup-run-output.txt",
+      "bytes": 1206,
+      "sha256": "7f0cc424dbc0758290e05214d9de933e7ff46c5b09578c2346f5140c9e65637c"
+    },
+    {
+      "path": "docs/coach/phase26/backup-scope.md",
+      "bytes": 4935,
+      "sha256": "e3796ad582d12847683993fed2177d81543c98239beb875f32bf132fdc3471e9"
+    },
+    {
+      "path": "docs/coach/phase26/decision-report.md",
+      "bytes": 4266,
+      "sha256": "0b418f82e93e8ac001896e059b8fc75cd69115f652ea110d467524351165cc8e"
+    },
+    {
+      "path": "docs/coach/phase26/destination-assessment.md",
+      "bytes": 2746,
+      "sha256": "8da722e6e476d4e335413ef9aa1b54721ecf2487ad6886a513c18e2d5388b07d"
+    },
+    {
+      "path": "docs/coach/phase26/destination-evidence.json",
+      "bytes": 733,
+      "sha256": "13368d4c6d9375c782c3744239f82e12c3c27d6d198705af4ab861a325d3e621"
+    },
+    {
+      "path": "docs/coach/phase26/exclusions.json",
+      "bytes": 632,
+      "sha256": "ba812b1f7901717665dce7add115af41839422dcc7d77001cc6fe4bc2fa173d4"
+    },
+    {
+      "path": "docs/coach/phase26/git-object-manifest.json",
+      "bytes": 307785,
+      "sha256": "13e973f1d6efaf449fb8b4fabc537f3de30889134bac971aa5962afaddbc97f4"
+    },
+    {
+      "path": "docs/coach/phase26/integrity-report.md",
+      "bytes": 2336,
+      "sha256": "4237710b124c828dece718bba90bd039832c9eb4eb1a64bb2328614e7b2478c4"
+    },
+    {
+      "path": "docs/coach/phase26/local-refs.txt",
+      "bytes": 2078,
+      "sha256": "319118723d38d7df7dc6d71d55945a11461c8c24c03199c5beda2d28450201c0"
+    },
+    {
+      "path": "docs/coach/phase26/prior-preservation.json",
+      "bytes": 52,
+      "sha256": "584daf79e114344ce8c9f7f38ad399e115a4a8a5be025043393f8bcd73f93d64"
+    },
+    {
+      "path": "docs/coach/phase26/public-allowlist.json",
+      "bytes": 4253,
+      "sha256": "5ce2a283d64d25d469ffac20080c9886dd49bb3e6fc8c7a3f1bdb5b36c652726"
+    },
+    {
+      "path": "docs/coach/phase26/public-allowlist.md",
+      "bytes": 3175,
+      "sha256": "a5dd1ad560b2d4fbf5128f7286a2682c8f841a8a29586ec4e031f984be38bbce"
+    },
+    {
+      "path": "docs/coach/phase26/public-repository-plan.md",
+      "bytes": 4229,
+      "sha256": "8064855ca4996ba016c9838471c1b5436d30b7b45dd7d9fff7d541a83f21f34a"
+    },
+    {
+      "path": "docs/coach/phase26/refs-manifest.json",
+      "bytes": 2221,
+      "sha256": "61b9b3059ddb0b8098f89613281d3f468e9ff42f5f0c300a0cd2fef87f854938"
+    },
+    {
+      "path": "docs/coach/phase26/remote-coverage.json",
+      "bytes": 4753,
+      "sha256": "01a22d21ecc7f8c62d544dd30d6c6b2d438cd2f0a5576c07139959f268674737"
+    },
+    {
+      "path": "docs/coach/phase26/remote-refs.txt",
+      "bytes": 1739,
+      "sha256": "a1149149c95a1d250aedba8e26fadec1cecbc6e2c97e7c1f8f42293f3c548da6"
+    },
+    {
+      "path": "docs/coach/phase26/restore-test.md",
+      "bytes": 2663,
+      "sha256": "ba6aa5b631e7471d1393aa3ed20318b54e2451717155640b226a2466a4eab08b"
+    },
+    {
+      "path": "docs/coach/phase26/restored-git-fsck.json",
+      "bytes": 152,
+      "sha256": "500fc98ac7a54a53776d6c687d66bf4af3f1c8be6dad649cc02daca5d1673fec"
+    },
+    {
+      "path": "docs/coach/phase26/restored-regression-output.txt",
+      "bytes": 3873,
+      "sha256": "cabc77ddb4cd65a9508b4d543a296882bdb3902fb09c7264a547f810ed5d5244"
+    },
+    {
+      "path": "docs/coach/phase26/restored-static-output.txt",
+      "bytes": 144,
+      "sha256": "6277c6bc60a78da9007b5adaaf8d2f3f262e0bc8f43ab35677f0282e3c5e43c5"
+    },
+    {
+      "path": "docs/coach/phase26/security-review.md",
+      "bytes": 2873,
+      "sha256": "be89a83e446dc4c22101a913da9f3a76554b90df2f2b7dc567e7e56c04c9bcde"
+    },
+    {
+      "path": "docs/coach/phase26/security-scan-output.txt",
+      "bytes": 781,
+      "sha256": "354de5771d03db49076ca326b1b7cc094ce29676812cbe6a6a7f3419c4cab3e9"
+    },
+    {
+      "path": "docs/coach/phase26/security-scan.json",
+      "bytes": 781,
+      "sha256": "354de5771d03db49076ca326b1b7cc094ce29676812cbe6a6a7f3419c4cab3e9"
+    },
+    {
+      "path": "docs/coach/phase26/storage-mount.txt",
+      "bytes": 44,
+      "sha256": "d020695327c38e815880a04fde9fe6d69aaaef6760d3fdb0fab2ffb769031ff0"
+    },
+    {
+      "path": "docs/coach/phase26/verification-test-output.txt",
+      "bytes": 433,
+      "sha256": "851cd3a551d2123947cbfba1c5dc7abf1a56d7b3ced19cc574d1daf0399a8d44"
+    },
+    {
+      "path": "tools/durable-backup/assess.py",
+      "bytes": 1713,
+      "sha256": "2f9e1f3ac11cbf2b341808df48b89c52fbdc47af12bdc6aa5085c3c2545717f8"
+    },
+    {
+      "path": "tools/durable-backup/local_backup.py",
+      "bytes": 6313,
+      "sha256": "9a0c4250cd40a51e32a81ac4c7515c061238bb482b8c9c5f9981a75e6cbca7d4"
+    },
+    {
+      "path": "tools/durable-backup/probe_artifacts.py",
+      "bytes": 1724,
+      "sha256": "32d8e9e4fcecc007c4ceeddbd9a9cf79af34d3de1bf42affb704b7a1f296ff15"
+    },
+    {
+      "path": "tools/durable-backup/seal_evidence.py",
+      "bytes": 2398,
+      "sha256": "0085ae9d4002cdc13dee42bdcf472d6eb5d09f0f01614d4b9efd3551a722b46e"
+    },
+    {
+      "path": "tools/durable-backup/security_scan.py",
+      "bytes": 3344,
+      "sha256": "1c7c0cbf8c4974dbceeb5f9ea8b50e322ed1bb1bff508591ca388d6ff9a241c5"
+    },
+    {
+      "path": "tools/durable-backup/verify.py",
+      "bytes": 1860,
+      "sha256": "8c15d9d383c182e7520c3a9acc697a48f88b6ad728a93bced21a6e512dcda4c6"
+    }
+  ],
+  "receiptExcludedFromArchive": true
+}

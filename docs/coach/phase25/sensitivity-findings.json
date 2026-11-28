@@ -1,0 +1,214 @@
+{
+  "scope": "all reachable textual Git blobs; values intentionally omitted",
+  "findings": [
+    {
+      "gitBlob": "0db023bbc546afdc8add099ec737d26dbe2399fc",
+      "type": "email",
+      "count": 7,
+      "paths": [
+        "tools/anatomy/export.py"
+      ]
+    },
+    {
+      "gitBlob": "101eb200819c7f90770bc4bee607d74cf362aacd",
+      "type": "email",
+      "count": 3,
+      "paths": [
+        "docs/coach/phase22/laboratories.md"
+      ]
+    },
+    {
+      "gitBlob": "160f799724273d63e6470229942535aa2787a742",
+      "type": "email",
+      "count": 7,
+      "paths": [
+        "tools/anatomy/export.py"
+      ]
+    },
+    {
+      "gitBlob": "1dbf6f621aae205a4779a1e38c61bfcf12208817",
+      "type": "email",
+      "count": 3,
+      "paths": [
+        "tools/blender-pipeline/retarget.py"
+      ]
+    },
+    {
+      "gitBlob": "21380924d2ecf0501d59cf8289a2e3d010b776c8",
+      "type": "email",
+      "count": 7,
+      "paths": [
+        "docs/coach/phase22/candidate-comparison.csv"
+      ]
+    },
+    {
+      "gitBlob": "37167429e971ffe58feb9e604d71913356fff7b8",
+      "type": "email",
+      "count": 3,
+      "paths": [
+        "tools/biomechanics/export.py"
+      ]
+    },
+    {
+      "gitBlob": "37f2fcd7d892175ee608749e42d796b6fbf59318",
+      "type": "email",
+      "count": 2,
+      "paths": [
+        "tools/blender-pipeline/retarget.py"
+      ]
+    },
+    {
+      "gitBlob": "38bc2a930b7a7a69968f4adc8e185c357dddb48f",
+      "type": "email",
+      "count": 1,
+      "paths": [
+        "docs/coach/phase19/archive-probe.json"
+      ]
+    },
+    {
+      "gitBlob": "39cfea0033f1e9a9c39990d2b76e5726cdaaf26a",
+      "type": "email",
+      "count": 4,
+      "paths": [
+        "docs/coach/phase22/candidates.json"
+      ]
+    },
+    {
+      "gitBlob": "3a9b0f9af3d7bcb6b63f4b112fbc06f1182f1c23",
+      "type": "email",
+      "count": 3,
+      "paths": [
+        "tools/blender-pipeline/retarget.py"
+      ]
+    },
+    {
+      "gitBlob": "3ca8856c06445207c74b4ad0ba08f337d37b3c5c",
+      "type": "email",
+      "count": 3,
+      "paths": [
+        "tools/biomechanics/export.py"
+      ]
+    },
+    {
+      "gitBlob": "5f44ec035ecf22c0b8c16d3c82c9593884e7fb45",
+      "type": "email",
+      "count": 9,
+      "paths": [
+        "tools/anatomy/export.py"
+      ]
+    },
+    {
+      "gitBlob": "6c080cd999e486a30e5d749e97e136ef9283a6e5",
+      "type": "email",
+      "count": 1,
+      "paths": [
+        "tools/biomechanics/geometry.py"
+      ]
+    },
+    {
+      "gitBlob": "72409425973cebbe1dd9a7db009d435c8ee841dc",
+      "type": "email",
+      "count": 5,
+      "paths": [
+        "docs/coach/phase22/sources.json"
+      ]
+    },
+    {
+      "gitBlob": "74adf686b83c55e446f65428579038efcb2848c6",
+      "type": "email",
+      "count": 3,
+      "paths": [
+        "tools/biomechanics/export.py"
+      ]
+    },
+    {
+      "gitBlob": "80605d3d8def6532cf15c3959f733b05bf9190a8",
+      "type": "email",
+      "count": 2,
+      "paths": [
+        "tools/blender-pipeline/retarget.py"
+      ]
+    },
+    {
+      "gitBlob": "8498db214c059616584b2589d2ad09e59ce4debc",
+      "type": "email",
+      "count": 7,
+      "paths": [
+        "tools/anatomy/export.py"
+      ]
+    },
+    {
+      "gitBlob": "8e0749fde9b7f3edeb177125284306200c78df28",
+      "type": "email",
+      "count": 1,
+      "paths": [
+        "tools/biomechanics/geometry.py"
+      ]
+    },
+    {
+      "gitBlob": "95af420e1c085609ed026b85daa790b00703fb6d",
+      "type": "email",
+      "count": 13,
+      "paths": [
+        "tools/expert-search/build.py"
+      ]
+    },
+    {
+      "gitBlob": "99201529aa794a4fcb2a58696bebe9a5418dddd1",
+      "type": "email",
+      "count": 2,
+      "paths": [
+        "docs/coach/phase5/licenses/CMU-BVH-READMEFIRST.txt"
+      ]
+    },
+    {
+      "gitBlob": "b0e0ac9f8ac853f5bba3b8e337dbea24155d3154",
+      "type": "email",
+      "count": 5,
+      "paths": [
+        "docs/coach/phase22/sources.md"
+      ]
+    },
+    {
+      "gitBlob": "c779617940517aa15d192c31b90fa444f955c1cd",
+      "type": "email",
+      "count": 2,
+      "paths": [
+        "docs/coach/phase18/historical-code-evidence.txt"
+      ]
+    },
+    {
+      "gitBlob": "d4520afdd2bda33619c9654dadd2b7c18e3ee154",
+      "type": "email",
+      "count": 3,
+      "paths": [
+        "tools/anatomy/audit.py"
+      ]
+    },
+    {
+      "gitBlob": "d7eb6a9ac37826d9a7fc8981c73f720973e5d2e2",
+      "type": "email",
+      "count": 2,
+      "paths": [
+        "tools/blender-pipeline/retarget.py"
+      ]
+    },
+    {
+      "gitBlob": "e59357775ebb30a8447740bed8db5f120554aa3a",
+      "type": "email",
+      "count": 2,
+      "paths": [
+        "tools/blender-pipeline/retarget.py"
+      ]
+    },
+    {
+      "gitBlob": "f92d5b5cd4e9d94a0003da2c5319d8636f105270",
+      "type": "email",
+      "count": 5,
+      "paths": [
+        "docs/coach/phase22/expert-candidates.md"
+      ]
+    }
+  ],
+  "binarySemanticReview": "not performed; no assertion of absence of personal data"
+}

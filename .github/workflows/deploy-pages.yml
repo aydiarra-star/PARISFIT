@@ -1,9 +1,13 @@
 name: PARISFIT — publication GitHub Pages
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
+    inputs:
+      confirm_deployment:
+        description: "Autorisation explicite de publier en production"
+        type: boolean
+        required: true
+        default: false
 
 permissions:
   contents: read
@@ -16,6 +20,7 @@ concurrency:
 
 jobs:
   deploy:
+    if: ${{ github.ref == 'refs/heads/main' && inputs.confirm_deployment == true }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -25,10 +30,12 @@ jobs:
         uses: actions/checkout@v4
       - name: Configurer GitHub Pages
         uses: actions/configure-pages@v5
+      - name: Construire uniquement les ressources publiques autorisées
+        run: python3 tools/animation-lock/build_public.py
       - name: Préparer les fichiers statiques
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: .cache/public
       - name: Publier PARISFIT
         id: deployment
         uses: actions/deploy-pages@v4

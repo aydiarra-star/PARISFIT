@@ -1,0 +1,32 @@
+{
+  "commits": 158,
+  "refs": 28,
+  "remoteBranches": 12,
+  "tags": 0,
+  "uniqueGitBlobs": 1135,
+  "pathBlobVersions": 1158,
+  "historicalCategories": {
+    "application-or-infrastructure": 213,
+    "3d-model": 7,
+    "report-evidence-or-working-data": 493,
+    "diagnostic-or-test-tool": 302,
+    "video": 141,
+    "capture-or-biomechanical-model": 2
+  },
+  "worktreeFiles": 1739,
+  "worktreeBytes": 489903558,
+  "worktreeCategories": {
+    "report-evidence-or-working-data": 1249,
+    "diagnostic-or-test-tool": 233,
+    "capture-or-biomechanical-model": 16,
+    "video": 181,
+    "3d-model": 8,
+    "archive-needs-nested-review": 6,
+    "application-or-infrastructure": 46
+  },
+  "animatedGLBVersions": 7,
+  "lfsPointers": 0,
+  "secretPatternCounts": {
+    "email": 26
+  }
+}

@@ -1,0 +1,7 @@
+# BLOCKED_OWNER_KEY_MISSING
+# Aucun volume chiffré réel Phase28 n'a été créé.
+# Aucun SHA256 de volume disponible ; aucune entrée de checksum valide.
+# Ne PAS utiliser ce fichier pour certifier une sauvegarde avec sha256sum -c.
+# Ne pas substituer les hashes fictifs Phase27 ou les hashes en clair Phase26.
+# Après chiffrement autorisé : remplacer par les résultats réellement mesurés,
+# volume numéroté, taille <= 20971520 octets, SHA256, ordre et hash réassemblé.

@@ -1,0 +1,214 @@
+[
+  {
+    "path": "assets/coach/coach.glb",
+    "gitBlob": "6feb1f33cfb728412ebf9860fe4c1474cfe860dd",
+    "category": "3d-model",
+    "commitCount": 57,
+    "exampleCommit": "0d0e08ca1f4642945b0466fab4d739c4035e2a69",
+    "bytes": 5789744,
+    "sha256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+    "glb": {
+      "animationCount": 8,
+      "clipNames": [
+        "squat",
+        "pompes",
+        "gainage",
+        "fentes",
+        "jumpingjacks",
+        "mountainclimber",
+        "etirementdos",
+        "mobiliteepaules"
+      ],
+      "accessors": 1326
+    },
+    "lfsPointer": false,
+    "atCurrentHEAD": true,
+    "atRemoteMain": false,
+    "worktreePathExists": true,
+    "atRefTips": [
+      "refs/audit/pull/11/head",
+      "refs/audit/pull/11/merge",
+      "refs/heads/arena/a03f64da-parisfit",
+      "refs/remotes/origin/arena/a03f64da-parisfit"
+    ],
+    "historicalOnlyVersion": false,
+    "pathAbsentFromCurrentHEAD": false,
+    "pathAbsentFromEveryTip": false
+  },
+  {
+    "path": "assets/coach/coach.glb",
+    "gitBlob": "d8886d09129913ae4830f4a81cd6dc1c6331bb68",
+    "category": "3d-model",
+    "commitCount": 3,
+    "exampleCommit": "10eb8bfc9fc3ef04d5749f7d19646ad8b1cd8aea",
+    "bytes": 3190948,
+    "sha256": "5a999b3dc005d089704da1829690bdecfe7a6fd753c4d82e300617966c967311",
+    "glb": {
+      "animationCount": 8,
+      "clipNames": [
+        "squat",
+        "pompes",
+        "gainage",
+        "fentes",
+        "jumpingjacks",
+        "mountainclimber",
+        "etirementdos",
+        "mobiliteepaules"
+      ],
+      "accessors": 1326
+    },
+    "lfsPointer": false,
+    "atCurrentHEAD": false,
+    "atRemoteMain": false,
+    "worktreePathExists": true,
+    "atRefTips": [],
+    "historicalOnlyVersion": true,
+    "pathAbsentFromCurrentHEAD": false,
+    "pathAbsentFromEveryTip": false
+  },
+  {
+    "path": "docs/coach/phase5/mocap-prototype.glb",
+    "gitBlob": "a4b3534b76ca5dc007a792b4f03b86c47f544f90",
+    "category": "3d-model",
+    "commitCount": 54,
+    "exampleCommit": "0d0e08ca1f4642945b0466fab4d739c4035e2a69",
+    "bytes": 5155904,
+    "sha256": "a4641b1b516367d9558a38ec96ca7b04a35b132b4edda5f6e096f2bd1a08f4f4",
+    "glb": {
+      "animationCount": 1,
+      "clipNames": [
+        "mocap-stand-to-crouch"
+      ],
+      "accessors": 182
+    },
+    "lfsPointer": false,
+    "atCurrentHEAD": true,
+    "atRemoteMain": false,
+    "worktreePathExists": true,
+    "atRefTips": [
+      "refs/audit/pull/11/head",
+      "refs/audit/pull/11/merge",
+      "refs/heads/arena/a03f64da-parisfit",
+      "refs/remotes/origin/arena/a03f64da-parisfit"
+    ],
+    "historicalOnlyVersion": false,
+    "pathAbsentFromCurrentHEAD": false,
+    "pathAbsentFromEveryTip": false
+  },
+  {
+    "path": "docs/coach/phase5/video-prototype.glb",
+    "gitBlob": "d9bd6808a595b0a44a7f5868210c1904a6fd4662",
+    "category": "3d-model",
+    "commitCount": 54,
+    "exampleCommit": "0d0e08ca1f4642945b0466fab4d739c4035e2a69",
+    "bytes": 5154316,
+    "sha256": "dfb252000de12d6b6c1bfca3a1590868ecb5cde1de31ec58122b3b983ab001d1",
+    "glb": {
+      "animationCount": 1,
+      "clipNames": [
+        "video-stand-to-crouch"
+      ],
+      "accessors": 182
+    },
+    "lfsPointer": false,
+    "atCurrentHEAD": true,
+    "atRemoteMain": false,
+    "worktreePathExists": true,
+    "atRefTips": [
+      "refs/audit/pull/11/head",
+      "refs/audit/pull/11/merge",
+      "refs/heads/arena/a03f64da-parisfit",
+      "refs/remotes/origin/arena/a03f64da-parisfit"
+    ],
+    "historicalOnlyVersion": false,
+    "pathAbsentFromCurrentHEAD": false,
+    "pathAbsentFromEveryTip": false
+  },
+  {
+    "path": "docs/coach/phase6/corrected.glb",
+    "gitBlob": "7586e9fb8f931f153bdf36dc7f7ed59e02201400",
+    "category": "3d-model",
+    "commitCount": 53,
+    "exampleCommit": "0d0e08ca1f4642945b0466fab4d739c4035e2a69",
+    "bytes": 5200000,
+    "sha256": "be9622142e4a0792c1e200540b938a3a5de107b4961f15b618df1c042d0efa69",
+    "glb": {
+      "animationCount": 1,
+      "clipNames": [
+        "cmu-complete-corrected"
+      ],
+      "accessors": 182
+    },
+    "lfsPointer": false,
+    "atCurrentHEAD": true,
+    "atRemoteMain": false,
+    "worktreePathExists": true,
+    "atRefTips": [
+      "refs/audit/pull/11/head",
+      "refs/audit/pull/11/merge",
+      "refs/heads/arena/a03f64da-parisfit",
+      "refs/remotes/origin/arena/a03f64da-parisfit"
+    ],
+    "historicalOnlyVersion": false,
+    "pathAbsentFromCurrentHEAD": false,
+    "pathAbsentFromEveryTip": false
+  },
+  {
+    "path": "docs/coach/phase6/retargeted.glb",
+    "gitBlob": "c953537172d75997989ba3ce1a2a7b84794387a3",
+    "category": "3d-model",
+    "commitCount": 53,
+    "exampleCommit": "0d0e08ca1f4642945b0466fab4d739c4035e2a69",
+    "bytes": 5198268,
+    "sha256": "4abb65cbbcd0331b261b4cc34d9638d4367c90869c769cf783ec0173c0a71be2",
+    "glb": {
+      "animationCount": 1,
+      "clipNames": [
+        "cmu-complete-raw"
+      ],
+      "accessors": 182
+    },
+    "lfsPointer": false,
+    "atCurrentHEAD": true,
+    "atRemoteMain": false,
+    "worktreePathExists": true,
+    "atRefTips": [
+      "refs/audit/pull/11/head",
+      "refs/audit/pull/11/merge",
+      "refs/heads/arena/a03f64da-parisfit",
+      "refs/remotes/origin/arena/a03f64da-parisfit"
+    ],
+    "historicalOnlyVersion": false,
+    "pathAbsentFromCurrentHEAD": false,
+    "pathAbsentFromEveryTip": false
+  },
+  {
+    "path": "docs/coach/phase7/prototype.glb",
+    "gitBlob": "89a11d49ab085e9c0389de78130bf6bd284815a8",
+    "category": "3d-model",
+    "commitCount": 52,
+    "exampleCommit": "0d0e08ca1f4642945b0466fab4d739c4035e2a69",
+    "bytes": 5627520,
+    "sha256": "de21279072e548d79fe1a2421dd155c5077df2e307ae4a59388bbafeaad456a6",
+    "glb": {
+      "animationCount": 1,
+      "clipNames": [
+        "pushup-control"
+      ],
+      "accessors": 184
+    },
+    "lfsPointer": false,
+    "atCurrentHEAD": true,
+    "atRemoteMain": false,
+    "worktreePathExists": true,
+    "atRefTips": [
+      "refs/audit/pull/11/head",
+      "refs/audit/pull/11/merge",
+      "refs/heads/arena/a03f64da-parisfit",
+      "refs/remotes/origin/arena/a03f64da-parisfit"
+    ],
+    "historicalOnlyVersion": false,
+    "pathAbsentFromCurrentHEAD": false,
+    "pathAbsentFromEveryTip": false
+  }
+]

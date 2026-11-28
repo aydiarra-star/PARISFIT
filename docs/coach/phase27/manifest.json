@@ -1,0 +1,28 @@
+{
+  "files": {
+    "remote-refs.txt": "a1149149c95a1d250aedba8e26fadec1cecbc6e2c97e7c1f8f42293f3c548da6",
+    "age-release.json": "bfedee2867e14acc4206a4d0934fcaaa408907559f94e44a58e943b265250070",
+    "tool-acquisition.json": "6459b42e9731827d9c245f02042c2308de997c8addd27f14e20bd5b889bc9eba",
+    "package-acquisition.txt": "551b6ff5751cae7cd2a35fe33a3821ee9b01150cecc110247d9eb430e0ef3942",
+    "poc-output.txt": "879ca86c3bac06af959a4a86c065900160fb343e69c81e3f453fc690fa84e62e",
+    "poc-results.json": "879ca86c3bac06af959a4a86c065900160fb343e69c81e3f453fc690fa84e62e",
+    "pyrage-provenance.json": "083bba9c8534f9d28891709c0e0b50a525f41bd03e08f83d26363f15a311349d",
+    "history-versions.json": "9f5172daa175eee85b3f3359d6a93e93da2b6eb585d29c04139f1850896abc09",
+    "history-summary.json": "2f40626a70640c9fabcb1e281dc8793f6e4d424cf26914de3d1f7a5d07a365df",
+    "historical-only-versions.json": "bf0477dac2eb0228bdd81f1d3bfdb80821b5ead3a250ac3dd1cd5594b6a10141",
+    "deletion-events.txt": "5a0b3a0c471143036d0e3e97b681a5c52c11e7c8ae8fd96a8ae972e15413bfac",
+    "capacity-estimate.json": "47d261ab4b0fe30899757a32769d82071699cccbd2ac5b782bf95d836171eac8",
+    "volume-tool-output.txt": "d985bd3440a0c24e2b5d78186b988cec89d0644d0184236b8b9b4b18a40a8b9d",
+    "preservation.json": "21556d538ee33d16ad2e403072d341bc251650fe54baef4971e2bbcce61e4e15",
+    "glb-exposure.json": "62f5757eb009cdd723050924567ebbb182c17b1f08dc78c1a8165d0365d1fba3",
+    "sources.md": "6795b38f867572a977673cc401bf4e51ba934c0a17af686afb553342d72ce2e2",
+    "architecture-proposal.md": "530138dc29d20ef9ce4643954b5d68b7a5871f0d8c2ee558868a1ed4675a7a3a",
+    "encryption-comparison.md": "3d6c553d9215847b82798aef7a7f8218f8c5bcf90c01fb6768686fbdeee44bdb",
+    "git-history-exposure.md": "a47a67231b3c5a0fb00ae61a47ef7b70f00b42e8c8431d7fc23cb7911ba579d0",
+    "github-storage-limits.md": "61b8a42c3077e94e4c1bbd3529478b50115b01eedf5f92e0acff6ed82c3dc223",
+    "proof-of-concept-report.md": "229adfc0bcf936693ead151b9847467dc3a3cd9033f4c5bdeab1127d0ebb2db9",
+    "recovery-procedure.md": "92a691d365ed26e872d81caec3126b778c2ce3ed1b784764b99d9b388ad996dd",
+    "decision-report.md": "6422798bef21604b8bda9c3e0f947f84483d2e6704d17e8aab62e6f580db7b79",
+    "test-output.txt": "2ca68e16b86aa821d0b06bcb0b57f65acf53182ac53cb484112404d133ce76c2"
+  }
+}

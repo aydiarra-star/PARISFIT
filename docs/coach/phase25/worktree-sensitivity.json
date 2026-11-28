@@ -1,0 +1,101 @@
+{
+  "findings": [
+    {
+      "path": ".cache/phase20/runs.json",
+      "type": "email",
+      "count": 6
+    },
+    {
+      "path": ".cache/three-jsm/libs/meshopt_decoder.module.js",
+      "type": "email",
+      "count": 1
+    },
+    {
+      "path": ".cache/three-jsm/math/SimplexNoise.js",
+      "type": "email",
+      "count": 1
+    },
+    {
+      "path": ".cache/three-jsm/shaders/FXAAShader.js",
+      "type": "email",
+      "count": 2
+    },
+    {
+      "path": "docs/coach/phase18/historical-code-evidence.txt",
+      "type": "email",
+      "count": 2
+    },
+    {
+      "path": "docs/coach/phase19/archive-probe.json",
+      "type": "email",
+      "count": 1
+    },
+    {
+      "path": "docs/coach/phase22/candidate-comparison.csv",
+      "type": "email",
+      "count": 7
+    },
+    {
+      "path": "docs/coach/phase22/candidates.json",
+      "type": "email",
+      "count": 4
+    },
+    {
+      "path": "docs/coach/phase22/expert-candidates.md",
+      "type": "email",
+      "count": 5
+    },
+    {
+      "path": "docs/coach/phase22/laboratories.md",
+      "type": "email",
+      "count": 3
+    },
+    {
+      "path": "docs/coach/phase22/sources.json",
+      "type": "email",
+      "count": 5
+    },
+    {
+      "path": "docs/coach/phase22/sources.md",
+      "type": "email",
+      "count": 5
+    },
+    {
+      "path": "docs/coach/phase5/licenses/CMU-BVH-READMEFIRST.txt",
+      "type": "email",
+      "count": 2
+    },
+    {
+      "path": "tools/anatomy/audit.py",
+      "type": "email",
+      "count": 3
+    },
+    {
+      "path": "tools/anatomy/export.py",
+      "type": "email",
+      "count": 9
+    },
+    {
+      "path": "tools/biomechanics/export.py",
+      "type": "email",
+      "count": 3
+    },
+    {
+      "path": "tools/biomechanics/geometry.py",
+      "type": "email",
+      "count": 1
+    },
+    {
+      "path": "tools/blender-pipeline/retarget.py",
+      "type": "email",
+      "count": 3
+    },
+    {
+      "path": "tools/expert-search/build.py",
+      "type": "email",
+      "count": 13
+    }
+  ],
+  "commitEmailIdentities": 3,
+  "valuesRedacted": true
+}

@@ -1,0 +1,47 @@
+{
+  "status": "BLOCKED_OWNER_KEY_MISSING",
+  "createdAtObservedUTC": "2026-11-28T12:26:09.317014+00:00",
+  "source": "Phase26 archives exclusively",
+  "archives": [
+    {
+      "path": ".cache/phase26-work/backups/project.tar.gz",
+      "bytes": 49301585,
+      "sha256": "7024251fceed7563faf5c68a9b683b97d444be9a362e8c407a47132827cc2577",
+      "sha256Verified": true
+    },
+    {
+      "path": ".cache/phase26-work/backups/working-data.tar.gz",
+      "bytes": 307746695,
+      "sha256": "7f103cf14e4074557251c9bcb53286ae565f8aaaa3e3aeccc86fc4f52be793f0",
+      "sha256Verified": true
+    },
+    {
+      "path": ".cache/phase26-work/backups/history.bundle",
+      "bytes": 30951764,
+      "sha256": "bd132c42272e2a8a450a802493281579cb74aa98daba7f1867763284ef37e217",
+      "sha256Verified": true
+    },
+    {
+      "path": ".cache/phase26-work/backups/phase26-evidence.tar.gz",
+      "bytes": 270649,
+      "sha256": "2f2d6a800272f68a3dcbdff9a557a6b1c45b3c3ebe26a368f79237619b37115d",
+      "sha256Verified": true
+    }
+  ],
+  "filesInTarVerified": 1783,
+  "gitObjectsInExistingPhase26RestoreVerified": 1779,
+  "supplementalEvidenceFilesVerified": 36,
+  "publicArtifactFilesUnchanged": 28,
+  "knownSecretPatternsInPublicArtifact": 0,
+  "completeSecretAudit": false,
+  "productionRecipientConfirmed": false,
+  "keySearchedOrRead": false,
+  "encryptionPerformed": false,
+  "ciphertextVolumesCreated": 0,
+  "phase28PostEncryptionRestorePerformed": false,
+  "missingActionsArtifacts": 216,
+  "artifactsBasis": "Phase26 metadata and failed download attempts; no new retrieval",
+  "sourceFilesUnchanged": true,
+  "branch": "arena/a03f64da-parisfit",
+  "head": "fc51383e1a28f649a700057bb4d19bcb420c8eaf"
+}

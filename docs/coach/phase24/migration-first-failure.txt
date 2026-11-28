@@ -1,0 +1,28 @@
+locator.scrollIntoViewIfNeeded: Timeout 29787.313ms exceeded.
+Call log:
+  - attempting scroll into view action
+    2 × waiting for element to be stable
+      - element is not stable
+    - retrying scroll into view action
+    - waiting 20ms
+    - waiting for element to be stable
+    - element is not stable
+  - retrying scroll into view action
+    - waiting 100ms
+    - waiting for "http://localhost:3013/" navigation to finish...
+
+    at /home/user/PARISFIT/tests/coach-animation-lock-migration.cjs:2:2141 {
+  log: [
+    '  - attempting scroll into view action',
+    '    2 × waiting for element to be stable',
+    '      - element is not stable',
+    '    - retrying scroll into view action',
+    '    - waiting 20ms',
+    '    - waiting for element to be stable',
+    '    - element is not stable',
+    '  - retrying scroll into view action',
+    '    - waiting 100ms',
+    '    - waiting for "http://localhost:3013/" navigation to finish...'
+  ],
+  name: 'TimeoutError'
+}

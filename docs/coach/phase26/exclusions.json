@@ -1,0 +1,21 @@
+[
+  ".cache/phase12-bin/ffmpeg",
+  ".cache/phase25-backup/",
+  ".cache/phase26-work/",
+  ".git/",
+  ".venv/",
+  "docs/coach/phase26/",
+  "node_modules/",
+  "tools/anatomy/__pycache__/",
+  "tools/animation-lock/__pycache__/",
+  "tools/animation-pipeline/__pycache__/",
+  "tools/biomechanics/__pycache__/",
+  "tools/blender-pipeline/__pycache__/",
+  "tools/capture-pipeline/__pycache__/",
+  "tools/independent-review/__pycache__/",
+  "tools/metadata-plan/__pycache__/",
+  "tools/michaud/__pycache__/",
+  "tools/model-qualification/__pycache__/",
+  "tools/passive-qualification/__pycache__/",
+  "tools/source-benchmark/__pycache__/"
+]

@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "data": "one fictional text file only",
+  "implementation": "pyrage 1.4.0 / age format / X25519",
+  "python": "3.11.2",
+  "createdAtObservedUTC": "2026-11-28T12:17:33.322024+00:00",
+  "keyGeneratedInMemoryOnly": true,
+  "keySerialized": false,
+  "productionKeyCreated": false,
+  "networkUsedByTest": false,
+  "originalsReadByTest": false,
+  "plaintext": {
+    "bytes": 141,
+    "sha256": "0f66a01b6e329f43d43020147bc163262e9f7813253dfc60b5cf508b397fff07"
+  },
+  "tar": {
+    "bytes": 10240,
+    "sha256": "12e7bada56ecfd836ee1b433b37a3633da5d3703feb9df1dce30c691d47ca892"
+  },
+  "ciphertext": {
+    "bytes": 10479,
+    "sha256": "a71ad0ab11bcfe7c2459d61d794b9941dd1c949d9816a3bbe47eb618e5730a52",
+    "headerReadable": "age-encryption.org/v1",
+    "knownPlaintextAndFilenameAbsent": true
+  },
+  "parts": [
+    {
+      "name": "volume-0000.agepart",
+      "index": 0,
+      "bytes": 4096,
+      "sha256": "ce6f14089f74daf62ab27e03a70276cb9eaab707bfd48ba83c094db4182f274c"
+    },
+    {
+      "name": "volume-0001.agepart",
+      "index": 1,
+      "bytes": 4096,
+      "sha256": "0d7f614614ae77dcbdeb144740b1631e9711460e959d1855059390328bde26ba"
+    },
+    {
+      "name": "volume-0002.agepart",
+      "index": 2,
+      "bytes": 2287,
+      "sha256": "7a927299b644e43b7cb1ebec6d69feb1143a6032b0ccb257eaca0979217f19d6"
+    }
+  ],
+  "restoredPlaintextSHA256": "0f66a01b6e329f43d43020147bc163262e9f7813253dfc60b5cf508b397fff07",
+  "restoredTarSHA256": "12e7bada56ecfd836ee1b433b37a3633da5d3703feb9df1dce30c691d47ca892",
+  "negativeTests": {
+    "wrong-key": "rejected",
+    "tampered": "rejected",
+    "truncated": "rejected",
+    "missing-volume": "rejected",
+    "reordered-volumes": "rejected"
+  },
+  "randomizedEncryption": true,
+  "cliInteroperabilityTested": false,
+  "limitations": [
+    "Only a small file, not a large-archive benchmark.",
+    "Identity is not saved: this run cannot be decrypted again after process exit; rerun creates a fresh independent fixture.",
+    "Absence of known readable strings is not a cryptographic proof."
+  ]
+}

@@ -1,0 +1,893 @@
+{
+  "members": [
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/asset-report.json",
+      "bytes": 295,
+      "type": "b'0'",
+      "sha256": "d816aaa00a442fae4226e42b0250cfec1d40db2ae76737bf90aa7e340c40e396"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/browser-report.json",
+      "bytes": 888,
+      "type": "b'0'",
+      "sha256": "0eef6ec52185f814e11dd8790d4e53d82e222ee192b29101a6ac1273d09c7d76"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/mobile-report.json",
+      "bytes": 516,
+      "type": "b'0'",
+      "sha256": "b458f8ef83a2025520a2aa25582500b98e79b2ad59c8336fe9baba2251697906"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase2/after/capture-manifest.json",
+      "bytes": 929,
+      "type": "b'0'",
+      "sha256": "15bfdaa7e020287ba9e4db69b5b7c4cc1ad54a560d56d500fcecf51f8c33b3f0"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase2/asset-report.json",
+      "bytes": 295,
+      "type": "b'0'",
+      "sha256": "c4f0eff5378ef4462d15b576cf126270be14fb07ef6b5f59640bff8027b9d68e"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase2/before-trajectory-report.json",
+      "bytes": 13618,
+      "type": "b'0'",
+      "sha256": "02b5c92498f6d5dda8a807ef9609f437b9cda5b578dfb81c02a5fcc371120cf8"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase2/before/capture-manifest.json",
+      "bytes": 933,
+      "type": "b'0'",
+      "sha256": "0dea92cc6ea785ec506737274545acaf5783147620c3991c6c66c7a20184bc21"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase2/mobile-report.json",
+      "bytes": 1023,
+      "type": "b'0'",
+      "sha256": "76e78ce8ef2e7a29806250730b779342e6cc3db4dfb72d91645f7a5908e4d881"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase2/trajectory-report.json",
+      "bytes": 12523,
+      "type": "b'0'",
+      "sha256": "7eea85dba51c0470c20e297f5364818a9cacb98a23d6ef4b05e3bb5ac0ea234a"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase2/video-report.json",
+      "bytes": 16157,
+      "type": "b'0'",
+      "sha256": "1cff23baf805d5ccc1cb7d7486c884d18bb39ea156a5eb9fc6da8d87511bf5bf"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase3/after/capture-manifest.json",
+      "bytes": 624,
+      "type": "b'0'",
+      "sha256": "fa822334a74d55c2a9c690e0d6bd3b03910e87f4d2a763a569314b5974b9c383"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase3/before/capture-manifest.json",
+      "bytes": 625,
+      "type": "b'0'",
+      "sha256": "b5493a4ee6f585b076e78697344530a6803e168972e58f219e6cd405d9ceec34"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase3/exercise-trajectory-report.json",
+      "bytes": 12523,
+      "type": "b'0'",
+      "sha256": "7eea85dba51c0470c20e297f5364818a9cacb98a23d6ef4b05e3bb5ac0ea234a"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase3/mobile-emulation-report.json",
+      "bytes": 1024,
+      "type": "b'0'",
+      "sha256": "b0b4e04395a955054b69214e3bc8add6b2f16c79ce8155b2e29658a8e3bc5b20"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase3/retarget-report.json",
+      "bytes": 188461,
+      "type": "b'0'",
+      "sha256": "6ead19bf728e8eb01280bd05ed6db01309b29065e2fbe38fb7cc78c8e9cb8648"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase3/transition-report.json",
+      "bytes": 1766,
+      "type": "b'0'",
+      "sha256": "6ce0aebe0a6cf7b4f49ad363957950a673e2336d06a0840728acd3024f9633a4"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase3/video-report.json",
+      "bytes": 3727,
+      "type": "b'0'",
+      "sha256": "27d81d394826d27549386942d9ac6c1b19316bc517dc6e8e2c67104cbc301906"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase4/after-crouch-to-stand-report.json",
+      "bytes": 60060,
+      "type": "b'0'",
+      "sha256": "a54df717aad09cef314520a9591b4d6cf50672510c0f6d7a100bfaaf8893056c"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase4/after-stand-to-crouch-report.json",
+      "bytes": 59922,
+      "type": "b'0'",
+      "sha256": "baa43cc347c83a19104a3a0156e4f4b9bfd277785f5aeb562b3c56b04883eb9c"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase4/after/capture-manifest.json",
+      "bytes": 627,
+      "type": "b'0'",
+      "sha256": "da3acafd1bb64e09ccf91c4184ea8f4398b5e2c380f26d6b24245dc55c92ad28"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase4/before-crouch-to-stand-report.json",
+      "bytes": 60065,
+      "type": "b'0'",
+      "sha256": "2a8812339f72138e06e90f12293aa483141df7f113aa60fd61c66aa9e71fdcfa"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase4/before-stand-to-crouch-report.json",
+      "bytes": 59921,
+      "type": "b'0'",
+      "sha256": "29fb51b26bfbc7dde11f40954b164dd8520cca77841c6d3d25ea74290bb5d4f7"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase4/before/capture-manifest.json",
+      "bytes": 628,
+      "type": "b'0'",
+      "sha256": "829582438aa6656b5e74ea287a81f22ef927aa7ea782c933e06730d693f83128"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase4/connection-contracts.json",
+      "bytes": 120916,
+      "type": "b'0'",
+      "sha256": "ec63f1a24e2481bd96ed21774bc136725c7d0d75c7a4d13e623247d441818e80"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase4/contact-windows.json",
+      "bytes": 2759,
+      "type": "b'0'",
+      "sha256": "f00a3cc32ff3e5dc250c050be16458b7870be5097d8d560fe7ccc16b14fd2075"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase4/exercise-trajectory-report.json",
+      "bytes": 12523,
+      "type": "b'0'",
+      "sha256": "7eea85dba51c0470c20e297f5364818a9cacb98a23d6ef4b05e3bb5ac0ea234a"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase4/mobile-emulation-report.json",
+      "bytes": 1023,
+      "type": "b'0'",
+      "sha256": "8608e2bfb30d0d4c94dccfd840d2a448e54041f3269c81101e9bb90fbf51defc"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase4/phase3-recheck-report.json",
+      "bytes": 1762,
+      "type": "b'0'",
+      "sha256": "7d86648312cf890b953b1e4387e8fec354ecba1044b2f1db11b4534cb4ed5346"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase4/source-inventory.json",
+      "bytes": 2882,
+      "type": "b'0'",
+      "sha256": "2df8d820bae52a4bd3760f78c1cbfef6a70968e8226d247b94235b40d2c33601"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase4/transition-report.json",
+      "bytes": 279497,
+      "type": "b'0'",
+      "sha256": "b366234e6f79a2fb8c042065d38a09ea1f1922f7a6d8056c4404cefee846832f"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase4/video-report.json",
+      "bytes": 3719,
+      "type": "b'0'",
+      "sha256": "017ce0b101bc0c0f07b82fb19db849576d5c8b640a1c33f8249106e39ef0cd90"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase5/comparison-manifest.json",
+      "bytes": 1623,
+      "type": "b'0'",
+      "sha256": "2fdf583b5ddf7ad42d461de5a06fa45fefa6df6d9f348f77dd83fb2cf1f8c9e1"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase5/comparison-report.json",
+      "bytes": 252800,
+      "type": "b'0'",
+      "sha256": "2f9b23ba0073b04acd6baa5f875e82a2c0f0b8b23b75a13ef4f6f6c0d22eeb74"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase5/evidence-report.json",
+      "bytes": 4201,
+      "type": "b'0'",
+      "sha256": "b1c5f1e70880867a21a00194e1d13d88bc7b9f8e9b5e9e1a461acd08897860be"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase5/exercise-regression-report.json",
+      "bytes": 12523,
+      "type": "b'0'",
+      "sha256": "7eea85dba51c0470c20e297f5364818a9cacb98a23d6ef4b05e3bb5ac0ea234a"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase5/mobile-emulation-report.json",
+      "bytes": 1024,
+      "type": "b'0'",
+      "sha256": "dc13de8b3ecb4548b13b457223127e34bfdb19054b83e642b6679862dfa2a118"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase5/mocap-retarget-report.json",
+      "bytes": 6291,
+      "type": "b'0'",
+      "sha256": "7b2c39315ee550b28343f62323ac4e931fa0f5a29e500e2c2ce25d869a365ebe"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase5/pose-estimates.json",
+      "bytes": 2276049,
+      "type": "b'0'",
+      "sha256": "b54a2f9c0d633681759bca0f628d6dce45782c606d020e02ccf5f476d577b912"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase5/provenance.json",
+      "bytes": 1137,
+      "type": "b'0'",
+      "sha256": "253786edd9b0b22fccbfe3827233e763614d0ccc5c99d4c02be78901fd8fcb0a"
+    },
+    {
+      "archive": ".cache/phase6/historical.tar",
+      "member": "docs/coach/phase5/retarget-report.json",
+      "bytes": 9174,
+      "type": "b'0'",
+      "sha256": "45d86e6a49f241bd5063bfb1901f464f9b724404a52c3c3793d5523ae3a0c1f1"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/asset-report.json",
+      "bytes": 295,
+      "type": "b'0'",
+      "sha256": "d816aaa00a442fae4226e42b0250cfec1d40db2ae76737bf90aa7e340c40e396"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/browser-report.json",
+      "bytes": 888,
+      "type": "b'0'",
+      "sha256": "0eef6ec52185f814e11dd8790d4e53d82e222ee192b29101a6ac1273d09c7d76"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/mobile-report.json",
+      "bytes": 516,
+      "type": "b'0'",
+      "sha256": "b458f8ef83a2025520a2aa25582500b98e79b2ad59c8336fe9baba2251697906"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase2/after/capture-manifest.json",
+      "bytes": 929,
+      "type": "b'0'",
+      "sha256": "15bfdaa7e020287ba9e4db69b5b7c4cc1ad54a560d56d500fcecf51f8c33b3f0"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase2/asset-report.json",
+      "bytes": 295,
+      "type": "b'0'",
+      "sha256": "c4f0eff5378ef4462d15b576cf126270be14fb07ef6b5f59640bff8027b9d68e"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase2/before-trajectory-report.json",
+      "bytes": 13618,
+      "type": "b'0'",
+      "sha256": "02b5c92498f6d5dda8a807ef9609f437b9cda5b578dfb81c02a5fcc371120cf8"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase2/before/capture-manifest.json",
+      "bytes": 933,
+      "type": "b'0'",
+      "sha256": "0dea92cc6ea785ec506737274545acaf5783147620c3991c6c66c7a20184bc21"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase2/mobile-report.json",
+      "bytes": 1023,
+      "type": "b'0'",
+      "sha256": "76e78ce8ef2e7a29806250730b779342e6cc3db4dfb72d91645f7a5908e4d881"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase2/trajectory-report.json",
+      "bytes": 12523,
+      "type": "b'0'",
+      "sha256": "7eea85dba51c0470c20e297f5364818a9cacb98a23d6ef4b05e3bb5ac0ea234a"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase2/video-report.json",
+      "bytes": 16157,
+      "type": "b'0'",
+      "sha256": "1cff23baf805d5ccc1cb7d7486c884d18bb39ea156a5eb9fc6da8d87511bf5bf"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase3/after/capture-manifest.json",
+      "bytes": 624,
+      "type": "b'0'",
+      "sha256": "fa822334a74d55c2a9c690e0d6bd3b03910e87f4d2a763a569314b5974b9c383"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase3/before/capture-manifest.json",
+      "bytes": 625,
+      "type": "b'0'",
+      "sha256": "b5493a4ee6f585b076e78697344530a6803e168972e58f219e6cd405d9ceec34"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase3/exercise-trajectory-report.json",
+      "bytes": 12523,
+      "type": "b'0'",
+      "sha256": "7eea85dba51c0470c20e297f5364818a9cacb98a23d6ef4b05e3bb5ac0ea234a"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase3/mobile-emulation-report.json",
+      "bytes": 1024,
+      "type": "b'0'",
+      "sha256": "b0b4e04395a955054b69214e3bc8add6b2f16c79ce8155b2e29658a8e3bc5b20"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase3/retarget-report.json",
+      "bytes": 188461,
+      "type": "b'0'",
+      "sha256": "6ead19bf728e8eb01280bd05ed6db01309b29065e2fbe38fb7cc78c8e9cb8648"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase3/transition-report.json",
+      "bytes": 1766,
+      "type": "b'0'",
+      "sha256": "6ce0aebe0a6cf7b4f49ad363957950a673e2336d06a0840728acd3024f9633a4"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase3/video-report.json",
+      "bytes": 3727,
+      "type": "b'0'",
+      "sha256": "27d81d394826d27549386942d9ac6c1b19316bc517dc6e8e2c67104cbc301906"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase4/after-crouch-to-stand-report.json",
+      "bytes": 60060,
+      "type": "b'0'",
+      "sha256": "a54df717aad09cef314520a9591b4d6cf50672510c0f6d7a100bfaaf8893056c"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase4/after-stand-to-crouch-report.json",
+      "bytes": 59922,
+      "type": "b'0'",
+      "sha256": "baa43cc347c83a19104a3a0156e4f4b9bfd277785f5aeb562b3c56b04883eb9c"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase4/after/capture-manifest.json",
+      "bytes": 627,
+      "type": "b'0'",
+      "sha256": "da3acafd1bb64e09ccf91c4184ea8f4398b5e2c380f26d6b24245dc55c92ad28"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase4/before-crouch-to-stand-report.json",
+      "bytes": 60065,
+      "type": "b'0'",
+      "sha256": "2a8812339f72138e06e90f12293aa483141df7f113aa60fd61c66aa9e71fdcfa"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase4/before-stand-to-crouch-report.json",
+      "bytes": 59921,
+      "type": "b'0'",
+      "sha256": "29fb51b26bfbc7dde11f40954b164dd8520cca77841c6d3d25ea74290bb5d4f7"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase4/before/capture-manifest.json",
+      "bytes": 628,
+      "type": "b'0'",
+      "sha256": "829582438aa6656b5e74ea287a81f22ef927aa7ea782c933e06730d693f83128"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase4/connection-contracts.json",
+      "bytes": 120916,
+      "type": "b'0'",
+      "sha256": "ec63f1a24e2481bd96ed21774bc136725c7d0d75c7a4d13e623247d441818e80"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase4/contact-windows.json",
+      "bytes": 2759,
+      "type": "b'0'",
+      "sha256": "f00a3cc32ff3e5dc250c050be16458b7870be5097d8d560fe7ccc16b14fd2075"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase4/exercise-trajectory-report.json",
+      "bytes": 12523,
+      "type": "b'0'",
+      "sha256": "7eea85dba51c0470c20e297f5364818a9cacb98a23d6ef4b05e3bb5ac0ea234a"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase4/mobile-emulation-report.json",
+      "bytes": 1023,
+      "type": "b'0'",
+      "sha256": "8608e2bfb30d0d4c94dccfd840d2a448e54041f3269c81101e9bb90fbf51defc"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase4/phase3-recheck-report.json",
+      "bytes": 1762,
+      "type": "b'0'",
+      "sha256": "7d86648312cf890b953b1e4387e8fec354ecba1044b2f1db11b4534cb4ed5346"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase4/source-inventory.json",
+      "bytes": 2882,
+      "type": "b'0'",
+      "sha256": "2df8d820bae52a4bd3760f78c1cbfef6a70968e8226d247b94235b40d2c33601"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase4/transition-report.json",
+      "bytes": 279497,
+      "type": "b'0'",
+      "sha256": "b366234e6f79a2fb8c042065d38a09ea1f1922f7a6d8056c4404cefee846832f"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase4/video-report.json",
+      "bytes": 3719,
+      "type": "b'0'",
+      "sha256": "017ce0b101bc0c0f07b82fb19db849576d5c8b640a1c33f8249106e39ef0cd90"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase5/comparison-manifest.json",
+      "bytes": 1623,
+      "type": "b'0'",
+      "sha256": "2fdf583b5ddf7ad42d461de5a06fa45fefa6df6d9f348f77dd83fb2cf1f8c9e1"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase5/comparison-report.json",
+      "bytes": 252800,
+      "type": "b'0'",
+      "sha256": "2f9b23ba0073b04acd6baa5f875e82a2c0f0b8b23b75a13ef4f6f6c0d22eeb74"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase5/evidence-report.json",
+      "bytes": 4201,
+      "type": "b'0'",
+      "sha256": "b1c5f1e70880867a21a00194e1d13d88bc7b9f8e9b5e9e1a461acd08897860be"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase5/exercise-regression-report.json",
+      "bytes": 12523,
+      "type": "b'0'",
+      "sha256": "7eea85dba51c0470c20e297f5364818a9cacb98a23d6ef4b05e3bb5ac0ea234a"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase5/mobile-emulation-report.json",
+      "bytes": 1024,
+      "type": "b'0'",
+      "sha256": "dc13de8b3ecb4548b13b457223127e34bfdb19054b83e642b6679862dfa2a118"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase5/mocap-retarget-report.json",
+      "bytes": 6291,
+      "type": "b'0'",
+      "sha256": "7b2c39315ee550b28343f62323ac4e931fa0f5a29e500e2c2ce25d869a365ebe"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase5/pose-estimates.json",
+      "bytes": 2276049,
+      "type": "b'0'",
+      "sha256": "b54a2f9c0d633681759bca0f628d6dce45782c606d020e02ccf5f476d577b912"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase5/provenance.json",
+      "bytes": 1137,
+      "type": "b'0'",
+      "sha256": "253786edd9b0b22fccbfe3827233e763614d0ccc5c99d4c02be78901fd8fcb0a"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase5/retarget-report.json",
+      "bytes": 9174,
+      "type": "b'0'",
+      "sha256": "45d86e6a49f241bd5063bfb1901f464f9b724404a52c3c3793d5523ae3a0c1f1"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase6/comparison-manifest.json",
+      "bytes": 1260,
+      "type": "b'0'",
+      "sha256": "8115d91fe7b50f7430a52a0cf764aa9fa38bb955dadae1feef3082ebe1c82170"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase6/comparison-report.json",
+      "bytes": 130379,
+      "type": "b'0'",
+      "sha256": "673d6f49ba0e984b6aeb9f5dedd9f98adf440c58d3506c3d97e5d32bb516c45d"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase6/contact-classification.json",
+      "bytes": 55396,
+      "type": "b'0'",
+      "sha256": "277c0fcd1f960e091917f5ae07ef1083d2ec44c149a1d3616670aa41ec2c2b35"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase6/corrected-report.json",
+      "bytes": 54664,
+      "type": "b'0'",
+      "sha256": "29684b49f16b9b3e6b898f44aa9c0d393e9e35d4ca5ea8f64093a51247a4816e"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase6/correction-contracts.json",
+      "bytes": 1415,
+      "type": "b'0'",
+      "sha256": "4dc83a304342edbd2ee01b1f9cec0e73d341895cecab5e7d612d9770b76094ce"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase6/evidence-report.json",
+      "bytes": 3301,
+      "type": "b'0'",
+      "sha256": "925147d5d694d9f8abcdbd3b27823c82c12c277b87ed4020974c720d1364218c"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase6/provenance.json",
+      "bytes": 896,
+      "type": "b'0'",
+      "sha256": "92cdd66b5180800f9bbf6197c9851c3d64bd13fc60d25ddd72670cf986c30d66"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase6/rejected-22-retarget-report.json",
+      "bytes": 3108,
+      "type": "b'0'",
+      "sha256": "bc39fb278eaabb11a79afbaeb96751d015ccd59d01f56e22b4a7af0322b755f2"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase6/rejected-all-windows-contracts.json",
+      "bytes": 3267,
+      "type": "b'0'",
+      "sha256": "1d26507ff16d67f5efc2a6c2ebd76e6ea3d59cff9817abff439fcade8efee6e8"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase6/rejected-all-windows-report.json",
+      "bytes": 56467,
+      "type": "b'0'",
+      "sha256": "b474577d7f3018812eda1fc652e1fe23877d50c6e7ff5ec79749a69c6d3b6498"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase6/retarget-frames.json",
+      "bytes": 1188131,
+      "type": "b'0'",
+      "sha256": "c7c406bdf7c0c0698bff1015b50e8dadaf331b5a69ac92a2bfb3b2d7f24c5b7c"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase6/retarget-report.json",
+      "bytes": 3124,
+      "type": "b'0'",
+      "sha256": "cc509a68e55d1c9dd201edf13c637e0ad891a10303917a66d8cda832ee4be952"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase6/retargeted-report.json",
+      "bytes": 54699,
+      "type": "b'0'",
+      "sha256": "74c53125500d735c487d03792e07a1bfd728f76b33414337c02d393e1ff6a1d2"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase6/source-report.json",
+      "bytes": 577,
+      "type": "b'0'",
+      "sha256": "b5faf56885080a8542185899511430c9b73daf98c966608745b1c1e79a05e593"
+    },
+    {
+      "archive": ".cache/phase7/history.tar",
+      "member": "docs/coach/phase6/source-samples.json",
+      "bytes": 345734,
+      "type": "b'0'",
+      "sha256": "6aeb64d086332886423cfcafc9b879b223dbfe9f05dfe3fe81939b46a6944bc7"
+    },
+    {
+      "archive": ".cache/phase8/al2.tar",
+      "member": "lib",
+      "bytes": 0,
+      "type": "b'5'",
+      "sha256": null
+    },
+    {
+      "archive": ".cache/phase8/al2.tar",
+      "member": "lib/libexpat.so.1",
+      "bytes": 197952,
+      "type": "b'0'",
+      "sha256": "376b89455bd9c983b3a5bd5845d5d8f53d7e3ecde0cd6e2ad83cc890084b5d39"
+    },
+    {
+      "archive": ".cache/phase8/al2.tar",
+      "member": "lib/libnss3.so",
+      "bytes": 1254808,
+      "type": "b'0'",
+      "sha256": "6ac483a82af1d61852a887f08048335b828cad36e3e184e0a7b9605225d0a68b"
+    },
+    {
+      "archive": ".cache/phase8/al2.tar",
+      "member": "lib/libnssutil3.so",
+      "bytes": 198936,
+      "type": "b'0'",
+      "sha256": "ed3b278204862190bff10a3d60ea18a3e849c814b836b85e4c0978bfafba9269"
+    },
+    {
+      "archive": ".cache/phase8/al2.tar",
+      "member": "lib/libsoftokn3.so",
+      "bytes": 335072,
+      "type": "b'0'",
+      "sha256": "388a86c2fed43749d5fd49163014076274d5df2302f62f49a55f3cc484cbbf49"
+    },
+    {
+      "archive": ".cache/phase8/al2.tar",
+      "member": "lib/libsqlite3.so.0",
+      "bytes": 732512,
+      "type": "b'0'",
+      "sha256": "e2b3a688a385a703a2298c1c991298b85219d162c83395526dcb4c06ddd08eb6"
+    },
+    {
+      "archive": ".cache/phase8/al2.tar",
+      "member": "lib/libuuid.so.1",
+      "bytes": 20056,
+      "type": "b'0'",
+      "sha256": "98bc0a57837e5443cdde686d388d68fa3321b6f26c7a8ba1bab499421fc0002e"
+    },
+    {
+      "archive": ".cache/phase8/al2023.tar",
+      "member": "lib",
+      "bytes": 0,
+      "type": "b'5'",
+      "sha256": null
+    },
+    {
+      "archive": ".cache/phase8/al2023.tar",
+      "member": "lib/libexpat.so.1",
+      "bytes": 199136,
+      "type": "b'0'",
+      "sha256": "8e929ce88c6d4d781f576fe2fc26ae8e07701a7c204413d9d1cc300bb8f4b296"
+    },
+    {
+      "archive": ".cache/phase8/al2023.tar",
+      "member": "lib/libfreebl3.so",
+      "bytes": 16184,
+      "type": "b'0'",
+      "sha256": "e550940b57a24d3534e44f7212c7ca3ae4da9cdba989138a3e949904e6276dd7"
+    },
+    {
+      "archive": ".cache/phase8/al2023.tar",
+      "member": "lib/libfreeblpriv3.so",
+      "bytes": 749528,
+      "type": "b'0'",
+      "sha256": "2240d651d0fb90c160e153c4245ad9ead8a74e3cc048a9adf75a904f223210d6"
+    },
+    {
+      "archive": ".cache/phase8/al2023.tar",
+      "member": "lib/libnspr4.so",
+      "bytes": 265912,
+      "type": "b'0'",
+      "sha256": "8780aac34045e320b2f12df4af2c00b77677b91c8d505ba029ad9d3737a053d9"
+    },
+    {
+      "archive": ".cache/phase8/al2023.tar",
+      "member": "lib/libnss3.so",
+      "bytes": 1287008,
+      "type": "b'0'",
+      "sha256": "462729755bf2961bf76c76470a6160348999ed385663f3a81f2d5d900aba9c83"
+    },
+    {
+      "archive": ".cache/phase8/al2023.tar",
+      "member": "lib/libnssutil3.so",
+      "bytes": 216896,
+      "type": "b'0'",
+      "sha256": "b257a2156511cc82341bdce30b7012719e2b7a8385f6c7488d34dc28505cf758"
+    },
+    {
+      "archive": ".cache/phase8/al2023.tar",
+      "member": "lib/libplc4.so",
+      "bytes": 24680,
+      "type": "b'0'",
+      "sha256": "302e8236a33dc5d3703aa07a1219f401e71796a2d781ccf117b49527895a443a"
+    },
+    {
+      "archive": ".cache/phase8/al2023.tar",
+      "member": "lib/libplds4.so",
+      "bytes": 16416,
+      "type": "b'0'",
+      "sha256": "b3cd5035b1ec34fc3df45ed39313b0864863b04052663911d9db9e91de7dcfe8"
+    },
+    {
+      "archive": ".cache/phase8/al2023.tar",
+      "member": "lib/libsoftokn3.so",
+      "bytes": 361320,
+      "type": "b'0'",
+      "sha256": "a16a3845d48e79b3835b2e7512370638d540f52d272c0415e53c5d90f49ace98"
+    },
+    {
+      "archive": ".cache/phase8/sparticuz-chromium-119.0.2.tgz",
+      "member": "package/LICENSE",
+      "bytes": 1098,
+      "type": "b'0'",
+      "sha256": "3569040c1b042820ece7d85760a7f12b4ce8e66fa5b10f44252a923a46af5e2b"
+    },
+    {
+      "archive": ".cache/phase8/sparticuz-chromium-119.0.2.tgz",
+      "member": "package/bin/al2.tar.br",
+      "bytes": 986725,
+      "type": "b'0'",
+      "sha256": "cf8c01e3fb51c9d4be817ac261942a61f3ca1ea7a90dbe45fd34aa92121a7263"
+    },
+    {
+      "archive": ".cache/phase8/sparticuz-chromium-119.0.2.tgz",
+      "member": "package/bin/al2023.tar.br",
+      "bytes": 1094914,
+      "type": "b'0'",
+      "sha256": "1f481fbdea3425e5b41e74f8d58b75c81dd780552c8f03a572c756fe5297799e"
+    },
+    {
+      "archive": ".cache/phase8/sparticuz-chromium-119.0.2.tgz",
+      "member": "package/bin/chromium.br",
+      "bytes": 55326126,
+      "type": "b'0'",
+      "sha256": "1ae5d6923c913576c10586defdedb1e507541d81e7fdc595ef9930c889800ea3"
+    },
+    {
+      "archive": ".cache/phase8/sparticuz-chromium-119.0.2.tgz",
+      "member": "package/bin/fonts.tar.br",
+      "bytes": 233002,
+      "type": "b'0'",
+      "sha256": "aeeb3df8b1d1240466c122671e4931b0dc1f012a674bdc67b1252828ffa6291a"
+    },
+    {
+      "archive": ".cache/phase8/sparticuz-chromium-119.0.2.tgz",
+      "member": "package/bin/swiftshader.tar.br",
+      "bytes": 3360344,
+      "type": "b'0'",
+      "sha256": "b6affdbdc250de29a31bf38f2218c99bc82120b3de8085956a30a840bfb95f8c"
+    },
+    {
+      "archive": ".cache/phase8/sparticuz-chromium-119.0.2.tgz",
+      "member": "package/build/helper.js",
+      "bytes": 2447,
+      "type": "b'0'",
+      "sha256": "d8076d339de4b2ce6c5763fa0f2b1e75b56401cdf367c39cf9ce8f3bd3a00f99"
+    },
+    {
+      "archive": ".cache/phase8/sparticuz-chromium-119.0.2.tgz",
+      "member": "package/build/index.js",
+      "bytes": 14128,
+      "type": "b'0'",
+      "sha256": "1fdd3fee5369bcf964d39a5d4a8ff88dd778eb0addc518d8a287f5eab602a7d3"
+    },
+    {
+      "archive": ".cache/phase8/sparticuz-chromium-119.0.2.tgz",
+      "member": "package/build/lambdafs.js",
+      "bytes": 2385,
+      "type": "b'0'",
+      "sha256": "d45cf54a6376e161cd856670c2960681702e43815d6548ca99aaab90ad2bac86"
+    },
+    {
+      "archive": ".cache/phase8/sparticuz-chromium-119.0.2.tgz",
+      "member": "package/package.json",
+      "bytes": 1197,
+      "type": "b'0'",
+      "sha256": "190d381301e87202f6d1c49a156cd8111a80806720f4a578dbbb294a9beb4a7d"
+    },
+    {
+      "archive": ".cache/phase8/sparticuz-chromium-119.0.2.tgz",
+      "member": "package/README.md",
+      "bytes": 19530,
+      "type": "b'0'",
+      "sha256": "10974bc57cc51eb6de45f94078f5e6234e55002e33335be3c5a19fa99d6632cc"
+    },
+    {
+      "archive": ".cache/phase8/sparticuz-chromium-119.0.2.tgz",
+      "member": "package/build/helper.d.ts",
+      "bytes": 525,
+      "type": "b'0'",
+      "sha256": "3381cdf9d3f616900b0c5eaaab0a6ec3b53cac6274b7683cd221216bc045063e"
+    },
+    {
+      "archive": ".cache/phase8/sparticuz-chromium-119.0.2.tgz",
+      "member": "package/build/index.d.ts",
+      "bytes": 3339,
+      "type": "b'0'",
+      "sha256": "9d19a99c21c118c4406a38ebf783bebbfbe9d3793cfc3a91227d19786d4df003"
+    },
+    {
+      "archive": ".cache/phase8/sparticuz-chromium-119.0.2.tgz",
+      "member": "package/build/lambdafs.d.ts",
+      "bytes": 298,
+      "type": "b'0'",
+      "sha256": "dad35624f78730a596d244d5e66c20130a0c8f255319851326a3c7f5410f348d"
+    }
+  ],
+  "errors": [
+    {
+      "path": ".cache/phase8/xrender.tar.gz",
+      "bytes": 0,
+      "status": "unreadable-or-empty-archive"
+    }
+  ]
+}

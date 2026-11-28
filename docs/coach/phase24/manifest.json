@@ -1,0 +1,21 @@
+{
+  "files": {
+    "baseline.json": "14258dd3086e9eed3614f9f20a36b4416fda68aa8b5ba6460fc8ce8bf54fa123",
+    "public-build.json": "6a9d7db07c783bff0c69ed6910c3c73186f0795780b59334bb46f45504c96eff",
+    "unit-test-output.txt": "cabc77ddb4cd65a9508b4d543a296882bdb3902fb09c7264a547f810ed5d5244",
+    "browser-test-output.txt": "6d3cc4c489efa668e91d74f41534942757f317024c6fcbf1831f46f1e971cfab",
+    "migration-first-failure.txt": "c9d6f524b25eb448c1c5dcdfceebffb6a07d20c66bc047b08656d2571d934501",
+    "migration-second-failure.txt": "ae834addcc82520505b7b2ddb5d0ebe9b03af12cfdf0ca1b55b43db4fbdf3b3e",
+    "repository-visibility.json": "b0c3a563fbf5444ccc2fa43b91ea19d6a9f7bc4aa95185ea0de6b646abdc8a2c",
+    "static-model-test.txt": "6277c6bc60a78da9007b5adaaf8d2f3f262e0bc8f43ab35677f0282e3c5e43c5",
+    "browser-report.json": "8698f18913bf165b3b863f3e8c23e73b54e9ca3540da36f3c9de7ae95b7c0489",
+    "migration-report.json": "cc760d100e7f88f9601bd8c3812235c0ddbb25278ec5ad2ab4a42b9d5edb67e6",
+    "animation-lock-policy.md": "2a8621e5617dbba3f7f69b54c06e632bb81babee065c4c815d49fb60aa612a80",
+    "clip-validation-registry.md": "93d8321267e575a663623473bf47ae4336972b2f8e268037961d49a8ebc0326f",
+    "runtime-access-audit.md": "cfd78b70bc60293910a28c7fc0645c55165cb363931a80e611678a666efe8dc4",
+    "automated-test-report.md": "14b80b86eef25628d3990e93f694f3a76d61b766ae0059544f540df43f031570",
+    "user-experience-impact.md": "04ad9ebec45fb7555765339f3423506b4f8a784627fa2b12b3a6d924df9eedb2",
+    "decision-report.md": "8265c561d60595c1c52e4c08fd4c00f5da2578976052abb9ceaafef0e1272732",
+    "preservation-report.json": "abdcaad351b71241cf319c4b3ba1601ccc02e781a9c6841e0b3a828259aae0c0"
+  }
+}
