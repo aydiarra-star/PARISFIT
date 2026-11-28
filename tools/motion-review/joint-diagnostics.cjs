@@ -56,6 +56,16 @@ const path = require('node:path');
       throw new Error('Coach lab did not initialize; see COACH_LAB_BOOT_FAILURE above. ' + error.message);
     }
     const report = await page.evaluate(() => {
+      const criticalWindows = {
+        jumpingjacks: [['Bip01_L_UpperArm',0.98],['Bip01_L_Forearm',0.98],['Bip01_R_UpperArm',0.98],['Bip01_R_Calf',2.85]],
+        mountainclimber: [['Bip01_L_Thigh',0.05],['Bip01_L_Calf',0.05],['Bip01_R_Thigh',2.05],['Bip01_R_Calf',2.05]],
+        fentes: [['Bip01_R_Thigh',0.05],['Bip01_R_Calf',0.05],['Bip01_R_Foot',0.25],['Bip01_L_Calf',5.05]],
+        etirementdos: [['Bip01_L_Forearm',1.45],['Bip01_R_Forearm',1.45]]
+      };
+      const criticalTrackWindows = Object.fromEntries(Object.entries(criticalWindows).map(([exercise,items]) => {
+        lab.select(exercise);
+        return [exercise, items.map(([bone,time]) => ({bone,time,keys:lab.trackWindow(exercise,bone,time,.14)}))];
+      }));
       const output = [];
       const trackSummary = lab.clips.map(clip => ({ exercise: clip.name, tracks: lab.tracks(clip.name) }));
       for (const clip of lab.clips) {
@@ -122,7 +132,7 @@ const path = require('node:path');
           });
         }
       }
-      return { samples: output, trackSummary };
+      return { samples: output, trackSummary, criticalTrackWindows };
     });
     const target = 'docs/development/motion-review/joint-diagnostics.json';
     fs.mkdirSync(path.dirname(target), { recursive: true });
@@ -131,7 +141,8 @@ const path = require('node:path');
       source: 'Original coach.glb; no candidate loaded or changed.',
       servedAssets: diagnostics.served,
       exercises: report.samples,
-      trackSummary: report.trackSummary
+      trackSummary: report.trackSummary,
+      criticalTrackWindows: report.criticalTrackWindows
     }, null, 2));
     console.log('COACH_DIAGNOSTICS_OK', JSON.stringify({
       assetsServed: diagnostics.served.length,
