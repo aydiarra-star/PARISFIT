@@ -4,7 +4,7 @@
   "servedAssets": [
     {
       "path": "tools/coach-lab.html",
-      "bytes": 6465
+      "bytes": 6309
     },
     {
       "path": "vendor/three/three.module.js",
@@ -7485,6 +7485,3984 @@
           "bone": "Bip01_R_Calf",
           "peak": 0,
           "time": 0
+        }
+      ]
+    }
+  ],
+  "trackSummary": [
+    {
+      "exercise": "squat",
+      "tracks": [
+        {
+          "name": "Bip01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01.position",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 3
+        },
+        {
+          "name": "Bip01_Pelvis.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine.quaternion",
+          "interpolation": 2301,
+          "keyframes": 43,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 114,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 111,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Neck.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Head.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LCaninus.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MUpperLip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMasseter.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RCaninus.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEyeBlinkBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMouthCorner.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REyeBlinkBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RUpperlip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LUpperlip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMouthCorner.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RCheek.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LCheek.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REyeBlinkTop.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEyeBlinkTop.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEye.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REye.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MJaw.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MBottomLip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MTongue.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMouthBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMouthBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMasseter.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LInnerEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RInnerEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_ROuterEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MMiddleEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LOuterEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MNose.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Clavicle.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_UpperArm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Forearm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Hand.quaternion",
+          "interpolation": 2301,
+          "keyframes": 12,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger4.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger41.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger42.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger02.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger21.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger22.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger3.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger31.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger32.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger11.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger12.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Clavicle.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_UpperArm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Forearm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Hand.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger11.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger12.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger02.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger21.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger22.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger3.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger31.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger32.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger4.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger41.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger42.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Thigh.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Calf.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Foot.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Toe0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Thigh.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Calf.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Foot.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Toe0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        }
+      ]
+    },
+    {
+      "exercise": "pompes",
+      "tracks": [
+        {
+          "name": "Bip01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01.position",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 3
+        },
+        {
+          "name": "Bip01_Pelvis.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 114,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Neck.quaternion",
+          "interpolation": 2301,
+          "keyframes": 8,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Head.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LCaninus.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MUpperLip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMasseter.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RCaninus.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEyeBlinkBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMouthCorner.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REyeBlinkBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RUpperlip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LUpperlip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMouthCorner.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RCheek.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LCheek.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REyeBlinkTop.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEyeBlinkTop.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEye.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REye.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MJaw.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MBottomLip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MTongue.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMouthBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMouthBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMasseter.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LInnerEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RInnerEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_ROuterEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MMiddleEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LOuterEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MNose.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Clavicle.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_UpperArm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Forearm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Hand.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger4.quaternion",
+          "interpolation": 2301,
+          "keyframes": 26,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger41.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger42.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 67,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger02.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 38,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger21.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger22.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger3.quaternion",
+          "interpolation": 2301,
+          "keyframes": 26,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger31.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger32.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 35,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger11.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger12.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Clavicle.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_UpperArm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Forearm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Hand.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 14,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger11.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger12.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 17,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger02.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 21,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger21.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger22.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger3.quaternion",
+          "interpolation": 2301,
+          "keyframes": 10,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger31.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger32.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger4.quaternion",
+          "interpolation": 2301,
+          "keyframes": 14,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger41.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger42.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Thigh.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Calf.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Foot.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Toe0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Thigh.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Calf.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Foot.quaternion",
+          "interpolation": 2301,
+          "keyframes": 115,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Toe0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        }
+      ]
+    },
+    {
+      "exercise": "gainage",
+      "tracks": [
+        {
+          "name": "Bip01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01.position",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 3
+        },
+        {
+          "name": "Bip01_Pelvis.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Neck.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Head.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LCaninus.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MUpperLip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMasseter.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RCaninus.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEyeBlinkBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMouthCorner.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REyeBlinkBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RUpperlip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LUpperlip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMouthCorner.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RCheek.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LCheek.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REyeBlinkTop.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEyeBlinkTop.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEye.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REye.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MJaw.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MBottomLip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MTongue.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMouthBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMouthBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMasseter.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LInnerEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RInnerEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_ROuterEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MMiddleEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LOuterEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MNose.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Clavicle.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_UpperArm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Forearm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Hand.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger4.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger41.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger42.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 6,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 180,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger02.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger21.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger22.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger3.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger31.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger32.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger11.quaternion",
+          "interpolation": 2301,
+          "keyframes": 177,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger12.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Clavicle.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_UpperArm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Forearm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Hand.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger11.quaternion",
+          "interpolation": 2301,
+          "keyframes": 171,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger12.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 6,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 169,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger02.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger21.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger22.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger3.quaternion",
+          "interpolation": 2301,
+          "keyframes": 6,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger31.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger32.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger4.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger41.quaternion",
+          "interpolation": 2301,
+          "keyframes": 179,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger42.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Thigh.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Calf.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Foot.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Toe0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Thigh.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Calf.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Foot.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Toe0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        }
+      ]
+    },
+    {
+      "exercise": "fentes",
+      "tracks": [
+        {
+          "name": "Bip01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01.position",
+          "interpolation": 2301,
+          "keyframes": 265,
+          "valueSize": 3
+        },
+        {
+          "name": "Bip01_Pelvis.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Neck.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Head.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LCaninus.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MUpperLip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMasseter.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RCaninus.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEyeBlinkBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMouthCorner.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REyeBlinkBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RUpperlip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LUpperlip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMouthCorner.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RCheek.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LCheek.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REyeBlinkTop.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEyeBlinkTop.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEye.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REye.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MJaw.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MBottomLip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MTongue.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMouthBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMouthBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMasseter.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LInnerEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RInnerEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_ROuterEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MMiddleEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LOuterEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MNose.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Clavicle.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_UpperArm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 265,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Forearm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 265,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Hand.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger4.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger41.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger42.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger02.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger21.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger22.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger3.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger31.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger32.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger11.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger12.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Clavicle.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_UpperArm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 265,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Forearm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 265,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Hand.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger11.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger12.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger02.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger21.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger22.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger3.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger31.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger32.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger4.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger41.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger42.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Thigh.quaternion",
+          "interpolation": 2301,
+          "keyframes": 265,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Calf.quaternion",
+          "interpolation": 2301,
+          "keyframes": 265,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Foot.quaternion",
+          "interpolation": 2301,
+          "keyframes": 265,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Toe0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Thigh.quaternion",
+          "interpolation": 2301,
+          "keyframes": 265,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Calf.quaternion",
+          "interpolation": 2301,
+          "keyframes": 265,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Foot.quaternion",
+          "interpolation": 2301,
+          "keyframes": 265,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Toe0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        }
+      ]
+    },
+    {
+      "exercise": "jumpingjacks",
+      "tracks": [
+        {
+          "name": "Bip01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01.position",
+          "interpolation": 2301,
+          "keyframes": 97,
+          "valueSize": 3
+        },
+        {
+          "name": "Bip01_Pelvis.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Neck.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Head.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LCaninus.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MUpperLip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMasseter.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RCaninus.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEyeBlinkBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMouthCorner.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REyeBlinkBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RUpperlip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LUpperlip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMouthCorner.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RCheek.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LCheek.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REyeBlinkTop.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEyeBlinkTop.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEye.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REye.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MJaw.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MBottomLip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MTongue.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMouthBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMouthBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMasseter.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LInnerEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RInnerEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_ROuterEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MMiddleEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LOuterEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MNose.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Clavicle.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_UpperArm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 97,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Forearm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 97,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Hand.quaternion",
+          "interpolation": 2301,
+          "keyframes": 33,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger4.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger41.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger42.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger02.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger21.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger22.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger3.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger31.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger32.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger11.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger12.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Clavicle.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_UpperArm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 97,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Forearm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 97,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Hand.quaternion",
+          "interpolation": 2301,
+          "keyframes": 9,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger11.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger12.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger02.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger21.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger22.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger3.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger31.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger32.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger4.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger41.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger42.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Thigh.quaternion",
+          "interpolation": 2301,
+          "keyframes": 97,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Calf.quaternion",
+          "interpolation": 2301,
+          "keyframes": 97,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Foot.quaternion",
+          "interpolation": 2301,
+          "keyframes": 97,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Toe0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Thigh.quaternion",
+          "interpolation": 2301,
+          "keyframes": 97,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Calf.quaternion",
+          "interpolation": 2301,
+          "keyframes": 97,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Foot.quaternion",
+          "interpolation": 2301,
+          "keyframes": 97,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Toe0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        }
+      ]
+    },
+    {
+      "exercise": "mountainclimber",
+      "tracks": [
+        {
+          "name": "Bip01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01.position",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 3
+        },
+        {
+          "name": "Bip01_Pelvis.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Neck.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Head.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LCaninus.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MUpperLip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMasseter.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RCaninus.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEyeBlinkBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMouthCorner.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REyeBlinkBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RUpperlip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LUpperlip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMouthCorner.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RCheek.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LCheek.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REyeBlinkTop.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEyeBlinkTop.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEye.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REye.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MJaw.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MBottomLip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MTongue.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMouthBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMouthBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMasseter.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LInnerEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RInnerEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_ROuterEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MMiddleEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LOuterEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MNose.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Clavicle.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_UpperArm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Forearm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Hand.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger4.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger41.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger42.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger02.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger21.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger22.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger3.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger31.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger32.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger11.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger12.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Clavicle.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_UpperArm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Forearm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Hand.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger11.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger12.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger02.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger21.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger22.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger3.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger31.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger32.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger4.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger41.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger42.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Thigh.quaternion",
+          "interpolation": 2301,
+          "keyframes": 62,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Calf.quaternion",
+          "interpolation": 2301,
+          "keyframes": 62,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Foot.quaternion",
+          "interpolation": 2301,
+          "keyframes": 62,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Toe0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Thigh.quaternion",
+          "interpolation": 2301,
+          "keyframes": 62,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Calf.quaternion",
+          "interpolation": 2301,
+          "keyframes": 62,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Foot.quaternion",
+          "interpolation": 2301,
+          "keyframes": 62,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Toe0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        }
+      ]
+    },
+    {
+      "exercise": "etirementdos",
+      "tracks": [
+        {
+          "name": "Bip01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 141,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01.position",
+          "interpolation": 2301,
+          "keyframes": 141,
+          "valueSize": 3
+        },
+        {
+          "name": "Bip01_Pelvis.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine.quaternion",
+          "interpolation": 2301,
+          "keyframes": 67,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 141,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 141,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Neck.quaternion",
+          "interpolation": 2301,
+          "keyframes": 141,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Head.quaternion",
+          "interpolation": 2301,
+          "keyframes": 141,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LCaninus.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MUpperLip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMasseter.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RCaninus.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEyeBlinkBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMouthCorner.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REyeBlinkBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RUpperlip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LUpperlip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMouthCorner.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RCheek.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LCheek.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REyeBlinkTop.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEyeBlinkTop.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEye.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REye.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MJaw.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MBottomLip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MTongue.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMouthBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMouthBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMasseter.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LInnerEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RInnerEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_ROuterEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MMiddleEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LOuterEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MNose.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Clavicle.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_UpperArm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 141,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Forearm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 141,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Hand.quaternion",
+          "interpolation": 2301,
+          "keyframes": 21,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger4.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger41.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger42.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger02.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger21.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger22.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger3.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger31.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger32.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger11.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger12.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Clavicle.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_UpperArm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 141,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Forearm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 141,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Hand.quaternion",
+          "interpolation": 2301,
+          "keyframes": 14,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger11.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger12.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger02.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger21.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger22.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger3.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger31.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger32.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger4.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger41.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger42.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Thigh.quaternion",
+          "interpolation": 2301,
+          "keyframes": 141,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Calf.quaternion",
+          "interpolation": 2301,
+          "keyframes": 141,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Foot.quaternion",
+          "interpolation": 2301,
+          "keyframes": 141,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Toe0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Thigh.quaternion",
+          "interpolation": 2301,
+          "keyframes": 141,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Calf.quaternion",
+          "interpolation": 2301,
+          "keyframes": 141,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Foot.quaternion",
+          "interpolation": 2301,
+          "keyframes": 141,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Toe0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        }
+      ]
+    },
+    {
+      "exercise": "mobiliteepaules",
+      "tracks": [
+        {
+          "name": "Bip01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01.position",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 3
+        },
+        {
+          "name": "Bip01_Pelvis.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Spine2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Neck.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_Head.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LCaninus.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MUpperLip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMasseter.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RCaninus.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEyeBlinkBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMouthCorner.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REyeBlinkBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RUpperlip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LUpperlip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMouthCorner.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RCheek.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LCheek.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REyeBlinkTop.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEyeBlinkTop.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LEye.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_REye.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MJaw.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MBottomLip.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MTongue.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LMouthBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMouthBottom.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RMasseter.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LInnerEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_RInnerEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_ROuterEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MMiddleEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_LOuterEyebrow.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_MNose.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Clavicle.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_UpperArm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Forearm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Hand.quaternion",
+          "interpolation": 2301,
+          "keyframes": 19,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger4.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger41.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger42.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger02.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger21.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger22.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger3.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger31.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger32.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger11.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Finger12.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Clavicle.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_UpperArm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Forearm.quaternion",
+          "interpolation": 2301,
+          "keyframes": 181,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Hand.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger1.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger11.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger12.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger01.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger02.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger2.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger21.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger22.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger3.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger31.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger32.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger4.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger41.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Finger42.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Thigh.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Calf.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Foot.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_L_Toe0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Thigh.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Calf.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Foot.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
+        },
+        {
+          "name": "Bip01_R_Toe0.quaternion",
+          "interpolation": 2301,
+          "keyframes": 2,
+          "valueSize": 4
         }
       ]
     }
