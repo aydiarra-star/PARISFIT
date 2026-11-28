@@ -57,6 +57,7 @@ const path = require('node:path');
     }
     const report = await page.evaluate(() => {
       const output = [];
+      const trackSummary = lab.clips.map(clip => ({ exercise: clip.name, tracks: lab.tracks(clip.name) }));
       for (const clip of lab.clips) {
         for (const hz of [60, 120, 240]) {
           lab.select(clip.name);
@@ -121,7 +122,7 @@ const path = require('node:path');
           });
         }
       }
-      return output;
+      return { samples: output, trackSummary };
     });
     const target = 'docs/development/motion-review/joint-diagnostics.json';
     fs.mkdirSync(path.dirname(target), { recursive: true });
@@ -129,12 +130,14 @@ const path = require('node:path');
       method: 'World-space bone-origin linear acceleration and change in quaternion-derived angular rate; finite differences; 60, 120 and 240 Hz; diagnostic only, not a safety or biomechanical metric.',
       source: 'Original coach.glb; no candidate loaded or changed.',
       servedAssets: diagnostics.served,
-      exercises: report
+      exercises: report.samples,
+      trackSummary: report.trackSummary
     }, null, 2));
     console.log('COACH_DIAGNOSTICS_OK', JSON.stringify({
       assetsServed: diagnostics.served.length,
-      exercises: report.length,
-      samples: report.length * 2
+      exercises: report.samples.length / 3,
+      samples: report.samples.length,
+      tracks: report.trackSummary.reduce((n, clip) => n + clip.tracks.length, 0)
     }));
     for (const item of report.filter(x => x.exercise === 'jumpingjacks')) {
       console.log(JSON.stringify(item));
