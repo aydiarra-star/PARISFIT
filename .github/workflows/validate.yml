@@ -300,3 +300,107 @@ jobs:
           name: phase12-source-benchmark
           path: .cache/phase12/
           retention-days: 30
+
+  michaud-qualification:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Independent marker environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-numpy python3-pil ffmpeg
+      - name: Pinned data, force audit and explicit reconstruction hypotheses
+        run: |
+          python3 tools/michaud/acquire.py
+          python3 tools/michaud/test_core.py
+          python3 tools/michaud/analyze.py
+          python3 tools/michaud/render.py
+      - name: Phase13 public numerical reports
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import zlib,base64
+          for name in ['provenance.json','markers-report.json','forces-report.json','reconstruction-report.json','phases-report.json']:
+              p=Path('.cache/phase13')/name
+              if p.exists():
+                  raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+                  for i in range(0,len(raw),3800):print('::warning title=phase13-'+name+'-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - name: Phase13 model template metadata
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import zlib,base64
+          p=Path('.cache/phase13/model-inspection.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              for i in range(0,len(raw),3800):print('::warning title=phase13-model-inspection.json-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - name: Phase13 small reproducible review data 1
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import zlib,base64
+          p=Path('.cache/phase13/review-data.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              assert len(raw)<=152000,'REVIEW_TRANSPORT_SIZE'
+              for i in range(0,min(len(raw),30400),3800):print('::warning title=phase13-review-data.json-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - name: Phase13 small reproducible review data 2
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import zlib,base64
+          p=Path('.cache/phase13/review-data.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              assert len(raw)<=152000,'REVIEW_TRANSPORT_SIZE'
+              for i in range(30400,min(len(raw),60800),3800):print('::warning title=phase13-review-data.json-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - name: Phase13 small reproducible review data 3
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import zlib,base64
+          p=Path('.cache/phase13/review-data.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              assert len(raw)<=152000,'REVIEW_TRANSPORT_SIZE'
+              for i in range(60800,min(len(raw),91200),3800):print('::warning title=phase13-review-data.json-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - name: Phase13 small reproducible review data 4
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import zlib,base64
+          p=Path('.cache/phase13/review-data.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              assert len(raw)<=152000,'REVIEW_TRANSPORT_SIZE'
+              for i in range(91200,min(len(raw),121600),3800):print('::warning title=phase13-review-data.json-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - name: Phase13 small reproducible review data 5
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import zlib,base64
+          p=Path('.cache/phase13/review-data.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              assert len(raw)<=152000,'REVIEW_TRANSPORT_SIZE'
+              for i in range(121600,min(len(raw),152000),3800):print('::warning title=phase13-review-data.json-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: phase13-michaud-qualification
+          path: .cache/phase13/
+          retention-days: 30
