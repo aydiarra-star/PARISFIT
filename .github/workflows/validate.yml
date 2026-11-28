@@ -58,6 +58,7 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Browser regression and 3D tests
         run: |
+          set -o pipefail
           python3 -m http.server 3000 --bind 0.0.0.0 &
           SERVER_PID=$!
           trap 'kill "$SERVER_PID"' EXIT
