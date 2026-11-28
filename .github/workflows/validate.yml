@@ -422,3 +422,31 @@ jobs:
           name: phase13-michaud-qualification
           path: .cache/phase13/
           retention-days: 30
+
+  model-qualification:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect exact archive and upstream template without IK
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-numpy
+          python3 tools/model-qualification/acquire.py
+      - name: Transport public S01 audit only
+        run: |
+          python3 - <<'PY'
+          import json,zlib,base64
+          from pathlib import Path
+          d=json.loads(Path('.cache/phase14/original-audit.json').read_text())
+          # Compact structured report, no model geometry or other participant values.
+          raw=base64.b64encode(zlib.compress(json.dumps(d,separators=(',',':'),ensure_ascii=False).encode(),9)).decode()
+          assert len(raw)<=38000,'TRANSPORT_LIMIT'
+          for i in range(0,len(raw),3800):print('::warning title=phase14-original-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: phase14-model-qualification
+          path: .cache/phase14/original-audit.json
+          retention-days: 30
