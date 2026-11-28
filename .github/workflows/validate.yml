@@ -21,6 +21,7 @@ jobs:
           node --check demo-data.js
           node --check service-worker.js
           node --input-type=module --check < coach-content.js
+          node tests/coach-documentary-review.cjs
           node tests/coach-evidence.cjs
           node tests/coach-transition-evidence.cjs
           node tests/coach-transition-gate.cjs
@@ -58,6 +59,7 @@ jobs:
           python3 -m http.server 3000 --bind 0.0.0.0 &
           SERVER_PID=$!
           trap 'kill "$SERVER_PID"' EXIT
+          node tests/coach-documentary-review-browser.cjs
           npm run test:browser
       - name: Keep review screenshots
         if: always()

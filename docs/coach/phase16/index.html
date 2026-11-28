@@ -1,0 +1,188 @@
+<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>PARISFIT · Phase16</title><style>*{box-sizing:border-box}body{margin:0;background:#edf5ef;color:#173f33;font:16px/1.65 system-ui;overflow-wrap:anywhere}main{max-width:1080px;margin:auto;padding:24px}h1{font-size:clamp(28px,5vw,46px);line-height:1.15}section{background:white;padding:24px;margin:22px 0;border-radius:18px}a{color:#165e47}.tag{background:#f6d4c6;padding:8px 16px;display:inline-block;border-radius:20px}pre{white-space:pre-wrap;font:inherit;overflow-wrap:anywhere}summary{cursor:pointer;font-weight:bold}details{margin:16px 0}small{display:block}</style><main><a href="../phase15/index.html">← Phase15</a><p>PARISFIT / COACH RECHERCHE / PHASE16</p><h1>Des squats capturés.<br>Des preuves encore à qualifier.</h1><p class="tag">B — Documentation partielle</p><section><h2>Décision scientifique</h2><p>Aucune source ni animation nouvellement admise. Les six facteurs S01 restent non appliqués. Demandes finales FR/EN <b>NON ENVOYÉES</b> ; aucune réponse obtenue. IK, retargeting et correction biomécanique non exécutés.</p></section><section><h2>Priorité : Notre Dame / WeRoLab</h2><p>Squat avec maintien d'au moins 8 secondes, 10 participants sains, 3 prises chacun. MarkerSet57, données de forces et configurations disponibles. Cinq petits fichiers inspectés au commit épinglé ; aucun C3D téléchargé ni script auteur exécuté.</p><p>Limite majeure publiée : erreur de scaling RMS moyenne 4,21 cm. La présence d'un setup ne prouve pas une bonne reconstruction anatomique. Prochaine étape : qualification passive d'un seul couple squat/statique et revue professionnelle.</p></section><section><h2>Autres pistes : limites explicites</h2><p><b>Leeds / LLJ :</b> 102 essais de squat dans une cohorte postopératoire ; pas une référence normative sportive. Licence dataset CC BY4.0.</p><p><b>GroundLink :</b> squats et forces disponibles ; code MIT, mais licence des archives C3D/FBX non établie dans les pages consultées. Ne pas étendre la licence du code aux données.</p><p><b>WBDS v6 :</b> marche seulement, jamais présenté comme squat. Rocketbox et les huit exercices restent inchangés.</p></section><h2>Les cinq livrables</h2><section><h3>Demande finale · français</h3><a href="author-request-final-fr.md">Ouvrir le fichier Markdown</a><details><summary>Lire le document intégral</summary><pre># Demande finale — français
+
+**Prête pour décision d’envoi par l’utilisateur. NON ENVOYÉE. Aucun contact ni réponse obtenue.**
+
+**Objet : Reproductibilité S01/P001 — MarkerSet et scaling, dataset 10.5281/zenodo.23979972 v1**
+
+Bonjour Dr Michaud et collègues,
+
+Nous examinons la reproductibilité de S01/P001 pour PARISFIT. S01 est le participant anonymisé ; P001 désigne sa première série de squats, et non un autre participant. Notre analyse cible `participants/S01/P001_markers.csv.gz` et la capture statique du même dossier. Le README décrit un modèle générique contenant les 37 marqueurs du laboratoire ; le XML fourni expose 66 marqueurs avec des noms différents des 37 labels CSV. Nous souhaitons comprendre cette différence sans supposer de correspondances anatomiques.
+
+Pourriez-vous nous orienter vers les pièces suivantes, si elles existent ?
+
+1. **MarkerSet et placement :** le MarkerSet de capture et celui du modèle effectivement utilisés, leur table de correspondance officielle, le protocole de palpation, les offsets et repères locaux. Pourriez-vous préciser notamment `ASIC`, `sacral_crest` et `forearm_centre`, ainsi que les marqueurs exclus et les centres virtuels ? Cela permettrait de distinguer un point cutané d’un centre articulaire.
+2. **Configuration S01 :** le modèle individualisé S01, ou le template exact et les fichiers/scripts permettant de le reconstruire. Le XML distribué est-il le template utilisé avant individualisation ?
+3. **Six facteurs :** pour S01 nous lisons P1=1,07737, P2=1,08037, P3=1,08637, Fem=1,07018, Tib=1,08885 et Foot=1,14237. Confirmez-vous leur référence, les axes/corps concernés, l’isotropie éventuelle, l’ordre d’application et le traitement des autres segments, masses et inerties ? S’agit-il d’entrées d’un surrogate ou d’un scaling complet rejouable ? Ces précisions sont nécessaires pour ne pas attribuer les facteurs à de mauvais axes.
+4. **Registration :** pose et fenêtre statiques, placement des marqueurs du modèle, poids, contraintes et éventuels déplacements manuels. Cela distinguerait la mise à l’échelle du squelette de l’ajustement des marqueurs.
+5. **Repères et acquisition :** axes signés, unités et transformations laboratoire/plates-formes/OpenSim, origine des moments, géométrie des plates, synchronisation et traitements des lacunes/filtrage. Cela permettrait de comparer correctement trajectoires et forces.
+6. **Reproduction des calculs :** configurations de scaling, IK ou simulation utilisées et scripts d’export ; article associé, DOI/préprint et suppléments. Nous conserverons les paramètres et les limites plutôt que reproduire seulement un résultat visuel.
+7. **Réutilisation :** attribution souhaitée et confirmation du périmètre CC BY 4.0, notamment pour un usage commercial des données, ainsi que les licences/notices distinctes du modèle et de ses composants.
+
+Une réponse publique versionnée, liée au dépôt, serait idéale. Si une pièce n’existe pas ou ne peut être partagée, une indication de cette limite nous aiderait. Nous ne demandons aucune identité, signature de consentement ou vidéo privée de participant. Aucune IK ne sera lancée à partir de correspondances simplement plausibles.
+
+Merci pour votre aide.
+
+Référence : https://doi.org/10.5281/zenodo.23979972 ; modèle `LaiUhlrich2022_symmetric.osim`, SHA256 `42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9`.
+</pre></details></section><section><h3>Final author enquiry · English</h3><a href="author-request-final-en.md">Ouvrir le fichier Markdown</a><details><summary>Lire le document intégral</summary><pre># Final author enquiry — English
+
+**Ready for the user&#x27;s sending decision. NOT SENT. No contact made and no response obtained.**
+
+**Subject: Reproducing S01/P001 — MarkerSet and scaling, dataset 10.5281/zenodo.23979972 v1**
+
+Dear Dr Michaud and colleagues,
+
+We are examining the reproducibility of S01/P001 for PARISFIT. S01 is the anonymized participant; P001 denotes their first squat set, not another participant. Our analysis targets `participants/S01/P001_markers.csv.gz` and the static capture in that folder. The README describes a generic model containing the 37 laboratory markers; the supplied XML contains 66 markers whose names differ from the 37 CSV labels. We would like to understand this difference without assuming anatomical correspondences.
+
+Could you please point us to the following materials, if available?
+
+1. **MarkerSet and placement:** the capture and model MarkerSets actually used, their official correspondence table, palpation protocol, offsets and local frames. Could you clarify `ASIC`, `sacral_crest` and `forearm_centre`, excluded markers and virtual centres? This would distinguish skin landmarks from joint centres.
+2. **S01 configuration:** the individualized S01 model, or the exact template and files/scripts needed to reproduce it. Is the distributed XML the template used before individualization?
+3. **Six factors:** for S01 we read P1=1.07737, P2=1.08037, P3=1.08637, Fem=1.07018, Tib=1.08885 and Foot=1.14237. Could you confirm their reference geometry, axes/bodies, any isotropic application, operation order and treatment of other segments, masses and inertias? Are these surrogate inputs or a complete reproducible scaling specification? This would prevent applying factors to incorrect axes.
+4. **Registration:** static pose and time window, model marker placement, weights, constraints and any manual marker adjustments. This would distinguish skeletal scaling from marker registration.
+5. **Frames and acquisition:** signed axes, units and laboratory/force-plate/OpenSim transformations, moment origins, plate geometry, synchronization, gap filling and filtering. These are needed to compare trajectories with forces correctly.
+6. **Computational reproduction:** scaling, IK or simulation settings and export scripts, plus the associated article DOI/preprint and supplements. We would retain the parameters and limitations rather than reproduce only a visual result.
+7. **Reuse:** preferred attribution and confirmation of the scope of CC BY 4.0, including commercial reuse of the data, together with any separate model/component licences and notices.
+
+A public, versioned response linked to the dataset would be ideal. If an item does not exist or cannot be shared, knowing that limitation would also help. We do not request participant identities, consent signatures or private videos. No IK will be run using merely plausible correspondences.
+
+Thank you for your assistance.
+
+Reference: https://doi.org/10.5281/zenodo.23979972 ; model `LaiUhlrich2022_symmetric.osim`, SHA256 `42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9`.
+</pre></details></section><section><h3>Recherche de sources de squats</h3><a href="squat-dataset-research.md">Ouvrir le fichier Markdown</a><details><summary>Lire le document intégral</summary><pre># Sources de squats réellement capturés — revue du 27 novembre 2026
+
+**EN ATTENTE DE VALIDATION HUMAINE. Aucune source nouvelle admise.** Cette phase examine publications, licences, inventaires et configurations, sans lancer de traitement de mouvement. Aucun C3D nouveau téléchargé ou décodé ; aucun résultat anatomique ou visuel revendiqué. WBDS v6 est exclu de la sélection squat : c’est une source de marche.
+
+## 1 — Notre Dame / WeRoLab : priorité pour une qualification ultérieure
+
+**Auteurs/publication :** Mohsen Alizadeh Noghani, Sebastian Green, Edgar Bolívar-Nieto, *Whole-body optical marker and ground reaction force data of healthy humans performing non-cyclic activities*, Scientific Data12,1971(2025), DOI [10.1038/s41597-025-06227-7](https://www.nature.com/articles/s41597-025-06227-7). Texte primaire consulté : [PMC12717423](https://pmc.ncbi.nlm.nih.gov/articles/PMC12717423/), sectionsParticipants, Instrumentation, Experimental Procedure et Data Processing.
+
+**Source précise :** [dataset DOI10.7274/28689221](https://curate.nd.edu/articles/dataset/Whole-body_optical_marker_and_ground_reaction_force_data_of_healthy_humans_performing_non-cyclic_activities/28689221), page affichantversion1 ; [API du dépôt](https://api.figshare.com/v2/articles/28689221). Code associé officiellement cité : [WeRoLab](https://github.com/WeRoLab/healthy-whole-body-noncyclic-dataset/tree/a26fe4852a78f30c5e8a437b158847031cb8dc3c), commit `a26fe4852a78f30c5e8a437b158847031cb8dc3c`.
+
+- **Mouvement réel :** descente en squat, maintien d’au moins8secondes puis retour à la posture neutre. Pas une répétition sportive chargée ni une marche renommée.
+- **Participants/répétitions :**10adultes sains,14activités,3répétitions par activité. L’arbreGit non tronqué confirme30C3D de squat,3pour chacunAB01–AB10 ; pas30cycles vérifiés par lecture des signaux.
+- **Matériel :**12camérasOptiTrackPrimeX22, marqueurs200Hz ;6platesKistler9260AA6, forces1000Hz. Participants en vêtements ajustés et chaussettes ; rythme naturel. Pieds droit/gauche surplates1/2 au départ selon protocole général.
+- **Anatomie :**Biomech(57), Figure1,57marqueurs statiques,8de calibration retirés ensuite. Inspection réelle duMarkerSetXML :57noms ; setupScaleGUI :57tâchesmarker ; setupIKsquat :49tâches. **Cohérence de comptage, pas encore correspondance C3D/anatomie validée.** La palpation exacte, le placement individuel et les incertitudes doivent être contrôlés lors de la qualification ciblée.
+- **Cinématique/cinétique :**TAK bruts et traités, C3D exportés, TRC/MOT, modèleBiomech57, configurations et résultatsIK/ID/CoM annoncés. LesC3D sont déjà labellisés, gap-filled puis filtrés6Hz ; interpolation linéaire ou pattern-based. Forces traitées ensuite20Hz, contacts20N, affectation manuelle aux pieds. Distinguer ces étapes, ne pas appeler lesC3D des trajectoires optiques entièrement brutes.
+- **Repères :**Figures2/3 décrivent laboratoire et plates ; marqueurs et forces exportés dans le repèrecapture. Convention de l’article :Yvertical,Zavant,Xmédiolatéral ; sens et transformations exactes encore à vérifier sur le couplefichier/configuration. Pas de conversion effectuée.
+
+### Avancée concrète : configurations inspectées, pas exécutées
+
+`candidate-inspection.json` conserve les référencesGit etSHA256 calculés de5petits fichiers récupérés : MarkerSet, setupIK, setupScaleGUI, ExternalForces et scriptforces. Exemple ciblé pour une prochaine phase : `AB01/Squat/1/Data/squat_1.c3d` (4439424octets) avec `AB01/Static/1/Data/static.c3d` (2560224octets), identifiés dans l’arbre, **non téléchargés**. Leur lien statique/squat doit être confirmé par les chemins résolus du pipeline, pas seulement la proximité des dossiers.
+
+Le setupIK référence`../generated/Generated_Model.osim`, mais`marker_file` et`time_range` sont`Unassigned`. Le setupScaleGUI a aussi des références`Unassigned`. Elles peuvent être complétées par le code : ce n’est ni un fichier prêt à exécuter tel quel, ni une preuve d’erreur des auteurs. Le scriptforces contient des affectations manuelles ; le mécanisme exact doit être vérifié sans l’exécuter à l’aveugle. Aucun code auteur n’a été lancé.
+
+### Licence et limites
+
+**VALIDÉ documentaire :** licence **CC BY4.0 sur le dépôt de données précis**, pas uniquement l’article. Réutilisation commerciale permise sous attribution, lien de licence et indication des changements ; pas d’endossement, droits de personnalité non automatiquement couverts. Citer auteurs, article et DOI du dataset. Les bibliothèques tierces, modèles amont, MATLAB/Motive et autres logiciels gardent leurs licences : leCC BY du dépôt n’autorise pas automatiquement tous leurs composants. Aucun achat ni redistribution de modèle/code auteur dansGit ; seules métadonnées d’audit.
+
+**Limite majeure publiée :** erreur de scalingRMS4,21±0,34cm (3,59–4,69), maxima9,82±0,74cm (9,07–11,33). Les auteurs déclarent ne pas avoir individualisé les setups pour minimiser cette erreur et avoir contrôlé l’A-pose visuellement. Ces chiffres sont **rapportés, pas recalculés parPARISFIT**, et ne valident pas l’anatomie. La disponibilité dessetups est un progrès documentaire, pas une admission.
+
+**Rocketbox : NON TESTÉ.** Il faudrait qualifier placements, axes, centres, modèle individualisé, incertitudes et cycle complet avant de considérer une correspondance de rig. Conserver le maintien de8secondes ; ne pas retimer pour produire un squat sportif différent.
+
+## 2 — LifeLongJoints / Leeds : squat réel, population clinique
+
+**Auteurs :** David Lunn, Enrico de Pieri, Graham Chapman, Stephen Ferguson, Anthony Redmond. [Article2026 DOI10.1038/s41597-026-06925-w](https://www.nature.com/articles/s41597-026-06925-w), sectionsMethods/Experimental procedures. [Dépôt primaire DOI10.5518/1701](https://archive.researchdata.leeds.ac.uk/1521/), dernière modification affichée26mars2026 ; distingue l’ancien sous-ensembleDOI10.5518/319.
+
+- **Mouvement :** squat, un pied parplate, pieds largeurépaules, bras devant ; phasesinitiation/bas/fin annotées. Pas de charge externe documentée pour ce squat.
+- **Effectif :**137patients après prothèse totale de hanche dans l’ensemble ; **102essais squat**, moyenne3essais chez les participants effectuant cette tâche. Ne pas prétendre que les137ont tous squatté ou déduire leur nombre exact de102/3. Article :3–5essais réussis visés et3–6bonsessais parADLeffectuée, décompte individuel dans table ; nombre exact de sujets squat non vérifié ici.
+- **Capture :**10camérasViconMX100Hz,2platesAMTI600×400mm à1000Hz ; synchronisationMXGiganet, calibrationwand, origine au coin d’uneplate. Capture10s puis trimming aux événements.
+- **Marqueurs :**protocoleCAST, clusters de cuisses/jambes/sacrum, statique lié à chaqueessai ; Figure2/Table1 de l’article pourlabels et sites anatomiques. Table détaillée non entièrement extraite ici ; aucune matrice versRocketbox. Changements de marqueurs nécessitent nouveau statique.
+- **Données :**C3D/TXT avec coordonnéesm,forcesN,moments ; modèlesAnyBody associés mentionnés par les auteurs, pas modèleOpenSim autonome vérifié. Gap-fillingWoltring≤10frames ; markersfiltrés6Hz,forces/moments25Hz et miseàzéro sous5N selon publication.
+- **Licence : VALIDÉ documentaire**, dépôt et fichiers déclarés **CC BY4.0**. Usagecommercial conditionnel à attribution/licence/modifications ; droits/consentement clinique et conditions des modèles/logiciels à examiner séparément. Pas d’achatAnyBody. Pas de donnéespersonnelles individuelles extraites.
+- **Limite/compatibilité :**cohorte postopératoire, adaptations motrices possibles ; ne pas ériger ces squats en consigne sportive normative. Source utile pour recherchecomparative, **C pour substitution directe au coach sportif sain**, sans déclarer ses données scientifiquement invalides. Retarget NON TESTÉ.
+
+## 3 — GroundLink : squat réel, droits des données à clarifier
+
+**Auteurs :** Xingjian Han, Benjamin Senderling, Stanley To, Deepak Kumar, Emily Whiting, Jun Saito. SIGGRAPHAsia2023, [DOI10.1145/3610548.3618247](https://doi.org/10.1145/3610548.3618247), [préprint arXiv2310.03930v1](https://arxiv.org/html/2310.03930), §3 et tableaux. [Page officielle de téléchargement](https://csr.bu.edu/groundlink/). [Code épinglé](https://github.com/hanxingjian/GroundLink/tree/b5357ec385c9f76f5d75a83e42cedb35f9818e7f).
+
+- **Mouvement :**squats réels parmi19types, également utilisés dans les évaluations de l’article. Charge/amplitude/durée exactes du squat à confirmer dans essais ; ne pas extrapoler le maintien20s des posesstationnaires aux squats.
+- **Effectif :**7participants ;4prises de chaque mouvement,3de meilleurequalité traitées selon protocole. Datasetglobal368séquences ; ne pas confondre prises et répétitions de squat, ni affirmer21fichiers squat vérifiés sans inventaire.
+- **Capture :**20camérasQualisys250Hz,96marqueurs dont10parpied ;5plates2000Hz, filtrageforces20Hz. Annotationpied/plate ; marqueursillustrésFigure3, positions détaillées annoncées en supplément mais non récupérées ici.
+- **Formats :**C3D96marqueurs avecforces, FBX250fps squeletteQTM obtenu de41marqueurs, forces/CoP ; paramètresMoSh++/SMPL-X séparés, estimés et non capture directe de centres anatomiques.
+- **Licence :**`LICENSE` du dépôtcode, lu au commit ci-dessus : **MIT**, copyright2024XingjianHan. La page des archivesC3D/FBX ne présente pas de licence explicite dans le contenu consulté. **Ne pas étendreMIT du code ouCC BY du préprint aux données externes. Droits commerciaux C3D/FBX EN ATTENTE DE DOCUMENTATION.** Les licencesSMPL-X/MoSh++ ne sont pas présumées permissives ; aucune utilisation de ces composants.
+- **Rocketbox : NON TESTÉ.** UnFBX disponible ne valide ni les pivots anatomiques ni le transfert. Qualification légale et documentaire nécessaire avant acquisition/retarget.
+
+## Comparaison avec l’existant et recommandation
+
+|Source|Squat confirmé par publication|Droits dataset précis|Décision actuelle|
+|---|---|---|---|
+|Michaudv1|Oui, chargé,11sujets, protocole3×3×15|CC BY4.0 vérifié phases14–16|B : mapping/repères/scaling manquants|
+|NotreDame/WeRoLab|Oui,10sujets×3prises, maintien≥8s|CC BY4.0 vérifié dépôt|B : priorité de qualification ciblée, erreurs de scaling importantes|
+|Leeds/LLJ|Oui,102essais, cohorte137patients|CC BY4.0 vérifié dépôt|C comme remplacement sportif normatif ; recherche possible|
+|GroundLink|Oui ; nombre exact de cycles non vérifié|Licence codeMIT ; archives non qualifiées|B : droits et supplément à obtenir|
+|WBDSv6|Non : marche|CC BY4.0 établiPhase15|C pour besoin squat ; garder comme piste de marche|
+
+**Priorité prochaine phase :** inspection passive d’un seul couple squat/statiqueNotreDame et de ses référencesrésolues, contrôles des unités/repères/labels/traitements et licences, puis avisprofessionnel. Pas d’IK avant ces portes. En parallèle, l’utilisateur peut décider d’envoyer la demandeMichaud ; aucun envoi effectué ici.
+
+## Périmètre de preuve
+
+Requête initiale : «squat motion capture dataset markers ground reaction forces C3D open dataset license» ; recherche ciblée du titreNotreDame. Fiches fondées ensuite sur les pagesprimaires ci-dessus, et non sur les seules vignettes de recherche. Dateconsultation27novembre2026. Documents tiers, dérivés et observationsPARISFIT sont distingués. Archivesvolumineuses non acquises, COPnon recalculé, aucun mouvement sélectionné pour intégration. Conserver toutes les preuves négatives des phases antérieures.
+</pre></details></section><section><h3>Audit des six facteurs</h3><a href="scaling-factors-audit.md">Ouvrir le fichier Markdown</a><details><summary>Lire le document intégral</summary><pre># Audit des six facteurs — application NON TESTÉE
+
+Consultation du 27 novembre 2026. **VALIDÉ :** valeurs relues dans la preuve originale S01. **EN ATTENTE DE DOCUMENTATION :** application exacte. Aucune valeur n’a été appliquée.
+
+Source : [README original](../phase14/dataset-README.md), [inspection originale](../phase14/original-audit.json), `participants.csv` SHA256 `64f61477376ef6ccea7d1ddb33f141a032e29566cae2122662e0e2fcda51049d`, archive SHA256 `901112330ed234ad97ce24cb866bd5e7e33bef766861d21264953b3ac1875782`. Réexamen des preuves acquises en phase14, pas nouveau téléchargement annoncé.
+
+|Facteur|Valeur S01|Unité|Ce que le README établit|Axe/corps et procédure officielle|
+|---|---:|---|---|---|
+|P1|1.07737|sans dimension|facteur d’un axe du bassin|ordre des axes non spécifié ; ne pas assigner X|
+|P2|1.08037|sans dimension|facteur d’un axe du bassin|ordre non spécifié ; ne pas assigner Y|
+|P3|1.08637|sans dimension|facteur d’un axe du bassin|ordre non spécifié ; ne pas assigner Z|
+|Fem|1.07018|sans dimension|fémur|corps/côtés, anisotropie/isotropie, géométrie de référence et propagation aux joints non établis|
+|Tib|1.08885|sans dimension|tibia|corps/côtés, axes, règle de scaling et ordre non établis|
+|Foot|1.14237|sans dimension|pied|répartition talus/calcn/toes, axes et règle de scaling non établis|
+
+Le README parle de «six surrogate scale factors», tandis que la notice parle de facteurs du modèle scaled. Cette nuance motive la question3, pas une interprétation automatique. Les identifiants de corps existent dans le XML, mais leur existence ne confirme pas les correspondances aux colonnes. P1–P3 ne sont pas une largeur absolue du bassin ; Fem/Tib ne sont pas des longueurs mesurées.
+
+## Recherche de la procédure
+
+L’endpoint officiel [latest](https://zenodo.org/api/records/23979972/versions/latest), relu dans cette phase, retourne toujours record23979972, revision4, modification2026-11-05T12:57:28.048468. Pas de nouvelle procédure trouvée dans cette réponse. Le manifeste épinglé de290fichiers ne contient pas de setupScaleTool/IK. La documentation officielle [OpenSim Scaling](https://opensimconfluence.atlassian.net/wiki/spaces/OpenSim/pages/53089123/Getting+Started+with+Scaling), consultée en phase15, décrit les mécanismes généraux mais n’autorise pas une interprétation des colonnes Michaud.
+
+**Non récupérés :** référence du scaling, affectation axes/corps, ordre d’opérations, traitement des autres segments, règle des masses/inerties, registration et éventuels ajustements manuels. La masse64,9kg et l’haltère11,856kg sont connus ; le brasMVC0,4317m n’est pas la longueur du tibia. Masse/inerties ne sont pas indispensables à l’IK pure, mais le deviennent pour une dynamique inverse.
+
+**Conclusion B :** valeurs et rôles généraux vérifiés, méthode insuffisamment documentée. Les questions2–4 de la demande finale ciblent ces pièces. Les fichiers de scaling d’une autre étude ne peuvent pas calibrer S01.
+</pre></details></section><section><h3>Décision, preuves et limites</h3><a href="decision-report.md">Ouvrir le fichier Markdown</a><details><summary>Lire le document intégral</summary><pre># Décision Phase16 — B : documentation partielle
+
+**EN ATTENTE DE DOCUMENTATION et EN ATTENTE DE VALIDATION HUMAINE.** Aucun jeu de données n’est admis pour produire une animation anatomiquement défendable dansPARISFIT à ce stade. Pas de scénarioA fondé sur la seule présence de fichiersOpenSim/FBX.
+
+## Avancées établies
+
+- DemandesFR/EN finalisées, mêmes7questions et mêmes6valeurs. **NON ENVOYÉES**, aucun contact, réponse ou accord d’auteur revendiqué. La décision d’envoi appartient à l’utilisateur.
+- Michaud : preuveS01/README relue, endpointlatest toujoursv1 ; rôles généraux desfacteurs connus, axes/corps/règles exactes toujours absents. Aucunfacteur appliqué.
+- Recherche centrée sur des **squats capturés**. NotreDame devient la candidateprioritaire de qualification : protocole, données et configurations repérables, licence datasetCC BY4.0. Inspection passive de5petits fichiers épinglés ;57marqueursMarkerSet,57tâchesstatic,49tâchesIK et30C3D squat dans l’arbreGit. Cescomptages ne valident pas le lien anatomique.
+- LimiteNotreDame explicitement publiée : RMSscaling4,21cm enmoyenne et maxima9,82cm ; configurations avec références`Unassigned` à résoudre par le code. Pas d’admission ni d’exécution «pour voir».
+- LLJ : squat réel mais populationpostopératoire, donc non retenue comme démonstrationnormative sportive. GroundLink : droitsC3D/FBX non établis malgréMIT du code. WBDS reste marche uniquement.
+
+## Relecture technique des demandes
+
+|QuestionFR/EN|Besoin concret|Pièce attendue / contrôle|
+|---|---|---|
+|1 MarkerSet/placement|Éviter de relier landmarks et centresvirtuels|Tableofficielle, sitespalpés, offsets, exclusions ; vérificationlabel parlabel|
+|2 ConfigurationS01|Distinguer générique et individuel|Modèlescaled ou template/version et procédure rejouable|
+|3 Sixfacteurs|Éviter application aux mauvais axes/corps|DéfinitionP1–P3/Fem/Tib/Foot, référence,isotropie,ordre, autressegments, surrogate ou scalingcomplet|
+|4 Registration|Séparer géométrieosseuse et ajustementmarqueurs|Statique, fenêtre, poids, contraintes, modificationsmanuelles|
+|5 Repères/acquisition|Comparer correctement données et forces|Transformationssignées/réversibles, originesF/M, calibration,synchronisation,gaps/filtre|
+|6 Configurations/publication|Reproduire les calculs plutôt qu’une apparence|Setups/scripts, DOI/préprint/suppléments, paramètres et limites|
+|7 Droits|Distinguer données/modèle/composants|Attribution,licences, champcommercial, notices|
+
+Chaquequestion précise sa finalité ; aucun présupposé que le modèleS01 ou les fichiers existent. Il est explicitement possible aux auteurs de répondre qu’une pièce manque. Lesmessages ne demandent aucune donnéeprivée de participant. La version finale ne doit pas être signée au nom d’une personne inventée ; l’utilisateur choisit son expéditeur et vérifie le contactofficiel au moment d’un éventuel envoi.
+
+## Pourquoi pas A ou C global ?
+
+A : non, aucunessai nouveau n’a été vérifié intégralement ni admis anatomiquement. Michaud présente toujours deshypothèsesmajeures. NotreDame fournit une meilleure traçabilité mais aussi desrésidus et traitements à qualifier.
+
+C global : non, les pièces existantes et nouvelles pistes justifient de poursuivre une qualification ; leur impossibilité définitive n’est pas démontrée. C s’applique seulement à l’usage«marcheWBDS comme squat» et à la substitutionnormative cliniqueLLJ, pas à la valeur scientifique de cesdatasets.
+
+## Phase suivante recommandée — qualification, pas retarget
+
+1. **Utilisateur :** décider librement d’envoyer ou non la demandebilingue ; aucune transmissionautomatique.
+2. **Auditpassif ciblé :** un seul squatNotreDameAB01/prise1 et statique associé, sur commit épinglé ; vérifier droits/des noticesamont, hashes, unitésC3D, marqueurs, gaps, forces et référencesconfigurations. Ne pas déduire l’associationstatique de la seule arborescence.
+3. **Professionnel :** examiner placements, registration et résidus importants ; définir critèresavantcalcul, incertitudes etDOFobservables. DossierPhase15 conservé, pas considéré validé.
+4. Seulement si lesportes sont franchies : préparer uneIK courte dans unephaseultérieure autorisée, sans activation. Faible résidu ou exportGLB ne vaut pas qualitéhumaine/anatomique.
+
+**REFUSÉ :** toutecorrection/IK/retarget sursource nonqualifiée. **NON TESTÉ :** IK,COPnouveau,retarget,admissionnouvelle. RuntimeRocketbox et8exercices préservés ; aucunavatarremplaçant, aucuneanimationactivée. Aucunachat,merge,déploiement,contactauteur.
+
+## Reproduction et livraison
+
+`tools/documentary-review/inspect.py` utilise uniquementGitHub enlecture pour inspecter les5fichiers du commitWeRoLab ; vérifie lesGitblobSHA1 et consigneSHA256, sans exécuter les scripts. `build.py` produitpage, auditmachine etmanifestSHA256. TestsNode : valeursS01, portesfermées, intégrité, configurationnonexécutée et hashRocketbox. Testsnavigateur :320/390/768/1200px, liens ettextesFR/EN. `npm test` conserve tous lescontrôlesantérieurs. Aucunedépendanceajoutée. Lespreuves deCI finales sont indiquées dans le compte rendu et laPR ; unPASSCI reste strictement technique.
+</pre></details></section><section><h2>Preuves techniques</h2><p><a href="candidate-inspection.json">Inspection des configurations épinglées</a> · <a href="review-status.json">Statuts et facteurs</a> · <a href="manifest.json">Hashes</a> · <a href="browser-report.json">Test de la page</a></p><p>VALIDÉ technique ≠ validation anatomique. EN ATTENTE DE DOCUMENTATION et EN ATTENTE DE VALIDATION HUMAINE. Sources, attributions et licences dans la fiche de recherche.</p></section><footer>PR11 brouillon. Aucun contact auteur, achat, nouvelle animation, remplacement d'avatar, fusion ou déploiement.</footer></main></html>

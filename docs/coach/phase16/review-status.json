@@ -1,0 +1,67 @@
+{
+  "decision": "B",
+  "status": "EN ATTENTE DE DOCUMENTATION",
+  "sent": false,
+  "responseReceived": false,
+  "IKExecuted": false,
+  "retargetExecuted": false,
+  "newAnimationEnabled": false,
+  "factors": [
+    {
+      "name": "P1",
+      "value": "1.07737",
+      "valueStatus": "VALIDÉ",
+      "applicationStatus": "EN ATTENTE DE DOCUMENTATION",
+      "axis": null,
+      "bodyMapping": null,
+      "applied": false
+    },
+    {
+      "name": "P2",
+      "value": "1.08037",
+      "valueStatus": "VALIDÉ",
+      "applicationStatus": "EN ATTENTE DE DOCUMENTATION",
+      "axis": null,
+      "bodyMapping": null,
+      "applied": false
+    },
+    {
+      "name": "P3",
+      "value": "1.08637",
+      "valueStatus": "VALIDÉ",
+      "applicationStatus": "EN ATTENTE DE DOCUMENTATION",
+      "axis": null,
+      "bodyMapping": null,
+      "applied": false
+    },
+    {
+      "name": "Fem",
+      "value": "1.07018",
+      "valueStatus": "VALIDÉ",
+      "applicationStatus": "EN ATTENTE DE DOCUMENTATION",
+      "axis": null,
+      "bodyMapping": null,
+      "applied": false
+    },
+    {
+      "name": "Tib",
+      "value": "1.08885",
+      "valueStatus": "VALIDÉ",
+      "applicationStatus": "EN ATTENTE DE DOCUMENTATION",
+      "axis": null,
+      "bodyMapping": null,
+      "applied": false
+    },
+    {
+      "name": "Foot",
+      "value": "1.14237",
+      "valueStatus": "VALIDÉ",
+      "applicationStatus": "EN ATTENTE DE DOCUMENTATION",
+      "axis": null,
+      "bodyMapping": null,
+      "applied": false
+    }
+  ],
+  "sourceParameterSHA256": "64f61477376ef6ccea7d1ddb33f141a032e29566cae2122662e0e2fcda51049d",
+  "runtimeSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb"
+}

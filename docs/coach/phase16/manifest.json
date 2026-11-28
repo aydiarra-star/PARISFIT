@@ -1,0 +1,14 @@
+{
+  "scope": "document integrity only",
+  "files": {
+    "author-request-final-en.md": "83d7efdd37e88b82373664de30d9e87f8a7ab662f2677c16461dceaba0aa56d3",
+    "author-request-final-fr.md": "38da3a382435163ba6a9412560fbbbf66b051c06f1483af01303533fe9a2cc29",
+    "browser-report.json": "4571a3dd227c2dee0fa18e70443485f54e0ab1abc70da47214736893d5702b1a",
+    "candidate-inspection.json": "cc7b7d34e159212eda30b9a153706d59e0b6bfb85d38c3a4d3a70a57f6b07018",
+    "decision-report.md": "1d0826a740fbd48d30fe07205fb1efff89698d565e4d87c2404eb937f235f4ad",
+    "index.html": "7177cad91918918f35947cce9f4599f72e2c6c838492416d74f344ab136a208a",
+    "review-status.json": "421f337b4d984100c2189bf19f5e418862bac08e23135aa9a297f413f921480b",
+    "scaling-factors-audit.md": "d56ff28deddb6b2a3fa737fe31779c846f6455f424b6e3bdd1ae445182105bf3",
+    "squat-dataset-research.md": "6ed5043bfc79ac87f192c31edbd22daf66b1df57697feed2da177f7319cb367e"
+  }
+}
