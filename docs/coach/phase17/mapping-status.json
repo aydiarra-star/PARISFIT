@@ -1,0 +1,16 @@
+{
+  "anatomicalDefinitions": {
+    "Confirmé": 44,
+    "Plausible": 13
+  },
+  "explicitOpenSimAttachments": 57,
+  "confirmedJointCentres": 0,
+  "confirmedRocketboxMappings": 0,
+  "decision": "B",
+  "expertReviewed": false,
+  "IKExecuted": false,
+  "retargetExecuted": false,
+  "trajectoryCorrected": false,
+  "runtimeChanged": false,
+  "MichaudFactorsTransferred": false
+}
