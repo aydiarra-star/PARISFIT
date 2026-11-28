@@ -33,3 +33,5 @@
 !tools/owner-preview/index.html
 !tools/owner-preview/preview.js
 !tools/owner-preview/Dockerfile
+!tools/motion-review/
+!tools/motion-review/mountainclimber-candidate.json

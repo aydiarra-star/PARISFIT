@@ -1,0 +1,22 @@
+node:fs:560
+  return binding.open(
+                 ^
+
+Error: ENOENT: no such file or directory, open '.cache/motion-review/candidate.json'
+    at Object.openSync (node:fs:560:18)
+    at Object.readFileSync (node:fs:444:35)
+    at /home/user/PARISFIT/tools/motion-review/audit.cjs:2:466
+    at RouteHandler._handleInternal (/home/user/PARISFIT/node_modules/playwright-core/lib/coreBundle.js:62174:11)
+    at RouteHandler._handleImpl (/home/user/PARISFIT/node_modules/playwright-core/lib/coreBundle.js:62141:29)
+    at /home/user/PARISFIT/node_modules/playwright-core/lib/coreBundle.js:62135:59
+    at AsyncLocalStorage.run (node:internal/async_local_storage/async_hooks:91:14)
+    at _Zone.run (/home/user/PARISFIT/node_modules/playwright-core/lib/coreBundle.js:11353:40)
+    at RouteHandler.handle (/home/user/PARISFIT/node_modules/playwright-core/lib/coreBundle.js:62135:38)
+    at _Page._onRoute (/home/user/PARISFIT/node_modules/playwright-core/lib/coreBundle.js:63498:46) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '.cache/motion-review/candidate.json'
+}
+
+Node.js v22.22.3

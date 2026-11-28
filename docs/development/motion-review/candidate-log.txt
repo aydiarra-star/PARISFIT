@@ -1,0 +1,12 @@
+AssertionError [ERR_ASSERTION]: TypeError: Cannot read properties of undefined (reading 'position')
+    at root (http://motion.internal/tools/coach-motion-authoring.js:27:49)
+    at bakeExercises (http://motion.internal/tools/coach-motion-authoring.js:83:7)
+    at http://motion.internal/candidate.html:1:286
+    at /home/user/PARISFIT/tools/motion-review/candidate.cjs:3:1536 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}

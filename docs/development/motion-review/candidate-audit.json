@@ -1,0 +1,487 @@
+{
+  "sourceSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+  "sampleHz": 60,
+  "method": "same skin vertex tracked over entire cycle; excursion is NOT slip during flight or intended hand movement; rate values analytically scaled, not playback tests",
+  "clips": [
+    {
+      "id": "squat",
+      "duration": 5,
+      "minSupportY": 0.0019624501664235257,
+      "maxBoneLengthError": 9.810419110412028e-8,
+      "markerHorizontalExcursion": {
+        "L_Foot": 0.000022248596186568353,
+        "R_Foot": 0.000022236770569329314,
+        "L_Hand": 0.3760297836615387,
+        "R_Hand": 0.37603163084602337
+      },
+      "surfaceHeightRange": {
+        "L_Foot": {
+          "min": 0.001962553205832696,
+          "max": 0.0020001500028988305
+        },
+        "R_Foot": {
+          "min": 0.0019624501664235257,
+          "max": 0.0020001266815563314
+        },
+        "L_Hand": {
+          "min": 0.8690851228676509,
+          "max": 1.1042941779535032
+        },
+        "R_Hand": {
+          "min": 0.8690835475412694,
+          "max": 1.1042926813744773
+        }
+      },
+      "maxJointSpeed": 0.48151327020038287,
+      "maxJointAcceleration": 2.0015079993634544,
+      "loopGap": 0,
+      "rates": [
+        {
+          "rate": 0.5,
+          "scaledPeakJointSpeed": 0.24075663510019144,
+          "scaledPeakJointAcceleration": 0.5003769998408636
+        },
+        {
+          "rate": 1,
+          "scaledPeakJointSpeed": 0.48151327020038287,
+          "scaledPeakJointAcceleration": 2.0015079993634544
+        },
+        {
+          "rate": 1.5,
+          "scaledPeakJointSpeed": 0.7222699053005743,
+          "scaledPeakJointAcceleration": 4.503392998567772
+        },
+        {
+          "rate": 1.75,
+          "scaledPeakJointSpeed": 0.84264822285067,
+          "scaledPeakJointAcceleration": 6.129618248050579
+        },
+        {
+          "rate": 2,
+          "scaledPeakJointSpeed": 0.9630265404007657,
+          "scaledPeakJointAcceleration": 8.006031997453817
+        }
+      ]
+    },
+    {
+      "id": "pompes",
+      "duration": 5,
+      "minSupportY": 0.0019844185234128425,
+      "maxBoneLengthError": 9.28954309586949e-8,
+      "markerHorizontalExcursion": {
+        "L_Foot": 0.000001950709608312662,
+        "R_Foot": 0.000002074031351866061,
+        "L_Hand": 0.000016251221674475736,
+        "R_Hand": 0.0000161836525159275
+      },
+      "surfaceHeightRange": {
+        "L_Foot": {
+          "min": 0.0019996428061938845,
+          "max": 0.0020000229665580243
+        },
+        "R_Foot": {
+          "min": 0.001999615258157421,
+          "max": 0.002000013564192407
+        },
+        "L_Hand": {
+          "min": 0.0019844185234128425,
+          "max": 0.0020000282171289546
+        },
+        "R_Hand": {
+          "min": 0.0019845188376750866,
+          "max": 0.0020001173789592763
+        }
+      },
+      "maxJointSpeed": 0.2172428844192444,
+      "maxJointAcceleration": 0.742472571930828,
+      "loopGap": 0,
+      "rates": [
+        {
+          "rate": 0.5,
+          "scaledPeakJointSpeed": 0.1086214422096222,
+          "scaledPeakJointAcceleration": 0.185618142982707
+        },
+        {
+          "rate": 1,
+          "scaledPeakJointSpeed": 0.2172428844192444,
+          "scaledPeakJointAcceleration": 0.742472571930828
+        },
+        {
+          "rate": 1.5,
+          "scaledPeakJointSpeed": 0.32586432662886655,
+          "scaledPeakJointAcceleration": 1.670563286844363
+        },
+        {
+          "rate": 1.75,
+          "scaledPeakJointSpeed": 0.38017504773367766,
+          "scaledPeakJointAcceleration": 2.273822251538161
+        },
+        {
+          "rate": 2,
+          "scaledPeakJointSpeed": 0.4344857688384888,
+          "scaledPeakJointAcceleration": 2.969890287723312
+        }
+      ]
+    },
+    {
+      "id": "gainage",
+      "duration": 6,
+      "minSupportY": 0.0019999130072815147,
+      "maxBoneLengthError": 3.8893954334984215e-8,
+      "markerHorizontalExcursion": {
+        "L_Foot": 0,
+        "R_Foot": 0,
+        "L_Hand": 6.528306661304289e-8,
+        "R_Hand": 9.141635345456028e-8
+      },
+      "surfaceHeightRange": {
+        "L_Foot": {
+          "min": 0.0019999673775164062,
+          "max": 0.0019999673775164617
+        },
+        "R_Foot": {
+          "min": 0.001999975889674344,
+          "max": 0.0019999758896743994
+        },
+        "L_Hand": {
+          "min": 0.0019999130072815147,
+          "max": 0.0019999839624748605
+        },
+        "R_Hand": {
+          "min": 0.002000013977260809,
+          "max": 0.002000087567696457
+        }
+      },
+      "maxJointSpeed": 0.0003137391055805559,
+      "maxJointAcceleration": 0.0006795958398751323,
+      "loopGap": 0,
+      "rates": [
+        {
+          "rate": 0.5,
+          "scaledPeakJointSpeed": 0.00015686955279027795,
+          "scaledPeakJointAcceleration": 0.00016989895996878307
+        },
+        {
+          "rate": 1,
+          "scaledPeakJointSpeed": 0.0003137391055805559,
+          "scaledPeakJointAcceleration": 0.0006795958398751323
+        },
+        {
+          "rate": 1.5,
+          "scaledPeakJointSpeed": 0.00047060865837083383,
+          "scaledPeakJointAcceleration": 0.0015290906397190476
+        },
+        {
+          "rate": 1.75,
+          "scaledPeakJointSpeed": 0.0005490434347659728,
+          "scaledPeakJointAcceleration": 0.0020812622596175926
+        },
+        {
+          "rate": 2,
+          "scaledPeakJointSpeed": 0.0006274782111611118,
+          "scaledPeakJointAcceleration": 0.002718383359500529
+        }
+      ]
+    },
+    {
+      "id": "fentes",
+      "duration": 10,
+      "minSupportY": 0.001962424441107508,
+      "maxBoneLengthError": 8.791700262245072e-8,
+      "markerHorizontalExcursion": {
+        "L_Foot": 0.5838325989899106,
+        "R_Foot": 0.588851717041254,
+        "L_Hand": 0.04457251843930284,
+        "R_Hand": 0.044572766495746916
+      },
+      "surfaceHeightRange": {
+        "L_Foot": {
+          "min": 0.001962424441107508,
+          "max": 0.07184159719138275
+        },
+        "R_Foot": {
+          "min": 0.001962459078794727,
+          "max": 0.0718416127445316
+        },
+        "L_Hand": {
+          "min": 0.9240805139757523,
+          "max": 0.9640954634795375
+        },
+        "R_Hand": {
+          "min": 0.9240788494038485,
+          "max": 0.9640934371153339
+        }
+      },
+      "maxJointSpeed": 1.231907697733797,
+      "maxJointAcceleration": 8.651074993774012,
+      "loopGap": 0,
+      "rates": [
+        {
+          "rate": 0.5,
+          "scaledPeakJointSpeed": 0.6159538488668985,
+          "scaledPeakJointAcceleration": 2.162768748443503
+        },
+        {
+          "rate": 1,
+          "scaledPeakJointSpeed": 1.231907697733797,
+          "scaledPeakJointAcceleration": 8.651074993774012
+        },
+        {
+          "rate": 1.5,
+          "scaledPeakJointSpeed": 1.8478615466006956,
+          "scaledPeakJointAcceleration": 19.464918735991528
+        },
+        {
+          "rate": 1.75,
+          "scaledPeakJointSpeed": 2.1558384710341447,
+          "scaledPeakJointAcceleration": 26.493917168432912
+        },
+        {
+          "rate": 2,
+          "scaledPeakJointSpeed": 2.463815395467594,
+          "scaledPeakJointAcceleration": 34.60429997509605
+        }
+      ]
+    },
+    {
+      "id": "jumpingjacks",
+      "duration": 3.200000047683716,
+      "minSupportY": 0.0017070632002853443,
+      "maxBoneLengthError": 6.517702888508836e-8,
+      "markerHorizontalExcursion": {
+        "L_Foot": 0.18003795553915655,
+        "R_Foot": 0.18003700211762144,
+        "L_Hand": 0.723070040745621,
+        "R_Hand": 0.7230681226195268
+      },
+      "surfaceHeightRange": {
+        "L_Foot": {
+          "min": 0.0017070632002853443,
+          "max": 0.07681513504432445
+        },
+        "R_Foot": {
+          "min": 0.0017072381989171163,
+          "max": 0.07681513680840366
+        },
+        "L_Hand": {
+          "min": 0.7405898378025804,
+          "max": 1.8792202047435007
+        },
+        "R_Hand": {
+          "min": 0.7405903704302691,
+          "max": 1.8792196122482008
+        }
+      },
+      "maxJointSpeed": 4.10582530284489,
+      "maxJointAcceleration": 90.85223847438759,
+      "loopGap": 0,
+      "rates": [
+        {
+          "rate": 0.5,
+          "scaledPeakJointSpeed": 2.052912651422445,
+          "scaledPeakJointAcceleration": 22.713059618596898
+        },
+        {
+          "rate": 1,
+          "scaledPeakJointSpeed": 4.10582530284489,
+          "scaledPeakJointAcceleration": 90.85223847438759
+        },
+        {
+          "rate": 1.5,
+          "scaledPeakJointSpeed": 6.158737954267335,
+          "scaledPeakJointAcceleration": 204.41753656737205
+        },
+        {
+          "rate": 1.75,
+          "scaledPeakJointSpeed": 7.185194279978557,
+          "scaledPeakJointAcceleration": 278.23498032781197
+        },
+        {
+          "rate": 2,
+          "scaledPeakJointSpeed": 8.21165060568978,
+          "scaledPeakJointAcceleration": 363.40895389755036
+        }
+      ]
+    },
+    {
+      "id": "mountainclimber",
+      "duration": 4,
+      "minSupportY": 0.001999525833496837,
+      "maxBoneLengthError": 1.140846250802241e-7,
+      "markerHorizontalExcursion": {
+        "L_Foot": 0.5462060052255686,
+        "R_Foot": 0.5462055201714261,
+        "L_Hand": 0,
+        "R_Hand": 0
+      },
+      "surfaceHeightRange": {
+        "L_Foot": {
+          "min": 0.001999525833496837,
+          "max": 0.061999977536672385
+        },
+        "R_Foot": {
+          "min": 0.0019995729767138142,
+          "max": 0.06199999660607447
+        },
+        "L_Hand": {
+          "min": 0.001999892764244518,
+          "max": 0.0019998927642447123
+        },
+        "R_Hand": {
+          "min": 0.00200003479845684,
+          "max": 0.0020000347984570344
+        }
+      },
+      "maxJointSpeed": 1.0429871181721324,
+      "maxJointAcceleration": 32.41370791928149,
+      "loopGap": 0,
+      "rates": [
+        {
+          "rate": 0.5,
+          "scaledPeakJointSpeed": 0.5214935590860662,
+          "scaledPeakJointAcceleration": 8.103426979820373
+        },
+        {
+          "rate": 1,
+          "scaledPeakJointSpeed": 1.0429871181721324,
+          "scaledPeakJointAcceleration": 32.41370791928149
+        },
+        {
+          "rate": 1.5,
+          "scaledPeakJointSpeed": 1.5644806772581985,
+          "scaledPeakJointAcceleration": 72.93084281838335
+        },
+        {
+          "rate": 1.75,
+          "scaledPeakJointSpeed": 1.8252274568012317,
+          "scaledPeakJointAcceleration": 99.26698050279958
+        },
+        {
+          "rate": 2,
+          "scaledPeakJointSpeed": 2.085974236344265,
+          "scaledPeakJointAcceleration": 129.65483167712597
+        }
+      ]
+    },
+    {
+      "id": "etirementdos",
+      "duration": 8,
+      "minSupportY": 0.001999416595590107,
+      "maxBoneLengthError": 1.1991389559096177e-7,
+      "markerHorizontalExcursion": {
+        "L_Foot": 1.8368537000132676e-7,
+        "R_Foot": 1.9309671893727884e-7,
+        "L_Hand": 0.5900572602664343,
+        "R_Hand": 0.5900591937827472
+      },
+      "surfaceHeightRange": {
+        "L_Foot": {
+          "min": 0.0019994322387152804,
+          "max": 0.002000128011885291
+        },
+        "R_Foot": {
+          "min": 0.001999416595590107,
+          "max": 0.002000121704978622
+        },
+        "L_Hand": {
+          "min": 0.8026708295752171,
+          "max": 1.211537031374227
+        },
+        "R_Hand": {
+          "min": 0.8026712231984022,
+          "max": 1.2115354739240418
+        }
+      },
+      "maxJointSpeed": 0.7304169681461452,
+      "maxJointAcceleration": 2.6402684208705107,
+      "loopGap": 0,
+      "rates": [
+        {
+          "rate": 0.5,
+          "scaledPeakJointSpeed": 0.3652084840730726,
+          "scaledPeakJointAcceleration": 0.6600671052176277
+        },
+        {
+          "rate": 1,
+          "scaledPeakJointSpeed": 0.7304169681461452,
+          "scaledPeakJointAcceleration": 2.6402684208705107
+        },
+        {
+          "rate": 1.5,
+          "scaledPeakJointSpeed": 1.0956254522192177,
+          "scaledPeakJointAcceleration": 5.94060394695865
+        },
+        {
+          "rate": 1.75,
+          "scaledPeakJointSpeed": 1.278229694255754,
+          "scaledPeakJointAcceleration": 8.08582203891594
+        },
+        {
+          "rate": 2,
+          "scaledPeakJointSpeed": 1.4608339362922904,
+          "scaledPeakJointAcceleration": 10.561073683482043
+        }
+      ]
+    },
+    {
+      "id": "mobiliteepaules",
+      "duration": 6,
+      "minSupportY": 0.0019999579309390525,
+      "maxBoneLengthError": 3.929825925785835e-8,
+      "markerHorizontalExcursion": {
+        "L_Foot": 0,
+        "R_Foot": 0,
+        "L_Hand": 0.342062374431617,
+        "R_Hand": 0.3420631108956335
+      },
+      "surfaceHeightRange": {
+        "L_Foot": {
+          "min": 0.0019999579309390525,
+          "max": 0.0019999579309392746
+        },
+        "R_Foot": {
+          "min": 0.0020000410232460307,
+          "max": 0.0020000410232462527
+        },
+        "L_Hand": {
+          "min": 0.8754321131809214,
+          "max": 1.2359942156542898
+        },
+        "R_Hand": {
+          "min": 0.8754313266942666,
+          "max": 1.2359929651947035
+        }
+      },
+      "maxJointSpeed": 0.25633817544349624,
+      "maxJointAcceleration": 0.6068326249343398,
+      "loopGap": 0,
+      "rates": [
+        {
+          "rate": 0.5,
+          "scaledPeakJointSpeed": 0.12816908772174812,
+          "scaledPeakJointAcceleration": 0.15170815623358494
+        },
+        {
+          "rate": 1,
+          "scaledPeakJointSpeed": 0.25633817544349624,
+          "scaledPeakJointAcceleration": 0.6068326249343398
+        },
+        {
+          "rate": 1.5,
+          "scaledPeakJointSpeed": 0.38450726316524436,
+          "scaledPeakJointAcceleration": 1.3653734061022647
+        },
+        {
+          "rate": 1.75,
+          "scaledPeakJointSpeed": 0.44859180702611845,
+          "scaledPeakJointAcceleration": 1.8584249138614155
+        },
+        {
+          "rate": 2,
+          "scaledPeakJointSpeed": 0.5126763508869925,
+          "scaledPeakJointAcceleration": 2.427330499737359
+        }
+      ]
+    }
+  ]
+}
