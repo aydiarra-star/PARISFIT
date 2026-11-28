@@ -21,6 +21,7 @@ jobs:
           node --check demo-data.js
           node --check service-worker.js
           node --input-type=module --check < coach-content.js
+          node tests/coach-independent-review.cjs
           node tests/coach-passive-qualification.cjs
           node tests/coach-documentary-review.cjs
           node tests/coach-evidence.cjs
@@ -60,6 +61,7 @@ jobs:
           python3 -m http.server 3000 --bind 0.0.0.0 &
           SERVER_PID=$!
           trap 'kill "$SERVER_PID"' EXIT
+          node tests/coach-independent-review-browser.cjs
           node tests/coach-passive-qualification-browser.cjs
           node tests/coach-documentary-review-browser.cjs
           npm run test:browser
@@ -441,6 +443,7 @@ jobs:
           python3 tools/model-qualification/test_contracts.py
           python3 tools/metadata-plan/test_plan.py
           python3 tools/passive-qualification/test_metrics.py
+          python3 tools/independent-review/test_review.py
       - name: Transport public S01 audit only
         run: |
           python3 - <<'PY'

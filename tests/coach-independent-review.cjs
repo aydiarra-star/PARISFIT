@@ -1,0 +1,10 @@
+const fs=require('fs'),crypto=require('crypto'),assert=require('assert/strict'),D='docs/coach/phase18/',read=n=>JSON.parse(fs.readFileSync(D+n)),sha=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+for(const [p,h]of Object.entries(read('manifest.json').files))assert.equal(sha(D+p),h,p);
+for(const [p,h]of Object.entries(read('protected-baseline.json').files))assert.equal(sha(p),h,'Protected file changed: '+p);
+const r=read('review-status.json');assert.equal(r.decision,'B');for(const [k,v]of Object.entries(r))if(typeof v==='boolean')assert.equal(v,false,k);
+const m=read('marker-review-register.json');assert.equal(m.length,57);assert.equal(m.filter(x=>x.phase17_status==='Confirmé').length,44);assert.equal(m.filter(x=>x.phase17_status==='Plausible').length,13);assert(m.every(x=>x.expert_answer===null&&x.expert_question.length>20&&x.rocketbox_status==='Inconnu'));
+const f=read('expert-feedback-template.json');assert.equal(f.questions.length,6);assert(f.questions.every(q=>q.answer===null));assert.equal(f.sent,false);
+for(const x of Object.values(read('c3d-independent-byte-audit.json').files)){assert.equal(x.inclusiveHeaderFrames,x.completeFrames);assert.equal(x.header.lastFrame+1,x.completeFrames);assert.equal(x.pythonC3DComparison.computedLastFrameProperty,x.completeFrames);assert.equal(x.repaired,false);assert.equal(x.trailingBytes,0)}
+const h=read('historical-diff.json');assert.equal(h.mobile.differences.length,6);assert.equal(h.transition.differences.length,6);assert.equal(h.oldSecondClipDuplicatesFirstExceptName,true);for(const k of ['mobile','transition']){assert.equal(sha(h[k].old),h[k].oldSHA256);assert.equal(sha(h[k].new),h[k].newSHA256)}
+const c=read('cache-identity.json');assert.equal(new Set(c.oldCacheKeys).size,1);assert.equal(new Set(c.currentLabCacheKeys).size,2);assert.equal(c.animationExecuted,false);
+console.log('PASS phase18: preserved 44/13 statuses, 57 questions, unanswered expert form, raw-header erratum, historical diffs and protected baseline');

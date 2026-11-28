@@ -1,0 +1,165 @@
+{
+  "method": "stdlib struct reader, header and parameter records independently decoded; source unchanged; no trajectories exported",
+  "files": {
+    "AB01/Squat/1/Data/squat_1.c3d": {
+      "sha256": "7d4adaf1ca565de3fc172cde1b92a6b607f7a90d1f22b37453fa0cd4b6e30482",
+      "header": {
+        "firstParameterBlock": 2,
+        "pointCount": 49,
+        "analogValuesPerPointFrame": 180,
+        "firstFrame": 0,
+        "lastFrame": 2947,
+        "pointScale": -1.0,
+        "dataStartBlock": 12,
+        "analogSubsamples": 5,
+        "pointRateHz": 200.0
+      },
+      "parameters": {
+        "POINT:USED": {
+          "type": 2,
+          "dimensions": [],
+          "values": [
+            49
+          ]
+        },
+        "POINT:SCALE": {
+          "type": 4,
+          "dimensions": [],
+          "values": [
+            -1.0
+          ]
+        },
+        "POINT:RATE": {
+          "type": 4,
+          "dimensions": [],
+          "values": [
+            200.0
+          ]
+        },
+        "POINT:DATA_START": {
+          "type": 2,
+          "dimensions": [],
+          "values": [
+            12
+          ]
+        },
+        "POINT:FRAMES": {
+          "type": 2,
+          "dimensions": [],
+          "values": [
+            2948
+          ]
+        },
+        "ANALOG:USED": {
+          "type": 2,
+          "dimensions": [],
+          "values": [
+            36
+          ]
+        },
+        "ANALOG:RATE": {
+          "type": 4,
+          "dimensions": [],
+          "values": [
+            1000.0
+          ]
+        }
+      },
+      "fileBytes": 4439424,
+      "frameBytes": 1504,
+      "completeFrames": 2948,
+      "trailingBytes": 0,
+      "trailingAllZero": true,
+      "inclusiveHeaderFrames": 2948,
+      "recordCountAgreement": true,
+      "clockOriginProven": false,
+      "repaired": false,
+      "pythonC3DComparison": {
+        "rawHeaderLastFrame": 2947,
+        "computedLastFrameProperty": 2948,
+        "firstFrameProperty": 0,
+        "version": "0.6.0"
+      }
+    },
+    "AB01/Static/1/Data/static.c3d": {
+      "sha256": "ba89054b8d0bb0cb18087be68b81e1a326dcf2719c012dff73a5591102b1b4b1",
+      "header": {
+        "firstParameterBlock": 2,
+        "pointCount": 57,
+        "analogValuesPerPointFrame": 180,
+        "firstFrame": 0,
+        "lastFrame": 1564,
+        "pointScale": -1.0,
+        "dataStartBlock": 13,
+        "analogSubsamples": 5,
+        "pointRateHz": 200.0
+      },
+      "parameters": {
+        "POINT:USED": {
+          "type": 2,
+          "dimensions": [],
+          "values": [
+            57
+          ]
+        },
+        "POINT:SCALE": {
+          "type": 4,
+          "dimensions": [],
+          "values": [
+            -1.0
+          ]
+        },
+        "POINT:RATE": {
+          "type": 4,
+          "dimensions": [],
+          "values": [
+            200.0
+          ]
+        },
+        "POINT:DATA_START": {
+          "type": 2,
+          "dimensions": [],
+          "values": [
+            13
+          ]
+        },
+        "POINT:FRAMES": {
+          "type": 2,
+          "dimensions": [],
+          "values": [
+            1565
+          ]
+        },
+        "ANALOG:USED": {
+          "type": 2,
+          "dimensions": [],
+          "values": [
+            36
+          ]
+        },
+        "ANALOG:RATE": {
+          "type": 4,
+          "dimensions": [],
+          "values": [
+            1000.0
+          ]
+        }
+      },
+      "fileBytes": 2560224,
+      "frameBytes": 1632,
+      "completeFrames": 1565,
+      "trailingBytes": 0,
+      "trailingAllZero": true,
+      "inclusiveHeaderFrames": 1565,
+      "recordCountAgreement": true,
+      "clockOriginProven": false,
+      "repaired": false,
+      "pythonC3DComparison": {
+        "rawHeaderLastFrame": 1564,
+        "computedLastFrameProperty": 1565,
+        "firstFrameProperty": 0,
+        "version": "0.6.0"
+      }
+    }
+  }
+}

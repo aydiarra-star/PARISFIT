@@ -1,0 +1,21 @@
+{
+  "scope": "metadata and cache-key inspection only; no mixer execution or animation generation",
+  "threeRevision": "169",
+  "inputNames": [
+    "stand-to-crouch",
+    "crouch-to-stand"
+  ],
+  "oldCacheKeys": [
+    "undefined",
+    "undefined"
+  ],
+  "currentLabCacheKeys": [
+    "review-clip-0-stand-to-crouch",
+    "review-clip-1-crouch-to-stand"
+  ],
+  "parseSource": "parse(t){const e=[],n=t.tracks,i=1/(t.fps||1);for(let t=0,r=n.length;t!==r;++t)e.push(Wd(n[t]).scale(i));const r=new this(t.name,t.duration,e,t.blendMode);return r.uuid=t.uuid,r}",
+  "clipActionSource": "clipAction(t,e,n){const i=e||this._root,r=i.uuid;let s=\"string\"==typeof t?Gd.findByName(i,t):t;const a=null!==s?s.uuid:t,o=this._actionsByClip[a];let l=null;if(void 0===n&&(n=null!==s?s.blendMode:Be),void 0!==o){const t=o.actionByRoot[r];if(void 0!==t&&t.blendMode===n)return t;l=o.knownActions[0],null===s&&(s=l._clip)}if(null===s)return null;const c=new lm(this,s,e,n);return this._bindAction(c,l),this._addInactiveAction(c,a,r),c}",
+  "vendorSHA256": "f7cee3c7533449a1505cc12cb5128b89e3d4fd3d7ea62b05f9f5464a217472ee",
+  "animationExecuted": false,
+  "runtimeChanged": false
+}
