@@ -1,6 +1,6 @@
 # Extraits officiels numérotés — lecture seule
 
-Référence Git `a26fe4852a78f30c5e8a437b158847031cb8dc3c`. Numéros de lignes dans les fichiers originaux, empreintes dans source-manifest.json. Citations limitées à l’audit ; aucun code exécuté.
+Référence Git `a26fe4852a78f30c5e8a437b158847031cb8dc3c`. Numéros de lignes dans les fichiers originaux, empreintes dans source-manifest.json. Citations limitées à l’audit ; espaces de fin de ligne retirés pour présentation, octets originaux inchangés dans le cache ; aucun code exécuté.
 
 ## MATLAB tools/trial_class.m
 
@@ -9,7 +9,7 @@ Référence Git `a26fe4852a78f30c5e8a437b158847031cb8dc3c`. Numéros de lignes d
 36:     force_thresh = 20;
 37:     f_cutoff = 6;
 38:     f_sample = 1000;
-39: 
+39:
 ```
 
 ```text
@@ -19,12 +19,12 @@ Référence Git `a26fe4852a78f30c5e8a437b158847031cb8dc3c`. Numéros de lignes d
 130:         trial_class.staticTrcFile_rel = '../../Static/1/Data/static.trc';
 131:         trial_class.trcFile = strcat('../Data/',trial_class.trial_name,'.trc');
 132:         trial_class.grfMotFile = strcat('../Data/',trial_class.trial_name,'.mot');
-133:         
+133:
 134:         trial_class.scaleXml_rel = '../../Static/1/Setup/Setup_Scale.xml';
 135:         trial_class.ikXml = '../Setup/Setup_IK.xml';
 136:         trial_class.idXml = '../Setup/Setup_ID.xml';
 137:         mkdir('../generated');
-138:         
+138:
 139:         % Get the absolute path
 140:         trial_class.staticTrcFile = fullfile(fileparts(pwd), trial_class.staticTrcFile_rel);
 141:         trial_class.scaleXml = fullfile(fileparts(pwd), trial_class.scaleXml_rel);
@@ -35,29 +35,29 @@ Référence Git `a26fe4852a78f30c5e8a437b158847031cb8dc3c`. Numéros de lignes d
 
 ```text
 191:     function init_forceplate_data(trial_class)
-192: 
+192:
 193:         trial_class.c3dpath = fullfile(trial_class.c3d_path,trial_class.c3d_filename);
 194:         %% Construct an opensimC3D object with input c3d path
 195:         % Constructor takes full path to c3d file and an integer for forceplate
-196:         % representation (1 = COP). 
+196:         % representation (1 = COP).
 197:         trial_class.c3d = osimC3D(trial_class.c3dpath,1);
-198:         
+198:
 199:         %% Get some stats...
 200:         % Get the number of marker trajectories
 201:         trial_class.nTrajectories = trial_class.c3d.getNumTrajectories();
 202:         % Get the marker data rate
 203:         trial_class.rMakers = trial_class.c3d.getRate_marker();
-204:         % Get the number of forces 
+204:         % Get the number of forces
 205:         trial_class.nForces = trial_class.c3d.getNumForces();
 206:         % Get the force data rate
 207:         trial_class.rForces = trial_class.c3d.getRate_force();
-208:         
+208:
 209:         % Get Start and end time
 210:         trial_class.t0 = trial_class.c3d.getStartTime();
 211:         trial_class.tn = trial_class.c3d.getEndTime();
-212:         %% Rotate the data 
+212:         %% Rotate the data
 213:         trial_class.c3d.rotateData('x',-90)
-214:         
+214:
 215:         %% Get the c3d in different forms
 216:         % Get OpenSim tables
 217:         trial_class.markerTable = trial_class.c3d.getTable_markers();
@@ -66,27 +66,27 @@ Référence Git `a26fe4852a78f30c5e8a437b158847031cb8dc3c`. Numéros de lignes d
 
 ```text
 264:         for i = 1:trial_class.num_forceplates
-265:         
+265:
 266:             trial_class.forceStruct_len(i) = length(trial_class.forceStruct_f{i});
 267:             % trial_class.f_z_filt{i} = lowpass(trial_class.forceStruct_f{i}(:,2), trial_class.f_cutoff, trial_class.f_sample);
 268:             trial_class.f_z_filt{i} = smoothdata(trial_class.forceStruct_f{i}(:,2), 'gaussian', 30);
-269:          
-270: 
+269:
+270:
 271:             % Goal: find the last sample before losing contact (before <
 272:             % thresh) and the first sample after contact (after > thresh).
-273:             
+273:
 274:             below_thresh_mask = trial_class.f_z_filt{i} < trial_class.force_thresh;
 275:             trial_class.f_z_ind{i} = below_thresh_mask;
 276:             trial_class.d_f_z{i} = [0;diff(trial_class.f_z_ind{i})];
-277: 
+277:
 278:             below_thresh_ind = find(trial_class.d_f_z{i}==1)-1;
-279: 
+279:
 280:             above_thresh_mask = trial_class.f_z_filt{i} > trial_class.force_thresh;
 281:             above_thresh_diff = [0;diff(above_thresh_mask)];
 282:             above_thresh_ind = find(above_thresh_diff==1);
-283: 
+283:
 284:             trial_class.d_f_z_ind{i} = sort([below_thresh_ind;above_thresh_ind]);
-285:         
+285:
 286:         end
 ```
 
@@ -94,7 +94,7 @@ Référence Git `a26fe4852a78f30c5e8a437b158847031cb8dc3c`. Numéros de lignes d
 317:     function set_forceplate_contacts(trial_class, num, c)
 318:         % num: force plate number
 319:         % Number of contacts
-320: 
+320:
 321:         trial_class.fp_contact_inds_low{num} = trial_class.fp_contact_inds{num};
 322:         % Note about the second condition: in some trials such as sit to stand, we always have contact so
 323:         % while fp_contact_inds_high is empty. So for those, we don't need
@@ -102,15 +102,15 @@ Référence Git `a26fe4852a78f30c5e8a437b158847031cb8dc3c`. Numéros de lignes d
 325:         if (trial_class.id_enabled == 1 && ~isempty(trial_class.fp_contact_inds_high) && ~isempty(trial_class.fp_contact_inds_high{num} ))
 326:             trial_class.fp_contact_inds{num} = trial_class.fp_contact_inds_high{num};
 327:         end
-328: 
+328:
 329:         % This can happen in foot on chair; technically, there was contact,
 330:         % but it was below the threshold. So we ignore them for inverse
-331:         % dynamics purposes. 
+331:         % dynamics purposes.
 332:         % Find the number
 333:         low_force_contact = isnan(trial_class.fp_contact_inds{num});
 334:         % At least one element in the row is NaN (actually, both are NaNs).
 335:         low_force_contact_ind = find( sum(low_force_contact,2) ~= 0);
-336: 
+336:
 337:         if (trial_class.id_enabled == 1)
 338:             % Remove the low force contacts.
 339:             c = c - length(low_force_contact_ind);
@@ -119,7 +119,7 @@ Référence Git `a26fe4852a78f30c5e8a437b158847031cb8dc3c`. Numéros de lignes d
 342:             % Note: all of the ~isempty( trial_class.fp_contact_inds{num})
 343:             % conditions are related to this.
 344:         end
-345:         
+345:
 346:         % If there were contacts with the force plate, set the force and CoP between the contacts to 0.
 347:         if (c > 1)
 348:             %for i = 1:length(trial_class.fp_contact_inds{num})-1
@@ -127,7 +127,7 @@ Référence Git `a26fe4852a78f30c5e8a437b158847031cb8dc3c`. Numéros de lignes d
 350:                 trial_class.forceStruct_f{num}(trial_class.fp_contact_inds{num}(i,2):trial_class.fp_contact_inds{num}(i+1,1),:) = 0;
 351:                 trial_class.forceStruct_p{num}(trial_class.fp_contact_inds{num}(i,2):trial_class.fp_contact_inds{num}(i+1,1),:) = 0;
 352:             end
-353: 
+353:
 354:         else
 355:             temp = trial_class.forceStruct_f{num};
 356:             trial_class.forceStruct_f{num}(:) = 0;
@@ -135,62 +135,62 @@ Référence Git `a26fe4852a78f30c5e8a437b158847031cb8dc3c`. Numéros de lignes d
 358:                 trial_class.forceStruct_f{num}(trial_class.fp_contact_inds{num}(1,1):trial_class.fp_contact_inds{num}(1,2),:) = ...
 359:                     temp(trial_class.fp_contact_inds{num}(1,1):trial_class.fp_contact_inds{num}(1,2),:);
 360:             end
-361: 
-362:             temp = trial_class.forceStruct_p{num};   
+361:
+362:             temp = trial_class.forceStruct_p{num};
 363:             trial_class.forceStruct_p{num}(:) = 0;
 364:             if (~isempty( trial_class.fp_contact_inds{num}))
 365:                 trial_class.forceStruct_p{num}(trial_class.fp_contact_inds{num}(1,1):trial_class.fp_contact_inds{num}(1,2),:) =...
 366:                     temp(trial_class.fp_contact_inds{num}(1,1):trial_class.fp_contact_inds{num}(1,2),:);
 367:             end
 368:         end
-369: 
+369:
 370:         if (~isempty(trial_class.fp_contact_inds{num}))
 371:             if (trial_class.fp_contact_inds{num}(1,1) > 1)
 372:                 trial_class.forceStruct_f{num}(1:trial_class.fp_contact_inds{num}(1,1)-1,:) = 0;
 373:                 trial_class.forceStruct_p{num}(1:trial_class.fp_contact_inds{num}(1,1)-1,:) = 0;
 374:             end
-375: 
+375:
 376:             if (trial_class.fp_contact_inds{num}(end,2) < trial_class.forceStruct_len(1))
 377:                 trial_class.forceStruct_f{num}(trial_class.fp_contact_inds{num}(end,2)+1:trial_class.forceStruct_len(1),:) = 0;
 378:                 trial_class.forceStruct_p{num}(trial_class.fp_contact_inds{num}(end,2)+1:trial_class.forceStruct_len(1),:) = 0;
 379:             end
 380:         end
-381: 
+381:
 382:     end
 ```
 
 ```text
 444:     function set_foot_force_data(trial_class, p, c, right_foot)
-445: 
+445:
 446:         if (trial_class.id_enabled == 1 && ~isempty(trial_class.fp_contact_inds{p}) && ...
 447:                 ~(isnan(trial_class.fp_contact_inds_backup{p}(c,1)) || isnan(trial_class.fp_contact_inds_backup{p}(c,2))))
-448: 
+448:
 449:             if (right_foot)
-450:     
+450:
 451:                 ind_range = trial_class.fp_contact_inds_backup{p}(c,1):trial_class.fp_contact_inds_backup{p}(c,2);
 452:                 trial_class.f_right(ind_range,:) = trial_class.forceStruct_f{p}(ind_range,:);
 453:                 trial_class.p_right(ind_range,:) = trial_class.forceStruct_p{p}(ind_range,:);
-454:     
+454:
 455:             else
-456:     
+456:
 457:                 ind_range = trial_class.fp_contact_inds_backup{p}(c,1):trial_class.fp_contact_inds_backup{p}(c,2);
 458:                 trial_class.f_left(ind_range,:) = trial_class.forceStruct_f{p}(ind_range,:);
 459:                 trial_class.p_left(ind_range,:) = trial_class.forceStruct_p{p}(ind_range,:);
-460:     
+460:
 461:             end
-462: 
+462:
 463:         end
 ```
 
 ```text
 484:     function update_forcestruct_data(trial_class)
-485: 
+485:
 486:         trial_class.forceStruct.f1 = trial_class.f_right;
 487:         trial_class.forceStruct.p1 = trial_class.p_right;
-488:         
+488:
 489:         trial_class.forceStruct.f2 = trial_class.f_left;
 490:         trial_class.forceStruct.p2 = trial_class.p_left;
-491:         
+491:
 492:         trial_class.forceStruct.p3(isnan(trial_class.forceStruct.p3)) = 0;
 493:         trial_class.forceStruct.p4(isnan(trial_class.forceStruct.p4)) = 0;
 494:         trial_class.forceStruct.p5(isnan(trial_class.forceStruct.p5)) = 0;
@@ -201,51 +201,51 @@ Référence Git `a26fe4852a78f30c5e8a437b158847031cb8dc3c`. Numéros de lignes d
 ```text
 616:     function export_trc_mot_files(trial_class)
 617:     %Write the marker and force data to file
-618: 
+618:
 619:     % Write marker data to trc file.
 620:     trial_class.c3d.writeTRC(strcat(trial_class.trial_name,'.trc'));
-621:     
+621:
 622:     % Write force data to mot file.
 623:     trial_class.c3d.writeMOT(strcat(trial_class.trial_name,'.mot'));
-624: 
+624:
 625:     end
-626: 
+626:
 627:     function osim_scale(trial_class)
-628: 
+628:
 629:         Osim.Scale(trial_class.staticTrcFile,trial_class.scaleXml,trial_class.osimOutputFile);
-630: 
+630:
 631:     end
-632: 
+632:
 633:     function osim_ik(trial_class)
-634: 
+634:
 635:         [JointKinematicsTable, errorInfo, trial_class.ikMotOutputFile] =...
 636:             Osim.IK(trial_class.trcFile, trial_class.ikXml, trial_class.ikMotOutputFile);
-637: 
+637:
 638:         [fig_rms, trial_class.max_error, trial_class.rms_error] = Osim.viewIKError(errorInfo);
-639:         
+639:
 640:         if trial_class.results_fig_visible == 1
 ```
 
 ```text
 770:     function osim_id(trial_class)
-771: 
+771:
 772:         if (trial_class.id_enabled == 1)
-773: 
+773:
 774:             forcePlatesUsed = {'ground_force_1', 'ground_force_2'};
 775:             grfMotTable = Osim.readMOT(trial_class.grfMotFile);
 776:             columnsToKeep = contains(grfMotTable.Properties.VariableNames, forcePlatesUsed);
 777:             columnsToKeep(1) = true; % keep Header column
 778:             grfMotTable = grfMotTable(:, columnsToKeep);
-779:     
+779:
 780:             sides = 'rl';
 781:             trial_class.extLoadsFile = Osim.createExternalLoads(forcePlatesUsed, sides, trial_class.extLoadsFile);
-782:     
+782:
 783:             trial_class.extLoadsFile = GetFullPath(trial_class.extLoadsFile);
-784:     
+784:
 785:             trial_class.idXmlUpdated = Osim.editSetupXML(trial_class.idXml, 'external_loads_file', trial_class.extLoadsFile, 'FilePath', trial_class.idXmlUpdated);
 786:             %% Compute Inverse Dynamics
 787:             [JointTorquesTable, trial_class.stoOutputFile] = Osim.ID(trial_class.grfMotFile,trial_class.idXmlUpdated,trial_class.ikMotOutputFile,trial_class.stoOutputFile);
-788:     
+788:
 789:             data = JointTorquesTable;
 790:             trial_id_results = data;
 ```
@@ -257,7 +257,7 @@ Référence Git `a26fe4852a78f30c5e8a437b158847031cb8dc3c`. Numéros de lignes d
 2: close all;
 3: trial_name = 'squat_1';
 4: c3d_filename = 'squat_1.c3d';
-5: 
+5:
 6: trial = trial_class(trial_name, c3d_filename);
 7: trial.set_paths();
 8: %%
@@ -267,13 +267,13 @@ Référence Git `a26fe4852a78f30c5e8a437b158847031cb8dc3c`. Numéros de lignes d
 12: trial.export_trc_mot_files();
 13: %%
 14: trial.osim_scale();
-15: 
+15:
 16: trial.osim_ik();
-17: 
+17:
 18: trial.osim_com();
-19: 
+19:
 20: trial.osim_id();
-21: 
+21:
 22: trial.plot_results();
 ```
 
@@ -282,91 +282,91 @@ Référence Git `a26fe4852a78f30c5e8a437b158847031cb8dc3c`. Numéros de lignes d
 ```text
 1: fp_num = 1;
 2: trial.plot_forceplate_data(fp_num);
-3: 
+3:
 4: % Contact 1 start --- Contact 1 end
 5: % Contact 2 start --- Contact 2 end
 6: % ...
 7: trial.fp_contact_inds{fp_num} = zeros(1,2);
-8: 
+8:
 9: c = 1;
 10: trial.fp_contact_inds{fp_num}(c,1) = 1;
 11: trial.fp_contact_inds{fp_num}(c,2) = trial.forceStruct_len(fp_num);
-12: 
+12:
 13: trial.set_forceplate_contacts(fp_num, c);
 14: %%
 15: fp_num = 2;
 16: trial.plot_forceplate_data(fp_num);
-17: 
+17:
 18: trial.fp_contact_inds{fp_num} = zeros(1,2);
-19: 
+19:
 20: c = 1;
 21: trial.fp_contact_inds{fp_num}(c,1) = 1;
 22: trial.fp_contact_inds{fp_num}(c,2) = trial.forceStruct_len(fp_num);
-23: 
+23:
 24: trial.set_forceplate_contacts(fp_num, c);
 25: %%
 26: fp_num = 3;
 27: trial.plot_forceplate_data(fp_num);
-28: 
+28:
 29: trial.fp_contact_inds{fp_num} = zeros(1,2);
-30: 
+30:
 31: c = 1;
 32: trial.fp_contact_inds{fp_num}(c,1) = 1;
 33: trial.fp_contact_inds{fp_num}(c,2) = trial.forceStruct_len(fp_num);
-34: 
+34:
 35: trial.set_forceplate_contacts(fp_num, c);
 36: %%
 37: fp_num = 4;
 38: trial.plot_forceplate_data(fp_num);
-39: 
+39:
 40: trial.fp_contact_inds{fp_num} = zeros(1,2);
-41: 
+41:
 42: c = 1;
 43: trial.fp_contact_inds{fp_num}(c,1) = 1;
 44: trial.fp_contact_inds{fp_num}(c,2) = trial.forceStruct_len(fp_num);
-45: 
+45:
 46: trial.set_forceplate_contacts(fp_num, c);
 47: %%
 48: fp_num = 5;
 49: trial.plot_forceplate_data(fp_num);
-50: 
+50:
 51: trial.fp_contact_inds{fp_num} = zeros(1,2);
-52: 
+52:
 53: c = 1;
 54: trial.fp_contact_inds{fp_num}(c,1) = 1;
 55: trial.fp_contact_inds{fp_num}(c,2) = trial.forceStruct_len(fp_num);
-56: 
+56:
 57: trial.set_forceplate_contacts(fp_num, c);
 58: %%
 59: fp_num = 6;
 60: trial.plot_forceplate_data(fp_num);
-61: 
+61:
 62: trial.fp_contact_inds{fp_num} = zeros(1,2);
-63: 
+63:
 64: c = 1;
 65: trial.fp_contact_inds{fp_num}(c,1) = 1;
 66: trial.fp_contact_inds{fp_num}(c,2) = trial.forceStruct_len(fp_num);
-67: 
+67:
 68: trial.set_forceplate_contacts(fp_num, c);
 69: %%
 70: trial.plot_all_forceplates();
 71: %% Right foot data
 72: is_right_foot = 1;
-73: 
+73:
 74: % Have to look at the data in Motive.
 75: % First part of the right foot force. c'th contact interval of force plate p.
 76: p = 1;
 77: c = 1;
 78: trial.set_foot_force_data(p, c, is_right_foot);
-79: 
-80: 
+79:
+80:
 81: %% Left foot data
 82: is_right_foot = 0;
-83: 
+83:
 84: p = 2;
 85: c = 1;
 86: trial.set_foot_force_data(p, c, is_right_foot);
-87: 
+87:
 ```
 
 ## AB01/Static/1/Setup/Setup_Scale.xml
@@ -654,26 +654,26 @@ Référence Git `a26fe4852a78f30c5e8a437b158847031cb8dc3c`. Numéros de lignes d
 ```text
 1: clear;
 2: close all;
-3: 
+3:
 4: subject_ids = ["AB01", "AB02", "AB03", "AB04", "AB05", ...
 5:     "AB06", "AB07", "AB08", "AB09", "AB10"];
-6: 
+6:
 7: subject_masses = [49.81	 65.2	60.01	64.16	71.08	74.22	67.58	49.89	55.99	78.66];
 8: subject_heights = [173	176	170	175.26	182.88	177.8	168	170	156	185.42]/100;
-9: 
+9:
 10: trial_names = ["Static", "Sit to stand", "Stand to sit", "Foot on chair", "Stride",...
 11:     "Look behind", "Feet together", "Eyes closed", "Turn", "Tandem feet",...
 12:     "One leg", "Squat", "Reach forward", "Object pickup", "Shoe lace"];
-13: 
+13:
 14: trial_nums = 1:length(trial_names);
 15: trial_dict = dictionary(trial_names, trial_nums);
-16: 
+16:
 17: repeats = ["1","2","3"];
-18: 
+18:
 19: num_subjects = length(subject_ids);
 20: num_trials = length(trial_names);
 21: num_repeats = length(repeats);
-22: 
+22:
 23: save('data_info');
 ```
 
@@ -682,7 +682,7 @@ Référence Git `a26fe4852a78f30c5e8a437b158847031cb8dc3c`. Numéros de lignes d
 ```text
 1: %% Add the folders to the MATLAB path
 2: addpath(fullfile(pwd, '../MATLAB tools/'));
-3: 
+3:
 4: % Display a confirmation message
 5: disp(['Added to path: ', fullfile(pwd, '../MATLAB tools/')]);
 ```
