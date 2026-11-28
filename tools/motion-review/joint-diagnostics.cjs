@@ -90,11 +90,15 @@ const path = require('node:path');
             }
             previous = current;
           }
+          const ranked = [...peaks.values()].sort((a, b) => b.peak - a.peak);
+          const bodyPattern = /^Bip01_(?:Pelvis|Spine\\d*|Neck|Head|[LR]_(?:Thigh|Calf|Foot|Toe\\d*|Clavicle|UpperArm|Forearm|Hand))$/;
+          const bodyJointPeaks = ranked.filter(item => bodyPattern.test(item.bone)).slice(0, 20);
           output.push({
             exercise: clip.name,
             duration: clip.duration,
             sampleHz: hz,
-            highestJointPeaks: [...peaks.values()].sort((a, b) => b.peak - a.peak).slice(0, 20)
+            highestJointPeaks: ranked.slice(0, 20),
+            bodyJointPeaks
           });
         }
       }
