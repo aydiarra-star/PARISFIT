@@ -27,6 +27,8 @@ app=app.replace('Instructions ouvertes. La démonstration animée reste verrouil
 legacy=(ROOT/'tools/owner-preview/index.html').read_text()
 feedback=legacy[legacy.index('<section><h2>Votre évaluation'):legacy.index('</main>')]
 html=(ROOT/'index.html').read_text()
+# Owner preview adds faster playback choices without changing public Coach controls.
+html=replace(html,'<option value="1" selected>× 1</option>','<option value="1" selected>× 1</option><option value="1.5">× 1,5</option><option value="1.75">× 1,75</option><option value="2">× 2</option>')
 html=replace(html,'<div class="coach-stage-main">','<p role="note" class="review-warning">Prévisualisation en cours — animation non encore validée professionnellement. Revue visuelle uniquement, pas une consigne d’entraînement.</p><div class="coach-stage-main">')
 html=replace(html,'</body>','<script type="module" src="./review-feedback.js"></script></body>')
 html=replace(html,'<div class="coach-stage-main">', '<label class="review-picker">Observer un mouvement <select id="review-exercise">'+''.join(f'<option value="{id}">{name}</option>' for id,name in [('squat','Squat'),('pompes','Pompes'),('gainage','Gainage'),('fentes','Fentes'),('jumpingjacks','Jumping jacks'),('mountainclimber','Mountain climbers'),('etirementdos','Étirement du dos'),('mobiliteepaules','Mobilité des épaules')])+'</select></label><div class="coach-stage-main">')
