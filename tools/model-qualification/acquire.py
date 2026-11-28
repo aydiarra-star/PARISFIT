@@ -8,7 +8,7 @@ URL='https://zenodo.org/records/23979972/files/Fatigue_Squat_2026_dataset.zip?do
 def digest(b):return hashlib.sha256(b).hexdigest()
 def markers(x):return {m.attrib['name']:{'frame':m.findtext('socket_parent_frame'),'location':m.findtext('location')} for m in x.findall('.//MarkerSet/objects/Marker')}
 def leaves(e,path=''):
- path+= '/'+e.tag+('[@name='+e.attrib['name']+']' if 'name' in e.attrib else '')
+ path+= '/'+e.tag+('[@name='+e.attrib['name']+']' if 'name' in e.attrib and e.tag!='Model' else '')
  if len(e)==0:return {path:(e.text or '').strip()}
  r={}
  for ch in e:r.update(leaves(ch,path))
