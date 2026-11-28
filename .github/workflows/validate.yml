@@ -321,11 +321,23 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           import zlib,base64
-          for name in ['provenance.json','markers-report.json','forces-report.json','reconstruction-report.json','phases-report.json']:
+          for name in ['provenance.json','forces-report.json','reconstruction-report.json','phases-report.json']:
               p=Path('.cache/phase13')/name
               if p.exists():
                   raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
                   for i in range(0,len(raw),3800):print('::warning title=phase13-'+name+'-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - name: Phase13 full marker inventory
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import zlib,base64
+          p=Path('.cache/phase13/markers-report.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              assert len(raw)<=38000,'MARKER_REPORT_TRANSPORT_SIZE'
+              for i in range(0,len(raw),3800):print('::warning title=phase13-markers-report.json-'+str(i//3800)+'::'+raw[i:i+3800])
           PY
       - name: Phase13 model template metadata
         if: always()
