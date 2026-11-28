@@ -21,5 +21,13 @@
   },
   "scope": "synthetic fixtures, preserved documents, existing npm contracts and new documentation page; no biomechanical pipeline",
   "rocketboxSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
-  "newWorkflowCI": "not yet observed; not claimed PASS"
+  "newWorkflowCI": {
+    "run": 46129711159,
+    "commit": "a9a30efb026a943bf32a3be427cc7bded1dd8976",
+    "status": "completed",
+    "conclusion": "success",
+    "tests": 36,
+    "evidence": "ci-passive-contracts.json",
+    "runnerWarning": "checkout@v4 and setup-python@v5 Node20 deprecated; runner forces Node24; no step failed"
+  }
 }

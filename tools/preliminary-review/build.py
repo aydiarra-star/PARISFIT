@@ -151,6 +151,8 @@ Le job validate est inchangé : chaînes `&&`, `set -o pipefail` avant tee et ab
 - Jobs bloqués : Blender retarget/export/biomécanique, acquisition/analyse de sources et sondes modèle. `model-qualification` comprend aussi des contrôles passifs : le verrouillage large a donc **réduit la couverture automatique**, même si leurs assertions sont intactes.
 - Correction minimale phase20 : workflow séparé `preliminary-review.yml`, quatre suites de contrats existantes(28 tests) sur documents/fixtures synthétiques, sans acquire/analyze main ni Blender/OpenSim. Ajout du contrôle documentaire phase20. Aucun job historique réactivé, aucun seuil changé. Les entrées `main()` des modules importés ne sont pas exécutées par ces tests.
 
+Correction minimale proposée pour le probe réseau (non appliquée ici, aucun nouveau téléchargement requis) : ajouter après son exécution une assertion sur l'absence de `error` global/par archive dans le JSON, afin qu'un HTTP en échec fasse échouer le job. Le nouveau test documentaire20 vérifie cette propriété sur la preuve19 conservée ; il ne remplace pas ce contrôle réseau futur.
+
 Le résultat des tests de cette correction est distinct du succès historique25ebee0 ; voir [vérifications20](verification.json). Pas de relance historique pour fabriquer une preuve manquante.
 ''')
 put('decision-report.md','''# Décision Phase20 : **A — dossier préliminaire prêt à être soumis à un expert**
