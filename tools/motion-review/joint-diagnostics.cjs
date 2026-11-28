@@ -139,7 +139,7 @@ const path = require('node:path');
       samples: report.samples.length,
       tracks: report.trackSummary.reduce((n, clip) => n + clip.tracks.length, 0)
     }));
-    for (const item of report.filter(x => x.exercise === 'jumpingjacks')) {
+    for (const item of report.samples.filter(x => x.exercise.toLowerCase().includes('jump'))) {
       console.log(JSON.stringify(item));
     }
   } finally {
