@@ -21,7 +21,7 @@ const path = require('node:path');
     }));
     await page.route('**/*', async route => {
       const url = new URL(route.request().url());
-      const name = url.pathname.replace(/^\\//, '');
+      const name = url.pathname.slice(1);
       const allowed = name === 'tools/coach-lab.html' ||
         name === 'assets/coach/coach.glb' ||
         name.startsWith('vendor/three/');
