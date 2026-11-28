@@ -20,6 +20,7 @@ if not PASSWORD:
 if len(PASSWORD)<16: raise SystemExit('Demo password must contain at least 16 characters')
 SESSION=secrets.token_urlsafe(32)
 SECURE=os.environ.get('COOKIE_SECURE','1')=='1'
+OPEN_DEMO=os.environ.get('PARISFIT_DEMO_OPEN','0')=='1'
 FILES={'/'+p.relative_to(PUBLIC).as_posix():p for p in PUBLIC.rglob('*') if p.is_file()}
 FILES['/']=PUBLIC/'index.html'
 attempts={}
@@ -36,12 +37,13 @@ class Handler(http.server.BaseHTTPRequestHandler):
         except (KeyError,ValueError):return False
     def do_GET(self):
         path=urlsplit(self.path).path
-        if not self.authenticated():
+        if not OPEN_DEMO and not self.authenticated():
             self.reply(200 if path=='/' else 401,LOGIN.encode() if path=='/' else b'Authentication required');return
         if path not in FILES:self.reply(404,b'Not found');return
         p=FILES[path];kind=mimetypes.guess_type(str(p))[0] or 'application/octet-stream'
         self.reply(200,p.read_bytes(),kind)
     def do_POST(self):
+        if OPEN_DEMO:self.reply(404);return
         if self.path!='/login':self.reply(404);return
         # Reject cross-origin form submissions; no credential in URL or client bundle.
         origin=self.headers.get('Origin')
