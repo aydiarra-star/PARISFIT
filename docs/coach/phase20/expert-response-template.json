@@ -1,0 +1,137 @@
+[
+  {
+    "id": "Q01",
+    "priority": 1,
+    "original_ids": [
+      "E08",
+      "E09"
+    ],
+    "question": "Quelles définitions de sites et ambiguïtés du guide sont défendables, et quelles preuves individuelles de pose AB01 restent indispensables ?",
+    "answer": null,
+    "justification": null,
+    "conditions": null
+  },
+  {
+    "id": "Q02",
+    "priority": 1,
+    "original_ids": [
+      "E07"
+    ],
+    "question": "Comment évaluer les effets des gaps, interpolations et exclusions sans journal individuel complet ?",
+    "answer": null,
+    "justification": null,
+    "conditions": null
+  },
+  {
+    "id": "Q03",
+    "priority": 2,
+    "original_ids": [
+      "E08",
+      "E09",
+      "E13"
+    ],
+    "question": "Quels centres/axes articulaires sont identifiables avec ce protocole, et lesquels ne le sont pas malgré57 rattachements OpenSim ?",
+    "answer": null,
+    "justification": null,
+    "conditions": null
+  },
+  {
+    "id": "Q04",
+    "priority": 3,
+    "original_ids": [
+      "E06"
+    ],
+    "question": "La calibration générique publiée permet-elle une appréciation de cette séance, et quel rapport individuel faudrait-il ?",
+    "answer": null,
+    "justification": null,
+    "conditions": null
+  },
+  {
+    "id": "Q05",
+    "priority": 3,
+    "original_ids": [
+      "E02",
+      "E03",
+      "E04",
+      "E13"
+    ],
+    "question": "Les paramètres scaling/IK et journaux disponibles suffisent-ils à comprendre le traitement individuel et ses limites ?",
+    "answer": null,
+    "justification": null,
+    "conditions": null
+  },
+  {
+    "id": "Q06",
+    "priority": 4,
+    "original_ids": [
+      "E01",
+      "E05",
+      "E10",
+      "E11"
+    ],
+    "question": "Quelle preuve de synchronisation de séance manque au-delà des versions export et du ratio200/1000Hz ?",
+    "answer": null,
+    "justification": null,
+    "conditions": null
+  },
+  {
+    "id": "Q07",
+    "priority": 5,
+    "original_ids": [
+      "E12",
+      "E14"
+    ],
+    "question": "Comment borner l’interprétation des forces, filtres, phases et appuis sans assimiler force à contact plantaire complet ?",
+    "answer": null,
+    "justification": null,
+    "conditions": null
+  },
+  {
+    "id": "Q08",
+    "priority": 6,
+    "original_ids": [
+      "E02",
+      "E03",
+      "E04",
+      "E13"
+    ],
+    "question": "Quelles pièces supplémentaires permettraient d’envisager une reconstruction défendable, distincte de la simple exécution logicielle ?",
+    "answer": null,
+    "justification": null,
+    "conditions": null
+  },
+  {
+    "id": "Q09",
+    "priority": 6,
+    "original_ids": [
+      "E18"
+    ],
+    "question": "Quelle est la portée exacte de votre revue documentaire, et quels critères d’acceptation devraient être convenus avant expérimentation ?",
+    "answer": null,
+    "justification": null,
+    "conditions": null
+  },
+  {
+    "id": "Q10",
+    "priority": 7,
+    "original_ids": [
+      "E15",
+      "E17"
+    ],
+    "question": "Quelles vérifications distingueraient un transfert anatomique d’un succès technique, sans utiliser l’historique mobile comme validation ?",
+    "answer": null,
+    "justification": null,
+    "conditions": null
+  },
+  {
+    "id": "Q11",
+    "priority": 7,
+    "original_ids": [
+      "E16"
+    ],
+    "question": "Quelles restrictions de données, modèles et résultats doivent être vérifiées avant une expérimentation ou redistribution ?",
+    "answer": null,
+    "justification": null,
+    "conditions": null
+  }
+]

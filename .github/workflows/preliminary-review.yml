@@ -1,0 +1,25 @@
+name: PARISFIT — passive review contracts
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  passive-contracts:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install numerical fixture dependency only
+        run: python -m pip install numpy==1.26.4
+      - name: Preserved assertions on documents and synthetic fixtures, no source processing
+        run: |
+          python tools/model-qualification/test_contracts.py
+          python tools/metadata-plan/test_plan.py
+          python tools/passive-qualification/test_metrics.py
+          python tools/independent-review/test_review.py
+          python tools/preliminary-review/test_dossier.py
