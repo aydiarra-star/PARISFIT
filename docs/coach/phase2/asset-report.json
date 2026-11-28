@@ -1,0 +1,16 @@
+{
+  "bytes": 5789744,
+  "sha256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+  "joints": 80,
+  "textures": 4,
+  "clips": [
+    "squat",
+    "pompes",
+    "gainage",
+    "fentes",
+    "jumpingjacks",
+    "mountainclimber",
+    "etirementdos",
+    "mobiliteepaules"
+  ]
+}

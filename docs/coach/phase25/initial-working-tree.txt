@@ -1,0 +1,18 @@
+ M .github/workflows/deploy-pages.yml
+ M .github/workflows/validate.yml
+ M app.js
+ M coach-3d.js
+ M index.html
+ M package.json
+ M service-worker.js
+ M tests/coach-independent-review.cjs
+ M tests/coach-passive-qualification.cjs
+?? animation-validation-registry.json
+?? animation-validation.js
+?? docs/coach/phase24/
+?? docs/coach/phase25/
+?? tests/coach-animation-lock-browser.cjs
+?? tests/coach-animation-lock-migration.cjs
+?? tests/coach-animation-lock.cjs
+?? tests/phase24-preservation.cjs
+?? tools/animation-lock/

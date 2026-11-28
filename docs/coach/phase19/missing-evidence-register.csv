@@ -1,0 +1,19 @@
+id,question_ouverte,preuve_attendue,source_recherchee,resultat_recherche,statut,consequence_expertise
+E01,Version export C3D,Champ fabricant des deux fichiers,MANUFACTURER / local-and-preserved-inventory.json,Motive 3.0.3 Final ; hashes inchangés,vérifié,Métadonnée export seulement
+E02,Environnement exact auteurs,Builds logiciels et environnement de séance,Article Data Processing ; Readme ; archive-probe.json,MATLAB2023b/OpenSim4.4 déclarés ; builds et OS inconnus,partiel,Reproduction bit-à-bit non établie
+E03,Bibliothèques modifiées,Sources exactes et commits,MATLAB tools.zip ; archive-probe.json,Membres Scale.m/IK.m/trial_class retrouvés et hashés ; versions inconnues,partiel,Ne plus déclarer ces bibliothèques globalement absentes
+E04,Logs originaux traitement AB01,Journal relié au sujet et essai,AB01.zip / Static/1/Processing ; archive-probe.json,Deux journaux retrouvés ; association par contenu à qualifier,partiel,Pas de validation dynamique automatique
+E05,Journal acquisition AB01,Log caméra/plateformes de séance,Arbre Git épinglé ; index AB01.zip,Non identifié dans périmètre ; TAK non ouverts,absent,Absence documentaire bornée et non inexistence
+E06,Calibration individuelle,Rapport calibration AB01 signé/daté,Article ; noms index AB01.zip,Procédure générique seulement,partiel,Qualité effective de séance non traçable
+E07,Qualité marqueurs / exclusions,"Gaps, remplissages, reprises AB01",Article ; index ; journaux processing,Pas de journal individuel identifié ; TAK non inspectés,absent,Ne pas déduire absence de défaut
+E08,Pose réelle AB01,Photos autorisées ou fiche opérateur liée à AB01,Article ; guide OptiTrack ; annexes annoncées,Sites génériques documentés ; aucune preuve individuelle identifiée,partiel,Expertise anatomique complète bloquée
+E09,Ambiguïtés anatomiques du guide,Concordance label/site,Guide Biomech57 ; phase18 registre57,Alias IAS/IPS et autres descriptions discordants,contradictoire,Pas de mapping automatique
+E10,Grille échantillonnage,Métadonnées et audit physique,Phase18 c3d-independent-byte-audit.json ; inventaire19,200/1000Hz et comptages cohérents,vérifié,Ne prouve pas synchronisation physique
+E11,Synchronisation physique,"Trigger, horloges, latence de séance",C3D groupes/canaux ; article ; index AB01,Pas de preuve spécifique retrouvée ; grille numérique seule,partiel,Pas de délai ni de correction inventés
+E12,Bornes de phases auteurs,Fichier MAT original et attribution,API Figshare fichier57221192,Fichier public localisé ; contenu non inspecté,partiel,Aucune borne AB01 affirmée
+E13,Erreur dynamique squat sélectionné,Résultat original et contexte exact,Index AB01.zip squat_1_IKError.mat et figures,Présence vérifiée ; valeurs non interprétées,partiel,RMS agrégé statique non substituable
+E14,Filtrage effectivement appliqué,Journal et code concordants,Article20Hz Butterworth ; trial_class.m Gaussian30,Méthodes ne se correspondent pas explicitement dans code inspecté,contradictoire,Étapes possiblement distinctes ; ne pas conclure erreur sans expertise
+E15,Historique phase3→4,"Commits, rapports, environnements",Phase18 historical-* ; Git lock,Changements documentés ; versions navigateur historiques inconnues,partiel,Causalité performance non isolée
+E16,Droits et données privées,Licences et autorisations par objet,API CC BY4.0 ; licences MIT des outils ; preuves antérieures,Données publiques et licences outils retrouvées ; pas autorisation privée nouvelle,partiel,Pas redistribution généralisée du modèle ni photos privées
+E17,Intégrité runtime et preuves,Comparaison référence et tests,preservation-check.json ; test-results.md,Contrôle des fichiers préexistants et tests sans authoring,vérifié,Régression technique seulement
+E18,Avis indépendant,Réponses expert et acceptation signée,Phase18 expert-feedback-template.json,Aucun retour ni contact,absent,Préparation du dossier ne vaut pas avis

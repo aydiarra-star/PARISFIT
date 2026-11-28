@@ -1,0 +1,28 @@
+{
+  "auditedHEAD": "5379624ffab37417a43546d6cdb6e454956c530d",
+  "preservedTrackedFiles": 870,
+  "changedPreexistingFiles": [],
+  "homeHTMLSectionIdenticalToMain": true,
+  "mainChangedPathCount": 860,
+  "assetSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+  "runtimeSha256": {
+    "app.js": "8aee19daeb92885a12b39b4095caa51a430589d9d81e378f810a473051772316",
+    "index.html": "6e3babab5d22e3aff24895dd33b7b5ffe7446a41156359c81627a9de65332fb6",
+    "styles.css": "fc12cd14b75f52e5e02df01d97be060e3c9cc757c1c5eba6de7fb8f9ec34f280",
+    "service-worker.js": "f0fdd3c92e05f00da771e75df75c8d1d8197d7e1837c3804e29d7d2625dc9bf6",
+    "coach-3d.js": "63c23cd5fde8cb736b492f76d847bc7dbfa737073595dc7d9bda8ad0c04339bb",
+    "coach-content.js": "e2434fde0a04b00d1837413f57cfbca48b7ce242591c181f8d865860149e5d9e",
+    "coach-transition-gate.js": "35f07f9e36463e19c10ad8a49653ee2f3a77a0c67d0b154de4e316422279c608"
+  },
+  "tests": {
+    "npm": "PASS",
+    "smoke": "PASS",
+    "coachBrowser": "PASS",
+    "trajectory60HzAll8": "PASS",
+    "phase22Contracts8": "PASS",
+    "homeAndCacheLifecycle": "PASS after test synchronization correction;2 initial harness failures preserved"
+  },
+  "biomechanicalValidation": false,
+  "physicalPhoneTests": false,
+  "newSourceAdmitted": false
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "scope": "existing .cache/public served locally; not deployed production",
+  "bytes": 6271964,
+  "staticGLB": {
+    "animations": 0,
+    "accessors": 14,
+    "bufferViews": 18,
+    "allViewsReferenced": true,
+    "exactReproducibleDerivative": true
+  },
+  "deniedCount": 866,
+  "allowedCount": 28
+}

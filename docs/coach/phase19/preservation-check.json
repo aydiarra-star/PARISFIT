@@ -1,0 +1,14 @@
+{
+  "referenceCommit": "71bae7d1ed34227b2fc2c1c4e79aa7fdf1be22f1",
+  "trackedReferenceFiles": 785,
+  "unchangedCount": 784,
+  "changedExistingFiles": [
+    ".github/workflows/validate.yml"
+  ],
+  "justification": "CI authoring disabled unless explicit workflow_dispatch legacy_authoring=true; no runtime changes",
+  "rocketboxSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+  "sourceC3D": {
+    "AB01/Squat/1/Data/squat_1.c3d": "7d4adaf1ca565de3fc172cde1b92a6b607f7a90d1f22b37453fa0cd4b6e30482",
+    "AB01/Static/1/Data/static.c3d": "ba89054b8d0bb0cb18087be68b81e1a326dcf2719c012dff73a5591102b1b4b1"
+  }
+}

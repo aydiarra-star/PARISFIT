@@ -37,5 +37,47 @@ Le test vérifie six largeurs (320–1440 px), la persistance de l’eau, le res
 
 Les valeurs de vitalité sont des exemples explicitement signalés, isolés dans `demo-data.js`. Les photos illustratives de l’accueil sont générées par IA.
 
-## Coach sportif 3D — premier incrément
-Le Coach IA charge un avatar humanoïde procédural articulé via Three.js/WebGL. Les huit exercices disponibles ont des cycles de mouvement dédiés, avec commandes pause/reprise et vues de face/profil. Three.js est chargé depuis jsDelivr ; une connexion est donc nécessaire pour ce rendu. En cas d'absence de WebGL ou d'échec du CDN, un affichage de secours est conservé. Ce modèle est une base stylisée en 3D, pas un avatar photoréaliste ni une animation de capture de mouvement professionnelle.
+## Coach humain 3D — expérimental, non validé pour production
+Le modèle géométrique a été remplacé par **Microsoft Rocketbox Sports_Male_04**, maillage humain texturé sous licence MIT avec 80 os et huit clips squelettiques. Three.js, le GLB et ses textures sont locaux. Lecture/pause, ralenti, étapes, timeline, zoom et vues face/profil/trois-quarts sont opérationnels.
+
+**Les mouvements sont créés ici, pas issus de motion capture ni approuvés par un professionnel.** La qualité premium, les contacts au sol, les transitions et les tests sur téléphones réels restent à valider. Ce chantier ne doit pas être fusionné tant que ces critères ne passent pas.
+
+Voir le [rapport complet et les captures réelles](docs/coach/REPORT.md) et la [provenance du modèle](assets/coach/source.json).
+
+### Tests reproductibles
+```sh
+npm ci
+npx playwright install --with-deps chromium
+npm test
+# Avec le serveur HTTP déjà lancé sur le port 3000 :
+npm run test:browser
+```
+`CHROMIUM_PATH` permet de fournir un navigateur existant. Aucun npm ni téléchargement externe n’est nécessaire pour exécuter le site déployé ; ces dépendances servent aux tests et à la conversion.
+
+### Recréer le GLB (outillage, pas compilation du site)
+```sh
+python -m venv .venv
+.venv/bin/pip install pillow
+.venv/bin/python tools/download-coach.py
+# Serveur HTTP sur 3000, npm ci et Chromium disponibles :
+node tools/export-coach.cjs
+.venv/bin/python tools/optimize-coach.py
+npm test
+```
+Le téléchargement source utilise `gh` et une révision Rocketbox figée. Le FBX et les TGA restent dans `.cache/`, jamais dans Git. Pour recréer les planches et miniatures après les tests navigateur : `.venv/bin/python tools/review-contact-sheet.py`.
+
+## Coach — perfectionnement phase 2 (PR #11, brouillon)
+
+Huit clips Rocketbox corrigés, consignes synchronisées et 64 vidéos avant/après : [rapport actuel](docs/coach/phase2/REPORT.md), [galerie](docs/coach/phase2/index.html). `npm test` et `npm run test:browser` couvrent également trajectoires à 60 Hz, preuves vidéo et émulation mobile. Animations IK, **pas de mocap ni de validation professionnelle**. Transferts debout/sol naturels et tests iPhone/Android physiques restent à faire. Pas de fusion ni déploiement autorisés pour cette phase. Les anciens chiffres du dossier coach correspondent à la phase 1.
+
+## Coach — phase 3 (candidates, pas de validation finale)
+
+[Galerie de transitions](docs/coach/phase3/index.html) · [Rapport](docs/coach/phase3/REPORT.md) · [Dossier professionnel](docs/coach/phase3/professional-review.html). Deux clips officiels Rocketbox MIT retargetés, 16 vidéos comparatives, statut **HOLD** : inactifs dans le parcours. Les cinq autres passages demandés restent non réalisés. Caméra orbitale fluide et dossier de revue ajoutés ; aucun test physique ni avis professionnel inventé. PR #11 toujours en brouillon.
+
+## Coach — phase 4 (appuis corrigés, raccords bloqués)
+
+[Galerie avant/après](docs/coach/phase4/index.html) · [Rapport](docs/coach/phase4/REPORT.md) · [Complément professionnel](docs/coach/phase4/PRO-ADDENDUM.md). Deux candidates corrigées sur des points matériels de semelle, 16 nouvelles vidéos, audit 60 Hz et admission de raccords en refus par défaut. **Aucune transition activée** : raccords/récupération non approuvés et cinq passages encore `NOT_AVAILABLE`. Les tests réussis des appuis ciblés ne constituent pas une validation biomécanique ni une acceptation complète du mouvement.
+
+## Coach — phase 5 : vidéo réelle et mocap optique (recherche)
+
+[Galerie A/B/C/D](docs/coach/phase5/index.html) · [Rapport](docs/coach/phase5/REPORT.md) · [Solutions/licences](docs/coach/phase5/SOLUTIONS.md). Chaîne locale MediaPipe → Rocketbox → GLB réellement exécutée sur une vidéo publique FitnessScape CC BY 3.0 ; référence CMU optique acquise sous ses conditions. **Prototype vidéo rejeté pour le parcours**, retargeting CMU en revue ; aucun nouveau clip activé. Source/overlay, 16 vidéos comparatives, landmarks et métriques disponibles. Voir les droits et limites avant toute réutilisation.

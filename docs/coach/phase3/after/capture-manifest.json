@@ -1,0 +1,21 @@
+{
+  "stage": "after",
+  "modelSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+  "transitionSHA256": "e5a948dc4d97554d4099584d819c0c718baadcce88c5ef32d9f119f3b988c65a",
+  "sourceCommit": "697523f",
+  "comparison": "Raw retarget vs floor-corrected candidate; NOT phase-2 exercise changes",
+  "fps": 24,
+  "method": "Offline timestamp sampling of real WebGL renders; not mocap or measured device FPS",
+  "clips": [
+    {
+      "name": "stand-to-crouch",
+      "duration": 4.5,
+      "frames": 109
+    },
+    {
+      "name": "crouch-to-stand",
+      "duration": 4.5,
+      "frames": 109
+    }
+  ]
+}

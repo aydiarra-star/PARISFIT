@@ -1,0 +1,16 @@
+{
+  "reference": "fc51383e1a28f649a700057bb4d19bcb420c8eaf",
+  "unchanged": 892,
+  "authorizedChanges": [
+    ".github/workflows/deploy-pages.yml",
+    ".github/workflows/validate.yml",
+    "app.js",
+    "coach-3d.js",
+    "index.html",
+    "package.json",
+    "service-worker.js",
+    "tests/coach-independent-review.cjs",
+    "tests/coach-passive-qualification.cjs"
+  ],
+  "priorEvidenceUnchanged": true
+}

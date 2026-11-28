@@ -1,0 +1,26 @@
+{
+  "renderHz": 24,
+  "method": "Same full 5s procedural pushup control, same timing and cameras; no demonstrated visual improvement",
+  "cases": [
+    {
+      "id": "original",
+      "label": "Procedural control NOT mocap",
+      "url": "?once=1",
+      "clip": "pompes",
+      "duration": 5,
+      "asset": "assets/coach/coach.glb",
+      "frames": 121,
+      "sha256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb"
+    },
+    {
+      "id": "prototype",
+      "label": "Resampled control NOT new mocap",
+      "url": "?model=/docs/coach/phase7/prototype.glb&once=1",
+      "clip": "pushup-control",
+      "duration": 5,
+      "asset": "docs/coach/phase7/prototype.glb",
+      "frames": 121,
+      "sha256": "de21279072e548d79fe1a2421dd155c5077df2e307ae4a59388bbafeaad456a6"
+    }
+  ]
+}

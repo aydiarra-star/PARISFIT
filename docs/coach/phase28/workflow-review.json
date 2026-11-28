@@ -1,0 +1,142 @@
+[
+  {
+    "path": ".github/workflows/deploy-pages.yml",
+    "uploadOrDispatchLines": [
+      {
+        "line": 6,
+        "text": "workflow_dispatch:"
+      },
+      {
+        "line": 31,
+        "text": "uses: actions/upload-pages-artifact@v3"
+      },
+      {
+        "line": 33,
+        "text": "path: .cache/public"
+      }
+    ],
+    "mentionsProposedCiphertextDirectory": false,
+    "mentionsPhase26Backups": false,
+    "mentionsProposedPrivateWorkDirectory": false
+  },
+  {
+    "path": ".github/workflows/passive-evidence.yml",
+    "uploadOrDispatchLines": [
+      {
+        "line": 6,
+        "text": "workflow_dispatch:"
+      },
+      {
+        "line": 24,
+        "text": "- uses: actions/upload-artifact@v4"
+      },
+      {
+        "line": 27,
+        "text": "path: .cache/phase19/archive-probe.json"
+      }
+    ],
+    "mentionsProposedCiphertextDirectory": false,
+    "mentionsPhase26Backups": false,
+    "mentionsProposedPrivateWorkDirectory": false
+  },
+  {
+    "path": ".github/workflows/preliminary-review.yml",
+    "uploadOrDispatchLines": [
+      {
+        "line": 5,
+        "text": "workflow_dispatch:"
+      }
+    ],
+    "mentionsProposedCiphertextDirectory": false,
+    "mentionsPhase26Backups": false,
+    "mentionsProposedPrivateWorkDirectory": false
+  },
+  {
+    "path": ".github/workflows/validate.yml",
+    "uploadOrDispatchLines": [
+      {
+        "line": 7,
+        "text": "workflow_dispatch:"
+      },
+      {
+        "line": 9,
+        "text": "legacy_authoring:"
+      },
+      {
+        "line": 94,
+        "text": "uses: actions/upload-artifact@v4"
+      },
+      {
+        "line": 97,
+        "text": "path: |"
+      },
+      {
+        "line": 106,
+        "text": "if: ${{ github.event_name == 'workflow_dispatch' && inputs.legacy_authoring == true }}"
+      },
+      {
+        "line": 190,
+        "text": "uses: actions/upload-artifact@v4"
+      },
+      {
+        "line": 193,
+        "text": "path: .cache/phase10/"
+      },
+      {
+        "line": 258,
+        "text": "- uses: actions/upload-artifact@v4"
+      },
+      {
+        "line": 262,
+        "text": "path: .cache/phase11/"
+      },
+      {
+        "line": 266,
+        "text": "uses: actions/upload-artifact@v4"
+      },
+      {
+        "line": 269,
+        "text": "path: .cache/phase9/"
+      },
+      {
+        "line": 272,
+        "text": "if: ${{ github.event_name == 'workflow_dispatch' && inputs.legacy_authoring == true }}"
+      },
+      {
+        "line": 330,
+        "text": "- uses: actions/upload-artifact@v4"
+      },
+      {
+        "line": 334,
+        "text": "path: .cache/phase12/"
+      },
+      {
+        "line": 338,
+        "text": "if: ${{ github.event_name == 'workflow_dispatch' && inputs.legacy_authoring == true }}"
+      },
+      {
+        "line": 453,
+        "text": "- uses: actions/upload-artifact@v4"
+      },
+      {
+        "line": 457,
+        "text": "path: .cache/phase13/"
+      },
+      {
+        "line": 461,
+        "text": "if: ${{ github.event_name == 'workflow_dispatch' && inputs.legacy_authoring == true }}"
+      },
+      {
+        "line": 487,
+        "text": "- uses: actions/upload-artifact@v4"
+      },
+      {
+        "line": 490,
+        "text": "path: .cache/phase14/original-audit.json"
+      }
+    ],
+    "mentionsProposedCiphertextDirectory": false,
+    "mentionsPhase26Backups": false,
+    "mentionsProposedPrivateWorkDirectory": false
+  }
+]

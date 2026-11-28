@@ -1,0 +1,79 @@
+Exported procedural pushup control, NOT mocap GLB; NOT activated
+GLB 6,455,920 → 5,627,520 bytes
+[
+  {
+    stage: 'original',
+    min: 0.0019844185234128425,
+    drift: 0.000016935991653170007,
+    gap: 0.0020001173789592763,
+    speed: 0.2172428844192444,
+    acc: 0.742472571930828
+  },
+  {
+    stage: 'prototype',
+    min: 0.00198438368041548,
+    drift: 0.00001694945706157657,
+    gap: 0.0020001173800079514,
+    speed: 0.2172445872493816,
+    acc: 0.7424979970109049
+  }
+] { maxRoundtripPositionErrorM: 1.9705979224634503e-7 }
+{
+  "status": "BLOCKED",
+  "runtimeEnabled": false,
+  "numericChecks": {
+    "penetration": {
+      "value": 0,
+      "limit": 0.003,
+      "pass": true
+    },
+    "supportGap": {
+      "value": 0.0020001173800079514,
+      "limit": 0.005,
+      "pass": true
+    },
+    "supportDrift": {
+      "value": 1.694945706157657e-05,
+      "limit": 0.005,
+      "pass": true
+    },
+    "segments": {
+      "value": 9.330473155211294e-08,
+      "limit": 0.0001,
+      "pass": true
+    },
+    "rotationStep": {
+      "value": 0.009624992253607809,
+      "limit": 0.1745329252,
+      "pass": true
+    },
+    "speed": {
+      "value": 0.2172445872493816,
+      "limit": 2,
+      "pass": true
+    },
+    "acceleration": {
+      "value": 0.7424979970109049,
+      "limit": 20,
+      "pass": true
+    },
+    "loopPosition": {
+      "value": 0,
+      "limit": 0.002,
+      "pass": true
+    }
+  },
+  "blockingReasons": [
+    "not-qualified-production-capture",
+    "review:contactAnnotation",
+    "review:anatomy",
+    "review:visual",
+    "review:pedagogy",
+    "review:collisions",
+    "review:physicalDevices",
+    "review:entryExitRecovery",
+    "signed-asset-bound-review-not-implemented"
+  ],
+  "scope": "Engineering triage, not medical/biomechanical approval"
+}
+Control pipeline executed. Admission BLOCKED; no production-ready animation asserted.

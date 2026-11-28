@@ -1,0 +1,32 @@
+{
+  "location": ".cache/phase25-backup",
+  "durableOrOffsite": false,
+  "encrypted": false,
+  "uploaded": false,
+  "filesVerified": 1739,
+  "tarPayloadSHA256AllMatch": true,
+  "originalsUnmodified": true,
+  "bundleVerify": "The bundle contains these 29 refs:\n7d199616192edc28bf63a75f03cbcff6dc2d3e5d refs/audit/pull/1/head\nebce1e9ddaec9afd714a0352c950edb489ae44a2 refs/audit/pull/10/head\nfc51383e1a28f649a700057bb4d19bcb420c8eaf refs/audit/pull/11/head\n0d0e08ca1f4642945b0466fab4d739c4035e2a69 refs/audit/pull/11/merge\n42e3e5782ea298a03fdaeeeb63d3ccd0fd74f07e refs/audit/pull/2/head\n634550b990f1271065d783cf2df4fd1af47a6e44 refs/audit/pull/3/head\n536b044d865e2d54c779deb38d4379729c371e05 refs/audit/pull/3/merge\n6fb80cb078834eeee237147c853fd3404c49d89a refs/audit/pull/4/head\nbd2bc7137b96d52d66a79e4b001289c6354ddd8f refs/audit/pull/5/head\n8a2ea3923d49dbbbb4b26e556ec588761df78aac refs/audit/pull/6/head\n59fcd8f992115e3498bee8f11e1aee8559b9a81f refs/audit/pull/7/head\n9c1feef70c1ce572ec36e41ecf169839dfa57389 refs/audit/pull/8/head\nbfc5f729fd7391af7dfeeec7cfdbb6d4038eed4d refs/audit/pull/9/head\nfc51383e1a28f649a700057bb4d19bcb420c8eaf refs/heads/arena/a03f64da-parisfit\n83f89f8727c1de1c65dbe1278676f1daafd173fc refs/heads/main\n83f89f8727c1de1c65dbe1278676f1daafd173fc refs/remotes/origin/HEAD\nbd2bc7137b96d52d66a79e4b001289c6354ddd8f refs/remotes/origin/arena/2ee1d988-parisfit\nebce1e9ddaec9afd714a0352c950edb489ae44a2 refs/remotes/origin/arena/6df23232-parisfit\nfc51383e1a28f649a700057bb4d19bcb420c8eaf refs/remotes/origin/arena/a03f64da-parisfit\n6fb80cb078834eeee237147c853fd3404c49d89a refs/remotes/origin/arena/b8a2d628-parisfit\n7d199616192edc28bf63a75f03cbcff6dc2d3e5d refs/remotes/origin/docs/fondations-parisfit\nbfc5f729fd7391af7dfeeec7cfdbb6d4038eed4d refs/remotes/origin/feat/parisfit-coach-3d-avatar\n42e3e5782ea298a03fdaeeeb63d3ccd0fd74f07e refs/remotes/origin/feat/socle-interface-parisfit\n9c1feef70c1ce572ec36e41ecf169839dfa57389 refs/remotes/origin/fix/coach-ia-entry-mobile\n59fcd8f992115e3498bee8f11e1aee8559b9a81f refs/remotes/origin/fix/coach-ia-mobile-visual-training\n8a2ea3923d49dbbbb4b26e556ec588761df78aac refs/remotes/origin/fix/refresh-parisfit-original-ui\n83f89f8727c1de1c65dbe1278676f1daafd173fc refs/remotes/origin/main\n634550b990f1271065d783cf2df4fd1af47a6e44 refs/remotes/origin/test/renforcer-qualite-socle\nfc51383e1a28f649a700057bb4d19bcb420c8eaf HEAD\nThe bundle records a complete history.\nThe bundle uses this hash algorithm: sha1\n/home/user/PARISFIT/.cache/phase25-backup/history.bundle is okay\n",
+  "packStrictCheck": "e011644097755ed895280cc18f678fc86262d920",
+  "archives": [
+    {
+      "path": ".cache/phase25-backup/history.bundle",
+      "bytes": 30951764,
+      "sha256": "bd132c42272e2a8a450a802493281579cb74aa98daba7f1867763284ef37e217"
+    },
+    {
+      "path": ".cache/phase25-backup/worktree-and-cache.tar.gz",
+      "bytes": 356779410,
+      "sha256": "7696a8ad57f9b6b3aaa4ff85b49b70a2a39275ca428672fd24db4d13dcea9350"
+    }
+  ],
+  "exclusions": [
+    "Git credentials/config/hooks/reflogs",
+    "node_modules",
+    ".venv",
+    "__pycache__",
+    "Phase25 outputs",
+    "remote Actions artifacts/logs, GitHub settings/issues/PR metadata beyond fetched refs"
+  ],
+  "warning": "Cache is ephemeral and not captured in Arena snapshots. Not a sufficient backup for deletion or history rewriting."
+}

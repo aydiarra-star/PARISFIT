@@ -1,0 +1,46 @@
+{
+  "commits": 158,
+  "pathVersions": 1158,
+  "historicalOnlyVersions": 204,
+  "pathsAbsentFromEveryTip": [
+    "tools/passive-qualification/__pycache__/acquire.cpython-311.pyc",
+    "tools/passive-qualification/__pycache__/analyze.cpython-311.pyc",
+    "tools/passive-qualification/__pycache__/build.cpython-311.pyc",
+    "tools/passive-qualification/__pycache__/evidence.cpython-311.pyc",
+    "tools/passive-qualification/__pycache__/mapping.cpython-311.pyc",
+    "tools/passive-qualification/__pycache__/metrics.cpython-311.pyc",
+    "tools/passive-qualification/__pycache__/static_diagram.cpython-311.pyc",
+    "tools/passive-qualification/__pycache__/test_metrics.cpython-311.pyc"
+  ],
+  "pathsAbsentFromCurrentHEAD": [
+    "API_CONTRACT.md",
+    "AUTH_SYNC_SECURITY.md",
+    "BACKEND_DECISION.md",
+    "DATA_MODEL.md",
+    "database/0001_core_schema.sql",
+    "scripts/validate.mjs",
+    "tests/structure.test.mjs",
+    "tools/passive-qualification/__pycache__/acquire.cpython-311.pyc",
+    "tools/passive-qualification/__pycache__/analyze.cpython-311.pyc",
+    "tools/passive-qualification/__pycache__/build.cpython-311.pyc",
+    "tools/passive-qualification/__pycache__/evidence.cpython-311.pyc",
+    "tools/passive-qualification/__pycache__/mapping.cpython-311.pyc",
+    "tools/passive-qualification/__pycache__/metrics.cpython-311.pyc",
+    "tools/passive-qualification/__pycache__/static_diagram.cpython-311.pyc",
+    "tools/passive-qualification/__pycache__/test_metrics.cpython-311.pyc"
+  ],
+  "headResources": {
+    "application-or-infrastructure": 44,
+    "3d-model": 6,
+    "report-evidence-or-working-data": 488,
+    "diagnostic-or-test-tool": 220,
+    "video": 141,
+    "capture-or-biomechanical-model": 2
+  },
+  "historicalOnlyCategories": {
+    "application-or-infrastructure": 117,
+    "3d-model": 1,
+    "report-evidence-or-working-data": 5,
+    "diagnostic-or-test-tool": 81
+  }
+}

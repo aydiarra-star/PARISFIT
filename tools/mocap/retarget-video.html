@@ -1,0 +1,35 @@
+<!doctype html><meta charset="utf-8"><title>Video pose to Rocketbox — offline research</title><script type="importmap">{"imports":{"three":"/vendor/three/three.module.js"}}</script><script type="module">
+import * as T from 'three';import {GLTFLoader} from '../../vendor/three/loaders/GLTFLoader.js';import {GLTFExporter} from '../../node_modules/three/examples/jsm/exporters/GLTFExporter.js';
+try{
+ const data=await(await fetch('/docs/coach/phase5/pose-estimates.json')).json();const gltf=await new GLTFLoader().loadAsync('/assets/coach/coach.glb'),model=gltf.scene;model.animations=[];model.updateMatrixWorld(true);const root=model.getObjectByName('Bip01'),bones=[],meshes=[];model.traverse(o=>{if(o.isBone)bones.push(o);if(o.isSkinnedMesh)meshes.push(o)});
+ const get=n=>model.getObjectByName('Bip01_'+n),vec=(p)=>new T.Vector3(p[0],-p[1],-p[2]),pos=b=>b.getWorldPosition(new T.Vector3());const rest=new Map(bones.map(b=>[b.name,{p:b.position.clone(),q:b.quaternion.clone(),w:b.getWorldQuaternion(new T.Quaternion()),point:pos(b)}]));const rootP=root.position.clone(),rootQ=root.quaternion.clone();
+ const worldQ=(b,q)=>{b.quaternion.copy(b.parent.getWorldQuaternion(new T.Quaternion()).invert().multiply(q));b.updateWorldMatrix(false,true)};
+ function direction(name,child,desired){const b=get(name);const from=rest.get(get(child).name).point.clone().sub(rest.get(b.name).point).normalize();worldQ(b,new T.Quaternion().setFromUnitVectors(from,desired.clone().normalize()).multiply(rest.get(b.name).w));}
+ const start=24,end=75,initial=data.framesData[start];const mid=(p,a,b)=>p[a].clone().add(p[b]).multiplyScalar(.5);
+ const first=initial.worldFiltered.map(vec),lateral=first[23].clone().sub(first[24]);const yaw=Math.atan2(lateral.z,lateral.x),rotation=new T.Quaternion().setFromAxisAngle(new T.Vector3(0,1,0),yaw);
+ const hipY=f=>(f.imageFiltered[23][1]+f.imageFiltered[24][1])/2,hipX=f=>(f.imageFiltered[23][0]+f.imageFiltered[24][0])/2;
+ const legLength=pos(get('L_Thigh')).distanceTo(pos(get('L_Calf')))+pos(get('L_Calf')).distanceTo(pos(get('L_Foot')));const imageLeg=Math.abs(hipY(initial)-(initial.imageFiltered[27][1]+initial.imageFiltered[28][1])/2);const scale=legLength/imageLeg;
+ const times=[],values=Object.fromEntries(bones.map(b=>[b.name,[]])),positions=[],rawPositions=[],corrections=[];
+ for(let index=start;index<=end;index++){
+  const f=data.framesData[index];root.position.copy(rootP);root.quaternion.copy(rootQ);for(const b of bones){const r=rest.get(b.name);b.position.copy(r.p);b.quaternion.copy(r.q)}model.updateMatrixWorld(true);
+  const points=f.worldFiltered.map(vec).map(p=>p.applyQuaternion(rotation));const pelvis=mid(points,23,24),shoulders=mid(points,11,12),up=shoulders.clone().sub(pelvis).normalize();
+  const rootWorld=new T.Vector3((hipX(f)-hipX(initial))*scale*1280/720,.875-(hipY(f)-hipY(initial))*scale,0);root.position.copy(root.parent.worldToLocal(rootWorld));root.updateWorldMatrix(false,true);
+  const trunkQ=new T.Quaternion().setFromUnitVectors(new T.Vector3(0,1,0),up);for(const n of ['Pelvis','Spine','Spine1','Spine2'])worldQ(get(n),trunkQ.clone().multiply(rest.get(get(n).name).w));
+  const head=mid(points,7,8).sub(shoulders).normalize();for(const n of ['Neck','Head'])worldQ(get(n),new T.Quaternion().setFromUnitVectors(new T.Vector3(0,1,0),head).multiply(rest.get(get(n).name).w));
+  for(const [s,h,k,a,sh,e,w,heel,toe]of [['L',23,25,27,11,13,15,29,31],['R',24,26,28,12,14,16,30,32]]){
+   direction(s+'_Thigh',s+'_Calf',points[k].clone().sub(points[h]));direction(s+'_Calf',s+'_Foot',points[a].clone().sub(points[k]));
+   direction(s+'_Foot',s+'_Toe0',points[toe].clone().sub(points[heel]));
+   direction(s+'_UpperArm',s+'_Forearm',points[e].clone().sub(points[sh]));direction(s+'_Forearm',s+'_Hand',points[w].clone().sub(points[e]));
+   // Pose has no finger articulation: preserve wrist-relative bind pose, never invent a grip.
+   const hand=get(s+'_Hand');hand.quaternion.copy(rest.get(hand.name).q);hand.updateWorldMatrix(false,true);
+  }
+  model.updateMatrixWorld(true);rawPositions.push(root.position.toArray());let floor=Infinity;for(const m of meshes){m.skeleton.update();for(let i=0;i<m.geometry.attributes.position.count;i++){const p=m.getVertexPosition(i,new T.Vector3()).applyMatrix4(m.matrixWorld);floor=Math.min(floor,p.y)}}
+  const correction=.002-floor;const p=pos(root);p.y+=correction;root.position.copy(root.parent.worldToLocal(p));model.updateMatrixWorld(true);corrections.push({sourceTime:f.time,verticalShiftM:correction});times.push((index-start)/data.fps);positions.push(...root.position.toArray());for(const b of bones)values[b.name].push(...b.quaternion.toArray());
+ }
+ const tracks=[new T.VectorKeyframeTrack('Bip01.position',times,positions),...bones.map(b=>new T.QuaternionKeyframeTrack(b.name+'.quaternion',times,values[b.name]))];const clip=new T.AnimationClip('video-stand-to-crouch',times.at(-1),tracks).optimize();clip.uuid='phase5-video-stand-to-crouch';model.animations=[clip];
+ // Return to first exported pose before serializing; source exercise model is never overwritten.
+ const mixer=new T.AnimationMixer(model);mixer.clipAction(clip).play();mixer.update(0);
+ const binary=await new GLTFExporter().parseAsync(model,{binary:true,animations:[clip],onlyVisible:false});window.assetURL=URL.createObjectURL(new Blob([binary],{type:'model/gltf-binary'}));
+ window.report={sourceStartFrame:start,sourceEndFrame:end,sourceTimeStart:start/data.fps,sourceTimeEnd:end/data.fps,duration:clip.duration,sourceFps:data.fps,samples:times.length,imageScaleEstimate:scale,yawAlignmentRad:yaw,rootDepthEstimated:false,corrections,rawRootPositions:rawPositions,status:'REJECTED_FOR_RUNTIME',reasons:['Barbell squat is not a bodyweight transition','Feet partially cropped or occluded; no measured contacts','Monocular world landmarks are estimates','No measured finger grip or external barbell represented','No approved exercise entry/exit or recovery']};window.ready=true;
+}catch(e){window.failure=e.stack}
+</script>

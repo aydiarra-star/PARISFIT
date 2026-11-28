@@ -1,0 +1,29 @@
+{
+  "repository": "una-dinosauria/cmu-mocap",
+  "revision": "09a07f54f3bbb58797325f009282d0b2048a2871",
+  "source": "CMU Graphics Lab",
+  "bvhConversion": "Bruce Hahne, cgspeed 2010",
+  "files": [
+    {
+      "file": "source-14_06.bvh",
+      "gitBlob": "37e8368d46d6d51ac72ac94bd4f030f3d81ebc6f",
+      "sha256": "e75bcdec4d6fdeac91571020d0b75d45cd4b2532113e699f465b5b297373ac05",
+      "bytes": 4040400
+    },
+    {
+      "file": "source-22_14.bvh",
+      "gitBlob": "fd551a6b3e25d3a801f2de37ebb89aa2c8698083",
+      "sha256": "5ec9df4a83f7691cb056c3bc2b3476ee93fd93025bdc44366c2ee743a043353d",
+      "bytes": 535940
+    }
+  ],
+  "terms": "Commercial products allowed, no standalone data resale even converted; attribution in PROVENANCE.md",
+  "selected": "14_06",
+  "interval": [
+    8.6,
+    11.0
+  ],
+  "previousSource": "22_14",
+  "runtimeEnabled": false,
+  "professionalApproval": false
+}

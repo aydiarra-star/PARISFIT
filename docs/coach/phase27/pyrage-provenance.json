@@ -1,0 +1,9 @@
+{
+  "version": "1.4.0",
+  "wheel": "pyrage-1.4.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+  "bytes": 924673,
+  "sha256": "7f4eb0cbc2b4aee5deac9862c47b3895866df5554153951af822e9c581e68558",
+  "matchesPyPIMetadata": true,
+  "source": "https://github.com/woodruffw/pyrage",
+  "signatureVerified": false
+}

@@ -1,0 +1,1418 @@
+{
+  "status": "EN ATTENTE DE VALIDATION HUMAINE",
+  "scope": "full P0013350samples; rep1 separately reconstructed",
+  "frames": 3350,
+  "markers": [
+    {
+      "name": "Right_5th_metatarsal_head",
+      "kind": "skin marker, not joint centre",
+      "region": "lower-limb/foot",
+      "initialPositionM": [
+        -0.74119,
+        -0.07103,
+        0.05254
+      ],
+      "minPositionM": [
+        -0.77644,
+        -0.07351,
+        0.04859
+      ],
+      "maxPositionM": [
+        -0.74119,
+        -0.05719,
+        0.05445
+      ],
+      "staticMedianM": [
+        -0.21394,
+        -0.03055,
+        0.05255
+      ],
+      "staticSDM": [
+        2.8055812133067327e-05,
+        4.908368910246573e-05,
+        2.7878299558820613e-05
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.0011211601134539268,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 4,
+      "maxSpeedMS": 0.11211601134539505,
+      "maxAccelerationMS2": 1.7233687939619575,
+      "highFrequencySecondDifferenceRMSM": 1.270628276344707e-05
+    },
+    {
+      "name": "Right_calcaneal_tuberosity",
+      "kind": "skin marker, not joint centre",
+      "region": "lower-limb/foot",
+      "initialPositionM": [
+        -0.6295,
+        0.11405,
+        0.04791
+      ],
+      "minPositionM": [
+        -0.65752,
+        0.09883,
+        0.04596
+      ],
+      "maxPositionM": [
+        -0.60665,
+        0.11934,
+        0.06341
+      ],
+      "staticMedianM": [
+        -0.14797,
+        0.17632,
+        0.05487
+      ],
+      "staticSDM": [
+        9.817319780665388e-05,
+        7.127385614105163e-05,
+        0.0002181800889253739
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.0041761585218954575,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 2,
+      "maxSpeedMS": 0.41761585218955466,
+      "maxAccelerationMS2": 6.414047084330491,
+      "highFrequencySecondDifferenceRMSM": 2.4781201042916376e-05
+    },
+    {
+      "name": "Right_lateral_malleolus",
+      "kind": "skin marker, not joint centre",
+      "region": "lower-limb/foot",
+      "initialPositionM": [
+        -0.68658,
+        0.04981,
+        0.10206
+      ],
+      "minPositionM": [
+        -0.71005,
+        0.03465,
+        0.09945
+      ],
+      "maxPositionM": [
+        -0.67318,
+        0.06244,
+        0.11129
+      ],
+      "staticMedianM": [
+        -0.19265,
+        0.10206,
+        0.10217
+      ],
+      "staticSDM": [
+        0.00015610607140944627,
+        0.0001504505355541039,
+        0.00015204646624599936
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.0027950134167835264,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 0.27950134167835855,
+      "maxAccelerationMS2": 4.305810028323245,
+      "highFrequencySecondDifferenceRMSM": 2.0652681513154458e-05
+    },
+    {
+      "name": "Right_tibial_tuberosity",
+      "kind": "skin marker, not joint centre",
+      "region": "lower-limb/foot",
+      "initialPositionM": [
+        -0.62345,
+        -0.09611,
+        0.40479
+      ],
+      "minPositionM": [
+        -0.69465,
+        -0.24935,
+        0.32251
+      ],
+      "maxPositionM": [
+        -0.60461,
+        -0.02957,
+        0.41412
+      ],
+      "staticMedianM": [
+        -0.13264,
+        0.01328,
+        0.41502
+      ],
+      "staticSDM": [
+        0.0004943081654664341,
+        0.0012506977365813817,
+        0.00018436341382992977
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.004682456620194135,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 0.46824566201942347,
+      "maxAccelerationMS2": 4.141255848169733,
+      "highFrequencySecondDifferenceRMSM": 6.989908524922076e-05
+    },
+    {
+      "name": "Right_lateral_epicondyle",
+      "kind": "skin marker, not joint centre",
+      "region": "lower-limb/foot",
+      "initialPositionM": [
+        -0.6626,
+        -0.04004,
+        0.4996
+      ],
+      "minPositionM": [
+        -0.72984,
+        -0.19272,
+        0.4062
+      ],
+      "maxPositionM": [
+        -0.63678,
+        0.02305,
+        0.50903
+      ],
+      "staticMedianM": [
+        -0.19318,
+        0.04035,
+        0.50486
+      ],
+      "staticSDM": [
+        0.0006735377147660126,
+        0.0015497272880216442,
+        0.00022406271555136254
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.004750084209779876,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 0.47500842097799767,
+      "maxAccelerationMS2": 4.437341546467095,
+      "highFrequencySecondDifferenceRMSM": 7.085450172132757e-05
+    },
+    {
+      "name": "Right_greater_trochanter",
+      "kind": "skin marker, not joint centre",
+      "region": "lower-limb/foot",
+      "initialPositionM": [
+        -0.62252,
+        0.03993,
+        0.90132
+      ],
+      "minPositionM": [
+        -0.64373,
+        -0.06969,
+        0.52866
+      ],
+      "maxPositionM": [
+        -0.59271,
+        0.16169,
+        0.92025
+      ],
+      "staticMedianM": [
+        -0.19928,
+        -0.00862,
+        0.91963
+      ],
+      "staticSDM": [
+        0.0011950084923874765,
+        0.003172776068045725,
+        0.0003329070219348615
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.008759412080727818,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 0.8759412080728006,
+      "maxAccelerationMS2": 4.571651780264651,
+      "highFrequencySecondDifferenceRMSM": 0.00010129114697541632
+    },
+    {
+      "name": "Right_ASIC",
+      "kind": "skin marker, not joint centre",
+      "region": "pelvis",
+      "initialPositionM": [
+        -0.55429,
+        -0.03505,
+        0.94465
+      ],
+      "minPositionM": [
+        -0.57657,
+        -0.13885,
+        0.50725
+      ],
+      "maxPositionM": [
+        -0.53166,
+        0.08023,
+        0.98087
+      ],
+      "staticMedianM": [
+        -0.13451,
+        -0.07527,
+        0.97756
+      ],
+      "staticSDM": [
+        0.0010648464022545363,
+        0.003114494751143002,
+        0.0007526811417921021
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.010071832008130352,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 1.0071832008130566,
+      "maxAccelerationMS2": 4.605431575868146,
+      "highFrequencySecondDifferenceRMSM": 0.00011144238251075504
+    },
+    {
+      "name": "Left_5th_metatarsal_head",
+      "kind": "skin marker, not joint centre",
+      "region": "lower-limb/foot",
+      "initialPositionM": [
+        -0.0732,
+        -0.10076,
+        0.04975
+      ],
+      "minPositionM": [
+        -0.07333,
+        -0.10189,
+        0.04689
+      ],
+      "maxPositionM": [
+        -0.04724,
+        -0.09008,
+        0.05426
+      ],
+      "staticMedianM": [
+        0.21046,
+        -0.01662,
+        0.05171
+      ],
+      "staticSDM": [
+        9.624041835833365e-05,
+        9.477545264255453e-05,
+        8.846306155954969e-05
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.002098618593265576,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 20,
+      "maxSpeedMS": 0.20986185932656204,
+      "maxAccelerationMS2": 3.3060550509634643,
+      "highFrequencySecondDifferenceRMSM": 2.081379011665851e-05
+    },
+    {
+      "name": "Left_calcaneal_tuberosity",
+      "kind": "skin marker, not joint centre",
+      "region": "lower-limb/foot",
+      "initialPositionM": [
+        -0.16513,
+        0.09045,
+        0.04448
+      ],
+      "minPositionM": [
+        -0.18761,
+        0.07558,
+        0.04251
+      ],
+      "maxPositionM": [
+        -0.15892,
+        0.09214,
+        0.05508
+      ],
+      "staticMedianM": [
+        0.13211,
+        0.18245,
+        0.04979
+      ],
+      "staticSDM": [
+        5.5166853423133805e-05,
+        7.097907320444279e-05,
+        0.0002598032326149823
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.0015365220467015684,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 1,
+      "maxSpeedMS": 0.15365220467016014,
+      "maxAccelerationMS2": 2.441311123146978,
+      "highFrequencySecondDifferenceRMSM": 1.7675839011122404e-05
+    },
+    {
+      "name": "Left_lateral_malleolus",
+      "kind": "skin marker, not joint centre",
+      "region": "lower-limb/foot",
+      "initialPositionM": [
+        -0.1117,
+        0.02959,
+        0.09537
+      ],
+      "minPositionM": [
+        -0.12646,
+        0.01531,
+        0.09449
+      ],
+      "maxPositionM": [
+        -0.10118,
+        0.03525,
+        0.10474
+      ],
+      "staticMedianM": [
+        0.18122,
+        0.11633,
+        0.0984
+      ],
+      "staticSDM": [
+        8.637829115701937e-05,
+        0.00013520420281712205,
+        0.00013483525444837275
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.0010677546534668023,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 0.1067754653466825,
+      "maxAccelerationMS2": 1.4866068747320098,
+      "highFrequencySecondDifferenceRMSM": 1.7210367060837925e-05
+    },
+    {
+      "name": "Left_tibial_tuberosity",
+      "kind": "skin marker, not joint centre",
+      "region": "lower-limb/foot",
+      "initialPositionM": [
+        -0.19992,
+        -0.10413,
+        0.40416
+      ],
+      "minPositionM": [
+        -0.21504,
+        -0.26454,
+        0.32816
+      ],
+      "maxPositionM": [
+        -0.13798,
+        -0.0423,
+        0.41475
+      ],
+      "staticMedianM": [
+        0.11691,
+        0.01957,
+        0.40998
+      ],
+      "staticSDM": [
+        0.0005307832434717131,
+        0.0011100512278149686,
+        0.0005019658320476419
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.005076593345935829,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 0.5076593345935937,
+      "maxAccelerationMS2": 4.892851929090245,
+      "highFrequencySecondDifferenceRMSM": 7.551634287107176e-05
+    },
+    {
+      "name": "Left_lateral_epicondyle",
+      "kind": "skin marker, not joint centre",
+      "region": "lower-limb/foot",
+      "initialPositionM": [
+        -0.16406,
+        -0.06243,
+        0.51157
+      ],
+      "minPositionM": [
+        -0.18226,
+        -0.22037,
+        0.43195
+      ],
+      "maxPositionM": [
+        -0.09959,
+        -0.00807,
+        0.51726
+      ],
+      "staticMedianM": [
+        0.17555,
+        0.03267,
+        0.50417
+      ],
+      "staticSDM": [
+        0.0006050364852218816,
+        0.0016427977433075402,
+        0.00023736292398076651
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.0046720017123284595,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 0.4672001712328559,
+      "maxAccelerationMS2": 5.205766033928368,
+      "highFrequencySecondDifferenceRMSM": 7.706295946319864e-05
+    },
+    {
+      "name": "Left_greater_trochanter",
+      "kind": "skin marker, not joint centre",
+      "region": "lower-limb/foot",
+      "initialPositionM": [
+        -0.23068,
+        0.02634,
+        0.89619
+      ],
+      "minPositionM": [
+        -0.245,
+        -0.09994,
+        0.53765
+      ],
+      "maxPositionM": [
+        -0.20312,
+        0.14007,
+        0.92429
+      ],
+      "staticMedianM": [
+        0.18469,
+        -0.01209,
+        0.9189
+      ],
+      "staticSDM": [
+        0.001210472697519399,
+        0.0027413186440925406,
+        0.00026142583162986016
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.008328109029065367,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 0.8328109029065544,
+      "maxAccelerationMS2": 4.5442271070004105,
+      "highFrequencySecondDifferenceRMSM": 0.00010096068806051157
+    },
+    {
+      "name": "Left_ASIC",
+      "kind": "skin marker, not joint centre",
+      "region": "pelvis",
+      "initialPositionM": [
+        -0.29054,
+        -0.03721,
+        0.94596
+      ],
+      "minPositionM": [
+        -0.31127,
+        -0.15152,
+        0.51223
+      ],
+      "maxPositionM": [
+        -0.2688,
+        0.06731,
+        0.98789
+      ],
+      "staticMedianM": [
+        0.12686,
+        -0.07087,
+        0.9871
+      ],
+      "staticSDM": [
+        0.0011323002233716262,
+        0.0028981292329883198,
+        0.00035885689410188986
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.00996008534099985,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 0.9960085341000063,
+      "maxAccelerationMS2": 4.109744517606164,
+      "highFrequencySecondDifferenceRMSM": 0.00011190616090753942
+    },
+    {
+      "name": "Right_sacral_crest",
+      "kind": "skin marker, not joint centre",
+      "region": "pelvis",
+      "initialPositionM": [
+        -0.45566,
+        0.17942,
+        0.99852
+      ],
+      "minPositionM": [
+        -0.46865,
+        0.07994,
+        0.55674
+      ],
+      "maxPositionM": [
+        -0.42752,
+        0.29018,
+        1.01592
+      ],
+      "staticMedianM": [
+        -0.04233,
+        0.14179,
+        1.02837
+      ],
+      "staticSDM": [
+        0.0014044813191185605,
+        0.0030688585447748596,
+        0.0010883951549210261
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.00992025201292783,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 0.9920252012928044,
+      "maxAccelerationMS2": 5.941380311004143,
+      "highFrequencySecondDifferenceRMSM": 0.00011842971490113914
+    },
+    {
+      "name": "Left_sacral_crest",
+      "kind": "skin marker, not joint centre",
+      "region": "pelvis",
+      "initialPositionM": [
+        -0.37375,
+        0.17598,
+        0.99753
+      ],
+      "minPositionM": [
+        -0.38536,
+        0.0731,
+        0.56057
+      ],
+      "maxPositionM": [
+        -0.34557,
+        0.28226,
+        1.01725
+      ],
+      "staticMedianM": [
+        0.03953,
+        0.14094,
+        1.02913
+      ],
+      "staticSDM": [
+        0.0014925843000747907,
+        0.0028962254445997213,
+        0.0012183264664588555
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.009867350201548527,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 0.9867350201548736,
+      "maxAccelerationMS2": 5.831809324729836,
+      "highFrequencySecondDifferenceRMSM": 0.00011816443429584548
+    },
+    {
+      "name": "Right_acromioclavicular_joint",
+      "kind": "skin marker, not joint centre",
+      "region": "upper-limb/trunk-landmark",
+      "initialPositionM": [
+        -0.57094,
+        -0.02865,
+        1.42934
+      ],
+      "minPositionM": [
+        -0.60031,
+        -0.13533,
+        0.89674
+      ],
+      "maxPositionM": [
+        -0.55255,
+        0.04481,
+        1.46058
+      ],
+      "staticMedianM": [
+        -0.16664,
+        0.02872,
+        1.47008
+      ],
+      "staticSDM": [
+        0.0018009831194605863,
+        0.0017874103385221755,
+        0.0006494529691549358
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.011771614162891934,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 1.1771614162892183,
+      "maxAccelerationMS2": 5.975784467331514,
+      "highFrequencySecondDifferenceRMSM": 0.00013131040833580475
+    },
+    {
+      "name": "Right_deltoid_tuberosity",
+      "kind": "skin marker, not joint centre",
+      "region": "upper-limb/trunk-landmark",
+      "initialPositionM": [
+        -0.62704,
+        -0.09118,
+        1.23224
+      ],
+      "minPositionM": [
+        -0.65495,
+        -0.17687,
+        0.69951
+      ],
+      "maxPositionM": [
+        -0.60185,
+        -0.05793,
+        1.29006
+      ],
+      "staticMedianM": [
+        -0.2855,
+        0.0231,
+        1.27937
+      ],
+      "staticSDM": [
+        0.014075803626032224,
+        0.004056219528087158,
+        0.010546984482881052
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.011408597635117118,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 1.1408597635117361,
+      "maxAccelerationMS2": 5.725382083320764,
+      "highFrequencySecondDifferenceRMSM": 0.00013468172727688774
+    },
+    {
+      "name": "Right_olecranon",
+      "kind": "skin marker, not joint centre",
+      "region": "upper-limb/trunk-landmark",
+      "initialPositionM": [
+        -0.57075,
+        -0.13613,
+        1.06997
+      ],
+      "minPositionM": [
+        -0.599,
+        -0.24985,
+        0.53536
+      ],
+      "maxPositionM": [
+        -0.53044,
+        -0.13613,
+        1.16075
+      ],
+      "staticMedianM": [
+        -0.303,
+        0.07649,
+        1.14059
+      ],
+      "staticSDM": [
+        0.025721891308529598,
+        0.0038848795829134713,
+        0.011867918357608904
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.011413978272276474,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 1.1413978272276717,
+      "maxAccelerationMS2": 6.243396511515882,
+      "highFrequencySecondDifferenceRMSM": 0.0001406678897159284
+    },
+    {
+      "name": "Right_forearm_centre",
+      "kind": "skin marker, not joint centre",
+      "region": "upper-limb/trunk-landmark",
+      "initialPositionM": [
+        -0.58872,
+        -0.18285,
+        1.21823
+      ],
+      "minPositionM": [
+        -0.62945,
+        -0.27154,
+        0.67424
+      ],
+      "maxPositionM": [
+        -0.56654,
+        -0.15116,
+        1.31412
+      ],
+      "staticMedianM": [
+        -0.3491,
+        -0.03169,
+        1.06781
+      ],
+      "staticSDM": [
+        0.04250873515807163,
+        0.0042514737628981366,
+        0.018215176944821464
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.01146987794180904,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 1.1469877941809286,
+      "maxAccelerationMS2": 6.153048025167446,
+      "highFrequencySecondDifferenceRMSM": 0.00013875215491597668
+    },
+    {
+      "name": "Right_ulna_head",
+      "kind": "skin marker, not joint centre",
+      "region": "upper-limb/trunk-landmark",
+      "initialPositionM": [
+        -0.52561,
+        -0.22052,
+        1.31995
+      ],
+      "minPositionM": [
+        -0.57393,
+        -0.30455,
+        0.77861
+      ],
+      "maxPositionM": [
+        -0.5143,
+        -0.16047,
+        1.4305
+      ],
+      "staticMedianM": [
+        -0.3837,
+        -0.04167,
+        0.94582
+      ],
+      "staticSDM": [
+        0.05798748420624861,
+        0.0038994613686672576,
+        0.020896607224524494
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.011603456381613171,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 1.1603456381613417,
+      "maxAccelerationMS2": 6.310309025714992,
+      "highFrequencySecondDifferenceRMSM": 0.00013902577483795978
+    },
+    {
+      "name": "Right_5th_metacarpal_head",
+      "kind": "skin marker, not joint centre",
+      "region": "upper-limb/trunk-landmark",
+      "initialPositionM": [
+        -0.55446,
+        -0.24669,
+        1.37494
+      ],
+      "minPositionM": [
+        -0.59604,
+        -0.32079,
+        0.85268
+      ],
+      "maxPositionM": [
+        -0.53608,
+        -0.1561,
+        1.50472
+      ],
+      "staticMedianM": [
+        -0.40076,
+        -0.0746,
+        0.87578
+      ],
+      "staticSDM": [
+        0.0651015116651193,
+        0.004027685855791132,
+        0.020327073174935192
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.011676206575767614,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 1.167620657576786,
+      "maxAccelerationMS2": 6.3103090257127485,
+      "highFrequencySecondDifferenceRMSM": 0.0001397771951256012
+    },
+    {
+      "name": "Right_2nd_metacarpal_head",
+      "kind": "skin marker, not joint centre",
+      "region": "upper-limb/trunk-landmark",
+      "initialPositionM": [
+        -0.59933,
+        -0.20103,
+        1.35219
+      ],
+      "minPositionM": [
+        -0.64561,
+        -0.29061,
+        0.82021
+      ],
+      "maxPositionM": [
+        -0.58684,
+        -0.13486,
+        1.46211
+      ],
+      "staticMedianM": [
+        -0.34906,
+        -0.11598,
+        0.88565
+      ],
+      "staticSDM": [
+        0.06768371160356361,
+        0.003206229369619366,
+        0.017192544573900445
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.011611907681341445,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 1.161190768134169,
+      "maxAccelerationMS2": 6.310309025712775,
+      "highFrequencySecondDifferenceRMSM": 0.00013921138186620796
+    },
+    {
+      "name": "Left_acromioclavicular_joint",
+      "kind": "skin marker, not joint centre",
+      "region": "upper-limb/trunk-landmark",
+      "initialPositionM": [
+        -0.23771,
+        -0.02011,
+        1.42088
+      ],
+      "minPositionM": [
+        -0.28171,
+        -0.14776,
+        0.89818
+      ],
+      "maxPositionM": [
+        -0.22548,
+        0.04594,
+        1.45616
+      ],
+      "staticMedianM": [
+        0.17014,
+        0.04347,
+        1.4601
+      ],
+      "staticSDM": [
+        0.0036407544992309946,
+        0.0014918055908680122,
+        0.002650892704348194
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.011675470011952233,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 1.1675470011952482,
+      "maxAccelerationMS2": 6.3269265840526385,
+      "highFrequencySecondDifferenceRMSM": 0.00013126490736679625
+    },
+    {
+      "name": "Left_deltoid_tuberosity",
+      "kind": "skin marker, not joint centre",
+      "region": "upper-limb/trunk-landmark",
+      "initialPositionM": [
+        -0.19486,
+        -0.06957,
+        1.25091
+      ],
+      "minPositionM": [
+        -0.2249,
+        -0.18974,
+        0.73822
+      ],
+      "maxPositionM": [
+        -0.1753,
+        -0.03886,
+        1.31635
+      ],
+      "staticMedianM": [
+        0.26265,
+        0.0343,
+        1.30021
+      ],
+      "staticSDM": [
+        0.0080773682102843,
+        0.0034137092092107165,
+        0.010464040459359903
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.011362367711001154,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 1.1362367711001398,
+      "maxAccelerationMS2": 6.431174076325426,
+      "highFrequencySecondDifferenceRMSM": 0.00013441807851898482
+    },
+    {
+      "name": "Left_olecranon",
+      "kind": "skin marker, not joint centre",
+      "region": "upper-limb/trunk-landmark",
+      "initialPositionM": [
+        -0.26396,
+        -0.10956,
+        1.05524
+      ],
+      "minPositionM": [
+        -0.28223,
+        -0.23764,
+        0.53469
+      ],
+      "maxPositionM": [
+        -0.24057,
+        -0.10956,
+        1.14329
+      ],
+      "staticMedianM": [
+        0.27502,
+        0.0899,
+        1.12661
+      ],
+      "staticSDM": [
+        0.0224451995590013,
+        0.00794033466319464,
+        0.01017237049759253
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.011384612422037045,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 1.1384612422037288,
+      "maxAccelerationMS2": 6.454455825242615,
+      "highFrequencySecondDifferenceRMSM": 0.00014220542015445914
+    },
+    {
+      "name": "Left_forearm_centre",
+      "kind": "skin marker, not joint centre",
+      "region": "upper-limb/trunk-landmark",
+      "initialPositionM": [
+        -0.21136,
+        -0.15239,
+        1.16803
+      ],
+      "minPositionM": [
+        -0.24088,
+        -0.27234,
+        0.64578
+      ],
+      "maxPositionM": [
+        -0.19474,
+        -0.13837,
+        1.26923
+      ],
+      "staticMedianM": [
+        0.32384,
+        -0.01237,
+        1.09583
+      ],
+      "staticSDM": [
+        0.03352815581661876,
+        0.005527215784891527,
+        0.018025908148943184
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.01133367548503132,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 1.133367548503156,
+      "maxAccelerationMS2": 6.552098900352004,
+      "highFrequencySecondDifferenceRMSM": 0.00013990737676789633
+    },
+    {
+      "name": "Left_ulna_head",
+      "kind": "skin marker, not joint centre",
+      "region": "upper-limb/trunk-landmark",
+      "initialPositionM": [
+        -0.28928,
+        -0.21118,
+        1.29309
+      ],
+      "minPositionM": [
+        -0.33595,
+        -0.31653,
+        0.7504
+      ],
+      "maxPositionM": [
+        -0.28033,
+        -0.16276,
+        1.39764
+      ],
+      "staticMedianM": [
+        0.36829,
+        -0.00823,
+        0.93812
+      ],
+      "staticSDM": [
+        0.052586511800735675,
+        0.0037035639677700954,
+        0.022400862588558824
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.011604593917927517,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 1.1604593917927766,
+      "maxAccelerationMS2": 6.524568951281256,
+      "highFrequencySecondDifferenceRMSM": 0.00014130162399860648
+    },
+    {
+      "name": "Left_5th_metacarpal_head",
+      "kind": "skin marker, not joint centre",
+      "region": "upper-limb/trunk-landmark",
+      "initialPositionM": [
+        -0.24573,
+        -0.24252,
+        1.36928
+      ],
+      "minPositionM": [
+        -0.30219,
+        -0.34535,
+        0.83361
+      ],
+      "maxPositionM": [
+        -0.23863,
+        -0.17237,
+        1.48758
+      ],
+      "staticMedianM": [
+        0.39214,
+        -0.06528,
+        0.84739
+      ],
+      "staticSDM": [
+        0.06052898510318969,
+        0.004028584524395411,
+        0.019649425846366603
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.01178115868664891,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 1.178115868664916,
+      "maxAccelerationMS2": 6.80734897004633,
+      "highFrequencySecondDifferenceRMSM": 0.0001428452624917192
+    },
+    {
+      "name": "Left_2nd_metacarpal_head",
+      "kind": "skin marker, not joint centre",
+      "region": "upper-limb/trunk-landmark",
+      "initialPositionM": [
+        -0.19948,
+        -0.19992,
+        1.34494
+      ],
+      "minPositionM": [
+        -0.24973,
+        -0.3147,
+        0.80892
+      ],
+      "maxPositionM": [
+        -0.19083,
+        -0.14259,
+        1.4479
+      ],
+      "staticMedianM": [
+        0.34543,
+        -0.11208,
+        0.86037
+      ],
+      "staticSDM": [
+        0.06420117583462989,
+        0.004663748994017569,
+        0.018824834257833555
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.011671152470943193,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 1.167115247094344,
+      "maxAccelerationMS2": 6.826419266349707,
+      "highFrequencySecondDifferenceRMSM": 0.00014105066721156753
+    },
+    {
+      "name": "Right_temporal_bone",
+      "kind": "skin marker, not joint centre",
+      "region": "head",
+      "initialPositionM": [
+        -0.49566,
+        -0.01742,
+        1.62553
+      ],
+      "minPositionM": [
+        -0.53882,
+        -0.14856,
+        1.09664
+      ],
+      "maxPositionM": [
+        -0.48018,
+        0.05872,
+        1.65708
+      ],
+      "staticMedianM": [
+        -0.09381,
+        0.00232,
+        1.65634
+      ],
+      "staticSDM": [
+        0.0022845701718386025,
+        0.006621054873815176,
+        0.0034200635346818766
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.011744075101939888,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 1.174407510194014,
+      "maxAccelerationMS2": 5.870264048578343,
+      "highFrequencySecondDifferenceRMSM": 0.00013091645382197841
+    },
+    {
+      "name": "Skull_vertex",
+      "kind": "skin marker, not joint centre",
+      "region": "head",
+      "initialPositionM": [
+        -0.40852,
+        0.01414,
+        1.71173
+      ],
+      "minPositionM": [
+        -0.45153,
+        -0.14414,
+        1.18603
+      ],
+      "maxPositionM": [
+        -0.38895,
+        0.07455,
+        1.74193
+      ],
+      "staticMedianM": [
+        -0.01088,
+        0.02089,
+        1.74981
+      ],
+      "staticSDM": [
+        0.0024014423664884127,
+        0.004436529105392387,
+        0.00180908346181355
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.011732791654163056,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 1.1732791654163306,
+      "maxAccelerationMS2": 5.922837157987027,
+      "highFrequencySecondDifferenceRMSM": 0.00013093261344386938
+    },
+    {
+      "name": "Left_temporal_bone",
+      "kind": "skin marker, not joint centre",
+      "region": "head",
+      "initialPositionM": [
+        -0.30498,
+        0.01127,
+        1.60863
+      ],
+      "minPositionM": [
+        -0.34576,
+        -0.15202,
+        1.08446
+      ],
+      "maxPositionM": [
+        -0.2877,
+        0.06087,
+        1.6385
+      ],
+      "staticMedianM": [
+        0.09681,
+        0.03501,
+        1.65257
+      ],
+      "staticSDM": [
+        0.0019816068870900576,
+        0.0036509144881975617,
+        0.0006341103040391172
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.011724252641426673,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 0,
+      "maxSpeedMS": 1.1724252641426922,
+      "maxAccelerationMS2": 6.086049621882984,
+      "highFrequencySecondDifferenceRMSM": 0.00012926510874674212
+    },
+    {
+      "name": "Right_1st_metatarsal_head",
+      "kind": "skin marker, not joint centre",
+      "region": "lower-limb/foot",
+      "initialPositionM": [
+        -0.6445,
+        -0.10425,
+        0.06269
+      ],
+      "minPositionM": [
+        -0.68602,
+        -0.11287,
+        0.05421
+      ],
+      "maxPositionM": [
+        -0.6445,
+        -0.09863,
+        0.06478
+      ],
+      "staticMedianM": [
+        -0.1126,
+        -0.04096,
+        0.06226
+      ],
+      "staticSDM": [
+        2.6332589822244453e-05,
+        0.0001037108820817561,
+        7.893225349864393e-05
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.0008174961773610707,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 4,
+      "maxSpeedMS": 0.08174961773610881,
+      "maxAccelerationMS2": 1.3038404810402235,
+      "highFrequencySecondDifferenceRMSM": 1.2341387147255812e-05
+    },
+    {
+      "name": "Right_toe_distal_phalanx",
+      "kind": "skin marker, not joint centre",
+      "region": "lower-limb/foot",
+      "initialPositionM": [
+        -0.68664,
+        -0.1558,
+        0.06692
+      ],
+      "minPositionM": [
+        -0.73575,
+        -0.16218,
+        0.05144
+      ],
+      "maxPositionM": [
+        -0.68664,
+        -0.14738,
+        0.06817
+      ],
+      "staticMedianM": [
+        -0.14181,
+        -0.10273,
+        0.06158
+      ],
+      "staticSDM": [
+        2.4128630848920574e-05,
+        0.00014103032956071525,
+        0.00014094496360514815
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.0009942333730066485,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 5,
+      "maxSpeedMS": 0.09942333730066698,
+      "maxAccelerationMS2": 1.615549442140919,
+      "highFrequencySecondDifferenceRMSM": 1.4426857228041535e-05
+    },
+    {
+      "name": "Left_1st_metatarsal_head",
+      "kind": "skin marker, not joint centre",
+      "region": "lower-limb/foot",
+      "initialPositionM": [
+        -0.18403,
+        -0.1242,
+        0.0651
+      ],
+      "minPositionM": [
+        -0.18426,
+        -0.13849,
+        0.05148
+      ],
+      "maxPositionM": [
+        -0.15199,
+        -0.12157,
+        0.06735
+      ],
+      "staticMedianM": [
+        0.09763,
+        -0.03185,
+        0.05674
+      ],
+      "staticSDM": [
+        9.383818395248271e-05,
+        0.00021045850066514255,
+        0.00033664854767395924
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.002630133076481121,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 2,
+      "maxSpeedMS": 0.2630133076481177,
+      "maxAccelerationMS2": 4.870318264754722,
+      "highFrequencySecondDifferenceRMSM": 2.7306030015166282e-05
+    },
+    {
+      "name": "Left_toe_distal_phalanx",
+      "kind": "skin marker, not joint centre",
+      "region": "lower-limb/foot",
+      "initialPositionM": [
+        -0.14246,
+        -0.18156,
+        0.07172
+      ],
+      "minPositionM": [
+        -0.14292,
+        -0.18804,
+        0.05418
+      ],
+      "maxPositionM": [
+        -0.10129,
+        -0.17806,
+        0.07564
+      ],
+      "staticMedianM": [
+        0.13481,
+        -0.09252,
+        0.06133
+      ],
+      "staticSDM": [
+        5.225520741860764e-05,
+        0.00010032987405679894,
+        0.0001994876607226641
+      ],
+      "missingSamples": 0,
+      "zeroTripletSamples": 0,
+      "maxStepM": 0.0034363207068025484,
+      "jumpFlagsOver50mm": [],
+      "repeatedConsecutiveTriplets": 6,
+      "maxSpeedMS": 0.3436320706802622,
+      "maxAccelerationMS2": 5.62138772902246,
+      "highFrequencySecondDifferenceRMSM": 3.224785780381521e-05
+    }
+  ],
+  "sampleHz": 100.00000000000213,
+  "maxTimestampDeviationFrom10ms": 5.115699530655604e-15,
+  "occlusions": "NON TESTÉ: no visibility/confidence/gap-filling log in CSV; finite coordinates do not prove no occlusions",
+  "noise": "static SD includes postural sway and soft tissue; second difference mixes movement/noise; no sensor noise estimate",
+  "units": "m per README, lab axes with Z-up hypothesis"
+}

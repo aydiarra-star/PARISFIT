@@ -1,0 +1,30 @@
+{
+  "upgrade": {
+    "cacheKeys": [
+      "unrelated",
+      "parisfit-shell-v24"
+    ],
+    "localDataPreserved": true,
+    "activeDocumentReloaded": true,
+    "noMixer": true
+  },
+  "offlineDirectResourceRange": "404",
+  "failClosed": [
+    {
+      "failure": "missing-registry",
+      "ready": true,
+      "noMixer": true
+    },
+    {
+      "failure": "malformed-registry",
+      "ready": true,
+      "noMixer": true
+    },
+    {
+      "failure": "unvalidated-animated-file",
+      "ready": false,
+      "noMixer": true
+    }
+  ],
+  "status": "PASS"
+}

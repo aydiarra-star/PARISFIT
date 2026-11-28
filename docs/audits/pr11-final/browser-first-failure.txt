@@ -1,0 +1,13 @@
+
+> parisfit@0.1.0 test:browser
+> node tests/smoke.cjs && node tests/coach-animation-lock-browser.cjs && node tests/coach-animation-lock-migration.cjs
+
+AssertionError [ERR_ASSERTION]: Overflow at 320px
+    at /home/user/PARISFIT/tests/smoke.cjs:15:7 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}

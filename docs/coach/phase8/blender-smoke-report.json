@@ -1,0 +1,8 @@
+{
+  "status": "FAILED",
+  "fixture": "CMU14_06 existing capture, not dedicated PARISFIT",
+  "retarget": "uniformly 1.03-scaled test rig, not Rocketbox",
+  "runtimeEnabled": false,
+  "professionalApproval": false,
+  "error": "Traceback (most recent call last):\n  File \"/home/user/PARISFIT/tools/capture-pipeline/blender-smoke.py\", line 13, in <module>\n    import bpy\nImportError: libXrender.so.1: cannot open shared object file: No such file or directory\n"
+}

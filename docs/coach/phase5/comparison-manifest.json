@@ -1,0 +1,46 @@
+{
+  "renderHz": 24,
+  "method": "Same lab cameras, lighting and Rocketbox mesh; native durations and amplitudes differ; not a controlled human-performance experiment",
+  "cases": [
+    {
+      "id": "A",
+      "label": "Manual IK squat descent excerpt",
+      "url": "?once=1",
+      "clip": "squat",
+      "duration": 2.5,
+      "asset": "assets/coach/coach.glb",
+      "frames": 61,
+      "sha256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb"
+    },
+    {
+      "id": "B",
+      "label": "Rocketbox source, phase4 contact correction",
+      "url": "?transitions=/assets/coach/transitions/contact-candidates.json&once=1",
+      "clip": "stand-to-crouch",
+      "duration": 4.5,
+      "asset": "assets/coach/transitions/contact-candidates.json",
+      "frames": 109,
+      "sha256": "05f9eec3a5f8d8cbe203eeec3008062eff6762bdb5b237a1383f4539969b0613"
+    },
+    {
+      "id": "C",
+      "label": "Video-estimated pose, REJECTED",
+      "url": "?model=/docs/coach/phase5/video-prototype.glb&once=1",
+      "clip": "video-stand-to-crouch",
+      "duration": 1.7,
+      "asset": "docs/coach/phase5/video-prototype.glb",
+      "frames": 42,
+      "sha256": "dfb252000de12d6b6c1bfca3a1590868ecb5cde1de31ec58122b3b983ab001d1"
+    },
+    {
+      "id": "D",
+      "label": "CMU optical mocap retarget, HOLD",
+      "url": "?model=/docs/coach/phase5/mocap-prototype.glb&once=1",
+      "clip": "mocap-stand-to-crouch",
+      "duration": 1,
+      "asset": "docs/coach/phase5/mocap-prototype.glb",
+      "frames": 25,
+      "sha256": "a4641b1b516367d9558a38ec96ca7b04a35b132b4edda5f6e096f2bd1a08f4f4"
+    }
+  ]
+}

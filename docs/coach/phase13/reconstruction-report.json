@@ -1,0 +1,486 @@
+{
+  "status": "REFUSÉ",
+  "runtimeEnabled": false,
+  "frames": 150,
+  "fit": {
+    "pelvisClusterRMSM": 0.002109683876928972,
+    "pelvisClusterMaxFrameRMSM": 0.0036999045238159485,
+    "staticLengths": {
+      "Right": {
+        "staticThighProxyM": 0.41769537201170903,
+        "staticShankProxyM": 0.4073912629156398,
+        "notAnatomicalBoneLength": true
+      },
+      "Left": {
+        "staticThighProxyM": 0.41723850505436344,
+        "staticShankProxyM": 0.4143433810259312,
+        "notAnatomicalBoneLength": true
+      }
+    },
+    "meaning": "cluster rigidity and virtual surface landmarks only; no hip/knee/ankle centre identified"
+  },
+  "models": {
+    "H0_skin_landmarks": {
+      "status": "REFUSÉ",
+      "reason": "diagnostic surface-landmark chain, not validated anatomical centres",
+      "sides": {
+        "Right": {
+          "kneeProxyDeg": {
+            "min": 8.798813759292841,
+            "max": 102.955062913642,
+            "maxAngularSpeedDegS": 173.2248836450063,
+            "maxAngularAccelerationDegS2": 740.1235922697285
+          },
+          "hipTrunkProxyDeg": {
+            "min": 15.876377854689537,
+            "max": 97.59028728505704
+          },
+          "thighProxyLengthM": {
+            "min": 0.33317562846042625,
+            "max": 0.4136914920565807
+          },
+          "shankProxyLengthM": {
+            "min": 0.37130217478490485,
+            "max": 0.41028124378284714
+          }
+        },
+        "Left": {
+          "kneeProxyDeg": {
+            "min": 11.037946896418703,
+            "max": 101.28040103316852,
+            "maxAngularSpeedDegS": 161.85296714391117,
+            "maxAngularAccelerationDegS2": 753.5395170805581
+          },
+          "hipTrunkProxyDeg": {
+            "min": 11.351099482917391,
+            "max": 96.90819117686806
+          },
+          "thighProxyLengthM": {
+            "min": 0.3279943101640637,
+            "max": 0.40990371906095224
+          },
+          "shankProxyLengthM": {
+            "min": 0.3983429081833892,
+            "max": 0.42980659859988185
+          }
+        }
+      },
+      "pointDynamics": {
+        "pelvis": {
+          "maxSpeedMS": 0.9804798251366732,
+          "maxAccelerationMS2": 5.0202714070054295,
+          "highFrequencySecondDifferenceRMSM": 0.000152371040954709
+        },
+        "trunk": {
+          "maxSpeedMS": 1.1717415457344125,
+          "maxAccelerationMS2": 5.967202024398975,
+          "highFrequencySecondDifferenceRMSM": 0.00017806391200003577
+        },
+        "head": {
+          "maxSpeedMS": 1.1732791654163306,
+          "maxAccelerationMS2": 5.922837157987027,
+          "highFrequencySecondDifferenceRMSM": 0.00017848713583241103
+        },
+        "Right_hip": {
+          "maxSpeedMS": 0.8759412080728006,
+          "maxAccelerationMS2": 4.571651780264651,
+          "highFrequencySecondDifferenceRMSM": 0.0001412867188979099
+        },
+        "Right_knee": {
+          "maxSpeedMS": 0.42605516074800404,
+          "maxAccelerationMS2": 2.6570660511174644,
+          "highFrequencySecondDifferenceRMSM": 8.286942948000972e-05
+        },
+        "Right_ankle": {
+          "maxSpeedMS": 0.07308898685848741,
+          "maxAccelerationMS2": 0.7483314773561249,
+          "highFrequencySecondDifferenceRMSM": 1.7674484076980548e-05
+        },
+        "Right_toe": {
+          "maxSpeedMS": 0.08174961773610881,
+          "maxAccelerationMS2": 1.3038404810402235,
+          "highFrequencySecondDifferenceRMSM": 2.035163848905504e-05
+        },
+        "Right_shoulder": {
+          "maxSpeedMS": 1.1771614162892183,
+          "maxAccelerationMS2": 5.732364259187562,
+          "highFrequencySecondDifferenceRMSM": 0.00017815622256783402
+        },
+        "Right_elbow": {
+          "maxSpeedMS": 1.1413978272276717,
+          "maxAccelerationMS2": 5.611595138639562,
+          "highFrequencySecondDifferenceRMSM": 0.0001772379425751945
+        },
+        "Right_wrist": {
+          "maxSpeedMS": 1.1169803042131303,
+          "maxAccelerationMS2": 5.625833271613278,
+          "highFrequencySecondDifferenceRMSM": 0.00017087612076779058
+        },
+        "Left_hip": {
+          "maxSpeedMS": 0.8328109029065544,
+          "maxAccelerationMS2": 4.5442271070004105,
+          "highFrequencySecondDifferenceRMSM": 0.00013552533754658972
+        },
+        "Left_knee": {
+          "maxSpeedMS": 0.3980314057960835,
+          "maxAccelerationMS2": 2.4596747752496704,
+          "highFrequencySecondDifferenceRMSM": 7.262144224589509e-05
+        },
+        "Left_ankle": {
+          "maxSpeedMS": 0.07338255923583052,
+          "maxAccelerationMS2": 1.3490737563233148,
+          "highFrequencySecondDifferenceRMSM": 2.3738439576212746e-05
+        },
+        "Left_toe": {
+          "maxSpeedMS": 0.13669308687713672,
+          "maxAccelerationMS2": 1.5329709716757571,
+          "highFrequencySecondDifferenceRMSM": 3.0480388023350744e-05
+        },
+        "Left_shoulder": {
+          "maxSpeedMS": 1.1675470011952482,
+          "maxAccelerationMS2": 6.3269265840526385,
+          "highFrequencySecondDifferenceRMSM": 0.0001791634715826579
+        },
+        "Left_elbow": {
+          "maxSpeedMS": 1.1384612422037288,
+          "maxAccelerationMS2": 6.454455825242615,
+          "highFrequencySecondDifferenceRMSM": 0.00018009632057508794
+        },
+        "Left_wrist": {
+          "maxSpeedMS": 1.1293759338679181,
+          "maxAccelerationMS2": 6.110646446981106,
+          "highFrequencySecondDifferenceRMSM": 0.00017295263112370585
+        }
+      },
+      "markerEndpointRMSM": 0.0,
+      "markerEndpointMaxM": 0.0,
+      "kneeProxyMaxAsymmetryDeg": 3.0385315205240886,
+      "trunkTiltDeg": {
+        "min": 4.7813198696227195,
+        "max": 38.19906521329299
+      },
+      "maxSpeedMS": 1.1771614162892183,
+      "maxAccelerationMS2": 6.454455825242615,
+      "highFrequencySecondDifferenceRMSM": 0.0001385362951750049
+    },
+    "H1_static_lengths": {
+      "status": "REFUSÉ",
+      "reason": "diagnostic surface-landmark chain, not validated anatomical centres",
+      "sides": {
+        "Right": {
+          "kneeProxyDeg": {
+            "min": 8.798813759292898,
+            "max": 102.955062913642,
+            "maxAngularSpeedDegS": 173.2248836450063,
+            "maxAngularAccelerationDegS2": 740.1235922698706
+          },
+          "hipTrunkProxyDeg": {
+            "min": 15.876377854689537,
+            "max": 97.59028728505703
+          },
+          "thighProxyLengthM": {
+            "min": 0.4176953720117089,
+            "max": 0.41769537201170914
+          },
+          "shankProxyLengthM": {
+            "min": 0.4073912629156397,
+            "max": 0.40739126291563993
+          }
+        },
+        "Left": {
+          "kneeProxyDeg": {
+            "min": 11.037946896418674,
+            "max": 101.28040103316852,
+            "maxAngularSpeedDegS": 161.85296714391117,
+            "maxAngularAccelerationDegS2": 753.5395170805581
+          },
+          "hipTrunkProxyDeg": {
+            "min": 11.351099482917391,
+            "max": 96.90819117686807
+          },
+          "thighProxyLengthM": {
+            "min": 0.41723850505436333,
+            "max": 0.41723850505436355
+          },
+          "shankProxyLengthM": {
+            "min": 0.4143433810259311,
+            "max": 0.41434338102593127
+          }
+        }
+      },
+      "pointDynamics": {
+        "pelvis": {
+          "maxSpeedMS": 0.9804798251366732,
+          "maxAccelerationMS2": 5.0202714070054295,
+          "highFrequencySecondDifferenceRMSM": 0.000152371040954709
+        },
+        "trunk": {
+          "maxSpeedMS": 1.1717415457344125,
+          "maxAccelerationMS2": 5.967202024398975,
+          "highFrequencySecondDifferenceRMSM": 0.00017806391200003577
+        },
+        "head": {
+          "maxSpeedMS": 1.1732791654163306,
+          "maxAccelerationMS2": 5.922837157987027,
+          "highFrequencySecondDifferenceRMSM": 0.00017848713583241103
+        },
+        "Right_hip": {
+          "maxSpeedMS": 0.8759412080728006,
+          "maxAccelerationMS2": 4.571651780264651,
+          "highFrequencySecondDifferenceRMSM": 0.0001412867188979099
+        },
+        "Right_knee": {
+          "maxSpeedMS": 0.5851269293053457,
+          "maxAccelerationMS2": 3.459650638574357,
+          "highFrequencySecondDifferenceRMSM": 0.00010478715713695809
+        },
+        "Right_ankle": {
+          "maxSpeedMS": 0.2304511966393572,
+          "maxAccelerationMS2": 1.6589482647219427,
+          "highFrequencySecondDifferenceRMSM": 5.002439998581617e-05
+        },
+        "Right_toe": {
+          "maxSpeedMS": 0.08174961773610881,
+          "maxAccelerationMS2": 1.3038404810402235,
+          "highFrequencySecondDifferenceRMSM": 2.035163848905504e-05
+        },
+        "Right_shoulder": {
+          "maxSpeedMS": 1.1771614162892183,
+          "maxAccelerationMS2": 5.732364259187562,
+          "highFrequencySecondDifferenceRMSM": 0.00017815622256783402
+        },
+        "Right_elbow": {
+          "maxSpeedMS": 1.1413978272276717,
+          "maxAccelerationMS2": 5.611595138639562,
+          "highFrequencySecondDifferenceRMSM": 0.0001772379425751945
+        },
+        "Right_wrist": {
+          "maxSpeedMS": 1.1169803042131303,
+          "maxAccelerationMS2": 5.625833271613278,
+          "highFrequencySecondDifferenceRMSM": 0.00017087612076779058
+        },
+        "Left_hip": {
+          "maxSpeedMS": 0.8328109029065544,
+          "maxAccelerationMS2": 4.5442271070004105,
+          "highFrequencySecondDifferenceRMSM": 0.00013552533754658972
+        },
+        "Left_knee": {
+          "maxSpeedMS": 0.5455822585920593,
+          "maxAccelerationMS2": 3.1487883301209796,
+          "highFrequencySecondDifferenceRMSM": 9.455812648804977e-05
+        },
+        "Left_ankle": {
+          "maxSpeedMS": 0.2265336644405556,
+          "maxAccelerationMS2": 1.4530663185566408,
+          "highFrequencySecondDifferenceRMSM": 5.145060966816703e-05
+        },
+        "Left_toe": {
+          "maxSpeedMS": 0.13669308687713672,
+          "maxAccelerationMS2": 1.5329709716757571,
+          "highFrequencySecondDifferenceRMSM": 3.0480388023350744e-05
+        },
+        "Left_shoulder": {
+          "maxSpeedMS": 1.1675470011952482,
+          "maxAccelerationMS2": 6.3269265840526385,
+          "highFrequencySecondDifferenceRMSM": 0.0001791634715826579
+        },
+        "Left_elbow": {
+          "maxSpeedMS": 1.1384612422037288,
+          "maxAccelerationMS2": 6.454455825242615,
+          "highFrequencySecondDifferenceRMSM": 0.00018009632057508794
+        },
+        "Left_wrist": {
+          "maxSpeedMS": 1.1293759338679181,
+          "maxAccelerationMS2": 6.110646446981106,
+          "highFrequencySecondDifferenceRMSM": 0.00017295263112370585
+        }
+      },
+      "markerEndpointRMSM": 0.04653677792363324,
+      "markerEndpointMaxM": 0.08924419489029972,
+      "kneeProxyMaxAsymmetryDeg": 3.0385315205240317,
+      "trunkTiltDeg": {
+        "min": 4.7813198696227195,
+        "max": 38.19906521329299
+      },
+      "maxSpeedMS": 1.1771614162892183,
+      "maxAccelerationMS2": 6.454455825242615,
+      "highFrequencySecondDifferenceRMSM": 0.0001410722098517383
+    },
+    "H2_rigid_pelvis_static_lengths": {
+      "status": "REFUSÉ",
+      "reason": "diagnostic surface-landmark chain, not validated anatomical centres",
+      "sides": {
+        "Right": {
+          "kneeProxyDeg": {
+            "min": 8.798813759292898,
+            "max": 102.955062913642,
+            "maxAngularSpeedDegS": 173.2248836450063,
+            "maxAngularAccelerationDegS2": 740.1235922698706
+          },
+          "hipTrunkProxyDeg": {
+            "min": 15.740260430482579,
+            "max": 93.50597585988413
+          },
+          "thighProxyLengthM": {
+            "min": 0.4176953720117089,
+            "max": 0.41769537201170914
+          },
+          "shankProxyLengthM": {
+            "min": 0.4073912629156397,
+            "max": 0.40739126291563993
+          }
+        },
+        "Left": {
+          "kneeProxyDeg": {
+            "min": 11.037946896418731,
+            "max": 101.28040103316852,
+            "maxAngularSpeedDegS": 161.85296714391117,
+            "maxAngularAccelerationDegS2": 753.5395170805581
+          },
+          "hipTrunkProxyDeg": {
+            "min": 10.538062411577386,
+            "max": 92.14184985787011
+          },
+          "thighProxyLengthM": {
+            "min": 0.41723850505436333,
+            "max": 0.41723850505436355
+          },
+          "shankProxyLengthM": {
+            "min": 0.4143433810259311,
+            "max": 0.41434338102593127
+          }
+        }
+      },
+      "pointDynamics": {
+        "pelvis": {
+          "maxSpeedMS": 0.9804798251366732,
+          "maxAccelerationMS2": 5.0202714070054295,
+          "highFrequencySecondDifferenceRMSM": 0.000152371040954709
+        },
+        "trunk": {
+          "maxSpeedMS": 1.1717415457344125,
+          "maxAccelerationMS2": 5.967202024398975,
+          "highFrequencySecondDifferenceRMSM": 0.00017806391200003577
+        },
+        "head": {
+          "maxSpeedMS": 1.1732791654163306,
+          "maxAccelerationMS2": 5.922837157987027,
+          "highFrequencySecondDifferenceRMSM": 0.00017848713583241103
+        },
+        "Right_hip": {
+          "maxSpeedMS": 0.9915960697697376,
+          "maxAccelerationMS2": 5.224524356841457,
+          "highFrequencySecondDifferenceRMSM": 0.00015923980956538037
+        },
+        "Right_knee": {
+          "maxSpeedMS": 0.6476134557068329,
+          "maxAccelerationMS2": 3.708669766171074,
+          "highFrequencySecondDifferenceRMSM": 0.0001180701077605749
+        },
+        "Right_ankle": {
+          "maxSpeedMS": 0.35331032686134567,
+          "maxAccelerationMS2": 2.3619768886317463,
+          "highFrequencySecondDifferenceRMSM": 7.675313835662255e-05
+        },
+        "Right_toe": {
+          "maxSpeedMS": 0.08174961773610881,
+          "maxAccelerationMS2": 1.3038404810402235,
+          "highFrequencySecondDifferenceRMSM": 2.035163848905504e-05
+        },
+        "Right_shoulder": {
+          "maxSpeedMS": 1.1771614162892183,
+          "maxAccelerationMS2": 5.732364259187562,
+          "highFrequencySecondDifferenceRMSM": 0.00017815622256783402
+        },
+        "Right_elbow": {
+          "maxSpeedMS": 1.1413978272276717,
+          "maxAccelerationMS2": 5.611595138639562,
+          "highFrequencySecondDifferenceRMSM": 0.0001772379425751945
+        },
+        "Right_wrist": {
+          "maxSpeedMS": 1.1169803042131303,
+          "maxAccelerationMS2": 5.625833271613278,
+          "highFrequencySecondDifferenceRMSM": 0.00017087612076779058
+        },
+        "Left_hip": {
+          "maxSpeedMS": 0.9812659205598409,
+          "maxAccelerationMS2": 4.53347931819574,
+          "highFrequencySecondDifferenceRMSM": 0.00015123534171126472
+        },
+        "Left_knee": {
+          "maxSpeedMS": 0.6119777809607901,
+          "maxAccelerationMS2": 3.468324269999602,
+          "highFrequencySecondDifferenceRMSM": 0.00010576294789206431
+        },
+        "Left_ankle": {
+          "maxSpeedMS": 0.335234155742134,
+          "maxAccelerationMS2": 2.596362178340196,
+          "highFrequencySecondDifferenceRMSM": 7.7382472505896e-05
+        },
+        "Left_toe": {
+          "maxSpeedMS": 0.13669308687713672,
+          "maxAccelerationMS2": 1.5329709716757571,
+          "highFrequencySecondDifferenceRMSM": 3.0480388023350744e-05
+        },
+        "Left_shoulder": {
+          "maxSpeedMS": 1.1675470011952482,
+          "maxAccelerationMS2": 6.3269265840526385,
+          "highFrequencySecondDifferenceRMSM": 0.0001791634715826579
+        },
+        "Left_elbow": {
+          "maxSpeedMS": 1.1384612422037288,
+          "maxAccelerationMS2": 6.454455825242615,
+          "highFrequencySecondDifferenceRMSM": 0.00018009632057508794
+        },
+        "Left_wrist": {
+          "maxSpeedMS": 1.1293759338679181,
+          "maxAccelerationMS2": 6.110646446981106,
+          "highFrequencySecondDifferenceRMSM": 0.00017295263112370585
+        }
+      },
+      "markerEndpointRMSM": 0.08683657747340022,
+      "markerEndpointMaxM": 0.1551738415083919,
+      "kneeProxyMaxAsymmetryDeg": 3.03853152052406,
+      "trunkTiltDeg": {
+        "min": 4.7813198696227195,
+        "max": 38.19906521329299
+      },
+      "maxSpeedMS": 1.1771614162892183,
+      "maxAccelerationMS2": 6.454455825242615,
+      "highFrequencySecondDifferenceRMSM": 0.00014555328588199414
+    }
+  },
+  "sensitivityFixedEndpointOffsetsMM": {
+    "10": {
+      "maxDeviationDeg": 2.771384782547784,
+      "scenarios": 18,
+      "meaning": "fixed endpoint offsets, not random measurement SD or95%CI"
+    },
+    "20": {
+      "maxDeviationDeg": 5.555285681745829,
+      "scenarios": 18,
+      "meaning": "fixed endpoint offsets, not random measurement SD or95%CI"
+    }
+  },
+  "filtering": {
+    "applied": false,
+    "reason": "no smoothing to make rigid or force metrics pass"
+  },
+  "jointCentres": {
+    "status": "NON TESTÉ",
+    "reason": "lateral epicondyle/malleolus only; no functional joint-centre calibration; sacral crests not certified PSIS; rigid marker fit not anatomical registration"
+  },
+  "OpenSim": {
+    "status": "NON TESTÉ",
+    "reason": "recognized LaiUhlrich2022 template metadata inspected; no subject-specific ScaleTool/IK or marker registration executed"
+  },
+  "Rocketbox": {
+    "status": "NON TESTÉ",
+    "reason": "gated before retarget: no qualified centres/axes; no GLB created"
+  },
+  "questions": {
+    "sourceReliability": "EN ATTENTE DE VALIDATION HUMAINE",
+    "anatomicalSkeleton": "EN ATTENTE DE VALIDATION HUMAINE",
+    "transferToRocketbox": "NON TESTÉ"
+  }
+}

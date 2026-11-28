@@ -1,0 +1,5 @@
+from pathlib import Path
+import struct,json,hashlib
+root=Path('docs/coach/phase6')
+for name in ['retargeted.glb','corrected.glb']:
+ p=root/name;b=p.read_bytes();n=struct.unpack_from('<I',b,12)[0];d=json.loads(b[20:20+n]);d['asset']['extras']={'source':'CMU Graphics Lab 14_06; 8.6–11.0 s; BVH conversion Bruce Hahne 2010','sourceSHA256':hashlib.sha256((root/'source-14_06.bvh').read_bytes()).hexdigest(),'terms':'CMU: commercial products allowed; no standalone data resale even converted. Model Rocketbox MIT Microsoft 2020. See docs/coach/phase6/PROVENANCE.md','status':'REJECTED_FOR_RUNTIME','runtimeEnabled':False,'professionalReview':False,'changes':'T-pose calibration, quaternion deltas, anatomical axes, target-length normalization, constant ground alignment'+('; source-gated initial contact correction' if name=='corrected.glb' else '')};js=json.dumps(d,separators=(',',':')).encode();js+=b' '*((-len(js))%4);tail=b[20+n:];p.write_bytes(struct.pack('<III',0x46546c67,2,20+len(js)+len(tail))+struct.pack('<II',len(js),0x4e4f534a)+js+tail)

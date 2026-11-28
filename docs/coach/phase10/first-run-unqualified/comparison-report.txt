@@ -1,0 +1,18 @@
+{
+  "status": "REFUS\É",
+  "constantFloorOffsetM": -0.003253391632721316,
+  "maxQuaternionComponentChange": 0.0,
+  "maxDeviationFromConstantTranslationM": 6.829769860598744e-08,
+  "corrections": [
+    "single world Z translation based on first-frame foot-group minimum, ground reference hypothesis"
+  ],
+  "notCorrected": [
+    "contact sliding",
+    "axial rotations",
+    "COM",
+    "collisions",
+    "entry/exit joins"
+  ],
+  "beforePenetrationM": 1.0,
+  "afterPenetrationM": 1.0
+}

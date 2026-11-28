@@ -1,0 +1,4628 @@
+{
+  "status": "PASS",
+  "scope": "existing .cache/public served locally; not deployed production",
+  "files": [
+    {
+      "path": "animation-validation-registry.json",
+      "bytes": 3471,
+      "sha256": "279c9b1eb90f64782255fa96932ccfc61775183f4fa63b7cfee88e5d8040b80f"
+    },
+    {
+      "path": "animation-validation.js",
+      "bytes": 1773,
+      "sha256": "53e4719a2c24c3f2864de616a99a3fbeb93f11c3f5e0ef5320a8a67cfec713b9"
+    },
+    {
+      "path": "app.js",
+      "bytes": 17225,
+      "sha256": "03084681deaa9c5ca8db05fad121b46499beb083a9df173c23e3052e22364626"
+    },
+    {
+      "path": "assets/coach-welcome.jpg",
+      "bytes": 51628,
+      "sha256": "d711375c99f77be9dacfb80f976233c7f4f6166cc53718bf33b39a1dcb0a2892"
+    },
+    {
+      "path": "assets/coach/coach-static.glb",
+      "bytes": 5036844,
+      "sha256": "1c3ede84af44e402f9f506296ddd3d4d70ca4d761a0363974a7ec5a82a7fcd75"
+    },
+    {
+      "path": "assets/coach/licenses/ROCKETBOX-MIT.txt",
+      "bytes": 1066,
+      "sha256": "17474e386e0b9e1a700cc3d06b2b0882a2c376d9c6b49c7f8274409b8f8d2352"
+    },
+    {
+      "path": "assets/coach/previews/etirementdos.jpg",
+      "bytes": 7520,
+      "sha256": "38ebbeeae4d663931985e10a0efd2b5d234e3ce6189e8d90596a380c2d795ed8"
+    },
+    {
+      "path": "assets/coach/previews/fentes.jpg",
+      "bytes": 7053,
+      "sha256": "75b6f48c28ca059b180ad600684826b6983c3af6a554d2aef46ed274f93e36af"
+    },
+    {
+      "path": "assets/coach/previews/gainage.jpg",
+      "bytes": 6444,
+      "sha256": "81c8183ea2d8a820b16dc7bd5f17775b67a0eafe21a43e4c54c160479ab000ad"
+    },
+    {
+      "path": "assets/coach/previews/jumpingjacks.jpg",
+      "bytes": 8199,
+      "sha256": "75436ea9dd29af39f2436bf0b0549df66e1f3ea337fa9347ef52dfa23265a68d"
+    },
+    {
+      "path": "assets/coach/previews/mobiliteepaules.jpg",
+      "bytes": 7467,
+      "sha256": "93c6af77045c033cd1e1df6228999581c9f2ecf542d3ba6aeb5c4e3a8c1a02f1"
+    },
+    {
+      "path": "assets/coach/previews/mountainclimber.jpg",
+      "bytes": 6794,
+      "sha256": "e3416071164afa882970c13593b515f6e2c1df87714cd2dcac417f02e9c4efa0"
+    },
+    {
+      "path": "assets/coach/previews/pompes.jpg",
+      "bytes": 6286,
+      "sha256": "da396f4e085af08bd873241140198545d4fb7de2e94ba9b013f2e3d08930f310"
+    },
+    {
+      "path": "assets/coach/previews/squat.jpg",
+      "bytes": 7475,
+      "sha256": "e69ad363794a133b418c817dd4ea70cd6646bd15a2df5a805710d9db6141cbe1"
+    },
+    {
+      "path": "assets/icon.svg",
+      "bytes": 304,
+      "sha256": "19d60fef71e71c3db3e34c669b8caa820d2b3d73c4bc50aa161612d8324dced3"
+    },
+    {
+      "path": "assets/workout.jpg",
+      "bytes": 135248,
+      "sha256": "e619f52e14bfdc56f8af339566db0fc51a52492e066191f9f2d2f9144286b4a3"
+    },
+    {
+      "path": "coach-3d.js",
+      "bytes": 14810,
+      "sha256": "7f6dc4147ccb9af77bbf6fa47254c85a43c92dc559cb5d27ef620b79003d42d6"
+    },
+    {
+      "path": "coach-content.js",
+      "bytes": 12096,
+      "sha256": "e2434fde0a04b00d1837413f57cfbca48b7ce242591c181f8d865860149e5d9e"
+    },
+    {
+      "path": "coach-transition-gate.js",
+      "bytes": 3148,
+      "sha256": "35f07f9e36463e19c10ad8a49653ee2f3a77a0c67d0b154de4e316422279c608"
+    },
+    {
+      "path": "demo-data.js",
+      "bytes": 2900,
+      "sha256": "a8cb8e37364e221714a41ba3eb5b9b396d576a537fa8e3ef7db771bce7e825fc"
+    },
+    {
+      "path": "index.html",
+      "bytes": 21693,
+      "sha256": "d63860849cf20c699fed7a6cf451bc0bc309cc23fb8a6d1bdfdbcab07ce50c25"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "bytes": 328,
+      "sha256": "e931df427cbeff21918fd434f4942a9c3138aff8e5f3d2828ec4b1935141e4de"
+    },
+    {
+      "path": "service-worker.js",
+      "bytes": 2922,
+      "sha256": "b955bb515dfef707e7426ba069e5d9a28acf6e3612cc3b7d7dcf4746706080a4"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 47842,
+      "sha256": "fc12cd14b75f52e5e02df01d97be060e3c9cc757c1c5eba6de7fb8f9ec34f280"
+    },
+    {
+      "path": "vendor/three/controls/OrbitControls.js",
+      "bytes": 32147,
+      "sha256": "89ccfb99469a7bc628c67a457be6c2f740d7dbb44b0c239258b4e54effac79c1"
+    },
+    {
+      "path": "vendor/three/loaders/GLTFLoader.js",
+      "bytes": 110042,
+      "sha256": "cf059addaac7379ea132687a01bd3fc4ff7e703ed2d964cb49a52f10fd354a0a"
+    },
+    {
+      "path": "vendor/three/three.module.js",
+      "bytes": 687458,
+      "sha256": "f7cee3c7533449a1505cc12cb5128b89e3d4fd3d7ea62b05f9f5464a217472ee"
+    },
+    {
+      "path": "vendor/three/utils/BufferGeometryUtils.js",
+      "bytes": 31781,
+      "sha256": "51db05616ad0ddf7722e4ae8ad06bacc464985f510db3e65501498c4a816b10c"
+    }
+  ],
+  "bytes": 6271964,
+  "staticGLB": {
+    "animations": 0,
+    "accessors": 14,
+    "bufferViews": 18,
+    "allViewsReferenced": true,
+    "exactReproducibleDerivative": true
+  },
+  "httpTests": [
+    {
+      "path": "assets/coach/coach.glb",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/REPORT.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/asset-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/browser-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/evidence/eight-exercises-0.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/evidence/eight-exercises-1.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/evidence/eight-exercises-2.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/evidence/mobile-390.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/mobile-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/CAPTURE-AND-RIGHTS.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/CRITERIA.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/REPORT.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/STATUS.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/after-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/before-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/comparison-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/evidence.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/first-run-unqualified/README.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/first-run-unqualified/after-report.txt",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/first-run-unqualified/before-report.txt",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/first-run-unqualified/check-annotations.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/first-run-unqualified/comparison-report.txt",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/first-run-unqualified/morphology-report.txt",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/first-run-unqualified/three-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/first-run-unqualified/video-report.txt",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/index.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/morphology-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/second-run-transport/README.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/second-run-transport/check-annotations.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/three-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase10/video-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase11/ANATOMY.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase11/A_report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase11/B_report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase11/CAPTURE-STATUS.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase11/C_report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase11/METHODS.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase11/PROFESSIONAL-REVIEW.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase11/REPORT.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase11/anatomy-summary.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase11/anatomy.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase11/evidence.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase11/index.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase11/rejected-executions/README.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase11/rejected-executions/first-check-annotations.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase11/rejected-executions/matrix-IK-check-annotations.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase11/three-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase11/video-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/14_06-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/CAPTURE.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/RECOVER.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/REPORT.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/SOURCES-AND-RIGHTS.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/ci-evidence.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/downloads.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/index.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/local-benchmark.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/local-evidence.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/marker-benchmark.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/marker-preview.png",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/original-analysis.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/original-retrieval.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/previews/filtered_only_m-143.png",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/previews/filtered_only_m.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/previews/historical_normalized60_m-72.png",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/previews/historical_normalized60_m.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/previews/native_m-0.png",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/previews/native_m-144.png",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/previews/native_m-287.png",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/previews/native_m.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/previews/overlay.png",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/previews/resampled_channels60_m.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase12/visual-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/FORCE-AUDIT.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/RECONSTRUCTION.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/REPORT.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/REPRODUCE.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/RIGHTS-AND-DATA.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/browser-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/evidence.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/filter-sensitivity.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/forces-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/index.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/local-render-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/markers-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/model-inspection.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/model-probe.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/phases-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/previews/H0_skin_landmarks.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/previews/H0_skin_landmarks.png",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/previews/H1_static_lengths.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/previews/H1_static_lengths.png",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/previews/H2_rigid_pelvis_static_lengths.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/previews/H2_rigid_pelvis_static_lengths.png",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/provenance.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/reconstruction-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase13/review-data.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase14/ANTHROPOMETRY.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase14/AUTHOR-REQUEST.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase14/DECISION.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase14/DOCUMENTATION.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase14/FORCES.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase14/FRAMES.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase14/REPRODUCE.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase14/anthropometry.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase14/browser-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase14/correspondences.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase14/dataset-README.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase14/decision.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase14/evidence.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase14/force-audit.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase14/index.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase14/matrix-37x66.csv",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase14/model-markers.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase14/opencap-comparison.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase14/original-audit.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase15/ALTERNATIVES.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase15/AUTHOR-REQUEST-EN.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase15/AUTHOR-REQUEST-FR.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase15/DECISION.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase15/INDEPENDENT-PLAN.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase15/INVENTORY.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase15/PROFESSIONAL-REVIEW.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase15/REPRODUCE.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase15/SCALING.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase15/browser-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase15/decision.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase15/index.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase15/manifest.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase15/observability.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase15/scaling-audit.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase16/author-request-final-en.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase16/author-request-final-fr.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase16/browser-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase16/candidate-inspection.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase16/decision-report.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase16/index.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase16/manifest.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase16/review-status.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase16/scaling-factors-audit.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase16/squat-dataset-research.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/REPRODUCE.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/browser-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/c3d-inspection.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/configuration-inspection.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/decision-report.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/ground-reaction-forces-audit.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/index.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/legacy-mobile-rerun.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/legacy-transition-rerun.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/manifest.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/mapping-status.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/marker-anatomical-mapping.csv",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/markerset-schematic.svg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/professional-review-dossier.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/protected-baseline.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/rms-scaling-error-analysis.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/rocketbox-readonly.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/scaling-ik-configuration-audit.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/selected-squat-trial.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/source-excerpts.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/source-manifest.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/static-marker-projections.svg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/trial-diagnostics.svg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase17/verification-notes.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/REPRODUCE.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/anatomical-uncertainties.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/animation-admission-criteria.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/browser-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/c3d-independent-byte-audit.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/c3d-integrity-and-timing.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/cache-identity.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/decision-report.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/expert-feedback-template.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/expert-questionnaire.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/historical-code-evidence.txt",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/historical-diff.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/historical-mobile-code-evidence.txt",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/historical-report-differences.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/independent-review-dossier.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/index.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/manifest.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/marker-review-register.csv",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/marker-review-register.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/protected-baseline.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/python-c3d-reader-evidence.txt",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/review-status.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase18/test-results.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase19/ab01-original-logs-inventory.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase19/archive-probe.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase19/capture-synchronization-evidence.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase19/ci-observed.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase19/decision-report.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase19/dependency-version-inventory.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase19/independent-review-readiness.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase19/local-and-preserved-inventory.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase19/marker-placement-evidence.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase19/missing-evidence-register.csv",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase19/preservation-check.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase19/prior-ci-artifact-index.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase19/prior-ci-jobs.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase19/test-output.txt",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase19/test-results.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/MOTION-SOURCES.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/PRO-REVIEW.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/REPORT.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/capture-manifest.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/etirementdos-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/etirementdos-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/etirementdos-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/etirementdos-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/etirementdos-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/etirementdos-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/etirementdos-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/face-detail.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/fentes-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/fentes-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/fentes-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/fentes-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/fentes-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/fentes-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/fentes-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/gainage-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/gainage-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/gainage-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/gainage-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/gainage-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/gainage-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/gainage-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/hand-detail.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/jumpingjacks-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/jumpingjacks-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/jumpingjacks-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/jumpingjacks-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/jumpingjacks-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/jumpingjacks-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/jumpingjacks-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/mobile-390.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/mobiliteepaules-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/mobiliteepaules-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/mobiliteepaules-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/mobiliteepaules-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/mobiliteepaules-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/mobiliteepaules-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/mobiliteepaules-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/mountainclimber-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/mountainclimber-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/mountainclimber-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/mountainclimber-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/mountainclimber-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/mountainclimber-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/mountainclimber-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/pompes-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/pompes-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/pompes-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/pompes-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/pompes-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/pompes-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/pompes-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/squat-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/squat-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/squat-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/squat-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/squat-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/squat-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/after/squat-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/asset-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before-trajectory-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/capture-manifest.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/etirementdos-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/etirementdos-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/etirementdos-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/etirementdos-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/etirementdos-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/etirementdos-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/etirementdos-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/face-detail.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/fentes-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/fentes-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/fentes-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/fentes-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/fentes-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/fentes-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/fentes-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/gainage-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/gainage-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/gainage-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/gainage-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/gainage-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/gainage-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/gainage-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/hand-detail.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/jumpingjacks-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/jumpingjacks-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/jumpingjacks-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/jumpingjacks-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/jumpingjacks-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/jumpingjacks-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/jumpingjacks-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/mobiliteepaules-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/mobiliteepaules-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/mobiliteepaules-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/mobiliteepaules-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/mobiliteepaules-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/mobiliteepaules-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/mobiliteepaules-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/mountainclimber-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/mountainclimber-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/mountainclimber-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/mountainclimber-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/mountainclimber-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/mountainclimber-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/mountainclimber-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/pompes-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/pompes-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/pompes-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/pompes-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/pompes-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/pompes-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/pompes-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/squat-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/squat-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/squat-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/squat-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/squat-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/squat-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/before/squat-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/index.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/local-test-log.txt",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/mobile-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/trajectory-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase2/video-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/annotations-140898613896.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/annotations-140898614027.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/annotations-140898615113.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/annotations-140898615140.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/annotations-140898615192.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/annotations-140898615523.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/authoring-guard.diff",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/browser-check.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/ci-final-status.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/ci-passive-contracts.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/ci-phase20-observed.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/ci-reference-runs.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/decision-report.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/evidence-and-claims-matrix.csv",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/experimental-readiness-gates.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/expert-preliminary-dossier.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/expert-questionnaire-final.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/expert-response-template.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/external-sharing-checklist.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/external/README.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/external/evidence-and-claims-matrix.csv",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/external/expert-preliminary-dossier.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/external/expert-questionnaire-final.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/external/expert-response-template.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/external/manifest.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/external/minimal-evidence.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/index.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase20/verification.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase21/audit-results.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase21/browser-check.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase21/ci-reference-runs.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase21/ci-status.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase21/collaboration-and-confidentiality.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase21/decision-report.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase21/expert-outreach-en.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase21/expert-outreach-fr.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase21/expert-profile.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase21/external-dossier-audit.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase21/index.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase21/log-access.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase21/post-review-decision-tree.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase21/professional-evaluation-grid.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase21/professional-evaluation-template.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase21/scientific-reference-check.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase21/submission-addendum.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase21/verification.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase22/candidate-comparison.csv",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase22/candidates.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase22/ci-reference-runs.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase22/contact-readiness.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase22/cost-search.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase22/decision-report.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase22/expert-candidates.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase22/expertise-criteria.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase22/laboratories.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase22/sources.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase22/sources.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase22/verification.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/REPRODUCE.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/audit-contract-tests.log",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/browser-audit.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/cache-audit.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/ci-audit.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/ci-evidence.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/coach-3d-audit.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/coach-browser.log",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/decision-report.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/expertise-audit.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/expertise-tests.log",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/git-audit.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/git-evidence.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/home-1440.png",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/home-390.png",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/initial-browser-audit.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/initial-browser-failure.log",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/interface-audit.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/main-diff-name-status.txt",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/main-diff-stat.txt",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/main-runtime.diff",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/npm-test.log",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/passive-review-tests.log",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/second-browser-failure.log",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/smoke.log",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/trajectory-regression.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase23/verification.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/DEVICE-PROTOCOL.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/REPORT.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/SOURCES.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/after/capture-manifest.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/after/crouch-to-stand-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/after/crouch-to-stand-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/after/crouch-to-stand-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/after/crouch-to-stand-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/after/crouch-to-stand-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/after/crouch-to-stand-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/after/crouch-to-stand-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/after/stand-to-crouch-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/after/stand-to-crouch-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/after/stand-to-crouch-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/after/stand-to-crouch-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/after/stand-to-crouch-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/after/stand-to-crouch-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/after/stand-to-crouch-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/before/capture-manifest.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/before/crouch-to-stand-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/before/crouch-to-stand-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/before/crouch-to-stand-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/before/crouch-to-stand-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/before/crouch-to-stand-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/before/crouch-to-stand-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/before/crouch-to-stand-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/before/stand-to-crouch-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/before/stand-to-crouch-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/before/stand-to-crouch-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/before/stand-to-crouch-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/before/stand-to-crouch-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/before/stand-to-crouch-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/before/stand-to-crouch-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/exercise-trajectory-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/index.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/local-test-log.txt",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/mobile-emulation-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/professional-review.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/professional-review.pdf",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/retarget-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/transition-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase3/video-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/MISSING-TRANSITIONS.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/PRO-ADDENDUM.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/REPORT.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/after-crouch-to-stand-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/after-stand-to-crouch-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/after/capture-manifest.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/after/crouch-to-stand-end.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/after/crouch-to-stand-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/after/crouch-to-stand-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/after/crouch-to-stand-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/after/crouch-to-stand-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/after/crouch-to-stand-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/after/crouch-to-stand-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/after/crouch-to-stand-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/after/stand-to-crouch-end.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/after/stand-to-crouch-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/after/stand-to-crouch-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/after/stand-to-crouch-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/after/stand-to-crouch-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/after/stand-to-crouch-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/after/stand-to-crouch-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/after/stand-to-crouch-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/before-crouch-to-stand-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/before-stand-to-crouch-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/before/capture-manifest.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/before/crouch-to-stand-end.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/before/crouch-to-stand-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/before/crouch-to-stand-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/before/crouch-to-stand-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/before/crouch-to-stand-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/before/crouch-to-stand-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/before/crouch-to-stand-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/before/crouch-to-stand-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/before/stand-to-crouch-end.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/before/stand-to-crouch-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/before/stand-to-crouch-midpoint.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/before/stand-to-crouch-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/before/stand-to-crouch-sequence.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/before/stand-to-crouch-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/before/stand-to-crouch-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/before/stand-to-crouch-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/connection-contracts.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/contact-windows.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/exercise-trajectory-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/index.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/local-test-log.txt",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/mobile-390.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/mobile-emulation-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/phase3-recheck-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/source-inventory.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/transition-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase4/video-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/A-end.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/A-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/A-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/A-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/A-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/A-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/ATTRIBUTION.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/B-end.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/B-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/B-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/B-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/B-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/B-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/C-end.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/C-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/C-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/C-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/C-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/C-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/CONSENT-TEMPLATE.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/D-end.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/D-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/D-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/D-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/D-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/D-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/REPORT.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/SOLUTIONS.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/comparison-manifest.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/comparison-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/evidence-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/exercise-regression-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/index.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/licenses/CMU-BVH-READMEFIRST.txt",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/licenses/CMU-TERMS.txt",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/licenses/MEDIAPIPE-APACHE-2.txt",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/local-test-log.txt",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/mobile-emulation-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/mocap-prototype.glb",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/mocap-retarget-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/pose-estimates.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/pose-overlay.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/provenance.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/python-environment.txt",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/retarget-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/source.webm",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase5/video-prototype.glb",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/PRO-REVIEW.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/PROVENANCE.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/REPORT.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/comparison-manifest.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/comparison-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/contact-classification.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/corrected-end.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/corrected-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/corrected-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/corrected-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/corrected-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/corrected-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/corrected-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/corrected.glb",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/correction-contracts.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/evidence-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/index.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/player.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/provenance.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/regression.log",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/rejected-22-bottom.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/rejected-22-retarget-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/rejected-all-windows-contracts.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/rejected-all-windows-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/retarget-frames.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/retarget-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/retargeted-end.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/retargeted-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/retargeted-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/retargeted-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/retargeted-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/retargeted-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/retargeted-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/retargeted.glb",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/source-14_06.bvh",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/source-22_14.bvh",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/source-end.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/source-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/source-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/source-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/source-samples.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/source-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/source-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase6/source-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/AUDIT.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/BLENDER.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/CHARACTERS.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/DATASETS.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/PROVENANCE.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/REPORT.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/blender-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/comparison-manifest.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/decision.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/evidence-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/export-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/index.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/licenses/BANDAI-NC.txt",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/licenses/LAFAN.txt",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/licenses/MAKEHUMAN-ASSETS.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/measurements.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/original-end.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/original-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/original-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/original-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/original-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/original-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/pipeline-run.log",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/prototype-end.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/prototype-face.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/prototype-profil.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/prototype-slow.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/prototype-start.jpg",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/prototype-trois-quarts.mp4",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/prototype.glb",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase7/regression.log",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase8/BLENDER.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase8/CAPTURE-PROTOCOL.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase8/CONSENT.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase8/PIPELINE.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase8/PRO-REVIEW.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase8/REPORT.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase8/SOLUTIONS.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase8/blender-smoke-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase8/checks.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase8/environment-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase8/index.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase8/intake-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase9/CAPTURE-QUICKSTART.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase9/ENVIRONMENTS.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase9/PRIVACY-AND-INPUT.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase9/PROVENANCE.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase9/REPORT.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase9/SQUAT-ACCEPTANCE.md",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase9/blender-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase9/evidence.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase9/first-export-blender-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase9/first-export-three-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase9/index.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase9/rejected-native-missing-numpy.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase9/rejected-root-mapping.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "docs/coach/phase9/three-report.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-anatomy-evidence.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-asset.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-biomechanics-evidence.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-blender-evidence.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-browser.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-camera.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-capture-readiness.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-cmu-calibrated.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-cmu-evidence.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-cmu-player.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-contact-audit.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-contact-evidence.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-contact-gallery.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-documentary-review-browser.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-documentary-review.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-evidence.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-fallback.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-gallery.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-independent-review-browser.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-independent-review.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-metadata-plan-browser.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-metadata-plan.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-michaud-browser.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-michaud-evidence.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-mobile.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-mocap-evidence.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-mocap-gallery.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-mocap-prototype.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-model-qualification-browser.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-model-qualification.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-passive-qualification-browser.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-passive-qualification.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-production-gallery.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-production-pipeline.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-source-qualification.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-trajectories.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-transition-evidence.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-transition-gallery.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-transition-gate.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/coach-transitions.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/smoke.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tests/structure.test.mjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/anatomy-lab.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/anatomy/.gitignore",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/anatomy/audit.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/anatomy/build-docs.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/anatomy/capture.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/anatomy/check.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/anatomy/collect.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/anatomy/diagnostic-video.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/anatomy/export.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/anatomy/ik.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/anatomy/metrics.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/anatomy/package.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/anatomy/test_generated.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/anatomy/test_metrics.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/animation-pipeline/.gitignore",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/animation-pipeline/blender-stage.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/animation-pipeline/capture.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/animation-pipeline/export.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/animation-pipeline/export.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/animation-pipeline/gate.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/animation-pipeline/measure.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/animation-pipeline/pushup.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/animation-pipeline/run.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/animation-pipeline/test_gate.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/animation-pipeline/verify.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/biomechanics/.gitignore",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/biomechanics/build-gallery.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/biomechanics/capture.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/biomechanics/check.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/biomechanics/collect-evidence.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/biomechanics/contracts.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/biomechanics/criteria.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/biomechanics/export.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/biomechanics/geometry.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/biomechanics/test_contracts.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/biomechanics/test_generated.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/biomechanics/validate.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/biomechanics/verify-videos.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/blender-pipeline/.gitignore",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/blender-pipeline/check.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/blender-pipeline/install-ubuntu.sh",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/blender-pipeline/retarget.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/blender-pipeline/run-control.sh",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/build-coach-review.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/capture-coach-contact-repair.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/capture-coach-cycles.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/capture-coach-transitions.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/capture-pipeline/.gitignore",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/capture-pipeline/Dockerfile",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/capture-pipeline/blender-smoke.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/capture-pipeline/intake.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/capture-pipeline/permissions.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/capture-pipeline/probe-blender.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/capture-pipeline/session-template.json",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/capture-pipeline/test_intake.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/capture-pipeline/test_permissions.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/coach-contact-repair.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/coach-lab.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/coach-motion-authoring.js",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/coach-transition-retarget.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/consolidation/browser-audit.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/consolidation/cache-server.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/consolidation/git_audit.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/consolidation/test_audit.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/convert-coach.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/documentary-review/build.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/documentary-review/inspect.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/download-coach-transitions.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/download-coach.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/evidence-closure/.gitignore",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/evidence-closure/archive_probe.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/evidence-closure/local_inventory.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/evidence-closure/test_closure.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/expert-search/build.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/expert-search/test_candidates.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/export-coach-contact-repair.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/export-coach-review-pdf.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/export-coach-transitions.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/export-coach.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/independent-review/.gitignore",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/independent-review/audit.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/independent-review/build.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/independent-review/cache-identity.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/independent-review/questions.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/independent-review/test_review.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/metadata-plan/.gitignore",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/metadata-plan/analyze.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/metadata-plan/build.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/metadata-plan/test_plan.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/michaud/.gitignore",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/michaud/acquire.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/michaud/analyze.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/michaud/build_docs.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/michaud/collect.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/michaud/core.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/michaud/filter_sensitivity.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/michaud/model_probe.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/michaud/render.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/michaud/test_core.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/mocap/capture-comparison.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/mocap/capture-phase6.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/mocap/correct-calibrated.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/mocap/detect-contacts.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/mocap/download-fixtures.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/mocap/export-calibrated.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/mocap/export-cmu.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/mocap/export-corrected.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/mocap/export-video.cjs",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/mocap/extract-pose.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/mocap/retarget-calibrated.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/mocap/retarget-cmu.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/mocap/retarget-video.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/mocap/setup-local.sh",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/mocap/source-lab.html",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/mocap/stamp-phase6.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/mocap/stamp-provenance.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/mocap/verify-evidence.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/mocap/verify-phase6.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/model-qualification/.gitignore",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/model-qualification/acquire.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/model-qualification/build.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/model-qualification/collect.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/model-qualification/compare_opencap.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/model-qualification/contracts.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/model-qualification/test_contracts.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/optimize-coach.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/passive-qualification/.gitignore",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/passive-qualification/__pycache__/acquire.cpython-311.pyc",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/passive-qualification/__pycache__/analyze.cpython-311.pyc",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/passive-qualification/__pycache__/build.cpython-311.pyc",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/passive-qualification/__pycache__/evidence.cpython-311.pyc",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/passive-qualification/__pycache__/mapping.cpython-311.pyc",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/passive-qualification/__pycache__/metrics.cpython-311.pyc",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/passive-qualification/__pycache__/static_diagram.cpython-311.pyc",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/passive-qualification/__pycache__/test_metrics.cpython-311.pyc",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/passive-qualification/acquire.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/passive-qualification/analyze.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/passive-qualification/build.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/passive-qualification/evidence.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/passive-qualification/mapping.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/passive-qualification/metrics.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/passive-qualification/static_diagram.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/passive-qualification/test_metrics.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/preliminary-review/build.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/preliminary-review/test_dossier.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/review-contact-sheet.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/review-cycle-frames.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/source-benchmark/.gitignore",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/source-benchmark/analyze-originals.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/source-benchmark/audit.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/source-benchmark/build-docs.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/source-benchmark/bvh.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/source-benchmark/collect.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/source-benchmark/download.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/source-benchmark/gallery.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/source-benchmark/marker-benchmark.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/source-benchmark/originals.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/source-benchmark/recover.sh",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/source-benchmark/test_audit.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/source-benchmark/visuals.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/submission-readiness/audit.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/submission-readiness/test_submission.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/verify-coach-videos.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/verify-contact-videos.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "tools/verify-transition-videos.py",
+      "expected": 404,
+      "status": 404
+    },
+    {
+      "path": "animation-validation-registry.json",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "animation-validation.js",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "app.js",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "assets/coach-welcome.jpg",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "assets/coach/coach-static.glb",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "assets/coach/licenses/ROCKETBOX-MIT.txt",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "assets/coach/previews/etirementdos.jpg",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "assets/coach/previews/fentes.jpg",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "assets/coach/previews/gainage.jpg",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "assets/coach/previews/jumpingjacks.jpg",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "assets/coach/previews/mobiliteepaules.jpg",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "assets/coach/previews/mountainclimber.jpg",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "assets/coach/previews/pompes.jpg",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "assets/coach/previews/squat.jpg",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "assets/icon.svg",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "assets/workout.jpg",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "coach-3d.js",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "coach-content.js",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "coach-transition-gate.js",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "demo-data.js",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "index.html",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "manifest.webmanifest",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "service-worker.js",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "styles.css",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "vendor/three/controls/OrbitControls.js",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "vendor/three/loaders/GLTFLoader.js",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "vendor/three/three.module.js",
+      "expected": 200,
+      "status": 200
+    },
+    {
+      "path": "vendor/three/utils/BufferGeometryUtils.js",
+      "expected": 200,
+      "status": 200
+    }
+  ],
+  "deniedCount": 866,
+  "allowedCount": 28
+}

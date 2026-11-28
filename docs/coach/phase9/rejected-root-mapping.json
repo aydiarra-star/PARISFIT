@@ -1,0 +1,38 @@
+{
+  "status": "FAILED",
+  "dataKind": "CMU licensed optical control, NOT dedicated PARISFIT capture",
+  "sourceSHA256": "e75bcdec4d6fdeac91571020d0b75d45cd4b2532113e699f465b5b297373ac05",
+  "modelSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+  "runtimeEnabled": false,
+  "professionalApproval": false,
+  "platform": "Linux-7.0.0-1018-aws-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "steps": [
+    {
+      "step": "startup",
+      "seconds": 0.044,
+      "version": "4.0.2"
+    },
+    {
+      "step": "rocketbox-import",
+      "seconds": 0.282,
+      "armature": "Bip01",
+      "bones": 80
+    },
+    {
+      "step": "bvh-import",
+      "seconds": 1.009,
+      "bones": 31,
+      "nativeHz": 120.00048000192001
+    }
+  ],
+  "corrections": {
+    "IK": false,
+    "smoothing": false,
+    "manual": []
+  },
+  "numpyVersion": "1.26.4",
+  "blenderVersion": "4.0.2",
+  "error": "Traceback (most recent call last):\n  File \"/home/runner/work/PARISFIT/PARISFIT/tools/blender-pipeline/retarget.py\", line 59, in <module>\n    bones.sort(key=depth);root=target.pose.bones.get('Bip01');assert root and root.parent is None,[(b.name,b.parent.name if b.parent else None) for b in bones[:3]]\n                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: [('Bip01_Pelvis', None), ('Bip01_Spine', 'Bip01_Pelvis'), ('Bip01_L_Thigh', 'Bip01_Pelvis')]\n",
+  "elapsedSeconds": 1.01
+}

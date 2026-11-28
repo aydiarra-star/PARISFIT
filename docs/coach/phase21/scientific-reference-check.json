@@ -1,0 +1,21 @@
+{
+  "method": "Public page inspection via fetch_page; no author or expert contact",
+  "article": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12717423/",
+    "section": "header and Copyright and License information",
+    "title": "Whole-body optical marker and ground reaction force data of healthy humans performing non-cyclic activities",
+    "authors": ["Mohsen Alizadeh Noghani", "Sebastian Green", "Edgar Bolívar-Nieto"],
+    "doi": "10.1038/s41597-025-06227-7",
+    "journal": "Scientific Data 12:1971 (2025)",
+    "licenseDisplayed": "CC BY-NC-ND 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+  },
+  "dataset": {
+    "url": "https://api.figshare.com/v2/articles/28689221",
+    "version": 1,
+    "doi": "10.7274/28689221.v1",
+    "licenseDisplayed": "CC BY 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "scope": "Bibliographic and displayed license verification, not a legal opinion or redistribution authorization"
+}

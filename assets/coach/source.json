@@ -1,0 +1,50 @@
+{
+  "model": "Microsoft Rocketbox Sports_Male_04",
+  "repository": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "revision": "0943055db6ec570bcef9f2c8b41c9e5467c808f9",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2020 Microsoft",
+  "sourceFiles": [
+    {
+      "path": "Assets/Avatars/Professions/Sports_Male_04/Export/Sports_Male_04.fbx",
+      "gitBlobSHA": "b299eddcf835389d7f94670437da138703449c00",
+      "bytes": 536704
+    },
+    {
+      "path": "Assets/Avatars/Professions/Sports_Male_04/Textures/m026_body_color.tga",
+      "gitBlobSHA": "60558a42a11ede73bd6f612d5119640de2836c6e",
+      "bytes": 12582956
+    },
+    {
+      "path": "Assets/Avatars/Professions/Sports_Male_04/Textures/m026_body_normal.tga",
+      "gitBlobSHA": "f161a886d464ff1c57c08d3de756f315c1723016",
+      "bytes": 12582956
+    },
+    {
+      "path": "Assets/Avatars/Professions/Sports_Male_04/Textures/m026_head_color.tga",
+      "gitBlobSHA": "17383635513bfbca88dcf6514a6ea9c8c101052a",
+      "bytes": 12582956
+    },
+    {
+      "path": "Assets/Avatars/Professions/Sports_Male_04/Textures/m026_head_normal.tga",
+      "gitBlobSHA": "6c36a8de648b9a87f1c12344a4582d2ad94e9b1f",
+      "bytes": 12582956
+    }
+  ],
+  "adaptations": [
+    "Centimeters to meters",
+    "Reparent thighs to pelvis and clavicles to thorax preserving rest transforms",
+    "Phase 2: 2048px head colour, 1024px body colour and lossless PNG normal maps",
+    "Original Parisfit IK-authored skeletal clips, 30 samples/second, sampled regression at 60 Hz",
+    "Surface-based foot/palm contact correction; fingers extended for floor supports",
+    "Alternating reverse lunges, staged jump/landing, moderate shoulder circles and upper-back stretch"
+  ],
+  "animationProvenance": "Authored in tools/coach-motion-authoring.js; not motion capture; not professionally validated",
+  "approval": "experimental — phase 2 engineering checks pass; no qualified professional or physical-device approval",
+  "export": {
+    "bytes": 5789744,
+    "sha256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+    "phase": 2,
+    "report": "docs/coach/phase2/REPORT.md"
+  }
+}

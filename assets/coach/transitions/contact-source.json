@@ -1,0 +1,17 @@
+{
+  "derivedFrom": "assets/coach/transitions/candidates.json",
+  "derivedFromSHA256": "e5a948dc4d97554d4099584d819c0c718baadcce88c5ef32d9f119f3b988c65a",
+  "outputSHA256": "05f9eec3a5f8d8cbe203eeec3008062eff6762bdb5b237a1383f4539969b0613",
+  "upstreamProvenance": "source.json",
+  "license": "MIT (Microsoft Rocketbox), original notice ../licenses/ROCKETBOX-MIT.txt retained",
+  "changes": [
+    "Fixed skinned sole vertex anchors in declared stance plateaus",
+    "Two-bone IK with source knee pole and foot world orientation retained",
+    "Quintic correction ramps at contact-window edges",
+    "Unique deterministic clip identifiers to avoid AnimationMixer action aliasing"
+  ],
+  "sourceBodyTimingChanged": false,
+  "contactWindows": "docs/coach/phase4/contact-windows.json",
+  "status": "HOLD",
+  "runtimeEnabled": false
+}

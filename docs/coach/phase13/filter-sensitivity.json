@@ -1,0 +1,45 @@
+{
+  "status": "VALID\u00c9",
+  "scope": "numerical sensitivity on six-decimal review samples, not anatomical validation",
+  "method": "centred boxcar windows1/5/9, reflected boundaries, common interior frames5..144 only; no selected optimal filter",
+  "usedInReconstruction": false,
+  "usedInRetarget": false,
+  "rows": [
+    {
+      "windowSamples": 1,
+      "windowMs": 10,
+      "commonInteriorFrames": 140,
+      "maxPositionChangeM": 0.0,
+      "maxKneeProxyChangeDeg": 0.0,
+      "interiorDynamics": {
+        "maxSpeedMS": 1.1771614162891935,
+        "maxAccelerationMS2": 6.603786792440641,
+        "highFrequencySecondDifferenceRMSM": 0.00013677887495716436
+      }
+    },
+    {
+      "windowSamples": 5,
+      "windowMs": 50,
+      "commonInteriorFrames": 140,
+      "maxPositionChangeM": 0.0006547946242906319,
+      "maxKneeProxyChangeDeg": 0.07251529407653834,
+      "interiorDynamics": {
+        "maxSpeedMS": 1.175015676491208,
+        "maxAccelerationMS2": 6.44918599514675,
+        "highFrequencySecondDifferenceRMSM": 0.00013576305846151762
+      }
+    },
+    {
+      "windowSamples": 9,
+      "windowMs": 90,
+      "commonInteriorFrames": 140,
+      "maxPositionChangeM": 0.0021530188395498828,
+      "maxKneeProxyChangeDeg": 0.23884702495011823,
+      "interiorDynamics": {
+        "maxSpeedMS": 1.170385211462364,
+        "maxAccelerationMS2": 6.250649348982461,
+        "highFrequencySecondDifferenceRMSM": 0.00013403660914832217
+      }
+    }
+  ]
+}

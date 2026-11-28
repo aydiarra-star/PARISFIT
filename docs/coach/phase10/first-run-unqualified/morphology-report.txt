@@ -1,0 +1,126 @@
+{
+  "status": "NON TEST\É",
+  "meaning": "length comparison measured; anatomical compatibility not validated",
+  "rootScale": 0.9469891623878913,
+  "segments": [
+    {
+      "segment": "Pelvis",
+      "sourceM": 0.0,
+      "sourceNormalizedM": 0.0,
+      "targetM": 0.1202704265812646,
+      "residualM": 0.1202704265812646
+    },
+    {
+      "segment": "Spine",
+      "sourceM": 0.11755988804683944,
+      "sourceNormalizedM": 0.11132793991189076,
+      "targetM": 0.15316864990977883,
+      "residualM": 0.04184070999788807
+    },
+    {
+      "segment": "Spine1",
+      "sourceM": 0.11769949525368748,
+      "sourceNormalizedM": 0.11146014642376709,
+      "targetM": 0.15317564299890904,
+      "residualM": 0.04171549657514195
+    },
+    {
+      "segment": "Spine2",
+      "sourceM": 0.0,
+      "sourceNormalizedM": 0.0,
+      "targetM": 0.19975474702866472,
+      "residualM": 0.19975474702866472
+    },
+    {
+      "segment": "Neck",
+      "sourceM": 0.187378188116595,
+      "sourceNormalizedM": 0.17744511341429503,
+      "targetM": 0.0692651025420313,
+      "residualM": -0.10818001087226373
+    },
+    {
+      "segment": "L_Thigh",
+      "sourceM": 0.4243598452153887,
+      "sourceNormalizedM": 0.4018641743715762,
+      "targetM": 0.3990353350107319,
+      "residualM": -0.002828839360844271
+    },
+    {
+      "segment": "L_Calf",
+      "sourceM": 0.4159077274971943,
+      "sourceNormalizedM": 0.3938601104932194,
+      "targetM": 0.3966889498540636,
+      "residualM": 0.0028288393608442153
+    },
+    {
+      "segment": "L_Foot",
+      "sourceM": 0.1247255911390467,
+      "sourceNormalizedM": 0.11811378308110043,
+      "targetM": 0.17001156967700756,
+      "residualM": 0.05189778659590713
+    },
+    {
+      "segment": "L_Clavicle",
+      "sourceM": 0.20544242617172234,
+      "sourceNormalizedM": 0.19455175107929554,
+      "targetM": 0.14107980919563884,
+      "residualM": -0.0534719418836567
+    },
+    {
+      "segment": "L_UpperArm",
+      "sourceM": 0.30054289276142565,
+      "sourceNormalizedM": 0.2846108622777763,
+      "targetM": 0.2858015033166202,
+      "residualM": 0.0011906410388438649
+    },
+    {
+      "segment": "L_Forearm",
+      "sourceM": 0.19665207126195927,
+      "sourceNormalizedM": 0.18622738024620672,
+      "targetM": 0.27091948483147194,
+      "residualM": 0.08469210458526522
+    },
+    {
+      "segment": "R_Thigh",
+      "sourceM": 0.43445820970230287,
+      "sourceNormalizedM": 0.4114272160985266,
+      "targetM": 0.39903516558159474,
+      "residualM": -0.012392050516931874
+    },
+    {
+      "segment": "R_Calf",
+      "sourceM": 0.4204650677393096,
+      "sourceNormalizedM": 0.3981758623118168,
+      "targetM": 0.39668887930263164,
+      "residualM": -0.00148698300918515
+    },
+    {
+      "segment": "R_Foot",
+      "sourceM": 0.12565718418867605,
+      "sourceNormalizedM": 0.11899599160285532,
+      "targetM": 0.17001151832079414,
+      "residualM": 0.051015526717938825
+    },
+    {
+      "segment": "R_Clavicle",
+      "sourceM": 0.2000888948222857,
+      "sourceNormalizedM": 0.1894820149108752,
+      "targetM": 0.1410797512747318,
+      "residualM": -0.04840226363614342
+    },
+    {
+      "segment": "R_UpperArm",
+      "sourceM": 0.30117901751537807,
+      "sourceNormalizedM": 0.2852132655256959,
+      "targetM": 0.2858014650213004,
+      "residualM": 0.0005881994956044578
+    },
+    {
+      "segment": "R_Forearm",
+      "sourceM": 0.20553178733579558,
+      "sourceNormalizedM": 0.19463637513321128,
+      "targetM": 0.2709193610765476,
+      "residualM": 0.07628298594333635
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "estimationOnly": true,
+  "originalsEncrypted": false,
+  "volumeBytes": 20971520,
+  "archives": [
+    {
+      "archive": ".cache/phase26-work/backups/project.tar.gz",
+      "plainArchiveBytes": 49301585,
+      "plainArchiveMiB": 47.018,
+      "estimatedCiphertextBytes": 49314657,
+      "estimated20MiBVolumes": 3
+    },
+    {
+      "archive": ".cache/phase26-work/backups/working-data.tar.gz",
+      "plainArchiveBytes": 307746695,
+      "plainArchiveMiB": 293.49,
+      "estimatedCiphertextBytes": 307822855,
+      "estimated20MiBVolumes": 15
+    },
+    {
+      "archive": ".cache/phase26-work/backups/history.bundle",
+      "plainArchiveBytes": 30951764,
+      "plainArchiveMiB": 29.518,
+      "estimatedCiphertextBytes": 30960356,
+      "estimated20MiBVolumes": 2
+    },
+    {
+      "archive": ".cache/phase26-work/backups/phase26-evidence.tar.gz",
+      "plainArchiveBytes": 270649,
+      "plainArchiveMiB": 0.258,
+      "estimatedCiphertextBytes": 271753,
+      "estimated20MiBVolumes": 1
+    }
+  ],
+  "plainTotalBytes": 388270693,
+  "estimatedTotalVolumes": 21
+}

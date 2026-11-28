@@ -1,0 +1,128 @@
+{
+  "status": "REFUS\É",
+  "runtimeEnabled": false,
+  "samples": 145,
+  "sourceType": "CMU14_06 licensed control NOT PARISFIT capture",
+  "observedModelGeometry": {
+    "maxSurfacePenetrationM": 1.0,
+    "maxFootGapM": 0.05371576468707917,
+    "maxCandidateStanceDriftM": 0.005797758648212117,
+    "candidateFrames": {
+      "L": 16,
+      "R": 41
+    },
+    "maxSegmentErrorM": 3.6254855001471853e-07,
+    "maxJointSpeedMS": 1.4518496614336942,
+    "p95JointSpeedMS": 1.0171600402377705,
+    "maxJointAccelerationMS2": 34.030549049342035,
+    "maxRotationStepDeg": 5.717276253783004,
+    "maxAngularSpeedDegS": 343.0365752269803,
+    "maxJointStepM": 0.024197494357228237,
+    "maxPelvisSpeedMS": 0.987531618796789,
+    "maxPelvisAccelerationMS2": 11.162862262657884,
+    "kneeFlexionDeg": {
+      "L": {
+        "min": 29.96999931994074,
+        "max": 154.42801704403158
+      },
+      "R": {
+        "min": 35.33980130063017,
+        "max": 156.70869732839103
+      }
+    },
+    "maxKneeAsymmetryDeg": 10.24586485450385,
+    "entryExitMaxJointGapM": 0.1784028295898695
+  },
+  "estimates": {
+    "COMMethod": "unvalidated fixed segment-midpoint weights .50/.08/.10/.10/.05/.05/.06/.06",
+    "COMOutsideFootAABBFrames": 115,
+    "collisionCandidateFrames": 0,
+    "contactTruth": "unknown"
+  },
+  "checks": {
+    "floor": {
+      "status": "REFUS\É",
+      "value": 1.0,
+      "limit": 0.003,
+      "scope": "geometric screening only"
+    },
+    "segments": {
+      "status": "VALID\É",
+      "value": 3.6254855001471853e-07,
+      "limit": 0.0001,
+      "scope": "geometric screening only"
+    },
+    "speed": {
+      "status": "VALID\É",
+      "value": 1.4518496614336942,
+      "limit": 3,
+      "scope": "geometric screening only"
+    },
+    "acceleration": {
+      "status": "VALID\É",
+      "value": 34.030549049342035,
+      "limit": 40,
+      "scope": "geometric screening only"
+    },
+    "rotationContinuity": {
+      "status": "VALID\É",
+      "value": 5.717276253783004,
+      "limit": 10,
+      "scope": "geometric screening only"
+    },
+    "positionContinuity": {
+      "status": "VALID\É",
+      "value": 0.024197494357228237,
+      "limit": 0.05,
+      "scope": "geometric screening only"
+    },
+    "kneeROM": {
+      "status": "VALID\É",
+      "scope": "unsigned flexion only; hyperextension/axial rotation not established"
+    },
+    "support": {
+      "status": "EN ATTENTE DE VALIDATION HUMAINE",
+      "reason": "candidate windows and selected skin points are not reviewed contacts",
+      "gapM": 0.05371576468707917,
+      "candidateDriftM": 0.005797758648212117
+    },
+    "balance": {
+      "status": "EN ATTENTE DE VALIDATION HUMAINE",
+      "reason": "COM is heuristic, bounding box is NOT support polygon; no forces or balance certification"
+    },
+    "collisions": {
+      "status": "EN ATTENTE DE VALIDATION HUMAINE",
+      "candidateFrames": 0,
+      "reason": "spheres only; exhaustive surface self-collision NON TEST\É"
+    },
+    "axialTorsion": {
+      "status": "NON TEST\É",
+      "reason": "anatomical joint frames unqualified; quaternion speed is not anatomical twist"
+    },
+    "symmetry": {
+      "status": "NON TEST\É",
+      "reason": "do not impose symmetry absent source annotation",
+      "differenceDeg": 10.24586485450385
+    },
+    "transitionRecovery": {
+      "status": "EN ATTENTE DE VALIDATION HUMAINE"
+    },
+    "visual": {
+      "status": "EN ATTENTE DE VALIDATION HUMAINE"
+    },
+    "professional": {
+      "status": "EN ATTENTE DE VALIDATION HUMAINE"
+    },
+    "sourceFidelity": {
+      "status": "EN ATTENTE DE VALIDATION HUMAINE"
+    }
+  },
+  "reviewRequired": true,
+  "limits": [
+    "not medical or professional validation",
+    "input geometry sampled by Blender; independent algorithm is not independent physical evidence",
+    "floor reference and contact patches unqualified",
+    "no automatic corrections"
+  ],
+  "exportSHA256": "17e26c56545d04cea30a525e3cb89d5876abbe7c29493e848bc2a3785bfa2fa2"
+}

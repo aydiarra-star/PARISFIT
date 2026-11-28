@@ -1,0 +1,101 @@
+[
+  {
+    "id": "P01",
+    "topic": "Qualité des données sources",
+    "references": "C01–C03,C06 ; E01,E05,E07 ; Q02,Q06",
+    "conclusion": null,
+    "justification": null,
+    "evidence_examined": null,
+    "confidence": null,
+    "additional_information_needed": null,
+    "conditions": null
+  },
+  {
+    "id": "P02",
+    "topic": "Placement et interprétation des marqueurs",
+    "references": "C04 ; E08,E09 ; Q01",
+    "conclusion": null,
+    "justification": null,
+    "evidence_examined": null,
+    "confidence": null,
+    "additional_information_needed": null,
+    "conditions": null
+  },
+  {
+    "id": "P03",
+    "topic": "Estimation des centres articulaires",
+    "references": "C05 ; E08,E09,E13 ; Q03",
+    "conclusion": null,
+    "justification": null,
+    "evidence_examined": null,
+    "confidence": null,
+    "additional_information_needed": null,
+    "conditions": null
+  },
+  {
+    "id": "P04",
+    "topic": "Calibration et scaling",
+    "references": "C08,C09,C13 ; E02,E03,E04,E06,E13 ; Q04,Q05",
+    "conclusion": null,
+    "justification": null,
+    "evidence_examined": null,
+    "confidence": null,
+    "additional_information_needed": null,
+    "conditions": null
+  },
+  {
+    "id": "P05",
+    "topic": "Synchronisation",
+    "references": "C11 ; E01,E05,E10,E11 ; Q06",
+    "conclusion": null,
+    "justification": null,
+    "evidence_examined": null,
+    "confidence": null,
+    "additional_information_needed": null,
+    "conditions": null
+  },
+  {
+    "id": "P06",
+    "topic": "Interprétation des forces",
+    "references": "C10,C14 ; E12,E14 ; Q07",
+    "conclusion": null,
+    "justification": null,
+    "evidence_examined": null,
+    "confidence": null,
+    "additional_information_needed": null,
+    "conditions": null
+  },
+  {
+    "id": "P07",
+    "topic": "Qualité des appuis",
+    "references": "C10 ; E07,E12,E14 ; Q07",
+    "conclusion": null,
+    "justification": null,
+    "evidence_examined": null,
+    "confidence": null,
+    "additional_information_needed": null,
+    "conditions": null
+  },
+  {
+    "id": "P08",
+    "topic": "Reconstruction biomécanique défendable",
+    "references": "C07,C08,C12,C13 ; E02,E03,E04,E13,E18 ; Q08,Q09",
+    "conclusion": null,
+    "justification": null,
+    "evidence_examined": null,
+    "confidence": null,
+    "additional_information_needed": null,
+    "conditions": null
+  },
+  {
+    "id": "P09",
+    "topic": "Limites et conditions expérimentales",
+    "references": "C12,C15 ; E15,E16,E17,E18 ; Q09–Q11",
+    "conclusion": null,
+    "justification": null,
+    "evidence_examined": null,
+    "confidence": null,
+    "additional_information_needed": null,
+    "conditions": null
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "maxBlenderThreePositionErrorM": 9.256488351285272e-7,
+  "clips": [
+    {
+      "name": "phase9-cmu-control",
+      "duration": 2.4000000953674316
+    }
+  ],
+  "bones": 80,
+  "samples": 145,
+  "maxSegmentLengthErrorM": 2.1412988598923377e-7,
+  "minSupportY": -0.2779567875582467,
+  "maxJointStepM": 0.024197768405628088,
+  "admission": "BLOCKED",
+  "scope": "load/full-playback/numerics only; no fidelity or visual approval"
+}

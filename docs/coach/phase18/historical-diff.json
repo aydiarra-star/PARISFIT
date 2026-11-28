@@ -1,0 +1,145 @@
+{
+  "mobile": {
+    "old": "docs/coach/phase2/mobile-report.json",
+    "new": "docs/coach/phase17/legacy-mobile-rerun.json",
+    "oldSHA256": "76e78ce8ef2e7a29806250730b779342e6cc3db4dfb72d91645f7a5908e4d881",
+    "newSHA256": "bff322c28a6526912b62718bcf793d9ae196a467cb07194276c08d8a1fc2a7b6",
+    "differences": [
+      {
+        "path": "/cases/0/jsHeapUsedBytes",
+        "old": 9956016,
+        "new": 9734836,
+        "delta": -221180
+      },
+      {
+        "path": "/cases/0/localLoadMs",
+        "old": 3308,
+        "new": 3095,
+        "delta": -213
+      },
+      {
+        "path": "/cases/0/softwareRenderedFPS",
+        "old": 30.5,
+        "new": 32.5,
+        "delta": 2.0
+      },
+      {
+        "path": "/cases/1/jsHeapUsedBytes",
+        "old": 12094552,
+        "new": 12885120,
+        "delta": 790568
+      },
+      {
+        "path": "/cases/1/localLoadMs",
+        "old": 494,
+        "new": 455,
+        "delta": -39
+      },
+      {
+        "path": "/cases/1/softwareRenderedFPS",
+        "old": 20.6,
+        "new": 22.9,
+        "delta": 2.299999999999997
+      }
+    ]
+  },
+  "transition": {
+    "old": "docs/coach/phase3/transition-report.json",
+    "new": "docs/coach/phase17/legacy-transition-rerun.json",
+    "oldSHA256": "6ce0aebe0a6cf7b4f49ad363957950a673e2336d06a0840728acd3024f9633a4",
+    "newSHA256": "7d86648312cf890b953b1e4387e8fec354ecba1044b2f1db11b4534cb4ed5346",
+    "differences": [
+      {
+        "path": "/clips/1/maxFootGapM/L",
+        "old": 0.03857571490540938,
+        "new": 0.05716914372922849,
+        "delta": 0.018593428823819105
+      },
+      {
+        "path": "/clips/1/maxFootGapM/R",
+        "old": 0.009726435257476379,
+        "new": 0.013041431091695038,
+        "delta": 0.003314995834218659
+      },
+      {
+        "path": "/clips/1/maxJointSpeedMS",
+        "old": 1.1857114255315657,
+        "new": 1.8102095920264725,
+        "delta": 0.6244981664949067
+      },
+      {
+        "path": "/clips/1/maxPlantedPivotStepM",
+        "old": 0.011029770741593978,
+        "new": 0.0121783863954599,
+        "delta": 0.0011486156538659219
+      },
+      {
+        "path": "/clips/1/minSurfaceY",
+        "old": 0.0019998548502243424,
+        "new": 0.0019998563609444375,
+        "delta": 1.5107200950284505e-09
+      },
+      {
+        "path": "/clips/1/pelvisHeightDeltaM",
+        "old": -0.46405391693115244,
+        "new": 0.4640541076660157,
+        "delta": 0.9281080245971681
+      }
+    ]
+  },
+  "gitFiles": {
+    "697523f7f11661eb385c9b8ada821b1edbf1aa3b": {
+      "tools/coach-lab.html": "a759fd93c82674a4d49595bf4589faf6d047b7efe28e1822d29120802395394c",
+      "tests/coach-transitions.cjs": null,
+      "tests/coach-mobile.cjs": "1637bca23b2bf08026a5abbcdf0633b4d74f5a4a26c518b04424f054c75805c3",
+      "vendor/three/three.module.js": "f7cee3c7533449a1505cc12cb5128b89e3d4fd3d7ea62b05f9f5464a217472ee",
+      "assets/coach/transitions/candidates.json": null,
+      "assets/coach/coach.glb": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+      "coach-3d.js": "42d1cc1b40aa54f71d3dcc81a78d02e9857c18219411f08fb7d1c6ef328f7330",
+      "package.json": "a3017578ea3638fbaee05fe3b8e111da999fc6b87840ab360b9eead2e51d19db",
+      "package-lock.json": "997ac81140d0c4c3e9fe352a0b7fe74650489b7dc75a345dd543bdef752aa569"
+    },
+    "c391ab8e7cd0a26c4a6a02b8b05fe39068407be8": {
+      "tools/coach-lab.html": "f065b5db0af4b7702146682d931be096f287359300892bdb29a781b157269b30",
+      "tests/coach-transitions.cjs": "fdc6378c0bc8f5da9fa2edb00eadc8f35d5a96cc4d29628c34e77429f8b28925",
+      "tests/coach-mobile.cjs": "37ec9c7e7719c8059c79062e1bf5991095bf88a4551325ac6d25931e00c079cb",
+      "vendor/three/three.module.js": "f7cee3c7533449a1505cc12cb5128b89e3d4fd3d7ea62b05f9f5464a217472ee",
+      "assets/coach/transitions/candidates.json": "e5a948dc4d97554d4099584d819c0c718baadcce88c5ef32d9f119f3b988c65a",
+      "assets/coach/coach.glb": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+      "coach-3d.js": "678a50728101070e21e07cfbc70fa4683dea8d402c2a1ddf7b82f97bb7d646a4",
+      "package.json": "e2122b6b581fa296374912e9cee0879088b6c0faf905540f8a97320c5f42fe86",
+      "package-lock.json": "997ac81140d0c4c3e9fe352a0b7fe74650489b7dc75a345dd543bdef752aa569"
+    },
+    "52d903122a0e8179f5ecee6a7038565adac0a563": {
+      "tools/coach-lab.html": "a85580223bf5403e6588af552214ab82686a434aab3af9e422974a17fc5f4c2c",
+      "tests/coach-transitions.cjs": "17b8f23075a43a27cac8e29cf475e1c9e6ada587ba95cc2e1f50fdbc9dcdf7e7",
+      "tests/coach-mobile.cjs": "fde2b97e87aff507c3108fbd1830c82d54c3742859bb9c03ed1842ae7e6da8f6",
+      "vendor/three/three.module.js": "f7cee3c7533449a1505cc12cb5128b89e3d4fd3d7ea62b05f9f5464a217472ee",
+      "assets/coach/transitions/candidates.json": "e5a948dc4d97554d4099584d819c0c718baadcce88c5ef32d9f119f3b988c65a",
+      "assets/coach/coach.glb": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+      "coach-3d.js": "63c23cd5fde8cb736b492f76d847bc7dbfa737073595dc7d9bda8ad0c04339bb",
+      "package.json": "766ee7bca26c0cf098a90b4797c358378c128cf154905f6471c3252af1d7aa90",
+      "package-lock.json": "997ac81140d0c4c3e9fe352a0b7fe74650489b7dc75a345dd543bdef752aa569"
+    },
+    "f4d4146a372d08acca620b1a9facf54368c1fcda": {
+      "tools/coach-lab.html": "f84f894f137062240625af47078f7419a022cb9796dcdc4705c5ffc6ae6ed39c",
+      "tests/coach-transitions.cjs": "17b8f23075a43a27cac8e29cf475e1c9e6ada587ba95cc2e1f50fdbc9dcdf7e7",
+      "tests/coach-mobile.cjs": "fde2b97e87aff507c3108fbd1830c82d54c3742859bb9c03ed1842ae7e6da8f6",
+      "vendor/three/three.module.js": "f7cee3c7533449a1505cc12cb5128b89e3d4fd3d7ea62b05f9f5464a217472ee",
+      "assets/coach/transitions/candidates.json": "e5a948dc4d97554d4099584d819c0c718baadcce88c5ef32d9f119f3b988c65a",
+      "assets/coach/coach.glb": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+      "coach-3d.js": "63c23cd5fde8cb736b492f76d847bc7dbfa737073595dc7d9bda8ad0c04339bb",
+      "package.json": "d64cddff58c09e54f6f054015bab4196c9d9d04c72b03f4fb3e1fca0e76878d1",
+      "package-lock.json": "997ac81140d0c4c3e9fe352a0b7fe74650489b7dc75a345dd543bdef752aa569"
+    }
+  },
+  "oldSecondClipDuplicatesFirstExceptName": true,
+  "localEnvironment": {
+    "node": "v22.22.3",
+    "python": "3.11.2",
+    "platform": "linux",
+    "playwright": "1.65.1",
+    "threePackage": "0.169.0",
+    "historicalBrowserBinaryVersion": "not recorded in the two original JSON reports"
+  }
+}

@@ -1,0 +1,518 @@
+{
+  "method": "Full FFmpeg decode, all frames; offline WebGL renders, not device benchmarks",
+  "files": [
+    {
+      "path": "before/squat-face.mp4",
+      "bytes": 61201,
+      "sha256": "fb544f328d64821502bafc0b36afdb2a110bd33f1428620c029043c65f34a741",
+      "decodedFrames": 97,
+      "durationSeconds": 4.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/squat-profil.mp4",
+      "bytes": 57745,
+      "sha256": "695cef28f6143a955596cf03511424218973dd3103518283d00f0fab2c8a2b56",
+      "decodedFrames": 97,
+      "durationSeconds": 4.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/squat-trois-quarts.mp4",
+      "bytes": 64727,
+      "sha256": "ba2143bde2b0afe334c268ee425cba34736f62c64b2880687f1e6437d089b8ea",
+      "decodedFrames": 97,
+      "durationSeconds": 4.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/squat-slow.mp4",
+      "bytes": 79458,
+      "sha256": "54694f5a491ae7843ec40ed8d9ac528e4f485110a0b0362e56e835e1f38468cd",
+      "decodedFrames": 97,
+      "durationSeconds": 8.083333,
+      "status": "PASS"
+    },
+    {
+      "path": "before/pompes-face.mp4",
+      "bytes": 37691,
+      "sha256": "7fd590d2b1b5189599d455f5c0e05c549a6f8532e59451adf772fc882e217d39",
+      "decodedFrames": 97,
+      "durationSeconds": 4.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/pompes-profil.mp4",
+      "bytes": 44337,
+      "sha256": "86d26a5edee1b6d6c4b11c610a520cef4b7727a991075c12113fab7185c20f2d",
+      "decodedFrames": 97,
+      "durationSeconds": 4.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/pompes-trois-quarts.mp4",
+      "bytes": 45602,
+      "sha256": "f3eff9e9de81eea68e853e3250ec0b0422684cacc39f144603a678a3521443d0",
+      "decodedFrames": 97,
+      "durationSeconds": 4.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/pompes-slow.mp4",
+      "bytes": 55608,
+      "sha256": "363df658cd4723a39140709e05a7491851ad8dd99a4fb9c5553d05f7a72553b6",
+      "decodedFrames": 97,
+      "durationSeconds": 8.083333,
+      "status": "PASS"
+    },
+    {
+      "path": "before/gainage-face.mp4",
+      "bytes": 24826,
+      "sha256": "4f8fdadc75b6ad0d094c54be2cc8480846487c2e060471efc62defa34106258a",
+      "decodedFrames": 145,
+      "durationSeconds": 6.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/gainage-profil.mp4",
+      "bytes": 38110,
+      "sha256": "64f93b38b53577f3b690d138dbb1f7677a06e2a4d93a82c6e793e29989480399",
+      "decodedFrames": 145,
+      "durationSeconds": 6.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/gainage-trois-quarts.mp4",
+      "bytes": 36272,
+      "sha256": "73ae915b880c4fa2e296bbade83215d134e2fb4501d53726b2406236c19a560f",
+      "decodedFrames": 145,
+      "durationSeconds": 6.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/gainage-slow.mp4",
+      "bytes": 44394,
+      "sha256": "1d9d212c5f8d3af8bbfa52567fdfb632a6181f4f3ff15fff766cb28fbb264d82",
+      "decodedFrames": 145,
+      "durationSeconds": 12.083333,
+      "status": "PASS"
+    },
+    {
+      "path": "before/fentes-face.mp4",
+      "bytes": 80575,
+      "sha256": "c7f942caa95edb04b98d57f085a1c5a0849ff64dd61f4ac55f730f74638c80a7",
+      "decodedFrames": 145,
+      "durationSeconds": 6.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/fentes-profil.mp4",
+      "bytes": 74829,
+      "sha256": "7a206f1e8b8735ed306bf5cb8ba23d5e587462eb6358352f7ab447c9e840fca8",
+      "decodedFrames": 145,
+      "durationSeconds": 6.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/fentes-trois-quarts.mp4",
+      "bytes": 79403,
+      "sha256": "bb30fcd35640d39a2de9a1d06b5a4dcdaab8efe1808290e83f45e436b7cd60e3",
+      "decodedFrames": 145,
+      "durationSeconds": 6.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/fentes-slow.mp4",
+      "bytes": 95877,
+      "sha256": "5715169dd28ecbd23ec136a5a3dd1490cda39884ce6185fe5cb89ad67056cb0f",
+      "decodedFrames": 145,
+      "durationSeconds": 12.083333,
+      "status": "PASS"
+    },
+    {
+      "path": "before/jumpingjacks-face.mp4",
+      "bytes": 59792,
+      "sha256": "5a25aa163b1d1ee4e0b654af7db28ad0753ea64a4a1ca9fbc3d6cafa7dc54ca3",
+      "decodedFrames": 59,
+      "durationSeconds": 2.458333,
+      "status": "PASS"
+    },
+    {
+      "path": "before/jumpingjacks-profil.mp4",
+      "bytes": 39371,
+      "sha256": "5dd6b98752629c0e863c5cf640feb31eacda489b2bdb0e7d20f117b20665bafd",
+      "decodedFrames": 59,
+      "durationSeconds": 2.458333,
+      "status": "PASS"
+    },
+    {
+      "path": "before/jumpingjacks-trois-quarts.mp4",
+      "bytes": 56159,
+      "sha256": "2780d28f2ab7a4d874467b5a920b96437a42f55ef0ab946fc0baaa06585d2f07",
+      "decodedFrames": 59,
+      "durationSeconds": 2.458333,
+      "status": "PASS"
+    },
+    {
+      "path": "before/jumpingjacks-slow.mp4",
+      "bytes": 66608,
+      "sha256": "d5720c799f4a8154fc197fc4ef3f23a9eb2a53128c1a97daaee986a48bc5a84d",
+      "decodedFrames": 59,
+      "durationSeconds": 4.916667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/mountainclimber-face.mp4",
+      "bytes": 24787,
+      "sha256": "0ea8a5472d434bd7deb4d2be9a1afb1cc970da7afe72ee39b284ae88a28ebc02",
+      "decodedFrames": 73,
+      "durationSeconds": 3.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/mountainclimber-profil.mp4",
+      "bytes": 43436,
+      "sha256": "59ce766bc88a3c2f10069a9aa7a0b472fd9efb10b3aa6b3b9eecd1a49a81a382",
+      "decodedFrames": 73,
+      "durationSeconds": 3.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/mountainclimber-trois-quarts.mp4",
+      "bytes": 38270,
+      "sha256": "962eaf0129712657d92882db4263eaeb093f238354f30539c2c7c44e8cd8069a",
+      "decodedFrames": 73,
+      "durationSeconds": 3.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/mountainclimber-slow.mp4",
+      "bytes": 45384,
+      "sha256": "1ff7084938014591b6dbfc936e266caa9ed29274278ae19e4fc86902a0d4b86c",
+      "decodedFrames": 73,
+      "durationSeconds": 6.083333,
+      "status": "PASS"
+    },
+    {
+      "path": "before/etirementdos-face.mp4",
+      "bytes": 78791,
+      "sha256": "d1f1ef434f1a89e65414d008c475278fea2e044336eaa43770b8e011c76df4cc",
+      "decodedFrames": 193,
+      "durationSeconds": 8.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/etirementdos-profil.mp4",
+      "bytes": 75606,
+      "sha256": "5560ce675c77fdae7807605a0098d56c12c64a48b4417416613b281bbcfcb706",
+      "decodedFrames": 193,
+      "durationSeconds": 8.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/etirementdos-trois-quarts.mp4",
+      "bytes": 90086,
+      "sha256": "33684ce336c851176eb34a5799f9d609a3b6012a5d3063e579541a46b4158e02",
+      "decodedFrames": 193,
+      "durationSeconds": 8.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/etirementdos-slow.mp4",
+      "bytes": 111631,
+      "sha256": "ec5c740a5745149cbb5605823244dfa95ca374c330c63965b724edc5cc0e4d48",
+      "decodedFrames": 193,
+      "durationSeconds": 16.083333,
+      "status": "PASS"
+    },
+    {
+      "path": "before/mobiliteepaules-face.mp4",
+      "bytes": 61066,
+      "sha256": "e6b9700fcae98f372e8fbe4bbd467d54998a0161a0b987ff1d5c704cb4b920e7",
+      "decodedFrames": 145,
+      "durationSeconds": 6.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/mobiliteepaules-profil.mp4",
+      "bytes": 51362,
+      "sha256": "3eba35b0792696d96a544b02d36d065aad555eb3915f583df328eef332e56740",
+      "decodedFrames": 145,
+      "durationSeconds": 6.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/mobiliteepaules-trois-quarts.mp4",
+      "bytes": 61854,
+      "sha256": "ee56ad73fa7c66dedc1be06b0f9ceaf6a62ba931c53fd4e280dd1506c9a2fd71",
+      "decodedFrames": 145,
+      "durationSeconds": 6.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "before/mobiliteepaules-slow.mp4",
+      "bytes": 72559,
+      "sha256": "374d0fc7ebce554863986080225032c2271467b0babbe200c59f9149ec38b8a2",
+      "decodedFrames": 145,
+      "durationSeconds": 12.083333,
+      "status": "PASS"
+    },
+    {
+      "path": "after/squat-face.mp4",
+      "bytes": 62019,
+      "sha256": "94390bc69645d355b48cad604354ab7da7d92a3b80c1922bf31b396cea971e98",
+      "decodedFrames": 121,
+      "durationSeconds": 5.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "after/squat-profil.mp4",
+      "bytes": 58921,
+      "sha256": "73242c399ed711cee204e5ad5cebd957f0c7c4fee071daf4f38fa05ca9e5ed3d",
+      "decodedFrames": 121,
+      "durationSeconds": 5.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "after/squat-trois-quarts.mp4",
+      "bytes": 65833,
+      "sha256": "0bf1e1693e716ad4b27e9d52442169334ba61a626a7412246aef58c8440a4c69",
+      "decodedFrames": 121,
+      "durationSeconds": 5.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "after/squat-slow.mp4",
+      "bytes": 81706,
+      "sha256": "7f09e85b6ca697d8dfd87071fe559ae8f9a91eee17eacefbc87339585490a61c",
+      "decodedFrames": 121,
+      "durationSeconds": 10.083333,
+      "status": "PASS"
+    },
+    {
+      "path": "after/pompes-face.mp4",
+      "bytes": 37017,
+      "sha256": "6223ac08bd242b2cb54f10bd8a607934ea6cc1655b1147891ea4a5b125bdb3a3",
+      "decodedFrames": 121,
+      "durationSeconds": 5.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "after/pompes-profil.mp4",
+      "bytes": 46993,
+      "sha256": "cec4f80d8aeae66966b191e74def8e2ff4a298bc6a2c94602184f700b9106bb4",
+      "decodedFrames": 121,
+      "durationSeconds": 5.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "after/pompes-trois-quarts.mp4",
+      "bytes": 46340,
+      "sha256": "80f0cbea5648879b8d3112aa5271b41b59586be15357f45228a9ffdc7a3c1de8",
+      "decodedFrames": 121,
+      "durationSeconds": 5.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "after/pompes-slow.mp4",
+      "bytes": 57293,
+      "sha256": "350b4efcc99131fdbad1b2ea80c9ab475acf7d8e309a56aea16a8066e3a521e7",
+      "decodedFrames": 121,
+      "durationSeconds": 10.083333,
+      "status": "PASS"
+    },
+    {
+      "path": "after/gainage-face.mp4",
+      "bytes": 21299,
+      "sha256": "be777924a0f7111fbd07cc81baf762d2ebaa6e96b4505d13a1eded81e85f3833",
+      "decodedFrames": 145,
+      "durationSeconds": 6.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "after/gainage-profil.mp4",
+      "bytes": 24142,
+      "sha256": "af2329bc4de6f3dd1e01e7ec768a776e8b7f24c26a352adc1c27d7f8ca3b5df0",
+      "decodedFrames": 145,
+      "durationSeconds": 6.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "after/gainage-trois-quarts.mp4",
+      "bytes": 24810,
+      "sha256": "a691f5340bb0d70e8d964d4223505560d94a36ae402de7c2449d365213cf6889",
+      "decodedFrames": 145,
+      "durationSeconds": 6.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "after/gainage-slow.mp4",
+      "bytes": 28522,
+      "sha256": "1044ec60061ec69f900fd60a899bf838ee87039644b8983266097b7d84d8db2b",
+      "decodedFrames": 145,
+      "durationSeconds": 12.083333,
+      "status": "PASS"
+    },
+    {
+      "path": "after/fentes-face.mp4",
+      "bytes": 125924,
+      "sha256": "e4f545be5fb1d453fb8688a7b310ee49c9ca5a941744ecb5a93d736c081aaeda",
+      "decodedFrames": 241,
+      "durationSeconds": 10.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "after/fentes-profil.mp4",
+      "bytes": 131848,
+      "sha256": "6d0378983756fdf5425e802ddc3bb01d5ac6b1d3d51c0cb8137e64b2a0cc3f34",
+      "decodedFrames": 241,
+      "durationSeconds": 10.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "after/fentes-trois-quarts.mp4",
+      "bytes": 135447,
+      "sha256": "bd48e17ff0e6dc28dfbe5af97676cc30850023a4b1b2cbeb9e5e335cf93716d2",
+      "decodedFrames": 241,
+      "durationSeconds": 10.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "after/fentes-slow.mp4",
+      "bytes": 160696,
+      "sha256": "0bf1d21f6fd1325edb192207839681c98763c065022126bcbb8cbb91014016fe",
+      "decodedFrames": 241,
+      "durationSeconds": 20.083333,
+      "status": "PASS"
+    },
+    {
+      "path": "after/jumpingjacks-face.mp4",
+      "bytes": 68026,
+      "sha256": "7c0291fdb892742f7f80102f8437ce1b97c5f1fe322eae821b12d1adb70efff9",
+      "decodedFrames": 78,
+      "durationSeconds": 3.25,
+      "status": "PASS"
+    },
+    {
+      "path": "after/jumpingjacks-profil.mp4",
+      "bytes": 49671,
+      "sha256": "059a5af42d35ce462180cb6b887329b7aad3101b2b1e3990f55bc9be3bd48970",
+      "decodedFrames": 78,
+      "durationSeconds": 3.25,
+      "status": "PASS"
+    },
+    {
+      "path": "after/jumpingjacks-trois-quarts.mp4",
+      "bytes": 63656,
+      "sha256": "28088c6bd9fa5e36e8baca66b4fdb4637203e1c14474e600c42bc45165630e53",
+      "decodedFrames": 78,
+      "durationSeconds": 3.25,
+      "status": "PASS"
+    },
+    {
+      "path": "after/jumpingjacks-slow.mp4",
+      "bytes": 74329,
+      "sha256": "d760b4749aa469858824c4d19aeeaa2f8f5b51e9c048b93df01b1a0a2552d284",
+      "decodedFrames": 78,
+      "durationSeconds": 6.5,
+      "status": "PASS"
+    },
+    {
+      "path": "after/mountainclimber-face.mp4",
+      "bytes": 24527,
+      "sha256": "96f78be2da00722c79e4050bd6ab22f090b5b337d08d1ee2bb7c49d06ca7d717",
+      "decodedFrames": 97,
+      "durationSeconds": 4.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "after/mountainclimber-profil.mp4",
+      "bytes": 42965,
+      "sha256": "8d9166e1c3350fdba23b93a9eb5b923a8da678b68528f118a414901221855011",
+      "decodedFrames": 97,
+      "durationSeconds": 4.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "after/mountainclimber-trois-quarts.mp4",
+      "bytes": 37419,
+      "sha256": "29e192dd12d6e5742fd56c84f113458c76cd318bd98d8cd6ad3040b86d8d948f",
+      "decodedFrames": 97,
+      "durationSeconds": 4.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "after/mountainclimber-slow.mp4",
+      "bytes": 44532,
+      "sha256": "be50a2b493d28542d12f84e97a3d772dadf17c8f99c267a4f647717fedb639c2",
+      "decodedFrames": 97,
+      "durationSeconds": 8.083333,
+      "status": "PASS"
+    },
+    {
+      "path": "after/etirementdos-face.mp4",
+      "bytes": 65914,
+      "sha256": "1ec2ff0a466accbdc4536d1ed90706f44be7347a36d4cfed42d280e5bb491a64",
+      "decodedFrames": 193,
+      "durationSeconds": 8.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "after/etirementdos-profil.mp4",
+      "bytes": 60331,
+      "sha256": "f2b76f591fc28393fdd83d1bc79db34a0cdf4efbf507a948d97cdd5bb040529e",
+      "decodedFrames": 193,
+      "durationSeconds": 8.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "after/etirementdos-trois-quarts.mp4",
+      "bytes": 70067,
+      "sha256": "ae4a3975abb34896dad647882b24cc95e8460120a1ff0571705b96e51a612963",
+      "decodedFrames": 193,
+      "durationSeconds": 8.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "after/etirementdos-slow.mp4",
+      "bytes": 87754,
+      "sha256": "a984139031681bd1c340e38149ea540e413c8b0b24fe4f9e5c8f8d6bc531e237",
+      "decodedFrames": 193,
+      "durationSeconds": 16.083333,
+      "status": "PASS"
+    },
+    {
+      "path": "after/mobiliteepaules-face.mp4",
+      "bytes": 47497,
+      "sha256": "fe5507cdbc8010edbbc003e6528a69da82b38bf53ce5d8ff1ef1cb24a1b7eb4e",
+      "decodedFrames": 145,
+      "durationSeconds": 6.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "after/mobiliteepaules-profil.mp4",
+      "bytes": 45451,
+      "sha256": "4384f629397e67633ea6961c62d07b701543617c1217bac58d3edae0268d2590",
+      "decodedFrames": 145,
+      "durationSeconds": 6.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "after/mobiliteepaules-trois-quarts.mp4",
+      "bytes": 49735,
+      "sha256": "a616357b6dd104e7b095c5d76e916a90cd0a63c1d5a8903927e77673fb4680e0",
+      "decodedFrames": 145,
+      "durationSeconds": 6.041667,
+      "status": "PASS"
+    },
+    {
+      "path": "after/mobiliteepaules-slow.mp4",
+      "bytes": 59415,
+      "sha256": "a0ee28ae809e268c2934d6cb8c6a15716cd7503396e67e59c8ec0c2e3b90a924",
+      "decodedFrames": 145,
+      "durationSeconds": 12.083333,
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

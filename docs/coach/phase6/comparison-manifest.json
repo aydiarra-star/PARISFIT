@@ -1,0 +1,37 @@
+{
+  "renderHz": 24,
+  "method": "Same 2.4s interval, native timing, same cameras; source shown as measured-joint hierarchy, not source video",
+  "cases": [
+    {
+      "id": "source",
+      "label": "CMU source joints, not a filmed human",
+      "url": "",
+      "page": "/tools/mocap/source-lab.html",
+      "clip": "source-14_06",
+      "duration": 2.4,
+      "asset": "docs/coach/phase6/source-14_06.bvh",
+      "frames": 59,
+      "sha256": "e75bcdec4d6fdeac91571020d0b75d45cd4b2532113e699f465b5b297373ac05"
+    },
+    {
+      "id": "retargeted",
+      "label": "Calibrated quaternion retarget",
+      "url": "?model=/docs/coach/phase6/retargeted.glb&once=1",
+      "clip": "cmu-complete-raw",
+      "duration": 2.4,
+      "asset": "docs/coach/phase6/retargeted.glb",
+      "frames": 59,
+      "sha256": "4abb65cbbcd0331b261b4cc34d9638d4367c90869c769cf783ec0173c0a71be2"
+    },
+    {
+      "id": "corrected",
+      "label": "Source-gated contact correction, HOLD",
+      "url": "?model=/docs/coach/phase6/corrected.glb&once=1",
+      "clip": "cmu-complete-corrected",
+      "duration": 2.4,
+      "asset": "docs/coach/phase6/corrected.glb",
+      "frames": 59,
+      "sha256": "be9622142e4a0792c1e200540b938a3a5de107b4961f15b618df1c042d0efa69"
+    }
+  ]
+}

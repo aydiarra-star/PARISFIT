@@ -1,0 +1,36 @@
+{
+  "status": "VALIDÉ",
+  "scope": "Chromium emulation and actual playback; NOT physical devices, full visual or professional review",
+  "widths": [
+    320,
+    390,
+    768,
+    1200
+  ],
+  "videos": [
+    {
+      "src": "previews/H0_skin_landmarks.mp4",
+      "currentTime": 0.5118,
+      "width": 960,
+      "height": 500,
+      "duration": 1.5,
+      "error": null
+    },
+    {
+      "src": "previews/H1_static_lengths.mp4",
+      "currentTime": 0.5207,
+      "width": 960,
+      "height": 500,
+      "duration": 1.5,
+      "error": null
+    },
+    {
+      "src": "previews/H2_rigid_pelvis_static_lengths.mp4",
+      "currentTime": 0.5231,
+      "width": 960,
+      "height": 500,
+      "duration": 1.5,
+      "error": null
+    }
+  ]
+}

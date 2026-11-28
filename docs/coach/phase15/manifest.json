@@ -1,0 +1,20 @@
+{
+  "status": "VALID\u00c9",
+  "scope": "file integrity only; no scientific approval",
+  "files": {
+    "ALTERNATIVES.md": "f74be2b905ba794909e16fa91bc7e2d65075586d56f2b3205eecda96cad084f0",
+    "AUTHOR-REQUEST-EN.md": "3f423f33afd0269b0b25c48cab4f88668aa42f7098533fccd7623ab29f185063",
+    "AUTHOR-REQUEST-FR.md": "0e142aa5f115f998c82aa00cc2edf9593d0ecb944be6d175d04c9084dd5fc30a",
+    "DECISION.md": "0b8cfc3b5c0a045339bca1f7df2d33da99e20a1f10f89956964e4f30fdfed20d",
+    "INDEPENDENT-PLAN.md": "8f29676751e075cf86889afcb271baa546a18fcc38888f6baf6e5f27b117f219",
+    "INVENTORY.md": "be92a2a6a1bfd36742096d924c05fc09f78d34282752a6f61248f71d51d49f8f",
+    "PROFESSIONAL-REVIEW.md": "68c71ffc2c3b0aa43a1f3fd48386b05bf01e4be47e6854aaa98dc4e26429eda1",
+    "REPRODUCE.md": "655e5dc39a9bb998bc1f241e26b06c5824fc0768d76564e7f4ebbf08e2ad2c25",
+    "SCALING.md": "a1eaf4ebc53f80860fc5cba43d80a8ef30ae8d3b8a8302dfb0fe36dbd683a199",
+    "browser-report.json": "66712f527f13194559898b52396576b7907232ef836d5744bfe5198b3cd9f126",
+    "decision.json": "bdf74dab0770c40d03771e451e6078488d208f9acb18e67ceac99c707db64fd3",
+    "index.html": "24398da35dba08c3850ec7ba2b41e1c384fc30672423beb6b131785837c79594",
+    "observability.json": "d46992b231109d5cd91d8f2204be1fda33622ac489eea4d7a65a4ceece88e6d7",
+    "scaling-audit.json": "96565755abd68fedc58b1d2ddb6d72a1ed722750bccc1700486328483392395f"
+  }
+}

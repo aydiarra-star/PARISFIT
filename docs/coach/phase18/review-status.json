@@ -1,0 +1,16 @@
+{
+  "decision": "B",
+  "scope": "completeness of independent review dossier, not anatomical qualification",
+  "anatomicalConfirmed": 44,
+  "anatomicalPlausible": 13,
+  "expertReviewed": false,
+  "sent": false,
+  "scalingExecuted": false,
+  "IKExecuted": false,
+  "retargetExecuted": false,
+  "trajectoryCorrected": false,
+  "newAnimation": false,
+  "runtimeChanged": false,
+  "c3dSourceModified": false,
+  "historicalFilesOverwritten": false
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "width": 320,
+    "noOverflow": true,
+    "links": true
+  },
+  {
+    "width": 390,
+    "noOverflow": true,
+    "links": true
+  },
+  {
+    "width": 768,
+    "noOverflow": true,
+    "links": true
+  },
+  {
+    "width": 1200,
+    "noOverflow": true,
+    "links": true
+  }
+]

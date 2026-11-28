@@ -1,0 +1,52 @@
+{
+  "results": [
+    {
+      "stage": "A",
+      "clips": [
+        {
+          "name": "phase9-cmu-control",
+          "duration": 2.4000000953674316
+        }
+      ],
+      "bones": 80,
+      "samples": 145,
+      "maxBlenderThreePositionErrorM": 9.256488351285272e-7,
+      "maxSupportSurfaceErrorM": 9.601240156253965e-7,
+      "sha256": "fac4d26f57590f99951058c2532d6a96c4195cd8d39fbb797b35b19e3fcb7e7e",
+      "technicalStatus": "VALIDÉ",
+      "motionStatus": "REFUSÉ"
+    },
+    {
+      "stage": "B",
+      "clips": [
+        {
+          "name": "phase9-cmu-control",
+          "duration": 2.4000000953674316
+        }
+      ],
+      "bones": 80,
+      "samples": 145,
+      "maxBlenderThreePositionErrorM": 6.679981243617792e-7,
+      "maxSupportSurfaceErrorM": 4.934601933737071e-7,
+      "sha256": "4cbf75c4f259f5fbf0bd8b52c301fa522dbcf044056888add13eab20199c9d07",
+      "technicalStatus": "VALIDÉ",
+      "motionStatus": "REFUSÉ"
+    },
+    {
+      "stage": "C",
+      "clips": [
+        {
+          "name": "phase9-cmu-control",
+          "duration": 2.4000000953674316
+        }
+      ],
+      "bones": 80,
+      "samples": 145,
+      "maxBlenderThreePositionErrorM": 6.196931576359588e-7,
+      "maxSupportSurfaceErrorM": 6.353587591600984e-7,
+      "sha256": "c82a3b8061d38c1a548c5e7816fe47b6f5f4fae214f47266348012e1c290ccad",
+      "technicalStatus": "VALIDÉ",
+      "motionStatus": "REFUSÉ"
+    }
+  ]
+}

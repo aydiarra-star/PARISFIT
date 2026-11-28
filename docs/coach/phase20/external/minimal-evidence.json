@@ -1,0 +1,17 @@
+{
+  "reference": "25ebee0ec3161ca5415d4961bd8d04ea4404af84",
+  "manufacturer": "Motive 3.0.3 Final (declared in both C3D files)",
+  "originalLogSHA256": "3cb10df0990b5213c37ae24beead0665b1b551f40984c60277850cbad7c14ba6",
+  "excerpts": [
+    {
+      "line": 13369,
+      "summary": "Model path AB01/Squat/1/generated/Generated_Model.osim; original processing log"
+    },
+    {
+      "line": 13555,
+      "summary": "squat_1_IKOut.mot: nr=2948 nc=43"
+    }
+  ],
+  "redaction": "Summaries omit Windows profiles, drive paths and unrelated trials; not verbatim original log",
+  "anatomicallyValidated": false
+}

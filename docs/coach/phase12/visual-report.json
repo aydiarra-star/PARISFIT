@@ -1,0 +1,30 @@
+{
+  "status": "VALID\u00c9",
+  "scope": "render and complete decode only, NOT visual/professional approval",
+  "videos": [
+    {
+      "file": "native_m.mp4",
+      "frames": 288,
+      "seconds": 2.391657,
+      "sha256": "f50157889863501e3dc750272b0990350a439baaa1bd545c831d65d853217095"
+    },
+    {
+      "file": "filtered_only_m.mp4",
+      "frames": 286,
+      "seconds": 2.374991,
+      "sha256": "604dcfc371ec0f3010154248ac2028a11f9a6a7aede705fc75ed13907a213edb"
+    },
+    {
+      "file": "resampled_channels60_m.mp4",
+      "frames": 145,
+      "seconds": 2.4,
+      "sha256": "efad10a6180dc984f8572abf2ab75cf897775ab6eadc86c92988dcaac3676a08"
+    },
+    {
+      "file": "historical_normalized60_m.mp4",
+      "frames": 145,
+      "seconds": 2.4,
+      "sha256": "6116d4d20b19630a35aa03b97f71990f40376c7c7756f0985d6815abc2dbda4f"
+    }
+  ]
+}

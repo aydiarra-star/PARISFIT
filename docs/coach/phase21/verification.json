@@ -1,0 +1,29 @@
+{
+  "reference": "5eeb144aaa1c1f47f956776fa5a6dc1c1425fd9a",
+  "tests": {
+    "existingPassivePython": {
+      "count": 36,
+      "result": "PASS"
+    },
+    "submissionPython": {
+      "count": 7,
+      "result": "PASS"
+    },
+    "npm test": "PASS",
+    "externalAudit": "PASS"
+  },
+  "preservation": {
+    "referenceTrackedFiles": 836,
+    "changed": [],
+    "rocketboxSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb"
+  },
+  "referenceCI": "3 completed/success;4 authoring jobs skipped; see ci-reference-runs.json",
+  "fullLog": "retrieval EOF; job/step metadata and annotations inspected",
+  "limits": [
+    "No hardware or professional review",
+    "No security certification",
+    "No biomechanical source pipeline executed",
+    "No contact, sending, payment, merge or deployment"
+  ],
+  "deliveryCI": "Not presumed successful; reference results only"
+}

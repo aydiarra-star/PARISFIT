@@ -1,0 +1,24 @@
+{
+  "webglUnavailable": "La 3D ne peut pas être chargée. Les exercices et leurs consignes restent disponibles.",
+  "nutritionAfterFailure": true,
+  "emulations": [
+    {
+      "width": 390,
+      "loadMsLocalSoftwareGPU": 2561,
+      "renderer": {
+        "calls": 8,
+        "triangles": 7522,
+        "pixelRatio": 1.25
+      }
+    },
+    {
+      "width": 412,
+      "loadMsLocalSoftwareGPU": 389,
+      "renderer": {
+        "calls": 8,
+        "triangles": 7522,
+        "pixelRatio": 1.25
+      }
+    }
+  ]
+}

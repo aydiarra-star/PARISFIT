@@ -1,0 +1,24 @@
+{
+  "status": "VALID\u00c9",
+  "scope": "render + full decode, NOT visual or professional approval",
+  "videos": [
+    {
+      "file": "H0_skin_landmarks.mp4",
+      "sha256": "e5f1757fc5022a64b04e804181f729ab512419c7d70995b71041f30fa779a592",
+      "frames": 150,
+      "seconds": 1.5
+    },
+    {
+      "file": "H1_static_lengths.mp4",
+      "sha256": "0780d601d7383c97462d4133dfdd454361b589c50ac38c346f7869f225be2481",
+      "frames": 150,
+      "seconds": 1.5
+    },
+    {
+      "file": "H2_rigid_pelvis_static_lengths.mp4",
+      "sha256": "ad672704b076c5d53f93ade35035526465c3a93dae5c904c434a415b9d8de7dd",
+      "frames": 150,
+      "seconds": 1.5
+    }
+  ]
+}

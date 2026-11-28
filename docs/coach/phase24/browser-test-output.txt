@@ -1,0 +1,5 @@
+
+> parisfit@0.1.0 test:browser
+> node tests/smoke.cjs && node tests/coach-animation-lock-browser.cjs && node tests/coach-animation-lock-migration.cjs
+
+PASS: responsive widths, hydration persistence, energy, reading, challenge, coach, offline cache.

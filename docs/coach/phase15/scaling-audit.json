@@ -1,0 +1,120 @@
+{
+  "status": "EN ATTENTE DE DOCUMENTATION",
+  "sufficientForIndividualization": false,
+  "rows": [
+    {
+      "name": "P1",
+      "S01": "1.07737",
+      "unit": "dimensionless",
+      "documentedRole": "pelvis axis (axis order unspecified)",
+      "valueStatus": "VALIDÉ",
+      "applicationStatus": "EN ATTENTE DE DOCUMENTATION",
+      "application": null,
+      "missing": [
+        "body/component identifiers",
+        "axis assignment and isotropy",
+        "reference geometry/version",
+        "scaling order and marker registration",
+        "mass/inertia treatment and other segment factors"
+      ],
+      "source": "../phase14/dataset-README.md + participants.csv SHA256 64f61477376ef6ccea7d1ddb33f141a032e29566cae2122662e0e2fcda51049d",
+      "certainty": "value and broad role documented, execution recipe unknown",
+      "applied": false
+    },
+    {
+      "name": "P2",
+      "S01": "1.08037",
+      "unit": "dimensionless",
+      "documentedRole": "pelvis axis (axis order unspecified)",
+      "valueStatus": "VALIDÉ",
+      "applicationStatus": "EN ATTENTE DE DOCUMENTATION",
+      "application": null,
+      "missing": [
+        "body/component identifiers",
+        "axis assignment and isotropy",
+        "reference geometry/version",
+        "scaling order and marker registration",
+        "mass/inertia treatment and other segment factors"
+      ],
+      "source": "../phase14/dataset-README.md + participants.csv SHA256 64f61477376ef6ccea7d1ddb33f141a032e29566cae2122662e0e2fcda51049d",
+      "certainty": "value and broad role documented, execution recipe unknown",
+      "applied": false
+    },
+    {
+      "name": "P3",
+      "S01": "1.08637",
+      "unit": "dimensionless",
+      "documentedRole": "pelvis axis (axis order unspecified)",
+      "valueStatus": "VALIDÉ",
+      "applicationStatus": "EN ATTENTE DE DOCUMENTATION",
+      "application": null,
+      "missing": [
+        "body/component identifiers",
+        "axis assignment and isotropy",
+        "reference geometry/version",
+        "scaling order and marker registration",
+        "mass/inertia treatment and other segment factors"
+      ],
+      "source": "../phase14/dataset-README.md + participants.csv SHA256 64f61477376ef6ccea7d1ddb33f141a032e29566cae2122662e0e2fcda51049d",
+      "certainty": "value and broad role documented, execution recipe unknown",
+      "applied": false
+    },
+    {
+      "name": "Fem",
+      "S01": "1.07018",
+      "unit": "dimensionless",
+      "documentedRole": "femur",
+      "valueStatus": "VALIDÉ",
+      "applicationStatus": "EN ATTENTE DE DOCUMENTATION",
+      "application": null,
+      "missing": [
+        "body/component identifiers",
+        "axis assignment and isotropy",
+        "reference geometry/version",
+        "scaling order and marker registration",
+        "mass/inertia treatment and other segment factors"
+      ],
+      "source": "../phase14/dataset-README.md + participants.csv SHA256 64f61477376ef6ccea7d1ddb33f141a032e29566cae2122662e0e2fcda51049d",
+      "certainty": "value and broad role documented, execution recipe unknown",
+      "applied": false
+    },
+    {
+      "name": "Tib",
+      "S01": "1.08885",
+      "unit": "dimensionless",
+      "documentedRole": "tibia",
+      "valueStatus": "VALIDÉ",
+      "applicationStatus": "EN ATTENTE DE DOCUMENTATION",
+      "application": null,
+      "missing": [
+        "body/component identifiers",
+        "axis assignment and isotropy",
+        "reference geometry/version",
+        "scaling order and marker registration",
+        "mass/inertia treatment and other segment factors"
+      ],
+      "source": "../phase14/dataset-README.md + participants.csv SHA256 64f61477376ef6ccea7d1ddb33f141a032e29566cae2122662e0e2fcda51049d",
+      "certainty": "value and broad role documented, execution recipe unknown",
+      "applied": false
+    },
+    {
+      "name": "Foot",
+      "S01": "1.14237",
+      "unit": "dimensionless",
+      "documentedRole": "foot",
+      "valueStatus": "VALIDÉ",
+      "applicationStatus": "EN ATTENTE DE DOCUMENTATION",
+      "application": null,
+      "missing": [
+        "body/component identifiers",
+        "axis assignment and isotropy",
+        "reference geometry/version",
+        "scaling order and marker registration",
+        "mass/inertia treatment and other segment factors"
+      ],
+      "source": "../phase14/dataset-README.md + participants.csv SHA256 64f61477376ef6ccea7d1ddb33f141a032e29566cae2122662e0e2fcda51049d",
+      "certainty": "value and broad role documented, execution recipe unknown",
+      "applied": false
+    }
+  ]
+}

@@ -1,0 +1,642 @@
+{
+  "modelSHA256": "5a999b3dc005d089704da1829690bdecfe7a6fd753c4d82e300617966c967311",
+  "method": "60 Hz sampling of the actual GLB skin and skeleton; no medical/sports validation",
+  "tolerances": {
+    "groundPenetrationM": 0.004,
+    "plantedSupportGapM": 0.007,
+    "plantedStepM": 0.008,
+    "loopJointErrorM": 0.001,
+    "maxJointSpeedMS": 4.5,
+    "kneeFlexMaxDeg": 145,
+    "elbowFlexMaxDeg": 155
+  },
+  "clips": [
+    {
+      "id": "squat",
+      "samples": 241,
+      "duration": 4,
+      "support": {
+        "R_Forearm": {
+          "min": 1.00873,
+          "max": 1.10547
+        },
+        "R_Hand": {
+          "min": 0.90105,
+          "max": 1.12354
+        },
+        "R_Digits": {
+          "min": 0.90105,
+          "max": 1.12354
+        },
+        "R_Palm": {
+          "min": 0.94639,
+          "max": 1.13552
+        },
+        "R_Thigh": {
+          "min": 0.4277,
+          "max": 0.49079
+        },
+        "L_Forearm": {
+          "min": 1.00873,
+          "max": 1.10547
+        },
+        "L_Hand": {
+          "min": 0.90105,
+          "max": 1.12354
+        },
+        "L_Digits": {
+          "min": 0.90105,
+          "max": 1.12354
+        },
+        "L_Palm": {
+          "min": 0.94639,
+          "max": 1.13553
+        },
+        "L_Thigh": {
+          "min": 0.4277,
+          "max": 0.49079
+        },
+        "R_Calf": {
+          "min": 0.12132,
+          "max": 0.12855
+        },
+        "R_Foot": {
+          "min": 0.00297,
+          "max": 0.00301
+        },
+        "L_Calf": {
+          "min": 0.12132,
+          "max": 0.12855
+        },
+        "L_Foot": {
+          "min": 0.00297,
+          "max": 0.00301
+        }
+      },
+      "loopErrorM": 0,
+      "maxJointSpeedMS": 0.35369,
+      "maxPlantedStepM": 0.00004,
+      "kneeFlexDeg": [
+        3.31389,
+        89.33107
+      ],
+      "elbowFlexDeg": [
+        63.77105,
+        97.99221
+      ],
+      "hipDriftM": 0.31623
+    },
+    {
+      "id": "pompes",
+      "samples": 241,
+      "duration": 4,
+      "support": {
+        "R_Forearm": {
+          "min": 0.06069,
+          "max": 0.06582
+        },
+        "R_Hand": {
+          "min": 0.00859,
+          "max": 0.0086
+        },
+        "R_Digits": {
+          "min": 0.00859,
+          "max": 0.0086
+        },
+        "R_Palm": {
+          "min": 0.04144,
+          "max": 0.04145
+        },
+        "R_Thigh": {
+          "min": 0.08639,
+          "max": 0.17699
+        },
+        "L_Forearm": {
+          "min": 0.06069,
+          "max": 0.06582
+        },
+        "L_Hand": {
+          "min": 0.00859,
+          "max": 0.0086
+        },
+        "L_Digits": {
+          "min": 0.00859,
+          "max": 0.0086
+        },
+        "L_Palm": {
+          "min": 0.04144,
+          "max": 0.04145
+        },
+        "L_Thigh": {
+          "min": 0.08639,
+          "max": 0.17699
+        },
+        "R_Calf": {
+          "min": 0.1315,
+          "max": 0.14529
+        },
+        "R_Foot": {
+          "min": -0.04828,
+          "max": -0.04821
+        },
+        "L_Calf": {
+          "min": 0.1315,
+          "max": 0.14529
+        },
+        "L_Foot": {
+          "min": -0.04828,
+          "max": -0.04821
+        }
+      },
+      "loopErrorM": 0,
+      "maxJointSpeedMS": 0.20344,
+      "maxPlantedStepM": 0.00002,
+      "kneeFlexDeg": [
+        1.81584,
+        4.81249
+      ],
+      "elbowFlexDeg": [
+        74.91167,
+        129.63526
+      ],
+      "hipDriftM": 0.12713
+    },
+    {
+      "id": "gainage",
+      "samples": 361,
+      "duration": 6,
+      "support": {
+        "R_Forearm": {
+          "min": 0.01361,
+          "max": 0.01906
+        },
+        "R_Hand": {
+          "min": 0.0186,
+          "max": 0.0186
+        },
+        "R_Digits": {
+          "min": 0.0186,
+          "max": 0.0186
+        },
+        "R_Palm": {
+          "min": 0.05145,
+          "max": 0.05145
+        },
+        "R_Thigh": {
+          "min": 0.10985,
+          "max": 0.11903
+        },
+        "L_Forearm": {
+          "min": 0.01361,
+          "max": 0.01906
+        },
+        "L_Hand": {
+          "min": 0.0186,
+          "max": 0.0186
+        },
+        "L_Digits": {
+          "min": 0.0186,
+          "max": 0.0186
+        },
+        "L_Palm": {
+          "min": 0.05145,
+          "max": 0.05145
+        },
+        "L_Thigh": {
+          "min": 0.10984,
+          "max": 0.11903
+        },
+        "R_Calf": {
+          "min": 0.1395,
+          "max": 0.14062
+        },
+        "R_Foot": {
+          "min": -0.04828,
+          "max": -0.04826
+        },
+        "L_Calf": {
+          "min": 0.1395,
+          "max": 0.14062
+        },
+        "L_Foot": {
+          "min": -0.04828,
+          "max": -0.04826
+        }
+      },
+      "loopErrorM": 0,
+      "maxJointSpeedMS": 0.01141,
+      "maxPlantedStepM": 0.00001,
+      "kneeFlexDeg": [
+        1.81622,
+        4.19249
+      ],
+      "elbowFlexDeg": [
+        83.93202,
+        85.0742
+      ],
+      "hipDriftM": 0.003
+    },
+    {
+      "id": "fentes",
+      "samples": 361,
+      "duration": 6,
+      "support": {
+        "R_Forearm": {
+          "min": 1.00587,
+          "max": 1.01719
+        },
+        "R_Hand": {
+          "min": 0.91451,
+          "max": 0.96474
+        },
+        "R_Digits": {
+          "min": 0.91451,
+          "max": 0.96474
+        },
+        "R_Palm": {
+          "min": 0.95669,
+          "max": 0.97806
+        },
+        "R_Thigh": {
+          "min": 0.23709,
+          "max": 0.50562
+        },
+        "L_Forearm": {
+          "min": 1.00587,
+          "max": 1.01719
+        },
+        "L_Hand": {
+          "min": 0.91451,
+          "max": 0.96474
+        },
+        "L_Digits": {
+          "min": 0.91451,
+          "max": 0.96474
+        },
+        "L_Palm": {
+          "min": 0.95669,
+          "max": 0.97806
+        },
+        "L_Thigh": {
+          "min": 0.46177,
+          "max": 0.52588
+        },
+        "R_Calf": {
+          "min": 0.1127,
+          "max": 0.20489
+        },
+        "R_Foot": {
+          "min": -0.05201,
+          "max": 0.00579
+        },
+        "L_Calf": {
+          "min": 0.11594,
+          "max": 0.16676
+        },
+        "L_Foot": {
+          "min": 0.00284,
+          "max": 0.05407
+        }
+      },
+      "loopErrorM": 0,
+      "maxJointSpeedMS": 0.69159,
+      "maxPlantedStepM": 0.00161,
+      "kneeFlexDeg": [
+        1.68804,
+        72.69405
+      ],
+      "elbowFlexDeg": [
+        81.00134,
+        130.99447
+      ],
+      "hipDriftM": 0.23
+    },
+    {
+      "id": "jumpingjacks",
+      "samples": 145,
+      "duration": 2.4000000953674316,
+      "support": {
+        "R_Forearm": {
+          "min": 0.93812,
+          "max": 1.68974
+        },
+        "R_Hand": {
+          "min": 0.78659,
+          "max": 1.958
+        },
+        "R_Digits": {
+          "min": 0.78659,
+          "max": 1.97378
+        },
+        "R_Palm": {
+          "min": 0.8456,
+          "max": 1.958
+        },
+        "R_Thigh": {
+          "min": 0.49202,
+          "max": 0.56016
+        },
+        "L_Forearm": {
+          "min": 0.93812,
+          "max": 1.68974
+        },
+        "L_Hand": {
+          "min": 0.78659,
+          "max": 1.958
+        },
+        "L_Digits": {
+          "min": 0.78659,
+          "max": 1.97378
+        },
+        "L_Palm": {
+          "min": 0.8456,
+          "max": 1.958
+        },
+        "L_Thigh": {
+          "min": 0.49202,
+          "max": 0.56016
+        },
+        "R_Calf": {
+          "min": 0.12676,
+          "max": 0.20367
+        },
+        "R_Foot": {
+          "min": 0.00297,
+          "max": 0.08327
+        },
+        "L_Calf": {
+          "min": 0.12676,
+          "max": 0.20367
+        },
+        "L_Foot": {
+          "min": 0.00297,
+          "max": 0.08327
+        }
+      },
+      "loopErrorM": 0,
+      "maxJointSpeedMS": 4.13848,
+      "maxPlantedStepM": 0.00067,
+      "kneeFlexDeg": [
+        1.66121,
+        7.34118
+      ],
+      "elbowFlexDeg": [
+        5.32797,
+        70.82573
+      ],
+      "hipDriftM": 0.07
+    },
+    {
+      "id": "mountainclimber",
+      "samples": 181,
+      "duration": 3,
+      "support": {
+        "R_Forearm": {
+          "min": 0.06571,
+          "max": 0.06592
+        },
+        "R_Hand": {
+          "min": 0.0086,
+          "max": 0.0086
+        },
+        "R_Digits": {
+          "min": 0.0086,
+          "max": 0.0086
+        },
+        "R_Palm": {
+          "min": 0.04145,
+          "max": 0.04145
+        },
+        "R_Thigh": {
+          "min": -0.05094,
+          "max": 0.17947
+        },
+        "L_Forearm": {
+          "min": 0.06571,
+          "max": 0.06592
+        },
+        "L_Hand": {
+          "min": 0.0086,
+          "max": 0.0086
+        },
+        "L_Digits": {
+          "min": 0.0086,
+          "max": 0.0086
+        },
+        "L_Palm": {
+          "min": 0.04145,
+          "max": 0.04145
+        },
+        "L_Thigh": {
+          "min": -0.04818,
+          "max": 0.17567
+        },
+        "R_Calf": {
+          "min": -0.04306,
+          "max": 0.1456
+        },
+        "R_Foot": {
+          "min": -0.04828,
+          "max": 0.08164
+        },
+        "L_Calf": {
+          "min": -0.04064,
+          "max": 0.14503
+        },
+        "L_Foot": {
+          "min": -0.04828,
+          "max": 0.08164
+        }
+      },
+      "loopErrorM": 0,
+      "maxJointSpeedMS": 3.68745,
+      "maxPlantedStepM": 0.03076,
+      "kneeFlexDeg": [
+        1.81541,
+        153.3733
+      ],
+      "elbowFlexDeg": [
+        73.93754,
+        75.87916
+      ],
+      "hipDriftM": 0.003
+    },
+    {
+      "id": "etirementdos",
+      "samples": 481,
+      "duration": 8,
+      "support": {
+        "R_Forearm": {
+          "min": 1.49122,
+          "max": 1.50809
+        },
+        "R_Hand": {
+          "min": 1.59688,
+          "max": 1.59918
+        },
+        "R_Digits": {
+          "min": 1.6019,
+          "max": 1.61239
+        },
+        "R_Palm": {
+          "min": 1.59688,
+          "max": 1.59918
+        },
+        "R_Thigh": {
+          "min": 0.47142,
+          "max": 0.49079
+        },
+        "L_Forearm": {
+          "min": 1.49122,
+          "max": 1.50809
+        },
+        "L_Hand": {
+          "min": 1.59688,
+          "max": 1.59919
+        },
+        "L_Digits": {
+          "min": 1.6019,
+          "max": 1.61239
+        },
+        "L_Palm": {
+          "min": 1.59688,
+          "max": 1.59919
+        },
+        "L_Thigh": {
+          "min": 0.47142,
+          "max": 0.49079
+        },
+        "R_Calf": {
+          "min": 0.1263,
+          "max": 0.12857
+        },
+        "R_Foot": {
+          "min": 0.00301,
+          "max": 0.00301
+        },
+        "L_Calf": {
+          "min": 0.1263,
+          "max": 0.12857
+        },
+        "L_Foot": {
+          "min": 0.00301,
+          "max": 0.00301
+        }
+      },
+      "loopErrorM": 0,
+      "maxJointSpeedMS": 0.09564,
+      "maxPlantedStepM": 0,
+      "kneeFlexDeg": [
+        3.314,
+        36.58318
+      ],
+      "elbowFlexDeg": [
+        91.21354,
+        95.88158
+      ],
+      "hipDriftM": 0.04
+    },
+    {
+      "id": "mobiliteepaules",
+      "samples": 361,
+      "duration": 6,
+      "support": {
+        "R_Forearm": {
+          "min": 1.0225,
+          "max": 1.51536
+        },
+        "R_Hand": {
+          "min": 0.92044,
+          "max": 1.7638
+        },
+        "R_Digits": {
+          "min": 0.92044,
+          "max": 1.80019
+        },
+        "R_Palm": {
+          "min": 0.95686,
+          "max": 1.7638
+        },
+        "R_Thigh": {
+          "min": 0.49079,
+          "max": 0.49079
+        },
+        "L_Forearm": {
+          "min": 1.0225,
+          "max": 1.51536
+        },
+        "L_Hand": {
+          "min": 0.92044,
+          "max": 1.7638
+        },
+        "L_Digits": {
+          "min": 0.92044,
+          "max": 1.80019
+        },
+        "L_Palm": {
+          "min": 0.95686,
+          "max": 1.7638
+        },
+        "L_Thigh": {
+          "min": 0.49079,
+          "max": 0.49079
+        },
+        "R_Calf": {
+          "min": 0.12661,
+          "max": 0.12661
+        },
+        "R_Foot": {
+          "min": 0.00301,
+          "max": 0.00301
+        },
+        "L_Calf": {
+          "min": 0.12661,
+          "max": 0.12661
+        },
+        "L_Foot": {
+          "min": 0.00301,
+          "max": 0.00301
+        }
+      },
+      "loopErrorM": 0,
+      "maxJointSpeedMS": 0.79911,
+      "maxPlantedStepM": 0,
+      "kneeFlexDeg": [
+        3.31389,
+        3.31531
+      ],
+      "elbowFlexDeg": [
+        87.28828,
+        106.26232
+      ],
+      "hipDriftM": 0
+    }
+  ],
+  "failures": [
+    "pompes: skin penetrates ground",
+    "pompes: hand loses ground contact",
+    "pompes: palm loses ground contact",
+    "pompes: hand loses ground contact",
+    "pompes: palm loses ground contact",
+    "gainage: skin penetrates ground",
+    "gainage: hand loses ground contact",
+    "gainage: palm loses ground contact",
+    "gainage: hand loses ground contact",
+    "gainage: palm loses ground contact",
+    "gainage: pelvis oscillates",
+    "gainage: forearm loses support",
+    "gainage: forearm loses support",
+    "fentes: skin penetrates ground",
+    "fentes: missing left/right alternation",
+    "fentes: front foot is not anchored",
+    "mountainclimber: skin penetrates ground",
+    "mountainclimber: planted support drift",
+    "mountainclimber: knee flexion guardrail",
+    "mountainclimber: hand loses ground contact",
+    "mountainclimber: palm loses ground contact",
+    "mountainclimber: hand loses ground contact",
+    "mountainclimber: palm loses ground contact",
+    "mountainclimber: climber pelvis oscillates"
+  ],
+  "status": "FAIL"
+}

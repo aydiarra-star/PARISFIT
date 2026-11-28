@@ -1,0 +1,26 @@
+[
+  {
+    "id": "14_14",
+    "blob": "15e27a816e0aa7089a86372c04ba402a692a2218",
+    "sha256": "d73c71b652e09d133e06d7a0a71d27a53cbb5cc7bb16eb154a69e2cb1c3cd783",
+    "bytes": 3500080,
+    "provenance": "CMU converted BVH, mirror commit09a07f54f3bbb58797325f009282d0b2048a2871",
+    "selection": "screening only, NOT qualified reference"
+  },
+  {
+    "id": "13_30",
+    "blob": "921fe6c8e8041ae45281bf232e58cb3299285d05",
+    "sha256": "00d597df6c2aae9a16b5261c40907c169d95f7810f244ac0738b021adbca84d4",
+    "bytes": 1859333,
+    "provenance": "CMU converted BVH, mirror commit09a07f54f3bbb58797325f009282d0b2048a2871",
+    "selection": "screening only, NOT qualified reference"
+  },
+  {
+    "id": "86_08",
+    "blob": "690242fca4f3545caf671f968f37cc6e03bb1762",
+    "sha256": "4451bbe16e6c8e55897a9cb0fee887b02167a1b5b1001f248ff4c852559114cc",
+    "bytes": 7004284,
+    "provenance": "CMU converted BVH, mirror commit09a07f54f3bbb58797325f009282d0b2048a2871",
+    "selection": "screening only, NOT qualified reference"
+  }
+]

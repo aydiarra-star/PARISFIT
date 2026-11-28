@@ -1,0 +1,111 @@
+{
+  "home": {
+    "initial": {
+      "score": "92/100",
+      "scoreNote": "Démonstration · score non mesuré",
+      "energy": "Pleine",
+      "energyNote": "Exemple · évalue ton énergie",
+      "water": "0%",
+      "quote": "« La discipline est la clé d’une liberté durable. »",
+      "storage": null,
+      "palette": {
+        "--g": "#07573e",
+        "--g2": "#07875d",
+        "--orange": "#f1a05b",
+        "--bg": "#edf3ee"
+      }
+    },
+    "realOverridesIllustration": true,
+    "widths": [
+      {
+        "width": 320,
+        "noHorizontalOverflow": true,
+        "navigation": true,
+        "cardBounds": true
+      },
+      {
+        "width": 375,
+        "noHorizontalOverflow": true,
+        "navigation": true,
+        "cardBounds": true
+      },
+      {
+        "width": 390,
+        "noHorizontalOverflow": true,
+        "navigation": true,
+        "cardBounds": true
+      },
+      {
+        "width": 430,
+        "noHorizontalOverflow": true,
+        "navigation": true,
+        "cardBounds": true
+      },
+      {
+        "width": 720,
+        "noHorizontalOverflow": true,
+        "navigation": true,
+        "cardBounds": true
+      },
+      {
+        "width": 768,
+        "noHorizontalOverflow": true,
+        "navigation": true,
+        "cardBounds": true
+      },
+      {
+        "width": 1024,
+        "noHorizontalOverflow": true,
+        "navigation": true,
+        "cardBounds": true
+      },
+      {
+        "width": 1440,
+        "noHorizontalOverflow": true,
+        "navigation": true,
+        "cardBounds": true
+      }
+    ],
+    "errors": []
+  },
+  "cache": {
+    "warmShellOffline": {
+      "reload": true,
+      "images": true,
+      "interactions": true,
+      "storagePreserved": true
+    },
+    "coldCoachOffline": "fallback/retry visible; GLB not pre-cached",
+    "warmCoachOffline": true,
+    "failedUpdate": {
+      "workerState": "redundant",
+      "previousShellStillWorks": true,
+      "keys": [
+        "parisfit-shell-v10",
+        "parisfit-shell-stale-audit",
+        "unrelated-audit",
+        "parisfit-shell-audit-broken"
+      ]
+    },
+    "updateObservedKeys": [
+      "unrelated-audit",
+      "parisfit-shell-audit-v11"
+    ],
+    "successfulUpdate": {
+      "cacheKeys": [
+        "unrelated-audit",
+        "parisfit-shell-audit-v11"
+      ],
+      "oldShellRemoved": true,
+      "unrelatedCachePreserved": true,
+      "offlineReload": true,
+      "localStoragePreserved": true
+    }
+  },
+  "limitations": [
+    "Chromium emulation, not physical phones",
+    "Lifecycle update tested on isolated no-store server, not deployed hosting",
+    "No new motion or biomechanical approval"
+  ],
+  "status": "PASS"
+}

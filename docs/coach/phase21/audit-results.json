@@ -1,0 +1,76 @@
+{
+  "reference": "5eeb144aaa1c1f47f956776fa5a6dc1c1425fd9a",
+  "scope": "all seven files of phase20/external, internal source comparisons and reference Git blobs; no binary source processing",
+  "manifest": {
+    "README.md": "d59aebf7d8c901f0c84c7be1e06520b2d5d8c66396718d53c6a1af9d247c6d6d",
+    "evidence-and-claims-matrix.csv": "ab0fbaba0180caf758a17dc7cf16c1993c988e61b7b7452f0a65a17fe107bbf1",
+    "expert-preliminary-dossier.md": "5b8df2f682a42fffc098a8645edea6c71764511e81ceddb4e3c0b66510b74ffd",
+    "expert-questionnaire-final.md": "a21d4347d86f3817dd54f4d85c42b3292ceefeeb1b7fe268a61a9b63240e1aaf",
+    "expert-response-template.json": "1e0218bdec2042e105f91fcdaa4fedb5bb9931e519623c41ffd368725a9fbb00",
+    "minimal-evidence.json": "d787fd29574490e2315db86e62fbf3dbece44078b0d9dc63a8fbf4de7b51d9b5"
+  },
+  "equivalence": {
+    "expert-preliminary-dossier.md": "exact after documented URL/navigation substitutions",
+    "expert-questionnaire-final.md": "exact after documented URL/navigation substitutions",
+    "evidence-and-claims-matrix.csv": "exact after documented URL/navigation substitutions",
+    "expert-response-template.json": "exact after documented URL/navigation substitutions"
+  },
+  "findings": [],
+  "sensitivePatternCounts": {
+    "token": 0,
+    "signed_url": 0,
+    "private_key": 0,
+    "windows_profile": 0,
+    "email": 0
+  },
+  "extensions": [
+    ".csv",
+    ".json",
+    ".md"
+  ],
+  "pinnedReferences": [
+    "phase14/DECISION.md",
+    "phase15/SCALING.md",
+    "phase16/scaling-factors-audit.md",
+    "phase17/configuration-inspection.json",
+    "phase17/ground-reaction-forces-audit.md",
+    "phase17/mapping-status.json",
+    "phase17/marker-anatomical-mapping.csv",
+    "phase17/markerset-schematic.svg",
+    "phase17/rms-scaling-error-analysis.md",
+    "phase17/scaling-ik-configuration-audit.md",
+    "phase17/selected-squat-trial.md",
+    "phase17/source-excerpts.md",
+    "phase17/source-manifest.json",
+    "phase18/animation-admission-criteria.md",
+    "phase18/c3d-independent-byte-audit.json",
+    "phase18/c3d-integrity-and-timing.md",
+    "phase18/marker-review-register.csv",
+    "phase19/ab01-original-logs-inventory.md",
+    "phase19/archive-probe.json",
+    "phase19/capture-synchronization-evidence.md",
+    "phase19/dependency-version-inventory.md",
+    "phase19/local-and-preserved-inventory.json",
+    "phase19/marker-placement-evidence.md",
+    "phase19/missing-evidence-register.csv",
+    "phase19/preservation-check.json"
+  ],
+  "minimalEvidence": "log hash and selected line contents agree; external text explicitly summarized, not verbatim",
+  "markerDefinitions": {
+    "total": 57,
+    "confirmed": 44,
+    "plausible": 13,
+    "scope": "documentary definitions, not physical placement or centres"
+  },
+  "preservation": {
+    "referenceTrackedFiles": 836,
+    "changed": [],
+    "rocketboxSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb"
+  },
+  "limitations": [
+    "Pattern scan not a comprehensive security certification",
+    "Linked internal evidence not bundled: access and minimization must be approved before sharing",
+    "Article license distinct from dataset: see submission-addendum.md",
+    "No recipient identity or access verified; none selected"
+  ]
+}

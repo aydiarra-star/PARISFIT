@@ -1,0 +1,34 @@
+[
+  {
+    "archive": ".cache/phase26-work/backups/project.tar.gz",
+    "createdAtObservedUTC": "2026-11-28T11:27:42.589162+00:00",
+    "bytes": 49301585,
+    "fileCount": 972,
+    "sha256": "7024251fceed7563faf5c68a9b683b97d444be9a362e8c407a47132827cc2577",
+    "restore": "PASS",
+    "restoredFileCount": 972
+  },
+  {
+    "archive": ".cache/phase26-work/backups/working-data.tar.gz",
+    "createdAtObservedUTC": "2026-11-28T11:27:44.949907+00:00",
+    "bytes": 307746695,
+    "fileCount": 811,
+    "sha256": "7f103cf14e4074557251c9bcb53286ae565f8aaaa3e3aeccc86fc4f52be793f0",
+    "restore": "PASS",
+    "restoredFileCount": 811
+  },
+  {
+    "archive": ".cache/phase26-work/backups/history.bundle",
+    "createdAtObservedUTC": "2026-11-28T11:27:57.022761+00:00",
+    "bytes": 30951764,
+    "fileCount": 901,
+    "fileCountMeaning": "files at HEAD; full history measured separately in objects and path versions",
+    "sha256": "bd132c42272e2a8a450a802493281579cb74aa98daba7f1867763284ef37e217",
+    "restore": "PASS",
+    "refsIncludingHEAD": 29,
+    "commits": 158,
+    "gitObjectsVerified": 1779,
+    "gitBlobsVerified": 1135,
+    "indexPackStrict": "pack\te011644097755ed895280cc18f678fc86262d920"
+  }
+]

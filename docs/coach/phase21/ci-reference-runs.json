@@ -1,0 +1,551 @@
+{
+  "reference": "5eeb144aaa1c1f47f956776fa5a6dc1c1425fd9a",
+  "total_count": 3,
+  "runs": [
+    {
+      "id": 46129783002,
+      "head_sha": "5eeb144aaa1c1f47f956776fa5a6dc1c1425fd9a",
+      "name": "PARISFIT — passive review contracts",
+      "event": "pull_request",
+      "run_attempt": 1,
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/aydiarra-star/PARISFIT/actions/runs/46129783002",
+      "updated_at": "2026-11-28T09:17:56Z",
+      "jobs": [
+        {
+          "id": 140932187890,
+          "run_id": 46129783002,
+          "workflow_name": "PARISFIT — passive review contracts",
+          "head_branch": "arena/a03f64da-parisfit",
+          "run_url": "https://api.github.com/repos/aydiarra-star/PARISFIT/actions/runs/46129783002",
+          "run_attempt": 1,
+          "node_id": "CR_kwDOV9wYwM8AAAAg0DaG8g",
+          "head_sha": "5eeb144aaa1c1f47f956776fa5a6dc1c1425fd9a",
+          "url": "https://api.github.com/repos/aydiarra-star/PARISFIT/actions/jobs/140932187890",
+          "html_url": "https://github.com/aydiarra-star/PARISFIT/actions/runs/46129783002/job/140932187890",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-11-28T09:17:37Z",
+          "started_at": "2026-11-28T09:17:38Z",
+          "completed_at": "2026-11-28T09:17:56Z",
+          "name": "passive-contracts",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1,
+              "started_at": "2026-11-28T09:17:39Z",
+              "completed_at": "2026-11-28T09:17:41Z"
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2,
+              "started_at": "2026-11-28T09:17:41Z",
+              "completed_at": "2026-11-28T09:17:46Z"
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3,
+              "started_at": "2026-11-28T09:17:46Z",
+              "completed_at": "2026-11-28T09:17:46Z"
+            },
+            {
+              "name": "Install numerical fixture dependency only",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4,
+              "started_at": "2026-11-28T09:17:46Z",
+              "completed_at": "2026-11-28T09:17:53Z"
+            },
+            {
+              "name": "Preserved assertions on documents and synthetic fixtures, no source processing",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5,
+              "started_at": "2026-11-28T09:17:53Z",
+              "completed_at": "2026-11-28T09:17:54Z"
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 9,
+              "started_at": "2026-11-28T09:17:54Z",
+              "completed_at": "2026-11-28T09:17:54Z"
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 10,
+              "started_at": "2026-11-28T09:17:54Z",
+              "completed_at": "2026-11-28T09:17:54Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 11,
+              "started_at": "2026-11-28T09:17:54Z",
+              "completed_at": "2026-11-28T09:17:54Z"
+            }
+          ],
+          "check_run_url": "https://api.github.com/repos/aydiarra-star/PARISFIT/check-runs/140932187890",
+          "labels": [
+            "ubuntu-24.04"
+          ],
+          "runner_id": 1000025639,
+          "runner_name": "GitHub Actions 1000025639",
+          "runner_group_id": 0,
+          "runner_group_name": "GitHub Actions",
+          "annotationSummary": [
+            {
+              "level": "warning",
+              "title": "",
+              "kind": "check annotation",
+              "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 46129783004,
+      "head_sha": "5eeb144aaa1c1f47f956776fa5a6dc1c1425fd9a",
+      "name": "PARISFIT — passive evidence only",
+      "event": "pull_request",
+      "run_attempt": 1,
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/aydiarra-star/PARISFIT/actions/runs/46129783004",
+      "updated_at": "2026-11-28T09:18:43Z",
+      "jobs": [
+        {
+          "id": 140932187758,
+          "run_id": 46129783004,
+          "workflow_name": "PARISFIT — passive evidence only",
+          "head_branch": "arena/a03f64da-parisfit",
+          "run_url": "https://api.github.com/repos/aydiarra-star/PARISFIT/actions/runs/46129783004",
+          "run_attempt": 1,
+          "node_id": "CR_kwDOV9wYwM8AAAAg0DaGbg",
+          "head_sha": "5eeb144aaa1c1f47f956776fa5a6dc1c1425fd9a",
+          "url": "https://api.github.com/repos/aydiarra-star/PARISFIT/actions/jobs/140932187758",
+          "html_url": "https://github.com/aydiarra-star/PARISFIT/actions/runs/46129783004/job/140932187758",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-11-28T09:17:37Z",
+          "started_at": "2026-11-28T09:17:39Z",
+          "completed_at": "2026-11-28T09:18:42Z",
+          "name": "public-archive-metadata",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1,
+              "started_at": "2026-11-28T09:17:40Z",
+              "completed_at": "2026-11-28T09:17:41Z"
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2,
+              "started_at": "2026-11-28T09:17:41Z",
+              "completed_at": "2026-11-28T09:17:43Z"
+            },
+            {
+              "name": "Read bounded public ZIP indexes and selected text, never execute contents",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3,
+              "started_at": "2026-11-28T09:17:43Z",
+              "completed_at": "2026-11-28T09:18:39Z"
+            },
+            {
+              "name": "Record passive runner versions",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4,
+              "started_at": "2026-11-28T09:18:39Z",
+              "completed_at": "2026-11-28T09:18:39Z"
+            },
+            {
+              "name": "Run actions/upload-artifact@v4",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5,
+              "started_at": "2026-11-28T09:18:39Z",
+              "completed_at": "2026-11-28T09:18:40Z"
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 10,
+              "started_at": "2026-11-28T09:18:40Z",
+              "completed_at": "2026-11-28T09:18:40Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 11,
+              "started_at": "2026-11-28T09:18:40Z",
+              "completed_at": "2026-11-28T09:18:40Z"
+            }
+          ],
+          "check_run_url": "https://api.github.com/repos/aydiarra-star/PARISFIT/check-runs/140932187758",
+          "labels": [
+            "ubuntu-24.04"
+          ],
+          "runner_id": 1000025638,
+          "runner_name": "GitHub Actions 1000025638",
+          "runner_group_id": 0,
+          "runner_group_name": "GitHub Actions",
+          "annotationSummary": [
+            {
+              "level": "warning",
+              "title": "",
+              "kind": "check annotation",
+              "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/"
+            },
+            {
+              "level": "notice",
+              "title": "phase19-runner",
+              "kind": "check annotation",
+              "message": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]; Linux-7.0.0-1020-azure-x86_64-with-glibc2.39"
+            },
+            {
+              "level": "warning",
+              "title": "phase19-archive-7",
+              "kind": "encoded archive evidence (not duplicated)",
+              "message": null
+            },
+            {
+              "level": "warning",
+              "title": "phase19-archive-6",
+              "kind": "encoded archive evidence (not duplicated)",
+              "message": null
+            },
+            {
+              "level": "warning",
+              "title": "phase19-archive-5",
+              "kind": "encoded archive evidence (not duplicated)",
+              "message": null
+            },
+            {
+              "level": "warning",
+              "title": "phase19-archive-4",
+              "kind": "encoded archive evidence (not duplicated)",
+              "message": null
+            },
+            {
+              "level": "warning",
+              "title": "phase19-archive-3",
+              "kind": "encoded archive evidence (not duplicated)",
+              "message": null
+            },
+            {
+              "level": "warning",
+              "title": "phase19-archive-2",
+              "kind": "encoded archive evidence (not duplicated)",
+              "message": null
+            },
+            {
+              "level": "warning",
+              "title": "phase19-archive-1",
+              "kind": "encoded archive evidence (not duplicated)",
+              "message": null
+            },
+            {
+              "level": "warning",
+              "title": "phase19-archive-0",
+              "kind": "encoded archive evidence (not duplicated)",
+              "message": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 46129783038,
+      "head_sha": "5eeb144aaa1c1f47f956776fa5a6dc1c1425fd9a",
+      "name": "PARISFIT — validation du socle",
+      "event": "pull_request",
+      "run_attempt": 1,
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/aydiarra-star/PARISFIT/actions/runs/46129783038",
+      "updated_at": "2026-11-28T09:21:59Z",
+      "jobs": [
+        {
+          "id": 140932187634,
+          "run_id": 46129783038,
+          "workflow_name": "PARISFIT — validation du socle",
+          "head_branch": "arena/a03f64da-parisfit",
+          "run_url": "https://api.github.com/repos/aydiarra-star/PARISFIT/actions/runs/46129783038",
+          "run_attempt": 1,
+          "node_id": "CR_kwDOV9wYwM8AAAAg0DaF8g",
+          "head_sha": "5eeb144aaa1c1f47f956776fa5a6dc1c1425fd9a",
+          "url": "https://api.github.com/repos/aydiarra-star/PARISFIT/actions/jobs/140932187634",
+          "html_url": "https://github.com/aydiarra-star/PARISFIT/actions/runs/46129783038/job/140932187634",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-11-28T09:17:37Z",
+          "started_at": "2026-11-28T09:17:38Z",
+          "completed_at": "2026-11-28T09:21:59Z",
+          "name": "validate",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1,
+              "started_at": "2026-11-28T09:17:39Z",
+              "completed_at": "2026-11-28T09:17:40Z"
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2,
+              "started_at": "2026-11-28T09:17:40Z",
+              "completed_at": "2026-11-28T09:17:42Z"
+            },
+            {
+              "name": "Run actions/setup-node@v4",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3,
+              "started_at": "2026-11-28T09:17:42Z",
+              "completed_at": "2026-11-28T09:17:43Z"
+            },
+            {
+              "name": "Vérifier la syntaxe JavaScript",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4,
+              "started_at": "2026-11-28T09:17:43Z",
+              "completed_at": "2026-11-28T09:17:44Z"
+            },
+            {
+              "name": "Vérifier le manifeste PWA",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5,
+              "started_at": "2026-11-28T09:17:44Z",
+              "completed_at": "2026-11-28T09:17:44Z"
+            },
+            {
+              "name": "Vérifier les fichiers essentiels et les quatre vues",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 6,
+              "started_at": "2026-11-28T09:17:44Z",
+              "completed_at": "2026-11-28T09:17:44Z"
+            },
+            {
+              "name": "Install browser test tools",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 7,
+              "started_at": "2026-11-28T09:17:44Z",
+              "completed_at": "2026-11-28T09:17:46Z"
+            },
+            {
+              "name": "Install Chromium",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 8,
+              "started_at": "2026-11-28T09:17:46Z",
+              "completed_at": "2026-11-28T09:18:03Z"
+            },
+            {
+              "name": "Browser regression and 3D tests",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 9,
+              "started_at": "2026-11-28T09:18:03Z",
+              "completed_at": "2026-11-28T09:21:55Z"
+            },
+            {
+              "name": "Preserve browser failure diagnostics",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 10,
+              "started_at": "2026-11-28T09:21:55Z",
+              "completed_at": "2026-11-28T09:21:55Z"
+            },
+            {
+              "name": "Keep review screenshots",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 11,
+              "started_at": "2026-11-28T09:21:55Z",
+              "completed_at": "2026-11-28T09:21:56Z"
+            },
+            {
+              "name": "Post Run actions/setup-node@v4",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 21,
+              "started_at": "2026-11-28T09:21:56Z",
+              "completed_at": "2026-11-28T09:21:56Z"
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 22,
+              "started_at": "2026-11-28T09:21:56Z",
+              "completed_at": "2026-11-28T09:21:57Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 23,
+              "started_at": "2026-11-28T09:21:57Z",
+              "completed_at": "2026-11-28T09:21:57Z"
+            }
+          ],
+          "check_run_url": "https://api.github.com/repos/aydiarra-star/PARISFIT/check-runs/140932187634",
+          "labels": [
+            "ubuntu-latest"
+          ],
+          "runner_id": 1000025637,
+          "runner_name": "GitHub Actions 1000025637",
+          "runner_group_id": 0,
+          "runner_group_name": "GitHub Actions",
+          "annotationSummary": [
+            {
+              "level": "warning",
+              "title": "",
+              "kind": "check annotation",
+              "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/"
+            }
+          ]
+        },
+        {
+          "id": 140932188683,
+          "run_id": 46129783038,
+          "workflow_name": "PARISFIT — validation du socle",
+          "head_branch": "arena/a03f64da-parisfit",
+          "run_url": "https://api.github.com/repos/aydiarra-star/PARISFIT/actions/runs/46129783038",
+          "run_attempt": 1,
+          "node_id": "CR_kwDOV9wYwM8AAAAg0DaKCw",
+          "head_sha": "5eeb144aaa1c1f47f956776fa5a6dc1c1425fd9a",
+          "url": "https://api.github.com/repos/aydiarra-star/PARISFIT/actions/jobs/140932188683",
+          "html_url": "https://github.com/aydiarra-star/PARISFIT/actions/runs/46129783038/job/140932188683",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-28T09:17:37Z",
+          "started_at": "2026-11-28T09:17:37Z",
+          "completed_at": "2026-11-28T09:17:36Z",
+          "name": "source-qualification",
+          "steps": [],
+          "check_run_url": "https://api.github.com/repos/aydiarra-star/PARISFIT/check-runs/140932188683",
+          "labels": [
+            "ubuntu-24.04"
+          ],
+          "runner_id": null,
+          "runner_name": null,
+          "runner_group_id": null,
+          "runner_group_name": null,
+          "annotationSummary": []
+        },
+        {
+          "id": 140932188755,
+          "run_id": 46129783038,
+          "workflow_name": "PARISFIT — validation du socle",
+          "head_branch": "arena/a03f64da-parisfit",
+          "run_url": "https://api.github.com/repos/aydiarra-star/PARISFIT/actions/runs/46129783038",
+          "run_attempt": 1,
+          "node_id": "CR_kwDOV9wYwM8AAAAg0DaKUw",
+          "head_sha": "5eeb144aaa1c1f47f956776fa5a6dc1c1425fd9a",
+          "url": "https://api.github.com/repos/aydiarra-star/PARISFIT/actions/jobs/140932188755",
+          "html_url": "https://github.com/aydiarra-star/PARISFIT/actions/runs/46129783038/job/140932188755",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-28T09:17:37Z",
+          "started_at": "2026-11-28T09:17:37Z",
+          "completed_at": "2026-11-28T09:17:36Z",
+          "name": "michaud-qualification",
+          "steps": [],
+          "check_run_url": "https://api.github.com/repos/aydiarra-star/PARISFIT/check-runs/140932188755",
+          "labels": [
+            "ubuntu-24.04"
+          ],
+          "runner_id": null,
+          "runner_name": null,
+          "runner_group_id": null,
+          "runner_group_name": null,
+          "annotationSummary": []
+        },
+        {
+          "id": 140932188848,
+          "run_id": 46129783038,
+          "workflow_name": "PARISFIT — validation du socle",
+          "head_branch": "arena/a03f64da-parisfit",
+          "run_url": "https://api.github.com/repos/aydiarra-star/PARISFIT/actions/runs/46129783038",
+          "run_attempt": 1,
+          "node_id": "CR_kwDOV9wYwM8AAAAg0DaKsA",
+          "head_sha": "5eeb144aaa1c1f47f956776fa5a6dc1c1425fd9a",
+          "url": "https://api.github.com/repos/aydiarra-star/PARISFIT/actions/jobs/140932188848",
+          "html_url": "https://github.com/aydiarra-star/PARISFIT/actions/runs/46129783038/job/140932188848",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-28T09:17:37Z",
+          "started_at": "2026-11-28T09:17:37Z",
+          "completed_at": "2026-11-28T09:17:36Z",
+          "name": "blender-control",
+          "steps": [],
+          "check_run_url": "https://api.github.com/repos/aydiarra-star/PARISFIT/check-runs/140932188848",
+          "labels": [
+            "ubuntu-24.04"
+          ],
+          "runner_id": null,
+          "runner_name": null,
+          "runner_group_id": null,
+          "runner_group_name": null,
+          "annotationSummary": []
+        },
+        {
+          "id": 140932189062,
+          "run_id": 46129783038,
+          "workflow_name": "PARISFIT — validation du socle",
+          "head_branch": "arena/a03f64da-parisfit",
+          "run_url": "https://api.github.com/repos/aydiarra-star/PARISFIT/actions/runs/46129783038",
+          "run_attempt": 1,
+          "node_id": "CR_kwDOV9wYwM8AAAAg0DaLhg",
+          "head_sha": "5eeb144aaa1c1f47f956776fa5a6dc1c1425fd9a",
+          "url": "https://api.github.com/repos/aydiarra-star/PARISFIT/actions/jobs/140932189062",
+          "html_url": "https://github.com/aydiarra-star/PARISFIT/actions/runs/46129783038/job/140932189062",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-28T09:17:37Z",
+          "started_at": "2026-11-28T09:17:37Z",
+          "completed_at": "2026-11-28T09:17:36Z",
+          "name": "model-qualification",
+          "steps": [],
+          "check_run_url": "https://api.github.com/repos/aydiarra-star/PARISFIT/check-runs/140932189062",
+          "labels": [
+            "ubuntu-24.04"
+          ],
+          "runner_id": null,
+          "runner_name": null,
+          "runner_group_id": null,
+          "runner_group_name": null,
+          "annotationSummary": []
+        }
+      ]
+    }
+  ]
+}

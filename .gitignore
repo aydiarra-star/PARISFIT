@@ -1,3 +1,6 @@
 node_modules/
 .venv/
 .cache/
+# Regenerable Python bytecode is not an audit source or a backup.
+__pycache__/
+*.py[cod]

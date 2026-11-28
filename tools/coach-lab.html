@@ -1,0 +1,36 @@
+<!doctype html><meta charset="utf-8"><title>PARISFIT · laboratoire de revue, pas une validation sportive</title>
+<style>body{margin:0}canvas{display:block}</style>
+<script type="module">
+import * as T from '../vendor/three/three.module.js';
+import {GLTFLoader} from '../vendor/three/loaders/GLTFLoader.js';
+const source=new URLSearchParams(location.search).get('model')||'../assets/coach/coach.glb';
+const gltf=await new GLTFLoader().loadAsync(source),model=gltf.scene;
+const transitions=new URLSearchParams(location.search).get('transitions');
+if(transitions){const r=await fetch(transitions);if(!r.ok)throw Error('Transition load failed');gltf.animations=(await r.json()).map((c,i)=>{const clip=T.AnimationClip.parse(c);if(!clip.uuid)clip.uuid='review-clip-'+i+'-'+c.name;return clip;});}
+const scene=new T.Scene();scene.background=new T.Color('#edf5ef');scene.add(model);
+const renderer=new T.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});renderer.setSize(1200,480);renderer.setPixelRatio(1);renderer.outputColorSpace=T.SRGBColorSpace;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.12;renderer.shadowMap.enabled=true;renderer.shadowMap.type=T.PCFSoftShadowMap;document.body.append(renderer.domElement);
+scene.add(new T.HemisphereLight(0xffffff,0x739183,2));const key=new T.DirectionalLight(0xfff4e7,2.6);key.position.set(-2,4,3);key.castShadow=true;key.shadow.mapSize.set(1024,1024);key.shadow.camera.left=-2;key.shadow.camera.right=2;key.shadow.camera.top=3;key.shadow.camera.bottom=-2;key.shadow.normalBias=.008;scene.add(key);const fill=new T.DirectionalLight(0xc8e5ee,1);fill.position.set(2,2,-2);scene.add(fill);
+const floor=new T.Mesh(new T.PlaneGeometry(8,8),new T.MeshStandardMaterial({color:0xe0eae2,roughness:1}));floor.rotation.x=-Math.PI/2;floor.receiveShadow=true;floor.position.y=0;scene.add(floor);
+const bones={},surfaces=[];model.traverse(o=>{if(o.isBone)bones[o.name]=o;if(o.isSkinnedMesh){o.castShadow=true;o.frustumCulled=false;surfaces.push(o)}});
+const mixer=new T.AnimationMixer(model);let action,id;
+const cameras=[new T.PerspectiveCamera(34,400/480,.05,30),new T.PerspectiveCamera(34,400/480,.05,30),new T.PerspectiveCamera(34,400/480,.05,30)];
+const output=document.createElement('canvas');output.width=1200;output.height=512;const ctx=output.getContext('2d');document.body.append(output);
+const parts={};
+// Inspect every vertex significantly weighted to a support bone, not just joint pivots.
+for(const mesh of surfaces){const g=mesh.geometry;for(let i=0;i<g.attributes.position.count;i++){
+ const skin=g.attributes.skinIndex,weight=g.attributes.skinWeight;let best=-1,name='';for(let k=0;k<4;k++){const w=weight.getComponent(i,k);if(w>best){best=w;name=mesh.skeleton.bones[skin.getComponent(i,k)]?.name||'';}}
+ const match=name.match(/Bip01_([LR])_(Foot|Toe\d*|Hand|Finger\d*|Forearm|Calf|Thigh)/);
+ if(match){const part=match[1]+'_'+(match[2].startsWith('Toe')?'Foot':match[2].startsWith('Finger')?'Hand':match[2]);(parts[part]??=[]).push([mesh,i]);if(match[2]==='Hand')(parts[match[1]+'_Palm']??=[]).push([mesh,i]);if(match[2].startsWith('Finger'))(parts[match[1]+'_Digits']??=[]).push([mesh,i]);}
+}}
+const tmp=new T.Vector3();
+function pose(time){action.time=Math.min(action.getClip().duration,time);mixer.update(0);model.updateMatrixWorld(true);surfaces.forEach(m=>m.skeleton.update())}
+window.lab={
+ closeup(time,kind){pose(time);const face=kind==='face',target=bones[face?'Bip01_Head':'Bip01_L_Hand'].getWorldPosition(new T.Vector3());target.add(new T.Vector3(0,face?.06:0,face?.03:.06));const camera=new T.PerspectiveCamera(30,1,.02,10);camera.position.copy(target).add(new T.Vector3(face?0:.08,face?.015:.30,face?.64:.34));camera.lookAt(target);renderer.setSize(640,640);renderer.setScissorTest(false);renderer.setViewport(0,0,640,640);renderer.render(scene,camera);return renderer.domElement.toDataURL('image/jpeg',.94);},
+ surface(time,markers=[]){pose(time);const vertices={};for(const name of ['L_Foot','R_Foot','L_Hand','R_Hand']){vertices[name]=parts[name].map(([m,i])=>{m.getVertexPosition(i,tmp);tmp.applyMatrix4(m.matrixWorld);return {mesh:surfaces.indexOf(m),vertex:i,p:tmp.toArray()};});}const tracked=markers.map(({mesh,vertex})=>{const m=surfaces[mesh];m.getVertexPosition(vertex,tmp);tmp.applyMatrix4(m.matrixWorld);return tmp.toArray()});return {vertices,tracked};},
+ skeleton(time){pose(time);return Object.fromEntries(Object.entries(bones).map(([n,b])=>[n,{position:b.getWorldPosition(new T.Vector3()).toArray(),quaternion:b.getWorldQuaternion(new T.Quaternion()).toArray(),parent:b.parent.isBone?b.parent.name:null}]))},
+ clips:gltf.animations.map(c=>({name:c.name,duration:c.duration})),
+ select(name){id=name;mixer.stopAllAction();action=mixer.clipAction(gltf.animations.find(c=>c.name===name));action.reset();if(transitions||new URLSearchParams(location.search).has('once')){action.setLoop(T.LoopOnce);action.clampWhenFinished=true;}action.play();pose(0);const low=['pompes','gainage','mountainclimber'].includes(id);const y=low?.56:1.02;[[0,y+.26,4.6],[4.6,y+.26,0],[3.3,y+.26,3.3]].forEach((p,i)=>{cameras[i].position.set(...p);cameras[i].lookAt(0,y,0)});},
+ sample(time){pose(time);const joints={};for(const [name,b] of Object.entries(bones))joints[name]=b.getWorldPosition(new T.Vector3()).toArray();const support={};for(const [name,verts] of Object.entries(parts)){let min=Infinity;for(const [m,i] of verts){m.getVertexPosition(i,tmp);tmp.applyMatrix4(m.matrixWorld);min=Math.min(min,tmp.y);}support[name]=min;}return {time,joints,support};},
+ frame(time,label=''){pose(time);renderer.setScissorTest(true);for(let i=0;i<3;i++){renderer.setViewport(i*400,0,400,480);renderer.setScissor(i*400,0,400,480);renderer.render(scene,cameras[i]);}renderer.setScissorTest(false);ctx.fillStyle='#fff';ctx.fillRect(0,0,1200,512);ctx.drawImage(renderer.domElement,0,32);ctx.fillStyle='#164a35';ctx.font='14px sans-serif';['Face','Profil','Trois-quarts'].forEach((v,i)=>ctx.fillText(id+' · '+v+' · '+time.toFixed(2)+' s '+label,i*400+10,22));return output.toDataURL('image/jpeg',.9);}
+};window.ready=true;
+</script>

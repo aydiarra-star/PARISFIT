@@ -1,0 +1,196 @@
+{
+  "criteria": {
+    "version": 1,
+    "scope": "Engineering triage for slow squat control, not clinical limits",
+    "units": "m",
+    "up": "Y",
+    "sampleHz": 60,
+    "maxPenetrationM": 0.003,
+    "maxSupportGapM": 0.005,
+    "maxCandidateFootDriftM": 0.005,
+    "maxSegmentErrorM": 0.0001,
+    "maxJointSpeedMS": 2,
+    "maxJointAccelerationMS2": 20,
+    "maxRotationStepDeg": 10,
+    "maxJointStepM": 0.05,
+    "kneeFlexionRangeDeg": [
+      0,
+      165
+    ],
+    "maxSymmetryDifferenceDeg": 15,
+    "stanceCandidateSpeedMS": 0.08,
+    "stanceCandidateHeightM": 0.015,
+    "symmetryExpected": false,
+    "contactWindowsReviewed": false,
+    "professionalReview": false,
+    "visualReview": false,
+    "fidelityReview": false,
+    "transitionRecoveryReviewed": false
+  },
+  "sampledMeshes": [
+    {
+      "name": "m026_hipoly_81_bones",
+      "vertices": 22560
+    }
+  ],
+  "excludedMeshes": [
+    "Icosphere"
+  ],
+  "status": "REFUSÉ",
+  "runtimeEnabled": false,
+  "samples": 145,
+  "sourceType": "CMU14_06 licensed control NOT PARISFIT capture",
+  "observedModelGeometry": {
+    "maxSurfacePenetrationM": 0.2812106041693443,
+    "maxFootGapM": 0.05371576468707917,
+    "maxCandidateStanceDriftM": 0.005797758648212117,
+    "candidateFrames": {
+      "L": 16,
+      "R": 41
+    },
+    "maxSegmentErrorM": 3.6254855001471853e-07,
+    "maxJointSpeedMS": 1.4518496614336942,
+    "p95JointSpeedMS": 1.0171600402377705,
+    "maxJointAccelerationMS2": 34.030549049342035,
+    "maxRotationStepDeg": 5.717276253783004,
+    "maxAngularSpeedDegS": 343.0365752269803,
+    "maxJointStepM": 0.024197494357228237,
+    "maxPelvisSpeedMS": 0.987531618796789,
+    "maxPelvisAccelerationMS2": 11.162862262657884,
+    "kneeFlexionDeg": {
+      "L": {
+        "min": 29.96999931994074,
+        "max": 154.42801704403158
+      },
+      "R": {
+        "min": 35.33980130063017,
+        "max": 156.70869732839103
+      }
+    },
+    "geometricAngleRangesDeg": {
+      "L_hipProxy": {
+        "min": 97.14096589066605,
+        "max": 177.15286199946698
+      },
+      "L_elbow": {
+        "min": 20.452160331453655,
+        "max": 69.75783912566372
+      },
+      "L_ankleProxy": {
+        "min": 74.15094493497148,
+        "max": 96.07920811121735
+      },
+      "R_hipProxy": {
+        "min": 71.1908193300836,
+        "max": 128.7082875808032
+      },
+      "R_elbow": {
+        "min": 22.333922748264257,
+        "max": 69.2396077332149
+      },
+      "R_ankleProxy": {
+        "min": 80.50106579346594,
+        "max": 101.20050565642092
+      }
+    },
+    "trunkTiltFromVerticalDeg": {
+      "min": 113.70180769080291,
+      "max": 126.46073339180194
+    },
+    "maxKneeAsymmetryDeg": 10.24586485450385,
+    "entryExitMaxJointGapM": 0.1784028295898695
+  },
+  "estimates": {
+    "COMMethod": "unvalidated fixed segment-midpoint weights .50/.08/.10/.10/.05/.05/.06/.06",
+    "COMOutsideAssumedFootHullFrames": 145,
+    "COMOutsideFootAABBFrames": 115,
+    "collisionCandidateFrames": 0,
+    "contactTruth": "unknown"
+  },
+  "checks": {
+    "floor": {
+      "status": "REFUSÉ",
+      "value": 0.2812106041693443,
+      "limit": 0.003,
+      "scope": "geometric screening only"
+    },
+    "segments": {
+      "status": "VALIDÉ",
+      "value": 3.6254855001471853e-07,
+      "limit": 0.0001,
+      "scope": "geometric screening only"
+    },
+    "speed": {
+      "status": "VALIDÉ",
+      "value": 1.4518496614336942,
+      "limit": 2,
+      "scope": "geometric screening only"
+    },
+    "acceleration": {
+      "status": "REFUSÉ",
+      "value": 34.030549049342035,
+      "limit": 20,
+      "scope": "geometric screening only"
+    },
+    "rotationContinuity": {
+      "status": "VALIDÉ",
+      "value": 5.717276253783004,
+      "limit": 10,
+      "scope": "geometric screening only"
+    },
+    "positionContinuity": {
+      "status": "VALIDÉ",
+      "value": 0.024197494357228237,
+      "limit": 0.05,
+      "scope": "geometric screening only"
+    },
+    "kneeROM": {
+      "status": "VALIDÉ",
+      "scope": "unsigned flexion only; hyperextension/axial rotation not established"
+    },
+    "support": {
+      "status": "EN ATTENTE DE VALIDATION HUMAINE",
+      "reason": "candidate windows and selected skin points are not reviewed contacts",
+      "gapM": 0.05371576468707917,
+      "candidateDriftM": 0.005797758648212117
+    },
+    "balance": {
+      "status": "EN ATTENTE DE VALIDATION HUMAINE",
+      "reason": "COM is heuristic; foot convex hull assumes both contacts unverified, AABB also reported; no forces or balance certification"
+    },
+    "collisions": {
+      "status": "EN ATTENTE DE VALIDATION HUMAINE",
+      "candidateFrames": 0,
+      "reason": "spheres only; exhaustive surface self-collision NON TESTÉ"
+    },
+    "axialTorsion": {
+      "status": "NON TESTÉ",
+      "reason": "anatomical joint frames unqualified; quaternion speed is not anatomical twist"
+    },
+    "symmetry": {
+      "status": "NON TESTÉ",
+      "reason": "do not impose symmetry absent source annotation",
+      "differenceDeg": 10.24586485450385
+    },
+    "transitionRecovery": {
+      "status": "EN ATTENTE DE VALIDATION HUMAINE"
+    },
+    "visual": {
+      "status": "EN ATTENTE DE VALIDATION HUMAINE"
+    },
+    "professional": {
+      "status": "EN ATTENTE DE VALIDATION HUMAINE"
+    },
+    "sourceFidelity": {
+      "status": "EN ATTENTE DE VALIDATION HUMAINE"
+    }
+  },
+  "reviewRequired": true,
+  "limits": [
+    "not medical or professional validation",
+    "input geometry sampled by Blender; independent algorithm is not independent physical evidence",
+    "floor reference and contact patches unqualified",
+    "no automatic corrections"
+  ],
+  "exportSHA256": "17e26c56545d04cea30a525e3cb89d5876abbe7c29493e848bc2a3785bfa2fa2"
+}

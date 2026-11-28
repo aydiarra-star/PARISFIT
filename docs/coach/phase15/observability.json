@@ -1,0 +1,489 @@
+{
+  "status": "VALIDÉ",
+  "scope": "numerical rigid-point observability on six-decimal display data, not anatomical accuracy",
+  "sourceSHA256": "d6352c3ec543b27823145b777e3d63142bceeb5fbef790dd3e2c1f6d2809cbd4",
+  "frames": 150,
+  "groups": [
+    {
+      "group": "pelvis",
+      "labels": [
+        "Right_ASIC",
+        "Left_ASIC",
+        "Right_sacral_crest",
+        "Left_sacral_crest"
+      ],
+      "status": "VALIDÉ",
+      "scope": "technical geometry only; segment membership inferred from labels and NOT certified placement",
+      "rigidPoseRankOf6": 6,
+      "unobservableRigidDimensions": 0,
+      "pairDistancesRep1": [
+        {
+          "pair": [
+            "Right_ASIC",
+            "Left_ASIC"
+          ],
+          "minM": 0.26196679446067206,
+          "maxM": 0.2699469809055104,
+          "rangeM": 0.007980186444838333
+        },
+        {
+          "pair": [
+            "Right_ASIC",
+            "Right_sacral_crest"
+          ],
+          "minM": 0.24070777739823868,
+          "maxM": 0.24664610558449931,
+          "rangeM": 0.0059383281862606385
+        },
+        {
+          "pair": [
+            "Right_ASIC",
+            "Left_sacral_crest"
+          ],
+          "minM": 0.2822996500174947,
+          "maxM": 0.288826356484307,
+          "rangeM": 0.006526706466812304
+        },
+        {
+          "pair": [
+            "Left_ASIC",
+            "Right_sacral_crest"
+          ],
+          "minM": 0.277344097467388,
+          "maxM": 0.2808156115674483,
+          "rangeM": 0.0034715141000603023
+        },
+        {
+          "pair": [
+            "Left_ASIC",
+            "Left_sacral_crest"
+          ],
+          "minM": 0.23459186921118985,
+          "maxM": 0.23778919950241642,
+          "rangeM": 0.003197330291226569
+        },
+        {
+          "pair": [
+            "Right_sacral_crest",
+            "Left_sacral_crest"
+          ],
+          "minM": 0.08111139192493243,
+          "maxM": 0.08369262153858009,
+          "rangeM": 0.002581229613647665
+        }
+      ],
+      "anatomicalDOFStatus": "NON TESTÉ",
+      "anatomicalCentresIdentified": false
+    },
+    {
+      "group": "head",
+      "labels": [
+        "Right_temporal_bone",
+        "Left_temporal_bone",
+        "Skull_vertex"
+      ],
+      "status": "VALIDÉ",
+      "scope": "technical geometry only; segment membership inferred from labels and NOT certified placement",
+      "rigidPoseRankOf6": 6,
+      "unobservableRigidDimensions": 0,
+      "pairDistancesRep1": [
+        {
+          "pair": [
+            "Right_temporal_bone",
+            "Left_temporal_bone"
+          ],
+          "minM": 0.1931145703979894,
+          "maxM": 0.19428066759201748,
+          "rangeM": 0.0011660971940280762
+        },
+        {
+          "pair": [
+            "Right_temporal_bone",
+            "Skull_vertex"
+          ],
+          "minM": 0.12597604732646592,
+          "maxM": 0.12676087763975125,
+          "rangeM": 0.0007848303132853285
+        },
+        {
+          "pair": [
+            "Left_temporal_bone",
+            "Skull_vertex"
+          ],
+          "minM": 0.1455196502194807,
+          "maxM": 0.14643039916629333,
+          "rangeM": 0.0009107489468126173
+        }
+      ],
+      "anatomicalDOFStatus": "NON TESTÉ",
+      "anatomicalCentresIdentified": false
+    },
+    {
+      "group": "shoulder_line",
+      "labels": [
+        "Right_acromioclavicular_joint",
+        "Left_acromioclavicular_joint"
+      ],
+      "status": "VALIDÉ",
+      "scope": "technical geometry only; segment membership inferred from labels and NOT certified placement",
+      "rigidPoseRankOf6": 5,
+      "unobservableRigidDimensions": 1,
+      "pairDistancesRep1": [
+        {
+          "pair": [
+            "Right_acromioclavicular_joint",
+            "Left_acromioclavicular_joint"
+          ],
+          "minM": 0.31201708751284757,
+          "maxM": 0.33344675152113873,
+          "rangeM": 0.02142966400829116
+        }
+      ],
+      "anatomicalDOFStatus": "NON TESTÉ",
+      "anatomicalCentresIdentified": false
+    },
+    {
+      "group": "Right_thigh",
+      "labels": [
+        "Right_greater_trochanter",
+        "Right_lateral_epicondyle"
+      ],
+      "status": "VALIDÉ",
+      "scope": "technical geometry only; segment membership inferred from labels and NOT certified placement",
+      "rigidPoseRankOf6": 5,
+      "unobservableRigidDimensions": 1,
+      "pairDistancesRep1": [
+        {
+          "pair": [
+            "Right_greater_trochanter",
+            "Right_lateral_epicondyle"
+          ],
+          "minM": 0.33317562846042625,
+          "maxM": 0.4136914920565807,
+          "rangeM": 0.08051586359615442
+        }
+      ],
+      "anatomicalDOFStatus": "NON TESTÉ",
+      "anatomicalCentresIdentified": false
+    },
+    {
+      "group": "Right_shank",
+      "labels": [
+        "Right_tibial_tuberosity",
+        "Right_lateral_malleolus"
+      ],
+      "status": "VALIDÉ",
+      "scope": "technical geometry only; segment membership inferred from labels and NOT certified placement",
+      "rigidPoseRankOf6": 5,
+      "unobservableRigidDimensions": 1,
+      "pairDistancesRep1": [
+        {
+          "pair": [
+            "Right_tibial_tuberosity",
+            "Right_lateral_malleolus"
+          ],
+          "minM": 0.33805652693003874,
+          "maxM": 0.35919218783264206,
+          "rangeM": 0.021135660902603326
+        }
+      ],
+      "anatomicalDOFStatus": "NON TESTÉ",
+      "anatomicalCentresIdentified": false
+    },
+    {
+      "group": "Right_forearm",
+      "labels": [
+        "Right_olecranon",
+        "Right_forearm_centre",
+        "Right_ulna_head"
+      ],
+      "status": "VALIDÉ",
+      "scope": "technical geometry only; segment membership inferred from labels and NOT certified placement",
+      "rigidPoseRankOf6": 6,
+      "unobservableRigidDimensions": 0,
+      "pairDistancesRep1": [
+        {
+          "pair": [
+            "Right_olecranon",
+            "Right_forearm_centre"
+          ],
+          "minM": 0.15648228941321107,
+          "maxM": 0.1582428089993349,
+          "rangeM": 0.001760519586123832
+        },
+        {
+          "pair": [
+            "Right_olecranon",
+            "Right_ulna_head"
+          ],
+          "minM": 0.26766709734294936,
+          "maxM": 0.2703190161642352,
+          "rangeM": 0.002651918821285848
+        },
+        {
+          "pair": [
+            "Right_forearm_centre",
+            "Right_ulna_head"
+          ],
+          "minM": 0.123442567212449,
+          "maxM": 0.12888408513078714,
+          "rangeM": 0.005441517918338135
+        }
+      ],
+      "anatomicalDOFStatus": "NON TESTÉ",
+      "anatomicalCentresIdentified": false
+    },
+    {
+      "group": "Right_hand",
+      "labels": [
+        "Right_5th_metacarpal_head",
+        "Right_2nd_metacarpal_head"
+      ],
+      "status": "VALIDÉ",
+      "scope": "technical geometry only; segment membership inferred from labels and NOT certified placement",
+      "rigidPoseRankOf6": 5,
+      "unobservableRigidDimensions": 1,
+      "pairDistancesRep1": [
+        {
+          "pair": [
+            "Right_5th_metacarpal_head",
+            "Right_2nd_metacarpal_head"
+          ],
+          "minM": 0.06728670671090989,
+          "maxM": 0.06825091427959043,
+          "rangeM": 0.0009642075686805418
+        }
+      ],
+      "anatomicalDOFStatus": "NON TESTÉ",
+      "anatomicalCentresIdentified": false
+    },
+    {
+      "group": "Right_foot",
+      "labels": [
+        "Right_calcaneal_tuberosity",
+        "Right_1st_metatarsal_head",
+        "Right_5th_metatarsal_head"
+      ],
+      "status": "VALIDÉ",
+      "scope": "technical geometry only; segment membership inferred from labels and NOT certified placement",
+      "rigidPoseRankOf6": 6,
+      "unobservableRigidDimensions": 0,
+      "pairDistancesRep1": [
+        {
+          "pair": [
+            "Right_calcaneal_tuberosity",
+            "Right_1st_metatarsal_head"
+          ],
+          "minM": 0.21826901085587025,
+          "maxM": 0.21970714599211377,
+          "rangeM": 0.0014381351362435235
+        },
+        {
+          "pair": [
+            "Right_calcaneal_tuberosity",
+            "Right_5th_metatarsal_head"
+          ],
+          "minM": 0.21621910045137088,
+          "maxM": 0.21848560616205365,
+          "rangeM": 0.0022665057106827646
+        },
+        {
+          "pair": [
+            "Right_1st_metatarsal_head",
+            "Right_5th_metatarsal_head"
+          ],
+          "minM": 0.10162065784081503,
+          "maxM": 0.1029722472319605,
+          "rangeM": 0.0013515893911454635
+        }
+      ],
+      "anatomicalDOFStatus": "NON TESTÉ",
+      "anatomicalCentresIdentified": false
+    },
+    {
+      "group": "Right_upper_arm",
+      "labels": [
+        "Right_deltoid_tuberosity"
+      ],
+      "status": "VALIDÉ",
+      "scope": "technical geometry only; segment membership inferred from labels and NOT certified placement",
+      "rigidPoseRankOf6": 3,
+      "unobservableRigidDimensions": 3,
+      "pairDistancesRep1": [],
+      "anatomicalDOFStatus": "NON TESTÉ",
+      "anatomicalCentresIdentified": false
+    },
+    {
+      "group": "Left_thigh",
+      "labels": [
+        "Left_greater_trochanter",
+        "Left_lateral_epicondyle"
+      ],
+      "status": "VALIDÉ",
+      "scope": "technical geometry only; segment membership inferred from labels and NOT certified placement",
+      "rigidPoseRankOf6": 5,
+      "unobservableRigidDimensions": 1,
+      "pairDistancesRep1": [
+        {
+          "pair": [
+            "Left_greater_trochanter",
+            "Left_lateral_epicondyle"
+          ],
+          "minM": 0.3279943101640637,
+          "maxM": 0.40990371906095224,
+          "rangeM": 0.08190940889688852
+        }
+      ],
+      "anatomicalDOFStatus": "NON TESTÉ",
+      "anatomicalCentresIdentified": false
+    },
+    {
+      "group": "Left_shank",
+      "labels": [
+        "Left_tibial_tuberosity",
+        "Left_lateral_malleolus"
+      ],
+      "status": "VALIDÉ",
+      "scope": "technical geometry only; segment membership inferred from labels and NOT certified placement",
+      "rigidPoseRankOf6": 5,
+      "unobservableRigidDimensions": 1,
+      "pairDistancesRep1": [
+        {
+          "pair": [
+            "Left_tibial_tuberosity",
+            "Left_lateral_malleolus"
+          ],
+          "minM": 0.3434226169022652,
+          "maxM": 0.36254647053860556,
+          "rangeM": 0.019123853636340338
+        }
+      ],
+      "anatomicalDOFStatus": "NON TESTÉ",
+      "anatomicalCentresIdentified": false
+    },
+    {
+      "group": "Left_forearm",
+      "labels": [
+        "Left_olecranon",
+        "Left_forearm_centre",
+        "Left_ulna_head"
+      ],
+      "status": "VALIDÉ",
+      "scope": "technical geometry only; segment membership inferred from labels and NOT certified placement",
+      "rigidPoseRankOf6": 6,
+      "unobservableRigidDimensions": 0,
+      "pairDistancesRep1": [
+        {
+          "pair": [
+            "Left_olecranon",
+            "Left_forearm_centre"
+          ],
+          "minM": 0.13141689693490724,
+          "maxM": 0.1329365713413732,
+          "rangeM": 0.0015196744064659706
+        },
+        {
+          "pair": [
+            "Left_olecranon",
+            "Left_ulna_head"
+          ],
+          "minM": 0.258499708510474,
+          "maxM": 0.2607959263485532,
+          "rangeM": 0.0022962178380792064
+        },
+        {
+          "pair": [
+            "Left_forearm_centre",
+            "Left_ulna_head"
+          ],
+          "minM": 0.1562657291283025,
+          "maxM": 0.1590790045857717,
+          "rangeM": 0.0028132754574692054
+        }
+      ],
+      "anatomicalDOFStatus": "NON TESTÉ",
+      "anatomicalCentresIdentified": false
+    },
+    {
+      "group": "Left_hand",
+      "labels": [
+        "Left_5th_metacarpal_head",
+        "Left_2nd_metacarpal_head"
+      ],
+      "status": "VALIDÉ",
+      "scope": "technical geometry only; segment membership inferred from labels and NOT certified placement",
+      "rigidPoseRankOf6": 5,
+      "unobservableRigidDimensions": 1,
+      "pairDistancesRep1": [
+        {
+          "pair": [
+            "Left_5th_metacarpal_head",
+            "Left_2nd_metacarpal_head"
+          ],
+          "minM": 0.06734081526088019,
+          "maxM": 0.06766624195269011,
+          "rangeM": 0.00032542669180991857
+        }
+      ],
+      "anatomicalDOFStatus": "NON TESTÉ",
+      "anatomicalCentresIdentified": false
+    },
+    {
+      "group": "Left_foot",
+      "labels": [
+        "Left_calcaneal_tuberosity",
+        "Left_1st_metatarsal_head",
+        "Left_5th_metatarsal_head"
+      ],
+      "status": "VALIDÉ",
+      "scope": "technical geometry only; segment membership inferred from labels and NOT certified placement",
+      "rigidPoseRankOf6": 6,
+      "unobservableRigidDimensions": 0,
+      "pairDistancesRep1": [
+        {
+          "pair": [
+            "Left_calcaneal_tuberosity",
+            "Left_1st_metatarsal_head"
+          ],
+          "minM": 0.21574786580636204,
+          "maxM": 0.2177490835801611,
+          "rangeM": 0.002001217773799052
+        },
+        {
+          "pair": [
+            "Left_calcaneal_tuberosity",
+            "Left_5th_metatarsal_head"
+          ],
+          "minM": 0.2122262210472589,
+          "maxM": 0.21518851874577324,
+          "rangeM": 0.0029622976985143323
+        },
+        {
+          "pair": [
+            "Left_1st_metatarsal_head",
+            "Left_5th_metatarsal_head"
+          ],
+          "minM": 0.11313589174086179,
+          "maxM": 0.11524565848655643,
+          "rangeM": 0.002109766745694644
+        }
+      ],
+      "anatomicalDOFStatus": "NON TESTÉ",
+      "anatomicalCentresIdentified": false
+    },
+    {
+      "group": "Left_upper_arm",
+      "labels": [
+        "Left_deltoid_tuberosity"
+      ],
+      "status": "VALIDÉ",
+      "scope": "technical geometry only; segment membership inferred from labels and NOT certified placement",
+      "rigidPoseRankOf6": 3,
+      "unobservableRigidDimensions": 3,
+      "pairDistancesRep1": [],
+      "anatomicalDOFStatus": "NON TESTÉ",
+      "anatomicalCentresIdentified": false
+    }
+  ],
+  "IKExecuted": false
+}

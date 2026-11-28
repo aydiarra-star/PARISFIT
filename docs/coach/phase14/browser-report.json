@@ -1,0 +1,11 @@
+{
+  "status": "VALIDÉ",
+  "scope": "Chromium responsive/links; NOT physical devices or anatomical validation",
+  "widths": [
+    320,
+    390,
+    768,
+    1200
+  ],
+  "details": 37
+}

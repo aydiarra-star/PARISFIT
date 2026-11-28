@@ -1,0 +1,12 @@
+{
+  "status": "EN ATTENTE DE DOCUMENTATION",
+  "scenario": "B",
+  "reason": "documented data and factors available, required anatomical metadata still missing; no author response requested or received through this session",
+  "authorRequestSent": false,
+  "professionalApproval": false,
+  "IK": "NON TESTÉ",
+  "COP": "NON TESTÉ",
+  "retarget": "NON TESTÉ",
+  "runtimeEnabled": false,
+  "newSourceAdmitted": false
+}

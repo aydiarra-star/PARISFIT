@@ -1,0 +1,15 @@
+{
+  "scope": "Documentation and refusal paths only, not capture quality",
+  "responsiveWidths": [
+    320,
+    390,
+    768,
+    1200
+  ],
+  "localLinks": 10,
+  "unitTests": 7,
+  "npmTest": "PASS",
+  "physicalDeviceTest": false,
+  "professionalReview": false,
+  "newCaptureProcessed": false
+}

@@ -1,0 +1,264 @@
+{
+  "source": "CMU 22_14, BVH conversion B. Hahne",
+  "sourceTimeStart": 0.7,
+  "sourceTimeEnd": 1.7,
+  "duration": 1,
+  "sourceFps": 120,
+  "exportSampleHz": 60,
+  "samples": 61,
+  "legScaleRatio": 0.9313707986946282,
+  "yawAlignmentRad": 1.2276827720069836,
+  "corrections": [
+    {
+      "sourceTime": 0.7,
+      "verticalShiftM": 0.021866261779725372
+    },
+    {
+      "sourceTime": 0.7166666666666667,
+      "verticalShiftM": 0.021741135520040818
+    },
+    {
+      "sourceTime": 0.7333333333333333,
+      "verticalShiftM": 0.021792493077667223
+    },
+    {
+      "sourceTime": 0.75,
+      "verticalShiftM": 0.022105582122956643
+    },
+    {
+      "sourceTime": 0.7666666666666666,
+      "verticalShiftM": 0.02222764613564688
+    },
+    {
+      "sourceTime": 0.7833333333333333,
+      "verticalShiftM": 0.022437563528841638
+    },
+    {
+      "sourceTime": 0.7999999999999999,
+      "verticalShiftM": 0.02269698009525211
+    },
+    {
+      "sourceTime": 0.8166666666666667,
+      "verticalShiftM": 0.0222092693958275
+    },
+    {
+      "sourceTime": 0.8333333333333333,
+      "verticalShiftM": 0.021510871400687935
+    },
+    {
+      "sourceTime": 0.85,
+      "verticalShiftM": 0.02147237962809625
+    },
+    {
+      "sourceTime": 0.8666666666666666,
+      "verticalShiftM": 0.02169407171102207
+    },
+    {
+      "sourceTime": 0.8833333333333333,
+      "verticalShiftM": 0.021532862791414725
+    },
+    {
+      "sourceTime": 0.8999999999999999,
+      "verticalShiftM": 0.02151194941439067
+    },
+    {
+      "sourceTime": 0.9166666666666666,
+      "verticalShiftM": 0.021520848166723935
+    },
+    {
+      "sourceTime": 0.9333333333333333,
+      "verticalShiftM": 0.02092773863187005
+    },
+    {
+      "sourceTime": 0.95,
+      "verticalShiftM": 0.020685362343444716
+    },
+    {
+      "sourceTime": 0.9666666666666666,
+      "verticalShiftM": 0.02021633534447495
+    },
+    {
+      "sourceTime": 0.9833333333333333,
+      "verticalShiftM": 0.01972061887034625
+    },
+    {
+      "sourceTime": 1,
+      "verticalShiftM": 0.019527248690907203
+    },
+    {
+      "sourceTime": 1.0166666666666666,
+      "verticalShiftM": 0.018971705323772264
+    },
+    {
+      "sourceTime": 1.0333333333333332,
+      "verticalShiftM": 0.01859370138854214
+    },
+    {
+      "sourceTime": 1.0499999999999998,
+      "verticalShiftM": 0.017267951392316353
+    },
+    {
+      "sourceTime": 1.0666666666666667,
+      "verticalShiftM": 0.015516603084366499
+    },
+    {
+      "sourceTime": 1.0833333333333333,
+      "verticalShiftM": 0.013834317536656216
+    },
+    {
+      "sourceTime": 1.1,
+      "verticalShiftM": 0.01249830072707974
+    },
+    {
+      "sourceTime": 1.1166666666666667,
+      "verticalShiftM": 0.010341548287755176
+    },
+    {
+      "sourceTime": 1.1333333333333333,
+      "verticalShiftM": 0.006017811125157013
+    },
+    {
+      "sourceTime": 1.15,
+      "verticalShiftM": 0.0032211524523563188
+    },
+    {
+      "sourceTime": 1.1666666666666665,
+      "verticalShiftM": -0.0009771210077161295
+    },
+    {
+      "sourceTime": 1.1833333333333333,
+      "verticalShiftM": -0.00472593983386629
+    },
+    {
+      "sourceTime": 1.2,
+      "verticalShiftM": -0.008439645130629263
+    },
+    {
+      "sourceTime": 1.2166666666666668,
+      "verticalShiftM": -0.012487181969835502
+    },
+    {
+      "sourceTime": 1.2333333333333334,
+      "verticalShiftM": -0.013820712508659143
+    },
+    {
+      "sourceTime": 1.25,
+      "verticalShiftM": -0.01742015288121395
+    },
+    {
+      "sourceTime": 1.2666666666666666,
+      "verticalShiftM": -0.021312183426243435
+    },
+    {
+      "sourceTime": 1.2833333333333332,
+      "verticalShiftM": -0.022587867198552485
+    },
+    {
+      "sourceTime": 1.2999999999999998,
+      "verticalShiftM": -0.025123047235870645
+    },
+    {
+      "sourceTime": 1.3166666666666667,
+      "verticalShiftM": -0.026828191112006503
+    },
+    {
+      "sourceTime": 1.3333333333333333,
+      "verticalShiftM": -0.028250102083992312
+    },
+    {
+      "sourceTime": 1.35,
+      "verticalShiftM": -0.029351619708984727
+    },
+    {
+      "sourceTime": 1.3666666666666667,
+      "verticalShiftM": -0.030319648410194015
+    },
+    {
+      "sourceTime": 1.3833333333333333,
+      "verticalShiftM": -0.030466534606280973
+    },
+    {
+      "sourceTime": 1.4,
+      "verticalShiftM": -0.02914365342071175
+    },
+    {
+      "sourceTime": 1.4166666666666665,
+      "verticalShiftM": -0.031194615059635153
+    },
+    {
+      "sourceTime": 1.4333333333333331,
+      "verticalShiftM": -0.03327965831273811
+    },
+    {
+      "sourceTime": 1.45,
+      "verticalShiftM": -0.033063801904078795
+    },
+    {
+      "sourceTime": 1.4666666666666668,
+      "verticalShiftM": -0.033038876390776635
+    },
+    {
+      "sourceTime": 1.4833333333333334,
+      "verticalShiftM": -0.03438190968516452
+    },
+    {
+      "sourceTime": 1.5,
+      "verticalShiftM": -0.03610528754309819
+    },
+    {
+      "sourceTime": 1.5166666666666666,
+      "verticalShiftM": -0.03876119861889563
+    },
+    {
+      "sourceTime": 1.5333333333333332,
+      "verticalShiftM": -0.03953293387477497
+    },
+    {
+      "sourceTime": 1.5499999999999998,
+      "verticalShiftM": -0.039826039084400744
+    },
+    {
+      "sourceTime": 1.5666666666666667,
+      "verticalShiftM": -0.04207752536580678
+    },
+    {
+      "sourceTime": 1.5833333333333333,
+      "verticalShiftM": -0.04245903887605998
+    },
+    {
+      "sourceTime": 1.6,
+      "verticalShiftM": -0.04600001157529525
+    },
+    {
+      "sourceTime": 1.6166666666666667,
+      "verticalShiftM": -0.04850892684591888
+    },
+    {
+      "sourceTime": 1.6333333333333333,
+      "verticalShiftM": -0.047154128609368816
+    },
+    {
+      "sourceTime": 1.65,
+      "verticalShiftM": -0.04597859611535928
+    },
+    {
+      "sourceTime": 1.6666666666666665,
+      "verticalShiftM": -0.04629123263754701
+    },
+    {
+      "sourceTime": 1.6833333333333331,
+      "verticalShiftM": -0.05059245236321927
+    },
+    {
+      "sourceTime": 1.7,
+      "verticalShiftM": -0.05129004937114782
+    }
+  ],
+  "status": "HOLD",
+  "reasons": [
+    "Optical mocap, but retargeting is experimental",
+    "No measured fingers; hand grip not reconstructed",
+    "Global floor correction, no contact schedule approved",
+    "No approved exercise joins or recovery"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "status": "NON RENSEIGNÉ — aucun avis obtenu",
+  "reviewer": null,
+  "qualification": null,
+  "date": null,
+  "conflictsOfInterest": null,
+  "reviewedCommit": null,
+  "allowedAnswers": [
+    "validé",
+    "validé sous conditions",
+    "non validé",
+    "impossible à déterminer"
+  ],
+  "questions": [
+    {
+      "id": "Q1",
+      "answer": null,
+      "evidence": null,
+      "conditions": null,
+      "limitations": null
+    },
+    {
+      "id": "Q2",
+      "answer": null,
+      "evidence": null,
+      "conditions": null,
+      "limitations": null
+    },
+    {
+      "id": "Q3",
+      "answer": null,
+      "evidence": null,
+      "conditions": null,
+      "limitations": null
+    },
+    {
+      "id": "Q4",
+      "answer": null,
+      "evidence": null,
+      "conditions": null,
+      "limitations": null
+    },
+    {
+      "id": "Q5",
+      "answer": null,
+      "evidence": null,
+      "conditions": null,
+      "limitations": null
+    },
+    {
+      "id": "Q6",
+      "answer": null,
+      "evidence": null,
+      "conditions": null,
+      "limitations": null
+    }
+  ],
+  "signature": null,
+  "sent": false,
+  "automaticAdmission": false
+}

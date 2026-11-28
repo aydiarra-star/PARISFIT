@@ -1,0 +1,120 @@
+{
+  "exercises": [
+    {
+      "id": "squat",
+      "text": true,
+      "noMixer": true,
+      "noAction": true,
+      "time": 0,
+      "jointsUnchanged": true,
+      "keyboard": true,
+      "syntheticControlEvents": true
+    },
+    {
+      "id": "pompes",
+      "text": true,
+      "noMixer": true,
+      "noAction": true,
+      "time": 0,
+      "jointsUnchanged": true,
+      "keyboard": true,
+      "syntheticControlEvents": true
+    },
+    {
+      "id": "gainage",
+      "text": true,
+      "noMixer": true,
+      "noAction": true,
+      "time": 0,
+      "jointsUnchanged": true,
+      "keyboard": true,
+      "syntheticControlEvents": true
+    },
+    {
+      "id": "fentes",
+      "text": true,
+      "noMixer": true,
+      "noAction": true,
+      "time": 0,
+      "jointsUnchanged": true,
+      "keyboard": true,
+      "syntheticControlEvents": true
+    },
+    {
+      "id": "jumpingjacks",
+      "text": true,
+      "noMixer": true,
+      "noAction": true,
+      "time": 0,
+      "jointsUnchanged": true,
+      "keyboard": true,
+      "syntheticControlEvents": true
+    },
+    {
+      "id": "mountainclimber",
+      "text": true,
+      "noMixer": true,
+      "noAction": true,
+      "time": 0,
+      "jointsUnchanged": true,
+      "keyboard": true,
+      "syntheticControlEvents": true
+    },
+    {
+      "id": "etirementdos",
+      "text": true,
+      "noMixer": true,
+      "noAction": true,
+      "time": 0,
+      "jointsUnchanged": true,
+      "keyboard": true,
+      "syntheticControlEvents": true
+    },
+    {
+      "id": "mobiliteepaules",
+      "text": true,
+      "noMixer": true,
+      "noAction": true,
+      "time": 0,
+      "jointsUnchanged": true,
+      "keyboard": true,
+      "syntheticControlEvents": true
+    }
+  ],
+  "paths": [
+    "prev/next/library/single-session/full-session",
+    "reload/query/localStorage/history",
+    "background/offline/real-data",
+    {
+      "path": "/assets/coach/coach.glb",
+      "status": 404
+    },
+    {
+      "path": "/tools/coach-lab.html?model=../assets/coach/coach.glb",
+      "status": 404
+    },
+    {
+      "path": "/docs/coach/phase2/index.html",
+      "status": 404
+    },
+    {
+      "path": "/assets/coach/transitions/candidates.json",
+      "status": 404
+    },
+    {
+      "path": "/animation-validation-registry.json?admin=1",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "requests": [
+    "http://localhost:3000/assets/coach/coach-static.glb",
+    "http://localhost:3000/assets/coach/coach-static.glb",
+    "http://localhost:3000/assets/coach/coach-static.glb"
+  ],
+  "limitations": [
+    "Chromium, not physical mobile devices",
+    "Previously distributed offline clients cannot be revoked before receiving the new worker"
+  ],
+  "status": "PASS"
+}

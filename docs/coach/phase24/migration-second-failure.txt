@@ -1,0 +1,28 @@
+locator.scrollIntoViewIfNeeded: Element is not attached to the DOM
+Call log:
+  - attempting scroll into view action
+    2 × waiting for element to be stable
+      - element is not stable
+    - retrying scroll into view action
+    - waiting 20ms
+    - waiting for element to be stable
+    - element is not stable
+  - retrying scroll into view action
+    - waiting 100ms
+    - waiting for element to be stable
+
+    at /home/user/PARISFIT/tests/coach-animation-lock-migration.cjs:2:2141 {
+  log: [
+    '  - attempting scroll into view action',
+    '    2 × waiting for element to be stable',
+    '      - element is not stable',
+    '    - retrying scroll into view action',
+    '    - waiting 20ms',
+    '    - waiting for element to be stable',
+    '    - element is not stable',
+    '  - retrying scroll into view action',
+    '    - waiting 100ms',
+    '    - waiting for element to be stable'
+  ],
+  name: 'Error'
+}

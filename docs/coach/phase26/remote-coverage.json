@@ -1,0 +1,158 @@
+[
+  {
+    "remoteRef": "HEAD",
+    "localRef": "refs/remotes/origin/HEAD",
+    "oid": "83f89f8727c1de1c65dbe1278676f1daafd173fc",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/heads/arena/2ee1d988-parisfit",
+    "localRef": "refs/remotes/origin/arena/2ee1d988-parisfit",
+    "oid": "bd2bc7137b96d52d66a79e4b001289c6354ddd8f",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/heads/arena/6df23232-parisfit",
+    "localRef": "refs/remotes/origin/arena/6df23232-parisfit",
+    "oid": "ebce1e9ddaec9afd714a0352c950edb489ae44a2",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/heads/arena/a03f64da-parisfit",
+    "localRef": "refs/remotes/origin/arena/a03f64da-parisfit",
+    "oid": "fc51383e1a28f649a700057bb4d19bcb420c8eaf",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/heads/arena/b8a2d628-parisfit",
+    "localRef": "refs/remotes/origin/arena/b8a2d628-parisfit",
+    "oid": "6fb80cb078834eeee237147c853fd3404c49d89a",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/heads/docs/fondations-parisfit",
+    "localRef": "refs/remotes/origin/docs/fondations-parisfit",
+    "oid": "7d199616192edc28bf63a75f03cbcff6dc2d3e5d",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/heads/feat/parisfit-coach-3d-avatar",
+    "localRef": "refs/remotes/origin/feat/parisfit-coach-3d-avatar",
+    "oid": "bfc5f729fd7391af7dfeeec7cfdbb6d4038eed4d",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/heads/feat/socle-interface-parisfit",
+    "localRef": "refs/remotes/origin/feat/socle-interface-parisfit",
+    "oid": "42e3e5782ea298a03fdaeeeb63d3ccd0fd74f07e",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/heads/fix/coach-ia-entry-mobile",
+    "localRef": "refs/remotes/origin/fix/coach-ia-entry-mobile",
+    "oid": "9c1feef70c1ce572ec36e41ecf169839dfa57389",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/heads/fix/coach-ia-mobile-visual-training",
+    "localRef": "refs/remotes/origin/fix/coach-ia-mobile-visual-training",
+    "oid": "59fcd8f992115e3498bee8f11e1aee8559b9a81f",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/heads/fix/refresh-parisfit-original-ui",
+    "localRef": "refs/remotes/origin/fix/refresh-parisfit-original-ui",
+    "oid": "8a2ea3923d49dbbbb4b26e556ec588761df78aac",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/heads/main",
+    "localRef": "refs/remotes/origin/main",
+    "oid": "83f89f8727c1de1c65dbe1278676f1daafd173fc",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/heads/test/renforcer-qualite-socle",
+    "localRef": "refs/remotes/origin/test/renforcer-qualite-socle",
+    "oid": "634550b990f1271065d783cf2df4fd1af47a6e44",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/pull/1/head",
+    "localRef": "refs/audit/pull/1/head",
+    "oid": "7d199616192edc28bf63a75f03cbcff6dc2d3e5d",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/pull/10/head",
+    "localRef": "refs/audit/pull/10/head",
+    "oid": "ebce1e9ddaec9afd714a0352c950edb489ae44a2",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/pull/11/head",
+    "localRef": "refs/audit/pull/11/head",
+    "oid": "fc51383e1a28f649a700057bb4d19bcb420c8eaf",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/pull/11/merge",
+    "localRef": "refs/audit/pull/11/merge",
+    "oid": "0d0e08ca1f4642945b0466fab4d739c4035e2a69",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/pull/2/head",
+    "localRef": "refs/audit/pull/2/head",
+    "oid": "42e3e5782ea298a03fdaeeeb63d3ccd0fd74f07e",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/pull/3/head",
+    "localRef": "refs/audit/pull/3/head",
+    "oid": "634550b990f1271065d783cf2df4fd1af47a6e44",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/pull/3/merge",
+    "localRef": "refs/audit/pull/3/merge",
+    "oid": "536b044d865e2d54c779deb38d4379729c371e05",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/pull/4/head",
+    "localRef": "refs/audit/pull/4/head",
+    "oid": "6fb80cb078834eeee237147c853fd3404c49d89a",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/pull/5/head",
+    "localRef": "refs/audit/pull/5/head",
+    "oid": "bd2bc7137b96d52d66a79e4b001289c6354ddd8f",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/pull/6/head",
+    "localRef": "refs/audit/pull/6/head",
+    "oid": "8a2ea3923d49dbbbb4b26e556ec588761df78aac",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/pull/7/head",
+    "localRef": "refs/audit/pull/7/head",
+    "oid": "59fcd8f992115e3498bee8f11e1aee8559b9a81f",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/pull/8/head",
+    "localRef": "refs/audit/pull/8/head",
+    "oid": "9c1feef70c1ce572ec36e41ecf169839dfa57389",
+    "matches": true
+  },
+  {
+    "remoteRef": "refs/pull/9/head",
+    "localRef": "refs/audit/pull/9/head",
+    "oid": "bfc5f729fd7391af7dfeeec7cfdbb6d4038eed4d",
+    "matches": true
+  }
+]

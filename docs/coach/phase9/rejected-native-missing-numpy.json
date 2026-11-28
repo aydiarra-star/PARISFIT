@@ -1,0 +1,25 @@
+{
+  "status": "FAILED",
+  "dataKind": "CMU licensed optical control, NOT dedicated PARISFIT capture",
+  "sourceSHA256": "e75bcdec4d6fdeac91571020d0b75d45cd4b2532113e699f465b5b297373ac05",
+  "modelSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+  "runtimeEnabled": false,
+  "professionalApproval": false,
+  "platform": "Linux-7.0.0-1018-aws-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "steps": [
+    {
+      "step": "startup",
+      "seconds": 0.0,
+      "version": "4.0.2"
+    }
+  ],
+  "corrections": {
+    "IK": false,
+    "smoothing": false,
+    "manual": []
+  },
+  "blenderVersion": "4.0.2",
+  "error": "Traceback (most recent call last):\n  File \"/home/runner/work/PARISFIT/PARISFIT/tools/blender-pipeline/retarget.py\", line 21, in <module>\n    bpy.ops.import_scene.gltf(filepath=str(model))\n  File \"/usr/share/blender/scripts/modules/bpy/ops.py\", line 109, in __call__\n    ret = _op_call(self.idname_py(), kw)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Error: Python: Traceback (most recent call last):\n  File \"/usr/share/blender/scripts/addons/io_scene_gltf2/__init__.py\", line 1709, in execute\n    return self.import_gltf2(context)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/share/blender/scripts/addons/io_scene_gltf2/__init__.py\", line 1742, in import_gltf2\n    return self.unit_import(self.filepath, import_settings)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/share/blender/scripts/addons/io_scene_gltf2/__init__.py\", line 1747, in unit_import\n    from .blender.imp.gltf2_blender_gltf import BlenderGlTF\n  File \"/usr/share/blender/scripts/addons/io_scene_gltf2/blender/imp/gltf2_blender_gltf.py\", line 8, in <module>\n    from .gltf2_blender_scene import BlenderScene\n  File \"/usr/share/blender/scripts/addons/io_scene_gltf2/blender/imp/gltf2_blender_scene.py\", line 7, in <module>\n    from .gltf2_blender_node import BlenderNode\n  File \"/usr/share/blender/scripts/addons/io_scene_gltf2/blender/imp/gltf2_blender_node.py\", line 10, in <module>\n    from .gltf2_blender_mesh import BlenderMesh\n  File \"/usr/share/blender/scripts/addons/io_scene_gltf2/blender/imp/gltf2_blender_mesh.py\", line 7, in <module>\n    import numpy as np\nModuleNotFoundError: No module named 'numpy'\nLocation: /usr/share/blender/scripts/modules/bpy/ops.py:109\n\n",
+  "elapsedSeconds": 0.253
+}

@@ -1,0 +1,28 @@
+{
+  "scope": "documentary integrity, not scientific admission",
+  "files": {
+    "REPRODUCE.md": "1b7135f5b380694b27309959da289677eeb00ca580adc843f39decfb13c40b54",
+    "browser-report.json": "f3540c1beed38002e6f3cccfd31367fb0d378486e96bde818871e8f241d45a7b",
+    "c3d-inspection.json": "09715e299471c9b7c6aac3f02fb0234378caa57ae7289e07ec7af907e6a1e9bf",
+    "configuration-inspection.json": "40ca30ef4115f313c42611b2cf3c4a8c5b6ae7273a1835eda4e04b0ce3690a6b",
+    "decision-report.md": "eff410ccb45b0388dab6043d6375e3984ad9d4e274dca52f855d0a0127e859d4",
+    "ground-reaction-forces-audit.md": "3b6a3a7d429eef200833de00b4ebf07d45c0ec201f2596845a63bcd1a47e28fa",
+    "index.html": "949cdd8cda9f3d440cf0fbba7d4bbb491d47e9fa5454cc4117b5214adbb3470e",
+    "legacy-mobile-rerun.json": "bff322c28a6526912b62718bcf793d9ae196a467cb07194276c08d8a1fc2a7b6",
+    "legacy-transition-rerun.json": "7d86648312cf890b953b1e4387e8fec354ecba1044b2f1db11b4534cb4ed5346",
+    "mapping-status.json": "d1b36c7a13ee2ad47fd282f8f8687a13b55cfa567529ad796dba8198047226dd",
+    "marker-anatomical-mapping.csv": "da1fead84d41e09b1d304a99b4b566769d074875d25022dd4787df1eaeb1cd57",
+    "markerset-schematic.svg": "bd2be0e5003a23e5389c5c07f58062943ae7209f5c07773b80b084ea67b096be",
+    "professional-review-dossier.md": "eeee2eee534af1a1886ad652ab0346f7d54aebf5c6854b21bd1cb55937ee3e3e",
+    "protected-baseline.json": "9ddd6eb4ad5dce23e3fe3f8ec33576da6a2bed083b48e5222c4cd8cfbff1dec6",
+    "rms-scaling-error-analysis.md": "af0308d2a405ddf47e8f24c4530014506076932e0e4dd855719a85bb417f5084",
+    "rocketbox-readonly.json": "5da50c68ee98c9097763f9d8dca41f2698681e2dde82c613b4428143c25cd5e1",
+    "scaling-ik-configuration-audit.md": "3cf03e27fb664c2d1672ea1ac15ad4c1b76ae34e4e5034a74f82b7fb759548d1",
+    "selected-squat-trial.md": "c6f86ff5e8422fdab8335fa734fd4460085f7fa67468c4bfe82bdc0f486daf5e",
+    "source-excerpts.md": "19c5196267477537f6f9fd6884986c1ac06c040b035ee0ebeb0677da6b682b1a",
+    "source-manifest.json": "4e79f72dfe23bf99e9b3a87f3bd49451c503b44c5694d86c1a86a716d1a2d2cc",
+    "static-marker-projections.svg": "4e3352f44745f41a4cd5ce49bc9f17f966080a95abd3c21ec54d2df4fff86899",
+    "trial-diagnostics.svg": "bc85c2545681c873bccb7423903365221377e8b3866ed494835775171e196735",
+    "verification-notes.md": "2482a3c33109244dc9474d30ef9ebff8c134346a1778bb9a534c3484303ce523"
+  }
+}

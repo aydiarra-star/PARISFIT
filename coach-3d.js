@@ -1,100 +1,142 @@
-import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js";
+import * as THREE from './vendor/three/three.module.js';
+import {GLTFLoader} from './vendor/three/loaders/GLTFLoader.js';
+import {LOCK_MESSAGE,admission,readRegistry,sha256} from './animation-validation.js';
+import {COACH_CONTENT} from './coach-content.js';
+import {admitTransition,findTransitionRoute} from './coach-transition-gate.js';
+import {OrbitControls} from './vendor/three/controls/OrbitControls.js';
 
-const host=document.getElementById("coach-stage-visual");
+// One renderer, one static skinned model; eight original clips retained internally. No procedural body geometry.
+const host=document.getElementById('coach-stage-visual');
+const $=id=>document.getElementById(id);
+const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+const controls=['coach-stage-toggle','coach-stage-view','coach-stage-reset','coach-stage-step','coach-stage-speed','coach-stage-zoom','coach-stage-timeline'];
+let scene,renderer,camera,orbit,model,mixer,action,clips=[],raf=0,last=0,loading=false,ready=false,visible=false,disposed=false;
+let registry=null,assetHash=null;
+let paused=true,speed=1,active=window.parisfitCoachExercise||'squat',viewIndex=0,stepIndex=0;
+let observer,resizeObserver,requestToken=0,lastPhaseKey="",cameraRAF=0;
+const views=[{name:'Face',x:0,z:5.1},{name:'Profil',x:5.1,z:0},{name:'Trois-quarts',x:3.6,z:3.6}];
+const floorExercises=new Set(['pompes','gainage','mountainclimber']);
+const status=document.createElement('p');status.className='coach-model-status';status.setAttribute('role','status');
+const retry=document.createElement('button');retry.type='button';retry.className='outline coach-retry';retry.textContent='Réessayer le chargement';retry.hidden=true;
+if(host){host.append(status,retry);status.textContent='Le modèle 3D se chargera à l’ouverture du Coach.';}
+const motionControls=['coach-stage-toggle','coach-stage-reset','coach-stage-step','coach-stage-speed','coach-stage-timeline'];
+function allowed(){return admission(registry,active,assetHash).allowed&&clips.some(c=>c.name===active);}
+function lock(){paused=true;cancelAnimationFrame(raf);raf=0;mixer?.stopAllAction();if(mixer&&model)mixer.uncacheRoot(model);mixer=null;action=null;host.dataset.time='0.000';host.dataset.animationAdmission='locked';status.textContent=LOCK_MESSAGE;motionControls.forEach(id=>{if($(id))$(id).disabled=true;});}
+function enable(value){controls.forEach(id=>{if($(id))$(id).disabled=!value||(motionControls.includes(id)&&!allowed())});}
+function updateUI(){
+ $('coach-stage-toggle').textContent=!allowed()?'Animation verrouillée':paused?'▶ Reprendre':'Ⅱ Pause';
+ $('coach-stage-toggle').setAttribute('aria-pressed',String(!paused));
+ host.dataset.paused=String(paused);host.dataset.state=ready?'ready':loading?'loading':'unavailable';host.dataset.exercise=active;
+}
+function error(message){ready=false;loading=false;host.setAttribute('aria-busy','false');status.textContent=message;retry.hidden=false;enable(false);updateUI();}
+function disposeScene(){
+ stopCamera();cancelAnimationFrame(raf);raf=0;orbit?.dispose();resizeObserver?.disconnect();
+ if(mixer&&model){mixer.stopAllAction();mixer.uncacheRoot(model);}
+ const textures=new Set(),materials=new Set(),geometries=new Set();
+ scene?.traverse(o=>{if(o.geometry)geometries.add(o.geometry);if(o.material)(Array.isArray(o.material)?o.material:[o.material]).forEach(m=>{materials.add(m);Object.values(m).forEach(t=>{if(t?.isTexture)textures.add(t)})});if(o.isSkinnedMesh)o.skeleton.dispose();});
+ textures.forEach(t=>t.dispose());materials.forEach(m=>m.dispose());geometries.forEach(g=>g.dispose());
+ renderer?.dispose();renderer?.domElement.remove();renderer=null;scene=null;model=null;mixer=null;action=null;
+}
+function resize(){if(!renderer)return;const w=Math.max(host.clientWidth,1),h=Math.max(host.clientHeight,320);renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();draw();}
+function draw(){if(renderer&&scene)renderer.render(scene,camera);}
+function stopCamera(){cancelAnimationFrame(cameraRAF);cameraRAF=0;}
+function cameraView(index,animate=false){
+ if(!camera)return;stopCamera();viewIndex=index%views.length;const v=views[viewIndex],target=floorExercises.has(active)?.55:.98;
+ const distance=Number($('coach-stage-zoom').value),end=new THREE.Vector3(v.x*distance,target+.28,v.z*distance),focus=new THREE.Vector3(0,target,0);
+ $('coach-stage-view').textContent='Vue : '+v.name;host.dataset.camera=v.name;
+ if(!animate||reduced.matches||!visible){camera.position.copy(end);orbit.target.copy(focus);orbit.update();draw();return;}
+ const from=new THREE.Spherical().setFromVector3(camera.position.clone().sub(orbit.target)),to=new THREE.Spherical().setFromVector3(end.clone().sub(focus));
+ const startFocus=orbit.target.clone(),start=performance.now();let angle=to.theta-from.theta;angle=Math.atan2(Math.sin(angle),Math.cos(angle));
+ const step=now=>{cameraRAF=0;if(!ready||!visible||document.hidden)return;const u=Math.min(1,(now-start)/360),ease=u*u*(3-2*u);
+  orbit.target.lerpVectors(startFocus,focus,ease);camera.position.setFromSpherical(new THREE.Spherical(THREE.MathUtils.lerp(from.radius,to.radius,ease),THREE.MathUtils.lerp(from.phi,to.phi,ease),from.theta+angle*ease)).add(orbit.target);orbit.update();draw();if(u<1)cameraRAF=requestAnimationFrame(step);
+ };cameraRAF=requestAnimationFrame(step);
+}
+function updateGuidance(){
+ const guide=COACH_CONTENT[active];if(!guide)return;
+ const fraction=action?action.time/action.getClip().duration:0;
+ const phase=guide.phases.filter(p=>p.at<=fraction+1e-6).at(-1)||guide.phases[0];
+ const key=active+':'+phase.at;if(key===lastPhaseKey)return;lastPhaseKey=key;
+ $('coach-stage-phase').textContent=phase.label+' · '+phase.cue;
+ $('coach-phase-label').textContent=phase.label;$('coach-phase-cue').textContent=phase.cue;
+ host.dataset.phase=String(phase.at);
+}
+function select(id){
+ if(!COACH_CONTENT[id])return;
+ const changed=active!==id&&!!action;
+ // No exercise route is approved: admission is evaluated BEFORE the existing safe cut.
+ // A matching posture name alone never grants admission. Playback integration remains disabled.
+ if(changed){const admission=admitTransition({route:findTransitionRoute(active,id),reducedMotion:reduced.matches});host.dataset.transitionGate=admission.reason;}
+ active=id;stepIndex=0;lastPhaseKey='';
+ const guide=COACH_CONTENT[id];$('coach-stage-desc').textContent=guide.summary;
+ for(const key of ['setup','error','correction','caution','accessible'])$('coach-'+key).textContent=guide[key];
+ if(!allowed()){lock();enable(ready);updateUI();updateGuidance();if(ready){cameraView(viewIndex);draw();}return;}
+ if(!ready){updateGuidance();return;}
+ if(!mixer)mixer=new THREE.AnimationMixer(model);
+ const clip=clips.find(c=>c.name===id);if(!clip){error('Animation indisponible. Les consignes écrites restent accessibles.');return;}
+ // Do not morph a standing skeleton through the floor into a support pose.
+ // Until reviewed transfer clips exist, use an explicit demonstration cut, not a fake transition.
+ mixer.stopAllAction();action=mixer.clipAction(clip);action.reset().setEffectiveTimeScale(1).setEffectiveWeight(1).play();
+ if(changed){paused=true;host.classList.remove('coach-view-cut');void host.offsetWidth;host.classList.add('coach-view-cut');host.dataset.transition='demonstration-cut';status.textContent='Nouvelle position · mise en place non animée. Lis les repères, puis reprends.';}
+ mixer.update(0);$('coach-stage-timeline').value=0;cameraView(viewIndex);updateUI();updateGuidance();draw();schedule();
+}
+function tick(now){
+ raf=0;if(!allowed()){lock();return;}if(!visible||document.hidden||!ready||disposed)return;
+ const dt=Math.min((now-last)/1000,.05);last=now;
+ if(!paused){mixer.update(dt*speed);$('coach-stage-timeline').value=action.time/action.getClip().duration;}
+ host.dataset.time=action.time.toFixed(3);updateGuidance();orbit.update();draw();if(!paused)raf=requestAnimationFrame(tick);
+}
+function schedule(){if(!visible||document.hidden)stopCamera();if(!allowed()){lock();return;}cancelAnimationFrame(raf);last=performance.now();if(visible&&!document.hidden&&ready&&!paused)raf=requestAnimationFrame(tick);}
+async function load(){
+ if(loading||disposed)return;lock();disposeScene();const token=++requestToken;loading=true;ready=false;retry.hidden=true;enable(false);updateUI();host.setAttribute('aria-busy','true');status.textContent='Chargement du modèle humain statique…';
+ try{
+  const low=matchMedia('(max-width: 600px)').matches||(navigator.deviceMemory&&navigator.deviceMemory<=4);
+  renderer=new THREE.WebGLRenderer({antialias:!low,powerPreference:'low-power'});
+  renderer.setPixelRatio(Math.min(devicePixelRatio,low?1.25:1.75));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.12;
+  renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
+  renderer.domElement.setAttribute('role','img');renderer.domElement.setAttribute('aria-label','Modèle humain Rocketbox statique — animation verrouillée');renderer.domElement.tabIndex=0;host.prepend(renderer.domElement);
+  renderer.domElement.addEventListener('webglcontextrestored',()=>{if(!loading&&!disposed)load();});
+  renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();cancelAnimationFrame(raf);error('Affichage 3D interrompu. Réessaie ou consulte les consignes écrites.');});
+  scene=new THREE.Scene();scene.background=new THREE.Color('#edf5ef');
+  camera=new THREE.PerspectiveCamera(34,1,.05,30);orbit=new OrbitControls(camera,renderer.domElement);orbit.enablePan=false;orbit.minDistance=2;orbit.maxDistance=6;orbit.minPolarAngle=.35;orbit.maxPolarAngle=1.8;orbit.enableDamping=false;orbit.addEventListener('change',draw);orbit.addEventListener('start',stopCamera);
+  scene.add(new THREE.HemisphereLight(0xffffff,0x739183,2));
+  const key=new THREE.DirectionalLight(0xfff4e7,2.6);key.position.set(-2,4,3);key.castShadow=true;key.shadow.mapSize.set(low?512:1024,low?512:1024);key.shadow.camera.left=-2;key.shadow.camera.right=2;key.shadow.camera.top=3;key.shadow.camera.bottom=-2;key.shadow.normalBias=.004;scene.add(key);
+  const fill=new THREE.DirectionalLight(0xc8e5ee,1);fill.position.set(2,2,-2);scene.add(fill);
+  // Geometric primitives are used ONLY for the environment, never the human.
+  const floor=new THREE.Mesh(new THREE.PlaneGeometry(8,8),new THREE.MeshStandardMaterial({color:0xe0eae2,roughness:1}));floor.rotation.x=-Math.PI/2;floor.position.y=0;floor.receiveShadow=true;scene.add(floor);
+  registry=await readRegistry();
+  const response=await fetch('./assets/coach/coach-static.glb');if(!response.ok)throw Error('Static asset unavailable');
+  const bytes=await response.arrayBuffer();assetHash=await sha256(bytes);
+  const gltf=await new GLTFLoader().parseAsync(bytes,new URL('./assets/coach/',location.href).href);
+  if(gltf.animations.length)throw Error('Public static asset contains animations');
+  if(token!==requestToken||disposed)return;
+  model=gltf.scene;clips=gltf.animations;
+  let bones=0,meshes=0;model.traverse(o=>{if(o.isBone)bones++;if(o.isSkinnedMesh){meshes++;o.castShadow=true;o.frustumCulled=false;}});
+  if(!meshes||bones<60)throw Error('Asset incomplet');
+  scene.add(model);mixer=null;ready=true;loading=false;host.setAttribute('aria-busy','false');host.dataset.bones=bones;host.dataset.clips=clips.length;host.dataset.quality=low?'mobile':'standard';
+  status.textContent=LOCK_MESSAGE;enable(true);select(active);resizeObserver=new ResizeObserver(resize);resizeObserver.observe(host);resize();schedule();
+ }catch(e){disposeScene();error('La 3D ne peut pas être chargée. Les exercices et leurs consignes restent disponibles.');console.warn('PARISFIT Coach:',e.message);}
+}
 if(host){
- let renderer,scene,camera,rig,raf=0,active="squat",paused=false,profile=false,elapsed=0,last=0,resizeObserver;
- const mat=(color,roughness=.72)=>new THREE.MeshStandardMaterial({color,roughness});
- const skin=mat("#bd805d"),shirt=mat("#16845c"),shirtLight=mat("#35bd87"),shorts=mat("#183f33"),shoe=mat("#f1a05b"),dark=mat("#26342e"),eye=mat("#24342e",.35);
- const reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
- const status=document.createElement("div");status.className="coach-3d-status";status.textContent="COACH HUMAIN · 3D";host.append(status);
- const hint=document.createElement("div");hint.className="coach-3d-hint";hint.textContent="Animation articulée · vue interactive";host.append(hint);
- function capsule(parent,radius,length,material,x=0,y=0,z=0){
-  const group=new THREE.Group();group.position.set(x,y,z);parent.add(group);
-  const mesh=new THREE.Mesh(new THREE.CapsuleGeometry(radius,Math.max(.02,length-radius*2),5,10),material);
-  mesh.position.y=-length/2;mesh.castShadow=true;mesh.receiveShadow=true;group.add(mesh);return group;
- }
- function sphere(parent,radius,material,x,y,z){const m=new THREE.Mesh(new THREE.SphereGeometry(radius,24,18),material);m.position.set(x,y,z);m.castShadow=true;parent.add(m);return m;}
- function buildRig(){
-  const root=new THREE.Group();scene.add(root);
-  const pelvis=sphere(root,.19,shorts,0,0,0);pelvis.scale.set(1.05,.72,.72);
-  const torso=capsule(root,.205,.58,shirt,0,.37,0);
-  const chest=sphere(root,.205,shirtLight,0,.57,.015);chest.scale.set(1,.46,.88);
-  capsule(root,.065,.13,skin,0,.72,0);
-  const head=sphere(root,.155,skin,0,.88,.015);head.scale.set(.9,1.08,.88);
-  const hair=sphere(root,.157,dark,0,.965,-.005);hair.scale.set(.96,.55,.92);
-  sphere(root,.018,eye,-.06,.9,.15);sphere(root,.018,eye,.06,.9,.15);
-  sphere(root,.105,shirt,-.235,.59,0);sphere(root,.105,shirt,.235,.59,0);
-  const armL=capsule(root,.073,.34,skin,-.29,.49,0),armR=capsule(root,.073,.34,skin,.29,.49,0);
-  const elbowL=capsule(armL,.061,.30,skin,0,-.32,0),elbowR=capsule(armR,.061,.30,skin,0,-.32,0);
-  sphere(elbowL,.067,skin,0,-.28,0);sphere(elbowR,.067,skin,0,-.28,0);
-  const hipL=capsule(root,.09,.43,shorts,-.12,-.16,0),hipR=capsule(root,.09,.43,shorts,.12,-.16,0);
-  const kneeL=capsule(hipL,.073,.39,skin,0,-.40,0),kneeR=capsule(hipR,.073,.39,skin,0,-.40,0);
-  const footL=sphere(kneeL,.085,shoe,0,-.36,.075),footR=sphere(kneeR,.085,shoe,0,-.36,.075);
-  footL.scale.set(1.35,.55,1.8);footR.scale.set(1.35,.55,1.8);
-  return {root,torso,head,armL,armR,elbowL,elbowR,hipL,hipR,kneeL,kneeR};
- }
- function resetPose(){
-  if(!rig)return;
-  const {root,torso,head,armL,armR,elbowL,elbowR,hipL,hipR,kneeL,kneeR}=rig;
-  root.rotation.set(0,0,0);root.position.set(0,1.05,0);torso.rotation.set(0,0,0);head.rotation.set(0,0,0);
-  [armL,armR,elbowL,elbowR,hipL,hipR,kneeL,kneeR].forEach(g=>g.rotation.set(0,0,0));
-  armL.rotation.z=-.12;armR.rotation.z=.12;hipL.rotation.z=.025;hipR.rotation.z=-.025;
- }
- function pose(t){
-  if(!rig)return;resetPose();const p=(Math.sin(t*Math.PI*2)+1)/2;
-  const {root,torso,head,armL,armR,elbowL,elbowR,hipL,hipR,kneeL,kneeR}=rig;
-  if(active==="squat"){
-   const bend=p*.72;root.position.y=1.05-p*.12;torso.rotation.x=-p*.10;
-   hipL.rotation.x=bend*.42;hipR.rotation.x=bend*.42;kneeL.rotation.x=-bend*.9;kneeR.rotation.x=-bend*.9;
-   armL.rotation.x=-.48;armR.rotation.x=-.48;armL.rotation.z=-.28;armR.rotation.z=.28;
-  }else if(active==="pompes"||active==="gainage"||active==="mountainclimber"){
-   root.rotation.z=Math.PI/2;root.position.set(0,.68,0);armL.rotation.z=-.95;armR.rotation.z=-.95;elbowL.rotation.z=-.3;elbowR.rotation.z=-.3;
-   if(active==="pompes"){root.position.y=.68-p*.11;elbowL.rotation.x=p*.9;elbowR.rotation.x=p*.9;torso.rotation.x=p*.04;}
-   if(active==="gainage"){root.position.y=.68+Math.sin(t*2)*.008;torso.rotation.x=.02;}
-   if(active==="mountainclimber"){hipL.rotation.x=Math.sin(t*7)*.7;hipR.rotation.x=-Math.sin(t*7)*.7;kneeL.rotation.x=.8+Math.sin(t*7)*.35;kneeR.rotation.x=.8-Math.sin(t*7)*.35;}
-  }else if(active==="fentes"){
-   const l=p>.5?1:0;root.position.y=1.05-(.10+.08*Math.sin(t*2*Math.PI));
-   hipL.rotation.x=l?.42:.02;hipR.rotation.x=l?-.12:.42;kneeL.rotation.x=l?-.8:-.08;kneeR.rotation.x=l?-.08:-.8;
-   armL.rotation.x=-.2;armR.rotation.x=-.2;
-  }else if(active==="jumpingjacks"){
-   root.position.y=1.05+Math.abs(Math.sin(t*2*Math.PI))*.08;
-   armL.rotation.z=-Math.sin(t*2*Math.PI)*1.12;armR.rotation.z=Math.sin(t*2*Math.PI)*1.12;
-   hipL.rotation.z=-Math.sin(t*2*Math.PI)*.52;hipR.rotation.z=Math.sin(t*2*Math.PI)*.52;
-  }else if(active==="etirementdos"){
-   torso.rotation.x=-.22+Math.sin(t*1.3)*.10;head.rotation.x=.12;
-   armL.rotation.z=-1.85+Math.sin(t*1.3)*.12;armR.rotation.z=1.85-Math.sin(t*1.3)*.12;
-  }else if(active==="mobiliteepaules"){
-   armL.rotation.z=-.55-Math.sin(t*2)*.6;armR.rotation.z=.55+Math.sin(t*2)*.6;
-   armL.rotation.x=Math.sin(t*2)*.35;armR.rotation.x=-Math.sin(t*2)*.35;torso.rotation.y=Math.sin(t)*.12;
-  }
- }
- function resize(){if(!renderer||!camera)return;const w=Math.max(1,host.clientWidth),h=Math.max(240,host.clientHeight);renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();}
- function loop(now){
-  raf=requestAnimationFrame(loop);if(!renderer||!scene)return;
-  if(!paused&&!reduce)elapsed+=(now-last)/1000;last=now;if(!paused)pose(reduce?0:elapsed);renderer.render(scene,camera);
- }
- function init(){
-  try{
-   scene=new THREE.Scene();scene.background=new THREE.Color("#edf5ef");
-   camera=new THREE.PerspectiveCamera(34,1,.1,100);camera.position.set(0,1.45,5.4);camera.lookAt(0,1,0);
-   renderer=new THREE.WebGLRenderer({antialias:true,alpha:false,powerPreference:"low-power"});
-   renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,1.6));renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
-   renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.setClearColor("#edf5ef",1);
-   renderer.domElement.setAttribute("aria-label","Coach sportif 3D animé");renderer.domElement.setAttribute("role","img");host.prepend(renderer.domElement);
-   scene.add(new THREE.HemisphereLight("#ffffff","#a8c4ad",2));
-   const key=new THREE.DirectionalLight("#ffffff",2.1);key.position.set(-3,5,4);key.castShadow=true;scene.add(key);
-   const fill=new THREE.DirectionalLight("#f4bd8e",.7);fill.position.set(3,2,-2);scene.add(fill);
-   const floor=new THREE.Mesh(new THREE.CircleGeometry(2.4,64),new THREE.MeshStandardMaterial({color:"#dcebe0",roughness:1}));
-   floor.rotation.x=-Math.PI/2;floor.position.y=-.02;floor.receiveShadow=true;scene.add(floor);
-   const ring=new THREE.Mesh(new THREE.TorusGeometry(1.15,.012,8,90),new THREE.MeshBasicMaterial({color:"#c1d9c8"}));ring.rotation.x=Math.PI/2;ring.position.y=.005;scene.add(ring);
-   rig=buildRig();resize();resizeObserver=new ResizeObserver(resize);resizeObserver.observe(host);raf=requestAnimationFrame(loop);
-  }catch(error){status.textContent="MODE DÉMO";hint.textContent="3D indisponible sur cet appareil";console.error("PARISFIT Coach 3D",error);}
- }
- function changeExercise(id){active=id||"squat";elapsed=0;last=performance.now();paused=false;const b=document.getElementById("coach-stage-toggle");if(b)b.textContent="Ⅱ Pause animation";if(rig)pose(0);}
- window.addEventListener("parisfit:coach-exercise",e=>changeExercise(e.detail?.id));
- document.getElementById("coach-stage-toggle")?.addEventListener("click",()=>{paused=!paused;});
- document.getElementById("coach-stage-view")?.addEventListener("click",e=>{profile=!profile;if(camera){camera.position.set(profile?4.7:0,1.35,profile?1.1:5.4);camera.lookAt(0,.95,0);}e.currentTarget.textContent=profile?"Vue de face":"Vue de profil";});
- document.addEventListener("visibilitychange",()=>{last=performance.now();});
- if(window.WebGLRenderingContext)init();else{status.textContent="MODE DÉMO";hint.textContent="WebGL non disponible";}
- window.addEventListener("resize",resize);
+ enable(false);updateUI();select(active);retry.onclick=load;
+ $('coach-stage-toggle').onclick=()=>{if(!allowed()){lock();updateUI();return;}paused=!paused;if(!paused)status.textContent='Démonstration expérimentale · avis professionnel requis';updateUI();updateGuidance();schedule();};
+ $('coach-stage-view').onclick=()=>cameraView(viewIndex+1,true);
+ $('coach-stage-speed').onchange=e=>{if(!allowed()){lock();return;}speed=Number(e.target.value);};
+ $('coach-stage-zoom').oninput=()=>cameraView(viewIndex);
+ function seek(fraction){if(!allowed()){lock();return;}if(!action)return;mixer.stopAllAction();action.reset().play();action.time=action.getClip().duration*Math.min(.99999,Math.max(0,fraction));mixer.update(0);host.dataset.time=action.time.toFixed(3);lastPhaseKey='';updateGuidance();draw();}
+ $('coach-stage-reset').onclick=()=>{paused=true;stepIndex=0;seek(0);$('coach-stage-timeline').value=0;updateUI();};
+ $('coach-stage-step').onclick=()=>{if(!allowed()){lock();updateUI();return;}paused=true;const phases=COACH_CONTENT[active].phases;const f=action.time/action.getClip().duration;const next=phases.findIndex(p=>p.at>f+.001);stepIndex=next<0?0:next;seek(phases[stepIndex].at);$('coach-stage-timeline').value=phases[stepIndex].at;updateUI();};
+ $('coach-stage-timeline').oninput=e=>{paused=true;seek(Number(e.target.value));updateUI();};
+ window.addEventListener('parisfit:coach-exercise',e=>select(e.detail.id));
+ observer=new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;if(visible&&!ready&&!loading&&retry.hidden)load();schedule();},{threshold:0});observer.observe(host);
+ document.addEventListener('visibilitychange',schedule);
+ reduced.addEventListener('change',e=>{if(e.matches){stopCamera();paused=true;updateUI();}});
+ window.addEventListener('pagehide',e=>{cancelAnimationFrame(raf);if(!e.persisted){disposed=true;requestToken++;observer.disconnect();disposeScene();}});
+ window.addEventListener('pageshow',schedule);
+}
+
+// Read-only diagnostics for reproducible tests; never exposes mutable Three.js objects.
+export function inspectCoach(){
+ const joints={},textures=new Set();let skinnedMeshes=0,vertices=0;
+ model?.traverse(o=>{if(o.isBone)joints[o.name]={position:o.getWorldPosition(new THREE.Vector3()).toArray(),quaternion:o.quaternion.toArray()};if(o.isSkinnedMesh){skinnedMeshes++;vertices+=o.geometry.attributes.position.count;(Array.isArray(o.material)?o.material:[o.material]).forEach(m=>{if(m.map)textures.add(m.map);if(m.normalMap)textures.add(m.normalMap);});}});
+ return {ready,active,paused,speed,animationAllowed:allowed(),mixerPresent:!!mixer,actionPresent:!!action,assetHash,lockMessage:status.textContent,camera:camera?{position:camera.position.toArray(),target:orbit.target.toArray(),moving:!!cameraRAF}:null,time:action?.time||0,duration:action?.getClip().duration||0,clips:clips.map(c=>c.name),skinnedMeshes,vertices,textures:textures.size,joints,render:renderer?{frames:renderer.info.render.frame,memory:{...renderer.info.memory},calls:renderer.info.render.calls,triangles:renderer.info.render.triangles,pixelRatio:renderer.getPixelRatio()}:null};
 }

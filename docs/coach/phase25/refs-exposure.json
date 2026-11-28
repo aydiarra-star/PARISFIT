@@ -1,0 +1,350 @@
+[
+  {
+    "ref": "refs/audit/pull/1/head",
+    "commit": "7d199616192edc28bf63a75f03cbcff6dc2d3e5d",
+    "files": 3,
+    "categories": {
+      "application-or-infrastructure": 3
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/audit/pull/10/head",
+    "commit": "ebce1e9ddaec9afd714a0352c950edb489ae44a2",
+    "files": 19,
+    "categories": {
+      "application-or-infrastructure": 18,
+      "diagnostic-or-test-tool": 1
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/audit/pull/11/head",
+    "commit": "fc51383e1a28f649a700057bb4d19bcb420c8eaf",
+    "files": 901,
+    "categories": {
+      "application-or-infrastructure": 44,
+      "3d-model": 6,
+      "report-evidence-or-working-data": 488,
+      "diagnostic-or-test-tool": 220,
+      "video": 141,
+      "capture-or-biomechanical-model": 2
+    },
+    "animatedGLBs": [
+      "assets/coach/coach.glb",
+      "docs/coach/phase5/mocap-prototype.glb",
+      "docs/coach/phase5/video-prototype.glb",
+      "docs/coach/phase6/corrected.glb",
+      "docs/coach/phase6/retargeted.glb",
+      "docs/coach/phase7/prototype.glb"
+    ],
+    "captureFiles": [
+      "docs/coach/phase6/source-14_06.bvh",
+      "docs/coach/phase6/source-22_14.bvh"
+    ]
+  },
+  {
+    "ref": "refs/audit/pull/11/merge",
+    "commit": "0d0e08ca1f4642945b0466fab4d739c4035e2a69",
+    "files": 901,
+    "categories": {
+      "application-or-infrastructure": 44,
+      "3d-model": 6,
+      "report-evidence-or-working-data": 488,
+      "diagnostic-or-test-tool": 220,
+      "video": 141,
+      "capture-or-biomechanical-model": 2
+    },
+    "animatedGLBs": [
+      "assets/coach/coach.glb",
+      "docs/coach/phase5/mocap-prototype.glb",
+      "docs/coach/phase5/video-prototype.glb",
+      "docs/coach/phase6/corrected.glb",
+      "docs/coach/phase6/retargeted.glb",
+      "docs/coach/phase7/prototype.glb"
+    ],
+    "captureFiles": [
+      "docs/coach/phase6/source-14_06.bvh",
+      "docs/coach/phase6/source-22_14.bvh"
+    ]
+  },
+  {
+    "ref": "refs/audit/pull/2/head",
+    "commit": "42e3e5782ea298a03fdaeeeb63d3ccd0fd74f07e",
+    "files": 12,
+    "categories": {
+      "application-or-infrastructure": 12
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/audit/pull/3/head",
+    "commit": "634550b990f1271065d783cf2df4fd1af47a6e44",
+    "files": 19,
+    "categories": {
+      "application-or-infrastructure": 18,
+      "diagnostic-or-test-tool": 1
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/audit/pull/3/merge",
+    "commit": "536b044d865e2d54c779deb38d4379729c371e05",
+    "files": 19,
+    "categories": {
+      "application-or-infrastructure": 18,
+      "diagnostic-or-test-tool": 1
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/audit/pull/4/head",
+    "commit": "6fb80cb078834eeee237147c853fd3404c49d89a",
+    "files": 13,
+    "categories": {
+      "application-or-infrastructure": 13
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/audit/pull/5/head",
+    "commit": "bd2bc7137b96d52d66a79e4b001289c6354ddd8f",
+    "files": 13,
+    "categories": {
+      "application-or-infrastructure": 13
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/audit/pull/6/head",
+    "commit": "8a2ea3923d49dbbbb4b26e556ec588761df78aac",
+    "files": 13,
+    "categories": {
+      "application-or-infrastructure": 13
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/audit/pull/7/head",
+    "commit": "59fcd8f992115e3498bee8f11e1aee8559b9a81f",
+    "files": 13,
+    "categories": {
+      "application-or-infrastructure": 13
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/audit/pull/8/head",
+    "commit": "9c1feef70c1ce572ec36e41ecf169839dfa57389",
+    "files": 13,
+    "categories": {
+      "application-or-infrastructure": 13
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/audit/pull/9/head",
+    "commit": "bfc5f729fd7391af7dfeeec7cfdbb6d4038eed4d",
+    "files": 14,
+    "categories": {
+      "application-or-infrastructure": 14
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/heads/arena/a03f64da-parisfit",
+    "commit": "fc51383e1a28f649a700057bb4d19bcb420c8eaf",
+    "files": 901,
+    "categories": {
+      "application-or-infrastructure": 44,
+      "3d-model": 6,
+      "report-evidence-or-working-data": 488,
+      "diagnostic-or-test-tool": 220,
+      "video": 141,
+      "capture-or-biomechanical-model": 2
+    },
+    "animatedGLBs": [
+      "assets/coach/coach.glb",
+      "docs/coach/phase5/mocap-prototype.glb",
+      "docs/coach/phase5/video-prototype.glb",
+      "docs/coach/phase6/corrected.glb",
+      "docs/coach/phase6/retargeted.glb",
+      "docs/coach/phase7/prototype.glb"
+    ],
+    "captureFiles": [
+      "docs/coach/phase6/source-14_06.bvh",
+      "docs/coach/phase6/source-22_14.bvh"
+    ]
+  },
+  {
+    "ref": "refs/heads/main",
+    "commit": "83f89f8727c1de1c65dbe1278676f1daafd173fc",
+    "files": 19,
+    "categories": {
+      "application-or-infrastructure": 18,
+      "diagnostic-or-test-tool": 1
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/remotes/origin/HEAD",
+    "commit": "83f89f8727c1de1c65dbe1278676f1daafd173fc",
+    "files": 19,
+    "categories": {
+      "application-or-infrastructure": 18,
+      "diagnostic-or-test-tool": 1
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/remotes/origin/arena/2ee1d988-parisfit",
+    "commit": "bd2bc7137b96d52d66a79e4b001289c6354ddd8f",
+    "files": 13,
+    "categories": {
+      "application-or-infrastructure": 13
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/remotes/origin/arena/6df23232-parisfit",
+    "commit": "ebce1e9ddaec9afd714a0352c950edb489ae44a2",
+    "files": 19,
+    "categories": {
+      "application-or-infrastructure": 18,
+      "diagnostic-or-test-tool": 1
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/remotes/origin/arena/a03f64da-parisfit",
+    "commit": "fc51383e1a28f649a700057bb4d19bcb420c8eaf",
+    "files": 901,
+    "categories": {
+      "application-or-infrastructure": 44,
+      "3d-model": 6,
+      "report-evidence-or-working-data": 488,
+      "diagnostic-or-test-tool": 220,
+      "video": 141,
+      "capture-or-biomechanical-model": 2
+    },
+    "animatedGLBs": [
+      "assets/coach/coach.glb",
+      "docs/coach/phase5/mocap-prototype.glb",
+      "docs/coach/phase5/video-prototype.glb",
+      "docs/coach/phase6/corrected.glb",
+      "docs/coach/phase6/retargeted.glb",
+      "docs/coach/phase7/prototype.glb"
+    ],
+    "captureFiles": [
+      "docs/coach/phase6/source-14_06.bvh",
+      "docs/coach/phase6/source-22_14.bvh"
+    ]
+  },
+  {
+    "ref": "refs/remotes/origin/arena/b8a2d628-parisfit",
+    "commit": "6fb80cb078834eeee237147c853fd3404c49d89a",
+    "files": 13,
+    "categories": {
+      "application-or-infrastructure": 13
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/remotes/origin/docs/fondations-parisfit",
+    "commit": "7d199616192edc28bf63a75f03cbcff6dc2d3e5d",
+    "files": 3,
+    "categories": {
+      "application-or-infrastructure": 3
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/remotes/origin/feat/parisfit-coach-3d-avatar",
+    "commit": "bfc5f729fd7391af7dfeeec7cfdbb6d4038eed4d",
+    "files": 14,
+    "categories": {
+      "application-or-infrastructure": 14
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/remotes/origin/feat/socle-interface-parisfit",
+    "commit": "42e3e5782ea298a03fdaeeeb63d3ccd0fd74f07e",
+    "files": 12,
+    "categories": {
+      "application-or-infrastructure": 12
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/remotes/origin/fix/coach-ia-entry-mobile",
+    "commit": "9c1feef70c1ce572ec36e41ecf169839dfa57389",
+    "files": 13,
+    "categories": {
+      "application-or-infrastructure": 13
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/remotes/origin/fix/coach-ia-mobile-visual-training",
+    "commit": "59fcd8f992115e3498bee8f11e1aee8559b9a81f",
+    "files": 13,
+    "categories": {
+      "application-or-infrastructure": 13
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/remotes/origin/fix/refresh-parisfit-original-ui",
+    "commit": "8a2ea3923d49dbbbb4b26e556ec588761df78aac",
+    "files": 13,
+    "categories": {
+      "application-or-infrastructure": 13
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/remotes/origin/main",
+    "commit": "83f89f8727c1de1c65dbe1278676f1daafd173fc",
+    "files": 19,
+    "categories": {
+      "application-or-infrastructure": 18,
+      "diagnostic-or-test-tool": 1
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  },
+  {
+    "ref": "refs/remotes/origin/test/renforcer-qualite-socle",
+    "commit": "634550b990f1271065d783cf2df4fd1af47a6e44",
+    "files": 19,
+    "categories": {
+      "application-or-infrastructure": 18,
+      "diagnostic-or-test-tool": 1
+    },
+    "animatedGLBs": [],
+    "captureFiles": []
+  }
+]

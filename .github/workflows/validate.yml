@@ -5,6 +5,11 @@ on:
   pull_request:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      legacy_authoring:
+        description: "Explicitly authorize historical authoring (not part of passive review)"
+        type: boolean
+        default: false
 permissions:
   contents: read
 jobs:
@@ -12,12 +17,38 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # migration regression reads the fc51383 worker
       - uses: actions/setup-node@v4
         with:
           node-version: 22
       - name: Vérifier la syntaxe JavaScript
         run: |
           node --check app.js
+          node --check app-state.js
+          node tests/app-state.cjs
+          node --check demo-data.js
+          node --check service-worker.js
+          node --input-type=module --check < coach-content.js
+          node tests/coach-independent-review.cjs
+          node tests/coach-passive-qualification.cjs
+          node tests/coach-documentary-review.cjs
+          node tests/coach-evidence.cjs
+          node tests/coach-transition-evidence.cjs
+          node tests/coach-transition-gate.cjs
+          node tests/coach-contact-evidence.cjs
+          node tests/coach-mocap-evidence.cjs
+          node tests/coach-cmu-evidence.cjs
+          node tests/coach-production-pipeline.cjs
+          python3 tools/animation-pipeline/test_gate.py
+          python3 tools/capture-pipeline/test_intake.py
+          python3 tools/capture-pipeline/test_permissions.py
+          node tests/coach-capture-readiness.cjs
+          node tests/coach-blender-evidence.cjs
+          node tests/coach-biomechanics-evidence.cjs
+          node tests/coach-anatomy-evidence.cjs
+          node tests/coach-source-qualification.cjs
+          node tests/coach-asset.cjs
           node --input-type=module --check < coach-3d.js
       - name: Vérifier le manifeste PWA
         run: node -e "JSON.parse(require('fs').readFileSync('manifest.webmanifest','utf8')); console.log('Manifest JSON valide')"
@@ -29,3 +60,431 @@ jobs:
           grep -q 'id="view-nutrition"' index.html
           grep -q 'id="view-mental"' index.html
           echo "Socle PARISFIT présent"
+
+      - name: Install browser test tools
+        run: npm ci
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Browser regression and 3D tests
+        run: |
+          set -o pipefail
+          python3 tools/animation-lock/build_public.py
+          python3 tools/animation-lock/test_static.py
+          node tests/coach-animation-lock.cjs
+          node tests/phase24-preservation.cjs
+          python3 -m http.server 3000 --bind 0.0.0.0 --directory .cache/public &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          mkdir -p .cache
+          {
+            npm run test:browser
+          } 2>&1 | tee .cache/phase18-browser-ci.log
+      - name: Preserve browser failure diagnostics
+        if: failure()
+        run: |
+          python3 - <<'PYCODE'
+          from pathlib import Path
+          p=Path('.cache/phase18-browser-ci.log')
+          if p.exists():
+              text=p.read_text(errors='replace')[-14000:]
+              for i in range(0,len(text),3500):
+                  chunk=text[i:i+3500].replace('%','%25').replace('\r','%0D').replace('\n','%0A')
+                  print('::warning title=phase18-browser-tail-'+str(i//3500)+'::'+chunk)
+          PYCODE
+      - name: Keep public-safe regression results only
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coach-browser-review
+          path: |
+            .cache/final-audit/
+            .cache/phase24/browser-report.json
+            .cache/phase24/migration-report.json
+            .cache/phase18-browser-ci.log
+  blender-control:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.legacy_authoring == true }}
+    # Public licensed fixtures ONLY. Never upload personal capture to this workflow.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install real Blender Python runtime dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg blender python3-numpy python3-requests libxrender1 libxxf86vm1 libxfixes3 libxi6 libxkbcommon0 libsm6 libice6 libgl1 libegl1 libx11-6 libxext6 libgomp1
+          blender --version
+          mkdir -p .cache/phase9
+          python -m pip freeze > .cache/phase9/python-packages.txt
+          dpkg-query -W > .cache/phase9/system-packages.txt
+      - name: Execute BVH calibration and Rocketbox retarget in Blender
+        run: blender --background --factory-startup --python-exit-code 1 --python tools/blender-pipeline/retarget.py > .cache/phase9/blender.log 2>&1
+      - name: Expose diagnostic evidence through check annotations
+        if: always()
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          for name in ["blender-report.json", "blender.log"]:
+              p=Path(".cache/phase9")/name
+              if p.exists():
+                  text=p.read_text()[-14000:]
+                  print("::warning title="+name+"::"+text.replace("%","%25").replace("\r","%0D").replace("\n","%0A"))
+          PY
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verify GLB in real Three.js browser
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+          python -m http.server 3000 --bind 0.0.0.0 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          node tools/blender-pipeline/check.cjs
+      - name: Expose Three.js result
+        if: always()
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path(".cache/phase9/three-report.json")
+          if p.exists():
+              print("::warning title=three-report.json::"+p.read_text().replace("%","%25").replace("\n","%0A"))
+          PY
+      - name: Phase10 independent pre-export audit and controlled floor comparison
+        run: |
+          mkdir -p .cache/phase10
+          python tools/biomechanics/test_contracts.py
+          blender --background --factory-startup --python-exit-code 1 --python tools/biomechanics/export.py > .cache/phase10/blender.log 2>&1
+          python tools/biomechanics/test_generated.py
+      - name: Phase10 Three.js and complete comparison videos
+        run: |
+          python -m http.server 3000 --bind 0.0.0.0 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          node tools/biomechanics/check.cjs
+          FFMPEG_PATH=$(command -v ffmpeg) node tools/biomechanics/capture.cjs
+          python tools/biomechanics/verify-videos.py
+          python tools/biomechanics/build-gallery.py
+      - name: Phase10 public control diagnostics
+        if: always()
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,base64,zlib
+          for name in ["before-report.json","after-report.json","comparison-report.json","morphology-report.json","three-report.json","video-report.json","blender.log"]:
+              p=Path(".cache/phase10")/name
+              if p.exists():
+                  text=p.read_text()[-16000:]
+                  if name.endswith(".json"):
+                      encoded=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+                      for i in range(0,len(encoded),2500):
+                          print("::warning title=phase10-b64-"+name+"-"+str(i//2500)+"::"+encoded[i:i+2500])
+                      continue
+                  print("::warning title=phase10-"+name+"::"+text.replace("%","%25").replace("\r","%0D").replace("\n","%0A"))
+          PY
+      - name: Phase10 control artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase10-control-review
+          path: .cache/phase10/
+          retention-days: 30
+      - name: Phase11 anatomy and three methods
+        run: |
+          mkdir -p .cache/phase11
+          for method in A B C; do
+            blender --background --factory-startup --python-exit-code 1 --python tools/anatomy/export.py -- --method "$method" > ".cache/phase11/$method.log" 2>&1
+          done
+          python -m http.server 3000 --bind 0.0.0.0 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          python tools/anatomy/test_generated.py
+          node tools/anatomy/check.cjs
+          FFMPEG_PATH=$(command -v ffmpeg) node tools/anatomy/capture.cjs
+          node tools/anatomy/diagnostic-video.cjs
+          python tools/anatomy/package.py
+          python tools/anatomy/test_metrics.py
+      - name: Phase11 evidence transport
+        if: always()
+        run: |
+          python - <<'PY'
+          import json,zlib,base64
+          from pathlib import Path
+          root=Path('.cache/phase11')
+          for name in ['A/report.json','B/report.json','C/report.json','three-report.json']:
+              p=root/name
+              if p.exists():
+                  raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+                  for i in range(0,len(raw),3000):print('::warning title=phase11-'+name.replace('/','_')+'-'+str(i//3000)+'::'+raw[i:i+3000])
+          for p in root.glob('*.log'):
+              print('::notice title=phase11-log-'+p.stem+'::'+p.read_text()[-2500:].replace('%','%25').replace('\n','%0A'))
+          PY
+      - name: Phase11 skeleton inventory transport
+        if: always()
+        run: |
+          python - <<'PY'
+          import zlib,base64
+          from pathlib import Path
+          p=Path('.cache/phase11/anatomy-summary.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              for i in range(0,min(len(raw),38000),3800):print('::warning title=phase11-anatomy-summary.json-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - name: Phase11 skeleton inventory continuation
+        if: always()
+        run: |
+          python - <<'PY'
+          import zlib,base64
+          from pathlib import Path
+          p=Path('.cache/phase11/anatomy-summary.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              for i in range(38000,len(raw),3800):print('::warning title=phase11-anatomy-summary.json-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - name: Phase11 video inventory transport
+        if: always()
+        run: |
+          python - <<'PY'
+          import zlib,base64
+          from pathlib import Path
+          p=Path('.cache/phase11/video-report.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              for i in range(0,len(raw),3000):print('::warning title=phase11-video-report.json-'+str(i//3000)+'::'+raw[i:i+3000])
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: phase11-anatomical-diagnostics
+          path: .cache/phase11/
+          retention-days: 30
+      - name: Preserve control evidence even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase9-blender-control
+          path: .cache/phase9/
+          retention-days: 30
+  source-qualification:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.legacy_authoring == true }}
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Source audit environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-numpy python3-pil python3-venv ffmpeg
+          python3 -m venv --system-site-packages .cache/source-env
+          .cache/source-env/bin/pip install c3d==0.6.0
+      - name: Public pinned source screening
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 tools/source-benchmark/download.py
+          python3 tools/source-benchmark/test_audit.py
+          python3 tools/source-benchmark/audit.py
+          python3 tools/source-benchmark/visuals.py
+          python3 tools/source-benchmark/originals.py
+          .cache/source-env/bin/python tools/source-benchmark/analyze-originals.py
+          python3 tools/source-benchmark/marker-benchmark.py
+          python3 tools/source-benchmark/gallery.py
+      - name: Source audit evidence
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json,zlib,base64
+          from pathlib import Path
+          root=Path('.cache/phase12')
+          for name in ['14_06-report.json','original-retrieval.json','visual-report.json']:
+              p=root/name
+              if p.exists():
+                  raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+                  for i in range(0,len(raw),3800):print('::warning title=phase12-'+name+'-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - name: Original file analysis evidence
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import zlib,base64
+          from pathlib import Path
+          p=Path('.cache/phase12/original-analysis.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              for i in range(0,len(raw),3800):print('::warning title=phase12-original-analysis.json-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - name: Marker benchmark evidence and small preview
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import zlib,base64
+          from pathlib import Path
+          for name in ['marker-benchmark.json','marker-preview.png']:
+              p=Path('.cache/phase12')/name
+              if p.exists():
+                  raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+                  for i in range(0,len(raw),3800):print('::warning title=phase12-'+name+'-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: phase12-source-benchmark
+          path: .cache/phase12/
+          retention-days: 30
+
+  michaud-qualification:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.legacy_authoring == true }}
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Independent marker environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-numpy python3-pil ffmpeg
+      - name: Isolated pinned OpenSim probe environment
+        run: |
+          sudo apt-get install -y python3-venv
+          python3 -m venv .cache/opensim-probe
+          .cache/opensim-probe/bin/pip install numpy==2.1.3 'https://files.pythonhosted.org/packages/de/13/30b6ed7c67ae1a9952b53c2e3aea3c2427ab349082ff3db4d62406eb25c3/opensim-4.6-2-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl#sha256=6bb4983097323e60326f6f102ee9f385e470deba6cb3a666219bf27aacbefb6d'
+      - name: Pinned data, force audit and explicit reconstruction hypotheses
+        run: |
+          python3 tools/michaud/acquire.py
+          python3 tools/michaud/test_core.py
+          python3 tools/michaud/analyze.py
+          python3 tools/michaud/render.py
+          .cache/opensim-probe/bin/python tools/michaud/model_probe.py
+      - name: Phase13 public numerical reports
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import zlib,base64
+          for name in ['provenance.json','forces-report.json','reconstruction-report.json','phases-report.json','model-probe.json']:
+              p=Path('.cache/phase13')/name
+              if p.exists():
+                  raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+                  for i in range(0,len(raw),3800):print('::warning title=phase13-'+name+'-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - name: Phase13 full marker inventory
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import zlib,base64
+          p=Path('.cache/phase13/markers-report.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              assert len(raw)<=38000,'MARKER_REPORT_TRANSPORT_SIZE'
+              for i in range(0,len(raw),3800):print('::warning title=phase13-markers-report.json-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - name: Phase13 model template metadata
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import zlib,base64
+          p=Path('.cache/phase13/model-inspection.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              for i in range(0,len(raw),3800):print('::warning title=phase13-model-inspection.json-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - name: Phase13 small reproducible review data 1
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import zlib,base64
+          p=Path('.cache/phase13/review-data.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              assert len(raw)<=152000,'REVIEW_TRANSPORT_SIZE'
+              for i in range(0,min(len(raw),30400),3800):print('::warning title=phase13-review-data.json-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - name: Phase13 small reproducible review data 2
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import zlib,base64
+          p=Path('.cache/phase13/review-data.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              assert len(raw)<=152000,'REVIEW_TRANSPORT_SIZE'
+              for i in range(30400,min(len(raw),60800),3800):print('::warning title=phase13-review-data.json-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - name: Phase13 small reproducible review data 3
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import zlib,base64
+          p=Path('.cache/phase13/review-data.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              assert len(raw)<=152000,'REVIEW_TRANSPORT_SIZE'
+              for i in range(60800,min(len(raw),91200),3800):print('::warning title=phase13-review-data.json-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - name: Phase13 small reproducible review data 4
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import zlib,base64
+          p=Path('.cache/phase13/review-data.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              assert len(raw)<=152000,'REVIEW_TRANSPORT_SIZE'
+              for i in range(91200,min(len(raw),121600),3800):print('::warning title=phase13-review-data.json-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - name: Phase13 small reproducible review data 5
+        if: always()
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import zlib,base64
+          p=Path('.cache/phase13/review-data.json')
+          if p.exists():
+              raw=base64.b64encode(zlib.compress(p.read_bytes(),9)).decode()
+              assert len(raw)<=152000,'REVIEW_TRANSPORT_SIZE'
+              for i in range(121600,min(len(raw),152000),3800):print('::warning title=phase13-review-data.json-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: phase13-michaud-qualification
+          path: .cache/phase13/
+          retention-days: 30
+
+  model-qualification:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.legacy_authoring == true }}
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect exact archive and upstream template without IK
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-numpy
+          python3 tools/model-qualification/acquire.py
+          python3 tools/model-qualification/test_contracts.py
+          python3 tools/metadata-plan/test_plan.py
+          python3 tools/passive-qualification/test_metrics.py
+          python3 tools/independent-review/test_review.py
+      - name: Transport public S01 audit only
+        run: |
+          python3 - <<'PY'
+          import json,zlib,base64
+          from pathlib import Path
+          d=json.loads(Path('.cache/phase14/original-audit.json').read_text())
+          # Compact structured report, no model geometry or other participant values.
+          raw=base64.b64encode(zlib.compress(json.dumps(d,separators=(',',':'),ensure_ascii=False).encode(),9)).decode()
+          assert len(raw)<=38000,'TRANSPORT_LIMIT'
+          for i in range(0,len(raw),3800):print('::warning title=phase14-original-'+str(i//3800)+'::'+raw[i:i+3800])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: phase14-model-qualification
+          path: .cache/phase14/original-audit.json
+          retention-days: 30

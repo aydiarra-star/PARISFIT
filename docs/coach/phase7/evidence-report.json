@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "scope": "Decode/integrity, NOT motion approval",
+  "videos": [
+    {
+      "file": "original-face.mp4",
+      "sha256": "0ec4e29e8613e4be9de3b8af033a026a4c00322261e8cad03db0736d62e8f01a",
+      "frames": 121,
+      "durationSeconds": 5.041667
+    },
+    {
+      "file": "original-profil.mp4",
+      "sha256": "515ce944b15e9d25ba4293e23cba694af1af33a91ce457201685c083a2246eed",
+      "frames": 121,
+      "durationSeconds": 5.041667
+    },
+    {
+      "file": "original-trois-quarts.mp4",
+      "sha256": "8ea25979482db931c254f2c1dcada2a524791c1bb6bc19d0127457ef3b382a33",
+      "frames": 121,
+      "durationSeconds": 5.041667
+    },
+    {
+      "file": "original-slow.mp4",
+      "sha256": "40d95890156b818d47b5490a83a3917ffbd47ab67af33809a700120597169c5b",
+      "frames": 121,
+      "durationSeconds": 10.083333
+    },
+    {
+      "file": "prototype-face.mp4",
+      "sha256": "64f0ca2011ba6f9ecf63e6d19f1006a374c2522bc3948ac671384ce21f4c2fe4",
+      "frames": 121,
+      "durationSeconds": 5.041667
+    },
+    {
+      "file": "prototype-profil.mp4",
+      "sha256": "7789da3433a54fd3ffaa3deba47a7467a548d37a2e03ac6fb450bbff6c881ab7",
+      "frames": 121,
+      "durationSeconds": 5.041667
+    },
+    {
+      "file": "prototype-trois-quarts.mp4",
+      "sha256": "c66283eb3eb9b08267e238126c475abfcc340d229fe658ded3c039374581bd30",
+      "frames": 121,
+      "durationSeconds": 5.041667
+    },
+    {
+      "file": "prototype-slow.mp4",
+      "sha256": "bad8191315b1381328a24434d4bff35d95b2415200b5a3d7a720ee52abc86df9",
+      "frames": 121,
+      "durationSeconds": 10.083333
+    }
+  ],
+  "assets": [
+    {
+      "file": "prototype.glb",
+      "sha256": "de21279072e548d79fe1a2421dd155c5077df2e307ae4a59388bbafeaad456a6",
+      "bytes": 5627520
+    },
+    {
+      "file": "measurements.json",
+      "sha256": "21a4eb60282baa622cc5f3a8fd3081b9f73c803cd91b49fbbe102d4f21a9785c",
+      "bytes": 433151
+    },
+    {
+      "file": "decision.json",
+      "sha256": "69d217c4ae6b273e92e799f26eb7b1ea2226bd0572f887e3b9112d24f168a026",
+      "bytes": 1252
+    },
+    {
+      "file": "export-report.json",
+      "sha256": "30d864178004dc5e1f0b6800a59503e068478855a1e36aab3bec5c5e16d5d4d2",
+      "bytes": 229
+    }
+  ]
+}

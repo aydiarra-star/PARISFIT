@@ -1,0 +1,894 @@
+ .github/workflows/deploy-pages.yml                 |    13 +-
+ .github/workflows/passive-evidence.yml             |    27 +
+ .github/workflows/preliminary-review.yml           |    25 +
+ .github/workflows/validate.yml                     |   459 +
+ .gitignore                                         |     3 +
+ ARCHITECTURE.md                                    |    33 +-
+ README.md                                          |    46 +-
+ app.js                                             |    76 +-
+ assets/coach/coach.glb                             |   Bin 0 -> 5789744 bytes
+ assets/coach/licenses/ROCKETBOX-MIT.txt            |    21 +
+ assets/coach/previews/etirementdos.jpg             |   Bin 0 -> 7520 bytes
+ assets/coach/previews/fentes.jpg                   |   Bin 0 -> 7053 bytes
+ assets/coach/previews/gainage.jpg                  |   Bin 0 -> 6444 bytes
+ assets/coach/previews/jumpingjacks.jpg             |   Bin 0 -> 8199 bytes
+ assets/coach/previews/mobiliteepaules.jpg          |   Bin 0 -> 7467 bytes
+ assets/coach/previews/mountainclimber.jpg          |   Bin 0 -> 6794 bytes
+ assets/coach/previews/pompes.jpg                   |   Bin 0 -> 6286 bytes
+ assets/coach/previews/squat.jpg                    |   Bin 0 -> 7475 bytes
+ assets/coach/source.json                           |    50 +
+ assets/coach/transitions/candidates.json           |     1 +
+ assets/coach/transitions/contact-candidates.json   |     1 +
+ assets/coach/transitions/contact-source.json       |    17 +
+ assets/coach/transitions/raw-retarget.json         |     1 +
+ assets/coach/transitions/source.json               |    29 +
+ coach-3d.js                                        |   236 +-
+ coach-content.js                                   |   311 +
+ coach-transition-gate.js                           |    31 +
+ demo-data.js                                       |    16 +-
+ docs/coach/REPORT.md                               |   107 +
+ docs/coach/asset-report.json                       |    16 +
+ docs/coach/browser-report.json                     |    58 +
+ docs/coach/evidence/eight-exercises-0.jpg          |   Bin 0 -> 95998 bytes
+ docs/coach/evidence/eight-exercises-1.jpg          |   Bin 0 -> 97158 bytes
+ docs/coach/evidence/eight-exercises-2.jpg          |   Bin 0 -> 101451 bytes
+ docs/coach/evidence/mobile-390.jpg                 |   Bin 0 -> 68192 bytes
+ docs/coach/mobile-report.json                      |    24 +
+ docs/coach/phase10/CAPTURE-AND-RIGHTS.md           |    28 +
+ docs/coach/phase10/CRITERIA.md                     |    35 +
+ docs/coach/phase10/REPORT.md                       |    68 +
+ docs/coach/phase10/STATUS.md                       |     7 +
+ docs/coach/phase10/after-report.json               |   196 +
+ docs/coach/phase10/before-report.json              |   196 +
+ docs/coach/phase10/comparison-report.json          |    20 +
+ docs/coach/phase10/evidence.json                   |    14 +
+ docs/coach/phase10/first-run-unqualified/README.md |     2 +
+ .../phase10/first-run-unqualified/after-report.txt |   128 +
+ .../first-run-unqualified/before-report.txt        |   128 +
+ .../first-run-unqualified/check-annotations.json   |     1 +
+ .../first-run-unqualified/comparison-report.txt    |    18 +
+ .../first-run-unqualified/morphology-report.txt    |   126 +
+ .../first-run-unqualified/three-report.json        |    36 +
+ .../phase10/first-run-unqualified/video-report.txt |    54 +
+ docs/coach/phase10/index.html                      |     7 +
+ docs/coach/phase10/morphology-report.json          |   126 +
+ docs/coach/phase10/second-run-transport/README.md  |     1 +
+ .../second-run-transport/check-annotations.json    |     1 +
+ docs/coach/phase10/three-report.json               |    36 +
+ docs/coach/phase10/video-report.json               |    54 +
+ docs/coach/phase11/ANATOMY.md                      |    32 +
+ docs/coach/phase11/A_report.json                   |     1 +
+ docs/coach/phase11/B_report.json                   |     1 +
+ docs/coach/phase11/CAPTURE-STATUS.md               |    15 +
+ docs/coach/phase11/C_report.json                   |     1 +
+ docs/coach/phase11/METHODS.md                      |    58 +
+ docs/coach/phase11/PROFESSIONAL-REVIEW.md          |    29 +
+ docs/coach/phase11/REPORT.md                       |    64 +
+ docs/coach/phase11/anatomy-summary.json            |     1 +
+ docs/coach/phase11/anatomy.html                    |  6454 +++++++++++
+ docs/coach/phase11/evidence.json                   |    14 +
+ docs/coach/phase11/index.html                      |     1 +
+ docs/coach/phase11/rejected-executions/README.md   |     7 +
+ .../first-check-annotations.json                   |     1 +
+ .../matrix-IK-check-annotations.json               |     1 +
+ docs/coach/phase11/three-report.json               |    52 +
+ docs/coach/phase11/video-report.json               |     1 +
+ docs/coach/phase12/14_06-report.json               |   593 +
+ docs/coach/phase12/CAPTURE.md                      |    27 +
+ docs/coach/phase12/RECOVER.md                      |    31 +
+ docs/coach/phase12/REPORT.md                       |    87 +
+ docs/coach/phase12/SOURCES-AND-RIGHTS.md           |    44 +
+ docs/coach/phase12/ci-evidence.json                |    14 +
+ docs/coach/phase12/downloads.json                  |    26 +
+ docs/coach/phase12/index.html                      |     1 +
+ docs/coach/phase12/local-benchmark.json            |  2353 ++++
+ docs/coach/phase12/local-evidence.json             |    53 +
+ docs/coach/phase12/marker-benchmark.json           |    92 +
+ docs/coach/phase12/marker-preview.png              |   Bin 0 -> 11451 bytes
+ docs/coach/phase12/original-analysis.json          |   137 +
+ docs/coach/phase12/original-retrieval.json         |    91 +
+ .../coach/phase12/previews/filtered_only_m-143.png |   Bin 0 -> 10562 bytes
+ docs/coach/phase12/previews/filtered_only_m.mp4    |   Bin 0 -> 155490 bytes
+ .../previews/historical_normalized60_m-72.png      |   Bin 0 -> 10866 bytes
+ .../phase12/previews/historical_normalized60_m.mp4 |   Bin 0 -> 107588 bytes
+ docs/coach/phase12/previews/native_m-0.png         |   Bin 0 -> 9973 bytes
+ docs/coach/phase12/previews/native_m-144.png       |   Bin 0 -> 10094 bytes
+ docs/coach/phase12/previews/native_m-287.png       |   Bin 0 -> 10100 bytes
+ docs/coach/phase12/previews/native_m.mp4           |   Bin 0 -> 156076 bytes
+ docs/coach/phase12/previews/overlay.png            |   Bin 0 -> 11682 bytes
+ .../phase12/previews/resampled_channels60_m.mp4    |   Bin 0 -> 111176 bytes
+ docs/coach/phase12/visual-report.json              |    30 +
+ docs/coach/phase13/FORCE-AUDIT.md                  |    29 +
+ docs/coach/phase13/RECONSTRUCTION.md               |    50 +
+ docs/coach/phase13/REPORT.md                       |    60 +
+ docs/coach/phase13/REPRODUCE.md                    |    46 +
+ docs/coach/phase13/RIGHTS-AND-DATA.md              |    26 +
+ docs/coach/phase13/browser-report.json             |    36 +
+ docs/coach/phase13/evidence.json                   |    16 +
+ docs/coach/phase13/filter-sensitivity.json         |    45 +
+ docs/coach/phase13/forces-report.json              |   252 +
+ docs/coach/phase13/index.html                      |     1 +
+ docs/coach/phase13/local-render-report.json        |    24 +
+ docs/coach/phase13/markers-report.json             |  1418 +++
+ docs/coach/phase13/model-inspection.json           |   537 +
+ docs/coach/phase13/model-probe.json                |    92 +
+ docs/coach/phase13/phases-report.json              |    28 +
+ docs/coach/phase13/previews/H0_skin_landmarks.mp4  |   Bin 0 -> 119911 bytes
+ docs/coach/phase13/previews/H0_skin_landmarks.png  |   Bin 0 -> 18816 bytes
+ docs/coach/phase13/previews/H1_static_lengths.mp4  |   Bin 0 -> 126616 bytes
+ docs/coach/phase13/previews/H1_static_lengths.png  |   Bin 0 -> 18843 bytes
+ .../previews/H2_rigid_pelvis_static_lengths.mp4    |   Bin 0 -> 132568 bytes
+ .../previews/H2_rigid_pelvis_static_lengths.png    |   Bin 0 -> 19349 bytes
+ docs/coach/phase13/provenance.json                 |    36 +
+ docs/coach/phase13/reconstruction-report.json      |   486 +
+ docs/coach/phase13/review-data.json                |     1 +
+ docs/coach/phase14/ANTHROPOMETRY.md                |    35 +
+ docs/coach/phase14/AUTHOR-REQUEST.md               |    23 +
+ docs/coach/phase14/DECISION.md                     |    31 +
+ docs/coach/phase14/DOCUMENTATION.md                |    45 +
+ docs/coach/phase14/FORCES.md                       |    37 +
+ docs/coach/phase14/FRAMES.md                       |    28 +
+ docs/coach/phase14/REPRODUCE.md                    |    36 +
+ docs/coach/phase14/anthropometry.json              |    42 +
+ docs/coach/phase14/browser-report.json             |    11 +
+ docs/coach/phase14/correspondences.json            |  1128 ++
+ docs/coach/phase14/dataset-README.md               |    38 +
+ docs/coach/phase14/decision.json                   |    12 +
+ docs/coach/phase14/evidence.json                   |     8 +
+ docs/coach/phase14/force-audit.json                |  1948 ++++
+ docs/coach/phase14/index.html                      |     1 +
+ docs/coach/phase14/matrix-37x66.csv                |    38 +
+ docs/coach/phase14/model-markers.json              |   482 +
+ docs/coach/phase14/opencap-comparison.json         |   345 +
+ docs/coach/phase14/original-audit.json             |     1 +
+ docs/coach/phase15/ALTERNATIVES.md                 |    51 +
+ docs/coach/phase15/AUTHOR-REQUEST-EN.md            |    24 +
+ docs/coach/phase15/AUTHOR-REQUEST-FR.md            |    24 +
+ docs/coach/phase15/DECISION.md                     |    20 +
+ docs/coach/phase15/INDEPENDENT-PLAN.md             |    39 +
+ docs/coach/phase15/INVENTORY.md                    |    26 +
+ docs/coach/phase15/PROFESSIONAL-REVIEW.md          |    42 +
+ docs/coach/phase15/REPRODUCE.md                    |    27 +
+ docs/coach/phase15/SCALING.md                      |    24 +
+ docs/coach/phase15/browser-report.json             |    10 +
+ docs/coach/phase15/decision.json                   |    12 +
+ docs/coach/phase15/index.html                      |    49 +
+ docs/coach/phase15/manifest.json                   |    20 +
+ docs/coach/phase15/observability.json              |   489 +
+ docs/coach/phase15/scaling-audit.json              |   120 +
+ docs/coach/phase16/author-request-final-en.md      |    25 +
+ docs/coach/phase16/author-request-final-fr.md      |    25 +
+ docs/coach/phase16/browser-report.json             |    10 +
+ docs/coach/phase16/candidate-inspection.json       |   277 +
+ docs/coach/phase16/decision-report.md              |    44 +
+ docs/coach/phase16/index.html                      |   188 +
+ docs/coach/phase16/manifest.json                   |    14 +
+ docs/coach/phase16/review-status.json              |    67 +
+ docs/coach/phase16/scaling-factors-audit.md        |    24 +
+ docs/coach/phase16/squat-dataset-research.md       |    69 +
+ docs/coach/phase17/REPRODUCE.md                    |    36 +
+ docs/coach/phase17/browser-report.json             |    12 +
+ docs/coach/phase17/c3d-inspection.json             |  3078 +++++
+ docs/coach/phase17/configuration-inspection.json   |  3207 +++++
+ docs/coach/phase17/decision-report.md              |    52 +
+ docs/coach/phase17/ground-reaction-forces-audit.md |    54 +
+ docs/coach/phase17/index.html                      |     1 +
+ docs/coach/phase17/legacy-mobile-rerun.json        |    41 +
+ docs/coach/phase17/legacy-transition-rerun.json    |    52 +
+ docs/coach/phase17/manifest.json                   |    28 +
+ docs/coach/phase17/mapping-status.json             |    16 +
+ docs/coach/phase17/marker-anatomical-mapping.csv   |    58 +
+ docs/coach/phase17/markerset-schematic.svg         |     1 +
+ docs/coach/phase17/professional-review-dossier.md  |    77 +
+ docs/coach/phase17/protected-baseline.json         |   557 +
+ docs/coach/phase17/rms-scaling-error-analysis.md   |    44 +
+ docs/coach/phase17/rocketbox-readonly.json         |    96 +
+ .../phase17/scaling-ik-configuration-audit.md      |    63 +
+ docs/coach/phase17/selected-squat-trial.md         |    48 +
+ docs/coach/phase17/source-excerpts.md              |   737 ++
+ docs/coach/phase17/source-manifest.json            |   390 +
+ docs/coach/phase17/static-marker-projections.svg   |     1 +
+ docs/coach/phase17/trial-diagnostics.svg           |     1 +
+ docs/coach/phase17/verification-notes.md           |    23 +
+ docs/coach/phase18/REPRODUCE.md                    |    36 +
+ docs/coach/phase18/anatomical-uncertainties.md     |   815 ++
+ docs/coach/phase18/animation-admission-criteria.md |    47 +
+ docs/coach/phase18/browser-report.json             |    12 +
+ docs/coach/phase18/c3d-independent-byte-audit.json |   165 +
+ docs/coach/phase18/c3d-integrity-and-timing.md     |    64 +
+ docs/coach/phase18/cache-identity.json             |    21 +
+ docs/coach/phase18/decision-report.md              |    41 +
+ docs/coach/phase18/expert-feedback-template.json   |    61 +
+ docs/coach/phase18/expert-questionnaire.md         |    84 +
+ docs/coach/phase18/historical-code-evidence.txt    |    44 +
+ docs/coach/phase18/historical-diff.json            |   145 +
+ .../phase18/historical-mobile-code-evidence.txt    |   120 +
+ .../coach/phase18/historical-report-differences.md |    64 +
+ docs/coach/phase18/independent-review-dossier.md   |    54 +
+ docs/coach/phase18/index.html                      |     1 +
+ docs/coach/phase18/manifest.json                   |    26 +
+ docs/coach/phase18/marker-review-register.csv      |    58 +
+ docs/coach/phase18/marker-review-register.json     |  1028 ++
+ docs/coach/phase18/protected-baseline.json         |   757 ++
+ docs/coach/phase18/python-c3d-reader-evidence.txt  |    56 +
+ docs/coach/phase18/review-status.json              |    16 +
+ docs/coach/phase18/test-results.md                 |    12 +
+ docs/coach/phase19/ab01-original-logs-inventory.md |    27 +
+ docs/coach/phase19/archive-probe.json              |  5439 +++++++++
+ .../phase19/capture-synchronization-evidence.md    |    18 +
+ docs/coach/phase19/ci-observed.json                |     1 +
+ docs/coach/phase19/decision-report.md              |    34 +
+ docs/coach/phase19/dependency-version-inventory.md |    27 +
+ docs/coach/phase19/independent-review-readiness.md |    13 +
+ .../phase19/local-and-preserved-inventory.json     |   360 +
+ docs/coach/phase19/marker-placement-evidence.md    |    17 +
+ docs/coach/phase19/missing-evidence-register.csv   |    19 +
+ docs/coach/phase19/preservation-check.json         |    14 +
+ docs/coach/phase19/prior-ci-artifact-index.json    |     1 +
+ docs/coach/phase19/prior-ci-jobs.json              |     1 +
+ docs/coach/phase19/test-output.txt                 |   102 +
+ docs/coach/phase19/test-results.md                 |    10 +
+ docs/coach/phase2/MOTION-SOURCES.md                |    25 +
+ docs/coach/phase2/PRO-REVIEW.md                    |    20 +
+ docs/coach/phase2/REPORT.md                        |    87 +
+ docs/coach/phase2/after/capture-manifest.json      |    49 +
+ docs/coach/phase2/after/etirementdos-face.mp4      |   Bin 0 -> 65914 bytes
+ docs/coach/phase2/after/etirementdos-midpoint.jpg  |   Bin 0 -> 40100 bytes
+ docs/coach/phase2/after/etirementdos-profil.mp4    |   Bin 0 -> 60331 bytes
+ docs/coach/phase2/after/etirementdos-sequence.jpg  |   Bin 0 -> 123559 bytes
+ docs/coach/phase2/after/etirementdos-slow.mp4      |   Bin 0 -> 87754 bytes
+ docs/coach/phase2/after/etirementdos-start.jpg     |   Bin 0 -> 40713 bytes
+ .../phase2/after/etirementdos-trois-quarts.mp4     |   Bin 0 -> 70067 bytes
+ docs/coach/phase2/after/face-detail.jpg            |   Bin 0 -> 60301 bytes
+ docs/coach/phase2/after/fentes-face.mp4            |   Bin 0 -> 125924 bytes
+ docs/coach/phase2/after/fentes-midpoint.jpg        |   Bin 0 -> 39755 bytes
+ docs/coach/phase2/after/fentes-profil.mp4          |   Bin 0 -> 131848 bytes
+ docs/coach/phase2/after/fentes-sequence.jpg        |   Bin 0 -> 122749 bytes
+ docs/coach/phase2/after/fentes-slow.mp4            |   Bin 0 -> 160696 bytes
+ docs/coach/phase2/after/fentes-start.jpg           |   Bin 0 -> 39798 bytes
+ docs/coach/phase2/after/fentes-trois-quarts.mp4    |   Bin 0 -> 135447 bytes
+ docs/coach/phase2/after/gainage-face.mp4           |   Bin 0 -> 21299 bytes
+ docs/coach/phase2/after/gainage-midpoint.jpg       |   Bin 0 -> 32278 bytes
+ docs/coach/phase2/after/gainage-profil.mp4         |   Bin 0 -> 24142 bytes
+ docs/coach/phase2/after/gainage-sequence.jpg       |   Bin 0 -> 102687 bytes
+ docs/coach/phase2/after/gainage-slow.mp4           |   Bin 0 -> 28522 bytes
+ docs/coach/phase2/after/gainage-start.jpg          |   Bin 0 -> 32304 bytes
+ docs/coach/phase2/after/gainage-trois-quarts.mp4   |   Bin 0 -> 24810 bytes
+ docs/coach/phase2/after/hand-detail.jpg            |   Bin 0 -> 32586 bytes
+ docs/coach/phase2/after/jumpingjacks-face.mp4      |   Bin 0 -> 68026 bytes
+ docs/coach/phase2/after/jumpingjacks-midpoint.jpg  |   Bin 0 -> 43301 bytes
+ docs/coach/phase2/after/jumpingjacks-profil.mp4    |   Bin 0 -> 49671 bytes
+ docs/coach/phase2/after/jumpingjacks-sequence.jpg  |   Bin 0 -> 128178 bytes
+ docs/coach/phase2/after/jumpingjacks-slow.mp4      |   Bin 0 -> 74329 bytes
+ docs/coach/phase2/after/jumpingjacks-start.jpg     |   Bin 0 -> 40301 bytes
+ .../phase2/after/jumpingjacks-trois-quarts.mp4     |   Bin 0 -> 63656 bytes
+ docs/coach/phase2/after/mobile-390.jpg             |   Bin 0 -> 81737 bytes
+ docs/coach/phase2/after/mobiliteepaules-face.mp4   |   Bin 0 -> 47497 bytes
+ .../phase2/after/mobiliteepaules-midpoint.jpg      |   Bin 0 -> 41807 bytes
+ docs/coach/phase2/after/mobiliteepaules-profil.mp4 |   Bin 0 -> 45451 bytes
+ .../phase2/after/mobiliteepaules-sequence.jpg      |   Bin 0 -> 126127 bytes
+ docs/coach/phase2/after/mobiliteepaules-slow.mp4   |   Bin 0 -> 59415 bytes
+ docs/coach/phase2/after/mobiliteepaules-start.jpg  |   Bin 0 -> 42268 bytes
+ .../phase2/after/mobiliteepaules-trois-quarts.mp4  |   Bin 0 -> 49735 bytes
+ docs/coach/phase2/after/mountainclimber-face.mp4   |   Bin 0 -> 24527 bytes
+ .../phase2/after/mountainclimber-midpoint.jpg      |   Bin 0 -> 36181 bytes
+ docs/coach/phase2/after/mountainclimber-profil.mp4 |   Bin 0 -> 42965 bytes
+ .../phase2/after/mountainclimber-sequence.jpg      |   Bin 0 -> 113855 bytes
+ docs/coach/phase2/after/mountainclimber-slow.mp4   |   Bin 0 -> 44532 bytes
+ docs/coach/phase2/after/mountainclimber-start.jpg  |   Bin 0 -> 36219 bytes
+ .../phase2/after/mountainclimber-trois-quarts.mp4  |   Bin 0 -> 37419 bytes
+ docs/coach/phase2/after/pompes-face.mp4            |   Bin 0 -> 37017 bytes
+ docs/coach/phase2/after/pompes-midpoint.jpg        |   Bin 0 -> 32757 bytes
+ docs/coach/phase2/after/pompes-profil.mp4          |   Bin 0 -> 46993 bytes
+ docs/coach/phase2/after/pompes-sequence.jpg        |   Bin 0 -> 105697 bytes
+ docs/coach/phase2/after/pompes-slow.mp4            |   Bin 0 -> 57293 bytes
+ docs/coach/phase2/after/pompes-start.jpg           |   Bin 0 -> 34371 bytes
+ docs/coach/phase2/after/pompes-trois-quarts.mp4    |   Bin 0 -> 46340 bytes
+ docs/coach/phase2/after/squat-face.mp4             |   Bin 0 -> 62019 bytes
+ docs/coach/phase2/after/squat-midpoint.jpg         |   Bin 0 -> 38132 bytes
+ docs/coach/phase2/after/squat-profil.mp4           |   Bin 0 -> 58921 bytes
+ docs/coach/phase2/after/squat-sequence.jpg         |   Bin 0 -> 120480 bytes
+ docs/coach/phase2/after/squat-slow.mp4             |   Bin 0 -> 81706 bytes
+ docs/coach/phase2/after/squat-start.jpg            |   Bin 0 -> 39790 bytes
+ docs/coach/phase2/after/squat-trois-quarts.mp4     |   Bin 0 -> 65833 bytes
+ docs/coach/phase2/asset-report.json                |    16 +
+ docs/coach/phase2/before-trajectory-report.json    |   642 +
+ docs/coach/phase2/before/capture-manifest.json     |    49 +
+ docs/coach/phase2/before/etirementdos-face.mp4     |   Bin 0 -> 78791 bytes
+ docs/coach/phase2/before/etirementdos-midpoint.jpg |   Bin 0 -> 43330 bytes
+ docs/coach/phase2/before/etirementdos-profil.mp4   |   Bin 0 -> 75606 bytes
+ docs/coach/phase2/before/etirementdos-sequence.jpg |   Bin 0 -> 128429 bytes
+ docs/coach/phase2/before/etirementdos-slow.mp4     |   Bin 0 -> 111631 bytes
+ docs/coach/phase2/before/etirementdos-start.jpg    |   Bin 0 -> 41903 bytes
+ .../phase2/before/etirementdos-trois-quarts.mp4    |   Bin 0 -> 90086 bytes
+ docs/coach/phase2/before/face-detail.jpg           |   Bin 0 -> 59249 bytes
+ docs/coach/phase2/before/fentes-face.mp4           |   Bin 0 -> 80575 bytes
+ docs/coach/phase2/before/fentes-midpoint.jpg       |   Bin 0 -> 39691 bytes
+ docs/coach/phase2/before/fentes-profil.mp4         |   Bin 0 -> 74829 bytes
+ docs/coach/phase2/before/fentes-sequence.jpg       |   Bin 0 -> 125689 bytes
+ docs/coach/phase2/before/fentes-slow.mp4           |   Bin 0 -> 95877 bytes
+ docs/coach/phase2/before/fentes-start.jpg          |   Bin 0 -> 42265 bytes
+ docs/coach/phase2/before/fentes-trois-quarts.mp4   |   Bin 0 -> 79403 bytes
+ docs/coach/phase2/before/gainage-face.mp4          |   Bin 0 -> 24826 bytes
+ docs/coach/phase2/before/gainage-midpoint.jpg      |   Bin 0 -> 32672 bytes
+ docs/coach/phase2/before/gainage-profil.mp4        |   Bin 0 -> 38110 bytes
+ docs/coach/phase2/before/gainage-sequence.jpg      |   Bin 0 -> 102990 bytes
+ docs/coach/phase2/before/gainage-slow.mp4          |   Bin 0 -> 44394 bytes
+ docs/coach/phase2/before/gainage-start.jpg         |   Bin 0 -> 32700 bytes
+ docs/coach/phase2/before/gainage-trois-quarts.mp4  |   Bin 0 -> 36272 bytes
+ docs/coach/phase2/before/hand-detail.jpg           |   Bin 0 -> 34606 bytes
+ docs/coach/phase2/before/jumpingjacks-face.mp4     |   Bin 0 -> 59792 bytes
+ docs/coach/phase2/before/jumpingjacks-midpoint.jpg |   Bin 0 -> 44267 bytes
+ docs/coach/phase2/before/jumpingjacks-profil.mp4   |   Bin 0 -> 39371 bytes
+ docs/coach/phase2/before/jumpingjacks-sequence.jpg |   Bin 0 -> 128748 bytes
+ docs/coach/phase2/before/jumpingjacks-slow.mp4     |   Bin 0 -> 66608 bytes
+ docs/coach/phase2/before/jumpingjacks-start.jpg    |   Bin 0 -> 41228 bytes
+ .../phase2/before/jumpingjacks-trois-quarts.mp4    |   Bin 0 -> 56159 bytes
+ docs/coach/phase2/before/mobiliteepaules-face.mp4  |   Bin 0 -> 61066 bytes
+ .../phase2/before/mobiliteepaules-midpoint.jpg     |   Bin 0 -> 40159 bytes
+ .../coach/phase2/before/mobiliteepaules-profil.mp4 |   Bin 0 -> 51362 bytes
+ .../phase2/before/mobiliteepaules-sequence.jpg     |   Bin 0 -> 125874 bytes
+ docs/coach/phase2/before/mobiliteepaules-slow.mp4  |   Bin 0 -> 72559 bytes
+ docs/coach/phase2/before/mobiliteepaules-start.jpg |   Bin 0 -> 41156 bytes
+ .../phase2/before/mobiliteepaules-trois-quarts.mp4 |   Bin 0 -> 61854 bytes
+ docs/coach/phase2/before/mountainclimber-face.mp4  |   Bin 0 -> 24787 bytes
+ .../phase2/before/mountainclimber-midpoint.jpg     |   Bin 0 -> 37020 bytes
+ .../coach/phase2/before/mountainclimber-profil.mp4 |   Bin 0 -> 43436 bytes
+ .../phase2/before/mountainclimber-sequence.jpg     |   Bin 0 -> 113822 bytes
+ docs/coach/phase2/before/mountainclimber-slow.mp4  |   Bin 0 -> 45384 bytes
+ docs/coach/phase2/before/mountainclimber-start.jpg |   Bin 0 -> 37053 bytes
+ .../phase2/before/mountainclimber-trois-quarts.mp4 |   Bin 0 -> 38270 bytes
+ docs/coach/phase2/before/pompes-face.mp4           |   Bin 0 -> 37691 bytes
+ docs/coach/phase2/before/pompes-midpoint.jpg       |   Bin 0 -> 32396 bytes
+ docs/coach/phase2/before/pompes-profil.mp4         |   Bin 0 -> 44337 bytes
+ docs/coach/phase2/before/pompes-sequence.jpg       |   Bin 0 -> 105185 bytes
+ docs/coach/phase2/before/pompes-slow.mp4           |   Bin 0 -> 55608 bytes
+ docs/coach/phase2/before/pompes-start.jpg          |   Bin 0 -> 35102 bytes
+ docs/coach/phase2/before/pompes-trois-quarts.mp4   |   Bin 0 -> 45602 bytes
+ docs/coach/phase2/before/squat-face.mp4            |   Bin 0 -> 61201 bytes
+ docs/coach/phase2/before/squat-midpoint.jpg        |   Bin 0 -> 38764 bytes
+ docs/coach/phase2/before/squat-profil.mp4          |   Bin 0 -> 57745 bytes
+ docs/coach/phase2/before/squat-sequence.jpg        |   Bin 0 -> 121744 bytes
+ docs/coach/phase2/before/squat-slow.mp4            |   Bin 0 -> 79458 bytes
+ docs/coach/phase2/before/squat-start.jpg           |   Bin 0 -> 39972 bytes
+ docs/coach/phase2/before/squat-trois-quarts.mp4    |   Bin 0 -> 64727 bytes
+ docs/coach/phase2/index.html                       |     8 +
+ docs/coach/phase2/local-test-log.txt               |   756 ++
+ docs/coach/phase2/mobile-report.json               |    41 +
+ docs/coach/phase2/trajectory-report.json           |   617 +
+ docs/coach/phase2/video-report.json                |   518 +
+ docs/coach/phase20/annotations-140898613896.json   |    52 +
+ docs/coach/phase20/annotations-140898614027.json   |     7 +
+ docs/coach/phase20/annotations-140898615113.json   |     1 +
+ docs/coach/phase20/annotations-140898615140.json   |     1 +
+ docs/coach/phase20/annotations-140898615192.json   |     1 +
+ docs/coach/phase20/annotations-140898615523.json   |     1 +
+ docs/coach/phase20/authoring-guard.diff            |    48 +
+ docs/coach/phase20/browser-check.json              |    22 +
+ docs/coach/phase20/ci-final-status.md              |    33 +
+ docs/coach/phase20/ci-passive-contracts.json       |     1 +
+ docs/coach/phase20/ci-phase20-observed.json        |    26 +
+ docs/coach/phase20/ci-reference-runs.json          |   366 +
+ docs/coach/phase20/decision-report.md              |    15 +
+ docs/coach/phase20/evidence-and-claims-matrix.csv  |    16 +
+ docs/coach/phase20/experimental-readiness-gates.md |    18 +
+ docs/coach/phase20/expert-preliminary-dossier.md   |    37 +
+ docs/coach/phase20/expert-questionnaire-final.md   |   185 +
+ docs/coach/phase20/expert-response-template.json   |   137 +
+ docs/coach/phase20/external-sharing-checklist.md   |    28 +
+ docs/coach/phase20/external/README.md              |     9 +
+ .../external/evidence-and-claims-matrix.csv        |    16 +
+ .../phase20/external/expert-preliminary-dossier.md |    37 +
+ .../phase20/external/expert-questionnaire-final.md |   185 +
+ .../phase20/external/expert-response-template.json |   137 +
+ docs/coach/phase20/external/manifest.json          |     8 +
+ docs/coach/phase20/external/minimal-evidence.json  |    17 +
+ docs/coach/phase20/index.html                      |     1 +
+ docs/coach/phase20/verification.json               |    33 +
+ docs/coach/phase21/audit-results.json              |    76 +
+ docs/coach/phase21/browser-check.json              |    22 +
+ docs/coach/phase21/ci-reference-runs.json          |   551 +
+ docs/coach/phase21/ci-status.md                    |    19 +
+ .../phase21/collaboration-and-confidentiality.md   |    13 +
+ docs/coach/phase21/decision-report.md              |    26 +
+ docs/coach/phase21/expert-outreach-en.md           |    27 +
+ docs/coach/phase21/expert-outreach-fr.md           |    27 +
+ docs/coach/phase21/expert-profile.md               |    26 +
+ docs/coach/phase21/external-dossier-audit.md       |    33 +
+ docs/coach/phase21/index.html                      |     1 +
+ docs/coach/phase21/log-access.json                 |     6 +
+ docs/coach/phase21/post-review-decision-tree.md    |    17 +
+ docs/coach/phase21/professional-evaluation-grid.md |   130 +
+ .../phase21/professional-evaluation-template.json  |   101 +
+ docs/coach/phase21/scientific-reference-check.json |    21 +
+ docs/coach/phase21/submission-addendum.md          |    14 +
+ docs/coach/phase21/verification.json               |    29 +
+ docs/coach/phase22/candidate-comparison.csv        |    10 +
+ docs/coach/phase22/candidates.json                 |   108 +
+ docs/coach/phase22/ci-reference-runs.json          |   326 +
+ docs/coach/phase22/contact-readiness.md            |    24 +
+ docs/coach/phase22/cost-search.json                |    22 +
+ docs/coach/phase22/decision-report.md              |    21 +
+ docs/coach/phase22/expert-candidates.md            |    63 +
+ docs/coach/phase22/expertise-criteria.md           |    26 +
+ docs/coach/phase22/laboratories.md                 |    46 +
+ docs/coach/phase22/sources.json                    |   110 +
+ docs/coach/phase22/sources.md                      |   101 +
+ docs/coach/phase22/verification.json               |    32 +
+ docs/coach/phase23/REPRODUCE.md                    |    13 +
+ docs/coach/phase23/audit-contract-tests.log        |     5 +
+ docs/coach/phase23/browser-audit.json              |   111 +
+ docs/coach/phase23/cache-audit.md                  |    30 +
+ docs/coach/phase23/ci-audit.md                     |    17 +
+ docs/coach/phase23/ci-evidence.json                |   466 +
+ docs/coach/phase23/coach-3d-audit.md               |    19 +
+ docs/coach/phase23/coach-browser.log               |    58 +
+ docs/coach/phase23/decision-report.md              |    31 +
+ docs/coach/phase23/expertise-audit.md              |    13 +
+ docs/coach/phase23/expertise-tests.log             |     5 +
+ docs/coach/phase23/git-audit.md                    |    14 +
+ docs/coach/phase23/git-evidence.json               |  1751 +++
+ docs/coach/phase23/home-1440.png                   |   Bin 0 -> 785986 bytes
+ docs/coach/phase23/home-390.png                    |   Bin 0 -> 350278 bytes
+ docs/coach/phase23/initial-browser-audit.json      |    96 +
+ docs/coach/phase23/initial-browser-failure.log     |    12 +
+ docs/coach/phase23/interface-audit.md              |    23 +
+ docs/coach/phase23/main-diff-name-status.txt       |   860 ++
+ docs/coach/phase23/main-diff-stat.txt              |   861 ++
+ docs/coach/phase23/main-runtime.diff               |   455 +
+ docs/coach/phase23/npm-test.log                    |    38 +
+ docs/coach/phase23/passive-review-tests.log        |     5 +
+ docs/coach/phase23/second-browser-failure.log      |    15 +
+ docs/coach/phase23/smoke.log                       |     1 +
+ docs/coach/phase23/trajectory-regression.json      |   617 +
+ docs/coach/phase23/verification.json               |    28 +
+ docs/coach/phase3/DEVICE-PROTOCOL.md               |    31 +
+ docs/coach/phase3/REPORT.md                        |    92 +
+ docs/coach/phase3/SOURCES.md                       |    34 +
+ docs/coach/phase3/after/capture-manifest.json      |    21 +
+ docs/coach/phase3/after/crouch-to-stand-face.mp4   |   Bin 0 -> 77491 bytes
+ .../phase3/after/crouch-to-stand-midpoint.jpg      |   Bin 0 -> 40734 bytes
+ docs/coach/phase3/after/crouch-to-stand-profil.mp4 |   Bin 0 -> 75557 bytes
+ .../phase3/after/crouch-to-stand-sequence.jpg      |   Bin 0 -> 118847 bytes
+ docs/coach/phase3/after/crouch-to-stand-slow.mp4   |   Bin 0 -> 92023 bytes
+ docs/coach/phase3/after/crouch-to-stand-start.jpg  |   Bin 0 -> 38607 bytes
+ .../phase3/after/crouch-to-stand-trois-quarts.mp4  |   Bin 0 -> 76067 bytes
+ docs/coach/phase3/after/stand-to-crouch-face.mp4   |   Bin 0 -> 73151 bytes
+ .../phase3/after/stand-to-crouch-midpoint.jpg      |   Bin 0 -> 41325 bytes
+ docs/coach/phase3/after/stand-to-crouch-profil.mp4 |   Bin 0 -> 72880 bytes
+ .../phase3/after/stand-to-crouch-sequence.jpg      |   Bin 0 -> 120728 bytes
+ docs/coach/phase3/after/stand-to-crouch-slow.mp4   |   Bin 0 -> 89846 bytes
+ docs/coach/phase3/after/stand-to-crouch-start.jpg  |   Bin 0 -> 40303 bytes
+ .../phase3/after/stand-to-crouch-trois-quarts.mp4  |   Bin 0 -> 73217 bytes
+ docs/coach/phase3/before/capture-manifest.json     |    21 +
+ docs/coach/phase3/before/crouch-to-stand-face.mp4  |   Bin 0 -> 77655 bytes
+ .../phase3/before/crouch-to-stand-midpoint.jpg     |   Bin 0 -> 41144 bytes
+ .../coach/phase3/before/crouch-to-stand-profil.mp4 |   Bin 0 -> 73340 bytes
+ .../phase3/before/crouch-to-stand-sequence.jpg     |   Bin 0 -> 119732 bytes
+ docs/coach/phase3/before/crouch-to-stand-slow.mp4  |   Bin 0 -> 89641 bytes
+ docs/coach/phase3/before/crouch-to-stand-start.jpg |   Bin 0 -> 39039 bytes
+ .../phase3/before/crouch-to-stand-trois-quarts.mp4 |   Bin 0 -> 76692 bytes
+ docs/coach/phase3/before/stand-to-crouch-face.mp4  |   Bin 0 -> 73033 bytes
+ .../phase3/before/stand-to-crouch-midpoint.jpg     |   Bin 0 -> 41667 bytes
+ .../coach/phase3/before/stand-to-crouch-profil.mp4 |   Bin 0 -> 71267 bytes
+ .../phase3/before/stand-to-crouch-sequence.jpg     |   Bin 0 -> 121587 bytes
+ docs/coach/phase3/before/stand-to-crouch-slow.mp4  |   Bin 0 -> 89129 bytes
+ docs/coach/phase3/before/stand-to-crouch-start.jpg |   Bin 0 -> 40683 bytes
+ .../phase3/before/stand-to-crouch-trois-quarts.mp4 |   Bin 0 -> 76237 bytes
+ docs/coach/phase3/exercise-trajectory-report.json  |   617 +
+ docs/coach/phase3/index.html                       |     8 +
+ docs/coach/phase3/local-test-log.txt               |   810 ++
+ docs/coach/phase3/mobile-emulation-report.json     |    41 +
+ docs/coach/phase3/professional-review.html         |     1 +
+ docs/coach/phase3/professional-review.pdf          |   Bin 0 -> 85164 bytes
+ docs/coach/phase3/retarget-report.json             |  7608 ++++++++++++
+ docs/coach/phase3/transition-report.json           |    52 +
+ docs/coach/phase3/video-report.json                |   118 +
+ docs/coach/phase4/MISSING-TRANSITIONS.md           |    26 +
+ docs/coach/phase4/PRO-ADDENDUM.md                  |    21 +
+ docs/coach/phase4/REPORT.md                        |   108 +
+ .../coach/phase4/after-crouch-to-stand-report.json |  2392 ++++
+ .../coach/phase4/after-stand-to-crouch-report.json |  2392 ++++
+ docs/coach/phase4/after/capture-manifest.json      |    21 +
+ docs/coach/phase4/after/crouch-to-stand-end.jpg    |   Bin 0 -> 39615 bytes
+ docs/coach/phase4/after/crouch-to-stand-face.mp4   |   Bin 0 -> 76679 bytes
+ .../phase4/after/crouch-to-stand-midpoint.jpg      |   Bin 0 -> 40734 bytes
+ docs/coach/phase4/after/crouch-to-stand-profil.mp4 |   Bin 0 -> 74890 bytes
+ .../phase4/after/crouch-to-stand-sequence.jpg      |   Bin 0 -> 118975 bytes
+ docs/coach/phase4/after/crouch-to-stand-slow.mp4   |   Bin 0 -> 89899 bytes
+ docs/coach/phase4/after/crouch-to-stand-start.jpg  |   Bin 0 -> 38663 bytes
+ .../phase4/after/crouch-to-stand-trois-quarts.mp4  |   Bin 0 -> 73371 bytes
+ docs/coach/phase4/after/stand-to-crouch-end.jpg    |   Bin 0 -> 39241 bytes
+ docs/coach/phase4/after/stand-to-crouch-face.mp4   |   Bin 0 -> 75623 bytes
+ .../phase4/after/stand-to-crouch-midpoint.jpg      |   Bin 0 -> 41290 bytes
+ docs/coach/phase4/after/stand-to-crouch-profil.mp4 |   Bin 0 -> 73790 bytes
+ .../phase4/after/stand-to-crouch-sequence.jpg      |   Bin 0 -> 120753 bytes
+ docs/coach/phase4/after/stand-to-crouch-slow.mp4   |   Bin 0 -> 88728 bytes
+ docs/coach/phase4/after/stand-to-crouch-start.jpg  |   Bin 0 -> 40293 bytes
+ .../phase4/after/stand-to-crouch-trois-quarts.mp4  |   Bin 0 -> 73667 bytes
+ .../phase4/before-crouch-to-stand-report.json      |  2392 ++++
+ .../phase4/before-stand-to-crouch-report.json      |  2392 ++++
+ docs/coach/phase4/before/capture-manifest.json     |    21 +
+ docs/coach/phase4/before/crouch-to-stand-end.jpg   |   Bin 0 -> 39980 bytes
+ docs/coach/phase4/before/crouch-to-stand-face.mp4  |   Bin 0 -> 77785 bytes
+ .../phase4/before/crouch-to-stand-midpoint.jpg     |   Bin 0 -> 41154 bytes
+ .../coach/phase4/before/crouch-to-stand-profil.mp4 |   Bin 0 -> 74588 bytes
+ .../phase4/before/crouch-to-stand-sequence.jpg     |   Bin 0 -> 119737 bytes
+ docs/coach/phase4/before/crouch-to-stand-slow.mp4  |   Bin 0 -> 92103 bytes
+ docs/coach/phase4/before/crouch-to-stand-start.jpg |   Bin 0 -> 39075 bytes
+ .../phase4/before/crouch-to-stand-trois-quarts.mp4 |   Bin 0 -> 75725 bytes
+ docs/coach/phase4/before/stand-to-crouch-end.jpg   |   Bin 0 -> 39706 bytes
+ docs/coach/phase4/before/stand-to-crouch-face.mp4  |   Bin 0 -> 73773 bytes
+ .../phase4/before/stand-to-crouch-midpoint.jpg     |   Bin 0 -> 41794 bytes
+ .../coach/phase4/before/stand-to-crouch-profil.mp4 |   Bin 0 -> 72850 bytes
+ .../phase4/before/stand-to-crouch-sequence.jpg     |   Bin 0 -> 121486 bytes
+ docs/coach/phase4/before/stand-to-crouch-slow.mp4  |   Bin 0 -> 89266 bytes
+ docs/coach/phase4/before/stand-to-crouch-start.jpg |   Bin 0 -> 40782 bytes
+ .../phase4/before/stand-to-crouch-trois-quarts.mp4 |   Bin 0 -> 74488 bytes
+ docs/coach/phase4/connection-contracts.json        |  4817 ++++++++
+ docs/coach/phase4/contact-windows.json             |   136 +
+ docs/coach/phase4/exercise-trajectory-report.json  |   617 +
+ docs/coach/phase4/index.html                       |     8 +
+ docs/coach/phase4/local-test-log.txt               |   813 ++
+ docs/coach/phase4/mobile-390.jpg                   |   Bin 0 -> 81709 bytes
+ docs/coach/phase4/mobile-emulation-report.json     |    41 +
+ docs/coach/phase4/phase3-recheck-report.json       |    52 +
+ docs/coach/phase4/source-inventory.json            |    38 +
+ docs/coach/phase4/transition-report.json           |  9610 +++++++++++++++
+ docs/coach/phase4/video-report.json                |   118 +
+ docs/coach/phase5/A-end.jpg                        |   Bin 0 -> 37258 bytes
+ docs/coach/phase5/A-face.mp4                       |   Bin 0 -> 38491 bytes
+ docs/coach/phase5/A-profil.mp4                     |   Bin 0 -> 37017 bytes
+ docs/coach/phase5/A-slow.mp4                       |   Bin 0 -> 49016 bytes
+ docs/coach/phase5/A-start.jpg                      |   Bin 0 -> 38911 bytes
+ docs/coach/phase5/A-trois-quarts.mp4               |   Bin 0 -> 43044 bytes
+ docs/coach/phase5/ATTRIBUTION.md                   |    35 +
+ docs/coach/phase5/B-end.jpg                        |   Bin 0 -> 38379 bytes
+ docs/coach/phase5/B-face.mp4                       |   Bin 0 -> 92098 bytes
+ docs/coach/phase5/B-profil.mp4                     |   Bin 0 -> 87747 bytes
+ docs/coach/phase5/B-slow.mp4                       |   Bin 0 -> 110731 bytes
+ docs/coach/phase5/B-start.jpg                      |   Bin 0 -> 39426 bytes
+ docs/coach/phase5/B-trois-quarts.mp4               |   Bin 0 -> 88450 bytes
+ docs/coach/phase5/C-end.jpg                        |   Bin 0 -> 43507 bytes
+ docs/coach/phase5/C-face.mp4                       |   Bin 0 -> 52000 bytes
+ docs/coach/phase5/C-profil.mp4                     |   Bin 0 -> 46239 bytes
+ docs/coach/phase5/C-slow.mp4                       |   Bin 0 -> 63149 bytes
+ docs/coach/phase5/C-start.jpg                      |   Bin 0 -> 42181 bytes
+ docs/coach/phase5/C-trois-quarts.mp4               |   Bin 0 -> 51318 bytes
+ docs/coach/phase5/CONSENT-TEMPLATE.md              |    35 +
+ docs/coach/phase5/D-end.jpg                        |   Bin 0 -> 39072 bytes
+ docs/coach/phase5/D-face.mp4                       |   Bin 0 -> 34878 bytes
+ docs/coach/phase5/D-profil.mp4                     |   Bin 0 -> 29078 bytes
+ docs/coach/phase5/D-slow.mp4                       |   Bin 0 -> 40692 bytes
+ docs/coach/phase5/D-start.jpg                      |   Bin 0 -> 40046 bytes
+ docs/coach/phase5/D-trois-quarts.mp4               |   Bin 0 -> 34473 bytes
+ docs/coach/phase5/REPORT.md                        |   138 +
+ docs/coach/phase5/SOLUTIONS.md                     |    30 +
+ docs/coach/phase5/comparison-manifest.json         |    46 +
+ docs/coach/phase5/comparison-report.json           |  9259 +++++++++++++++
+ docs/coach/phase5/evidence-report.json             |   141 +
+ docs/coach/phase5/exercise-regression-report.json  |   617 +
+ docs/coach/phase5/index.html                       |    14 +
+ docs/coach/phase5/licenses/CMU-BVH-READMEFIRST.txt |   280 +
+ docs/coach/phase5/licenses/CMU-TERMS.txt           |    17 +
+ docs/coach/phase5/licenses/MEDIAPIPE-APACHE-2.txt  |   218 +
+ docs/coach/phase5/local-test-log.txt               |   852 ++
+ docs/coach/phase5/mobile-emulation-report.json     |    41 +
+ docs/coach/phase5/mocap-prototype.glb              |   Bin 0 -> 5155904 bytes
+ docs/coach/phase5/mocap-retarget-report.json       |   264 +
+ docs/coach/phase5/pose-estimates.json              |     1 +
+ docs/coach/phase5/pose-overlay.mp4                 |   Bin 0 -> 373846 bytes
+ docs/coach/phase5/provenance.json                  |    26 +
+ docs/coach/phase5/python-environment.txt           |    35 +
+ docs/coach/phase5/retarget-report.json             |   492 +
+ docs/coach/phase5/source.webm                      |   Bin 0 -> 564942 bytes
+ docs/coach/phase5/video-prototype.glb              |   Bin 0 -> 5154316 bytes
+ docs/coach/phase6/PRO-REVIEW.md                    |    12 +
+ docs/coach/phase6/PROVENANCE.md                    |    13 +
+ docs/coach/phase6/REPORT.md                        |    69 +
+ docs/coach/phase6/comparison-manifest.json         |    37 +
+ docs/coach/phase6/comparison-report.json           |  4785 ++++++++
+ docs/coach/phase6/contact-classification.json      |  2079 ++++
+ docs/coach/phase6/corrected-end.jpg                |   Bin 0 -> 44174 bytes
+ docs/coach/phase6/corrected-face.mp4               |   Bin 0 -> 71177 bytes
+ docs/coach/phase6/corrected-profil.mp4             |   Bin 0 -> 60553 bytes
+ docs/coach/phase6/corrected-report.json            |  2359 ++++
+ docs/coach/phase6/corrected-slow.mp4               |   Bin 0 -> 84561 bytes
+ docs/coach/phase6/corrected-start.jpg              |   Bin 0 -> 43477 bytes
+ docs/coach/phase6/corrected-trois-quarts.mp4       |   Bin 0 -> 69373 bytes
+ docs/coach/phase6/corrected.glb                    |   Bin 0 -> 5200000 bytes
+ docs/coach/phase6/correction-contracts.json        |    63 +
+ docs/coach/phase6/evidence-report.json             |   110 +
+ docs/coach/phase6/index.html                       |     1 +
+ docs/coach/phase6/player.html                      |    11 +
+ docs/coach/phase6/provenance.json                  |    29 +
+ docs/coach/phase6/regression.log                   |   881 ++
+ docs/coach/phase6/rejected-22-bottom.jpg           |   Bin 0 -> 42489 bytes
+ docs/coach/phase6/rejected-22-retarget-report.json |     1 +
+ .../phase6/rejected-all-windows-contracts.json     |   141 +
+ docs/coach/phase6/rejected-all-windows-report.json |  2443 ++++
+ docs/coach/phase6/retarget-frames.json             |     1 +
+ docs/coach/phase6/retarget-report.json             |     1 +
+ docs/coach/phase6/retargeted-end.jpg               |   Bin 0 -> 43284 bytes
+ docs/coach/phase6/retargeted-face.mp4              |   Bin 0 -> 71952 bytes
+ docs/coach/phase6/retargeted-profil.mp4            |   Bin 0 -> 60390 bytes
+ docs/coach/phase6/retargeted-report.json           |  2359 ++++
+ docs/coach/phase6/retargeted-slow.mp4              |   Bin 0 -> 83894 bytes
+ docs/coach/phase6/retargeted-start.jpg             |   Bin 0 -> 42670 bytes
+ docs/coach/phase6/retargeted-trois-quarts.mp4      |   Bin 0 -> 68263 bytes
+ docs/coach/phase6/retargeted.glb                   |   Bin 0 -> 5198268 bytes
+ docs/coach/phase6/source-14_06.bvh                 |  5545 +++++++++
+ docs/coach/phase6/source-22_14.bvh                 |   895 ++
+ docs/coach/phase6/source-end.jpg                   |   Bin 0 -> 21117 bytes
+ docs/coach/phase6/source-face.mp4                  |   Bin 0 -> 45680 bytes
+ docs/coach/phase6/source-profil.mp4                |   Bin 0 -> 43964 bytes
+ docs/coach/phase6/source-report.json               |    13 +
+ docs/coach/phase6/source-samples.json              |     1 +
+ docs/coach/phase6/source-slow.mp4                  |   Bin 0 -> 56035 bytes
+ docs/coach/phase6/source-start.jpg                 |   Bin 0 -> 21604 bytes
+ docs/coach/phase6/source-trois-quarts.mp4          |   Bin 0 -> 46913 bytes
+ docs/coach/phase7/AUDIT.md                         |    22 +
+ docs/coach/phase7/BLENDER.md                       |    23 +
+ docs/coach/phase7/CHARACTERS.md                    |    14 +
+ docs/coach/phase7/DATASETS.md                      |    25 +
+ docs/coach/phase7/PROVENANCE.md                    |     9 +
+ docs/coach/phase7/REPORT.md                        |    72 +
+ docs/coach/phase7/blender-report.json              |     6 +
+ docs/coach/phase7/comparison-manifest.json         |    26 +
+ docs/coach/phase7/decision.json                    |    58 +
+ docs/coach/phase7/evidence-report.json             |    76 +
+ docs/coach/phase7/export-report.json               |    11 +
+ docs/coach/phase7/index.html                       |     1 +
+ docs/coach/phase7/licenses/BANDAI-NC.txt           |   407 +
+ docs/coach/phase7/licenses/LAFAN.txt               |   102 +
+ docs/coach/phase7/licenses/MAKEHUMAN-ASSETS.md     |    41 +
+ docs/coach/phase7/measurements.json                | 11597 +++++++++++++++++++
+ docs/coach/phase7/original-end.jpg                 |   Bin 0 -> 35224 bytes
+ docs/coach/phase7/original-face.mp4                |   Bin 0 -> 44577 bytes
+ docs/coach/phase7/original-profil.mp4              |   Bin 0 -> 59004 bytes
+ docs/coach/phase7/original-slow.mp4                |   Bin 0 -> 68615 bytes
+ docs/coach/phase7/original-start.jpg               |   Bin 0 -> 35256 bytes
+ docs/coach/phase7/original-trois-quarts.mp4        |   Bin 0 -> 54372 bytes
+ docs/coach/phase7/pipeline-run.log                 |    79 +
+ docs/coach/phase7/prototype-end.jpg                |   Bin 0 -> 37879 bytes
+ docs/coach/phase7/prototype-face.mp4               |   Bin 0 -> 44213 bytes
+ docs/coach/phase7/prototype-profil.mp4             |   Bin 0 -> 59033 bytes
+ docs/coach/phase7/prototype-slow.mp4               |   Bin 0 -> 70886 bytes
+ docs/coach/phase7/prototype-start.jpg              |   Bin 0 -> 37857 bytes
+ docs/coach/phase7/prototype-trois-quarts.mp4       |   Bin 0 -> 58662 bytes
+ docs/coach/phase7/prototype.glb                    |   Bin 0 -> 5627520 bytes
+ docs/coach/phase7/regression.log                   |   882 ++
+ docs/coach/phase8/BLENDER.md                       |    45 +
+ docs/coach/phase8/CAPTURE-PROTOCOL.md              |    57 +
+ docs/coach/phase8/CONSENT.md                       |    42 +
+ docs/coach/phase8/PIPELINE.md                      |    37 +
+ docs/coach/phase8/PRO-REVIEW.md                    |    22 +
+ docs/coach/phase8/REPORT.md                        |    57 +
+ docs/coach/phase8/SOLUTIONS.md                     |    18 +
+ docs/coach/phase8/blender-smoke-report.json        |     8 +
+ docs/coach/phase8/checks.json                      |    15 +
+ docs/coach/phase8/environment-report.json          |    26 +
+ docs/coach/phase8/index.html                       |     1 +
+ docs/coach/phase8/intake-report.json               |    33 +
+ docs/coach/phase9/CAPTURE-QUICKSTART.md            |    33 +
+ docs/coach/phase9/ENVIRONMENTS.md                  |    29 +
+ docs/coach/phase9/PRIVACY-AND-INPUT.md             |    21 +
+ docs/coach/phase9/PROVENANCE.md                    |    11 +
+ docs/coach/phase9/REPORT.md                        |    44 +
+ docs/coach/phase9/SQUAT-ACCEPTANCE.md              |    26 +
+ docs/coach/phase9/blender-report.json              |    78 +
+ docs/coach/phase9/evidence.json                    |    24 +
+ docs/coach/phase9/first-export-blender-report.json |    78 +
+ docs/coach/phase9/first-export-three-report.json   |    19 +
+ docs/coach/phase9/index.html                       |     1 +
+ .../phase9/rejected-native-missing-numpy.json      |    25 +
+ docs/coach/phase9/rejected-root-mapping.json       |    38 +
+ docs/coach/phase9/three-report.json                |    16 +
+ index.html                                         |    43 +-
+ package-lock.json                                  |    68 +
+ package.json                                       |    21 +
+ service-worker.js                                  |    21 +-
+ styles.css                                         |    27 +-
+ tests/coach-anatomy-evidence.cjs                   |     1 +
+ tests/coach-asset.cjs                              |    18 +
+ tests/coach-biomechanics-evidence.cjs              |     1 +
+ tests/coach-blender-evidence.cjs                   |     1 +
+ tests/coach-browser.cjs                            |    40 +
+ tests/coach-camera.cjs                             |     2 +
+ tests/coach-capture-readiness.cjs                  |     1 +
+ tests/coach-cmu-calibrated.cjs                     |    16 +
+ tests/coach-cmu-evidence.cjs                       |     1 +
+ tests/coach-cmu-player.cjs                         |     2 +
+ tests/coach-contact-audit.cjs                      |    22 +
+ tests/coach-contact-evidence.cjs                   |     5 +
+ tests/coach-contact-gallery.cjs                    |    13 +
+ tests/coach-documentary-review-browser.cjs         |     2 +
+ tests/coach-documentary-review.cjs                 |     6 +
+ tests/coach-evidence.cjs                           |     8 +
+ tests/coach-fallback.cjs                           |     4 +
+ tests/coach-gallery.cjs                            |    13 +
+ tests/coach-independent-review-browser.cjs         |     2 +
+ tests/coach-independent-review.cjs                 |    10 +
+ tests/coach-metadata-plan-browser.cjs              |     2 +
+ tests/coach-metadata-plan.cjs                      |     5 +
+ tests/coach-michaud-browser.cjs                    |     2 +
+ tests/coach-michaud-evidence.cjs                   |     8 +
+ tests/coach-mobile.cjs                             |    21 +
+ tests/coach-mocap-evidence.cjs                     |     5 +
+ tests/coach-mocap-gallery.cjs                      |     2 +
+ tests/coach-mocap-prototype.cjs                    |     8 +
+ tests/coach-model-qualification-browser.cjs        |     2 +
+ tests/coach-model-qualification.cjs                |     6 +
+ tests/coach-passive-qualification-browser.cjs      |     2 +
+ tests/coach-passive-qualification.cjs              |    12 +
+ tests/coach-production-gallery.cjs                 |     1 +
+ tests/coach-production-pipeline.cjs                |     1 +
+ tests/coach-source-qualification.cjs               |     1 +
+ tests/coach-trajectories.cjs                       |    45 +
+ tests/coach-transition-evidence.cjs                |     7 +
+ tests/coach-transition-gallery.cjs                 |    13 +
+ tests/coach-transition-gate.cjs                    |    10 +
+ tests/coach-transitions.cjs                        |    13 +
+ tools/anatomy-lab.html                             |    39 +
+ tools/anatomy/.gitignore                           |     1 +
+ tools/anatomy/audit.py                             |    20 +
+ tools/anatomy/build-docs.py                        |    25 +
+ tools/anatomy/capture.cjs                          |     4 +
+ tools/anatomy/check.cjs                            |     1 +
+ tools/anatomy/collect.py                           |    16 +
+ tools/anatomy/diagnostic-video.cjs                 |     1 +
+ tools/anatomy/export.py                            |   178 +
+ tools/anatomy/ik.py                                |    11 +
+ tools/anatomy/metrics.py                           |    17 +
+ tools/anatomy/package.py                           |    18 +
+ tools/anatomy/test_generated.py                    |    20 +
+ tools/anatomy/test_metrics.py                      |    21 +
+ tools/animation-pipeline/.gitignore                |     1 +
+ tools/animation-pipeline/blender-stage.py          |    20 +
+ tools/animation-pipeline/capture.cjs               |     4 +
+ tools/animation-pipeline/export.cjs                |     1 +
+ tools/animation-pipeline/export.html               |     4 +
+ tools/animation-pipeline/gate.py                   |    22 +
+ tools/animation-pipeline/measure.cjs               |     2 +
+ tools/animation-pipeline/pushup.json               |    16 +
+ tools/animation-pipeline/run.py                    |    12 +
+ tools/animation-pipeline/test_gate.py              |    20 +
+ tools/animation-pipeline/verify.py                 |     9 +
+ tools/biomechanics/.gitignore                      |     1 +
+ tools/biomechanics/build-gallery.py                |     7 +
+ tools/biomechanics/capture.cjs                     |     4 +
+ tools/biomechanics/check.cjs                       |     1 +
+ tools/biomechanics/collect-evidence.py             |    15 +
+ tools/biomechanics/contracts.py                    |    89 +
+ tools/biomechanics/criteria.json                   |    28 +
+ tools/biomechanics/export.py                       |   147 +
+ tools/biomechanics/geometry.py                     |    37 +
+ tools/biomechanics/test_contracts.py               |    38 +
+ tools/biomechanics/test_generated.py               |    23 +
+ tools/biomechanics/validate.py                     |   109 +
+ tools/biomechanics/verify-videos.py                |     7 +
+ tools/blender-pipeline/.gitignore                  |     1 +
+ tools/blender-pipeline/check.cjs                   |     1 +
+ tools/blender-pipeline/install-ubuntu.sh           |     6 +
+ tools/blender-pipeline/retarget.py                 |   108 +
+ tools/blender-pipeline/run-control.sh              |     7 +
+ tools/build-coach-review.cjs                       |     8 +
+ tools/capture-coach-contact-repair.cjs             |    12 +
+ tools/capture-coach-cycles.cjs                     |    12 +
+ tools/capture-coach-transitions.cjs                |    12 +
+ tools/capture-pipeline/.gitignore                  |     1 +
+ tools/capture-pipeline/Dockerfile                  |    12 +
+ tools/capture-pipeline/blender-smoke.py            |    38 +
+ tools/capture-pipeline/intake.py                   |    74 +
+ tools/capture-pipeline/permissions.py              |    22 +
+ tools/capture-pipeline/probe-blender.py            |     9 +
+ tools/capture-pipeline/session-template.json       |    25 +
+ tools/capture-pipeline/test_intake.py              |    21 +
+ tools/capture-pipeline/test_permissions.py         |    15 +
+ tools/coach-contact-repair.html                    |    31 +
+ tools/coach-lab.html                               |    36 +
+ tools/coach-motion-authoring.js                    |   156 +
+ tools/coach-transition-retarget.html               |    39 +
+ tools/consolidation/browser-audit.cjs              |    15 +
+ tools/consolidation/cache-server.cjs               |     6 +
+ tools/consolidation/git_audit.py                   |    10 +
+ tools/consolidation/test_audit.py                  |    22 +
+ tools/convert-coach.html                           |    25 +
+ tools/documentary-review/build.py                  |    11 +
+ tools/documentary-review/inspect.py                |    20 +
+ tools/download-coach-transitions.py                |    11 +
+ tools/download-coach.py                            |    20 +
+ tools/evidence-closure/.gitignore                  |     2 +
+ tools/evidence-closure/archive_probe.py            |    68 +
+ tools/evidence-closure/local_inventory.py          |    26 +
+ tools/evidence-closure/test_closure.py             |    27 +
+ tools/expert-search/build.py                       |   124 +
+ tools/expert-search/test_candidates.py             |    32 +
+ tools/export-coach-contact-repair.cjs              |     2 +
+ tools/export-coach-review-pdf.cjs                  |     5 +
+ tools/export-coach-transitions.cjs                 |     2 +
+ tools/export-coach.cjs                             |    12 +
+ tools/independent-review/.gitignore                |     2 +
+ tools/independent-review/audit.py                  |    75 +
+ tools/independent-review/build.py                  |    16 +
+ tools/independent-review/cache-identity.cjs        |     3 +
+ tools/independent-review/questions.py              |    33 +
+ tools/independent-review/test_review.py            |    37 +
+ tools/metadata-plan/.gitignore                     |     1 +
+ tools/metadata-plan/analyze.py                     |    29 +
+ tools/metadata-plan/build.py                       |    13 +
+ tools/metadata-plan/test_plan.py                   |    13 +
+ tools/michaud/.gitignore                           |     1 +
+ tools/michaud/acquire.py                           |    37 +
+ tools/michaud/analyze.py                           |    67 +
+ tools/michaud/build_docs.py                        |    11 +
+ tools/michaud/collect.py                           |    14 +
+ tools/michaud/core.py                              |    30 +
+ tools/michaud/filter_sensitivity.py                |    14 +
+ tools/michaud/model_probe.py                       |    12 +
+ tools/michaud/render.py                            |    37 +
+ tools/michaud/test_core.py                         |    30 +
+ tools/mocap/capture-comparison.cjs                 |     4 +
+ tools/mocap/capture-phase6.cjs                     |     4 +
+ tools/mocap/correct-calibrated.html                |    29 +
+ tools/mocap/detect-contacts.py                     |    17 +
+ tools/mocap/download-fixtures.py                   |     6 +
+ tools/mocap/export-calibrated.cjs                  |     1 +
+ tools/mocap/export-cmu.cjs                         |     1 +
+ tools/mocap/export-corrected.cjs                   |     1 +
+ tools/mocap/export-video.cjs                       |     1 +
+ tools/mocap/extract-pose.py                        |    27 +
+ tools/mocap/retarget-calibrated.html               |    29 +
+ tools/mocap/retarget-cmu.html                      |    36 +
+ tools/mocap/retarget-video.html                    |    35 +
+ tools/mocap/setup-local.sh                         |     8 +
+ tools/mocap/source-lab.html                        |    11 +
+ tools/mocap/stamp-phase6.py                        |     5 +
+ tools/mocap/stamp-provenance.py                    |     5 +
+ tools/mocap/verify-evidence.py                     |    14 +
+ tools/mocap/verify-phase6.py                       |     9 +
+ tools/model-qualification/.gitignore               |     1 +
+ tools/model-qualification/acquire.py               |    55 +
+ tools/model-qualification/build.py                 |    55 +
+ tools/model-qualification/collect.py               |     8 +
+ tools/model-qualification/compare_opencap.py       |    14 +
+ tools/model-qualification/contracts.py             |    13 +
+ tools/model-qualification/test_contracts.py        |    25 +
+ tools/optimize-coach.py                            |    18 +
+ tools/passive-qualification/.gitignore             |     2 +
+ tools/passive-qualification/acquire.py             |    23 +
+ tools/passive-qualification/analyze.py             |    61 +
+ tools/passive-qualification/build.py               |    35 +
+ tools/passive-qualification/evidence.py            |    19 +
+ tools/passive-qualification/mapping.py             |    61 +
+ tools/passive-qualification/metrics.py             |    16 +
+ tools/passive-qualification/static_diagram.py      |    18 +
+ tools/passive-qualification/test_metrics.py        |    29 +
+ tools/preliminary-review/build.py                  |   194 +
+ tools/preliminary-review/test_dossier.py           |    40 +
+ tools/review-contact-sheet.py                      |    14 +
+ tools/review-cycle-frames.py                       |    13 +
+ tools/source-benchmark/.gitignore                  |     1 +
+ tools/source-benchmark/analyze-originals.py        |    47 +
+ tools/source-benchmark/audit.py                    |    64 +
+ tools/source-benchmark/build-docs.py               |    13 +
+ tools/source-benchmark/bvh.py                      |    48 +
+ tools/source-benchmark/collect.py                  |    19 +
+ tools/source-benchmark/download.py                 |    15 +
+ tools/source-benchmark/gallery.py                  |    12 +
+ tools/source-benchmark/marker-benchmark.py         |    41 +
+ tools/source-benchmark/originals.py                |    43 +
+ tools/source-benchmark/recover.sh                  |     8 +
+ tools/source-benchmark/test_audit.py               |    22 +
+ tools/source-benchmark/visuals.py                  |    37 +
+ tools/submission-readiness/audit.py                |    33 +
+ tools/submission-readiness/test_submission.py      |    27 +
+ tools/verify-coach-videos.py                       |    20 +
+ tools/verify-contact-videos.py                     |    13 +
+ tools/verify-transition-videos.py                  |    13 +
+ vendor/three/LICENSE.txt                           |    21 +
+ vendor/three/controls/OrbitControls.js             |  1523 +++
+ vendor/three/loaders/GLTFLoader.js                 |  4725 ++++++++
+ vendor/three/three.module.js                       |     6 +
+ vendor/three/utils/BufferGeometryUtils.js          |  1373 +++
+ 893 files changed, 148786 insertions(+), 181 deletions(-)

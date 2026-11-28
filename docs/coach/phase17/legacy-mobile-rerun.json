@@ -1,0 +1,41 @@
+{
+  "environment": "Headless Chromium + software WebGL, local server, mobile viewport emulation; no physical devices",
+  "physicalIPhone": false,
+  "physicalAndroid": false,
+  "thermal": null,
+  "gpuMemoryBytes": null,
+  "cases": [
+    {
+      "width": 390,
+      "dprRequested": 3,
+      "dprUsed": 1.25,
+      "localLoadMs": 3095,
+      "softwareRenderedFPS": 32.5,
+      "rendererAllocations": {
+        "geometries": 8,
+        "textures": 6
+      },
+      "jsHeapUsedBytes": 9734836,
+      "pausedRenderingStopped": true,
+      "offscreenRenderingStopped": true,
+      "contextRestored": true,
+      "errors": []
+    },
+    {
+      "width": 412,
+      "dprRequested": 3,
+      "dprUsed": 1.25,
+      "localLoadMs": 455,
+      "softwareRenderedFPS": 22.9,
+      "rendererAllocations": {
+        "geometries": 8,
+        "textures": 6
+      },
+      "jsHeapUsedBytes": 12885120,
+      "pausedRenderingStopped": true,
+      "offscreenRenderingStopped": true,
+      "contextRestored": true,
+      "errors": []
+    }
+  ]
+}

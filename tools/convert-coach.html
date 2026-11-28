@@ -1,0 +1,25 @@
+<!doctype html><meta charset="utf-8"><title>Offline asset conversion — developer tool</title>
+<script type="importmap">{"imports":{"three":"/vendor/three/three.module.js"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import {FBXLoader} from '../node_modules/three/examples/jsm/loaders/FBXLoader.js';
+import {GLTFExporter} from '../node_modules/three/examples/jsm/exporters/GLTFExporter.js';
+import {bakeExercises} from './coach-motion-authoring.js';
+try {
+ const manager=new THREE.LoadingManager();
+ const model=await new FBXLoader(manager).loadAsync('/.cache/rocketbox/Sports_Male_04.fbx');
+ model.name='ParisfitCoach';model.scale.setScalar(.01);model.animations=[];model.updateMatrixWorld(true);
+ // Correct Rocketbox's legacy Max hierarchy, preserving rest world transforms and skin bindings.
+ for(const side of ['L','R']){model.getObjectByName('Bip01_Pelvis').attach(model.getObjectByName('Bip01_'+side+'_Thigh'));model.getObjectByName('Bip01_Spine2').attach(model.getObjectByName('Bip01_'+side+'_Clavicle'));}
+ const loader=new THREE.TextureLoader(),materials={};
+ for(const part of ['body','head']){
+   const map=await loader.loadAsync('/.cache/rocketbox/m026_'+part+'_color.png');map.colorSpace=THREE.SRGBColorSpace;
+   const normalMap=await loader.loadAsync('/.cache/rocketbox/m026_'+part+'_normal.png');
+   materials['m026_'+part]=new THREE.MeshStandardMaterial({name:'Rocketbox '+part,map,normalMap,normalScale:new THREE.Vector2(part==='head'?.35:.45,part==='head'?.35:.45),roughness:part==='head'?.72:.82,metalness:0});
+ }
+ model.traverse(o=>{if(o.isMesh){o.material=Array.isArray(o.material)?o.material.map(m=>materials[m.name]):materials[o.material.name];o.frustumCulled=false;}});
+ const clips=bakeExercises(model);model.animations=clips;
+ const binary=await new GLTFExporter().parseAsync(model,{binary:true,animations:clips,onlyVisible:false});
+ window.assetURL=URL.createObjectURL(new Blob([binary],{type:'model/gltf-binary'}));window.assetBytes=binary.byteLength;window.ready=true;
+} catch(e){window.failure=e.stack;console.error(e);}
+</script>

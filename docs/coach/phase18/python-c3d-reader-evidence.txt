@@ -1,0 +1,56 @@
+python-c3d 0.6.0
+Source SHA256 3d82314daefbd92f42d16df5296655db832ed8607b3c79fdcdabee4acc24e9af
+
+# first_frame
+1507:     @property
+1508:     def first_frame(self):
+1509:         # Start frame seems to be less of an issue to determine.
+1510:         # this is a hack for phasespace files ... should put it in a subclass.
+1511:         param = self.get('TRIAL:ACTUAL_START_FIELD')
+1512:         if param is not None:
+1513:             # ACTUAL_START_FIELD is encoded in two 16 byte words...
+1514:             # return param.uint32_value
+1515:             words = param.uint16_array
+1516:             return int(words[0]) + int(words[1]) * 65535
+1517:         return self.header.first_frame
+
+# last_frame
+1519:     @property
+1520:     def last_frame(self) -> int:
+1521:         ''' Trial frame corresponding to the last frame recorded in the data (inclusive).
+1522:         '''
+1523:         # Number of frames can be represented in many formats.
+1524:         # Start of by  different parameters where the frame can be encoded
+1525:         hlf = self.header.last_frame
+1526:         param = self.get('TRIAL:ACTUAL_END_FIELD')
+1527:         if param is not None:
+1528:             # Encoded as 2 16 bit words (rather then 1 32 bit word)
+1529:             # Manual refer to parsing the parameter as 2 16-bit words, generally equivalent to an uint32
+1530:             # end_frame = param.uint32_value
+1531:             words = param.uint16_array
+1532:             end_frame = int(words[0]) + int(words[1]) * 65536
+1533:             if hlf <= end_frame:
+1534:                 return end_frame
+1535:         param = self.get('POINT:LONG_FRAMES')
+1536:         if param is not None:
+1537:             # 'Should be' encoded as float
+1538:             if param.bytes_per_element >= 4:
+1539:                 end_frame = int(param.float_value)
+1540:             else:
+1541:                 end_frame = param.uint16_value
+1542:             if hlf <= end_frame:
+1543:                 return end_frame
+1544:         param = self.get('POINT:FRAMES')
+1545:         if param is not None:
+1546:             # Can be encoded either as 32 bit float or 16 bit uint
+1547:             if param.bytes_per_element == 4:
+1548:                 end_frame = int(param.float_value)
+1549:             else:
+1550:                 end_frame = param.uint16_value
+1551:             if hlf <= end_frame:
+1552:                 return end_frame
+1553:         # Return header value by default
+1554:         return hlf
+1768:         for frame_no in range(self.first_frame, self.last_frame + 1):
+1774:                 warnings.warn('''reached end of file (EOF) while reading POINT data at frame index {}
+1778:                 warnings.warn('''reached end of file (EOF) while reading POINT data at frame index {}

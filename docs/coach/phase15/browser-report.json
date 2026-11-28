@@ -1,0 +1,10 @@
+{
+  "status": "VALIDÉ",
+  "scope": "Chromium layout/links only; not professional validation or physical device test",
+  "widths": [
+    320,
+    390,
+    768,
+    1200
+  ]
+}
