@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "exercise": "squat",
+      "loaded": true,
+      "views": 3
+    },
+    {
+      "exercise": "pompes",
+      "loaded": true,
+      "views": 3
+    },
+    {
+      "exercise": "gainage",
+      "loaded": true,
+      "views": 3
+    },
+    {
+      "exercise": "fentes",
+      "loaded": true,
+      "views": 3
+    },
+    {
+      "exercise": "jumpingjacks",
+      "loaded": true,
+      "views": 3
+    },
+    {
+      "exercise": "mountainclimber",
+      "loaded": true,
+      "views": 3
+    },
+    {
+      "exercise": "etirementdos",
+      "loaded": true,
+      "views": 3
+    },
+    {
+      "exercise": "mobiliteepaules",
+      "loaded": true,
+      "views": 3
+    }
+  ],
+  "widths": [
+    320,
+    390,
+    430,
+    768,
+    1200
+  ],
+  "offline": true,
+  "retry": true,
+  "reducedMotion": true,
+  "errors": [],
+  "missing": [],
+  "external": []
+}

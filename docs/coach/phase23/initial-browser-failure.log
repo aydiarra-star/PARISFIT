@@ -1,0 +1,12 @@
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert(!keys.includes('parisfit-shell-stale-audit'))
+
+    at /home/user/PARISFIT/tools/consolidation/browser-audit.cjs:14:400 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
