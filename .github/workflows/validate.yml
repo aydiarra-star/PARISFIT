@@ -61,10 +61,25 @@ jobs:
           python3 -m http.server 3000 --bind 0.0.0.0 &
           SERVER_PID=$!
           trap 'kill "$SERVER_PID"' EXIT
-          node tests/coach-independent-review-browser.cjs
-          node tests/coach-passive-qualification-browser.cjs
-          node tests/coach-documentary-review-browser.cjs
-          npm run test:browser
+          mkdir -p .cache
+          {
+            node tests/coach-independent-review-browser.cjs &&
+            node tests/coach-passive-qualification-browser.cjs &&
+            node tests/coach-documentary-review-browser.cjs &&
+            npm run test:browser
+          } 2>&1 | tee .cache/phase18-browser-ci.log
+      - name: Preserve browser failure diagnostics
+        if: failure()
+        run: |
+          python3 - <<'PYCODE'
+          from pathlib import Path
+          p=Path('.cache/phase18-browser-ci.log')
+          if p.exists():
+              text=p.read_text(errors='replace')[-14000:]
+              for i in range(0,len(text),3500):
+                  chunk=text[i:i+3500].replace('%','%25').replace('\r','%0D').replace('\n','%0A')
+                  print('::warning title=phase18-browser-tail-'+str(i//3500)+'::'+chunk)
+          PYCODE
       - name: Keep review screenshots
         if: always()
         uses: actions/upload-artifact@v4
@@ -72,6 +87,7 @@ jobs:
           name: coach-browser-review
           path: |
             .cache/coach-review/
+            .cache/phase18-browser-ci.log
             docs/coach/phase3/*report.json
             docs/coach/phase4/*report.json
             docs/coach/phase5/*report.json
