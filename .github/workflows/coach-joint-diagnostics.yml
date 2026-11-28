@@ -20,6 +20,10 @@ on:
       - 'vendor/three/**'
       - '.github/workflows/coach-joint-diagnostics.yml'
 
+concurrency:
+  group: parisfit-coach-joint-diagnostics
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -44,13 +48,6 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Diagnose original coach clips
         run: node tools/motion-review/joint-diagnostics.cjs
-      - name: Commit diagnostic report to isolated branch
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/development/motion-review/joint-diagnostics.json
-          git commit -m "Add coach joint diagnostic results" || echo "No report changes"
-          git push origin HEAD:arena/5aa3aaf8-parisfit
       - name: Archive diagnostic report
         uses: actions/upload-artifact@v4
         with:
@@ -58,3 +55,12 @@ jobs:
           path: docs/development/motion-review/joint-diagnostics.json
           if-no-files-found: error
           retention-days: 14
+      - name: Commit diagnostic report to isolated branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/development/motion-review/joint-diagnostics.json
+          git commit -m "Add coach joint diagnostic results" || echo "No report changes"
+          git fetch origin arena/5aa3aaf8-parisfit
+          git rebase origin/arena/5aa3aaf8-parisfit
+          git push origin HEAD:arena/5aa3aaf8-parisfit
