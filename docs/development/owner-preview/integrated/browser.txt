@@ -1,0 +1,14 @@
+locator.tap: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('#workout-rec')
+    - waiting for navigation to finish...
+    - navigated to "http://localhost:3013/login"
+
+    at /home/user/PARISFIT/tests/owner-demo.cjs:2:979 {
+  log: [
+    "  - waiting for locator('#workout-rec')",
+    '    - waiting for navigation to finish...',
+    '    - navigated to "http://localhost:3013/login"'
+  ],
+  name: 'TimeoutError'
+}
