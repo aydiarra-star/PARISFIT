@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "isolatedRuntime": true,
+  "portFromEnvironment": true,
+  "environmentSecretOnly": true,
+  "clips": 8,
+  "explicitOpenDemo": "GET app/model/candidate 200 without cookie; login/internal paths 404",
+  "authentication": "unauthenticated 401, login 303, authenticated 200",
+  "cookie": "Secure/HttpOnly/SameSite=Strict",
+  "missingRenderSecret": "fails closed",
+  "limits": [
+    "Docker not executed",
+    "Render not deployed",
+    "No physical iPhone test"
+  ]
+}

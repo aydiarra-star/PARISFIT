@@ -1,0 +1,26 @@
+{
+  "clips": [
+    "squat",
+    "pompes",
+    "gainage",
+    "fentes",
+    "jumpingjacks",
+    "mountainclimber",
+    "etirementdos",
+    "mobiliteepaules"
+  ],
+  "widths": [
+    320,
+    375,
+    390,
+    430
+  ],
+  "errors": [],
+  "candidateComparison": "Different timing, equal duration, selectable original",
+  "status": "PASS",
+  "limitations": [
+    "Chromium emulation, not Safari or physical iPhone",
+    "No real mobile network test",
+    "Touch taps tested; pinch gesture not tested"
+  ]
+}
