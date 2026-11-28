@@ -1,0 +1,5439 @@
+{
+  "mode": "read-only public metadata/ranges; no author code executed",
+  "requests": [],
+  "files": [
+    {
+      "name": "MATLAB tools.zip",
+      "id": 57221213,
+      "archiveBytes": 218050691,
+      "publishedMD5": "fee94b82a08ad81f0ffc9cc2382044b7",
+      "centralDirectorySHA256": "f68eaa0f3ba606a1037bc750a0c86725effc61bfb17ccbb28a2c195aa2e592d9",
+      "entryCount": 853,
+      "targetInventory": [
+        {
+          "path": "trial_class.m",
+          "flags": 8,
+          "method": 8,
+          "crc32": 2089940903,
+          "compressed": 9949,
+          "bytes": 71152,
+          "offset": 0
+        },
+        {
+          "path": "EpicToolbox/dev/@FeatureSelector/extlib/minf/license.txt",
+          "flags": 8,
+          "method": 8,
+          "crc32": 2432775705,
+          "compressed": 686,
+          "bytes": 1313,
+          "offset": 101557108
+        },
+        {
+          "path": "EpicToolbox/extlib/minf/license.txt",
+          "flags": 8,
+          "method": 8,
+          "crc32": 2432775705,
+          "compressed": 686,
+          "bytes": 1313,
+          "offset": 149649066
+        },
+        {
+          "path": "EpicToolbox/LICENSE",
+          "flags": 8,
+          "method": 8,
+          "crc32": 1552752223,
+          "compressed": 636,
+          "bytes": 1079,
+          "offset": 149930368
+        },
+        {
+          "path": "EpicToolbox/MachineLearning/+Classification/README.md",
+          "flags": 8,
+          "method": 8,
+          "crc32": 2544024251,
+          "compressed": 177,
+          "bytes": 283,
+          "offset": 149936955
+        },
+        {
+          "path": "EpicToolbox/MachineLearning/+ContinuousEstimation/README.md",
+          "flags": 8,
+          "method": 8,
+          "crc32": 2544024251,
+          "compressed": 177,
+          "bytes": 283,
+          "offset": 149944266
+        },
+        {
+          "path": "EpicToolbox/README.md",
+          "flags": 8,
+          "method": 8,
+          "crc32": 581799378,
+          "compressed": 1378,
+          "bytes": 2683,
+          "offset": 150168217
+        },
+        {
+          "path": "MoCapTools/+Osim/IK.m",
+          "flags": 8,
+          "method": 8,
+          "crc32": 3998647662,
+          "compressed": 1502,
+          "bytes": 4019,
+          "offset": 153344008
+        },
+        {
+          "path": "MoCapTools/+Osim/Scale.m",
+          "flags": 8,
+          "method": 8,
+          "crc32": 411522978,
+          "compressed": 1456,
+          "bytes": 3728,
+          "offset": 153362686
+        },
+        {
+          "path": "MoCapTools/License.txt",
+          "flags": 8,
+          "method": 8,
+          "crc32": 1221475327,
+          "compressed": 707,
+          "bytes": 1192,
+          "offset": 217943105
+        },
+        {
+          "path": "MoCapTools/README.md",
+          "flags": 8,
+          "method": 8,
+          "crc32": 931395403,
+          "compressed": 2056,
+          "bytes": 4358,
+          "offset": 217943996
+        }
+      ],
+      "acquired": [
+        {
+          "path": "trial_class.m",
+          "sha256": "a7b1ead06a621b06a55471938edf652eedfc16e4b77d78cf588a5ad6be11844d",
+          "bytes": 71152,
+          "lineCount": 1449,
+          "excerpts": [
+            {
+              "line": 24,
+              "text": "    jointKinematicsPath"
+            },
+            {
+              "line": 25,
+              "text": "    ikErrorPath"
+            },
+            {
+              "line": 26,
+              "text": "    idXmlUpdated"
+            },
+            {
+              "line": 30,
+              "text": "    ik_results_folder"
+            },
+            {
+              "line": 31,
+              "text": "    setupfiles_folder"
+            },
+            {
+              "line": 32,
+              "text": "    generated_setup_folder"
+            },
+            {
+              "line": 33,
+              "text": "    results_folder"
+            },
+            {
+              "line": 47,
+              "text": "    tn"
+            },
+            {
+              "line": 48,
+              "text": "    markerTable"
+            },
+            {
+              "line": 49,
+              "text": "    forceTable"
+            },
+            {
+              "line": 50,
+              "text": "    markerStruct"
+            },
+            {
+              "line": 51,
+              "text": "    forceStruct"
+            },
+            {
+              "line": 53,
+              "text": "    forceStruct_p"
+            },
+            {
+              "line": 54,
+              "text": "    f_z_filt"
+            },
+            {
+              "line": 55,
+              "text": "    f_z_ind"
+            },
+            {
+              "line": 79,
+              "text": "    joint_forces_path"
+            },
+            {
+              "line": 80,
+              "text": "    % Setting to 1 will "
+            },
+            {
+              "line": 81,
+              "text": "    % (1) in process_force_data.m: use the contact indices without CoP outliers (i.e., more"
+            },
+            {
+              "line": 88,
+              "text": ""
+            },
+            {
+              "line": 89,
+              "text": "    max_error"
+            },
+            {
+              "line": 90,
+              "text": "    rms_error"
+            },
+            {
+              "line": 91,
+              "text": ""
+            },
+            {
+              "line": 94,
+              "text": "    disp_debug_plots = 0;   "
+            },
+            {
+              "line": 95,
+              "text": "    % Sets the visibility (0: not visible) of the figures that show results of IK, ID, etc."
+            },
+            {
+              "line": 96,
+              "text": "    % The figures will still be saved."
+            },
+            {
+              "line": 126,
+              "text": ""
+            },
+            {
+              "line": 127,
+              "text": "    function set_paths(trial_class)"
+            },
+            {
+              "line": 128,
+              "text": "        trial_class.c3d_path = '../Data';"
+            },
+            {
+              "line": 133,
+              "text": "        "
+            },
+            {
+              "line": 134,
+              "text": "        trial_class.scaleXml_rel = '../../Static/1/Setup/Setup_Scale.xml';"
+            },
+            {
+              "line": 135,
+              "text": "        trial_class.ikXml = '../Setup/Setup_IK.xml';"
+            },
+            {
+              "line": 136,
+              "text": "        trial_class.idXml = '../Setup/Setup_ID.xml';"
+            },
+            {
+              "line": 137,
+              "text": "        mkdir('../generated');"
+            },
+            {
+              "line": 148,
+              "text": "        trial_class.jointKinematicsPath = strcat('../Results/',trial_class.trial_name,'_IKOut.mat');"
+            },
+            {
+              "line": 149,
+              "text": "        trial_class.ikErrorPath = strcat('../Results/',trial_class.trial_name,'_IKError.mat');"
+            },
+            {
+              "line": 150,
+              "text": "        %%"
+            },
+            {
+              "line": 151,
+              "text": "        trial_class.idXmlUpdated = '../generated/IDSetup.xml';"
+            },
+            {
+              "line": 152,
+              "text": "        trial_class.extLoadsFile = '../generated/ExtLoads.xml';"
+            },
+            {
+              "line": 158,
+              "text": "        "
+            },
+            {
+              "line": 159,
+              "text": "        % specify where setup files will be printed."
+            },
+            {
+              "line": 160,
+              "text": "        trial_class.setupfiles_folder = fullfile('../Setup');"
+            },
+            {
+              "line": 161,
+              "text": "        "
+            },
+            {
+              "line": 162,
+              "text": "        trial_class.generated_setup_folder = fullfile('../generated');"
+            },
+            {
+              "line": 163,
+              "text": "        "
+            },
+            {
+              "line": 199,
+              "text": "        %% Get some stats..."
+            },
+            {
+              "line": 200,
+              "text": "        % Get the number of marker trajectories"
+            },
+            {
+              "line": 201,
+              "text": "        trial_class.nTrajectories = trial_class.c3d.getNumTrajectories();"
+            },
+            {
+              "line": 202,
+              "text": "        % Get the marker data rate"
+            },
+            {
+              "line": 203,
+              "text": "        trial_class.rMakers = trial_class.c3d.getRate_marker();"
+            },
+            {
+              "line": 204,
+              "text": "        % Get the number of forces "
+            },
+            {
+              "line": 214,
+              "text": "        "
+            },
+            {
+              "line": 215,
+              "text": "        %% Get the c3d in different forms"
+            },
+            {
+              "line": 216,
+              "text": "        % Get OpenSim tables"
+            },
+            {
+              "line": 217,
+              "text": "        trial_class.markerTable = trial_class.c3d.getTable_markers();"
+            },
+            {
+              "line": 218,
+              "text": "        trial_class.forceTable = trial_class.c3d.getTable_forces();"
+            },
+            {
+              "line": 219,
+              "text": "        % Get as Matlab Structures"
+            },
+            {
+              "line": 220,
+              "text": "        [trial_class.markerStruct, trial_class.forceStruct] = trial_class.c3d.getAsStructs();"
+            },
+            {
+              "line": 221,
+              "text": "        %%"
+            },
+            {
+              "line": 257,
+              "text": "        %%"
+            },
+            {
+              "line": 258,
+              "text": "        trial_class.f_z_filt = cell(trial_class.num_forceplates,1);"
+            },
+            {
+              "line": 259,
+              "text": "        trial_class.f_z_ind = cell(trial_class.num_forceplates,1);"
+            },
+            {
+              "line": 266,
+              "text": "            trial_class.forceStruct_len(i) = length(trial_class.forceStruct_f{i});"
+            },
+            {
+              "line": 267,
+              "text": "            % trial_class.f_z_filt{i} = lowpass(trial_class.forceStruct_f{i}(:,2), trial_class.f_cutoff, trial_class.f_sample);"
+            },
+            {
+              "line": 268,
+              "text": "            trial_class.f_z_filt{i} = smoothdata(trial_class.forceStruct_f{i}(:,2), 'gaussian', 30);"
+            },
+            {
+              "line": 269,
+              "text": "         "
+            },
+            {
+              "line": 273,
+              "text": "            "
+            },
+            {
+              "line": 274,
+              "text": "            below_thresh_mask = trial_class.f_z_filt{i} < trial_class.force_thresh;"
+            },
+            {
+              "line": 275,
+              "text": "            trial_class.f_z_ind{i} = below_thresh_mask;"
+            },
+            {
+              "line": 279,
+              "text": ""
+            },
+            {
+              "line": 280,
+              "text": "            above_thresh_mask = trial_class.f_z_filt{i} > trial_class.force_thresh;"
+            },
+            {
+              "line": 281,
+              "text": "            above_thresh_diff = [0;diff(above_thresh_mask)];"
+            },
+            {
+              "line": 302,
+              "text": "            fig = figure; hold on; grid on;"
+            },
+            {
+              "line": 303,
+              "text": "            plot(trial_class.f_z_filt{num}); "
+            },
+            {
+              "line": 304,
+              "text": "            plot(trial_class.d_f_z_ind{num}, trial_class.f_z_filt{num}(trial_class.d_f_z_ind{num}),'k*')"
+            },
+            {
+              "line": 305,
+              "text": "            fig.Position = [1639         211        1544        1014];"
+            },
+            {
+              "line": 316,
+              "text": ""
+            },
+            {
+              "line": 317,
+              "text": "    function set_forceplate_contacts(trial_class, num, c)"
+            },
+            {
+              "line": 318,
+              "text": "        % num: force plate number"
+            },
+            {
+              "line": 443,
+              "text": "    % c'th contact interval of force plate p."
+            },
+            {
+              "line": 444,
+              "text": "    function set_foot_force_data(trial_class, p, c, right_foot)"
+            },
+            {
+              "line": 445,
+              "text": ""
+            },
+            {
+              "line": 616,
+              "text": "    function export_trc_mot_files(trial_class)"
+            },
+            {
+              "line": 617,
+              "text": "    %Write the marker and force data to file"
+            },
+            {
+              "line": 618,
+              "text": ""
+            },
+            {
+              "line": 619,
+              "text": "    % Write marker data to trc file."
+            },
+            {
+              "line": 620,
+              "text": "    trial_class.c3d.writeTRC(strcat(trial_class.trial_name,'.trc'));"
+            },
+            {
+              "line": 634,
+              "text": ""
+            },
+            {
+              "line": 635,
+              "text": "        [JointKinematicsTable, errorInfo, trial_class.ikMotOutputFile] =..."
+            },
+            {
+              "line": 636,
+              "text": "            Osim.IK(trial_class.trcFile, trial_class.ikXml, trial_class.ikMotOutputFile);"
+            },
+            {
+              "line": 637,
+              "text": ""
+            },
+            {
+              "line": 638,
+              "text": "        [fig_rms, trial_class.max_error, trial_class.rms_error] = Osim.viewIKError(errorInfo);"
+            },
+            {
+              "line": 639,
+              "text": "        "
+            },
+            {
+              "line": 640,
+              "text": "        if trial_class.results_fig_visible == 1"
+            },
+            {
+              "line": 641,
+              "text": "            set(fig_rms, 'Visible', \"on\")"
+            },
+            {
+              "line": 642,
+              "text": "        elseif trial_class.results_fig_visible == 0"
+            },
+            {
+              "line": 643,
+              "text": "            set(fig_rms, 'Visible', \"off\")"
+            },
+            {
+              "line": 644,
+              "text": "        else"
+            },
+            {
+              "line": 647,
+              "text": "        "
+            },
+            {
+              "line": 648,
+              "text": "        fig_surface = Osim.viewIKError(errorInfo, true); % create a surface plot"
+            },
+            {
+              "line": 649,
+              "text": "        "
+            },
+            {
+              "line": 664,
+              "text": "        "
+            },
+            {
+              "line": 665,
+              "text": "        data = errorInfo;"
+            },
+            {
+              "line": 666,
+              "text": "        ik_results_errors = data;"
+            },
+            {
+              "line": 667,
+              "text": "        ik_results_errors.Properties.VariableNames{1} = 'time';"
+            },
+            {
+              "line": 668,
+              "text": "        save(trial_class.ikErrorPath, 'ik_results_errors');"
+            },
+            {
+              "line": 669,
+              "text": "        %%"
+            },
+            {
+              "line": 670,
+              "text": "        % fig_rms.Position = [2043         263        1092         848];"
+            },
+            {
+              "line": 671,
+              "text": "        file_name = strcat(trial_class.trial_name,'_ik_err_rms');"
+            },
+            {
+              "line": 672,
+              "text": "        file_format = '.png';"
+            },
+            {
+              "line": 673,
+              "text": "        file_dir = strcat('..\\Results\\Figures\\',file_name,file_format);"
+            }
+          ]
+        },
+        {
+          "path": "EpicToolbox/dev/@FeatureSelector/extlib/minf/license.txt",
+          "sha256": "0f1b0c5d6a802dafe84223f94a4980ddd667250ceea864a01d722c025f106f4b",
+          "bytes": 1313,
+          "lineCount": 24,
+          "excerpts": [
+            {
+              "line": 1,
+              "text": "Copyright (c) 2015, Jose Delpiano"
+            },
+            {
+              "line": 2,
+              "text": "All rights reserved."
+            },
+            {
+              "line": 3,
+              "text": ""
+            },
+            {
+              "line": 4,
+              "text": "Redistribution and use in source and binary forms, with or without"
+            },
+            {
+              "line": 5,
+              "text": "modification, are permitted provided that the following conditions are"
+            },
+            {
+              "line": 7,
+              "text": ""
+            },
+            {
+              "line": 8,
+              "text": "    * Redistributions of source code must retain the above copyright"
+            },
+            {
+              "line": 9,
+              "text": "      notice, this list of conditions and the following disclaimer."
+            },
+            {
+              "line": 10,
+              "text": "    * Redistributions in binary form must reproduce the above copyright"
+            },
+            {
+              "line": 11,
+              "text": "      notice, this list of conditions and the following disclaimer in"
+            },
+            {
+              "line": 13,
+              "text": ""
+            },
+            {
+              "line": 14,
+              "text": "THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\""
+            },
+            {
+              "line": 15,
+              "text": "AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE"
+            },
+            {
+              "line": 16,
+              "text": "IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE"
+            },
+            {
+              "line": 17,
+              "text": "ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE"
+            },
+            {
+              "line": 18,
+              "text": "LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR"
+            }
+          ]
+        },
+        {
+          "path": "EpicToolbox/extlib/minf/license.txt",
+          "sha256": "0f1b0c5d6a802dafe84223f94a4980ddd667250ceea864a01d722c025f106f4b",
+          "bytes": 1313,
+          "lineCount": 24,
+          "excerpts": [
+            {
+              "line": 1,
+              "text": "Copyright (c) 2015, Jose Delpiano"
+            },
+            {
+              "line": 2,
+              "text": "All rights reserved."
+            },
+            {
+              "line": 3,
+              "text": ""
+            },
+            {
+              "line": 4,
+              "text": "Redistribution and use in source and binary forms, with or without"
+            },
+            {
+              "line": 5,
+              "text": "modification, are permitted provided that the following conditions are"
+            },
+            {
+              "line": 7,
+              "text": ""
+            },
+            {
+              "line": 8,
+              "text": "    * Redistributions of source code must retain the above copyright"
+            },
+            {
+              "line": 9,
+              "text": "      notice, this list of conditions and the following disclaimer."
+            },
+            {
+              "line": 10,
+              "text": "    * Redistributions in binary form must reproduce the above copyright"
+            },
+            {
+              "line": 11,
+              "text": "      notice, this list of conditions and the following disclaimer in"
+            },
+            {
+              "line": 13,
+              "text": ""
+            },
+            {
+              "line": 14,
+              "text": "THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\""
+            },
+            {
+              "line": 15,
+              "text": "AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE"
+            },
+            {
+              "line": 16,
+              "text": "IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE"
+            },
+            {
+              "line": 17,
+              "text": "ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE"
+            },
+            {
+              "line": 18,
+              "text": "LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR"
+            }
+          ]
+        },
+        {
+          "path": "EpicToolbox/LICENSE",
+          "sha256": "028adeaa79c02d1e92f312614acdf26bca9417324f9c2e22337d37219c4c856c",
+          "bytes": 1079,
+          "lineCount": 21,
+          "excerpts": [
+            {
+              "line": 1,
+              "text": "MIT License"
+            },
+            {
+              "line": 2,
+              "text": ""
+            },
+            {
+              "line": 3,
+              "text": "Copyright (c) 2020 Jonathan Camargo Leyva"
+            },
+            {
+              "line": 4,
+              "text": ""
+            },
+            {
+              "line": 7,
+              "text": "in the Software without restriction, including without limitation the rights"
+            },
+            {
+              "line": 8,
+              "text": "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell"
+            },
+            {
+              "line": 9,
+              "text": "copies of the Software, and to permit persons to whom the Software is"
+            },
+            {
+              "line": 11,
+              "text": ""
+            },
+            {
+              "line": 12,
+              "text": "The above copyright notice and this permission notice shall be included in all"
+            },
+            {
+              "line": 13,
+              "text": "copies or substantial portions of the Software."
+            },
+            {
+              "line": 17,
+              "text": "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE"
+            },
+            {
+              "line": 18,
+              "text": "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+            },
+            {
+              "line": 19,
+              "text": "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,"
+            }
+          ]
+        },
+        {
+          "path": "EpicToolbox/MachineLearning/+Classification/README.md",
+          "sha256": "132fccf97d3ba2bb7c149e763b908731b297240fe9459b5ca4b7dc7281bb213e",
+          "bytes": 283,
+          "lineCount": 24,
+          "excerpts": []
+        },
+        {
+          "path": "EpicToolbox/MachineLearning/+ContinuousEstimation/README.md",
+          "sha256": "132fccf97d3ba2bb7c149e763b908731b297240fe9459b5ca4b7dc7281bb213e",
+          "bytes": 283,
+          "lineCount": 24,
+          "excerpts": []
+        },
+        {
+          "path": "EpicToolbox/README.md",
+          "sha256": "dbe8939631cd5c770033adb413376643215680e2e83d1036ffa7b66cf4e3305e",
+          "bytes": 2683,
+          "lineCount": 42,
+          "excerpts": [
+            {
+              "line": 29,
+              "text": ""
+            },
+            {
+              "line": 30,
+              "text": "### License"
+            },
+            {
+              "line": 31,
+              "text": ""
+            },
+            {
+              "line": 32,
+              "text": "The MIT License (MIT) Copyright (c) 2020 Jonathan Camargo <jon-cama@gatech.edu>"
+            },
+            {
+              "line": 33,
+              "text": ""
+            },
+            {
+              "line": 34,
+              "text": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:"
+            },
+            {
+              "line": 35,
+              "text": ""
+            },
+            {
+              "line": 36,
+              "text": "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software."
+            },
+            {
+              "line": 37,
+              "text": ""
+            },
+            {
+              "line": 38,
+              "text": "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+            },
+            {
+              "line": 39,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "path": "MoCapTools/+Osim/IK.m",
+          "sha256": "1243ab11db3232f2d7256e12e9a94e67381ab505f75584fe6c8445f6eb62537a",
+          "bytes": 4019,
+          "lineCount": 88,
+          "excerpts": [
+            {
+              "line": 1,
+              "text": "function [jointAngleTable,errorTable,motOutputFile] = IK(processedTrcFileName, IKTemplateFile, motOutputFile)"
+            },
+            {
+              "line": 2,
+              "text": "% Osim.IK computes the Inverse Kinematics from a marker file given by"
+            },
+            {
+              "line": 3,
+              "text": "% trcFilename and an IKTemplateFile (in xml format). The results from"
+            },
+            {
+              "line": 11,
+              "text": "% "
+            },
+            {
+              "line": 12,
+              "text": "% [jointAngleTable, errorTable, motOutputFile] = Osim.IK(TRCdata, IKTemplateFile, optionalMotOutputFile);"
+            },
+            {
+              "line": 13,
+              "text": "% [jointAngleTable, errorTable, motOutputFile] = Osim.IK(TRCdata, IKTemplateFile);"
+            },
+            {
+              "line": 14,
+              "text": "% "
+            },
+            {
+              "line": 17,
+              "text": "% jointAngleTable - A table containing joint angles over time. "
+            },
+            {
+              "line": 18,
+              "text": "% errorTable - The marker error from IK calculations for every marker at"
+            },
+            {
+              "line": 19,
+              "text": "% every frame, stored in a table."
+            },
+            {
+              "line": 22,
+              "text": "% "
+            },
+            {
+              "line": 23,
+              "text": "% See also: Osim.editSetupXML, Osim.ID"
+            },
+            {
+              "line": 24,
+              "text": ""
+            },
+            {
+              "line": 29,
+              "text": "    "
+            },
+            {
+              "line": 30,
+              "text": "    %% Create Inverse Kinematics Setup File"
+            },
+            {
+              "line": 31,
+              "text": "    ikSetupData=xmlread(IKTemplateFile);"
+            },
+            {
+              "line": 32,
+              "text": "    "
+            },
+            {
+              "line": 35,
+              "text": "    timeString = validateTimeRange(IKTemplateFile, trcTable);"
+            },
+            {
+              "line": 36,
+              "text": "    replaceElementValue(ikSetupData, 'time_range', timeString);"
+            },
+            {
+              "line": 37,
+              "text": "    "
+            },
+            {
+              "line": 38,
+              "text": "    %Modify marker_file entries"
+            },
+            {
+              "line": 39,
+              "text": "    replaceElementValue(ikSetupData, 'marker_file', processedTrc);"
+            },
+            {
+              "line": 40,
+              "text": ""
+            },
+            {
+              "line": 46,
+              "text": "    end"
+            },
+            {
+              "line": 47,
+              "text": "    replaceElementValue(ikSetupData, 'output_motion_file', motOutputFile);"
+            },
+            {
+              "line": 48,
+              "text": "    "
+            },
+            {
+              "line": 49,
+              "text": "    % Ensure that marker locations are outputted"
+            },
+            {
+              "line": 50,
+              "text": "    replaceElementValue(ikSetupData, 'report_marker_locations', 'true');"
+            },
+            {
+              "line": 51,
+              "text": "    "
+            },
+            {
+              "line": 54,
+              "text": "    resultsDir = [tempname() filesep];"
+            },
+            {
+              "line": 55,
+              "text": "    replaceElementValue(ikSetupData, 'results_directory', resultsDir);"
+            },
+            {
+              "line": 56,
+              "text": "    "
+            },
+            {
+              "line": 57,
+              "text": "    % model_file holds a path to the .osim model to use for calculating"
+            },
+            {
+              "line": 58,
+              "text": "    % joint angles, which might be an absolute or a relative path. If it"
+            },
+            {
+              "line": 59,
+              "text": "    % is a relative path, it must be changed to an absolute path so that"
+            },
+            {
+              "line": 60,
+              "text": "    % the filled setup xml that is stored in temporary data can access the"
+            },
+            {
+              "line": 61,
+              "text": "    % model. We assume that the model is a relative path with respect to"
+            },
+            {
+              "line": 66,
+              "text": "    "
+            },
+            {
+              "line": 67,
+              "text": "    ikSetupData=relative2abspath(ikSetupData,'model_file',IKTemplateFileRoot);"
+            },
+            {
+              "line": 68,
+              "text": "    "
+            },
+            {
+              "line": 69,
+              "text": "    % Create a temporary file to write the ik setup to"
+            },
+            {
+              "line": 70,
+              "text": "    ikSetupFile = [tempname() '.xml'];"
+            },
+            {
+              "line": 71,
+              "text": "    "
+            },
+            {
+              "line": 72,
+              "text": "    fprintf('Writing inverse kinematics setup file to: %s\\n',ikSetupFile);"
+            },
+            {
+              "line": 73,
+              "text": "    xmlwrite(ikSetupFile,ikSetupData);"
+            },
+            {
+              "line": 74,
+              "text": "   "
+            },
+            {
+              "line": 75,
+              "text": "    %% Run Inverse Kinematics in OpenSim"
+            },
+            {
+              "line": 76,
+              "text": "    ikTool = InverseKinematicsTool(ikSetupFile);"
+            },
+            {
+              "line": 77,
+              "text": "    ikTool.run();"
+            },
+            {
+              "line": 79,
+              "text": "    if nargout > 1"
+            },
+            {
+              "line": 80,
+              "text": "        markerResultFile = matchfiles(fullfile(resultsDir, '*locations.sto'));"
+            },
+            {
+              "line": 81,
+              "text": "        %calculateMarkerErrors is defined at the bottom"
+            },
+            {
+              "line": 82,
+              "text": "        stoTable=Osim.readSTO(markerResultFile{1});"
+            },
+            {
+              "line": 83,
+              "text": "        stoTable.Properties.VariableNames(2:end) = cellfun(@(x) {x([1:end-2, end])} , stoTable.Properties.VariableNames(2:end));"
+            },
+            {
+              "line": 84,
+              "text": "        stoTable{:, 2:end} = stoTable{:, 2:end} * 1000; % convert m to mm"
+            },
+            {
+              "line": 85,
+              "text": "        errorTable = Osim.calculateMarkerErrors(trcTable,stoTable);"
+            },
+            {
+              "line": 86,
+              "text": "    end"
+            }
+          ]
+        },
+        {
+          "path": "MoCapTools/+Osim/Scale.m",
+          "sha256": "27137d49b7763791629f0072563753d3338a9509088988e200f53dd5983fb6d7",
+          "bytes": 3728,
+          "lineCount": 85,
+          "excerpts": [
+            {
+              "line": 1,
+              "text": "function Scale(processedStaticTRCFilename,scaleTemplateFile,outputOsimFile)"
+            },
+            {
+              "line": 2,
+              "text": "% OpenSimScale generates the scaled model outputOsimFile by using a markers"
+            },
+            {
+              "line": 3,
+              "text": "% file staticTrcFileName and a scaleTemplateFile (in xml format)"
+            },
+            {
+              "line": 22,
+              "text": "    % with static data and run the opensim scaling to produce a modified osim model."
+            },
+            {
+              "line": 23,
+              "text": "    %Create a temporal file for the scale setup configuration using specific trc file. "
+            },
+            {
+              "line": 24,
+              "text": "    scaleSetupFile=[tempname() '.xml'];   \t"
+            },
+            {
+              "line": 25,
+              "text": "        "
+            },
+            {
+              "line": 27,
+              "text": "    %I am using xmlread from matlab to edit xml and save them. The"
+            },
+            {
+              "line": 28,
+              "text": "    %alternative is using opensim to load the scale.xml as a scaletool object"
+            },
+            {
+              "line": 29,
+              "text": "    % and edit that programaticaly and then run the scale tool. I want to"
+            },
+            {
+              "line": 33,
+              "text": "    "
+            },
+            {
+              "line": 34,
+              "text": "    replaceElementValue(doc, 'time_range', timeString);"
+            },
+            {
+              "line": 35,
+              "text": "    "
+            },
+            {
+              "line": 36,
+              "text": "    if doc.getElementsByTagName('ScaleTool').getLength() == 0"
+            },
+            {
+              "line": 37,
+              "text": "        error('This is not an OpenSim scale XML.');"
+            },
+            {
+              "line": 38,
+              "text": "    end"
+            },
+            {
+              "line": 43,
+              "text": "    "
+            },
+            {
+              "line": 44,
+              "text": "    doc=updatePathReference(doc,{'model_file','marker_set_file'},scaleTemplateFileRoot);"
+            },
+            {
+              "line": 45,
+              "text": ""
+            },
+            {
+              "line": 46,
+              "text": "    %Modify marker_file entries"
+            },
+            {
+              "line": 47,
+              "text": "    [~, filename] = fileparts(processedStaticTRC);"
+            },
+            {
+              "line": 48,
+              "text": "    replaceElementValue(doc, 'marker_file', [filename '.trc']);"
+            },
+            {
+              "line": 49,
+              "text": "    "
+            },
+            {
+              "line": 53,
+              "text": "    [~, filename] = fileparts(tempOutputModel);"
+            },
+            {
+              "line": 54,
+              "text": "    replaceElementValue(doc, 'output_model_file', [filename '.osim']);"
+            },
+            {
+              "line": 55,
+              "text": "    "
+            },
+            {
+              "line": 56,
+              "text": "    % set the name of the model to be the same as the filename "
+            },
+            {
+              "line": 57,
+              "text": "    elem = doc.getElementsByTagName('ScaleTool').item(0);"
+            },
+            {
+              "line": 58,
+              "text": "    [~, name, ~] = fileparts(outputOsimFile);"
+            },
+            {
+              "line": 59,
+              "text": "    elem.setAttribute('name', name);"
+            },
+            {
+              "line": 60,
+              "text": "    "
+            },
+            {
+              "line": 61,
+              "text": "    % only update the time range if there is not already one present"
+            },
+            {
+              "line": 62,
+              "text": "    curTimeRange = str2num(doc.getElementsByTagName('time_range').item(0).getTextContent().toCharArray()');"
+            },
+            {
+              "line": 63,
+              "text": "    if isempty(curTimeRange)"
+            },
+            {
+              "line": 64,
+              "text": "        %Modify time_range entries"
+            },
+            {
+              "line": 65,
+              "text": "        replaceElementValue(doc, 'time_range', timeString);"
+            },
+            {
+              "line": 66,
+              "text": "    end"
+            },
+            {
+              "line": 67,
+              "text": "        "
+            },
+            {
+              "line": 68,
+              "text": "    fprintf('Writing scale setup file to: %s\\n',scaleSetupFile);"
+            },
+            {
+              "line": 69,
+              "text": "    xmlwrite(scaleSetupFile,doc);"
+            },
+            {
+              "line": 70,
+              "text": "    "
+            },
+            {
+              "line": 71,
+              "text": "    scaleTool = ScaleTool(scaleSetupFile);"
+            },
+            {
+              "line": 72,
+              "text": "    try"
+            },
+            {
+              "line": 73,
+              "text": "        scaleTool.run();"
+            },
+            {
+              "line": 74,
+              "text": "    catch e"
+            },
+            {
+              "line": 75,
+              "text": "        if isequal(e.identifier, 'MATLAB:invalidConversion') && ..."
+            },
+            {
+              "line": 76,
+              "text": "            isequal(e.message, 'Conversion to double from org.opensim.modeling.ScaleTool is not possible.') && ..."
+            },
+            {
+              "line": 77,
+              "text": "            isequal(e.stack(1).file, which('run'))"
+            },
+            {
+              "line": 78,
+              "text": "            % scale using scale.exe in C:/OpenSim*/bin "
+            },
+            {
+              "line": 79,
+              "text": "            system(sprintf('scale -S \"%s\"', scaleSetupFile));"
+            },
+            {
+              "line": 80,
+              "text": "        else"
+            }
+          ]
+        },
+        {
+          "path": "MoCapTools/License.txt",
+          "sha256": "6f1556059bd52e01187bdeba685708bae08fb634229cde5ad021abda8859efb9",
+          "bytes": 1192,
+          "lineCount": 23,
+          "excerpts": [
+            {
+              "line": 1,
+              "text": "MIT License"
+            },
+            {
+              "line": 2,
+              "text": ""
+            },
+            {
+              "line": 3,
+              "text": "Copyright (c) 2019 Jonathan Camargo - Aditya Ramanathan - Noel Csomay "
+            },
+            {
+              "line": 4,
+              "text": "Exoskeleton and Prosthetic Intelligent Controls Lab"
+            },
+            {
+              "line": 9,
+              "text": "in the Software without restriction, including without limitation the rights"
+            },
+            {
+              "line": 10,
+              "text": "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell"
+            },
+            {
+              "line": 11,
+              "text": "copies of the Software, and to permit persons to whom the Software is"
+            },
+            {
+              "line": 13,
+              "text": ""
+            },
+            {
+              "line": 14,
+              "text": "The above copyright notice and this permission notice shall be included in all"
+            },
+            {
+              "line": 15,
+              "text": "copies or substantial portions of the Software."
+            },
+            {
+              "line": 19,
+              "text": "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE"
+            },
+            {
+              "line": 20,
+              "text": "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+            },
+            {
+              "line": 21,
+              "text": "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,"
+            }
+          ]
+        },
+        {
+          "path": "MoCapTools/README.md",
+          "sha256": "50e95695fb71e29aeac30fa1d821c0cf4fdc18b72df2c3afd1688f59b4e12b16",
+          "bytes": 4358,
+          "lineCount": 56,
+          "excerpts": [
+            {
+              "line": 6,
+              "text": "    author = { Jonathan   Camargo  and  Aditya   Ramanathan  and  Noel   Csomay-Shanklin  and  Aaron   Young },"
+            },
+            {
+              "line": 7,
+              "text": "    title = {Automated gap-filling for marker-based biomechanical motion capture data},"
+            },
+            {
+              "line": 8,
+              "text": "    journal = {Computer Methods in Biomechanics and Biomedical Engineering},"
+            },
+            {
+              "line": 19,
+              "text": ""
+            },
+            {
+              "line": 20,
+              "text": "## Setting up this repo"
+            },
+            {
+              "line": 21,
+              "text": "In order to properly set up this repo, please make sure you have OpenSim downloaded and installed (http://simtk.org/frs/index.php?group_id=91), then run install.m to bind OpenSim to MATLAB, and to add this repo to your MATLAB path. For examples on how to use different functions in this repo, see +Osim/examples/example.m and +Vicon/examples/example.m"
+            },
+            {
+              "line": 22,
+              "text": "The new functions for labeling and marker swapping detection require the use of EpicToolbox (https://github.com/JonathanCamargo/EpicToolbox), please install it too if you get errors of not finding the \"Topics\" package."
+            },
+            {
+              "line": 23,
+              "text": ""
+            },
+            {
+              "line": 24,
+              "text": "### Purpose of the Sensor-Fusion subteam"
+            },
+            {
+              "line": 25,
+              "text": "Our team is part of the EPIC lab at Georgia Institute of Technology (www.epic.gatech.edu) focuses on instrumentation with wearable sensors, including IMU, goniometers, pressure sensors and a novel epidermal flexible emg.  We are interested in analyzing the information carried by these sensors to develop intent recognition algorithms and gait state estimation using machine learning techniques. During Fall, we are setting up a full data collection system including motion capture and force plates in our terrain park that includes ramps, stairs and ground level walking. This will allow to study the biomechanics of ambulation for different conditions and get a better background for the development of controllers for our assistive devices."
+            },
+            {
+              "line": 26,
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "downloadedBytes": 180359
+    },
+    {
+      "name": "AB01.zip",
+      "id": 57221270,
+      "archiveBytes": 1393027318,
+      "publishedMD5": "4d473943358f6611a85ef90c401950d8",
+      "centralDirectorySHA256": "17a3da66757b5c85c531b09a7839c32dd43998a53a1f1c88fa5f6e930f101ddb",
+      "entryCount": 1589,
+      "targetInventory": [
+        {
+          "path": "Squat\\1\\",
+          "flags": 0,
+          "method": 0,
+          "crc32": 0,
+          "compressed": 0,
+          "bytes": 0,
+          "offset": 896041354
+        },
+        {
+          "path": "Squat\\1\\Data\\.gitkeep",
+          "flags": 0,
+          "method": 0,
+          "crc32": 0,
+          "compressed": 0,
+          "bytes": 0,
+          "offset": 896041468
+        },
+        {
+          "path": "Squat\\1\\Data\\squat_1.c3d",
+          "flags": 0,
+          "method": 8,
+          "crc32": 358773607,
+          "compressed": 3398615,
+          "bytes": 4439424,
+          "offset": 896041519
+        },
+        {
+          "path": "Squat\\1\\Data\\squat_1.mot",
+          "flags": 0,
+          "method": 8,
+          "crc32": 2575375177,
+          "compressed": 7144244,
+          "bytes": 15739060,
+          "offset": 899440188
+        },
+        {
+          "path": "Squat\\1\\Data\\squat_1.trc",
+          "flags": 0,
+          "method": 8,
+          "crc32": 2183398251,
+          "compressed": 3531809,
+          "bytes": 8200072,
+          "offset": 906584486
+        },
+        {
+          "path": "Squat\\1\\generated\\.gitkeep",
+          "flags": 0,
+          "method": 8,
+          "crc32": 346195372,
+          "compressed": 4,
+          "bytes": 2,
+          "offset": 910116349
+        },
+        {
+          "path": "Squat\\1\\generated\\ExtLoads.xml",
+          "flags": 0,
+          "method": 8,
+          "crc32": 4254580140,
+          "compressed": 352,
+          "bytes": 1390,
+          "offset": 910116409
+        },
+        {
+          "path": "Squat\\1\\generated\\Generated_Model.osim",
+          "flags": 0,
+          "method": 8,
+          "crc32": 2006638002,
+          "compressed": 42683,
+          "bytes": 926105,
+          "offset": 910116821
+        },
+        {
+          "path": "Squat\\1\\generated\\IDSetup.xml",
+          "flags": 0,
+          "method": 8,
+          "crc32": 1236147239,
+          "compressed": 965,
+          "bytes": 2336,
+          "offset": 910159572
+        },
+        {
+          "path": "Squat\\1\\generated\\Setup_Analyze_squat_1_IKOut.mot.xml",
+          "flags": 0,
+          "method": 8,
+          "crc32": 2824799663,
+          "compressed": 1783,
+          "bytes": 4841,
+          "offset": 910160596
+        },
+        {
+          "path": "Squat\\1\\generated\\squat_1_IKOut.mot",
+          "flags": 0,
+          "method": 8,
+          "crc32": 2374956605,
+          "compressed": 644571,
+          "bytes": 2158764,
+          "offset": 910162462
+        },
+        {
+          "path": "Squat\\1\\Processing\\process_force_data.m",
+          "flags": 0,
+          "method": 8,
+          "crc32": 1780822079,
+          "compressed": 314,
+          "bytes": 1958,
+          "offset": 910807098
+        },
+        {
+          "path": "Squat\\1\\Processing\\process_trial_data.m",
+          "flags": 0,
+          "method": 8,
+          "crc32": 2430264913,
+          "compressed": 173,
+          "bytes": 355,
+          "offset": 910807481
+        },
+        {
+          "path": "Squat\\1\\Results\\.gitkeep",
+          "flags": 0,
+          "method": 8,
+          "crc32": 690959552,
+          "compressed": 15,
+          "bytes": 13,
+          "offset": 910807723
+        },
+        {
+          "path": "Squat\\1\\Results\\AB01_Squat_1.mat",
+          "flags": 0,
+          "method": 8,
+          "crc32": 3498737999,
+          "compressed": 23671401,
+          "bytes": 23707252,
+          "offset": 910807792
+        },
+        {
+          "path": "Squat\\1\\Results\\squat_1_com_pos.mat",
+          "flags": 0,
+          "method": 8,
+          "crc32": 2551411619,
+          "compressed": 2814335,
+          "bytes": 2817106,
+          "offset": 934479255
+        },
+        {
+          "path": "Squat\\1\\Results\\squat_1_IDOut.mat",
+          "flags": 0,
+          "method": 8,
+          "crc32": 2472871774,
+          "compressed": 932104,
+          "bytes": 934511,
+          "offset": 937293655
+        },
+        {
+          "path": "Squat\\1\\Results\\squat_1_IDOut.sto",
+          "flags": 0,
+          "method": 8,
+          "crc32": 2910705223,
+          "compressed": 699357,
+          "bytes": 2158885,
+          "offset": 938225822
+        },
+        {
+          "path": "Squat\\1\\Results\\squat_1_IKError.mat",
+          "flags": 0,
+          "method": 8,
+          "crc32": 2576547194,
+          "compressed": 1044890,
+          "bytes": 1048204,
+          "offset": 938925242
+        },
+        {
+          "path": "Squat\\1\\Results\\squat_1_IKOut.mat",
+          "flags": 0,
+          "method": 8,
+          "crc32": 3172253312,
+          "compressed": 754529,
+          "bytes": 758083,
+          "offset": 939970197
+        },
+        {
+          "path": "Squat\\1\\Results\\squat_1_IKOut.mot_BodyKinematics_acc_global",
+          "flags": 0,
+          "method": 8,
+          "crc32": 1049020181,
+          "compressed": 2854829,
+          "bytes": 7121558,
+          "offset": 940724789
+        },
+        {
+          "path": "Squat\\1\\Results\\squat_1_IKOut.mot_BodyKinematics_pos_global",
+          "flags": 0,
+          "method": 8,
+          "crc32": 820219860,
+          "compressed": 2186637,
+          "bytes": 7121552,
+          "offset": 943579707
+        },
+        {
+          "path": "Squat\\1\\Results\\squat_1_IKOut.mot_BodyKinematics_vel_global",
+          "flags": 0,
+          "method": 8,
+          "crc32": 3746028385,
+          "compressed": 2048410,
+          "bytes": 7121553,
+          "offset": 945766433
+        },
+        {
+          "path": "Squat\\1\\Results\\Figures\\.gitkeep",
+          "flags": 0,
+          "method": 8,
+          "crc32": 690959552,
+          "compressed": 15,
+          "bytes": 13,
+          "offset": 947814932
+        },
+        {
+          "path": "Squat\\1\\Results\\Figures\\squat_1_angles.png",
+          "flags": 0,
+          "method": 8,
+          "crc32": 72155813,
+          "compressed": 121138,
+          "bytes": 131844,
+          "offset": 947815009
+        },
+        {
+          "path": "Squat\\1\\Results\\Figures\\squat_1_com_pos.png",
+          "flags": 0,
+          "method": 8,
+          "crc32": 2143836970,
+          "compressed": 127759,
+          "bytes": 139668,
+          "offset": 947936219
+        },
+        {
+          "path": "Squat\\1\\Results\\Figures\\squat_1_f_left.png",
+          "flags": 0,
+          "method": 8,
+          "crc32": 115882026,
+          "compressed": 135538,
+          "bytes": 147005,
+          "offset": 948064051
+        },
+        {
+          "path": "Squat\\1\\Results\\Figures\\squat_1_f_right.png",
+          "flags": 0,
+          "method": 8,
+          "crc32": 2948720378,
+          "compressed": 140787,
+          "bytes": 151373,
+          "offset": 948199661
+        },
+        {
+          "path": "Squat\\1\\Results\\Figures\\squat_1_ik_err_markers.png",
+          "flags": 0,
+          "method": 8,
+          "crc32": 156637836,
+          "compressed": 649255,
+          "bytes": 656972,
+          "offset": 948340521
+        },
+        {
+          "path": "Squat\\1\\Results\\Figures\\squat_1_ik_err_rms.png",
+          "flags": 0,
+          "method": 8,
+          "crc32": 1697259929,
+          "compressed": 65859,
+          "bytes": 72377,
+          "offset": 948989856
+        },
+        {
+          "path": "Squat\\1\\Results\\Figures\\squat_1_lumbar_angles.png",
+          "flags": 0,
+          "method": 8,
+          "crc32": 2062542759,
+          "compressed": 120730,
+          "bytes": 130510,
+          "offset": 949055791
+        },
+        {
+          "path": "Squat\\1\\Results\\Figures\\squat_1_lumbar_torques.png",
+          "flags": 0,
+          "method": 8,
+          "crc32": 3612806412,
+          "compressed": 138327,
+          "bytes": 148950,
+          "offset": 949176600
+        },
+        {
+          "path": "Squat\\1\\Results\\Figures\\squat_1_torques.png",
+          "flags": 0,
+          "method": 8,
+          "crc32": 3637080457,
+          "compressed": 161307,
+          "bytes": 170976,
+          "offset": 949315007
+        },
+        {
+          "path": "Squat\\1\\Setup\\Setup_CoM_Analysis.xml",
+          "flags": 0,
+          "method": 8,
+          "crc32": 833636732,
+          "compressed": 1752,
+          "bytes": 4742,
+          "offset": 949476387
+        },
+        {
+          "path": "Squat\\1\\Setup\\Setup_External_Forces.xml",
+          "flags": 0,
+          "method": 8,
+          "crc32": 2914190080,
+          "compressed": 491,
+          "bytes": 2357,
+          "offset": 949478205
+        },
+        {
+          "path": "Squat\\1\\Setup\\Setup_ID.xml",
+          "flags": 0,
+          "method": 8,
+          "crc32": 1186998835,
+          "compressed": 839,
+          "bytes": 1965,
+          "offset": 949478765
+        },
+        {
+          "path": "Squat\\1\\Setup\\Setup_IK.xml",
+          "flags": 0,
+          "method": 8,
+          "crc32": 488595271,
+          "compressed": 1394,
+          "bytes": 16719,
+          "offset": 949479660
+        },
+        {
+          "path": "Static\\1\\",
+          "flags": 0,
+          "method": 0,
+          "crc32": 0,
+          "compressed": 0,
+          "bytes": 0,
+          "offset": 1065537065
+        },
+        {
+          "path": "Static\\1\\Data\\.gitkeep",
+          "flags": 0,
+          "method": 0,
+          "crc32": 0,
+          "compressed": 0,
+          "bytes": 0,
+          "offset": 1065537104
+        },
+        {
+          "path": "Static\\1\\Data\\static.c3d",
+          "flags": 0,
+          "method": 8,
+          "crc32": 1022663142,
+          "compressed": 1731183,
+          "bytes": 2560224,
+          "offset": 1065537156
+        },
+        {
+          "path": "Static\\1\\Data\\static.mot",
+          "flags": 0,
+          "method": 8,
+          "crc32": 3372348884,
+          "compressed": 3031645,
+          "bytes": 6869326,
+          "offset": 1067268393
+        },
+        {
+          "path": "Static\\1\\Data\\static.trc",
+          "flags": 0,
+          "method": 8,
+          "crc32": 3056174832,
+          "compressed": 2037874,
+          "bytes": 5002122,
+          "offset": 1070300092
+        },
+        {
+          "path": "Static\\1\\generated\\.gitkeep",
+          "flags": 0,
+          "method": 8,
+          "crc32": 346195372,
+          "compressed": 4,
+          "bytes": 2,
+          "offset": 1072338020
+        },
+        {
+          "path": "Static\\1\\generated\\Generated_Model.osim",
+          "flags": 0,
+          "method": 8,
+          "crc32": 2006638002,
+          "compressed": 42683,
+          "bytes": 926105,
+          "offset": 1072338081
+        },
+        {
+          "path": "Static\\1\\generated\\Setup_Analyze_static_IKOut.mot.xml",
+          "flags": 0,
+          "method": 8,
+          "crc32": 1103994078,
+          "compressed": 1779,
+          "bytes": 4839,
+          "offset": 1072380833
+        },
+        {
+          "path": "Static\\1\\generated\\static_IKOut.mot",
+          "flags": 0,
+          "method": 8,
+          "crc32": 2262065860,
+          "compressed": 338792,
+          "bytes": 1146408,
+          "offset": 1072382695
+        },
+        {
+          "path": "Static\\1\\Processing\\opensim (1).log",
+          "flags": 0,
+          "method": 8,
+          "crc32": 4098731897,
+          "compressed": 3222,
+          "bytes": 21048,
+          "offset": 1072721552
+        },
+        {
+          "path": "Static\\1\\Processing\\opensim.log",
+          "flags": 0,
+          "method": 8,
+          "crc32": 292267293,
+          "compressed": 1462826,
+          "bytes": 15965054,
+          "offset": 1072724839
+        },
+        {
+          "path": "Static\\1\\Processing\\process_force_data.m",
+          "flags": 0,
+          "method": 8,
+          "crc32": 1780822079,
+          "compressed": 314,
+          "bytes": 1958,
+          "offset": 1074187726
+        },
+        {
+          "path": "Static\\1\\Processing\\process_trial_data.m",
+          "flags": 0,
+          "method": 8,
+          "crc32": 1001799726,
+          "compressed": 171,
+          "bytes": 353,
+          "offset": 1074188110
+        },
+        {
+          "path": "Static\\1\\Results\\.gitkeep",
+          "flags": 0,
+          "method": 8,
+          "crc32": 690959552,
+          "compressed": 15,
+          "bytes": 13,
+          "offset": 1074188351
+        },
+        {
+          "path": "Static\\1\\Results\\AB01_Static_1.mat",
+          "flags": 0,
+          "method": 8,
+          "crc32": 4284163063,
+          "compressed": 10747559,
+          "bytes": 10774588,
+          "offset": 1074188421
+        },
+        {
+          "path": "Static\\1\\Results\\static_com_pos.mat",
+          "flags": 0,
+          "method": 8,
+          "crc32": 3263897902,
+          "compressed": 1437428,
+          "bytes": 1438490,
+          "offset": 1084936044
+        },
+        {
+          "path": "Static\\1\\Results\\static_IKError.mat",
+          "flags": 0,
+          "method": 8,
+          "crc32": 136659332,
+          "compressed": 582050,
+          "bytes": 583723,
+          "offset": 1086373537
+        },
+        {
+          "path": "Static\\1\\Results\\static_IKOut.mat",
+          "flags": 0,
+          "method": 8,
+          "crc32": 571543345,
+          "compressed": 402962,
+          "bytes": 404437,
+          "offset": 1086955652
+        },
+        {
+          "path": "Static\\1\\Results\\static_IKOut.mot_BodyKinematics_acc_global",
+          "flags": 0,
+          "method": 8,
+          "crc32": 3502041001,
+          "compressed": 1514264,
+          "bytes": 3781611,
+          "offset": 1087358677
+        },
+        {
+          "path": "Static\\1\\Results\\static_IKOut.mot_BodyKinematics_pos_global",
+          "flags": 0,
+          "method": 8,
+          "crc32": 1927990536,
+          "compressed": 1132482,
+          "bytes": 3781607,
+          "offset": 1088873030
+        },
+        {
+          "path": "Static\\1\\Results\\static_IKOut.mot_BodyKinematics_vel_global",
+          "flags": 0,
+          "method": 8,
+          "crc32": 614924791,
+          "compressed": 1118753,
+          "bytes": 3781608,
+          "offset": 1090005601
+        },
+        {
+          "path": "Static\\1\\Results\\Figures\\.gitkeep",
+          "flags": 0,
+          "method": 8,
+          "crc32": 690959552,
+          "compressed": 15,
+          "bytes": 13,
+          "offset": 1091124443
+        },
+        {
+          "path": "Static\\1\\Results\\Figures\\static_angles.png",
+          "flags": 0,
+          "method": 8,
+          "crc32": 346970501,
+          "compressed": 198036,
+          "bytes": 207254,
+          "offset": 1091124521
+        },
+        {
+          "path": "Static\\1\\Results\\Figures\\static_com_pos.png",
+          "flags": 0,
+          "method": 8,
+          "crc32": 21991556,
+          "compressed": 137827,
+          "bytes": 148875,
+          "offset": 1091322629
+        },
+        {
+          "path": "Static\\1\\Results\\Figures\\static_f_left.png",
+          "flags": 0,
+          "method": 8,
+          "crc32": 4273715722,
+          "compressed": 71839,
+          "bytes": 86917,
+          "offset": 1091460529
+        },
+        {
+          "path": "Static\\1\\Results\\Figures\\static_f_right.png",
+          "flags": 0,
+          "method": 8,
+          "crc32": 370736091,
+          "compressed": 72771,
+          "bytes": 88317,
+          "offset": 1091532440
+        },
+        {
+          "path": "Static\\1\\Results\\Figures\\static_ik_err_markers.png",
+          "flags": 0,
+          "method": 8,
+          "crc32": 2078465870,
+          "compressed": 435558,
+          "bytes": 446493,
+          "offset": 1091605284
+        },
+        {
+          "path": "Static\\1\\Results\\Figures\\static_ik_err_rms.png",
+          "flags": 0,
+          "method": 8,
+          "crc32": 3173707758,
+          "compressed": 82617,
+          "bytes": 89249,
+          "offset": 1092040922
+        },
+        {
+          "path": "Static\\1\\Results\\Figures\\static_lumbar_angles.png",
+          "flags": 0,
+          "method": 8,
+          "crc32": 2661236443,
+          "compressed": 131147,
+          "bytes": 141287,
+          "offset": 1092123615
+        },
+        {
+          "path": "Static\\1\\Setup\\Setup_CoM_Analysis.xml",
+          "flags": 0,
+          "method": 8,
+          "crc32": 833636732,
+          "compressed": 1752,
+          "bytes": 4742,
+          "offset": 1092254841
+        },
+        {
+          "path": "Static\\1\\Setup\\Setup_External_Forces.xml",
+          "flags": 0,
+          "method": 8,
+          "crc32": 2914190080,
+          "compressed": 491,
+          "bytes": 2357,
+          "offset": 1092256660
+        },
+        {
+          "path": "Static\\1\\Setup\\Setup_ID.xml",
+          "flags": 0,
+          "method": 8,
+          "crc32": 1186998835,
+          "compressed": 839,
+          "bytes": 1965,
+          "offset": 1092257221
+        },
+        {
+          "path": "Static\\1\\Setup\\Setup_IK.xml",
+          "flags": 0,
+          "method": 8,
+          "crc32": 488595271,
+          "compressed": 1394,
+          "bytes": 16719,
+          "offset": 1092258117
+        },
+        {
+          "path": "Static\\1\\Setup\\Setup_Scale.xml",
+          "flags": 0,
+          "method": 8,
+          "crc32": 1784128364,
+          "compressed": 3032,
+          "bytes": 41388,
+          "offset": 1092259568
+        },
+        {
+          "path": "Static\\1\\Setup\\Setup_Scale_GUI.xml",
+          "flags": 0,
+          "method": 8,
+          "crc32": 3124308215,
+          "compressed": 3029,
+          "bytes": 41410,
+          "offset": 1092262660
+        }
+      ],
+      "acquired": [
+        {
+          "path": "Squat\\1\\generated\\ExtLoads.xml",
+          "sha256": "91f5258ba3339a033cfee9d98a73e31b5649f66f4f7d29d193932ffe51b6d887",
+          "bytes": 1390,
+          "lineCount": 29,
+          "excerpts": [
+            {
+              "line": 1,
+              "text": "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+            },
+            {
+              "line": 2,
+              "text": "<OpenSimDocument Version=\"40000\">"
+            },
+            {
+              "line": 3,
+              "text": "   <ExternalLoads name=\"externalloads\">"
+            }
+          ]
+        },
+        {
+          "path": "Squat\\1\\generated\\IDSetup.xml",
+          "sha256": "2b510839817fdb0dd552c1a3224d5e0ce0995772f745e3644bf207c3ff4af791",
+          "bytes": 2336,
+          "lineCount": 27,
+          "excerpts": [
+            {
+              "line": 1,
+              "text": "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+            },
+            {
+              "line": 2,
+              "text": "<OpenSimDocument Version=\"40000\">"
+            },
+            {
+              "line": 3,
+              "text": "\t  <InverseDynamicsTool>"
+            },
+            {
+              "line": 4,
+              "text": "\t\t<!--Name of the directory where results are written. Be default this is the directory in which the setup file is be  executed.-->"
+            },
+            {
+              "line": 5,
+              "text": "\t\t<results_directory>.</results_directory>"
+            },
+            {
+              "line": 8,
+              "text": "\t\t    <!--Name of the .osim file used to construct a model.-->"
+            },
+            {
+              "line": 9,
+              "text": "\t\t<model_file>G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Squat\\1\\Setup\\..\\generated\\Generated_Model.osim</model_file>"
+            },
+            {
+              "line": 10,
+              "text": "\t\t    <!--Time range over which the inverse dynamics problem is solved.-->"
+            },
+            {
+              "line": 11,
+              "text": "\t\t<time_range>Unassigned</time_range>"
+            },
+            {
+              "line": 12,
+              "text": "\t\t    <!--List of forces by individual or grouping name (e.g. All, actuators, muscles, ...) to be excluded when computing model dynamics. 'All' also excludes external loads added via 'external_loads_file'.-->"
+            },
+            {
+              "line": 17,
+              "text": "\t\t<coordinates_file>Unassigned</coordinates_file>"
+            },
+            {
+              "line": 18,
+              "text": "\t\t    <!--Low-pass cut-off frequency for filtering the coordinates_file data (currently does not apply to states_file or speeds_file). A negative value results in no filtering. The default value is -1.0, so no filtering.-->"
+            },
+            {
+              "line": 19,
+              "text": "\t\t<lowpass_cutoff_frequency_for_coordinates>6</lowpass_cutoff_frequency_for_coordinates>"
+            }
+          ]
+        },
+        {
+          "path": "Squat\\1\\generated\\Setup_Analyze_squat_1_IKOut.mot.xml",
+          "sha256": "0e57ae9d281bcdb3c1fa333f610f38f7a4aa4a9170f0df845dc088d6f7fcfe5c",
+          "bytes": 4841,
+          "lineCount": 66,
+          "excerpts": [
+            {
+              "line": 1,
+              "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>"
+            },
+            {
+              "line": 2,
+              "text": "<OpenSimDocument Version=\"40000\">"
+            },
+            {
+              "line": 3,
+              "text": "\t<AnalyzeTool name=\"squat_1_IKOut.mot\">"
+            },
+            {
+              "line": 4,
+              "text": "\t\t<!--Name of the .osim file used to construct a model.-->"
+            },
+            {
+              "line": 5,
+              "text": "\t\t<model_file>../generated/Generated_Model.osim</model_file>"
+            },
+            {
+              "line": 6,
+              "text": "\t\t<!--Replace the model's force set with sets specified in <force_set_files>? If false, the force set is appended to.-->"
+            },
+            {
+              "line": 7,
+              "text": "\t\t<replace_force_set>false</replace_force_set>"
+            },
+            {
+              "line": 8,
+              "text": "\t\t<!--List of xml files used to construct a force set for the model.-->"
+            },
+            {
+              "line": 9,
+              "text": "\t\t<force_set_files />"
+            },
+            {
+              "line": 10,
+              "text": "\t\t<!--Directory used for writing results.-->"
+            },
+            {
+              "line": 25,
+              "text": "\t\t<minimum_integrator_step_size>1e-08</minimum_integrator_step_size>"
+            },
+            {
+              "line": 26,
+              "text": "\t\t<!--Integrator error tolerance. When the error is greater, the integrator step size is decreased.-->"
+            },
+            {
+              "line": 27,
+              "text": "\t\t<integrator_error_tolerance>1.0000000000000001e-05</integrator_error_tolerance>"
+            },
+            {
+              "line": 28,
+              "text": "\t\t<!--Set of analyses to be run during the investigation.-->"
+            },
+            {
+              "line": 41,
+              "text": "\t\t\t\t\t<in_degrees>true</in_degrees>"
+            },
+            {
+              "line": 42,
+              "text": "\t\t\t\t\t<!--Names of bodies to record kinematics for.  Use 'all' to record all bodies.  The special name 'center_of_mass' refers to the combined center of mass.-->"
+            },
+            {
+              "line": 43,
+              "text": "\t\t\t\t\t<bodies> all</bodies>"
+            },
+            {
+              "line": 44,
+              "text": "\t\t\t\t\t<!--Flag (true or false) indicating whether to express results in the global frame or local-frames of the bodies. Body positions and center of mass results are always given in the global frame. This flag is set to false by default.-->"
+            },
+            {
+              "line": 45,
+              "text": "\t\t\t\t\t<express_results_in_body_local_frame>false</express_results_in_body_local_frame>"
+            },
+            {
+              "line": 62,
+              "text": "\t\t<speeds_file />"
+            },
+            {
+              "line": 63,
+              "text": "\t\t<!--Low-pass cut-off frequency for filtering the coordinates_file data (currently does not apply to states_file or speeds_file). A negative value results in no filtering. The default value is -1.0, so no filtering.-->"
+            },
+            {
+              "line": 64,
+              "text": "\t\t<lowpass_cutoff_frequency_for_coordinates>-1</lowpass_cutoff_frequency_for_coordinates>"
+            }
+          ]
+        },
+        {
+          "path": "Squat\\1\\Setup\\Setup_CoM_Analysis.xml",
+          "sha256": "6fbbaeffd9dc4b11455bc9cffc25c752a7aadf4b540ed00b02e8c1d5e2d3a6fa",
+          "bytes": 4742,
+          "lineCount": 66,
+          "excerpts": [
+            {
+              "line": 1,
+              "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>"
+            },
+            {
+              "line": 2,
+              "text": "<OpenSimDocument Version=\"40000\">"
+            },
+            {
+              "line": 3,
+              "text": "\t<AnalyzeTool>"
+            },
+            {
+              "line": 4,
+              "text": "\t\t<!--Name of the .osim file used to construct a model.-->"
+            },
+            {
+              "line": 5,
+              "text": "\t\t<model_file>../generated/Generated_Model.osim</model_file>"
+            },
+            {
+              "line": 6,
+              "text": "\t\t<!--Replace the model's force set with sets specified in <force_set_files>? If false, the force set is appended to.-->"
+            },
+            {
+              "line": 7,
+              "text": "\t\t<replace_force_set>false</replace_force_set>"
+            },
+            {
+              "line": 8,
+              "text": "\t\t<!--List of xml files used to construct a force set for the model.-->"
+            },
+            {
+              "line": 9,
+              "text": "\t\t<force_set_files />"
+            },
+            {
+              "line": 10,
+              "text": "\t\t<!--Directory used for writing results.-->"
+            },
+            {
+              "line": 25,
+              "text": "\t\t<minimum_integrator_step_size>1e-08</minimum_integrator_step_size>"
+            },
+            {
+              "line": 26,
+              "text": "\t\t<!--Integrator error tolerance. When the error is greater, the integrator step size is decreased.-->"
+            },
+            {
+              "line": 27,
+              "text": "\t\t<integrator_error_tolerance>1.0000000000000001e-05</integrator_error_tolerance>"
+            },
+            {
+              "line": 28,
+              "text": "\t\t<!--Set of analyses to be run during the investigation.-->"
+            },
+            {
+              "line": 41,
+              "text": "\t\t\t\t\t<in_degrees>true</in_degrees>"
+            },
+            {
+              "line": 42,
+              "text": "\t\t\t\t\t<!--Names of bodies to record kinematics for.  Use 'all' to record all bodies.  The special name 'center_of_mass' refers to the combined center of mass.-->"
+            },
+            {
+              "line": 43,
+              "text": "\t\t\t\t\t<bodies> all</bodies>"
+            },
+            {
+              "line": 44,
+              "text": "\t\t\t\t\t<!--Flag (true or false) indicating whether to express results in the global frame or local-frames of the bodies. Body positions and center of mass results are always given in the global frame. This flag is set to false by default.-->"
+            },
+            {
+              "line": 45,
+              "text": "\t\t\t\t\t<express_results_in_body_local_frame>false</express_results_in_body_local_frame>"
+            },
+            {
+              "line": 62,
+              "text": "\t\t<speeds_file />"
+            },
+            {
+              "line": 63,
+              "text": "\t\t<!--Low-pass cut-off frequency for filtering the coordinates_file data (currently does not apply to states_file or speeds_file). A negative value results in no filtering. The default value is -1.0, so no filtering.-->"
+            },
+            {
+              "line": 64,
+              "text": "\t\t<lowpass_cutoff_frequency_for_coordinates>-1</lowpass_cutoff_frequency_for_coordinates>"
+            }
+          ]
+        },
+        {
+          "path": "Squat\\1\\Setup\\Setup_External_Forces.xml",
+          "sha256": "7c4a184fe7f2924f95d105247c1f6a559af4738de8ed4f87aacfcc0c3793bc82",
+          "bytes": 2357,
+          "lineCount": 49,
+          "excerpts": [
+            {
+              "line": 1,
+              "text": "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+            },
+            {
+              "line": 2,
+              "text": "<OpenSimDocument Version=\"40000\">"
+            },
+            {
+              "line": 3,
+              "text": "\t<ExternalLoads>"
+            }
+          ]
+        },
+        {
+          "path": "Squat\\1\\Setup\\Setup_ID.xml",
+          "sha256": "ee68be1d6ac83668b4365ea8d78373ff44840a49bddc931923c6ebf7720281ac",
+          "bytes": 1965,
+          "lineCount": 27,
+          "excerpts": [
+            {
+              "line": 1,
+              "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>"
+            },
+            {
+              "line": 2,
+              "text": "<OpenSimDocument Version=\"40000\">"
+            },
+            {
+              "line": 3,
+              "text": "\t<InverseDynamicsTool>"
+            },
+            {
+              "line": 4,
+              "text": "\t\t<!--Name of the directory where results are written. Be default this is the directory in which the setup file is be  executed.-->"
+            },
+            {
+              "line": 5,
+              "text": "\t\t<results_directory>.</results_directory>"
+            },
+            {
+              "line": 8,
+              "text": "\t\t<!--Name of the .osim file used to construct a model.-->"
+            },
+            {
+              "line": 9,
+              "text": "\t\t<model_file>../generated/Generated_Model.osim</model_file>"
+            },
+            {
+              "line": 10,
+              "text": "\t\t<!--Time range over which the inverse dynamics problem is solved.-->"
+            },
+            {
+              "line": 11,
+              "text": "\t\t<time_range>Unassigned</time_range>"
+            },
+            {
+              "line": 12,
+              "text": "\t\t<!--List of forces by individual or grouping name (e.g. All, actuators, muscles, ...) to be excluded when computing model dynamics. 'All' also excludes external loads added via 'external_loads_file'.-->"
+            },
+            {
+              "line": 14,
+              "text": "\t\t<!--XML file (.xml) containing the external loads applied to the model as a set of ExternalForce(s).-->"
+            },
+            {
+              "line": 15,
+              "text": "\t\t<external_loads_file>Setup_External_Forces.xml</external_loads_file>"
+            },
+            {
+              "line": 16,
+              "text": "\t\t<!--The name of the file containing coordinate data. Can be a motion (.mot) or a states (.sto) file.-->"
+            },
+            {
+              "line": 17,
+              "text": "\t\t<coordinates_file>Unassigned</coordinates_file>"
+            },
+            {
+              "line": 18,
+              "text": "\t\t<!--Low-pass cut-off frequency for filtering the coordinates_file data (currently does not apply to states_file or speeds_file). A negative value results in no filtering. The default value is -1.0, so no filtering.-->"
+            },
+            {
+              "line": 19,
+              "text": "\t\t<lowpass_cutoff_frequency_for_coordinates>6</lowpass_cutoff_frequency_for_coordinates>"
+            }
+          ]
+        },
+        {
+          "path": "Squat\\1\\Setup\\Setup_IK.xml",
+          "sha256": "dcb53ddf1127a81b9321c11c77170eaf1d8ab3b4dd94f749460d26419ed088ea",
+          "bytes": 16719,
+          "lineCount": 327,
+          "excerpts": [
+            {
+              "line": 1,
+              "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>"
+            },
+            {
+              "line": 2,
+              "text": "<OpenSimDocument Version=\"40000\">"
+            },
+            {
+              "line": 3,
+              "text": "\t<InverseKinematicsTool>"
+            },
+            {
+              "line": 8,
+              "text": "\t\t<!--Name of the model file (.osim) to use for inverse kinematics.-->"
+            },
+            {
+              "line": 9,
+              "text": "\t\t<model_file>../generated/Generated_Model.osim</model_file>"
+            },
+            {
+              "line": 10,
+              "text": "\t\t<!--A positive scalar that weights the relative importance of satisfying constraints. A weighting of 'Infinity' (the default) results in the constraints being strictly enforced. Otherwise, the weighted-squared constraint errors are appended to the cost function.-->"
+            },
+            {
+              "line": 11,
+              "text": "\t\t<constraint_weight>Inf</constraint_weight>"
+            },
+            {
+              "line": 12,
+              "text": "\t\t<!--The accuracy of the solution in absolute terms. Default is 1e-5. It determines the number of significant digits to which the solution can be trusted.-->"
+            },
+            {
+              "line": 13,
+              "text": "\t\t<accuracy>1.0000000000000001e-05</accuracy>"
+            },
+            {
+              "line": 14,
+              "text": "\t\t<!--Markers and coordinates to be considered (tasks) and their weightings. The sum of weighted-squared task errors composes the cost function.-->"
+            },
+            {
+              "line": 15,
+              "text": "\t\t<IKTaskSet>"
+            },
+            {
+              "line": 16,
+              "text": "\t\t\t<objects>"
+            },
+            {
+              "line": 17,
+              "text": "\t\t\t\t<IKMarkerTask name=\"SJN\">"
+            },
+            {
+              "line": 18,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 21,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 22,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 23,
+              "text": "\t\t\t\t<IKMarkerTask name=\"SXS\">"
+            },
+            {
+              "line": 24,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 27,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 28,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 29,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RCAJ\">"
+            },
+            {
+              "line": 30,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 33,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 34,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 35,
+              "text": "\t\t\t\t<IKMarkerTask name=\"LCAJ\">"
+            },
+            {
+              "line": 36,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 39,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 40,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 41,
+              "text": "\t\t\t\t<IKMarkerTask name=\"CV7\">"
+            },
+            {
+              "line": 42,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 45,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 46,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 47,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RHGT\">"
+            },
+            {
+              "line": 48,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 51,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 52,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 53,
+              "text": "\t\t\t\t<IKMarkerTask name=\"LHGT\">"
+            },
+            {
+              "line": 54,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 57,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 58,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 59,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RUA\">"
+            },
+            {
+              "line": 60,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 63,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 64,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 65,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RHLE\">"
+            },
+            {
+              "line": 66,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 69,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 70,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 71,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RRSP\">"
+            },
+            {
+              "line": 72,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 75,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 76,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 77,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RUSP\">"
+            },
+            {
+              "line": 78,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 81,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 82,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 83,
+              "text": "\t\t\t\t<IKMarkerTask name=\"LUA\">"
+            },
+            {
+              "line": 84,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 87,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 88,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 89,
+              "text": "\t\t\t\t<IKMarkerTask name=\"LHLE\">"
+            },
+            {
+              "line": 90,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 93,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 94,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 95,
+              "text": "\t\t\t\t<IKMarkerTask name=\"LRSP\">"
+            },
+            {
+              "line": 96,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 99,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 100,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 101,
+              "text": "\t\t\t\t<IKMarkerTask name=\"LUSP\">"
+            },
+            {
+              "line": 102,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 105,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 106,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 107,
+              "text": "\t\t\t\t<IKMarkerTask name=\"LIAS\">"
+            },
+            {
+              "line": 108,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 111,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 112,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 113,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RIPS\">"
+            },
+            {
+              "line": 114,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 117,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 118,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 119,
+              "text": "\t\t\t\t<IKMarkerTask name=\"LIPS\">"
+            },
+            {
+              "line": 120,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 123,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 124,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 125,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RTTC\">"
+            },
+            {
+              "line": 126,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 129,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 130,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 131,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RTH\">"
+            },
+            {
+              "line": 132,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 135,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 136,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 137,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RFLE\">"
+            },
+            {
+              "line": 138,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 141,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 142,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 143,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RSK\">"
+            },
+            {
+              "line": 144,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 147,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 148,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 149,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RFAL\">"
+            },
+            {
+              "line": 150,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 153,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 154,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 155,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RFCC\">"
+            },
+            {
+              "line": 156,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 159,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 160,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 161,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RDP1\">"
+            },
+            {
+              "line": 162,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            }
+          ]
+        },
+        {
+          "path": "Static\\1\\generated\\Setup_Analyze_static_IKOut.mot.xml",
+          "sha256": "29e20cc488256092d4743f077a2969d11935a6ee0f67050451e4e4e8198ea441",
+          "bytes": 4839,
+          "lineCount": 66,
+          "excerpts": [
+            {
+              "line": 1,
+              "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>"
+            },
+            {
+              "line": 2,
+              "text": "<OpenSimDocument Version=\"40000\">"
+            },
+            {
+              "line": 3,
+              "text": "\t<AnalyzeTool name=\"static_IKOut.mot\">"
+            },
+            {
+              "line": 4,
+              "text": "\t\t<!--Name of the .osim file used to construct a model.-->"
+            },
+            {
+              "line": 5,
+              "text": "\t\t<model_file>../generated/Generated_Model.osim</model_file>"
+            },
+            {
+              "line": 6,
+              "text": "\t\t<!--Replace the model's force set with sets specified in <force_set_files>? If false, the force set is appended to.-->"
+            },
+            {
+              "line": 7,
+              "text": "\t\t<replace_force_set>false</replace_force_set>"
+            },
+            {
+              "line": 8,
+              "text": "\t\t<!--List of xml files used to construct a force set for the model.-->"
+            },
+            {
+              "line": 9,
+              "text": "\t\t<force_set_files />"
+            },
+            {
+              "line": 10,
+              "text": "\t\t<!--Directory used for writing results.-->"
+            },
+            {
+              "line": 25,
+              "text": "\t\t<minimum_integrator_step_size>1e-08</minimum_integrator_step_size>"
+            },
+            {
+              "line": 26,
+              "text": "\t\t<!--Integrator error tolerance. When the error is greater, the integrator step size is decreased.-->"
+            },
+            {
+              "line": 27,
+              "text": "\t\t<integrator_error_tolerance>1.0000000000000001e-05</integrator_error_tolerance>"
+            },
+            {
+              "line": 28,
+              "text": "\t\t<!--Set of analyses to be run during the investigation.-->"
+            },
+            {
+              "line": 41,
+              "text": "\t\t\t\t\t<in_degrees>true</in_degrees>"
+            },
+            {
+              "line": 42,
+              "text": "\t\t\t\t\t<!--Names of bodies to record kinematics for.  Use 'all' to record all bodies.  The special name 'center_of_mass' refers to the combined center of mass.-->"
+            },
+            {
+              "line": 43,
+              "text": "\t\t\t\t\t<bodies> all</bodies>"
+            },
+            {
+              "line": 44,
+              "text": "\t\t\t\t\t<!--Flag (true or false) indicating whether to express results in the global frame or local-frames of the bodies. Body positions and center of mass results are always given in the global frame. This flag is set to false by default.-->"
+            },
+            {
+              "line": 45,
+              "text": "\t\t\t\t\t<express_results_in_body_local_frame>false</express_results_in_body_local_frame>"
+            },
+            {
+              "line": 62,
+              "text": "\t\t<speeds_file />"
+            },
+            {
+              "line": 63,
+              "text": "\t\t<!--Low-pass cut-off frequency for filtering the coordinates_file data (currently does not apply to states_file or speeds_file). A negative value results in no filtering. The default value is -1.0, so no filtering.-->"
+            },
+            {
+              "line": 64,
+              "text": "\t\t<lowpass_cutoff_frequency_for_coordinates>-1</lowpass_cutoff_frequency_for_coordinates>"
+            }
+          ]
+        },
+        {
+          "path": "Static\\1\\Processing\\opensim (1).log",
+          "sha256": "4edb4fcf69fffbeafbc49c510ad1cfae309f1b87b208d998ac3f541e7da7cdda",
+          "bytes": 21048,
+          "lineCount": 261,
+          "excerpts": [
+            {
+              "line": 3,
+              "text": "[2025-03-23 18:12:15.313] [info] Loaded model FullBodyModel_MuscleActuatedLowerLimb_TorqueActuatedUpperBody from file c:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tp1f4ebe5e_71c9_4c90_8c2d_ee8d856fc7ef.osim"
+            },
+            {
+              "line": 4,
+              "text": "[2025-03-23 18:12:15.961] [info] Loading marker set from 'C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpc0d27eed_be4f_4161_a5be_3dc9a2fdfa9c.xml'."
+            },
+            {
+              "line": 5,
+              "text": "[2025-03-23 18:12:17.011] [info] Updated markers in model FullBodyModel_MuscleActuatedLowerLimb_TorqueActuatedUpperBody"
+            },
+            {
+              "line": 6,
+              "text": "[2025-03-23 18:12:17.012] [info] Step 2: Scaling generic model"
+            },
+            {
+              "line": 7,
+              "text": "[2025-03-23 18:12:17.166] [info] Loaded marker file C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tp0cb06d7b_e228_4d12_882a_b622fcead712.trc (57 markers, 1565 frames)"
+            },
+            {
+              "line": 8,
+              "text": "[2025-03-23 18:12:17.167] [info] Measurement 'torso'"
+            },
+            {
+              "line": 45,
+              "text": "[2025-03-23 18:12:17.305] [info] Wrote model file 'tpf95454b4_2dfb_4899_85f7_7e0712316ac2.osim' from model."
+            },
+            {
+              "line": 46,
+              "text": "[2025-03-23 18:12:17.307] [info] Step 3: Placing markers on model"
+            },
+            {
+              "line": 47,
+              "text": "[2025-03-23 18:12:17.794] [info] Loaded marker file C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tp0cb06d7b_e228_4d12_882a_b622fcead712.trc (57 markers, 1565 frames)"
+            },
+            {
+              "line": 48,
+              "text": "[2025-03-23 18:12:17.797] [info] Averaged frames from time 0.0 to 7.82 in C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tp0cb06d7b_e228_4d12_882a_b622fcead712.trc (frames 1 to 1565)"
+            },
+            {
+              "line": 49,
+              "text": "[2025-03-23 18:12:17.798] [info] Deleted 0 unused markers from model Generated_Model."
+            },
+            {
+              "line": 50,
+              "text": "[2025-03-23 18:12:17.976] [info] Frame at (t = 0.0):\t total squared error = 0.0990100, marker error: RMS = 0.0416775, max = 0.0737885 (LTH)"
+            },
+            {
+              "line": 51,
+              "text": "[2025-03-23 18:12:17.977] [info] Moved markers in model Generated_Model to match locations in marker file 'C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tp0cb06d7b_e228_4d12_882a_b622fcead712.trc'."
+            },
+            {
+              "line": 52,
+              "text": "[2025-03-23 18:12:18.013] [info] Wrote model file 'tpf95454b4_2dfb_4899_85f7_7e0712316ac2.osim' from model Generated_Model."
+            },
+            {
+              "line": 53,
+              "text": "[2025-03-23 18:12:18.848] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Static\\1\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 54,
+              "text": "[2025-03-23 18:12:18.942] [cout] [info] "
+            },
+            {
+              "line": 64,
+              "text": "         constraints: 2"
+            },
+            {
+              "line": 65,
+              "text": "             markers: 57"
+            },
+            {
+              "line": 66,
+              "text": "         controllers: 0"
+            },
+            {
+              "line": 83,
+              "text": "[2025-03-23 18:20:40.321] [info] Loaded model FullBodyModel_MuscleActuatedLowerLimb_TorqueActuatedUpperBody from file c:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tp7177c154_25d7_43d4_9cbe_9eddd84dafec.osim"
+            },
+            {
+              "line": 84,
+              "text": "[2025-03-23 18:20:40.425] [info] Loading marker set from 'C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tp8b5c9f4b_3710_4736_9bf0_b9ab96e93f55.xml'."
+            },
+            {
+              "line": 85,
+              "text": "[2025-03-23 18:20:41.563] [info] Updated markers in model FullBodyModel_MuscleActuatedLowerLimb_TorqueActuatedUpperBody"
+            },
+            {
+              "line": 86,
+              "text": "[2025-03-23 18:20:41.564] [info] Step 2: Scaling generic model"
+            },
+            {
+              "line": 87,
+              "text": "[2025-03-23 18:20:41.713] [info] Loaded marker file C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpc9346ce2_65b9_4c9c_ad2f_91c864e734d3.trc (57 markers, 1565 frames)"
+            },
+            {
+              "line": 88,
+              "text": "[2025-03-23 18:20:41.714] [info] Measurement 'torso'"
+            },
+            {
+              "line": 125,
+              "text": "[2025-03-23 18:20:41.852] [info] Wrote model file 'tp4c912f31_e109_4208_81f9_178fef404910.osim' from model."
+            },
+            {
+              "line": 126,
+              "text": "[2025-03-23 18:20:41.853] [info] Step 3: Placing markers on model"
+            },
+            {
+              "line": 127,
+              "text": "[2025-03-23 18:20:42.330] [info] Loaded marker file C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpc9346ce2_65b9_4c9c_ad2f_91c864e734d3.trc (57 markers, 1565 frames)"
+            },
+            {
+              "line": 128,
+              "text": "[2025-03-23 18:20:42.332] [info] Averaged frames from time 0.0 to 7.82 in C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpc9346ce2_65b9_4c9c_ad2f_91c864e734d3.trc (frames 1 to 1565)"
+            },
+            {
+              "line": 129,
+              "text": "[2025-03-23 18:20:42.333] [info] Deleted 0 unused markers from model Generated_Model."
+            },
+            {
+              "line": 130,
+              "text": "[2025-03-23 18:20:42.492] [info] Frame at (t = 0.0):\t total squared error = 0.0990100, marker error: RMS = 0.0416775, max = 0.0737885 (LTH)"
+            },
+            {
+              "line": 131,
+              "text": "[2025-03-23 18:20:42.493] [info] Moved markers in model Generated_Model to match locations in marker file 'C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpc9346ce2_65b9_4c9c_ad2f_91c864e734d3.trc'."
+            },
+            {
+              "line": 132,
+              "text": "[2025-03-23 18:20:42.522] [info] Wrote model file 'tp4c912f31_e109_4208_81f9_178fef404910.osim' from model Generated_Model."
+            },
+            {
+              "line": 133,
+              "text": "[2025-03-23 18:20:42.948] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Static\\1\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 134,
+              "text": "[2025-03-23 18:20:43.044] [cout] [info] "
+            },
+            {
+              "line": 144,
+              "text": "         constraints: 2"
+            },
+            {
+              "line": 145,
+              "text": "             markers: 57"
+            },
+            {
+              "line": 146,
+              "text": "         controllers: 0"
+            },
+            {
+              "line": 163,
+              "text": "[2025-03-23 18:22:40.898] [info] Loaded model FullBodyModel_MuscleActuatedLowerLimb_TorqueActuatedUpperBody from file c:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpfa9abd13_72f1_484f_a5bc_253fdbef7c26.osim"
+            },
+            {
+              "line": 164,
+              "text": "[2025-03-23 18:22:40.974] [info] Loading marker set from 'C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tp7a737953_edc3_4c7f_8940_dfab140f34e3.xml'."
+            },
+            {
+              "line": 165,
+              "text": "[2025-03-23 18:22:42.082] [info] Updated markers in model FullBodyModel_MuscleActuatedLowerLimb_TorqueActuatedUpperBody"
+            },
+            {
+              "line": 166,
+              "text": "[2025-03-23 18:22:42.084] [info] Step 2: Scaling generic model"
+            },
+            {
+              "line": 167,
+              "text": "[2025-03-23 18:22:42.228] [info] Loaded marker file C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tp98136dad_feaf_440f_a127_fc667caa7b4e.trc (57 markers, 1565 frames)"
+            },
+            {
+              "line": 168,
+              "text": "[2025-03-23 18:22:42.229] [info] Measurement 'torso'"
+            },
+            {
+              "line": 205,
+              "text": "[2025-03-23 18:22:42.364] [info] Wrote model file 'tp68211446_54a7_4654_be87_9dcaabfd9598.osim' from model."
+            },
+            {
+              "line": 206,
+              "text": "[2025-03-23 18:22:42.366] [info] Step 3: Placing markers on model"
+            },
+            {
+              "line": 207,
+              "text": "[2025-03-23 18:22:42.851] [info] Loaded marker file C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tp98136dad_feaf_440f_a127_fc667caa7b4e.trc (57 markers, 1565 frames)"
+            },
+            {
+              "line": 208,
+              "text": "[2025-03-23 18:22:42.853] [info] Averaged frames from time 0.0 to 7.82 in C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tp98136dad_feaf_440f_a127_fc667caa7b4e.trc (frames 1 to 1565)"
+            },
+            {
+              "line": 209,
+              "text": "[2025-03-23 18:22:42.854] [info] Deleted 0 unused markers from model Generated_Model."
+            },
+            {
+              "line": 210,
+              "text": "[2025-03-23 18:22:43.011] [info] Frame at (t = 0.0):\t total squared error = 0.0990100, marker error: RMS = 0.0416775, max = 0.0737885 (LTH)"
+            },
+            {
+              "line": 211,
+              "text": "[2025-03-23 18:22:43.012] [info] Moved markers in model Generated_Model to match locations in marker file 'C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tp98136dad_feaf_440f_a127_fc667caa7b4e.trc'."
+            },
+            {
+              "line": 212,
+              "text": "[2025-03-23 18:22:43.038] [info] Wrote model file 'tp68211446_54a7_4654_be87_9dcaabfd9598.osim' from model Generated_Model."
+            },
+            {
+              "line": 213,
+              "text": "[2025-03-23 18:22:43.516] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Sit to stand\\2\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 214,
+              "text": "[2025-03-23 18:22:43.615] [cout] [info] "
+            },
+            {
+              "line": 224,
+              "text": "         constraints: 2"
+            },
+            {
+              "line": 225,
+              "text": "             markers: 57"
+            },
+            {
+              "line": 226,
+              "text": "         controllers: 0"
+            },
+            {
+              "line": 239,
+              "text": "[2025-03-23 18:22:54.171] [info] Printing results of investigation sit_to_stand_2_IKOut.mot to ..\\Results"
+            },
+            {
+              "line": 240,
+              "text": "[2025-03-23 18:22:56.430] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Sit to stand\\2\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 241,
+              "text": "[2025-03-23 18:22:56.527] [cout] [info] "
+            },
+            {
+              "line": 251,
+              "text": "         constraints: 2"
+            },
+            {
+              "line": 252,
+              "text": "             markers: 57"
+            },
+            {
+              "line": 253,
+              "text": "         controllers: 0"
+            },
+            {
+              "line": 259,
+              "text": "[2025-03-23 18:22:56.672] [info] Storage: read data file = C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpef68c073_47a8_472c_95c5_6bc0cdb76d71.MOT (nr=167 nc=43)"
+            },
+            {
+              "line": 260,
+              "text": "[2025-03-23 18:22:56.676] [info] Low-pass filtering coordinates data with a cutoff frequency of 6.0..."
+            },
+            {
+              "line": 261,
+              "text": "[2025-03-23 18:22:56.855] [info] InverseDynamicsTool: 167 time frames in 114 millisecond(s)."
+            }
+          ]
+        },
+        {
+          "path": "Static\\1\\Processing\\opensim.log",
+          "sha256": "3cb10df0990b5213c37ae24beead0665b1b551f40984c60277850cbad7c14ba6",
+          "bytes": 15965054,
+          "lineCount": 207653,
+          "targetMentions": [
+            {
+              "line": 13369,
+              "text": "[2025-03-24 14:30:17.039] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Squat\\1\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 13555,
+              "text": "[2025-03-24 14:30:36.946] [info] Storage: read data file = ..\\generated\\squat_1_IKOut.mot (nr=2948 nc=43)"
+            },
+            {
+              "line": 13557,
+              "text": "[2025-03-24 14:30:37.039] [info] Loading coordinates from file '..\\generated\\squat_1_IKOut.mot'."
+            },
+            {
+              "line": 13558,
+              "text": "[2025-03-24 14:30:37.042] [info] Storage: read data file = ..\\generated\\squat_1_IKOut.mot (nr=2948 nc=43)"
+            },
+            {
+              "line": 13561,
+              "text": "[2025-03-24 14:30:54.213] [info] Printing results of investigation squat_1_IKOut.mot to ..\\Results"
+            },
+            {
+              "line": 13562,
+              "text": "[2025-03-24 14:30:56.960] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Squat\\1\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 13800,
+              "text": "[2025-03-24 14:31:58.883] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Squat\\2\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 13993,
+              "text": "[2025-03-24 14:32:35.521] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Squat\\2\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 14231,
+              "text": "[2025-03-24 14:33:35.551] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Squat\\3\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 14424,
+              "text": "[2025-03-24 14:34:12.811] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Squat\\3\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 39730,
+              "text": "[2025-03-24 20:32:44.326] [info] Storage: read data file = ..\\generated\\squat_1_IKOut.mot (nr=3215 nc=43)"
+            },
+            {
+              "line": 39732,
+              "text": "[2025-03-24 20:32:44.449] [info] Loading coordinates from file '..\\generated\\squat_1_IKOut.mot'."
+            },
+            {
+              "line": 39733,
+              "text": "[2025-03-24 20:32:44.451] [info] Storage: read data file = ..\\generated\\squat_1_IKOut.mot (nr=3215 nc=43)"
+            },
+            {
+              "line": 39736,
+              "text": "[2025-03-24 20:33:04.260] [info] Printing results of investigation squat_1_IKOut.mot to ..\\Results"
+            },
+            {
+              "line": 58181,
+              "text": "[2025-03-24 21:44:10.718] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Squat\\1\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 58367,
+              "text": "[2025-03-24 21:44:30.599] [info] Storage: read data file = ..\\generated\\squat_1_IKOut.mot (nr=2948 nc=43)"
+            },
+            {
+              "line": 58369,
+              "text": "[2025-03-24 21:44:30.709] [info] Loading coordinates from file '..\\generated\\squat_1_IKOut.mot'."
+            },
+            {
+              "line": 58370,
+              "text": "[2025-03-24 21:44:30.711] [info] Storage: read data file = ..\\generated\\squat_1_IKOut.mot (nr=2948 nc=43)"
+            },
+            {
+              "line": 58373,
+              "text": "[2025-03-24 21:44:47.433] [info] Printing results of investigation squat_1_IKOut.mot to ..\\Results"
+            },
+            {
+              "line": 58374,
+              "text": "[2025-03-24 21:44:49.958] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Squat\\1\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 58612,
+              "text": "[2025-03-24 21:45:47.476] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Squat\\2\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 58805,
+              "text": "[2025-03-24 21:46:24.993] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Squat\\2\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 59043,
+              "text": "[2025-03-24 21:47:19.801] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Squat\\3\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 59236,
+              "text": "[2025-03-24 21:47:57.351] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Squat\\3\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 78629,
+              "text": "[2025-03-24 22:55:55.473] [info] Storage: read data file = ..\\generated\\squat_1_IKOut.mot (nr=3215 nc=43)"
+            },
+            {
+              "line": 78631,
+              "text": "[2025-03-24 22:55:55.584] [info] Loading coordinates from file '..\\generated\\squat_1_IKOut.mot'."
+            },
+            {
+              "line": 78632,
+              "text": "[2025-03-24 22:55:55.586] [info] Storage: read data file = ..\\generated\\squat_1_IKOut.mot (nr=3215 nc=43)"
+            },
+            {
+              "line": 78635,
+              "text": "[2025-03-24 22:56:16.097] [info] Printing results of investigation squat_1_IKOut.mot to ..\\Results"
+            },
+            {
+              "line": 110726,
+              "text": "[2025-03-25 17:31:24.367] [info] Storage: read data file = ..\\generated\\squat_1_IKOut.mot (nr=3290 nc=43)"
+            },
+            {
+              "line": 110728,
+              "text": "[2025-03-25 17:31:24.498] [info] Loading coordinates from file '..\\generated\\squat_1_IKOut.mot'."
+            },
+            {
+              "line": 110729,
+              "text": "[2025-03-25 17:31:24.500] [info] Storage: read data file = ..\\generated\\squat_1_IKOut.mot (nr=3290 nc=43)"
+            },
+            {
+              "line": 110732,
+              "text": "[2025-03-25 17:31:44.626] [info] Printing results of investigation squat_1_IKOut.mot to ..\\Results"
+            },
+            {
+              "line": 129148,
+              "text": "[2025-03-25 18:48:25.131] [info] Storage: read data file = ..\\generated\\squat_1_IKOut.mot (nr=3320 nc=43)"
+            },
+            {
+              "line": 129150,
+              "text": "[2025-03-25 18:48:25.240] [info] Loading coordinates from file '..\\generated\\squat_1_IKOut.mot'."
+            },
+            {
+              "line": 129151,
+              "text": "[2025-03-25 18:48:25.242] [info] Storage: read data file = ..\\generated\\squat_1_IKOut.mot (nr=3320 nc=43)"
+            },
+            {
+              "line": 129154,
+              "text": "[2025-03-25 18:48:45.891] [info] Printing results of investigation squat_1_IKOut.mot to ..\\Results"
+            },
+            {
+              "line": 147565,
+              "text": "[2025-03-25 20:06:08.192] [info] Storage: read data file = ..\\generated\\squat_1_IKOut.mot (nr=3214 nc=43)"
+            },
+            {
+              "line": 147567,
+              "text": "[2025-03-25 20:06:08.307] [info] Loading coordinates from file '..\\generated\\squat_1_IKOut.mot'."
+            },
+            {
+              "line": 147568,
+              "text": "[2025-03-25 20:06:08.308] [info] Storage: read data file = ..\\generated\\squat_1_IKOut.mot (nr=3214 nc=43)"
+            },
+            {
+              "line": 147571,
+              "text": "[2025-03-25 20:06:28.842] [info] Printing results of investigation squat_1_IKOut.mot to ..\\Results"
+            },
+            {
+              "line": 165985,
+              "text": "[2025-03-25 21:33:02.272] [info] Storage: read data file = ..\\generated\\squat_1_IKOut.mot (nr=3887 nc=43)"
+            },
+            {
+              "line": 165987,
+              "text": "[2025-03-25 21:33:02.410] [info] Loading coordinates from file '..\\generated\\squat_1_IKOut.mot'."
+            },
+            {
+              "line": 165988,
+              "text": "[2025-03-25 21:33:02.411] [info] Storage: read data file = ..\\generated\\squat_1_IKOut.mot (nr=3887 nc=43)"
+            },
+            {
+              "line": 165991,
+              "text": "[2025-03-25 21:33:28.105] [info] Printing results of investigation squat_1_IKOut.mot to ..\\Results"
+            },
+            {
+              "line": 184394,
+              "text": "[2025-03-25 22:53:38.911] [info] Storage: read data file = ..\\generated\\squat_1_IKOut.mot (nr=3144 nc=43)"
+            },
+            {
+              "line": 184396,
+              "text": "[2025-03-25 22:53:39.027] [info] Loading coordinates from file '..\\generated\\squat_1_IKOut.mot'."
+            },
+            {
+              "line": 184397,
+              "text": "[2025-03-25 22:53:39.029] [info] Storage: read data file = ..\\generated\\squat_1_IKOut.mot (nr=3144 nc=43)"
+            },
+            {
+              "line": 184400,
+              "text": "[2025-03-25 22:53:58.489] [info] Printing results of investigation squat_1_IKOut.mot to ..\\Results"
+            },
+            {
+              "line": 202809,
+              "text": "[2025-03-26 00:24:44.427] [info] Storage: read data file = ..\\generated\\squat_1_IKOut.mot (nr=3160 nc=43)"
+            },
+            {
+              "line": 202811,
+              "text": "[2025-03-26 00:24:44.548] [info] Loading coordinates from file '..\\generated\\squat_1_IKOut.mot'."
+            },
+            {
+              "line": 202812,
+              "text": "[2025-03-26 00:24:44.549] [info] Storage: read data file = ..\\generated\\squat_1_IKOut.mot (nr=3160 nc=43)"
+            },
+            {
+              "line": 202815,
+              "text": "[2025-03-26 00:25:06.223] [info] Printing results of investigation squat_1_IKOut.mot to ..\\Results"
+            }
+          ],
+          "excerpts": [
+            {
+              "line": 85,
+              "text": "[2025-03-24 13:45:06.402] [warning] Couldn't find file 'hat_jaw.vtp'."
+            },
+            {
+              "line": 86,
+              "text": "[2025-03-24 13:45:06.450] [info] Loading marker set from 'C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tp0d0de803_b05c_4f6f_92b9_bf0cc1de0744.xml'."
+            },
+            {
+              "line": 87,
+              "text": "[2025-03-24 13:45:07.142] [info] Updated markers in model FullBodyModel_MuscleActuatedLowerLimb_TorqueActuatedUpperBody"
+            },
+            {
+              "line": 88,
+              "text": "[2025-03-24 13:45:07.146] [info] Step 2: Scaling generic model"
+            },
+            {
+              "line": 89,
+              "text": "[2025-03-24 13:45:07.241] [info] Loaded marker file C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpaa480418_b1dc_4cc6_8c2e_05c8d9b10d4b.trc (57 markers, 1565 frames)"
+            },
+            {
+              "line": 90,
+              "text": "[2025-03-24 13:45:07.242] [info] Measurement 'torso'"
+            },
+            {
+              "line": 127,
+              "text": "[2025-03-24 13:45:07.323] [info] Wrote model file 'tpa22468b0_3e2e_4019_b4f1_7f133067bee9.osim' from model."
+            },
+            {
+              "line": 128,
+              "text": "[2025-03-24 13:45:07.323] [info] Step 3: Placing markers on model"
+            },
+            {
+              "line": 129,
+              "text": "[2025-03-24 13:45:07.725] [info] Loaded marker file C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpaa480418_b1dc_4cc6_8c2e_05c8d9b10d4b.trc (57 markers, 1565 frames)"
+            },
+            {
+              "line": 130,
+              "text": "[2025-03-24 13:45:07.726] [info] Averaged frames from time 0.0 to 7.82 in C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpaa480418_b1dc_4cc6_8c2e_05c8d9b10d4b.trc (frames 1 to 1565)"
+            },
+            {
+              "line": 131,
+              "text": "[2025-03-24 13:45:07.727] [info] Deleted 0 unused markers from model Generated_Model."
+            },
+            {
+              "line": 132,
+              "text": "[2025-03-24 13:45:07.824] [info] Frame at (t = 0.0):\t total squared error = 0.0990100, marker error: RMS = 0.0416775, max = 0.0737885 (LTH)"
+            },
+            {
+              "line": 133,
+              "text": "[2025-03-24 13:45:07.846] [info] Moved markers in model Generated_Model to match locations in marker file 'C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpaa480418_b1dc_4cc6_8c2e_05c8d9b10d4b.trc'."
+            },
+            {
+              "line": 134,
+              "text": "[2025-03-24 13:45:07.863] [info] Wrote model file 'tpa22468b0_3e2e_4019_b4f1_7f133067bee9.osim' from model Generated_Model."
+            },
+            {
+              "line": 135,
+              "text": "[2025-03-24 13:45:10.722] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Static\\1\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 136,
+              "text": "[2025-03-24 13:45:10.723] [warning] Couldn't find file 'r_pelvis.vtp'."
+            },
+            {
+              "line": 228,
+              "text": "         constraints: 2"
+            },
+            {
+              "line": 229,
+              "text": "             markers: 57"
+            },
+            {
+              "line": 230,
+              "text": "         controllers: 0"
+            },
+            {
+              "line": 411,
+              "text": "[2025-03-24 13:46:33.506] [warning] Couldn't find file 'hat_jaw.vtp'."
+            },
+            {
+              "line": 412,
+              "text": "[2025-03-24 13:46:33.554] [info] Loading marker set from 'C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tp8e524e98_b2e8_45b3_b861_63b350e1d5f8.xml'."
+            },
+            {
+              "line": 413,
+              "text": "[2025-03-24 13:46:34.233] [info] Updated markers in model FullBodyModel_MuscleActuatedLowerLimb_TorqueActuatedUpperBody"
+            },
+            {
+              "line": 414,
+              "text": "[2025-03-24 13:46:34.234] [info] Step 2: Scaling generic model"
+            },
+            {
+              "line": 415,
+              "text": "[2025-03-24 13:46:34.328] [info] Loaded marker file C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpf65cc11a_6b9f_4a67_9f0d_e1eaba1fa3af.trc (57 markers, 1565 frames)"
+            },
+            {
+              "line": 416,
+              "text": "[2025-03-24 13:46:34.328] [info] Measurement 'torso'"
+            },
+            {
+              "line": 453,
+              "text": "[2025-03-24 13:46:34.406] [info] Wrote model file 'tpa61e28ca_8274_460f_83c3_844d5e0bc2d3.osim' from model."
+            },
+            {
+              "line": 454,
+              "text": "[2025-03-24 13:46:34.408] [info] Step 3: Placing markers on model"
+            },
+            {
+              "line": 455,
+              "text": "[2025-03-24 13:46:34.804] [info] Loaded marker file C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpf65cc11a_6b9f_4a67_9f0d_e1eaba1fa3af.trc (57 markers, 1565 frames)"
+            },
+            {
+              "line": 456,
+              "text": "[2025-03-24 13:46:34.805] [info] Averaged frames from time 0.0 to 7.82 in C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpf65cc11a_6b9f_4a67_9f0d_e1eaba1fa3af.trc (frames 1 to 1565)"
+            },
+            {
+              "line": 457,
+              "text": "[2025-03-24 13:46:34.805] [info] Deleted 0 unused markers from model Generated_Model."
+            },
+            {
+              "line": 458,
+              "text": "[2025-03-24 13:46:34.906] [info] Frame at (t = 0.0):\t total squared error = 0.0990100, marker error: RMS = 0.0416775, max = 0.0737885 (LTH)"
+            },
+            {
+              "line": 459,
+              "text": "[2025-03-24 13:46:34.907] [info] Moved markers in model Generated_Model to match locations in marker file 'C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpf65cc11a_6b9f_4a67_9f0d_e1eaba1fa3af.trc'."
+            },
+            {
+              "line": 460,
+              "text": "[2025-03-24 13:46:34.926] [info] Wrote model file 'tpa61e28ca_8274_460f_83c3_844d5e0bc2d3.osim' from model Generated_Model."
+            },
+            {
+              "line": 461,
+              "text": "[2025-03-24 13:46:35.443] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Sit to stand\\1\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 462,
+              "text": "[2025-03-24 13:46:35.444] [warning] Couldn't find file 'r_pelvis.vtp'."
+            },
+            {
+              "line": 554,
+              "text": "         constraints: 2"
+            },
+            {
+              "line": 555,
+              "text": "             markers: 57"
+            },
+            {
+              "line": 556,
+              "text": "         controllers: 0"
+            },
+            {
+              "line": 651,
+              "text": "[2025-03-24 13:46:41.848] [info] Printing results of investigation sit_to_stand_1_IKOut.mot to ..\\Results"
+            },
+            {
+              "line": 652,
+              "text": "[2025-03-24 13:46:44.321] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Sit to stand\\1\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 653,
+              "text": "[2025-03-24 13:46:44.322] [warning] Couldn't find file 'r_pelvis.vtp'."
+            },
+            {
+              "line": 745,
+              "text": "         constraints: 2"
+            },
+            {
+              "line": 746,
+              "text": "             markers: 57"
+            },
+            {
+              "line": 747,
+              "text": "         controllers: 0"
+            },
+            {
+              "line": 753,
+              "text": "[2025-03-24 13:46:44.474] [info] Storage: read data file = C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tp1de7679f_6680_4bf2_9644_71d36ad96726.MOT (nr=156 nc=43)"
+            },
+            {
+              "line": 754,
+              "text": "[2025-03-24 13:46:44.477] [info] Low-pass filtering coordinates data with a cutoff frequency of 6.0..."
+            },
+            {
+              "line": 755,
+              "text": "[2025-03-24 13:46:44.590] [info] InverseDynamicsTool: 156 time frames in 73 millisecond(s)."
+            },
+            {
+              "line": 840,
+              "text": "[2025-03-24 13:46:53.781] [warning] Couldn't find file 'hat_jaw.vtp'."
+            },
+            {
+              "line": 841,
+              "text": "[2025-03-24 13:46:53.831] [info] Loading marker set from 'C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpccfa7735_92ca_4a44_aa6b_2610d87ee9ba.xml'."
+            },
+            {
+              "line": 842,
+              "text": "[2025-03-24 13:46:54.534] [info] Updated markers in model FullBodyModel_MuscleActuatedLowerLimb_TorqueActuatedUpperBody"
+            },
+            {
+              "line": 843,
+              "text": "[2025-03-24 13:46:54.535] [info] Step 2: Scaling generic model"
+            },
+            {
+              "line": 844,
+              "text": "[2025-03-24 13:46:54.630] [info] Loaded marker file C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tp7f5551a3_0026_422e_8251_33590f9a6120.trc (57 markers, 1565 frames)"
+            },
+            {
+              "line": 845,
+              "text": "[2025-03-24 13:46:54.630] [info] Measurement 'torso'"
+            },
+            {
+              "line": 882,
+              "text": "[2025-03-24 13:46:54.715] [info] Wrote model file 'tpbdd4fca4_4b84_451e_ac92_6d5247905acb.osim' from model."
+            },
+            {
+              "line": 883,
+              "text": "[2025-03-24 13:46:54.716] [info] Step 3: Placing markers on model"
+            },
+            {
+              "line": 884,
+              "text": "[2025-03-24 13:46:55.126] [info] Loaded marker file C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tp7f5551a3_0026_422e_8251_33590f9a6120.trc (57 markers, 1565 frames)"
+            },
+            {
+              "line": 885,
+              "text": "[2025-03-24 13:46:55.127] [info] Averaged frames from time 0.0 to 7.82 in C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tp7f5551a3_0026_422e_8251_33590f9a6120.trc (frames 1 to 1565)"
+            },
+            {
+              "line": 886,
+              "text": "[2025-03-24 13:46:55.128] [info] Deleted 0 unused markers from model Generated_Model."
+            },
+            {
+              "line": 887,
+              "text": "[2025-03-24 13:46:55.234] [info] Frame at (t = 0.0):\t total squared error = 0.0990100, marker error: RMS = 0.0416775, max = 0.0737885 (LTH)"
+            },
+            {
+              "line": 888,
+              "text": "[2025-03-24 13:46:55.235] [info] Moved markers in model Generated_Model to match locations in marker file 'C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tp7f5551a3_0026_422e_8251_33590f9a6120.trc'."
+            },
+            {
+              "line": 889,
+              "text": "[2025-03-24 13:46:55.251] [info] Wrote model file 'tpbdd4fca4_4b84_451e_ac92_6d5247905acb.osim' from model Generated_Model."
+            },
+            {
+              "line": 890,
+              "text": "[2025-03-24 13:46:56.896] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Sit to stand\\2\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 891,
+              "text": "[2025-03-24 13:46:56.897] [warning] Couldn't find file 'r_pelvis.vtp'."
+            },
+            {
+              "line": 983,
+              "text": "         constraints: 2"
+            },
+            {
+              "line": 984,
+              "text": "             markers: 57"
+            },
+            {
+              "line": 985,
+              "text": "         controllers: 0"
+            },
+            {
+              "line": 1080,
+              "text": "[2025-03-24 13:47:05.407] [info] Printing results of investigation sit_to_stand_2_IKOut.mot to ..\\Results"
+            },
+            {
+              "line": 1081,
+              "text": "[2025-03-24 13:47:09.462] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Sit to stand\\2\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 1082,
+              "text": "[2025-03-24 13:47:09.463] [warning] Couldn't find file 'r_pelvis.vtp'."
+            },
+            {
+              "line": 1174,
+              "text": "         constraints: 2"
+            },
+            {
+              "line": 1175,
+              "text": "             markers: 57"
+            },
+            {
+              "line": 1176,
+              "text": "         controllers: 0"
+            },
+            {
+              "line": 1182,
+              "text": "[2025-03-24 13:47:09.618] [info] Storage: read data file = C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpa89b8cb5_229f_4ca1_a789_38df19131e59.MOT (nr=167 nc=43)"
+            },
+            {
+              "line": 1183,
+              "text": "[2025-03-24 13:47:09.621] [info] Low-pass filtering coordinates data with a cutoff frequency of 6.0..."
+            },
+            {
+              "line": 1184,
+              "text": "[2025-03-24 13:47:09.738] [info] InverseDynamicsTool: 167 time frames in 75 millisecond(s)."
+            },
+            {
+              "line": 1269,
+              "text": "[2025-03-24 13:47:22.897] [warning] Couldn't find file 'hat_jaw.vtp'."
+            },
+            {
+              "line": 1270,
+              "text": "[2025-03-24 13:47:22.947] [info] Loading marker set from 'C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpbe50f640_e7b0_40ff_8325_46df579d76c7.xml'."
+            },
+            {
+              "line": 1271,
+              "text": "[2025-03-24 13:47:23.659] [info] Updated markers in model FullBodyModel_MuscleActuatedLowerLimb_TorqueActuatedUpperBody"
+            },
+            {
+              "line": 1272,
+              "text": "[2025-03-24 13:47:23.659] [info] Step 2: Scaling generic model"
+            },
+            {
+              "line": 1273,
+              "text": "[2025-03-24 13:47:23.756] [info] Loaded marker file C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpabfd7ae1_7912_46fc_a234_8e0a00d1bf73.trc (57 markers, 1565 frames)"
+            },
+            {
+              "line": 1274,
+              "text": "[2025-03-24 13:47:23.756] [info] Measurement 'torso'"
+            },
+            {
+              "line": 1311,
+              "text": "[2025-03-24 13:47:23.841] [info] Wrote model file 'tp12c5871f_4821_464a_b1a3_491d68097451.osim' from model."
+            },
+            {
+              "line": 1312,
+              "text": "[2025-03-24 13:47:23.844] [info] Step 3: Placing markers on model"
+            },
+            {
+              "line": 1313,
+              "text": "[2025-03-24 13:47:24.251] [info] Loaded marker file C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpabfd7ae1_7912_46fc_a234_8e0a00d1bf73.trc (57 markers, 1565 frames)"
+            },
+            {
+              "line": 1314,
+              "text": "[2025-03-24 13:47:24.251] [info] Averaged frames from time 0.0 to 7.82 in C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpabfd7ae1_7912_46fc_a234_8e0a00d1bf73.trc (frames 1 to 1565)"
+            },
+            {
+              "line": 1315,
+              "text": "[2025-03-24 13:47:24.252] [info] Deleted 0 unused markers from model Generated_Model."
+            },
+            {
+              "line": 1316,
+              "text": "[2025-03-24 13:47:24.353] [info] Frame at (t = 0.0):\t total squared error = 0.0990100, marker error: RMS = 0.0416775, max = 0.0737885 (LTH)"
+            },
+            {
+              "line": 1317,
+              "text": "[2025-03-24 13:47:24.353] [info] Moved markers in model Generated_Model to match locations in marker file 'C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpabfd7ae1_7912_46fc_a234_8e0a00d1bf73.trc'."
+            },
+            {
+              "line": 1318,
+              "text": "[2025-03-24 13:47:24.370] [info] Wrote model file 'tp12c5871f_4821_464a_b1a3_491d68097451.osim' from model Generated_Model."
+            },
+            {
+              "line": 1319,
+              "text": "[2025-03-24 13:47:24.852] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Sit to stand\\3\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 1320,
+              "text": "[2025-03-24 13:47:24.853] [warning] Couldn't find file 'r_pelvis.vtp'."
+            },
+            {
+              "line": 1412,
+              "text": "         constraints: 2"
+            },
+            {
+              "line": 1413,
+              "text": "             markers: 57"
+            },
+            {
+              "line": 1414,
+              "text": "         controllers: 0"
+            },
+            {
+              "line": 1509,
+              "text": "[2025-03-24 13:47:31.150] [info] Printing results of investigation sit_to_stand_3_IKOut.mot to ..\\Results"
+            },
+            {
+              "line": 1510,
+              "text": "[2025-03-24 13:47:32.808] [info] Loaded model Generated_Model from file G:\\Shared drives\\WeRoLab\\Projects\\In progress\\Real-time impedance trajectory generation - Mohsen and Edgar\\Able bodied CoM study\\Scientific Data paper\\AB01\\Sit to stand\\3\\Setup\\..\\generated\\Generated_Model.osim"
+            },
+            {
+              "line": 1511,
+              "text": "[2025-03-24 13:47:32.809] [warning] Couldn't find file 'r_pelvis.vtp'."
+            },
+            {
+              "line": 1603,
+              "text": "         constraints: 2"
+            },
+            {
+              "line": 1604,
+              "text": "             markers: 57"
+            },
+            {
+              "line": 1605,
+              "text": "         controllers: 0"
+            },
+            {
+              "line": 1611,
+              "text": "[2025-03-24 13:47:32.962] [info] Storage: read data file = C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tpb0387dab_b36d_4da1_95df_b6458ad224c9.MOT (nr=173 nc=43)"
+            },
+            {
+              "line": 1612,
+              "text": "[2025-03-24 13:47:32.965] [info] Low-pass filtering coordinates data with a cutoff frequency of 6.0..."
+            },
+            {
+              "line": 1613,
+              "text": "[2025-03-24 13:47:33.087] [info] InverseDynamicsTool: 173 time frames in 79 millisecond(s)."
+            },
+            {
+              "line": 1698,
+              "text": "[2025-03-24 13:47:42.533] [warning] Couldn't find file 'hat_jaw.vtp'."
+            },
+            {
+              "line": 1699,
+              "text": "[2025-03-24 13:47:42.581] [info] Loading marker set from 'C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tp395ea58b_707b_41ec_b9dd_1f38392b06e6.xml'."
+            },
+            {
+              "line": 1700,
+              "text": "[2025-03-24 13:47:43.285] [info] Updated markers in model FullBodyModel_MuscleActuatedLowerLimb_TorqueActuatedUpperBody"
+            },
+            {
+              "line": 1701,
+              "text": "[2025-03-24 13:47:43.286] [info] Step 2: Scaling generic model"
+            },
+            {
+              "line": 1702,
+              "text": "[2025-03-24 13:47:43.382] [info] Loaded marker file C:\\Users\\[REDACTED]\\AppData\\Local\\Temp\\tp183cf44b_6cf7_40a4_b33a_52b89c2587b5.trc (57 markers, 1565 frames)"
+            },
+            {
+              "line": 1703,
+              "text": "[2025-03-24 13:47:43.382] [info] Measurement 'torso'"
+            },
+            {
+              "line": 1740,
+              "text": "[2025-03-24 13:47:43.465] [info] Wrote model file 'tpa3a8d9bb_cd82_4fef_a042_f87e68561e43.osim' from model."
+            }
+          ]
+        },
+        {
+          "path": "Static\\1\\Setup\\Setup_CoM_Analysis.xml",
+          "sha256": "6fbbaeffd9dc4b11455bc9cffc25c752a7aadf4b540ed00b02e8c1d5e2d3a6fa",
+          "bytes": 4742,
+          "lineCount": 66,
+          "excerpts": [
+            {
+              "line": 1,
+              "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>"
+            },
+            {
+              "line": 2,
+              "text": "<OpenSimDocument Version=\"40000\">"
+            },
+            {
+              "line": 3,
+              "text": "\t<AnalyzeTool>"
+            },
+            {
+              "line": 4,
+              "text": "\t\t<!--Name of the .osim file used to construct a model.-->"
+            },
+            {
+              "line": 5,
+              "text": "\t\t<model_file>../generated/Generated_Model.osim</model_file>"
+            },
+            {
+              "line": 6,
+              "text": "\t\t<!--Replace the model's force set with sets specified in <force_set_files>? If false, the force set is appended to.-->"
+            },
+            {
+              "line": 7,
+              "text": "\t\t<replace_force_set>false</replace_force_set>"
+            },
+            {
+              "line": 8,
+              "text": "\t\t<!--List of xml files used to construct a force set for the model.-->"
+            },
+            {
+              "line": 9,
+              "text": "\t\t<force_set_files />"
+            },
+            {
+              "line": 10,
+              "text": "\t\t<!--Directory used for writing results.-->"
+            },
+            {
+              "line": 25,
+              "text": "\t\t<minimum_integrator_step_size>1e-08</minimum_integrator_step_size>"
+            },
+            {
+              "line": 26,
+              "text": "\t\t<!--Integrator error tolerance. When the error is greater, the integrator step size is decreased.-->"
+            },
+            {
+              "line": 27,
+              "text": "\t\t<integrator_error_tolerance>1.0000000000000001e-05</integrator_error_tolerance>"
+            },
+            {
+              "line": 28,
+              "text": "\t\t<!--Set of analyses to be run during the investigation.-->"
+            },
+            {
+              "line": 41,
+              "text": "\t\t\t\t\t<in_degrees>true</in_degrees>"
+            },
+            {
+              "line": 42,
+              "text": "\t\t\t\t\t<!--Names of bodies to record kinematics for.  Use 'all' to record all bodies.  The special name 'center_of_mass' refers to the combined center of mass.-->"
+            },
+            {
+              "line": 43,
+              "text": "\t\t\t\t\t<bodies> all</bodies>"
+            },
+            {
+              "line": 44,
+              "text": "\t\t\t\t\t<!--Flag (true or false) indicating whether to express results in the global frame or local-frames of the bodies. Body positions and center of mass results are always given in the global frame. This flag is set to false by default.-->"
+            },
+            {
+              "line": 45,
+              "text": "\t\t\t\t\t<express_results_in_body_local_frame>false</express_results_in_body_local_frame>"
+            },
+            {
+              "line": 62,
+              "text": "\t\t<speeds_file />"
+            },
+            {
+              "line": 63,
+              "text": "\t\t<!--Low-pass cut-off frequency for filtering the coordinates_file data (currently does not apply to states_file or speeds_file). A negative value results in no filtering. The default value is -1.0, so no filtering.-->"
+            },
+            {
+              "line": 64,
+              "text": "\t\t<lowpass_cutoff_frequency_for_coordinates>-1</lowpass_cutoff_frequency_for_coordinates>"
+            }
+          ]
+        },
+        {
+          "path": "Static\\1\\Setup\\Setup_External_Forces.xml",
+          "sha256": "7c4a184fe7f2924f95d105247c1f6a559af4738de8ed4f87aacfcc0c3793bc82",
+          "bytes": 2357,
+          "lineCount": 49,
+          "excerpts": [
+            {
+              "line": 1,
+              "text": "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+            },
+            {
+              "line": 2,
+              "text": "<OpenSimDocument Version=\"40000\">"
+            },
+            {
+              "line": 3,
+              "text": "\t<ExternalLoads>"
+            }
+          ]
+        },
+        {
+          "path": "Static\\1\\Setup\\Setup_ID.xml",
+          "sha256": "ee68be1d6ac83668b4365ea8d78373ff44840a49bddc931923c6ebf7720281ac",
+          "bytes": 1965,
+          "lineCount": 27,
+          "excerpts": [
+            {
+              "line": 1,
+              "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>"
+            },
+            {
+              "line": 2,
+              "text": "<OpenSimDocument Version=\"40000\">"
+            },
+            {
+              "line": 3,
+              "text": "\t<InverseDynamicsTool>"
+            },
+            {
+              "line": 4,
+              "text": "\t\t<!--Name of the directory where results are written. Be default this is the directory in which the setup file is be  executed.-->"
+            },
+            {
+              "line": 5,
+              "text": "\t\t<results_directory>.</results_directory>"
+            },
+            {
+              "line": 8,
+              "text": "\t\t<!--Name of the .osim file used to construct a model.-->"
+            },
+            {
+              "line": 9,
+              "text": "\t\t<model_file>../generated/Generated_Model.osim</model_file>"
+            },
+            {
+              "line": 10,
+              "text": "\t\t<!--Time range over which the inverse dynamics problem is solved.-->"
+            },
+            {
+              "line": 11,
+              "text": "\t\t<time_range>Unassigned</time_range>"
+            },
+            {
+              "line": 12,
+              "text": "\t\t<!--List of forces by individual or grouping name (e.g. All, actuators, muscles, ...) to be excluded when computing model dynamics. 'All' also excludes external loads added via 'external_loads_file'.-->"
+            },
+            {
+              "line": 14,
+              "text": "\t\t<!--XML file (.xml) containing the external loads applied to the model as a set of ExternalForce(s).-->"
+            },
+            {
+              "line": 15,
+              "text": "\t\t<external_loads_file>Setup_External_Forces.xml</external_loads_file>"
+            },
+            {
+              "line": 16,
+              "text": "\t\t<!--The name of the file containing coordinate data. Can be a motion (.mot) or a states (.sto) file.-->"
+            },
+            {
+              "line": 17,
+              "text": "\t\t<coordinates_file>Unassigned</coordinates_file>"
+            },
+            {
+              "line": 18,
+              "text": "\t\t<!--Low-pass cut-off frequency for filtering the coordinates_file data (currently does not apply to states_file or speeds_file). A negative value results in no filtering. The default value is -1.0, so no filtering.-->"
+            },
+            {
+              "line": 19,
+              "text": "\t\t<lowpass_cutoff_frequency_for_coordinates>6</lowpass_cutoff_frequency_for_coordinates>"
+            }
+          ]
+        },
+        {
+          "path": "Static\\1\\Setup\\Setup_IK.xml",
+          "sha256": "dcb53ddf1127a81b9321c11c77170eaf1d8ab3b4dd94f749460d26419ed088ea",
+          "bytes": 16719,
+          "lineCount": 327,
+          "excerpts": [
+            {
+              "line": 1,
+              "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>"
+            },
+            {
+              "line": 2,
+              "text": "<OpenSimDocument Version=\"40000\">"
+            },
+            {
+              "line": 3,
+              "text": "\t<InverseKinematicsTool>"
+            },
+            {
+              "line": 8,
+              "text": "\t\t<!--Name of the model file (.osim) to use for inverse kinematics.-->"
+            },
+            {
+              "line": 9,
+              "text": "\t\t<model_file>../generated/Generated_Model.osim</model_file>"
+            },
+            {
+              "line": 10,
+              "text": "\t\t<!--A positive scalar that weights the relative importance of satisfying constraints. A weighting of 'Infinity' (the default) results in the constraints being strictly enforced. Otherwise, the weighted-squared constraint errors are appended to the cost function.-->"
+            },
+            {
+              "line": 11,
+              "text": "\t\t<constraint_weight>Inf</constraint_weight>"
+            },
+            {
+              "line": 12,
+              "text": "\t\t<!--The accuracy of the solution in absolute terms. Default is 1e-5. It determines the number of significant digits to which the solution can be trusted.-->"
+            },
+            {
+              "line": 13,
+              "text": "\t\t<accuracy>1.0000000000000001e-05</accuracy>"
+            },
+            {
+              "line": 14,
+              "text": "\t\t<!--Markers and coordinates to be considered (tasks) and their weightings. The sum of weighted-squared task errors composes the cost function.-->"
+            },
+            {
+              "line": 15,
+              "text": "\t\t<IKTaskSet>"
+            },
+            {
+              "line": 16,
+              "text": "\t\t\t<objects>"
+            },
+            {
+              "line": 17,
+              "text": "\t\t\t\t<IKMarkerTask name=\"SJN\">"
+            },
+            {
+              "line": 18,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 21,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 22,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 23,
+              "text": "\t\t\t\t<IKMarkerTask name=\"SXS\">"
+            },
+            {
+              "line": 24,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 27,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 28,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 29,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RCAJ\">"
+            },
+            {
+              "line": 30,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 33,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 34,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 35,
+              "text": "\t\t\t\t<IKMarkerTask name=\"LCAJ\">"
+            },
+            {
+              "line": 36,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 39,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 40,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 41,
+              "text": "\t\t\t\t<IKMarkerTask name=\"CV7\">"
+            },
+            {
+              "line": 42,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 45,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 46,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 47,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RHGT\">"
+            },
+            {
+              "line": 48,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 51,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 52,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 53,
+              "text": "\t\t\t\t<IKMarkerTask name=\"LHGT\">"
+            },
+            {
+              "line": 54,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 57,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 58,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 59,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RUA\">"
+            },
+            {
+              "line": 60,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 63,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 64,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 65,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RHLE\">"
+            },
+            {
+              "line": 66,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 69,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 70,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 71,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RRSP\">"
+            },
+            {
+              "line": 72,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 75,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 76,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 77,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RUSP\">"
+            },
+            {
+              "line": 78,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 81,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 82,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 83,
+              "text": "\t\t\t\t<IKMarkerTask name=\"LUA\">"
+            },
+            {
+              "line": 84,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 87,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 88,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 89,
+              "text": "\t\t\t\t<IKMarkerTask name=\"LHLE\">"
+            },
+            {
+              "line": 90,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 93,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 94,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 95,
+              "text": "\t\t\t\t<IKMarkerTask name=\"LRSP\">"
+            },
+            {
+              "line": 96,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 99,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 100,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 101,
+              "text": "\t\t\t\t<IKMarkerTask name=\"LUSP\">"
+            },
+            {
+              "line": 102,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 105,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 106,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 107,
+              "text": "\t\t\t\t<IKMarkerTask name=\"LIAS\">"
+            },
+            {
+              "line": 108,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 111,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 112,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 113,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RIPS\">"
+            },
+            {
+              "line": 114,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 117,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 118,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 119,
+              "text": "\t\t\t\t<IKMarkerTask name=\"LIPS\">"
+            },
+            {
+              "line": 120,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 123,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 124,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 125,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RTTC\">"
+            },
+            {
+              "line": 126,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 129,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 130,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 131,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RTH\">"
+            },
+            {
+              "line": 132,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 135,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 136,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 137,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RFLE\">"
+            },
+            {
+              "line": 138,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 141,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 142,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 143,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RSK\">"
+            },
+            {
+              "line": 144,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 147,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 148,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 149,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RFAL\">"
+            },
+            {
+              "line": 150,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 153,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 154,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 155,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RFCC\">"
+            },
+            {
+              "line": 156,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            },
+            {
+              "line": 159,
+              "text": "\t\t\t\t\t<weight>1</weight>"
+            },
+            {
+              "line": 160,
+              "text": "\t\t\t\t</IKMarkerTask>"
+            },
+            {
+              "line": 161,
+              "text": "\t\t\t\t<IKMarkerTask name=\"RDP1\">"
+            },
+            {
+              "line": 162,
+              "text": "\t\t\t\t\t<!--Whether or not this task will be used during inverse kinematics solve, default is true.-->"
+            }
+          ]
+        },
+        {
+          "path": "Static\\1\\Setup\\Setup_Scale.xml",
+          "sha256": "d6aa4cf8912055ebbbc814d10f179a376889f2a1105af98ad7ef5f06a15c44fa",
+          "bytes": 41388,
+          "lineCount": 931,
+          "excerpts": [
+            {
+              "line": 1,
+              "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>"
+            },
+            {
+              "line": 2,
+              "text": "<OpenSimDocument Version=\"40000\">"
+            },
+            {
+              "line": 3,
+              "text": "\t<ScaleTool name=\"FullBodyModel_MuscleActuatedLowerLimb_TorqueActuatedUpperBody-scaled\">"
+            },
+            {
+              "line": 4,
+              "text": "\t\t<!--Mass of the subject in kg.  Subject-specific model generated by scaling step will have this total mass.-->"
+            },
+            {
+              "line": 5,
+              "text": "\t\t<mass>49.81</mass>"
+            },
+            {
+              "line": 6,
+              "text": "\t\t<!--Height of the subject in mm.  For informational purposes only (not used by scaling).-->"
+            },
+            {
+              "line": 11,
+              "text": "\t\t<notes>Unassigned</notes>"
+            },
+            {
+              "line": 12,
+              "text": "\t\t<!--Specifies the name of the unscaled model (.osim) and the marker set.-->"
+            },
+            {
+              "line": 13,
+              "text": "\t\t<GenericModelMaker>"
+            },
+            {
+              "line": 14,
+              "text": "\t\t\t<!--Model file (.osim) for the unscaled model.-->"
+            },
+            {
+              "line": 15,
+              "text": "\t\t\t<model_file>../../../../Model/Biomech57.osim</model_file>"
+            },
+            {
+              "line": 16,
+              "text": "\t\t\t<!--Set of model markers used to scale the model. Scaling is done based on distances between model markers compared to the same distances between the corresponding experimental markers.-->"
+            },
+            {
+              "line": 17,
+              "text": "\t\t\t<marker_set_file>../../../../Model/marker_set.xml</marker_set_file>"
+            },
+            {
+              "line": 18,
+              "text": "\t\t</GenericModelMaker>"
+            },
+            {
+              "line": 30,
+              "text": "\t\t\t\t\t\t<apply>false</apply>"
+            },
+            {
+              "line": 31,
+              "text": "\t\t\t\t\t\t<!--Set of marker pairs used to determine the scale factors.-->"
+            },
+            {
+              "line": 32,
+              "text": "\t\t\t\t\t\t<MarkerPairSet>"
+            },
+            {
+              "line": 33,
+              "text": "\t\t\t\t\t\t\t<objects>"
+            },
+            {
+              "line": 34,
+              "text": "\t\t\t\t\t\t\t\t<MarkerPair>"
+            },
+            {
+              "line": 35,
+              "text": "\t\t\t\t\t\t\t\t\t<!--Names of two markers, the distance between which is used to compute a body scale factor.-->"
+            },
+            {
+              "line": 36,
+              "text": "\t\t\t\t\t\t\t\t\t<markers> RCAJ RHLE</markers>"
+            },
+            {
+              "line": 37,
+              "text": "\t\t\t\t\t\t\t\t</MarkerPair>"
+            },
+            {
+              "line": 38,
+              "text": "\t\t\t\t\t\t\t</objects>"
+            },
+            {
+              "line": 39,
+              "text": "\t\t\t\t\t\t\t<groups />"
+            },
+            {
+              "line": 40,
+              "text": "\t\t\t\t\t\t</MarkerPairSet>"
+            },
+            {
+              "line": 41,
+              "text": "\t\t\t\t\t\t<!--Set of bodies to be scaled by this measurement.-->"
+            },
+            {
+              "line": 49,
+              "text": "\t\t\t\t\t\t<apply>false</apply>"
+            },
+            {
+              "line": 50,
+              "text": "\t\t\t\t\t\t<!--Set of marker pairs used to determine the scale factors.-->"
+            },
+            {
+              "line": 51,
+              "text": "\t\t\t\t\t\t<MarkerPairSet>"
+            },
+            {
+              "line": 52,
+              "text": "\t\t\t\t\t\t\t<objects>"
+            },
+            {
+              "line": 53,
+              "text": "\t\t\t\t\t\t\t\t<MarkerPair>"
+            },
+            {
+              "line": 54,
+              "text": "\t\t\t\t\t\t\t\t\t<!--Names of two markers, the distance between which is used to compute a body scale factor.-->"
+            },
+            {
+              "line": 55,
+              "text": "\t\t\t\t\t\t\t\t\t<markers> RHLE RRSP</markers>"
+            },
+            {
+              "line": 56,
+              "text": "\t\t\t\t\t\t\t\t</MarkerPair>"
+            },
+            {
+              "line": 57,
+              "text": "\t\t\t\t\t\t\t</objects>"
+            },
+            {
+              "line": 58,
+              "text": "\t\t\t\t\t\t\t<groups />"
+            },
+            {
+              "line": 59,
+              "text": "\t\t\t\t\t\t</MarkerPairSet>"
+            },
+            {
+              "line": 60,
+              "text": "\t\t\t\t\t\t<!--Set of bodies to be scaled by this measurement.-->"
+            },
+            {
+              "line": 68,
+              "text": "\t\t\t\t\t\t<apply>false</apply>"
+            },
+            {
+              "line": 69,
+              "text": "\t\t\t\t\t\t<!--Set of marker pairs used to determine the scale factors.-->"
+            },
+            {
+              "line": 70,
+              "text": "\t\t\t\t\t\t<MarkerPairSet>"
+            },
+            {
+              "line": 71,
+              "text": "\t\t\t\t\t\t\t<objects>"
+            },
+            {
+              "line": 72,
+              "text": "\t\t\t\t\t\t\t\t<MarkerPair>"
+            },
+            {
+              "line": 73,
+              "text": "\t\t\t\t\t\t\t\t\t<!--Names of two markers, the distance between which is used to compute a body scale factor.-->"
+            },
+            {
+              "line": 74,
+              "text": "\t\t\t\t\t\t\t\t\t<markers> LCAJ LHLE</markers>"
+            },
+            {
+              "line": 75,
+              "text": "\t\t\t\t\t\t\t\t</MarkerPair>"
+            },
+            {
+              "line": 76,
+              "text": "\t\t\t\t\t\t\t</objects>"
+            },
+            {
+              "line": 77,
+              "text": "\t\t\t\t\t\t\t<groups />"
+            },
+            {
+              "line": 78,
+              "text": "\t\t\t\t\t\t</MarkerPairSet>"
+            },
+            {
+              "line": 79,
+              "text": "\t\t\t\t\t\t<!--Set of bodies to be scaled by this measurement.-->"
+            },
+            {
+              "line": 87,
+              "text": "\t\t\t\t\t\t<apply>false</apply>"
+            },
+            {
+              "line": 88,
+              "text": "\t\t\t\t\t\t<!--Set of marker pairs used to determine the scale factors.-->"
+            },
+            {
+              "line": 89,
+              "text": "\t\t\t\t\t\t<MarkerPairSet>"
+            },
+            {
+              "line": 90,
+              "text": "\t\t\t\t\t\t\t<objects>"
+            },
+            {
+              "line": 91,
+              "text": "\t\t\t\t\t\t\t\t<MarkerPair>"
+            },
+            {
+              "line": 92,
+              "text": "\t\t\t\t\t\t\t\t\t<!--Names of two markers, the distance between which is used to compute a body scale factor.-->"
+            },
+            {
+              "line": 93,
+              "text": "\t\t\t\t\t\t\t\t\t<markers> LHLE LRSP</markers>"
+            },
+            {
+              "line": 94,
+              "text": "\t\t\t\t\t\t\t\t</MarkerPair>"
+            },
+            {
+              "line": 95,
+              "text": "\t\t\t\t\t\t\t</objects>"
+            },
+            {
+              "line": 96,
+              "text": "\t\t\t\t\t\t\t<groups />"
+            },
+            {
+              "line": 97,
+              "text": "\t\t\t\t\t\t</MarkerPairSet>"
+            },
+            {
+              "line": 98,
+              "text": "\t\t\t\t\t\t<!--Set of bodies to be scaled by this measurement.-->"
+            },
+            {
+              "line": 106,
+              "text": "\t\t\t\t\t\t<apply>true</apply>"
+            },
+            {
+              "line": 107,
+              "text": "\t\t\t\t\t\t<!--Set of marker pairs used to determine the scale factors.-->"
+            },
+            {
+              "line": 108,
+              "text": "\t\t\t\t\t\t<MarkerPairSet>"
+            },
+            {
+              "line": 109,
+              "text": "\t\t\t\t\t\t\t<objects>"
+            },
+            {
+              "line": 110,
+              "text": "\t\t\t\t\t\t\t\t<MarkerPair>"
+            },
+            {
+              "line": 111,
+              "text": "\t\t\t\t\t\t\t\t\t<!--Names of two markers, the distance between which is used to compute a body scale factor.-->"
+            },
+            {
+              "line": 112,
+              "text": "\t\t\t\t\t\t\t\t\t<markers> RIPS CV7</markers>"
+            },
+            {
+              "line": 113,
+              "text": "\t\t\t\t\t\t\t\t</MarkerPair>"
+            },
+            {
+              "line": 114,
+              "text": "\t\t\t\t\t\t\t\t<MarkerPair>"
+            },
+            {
+              "line": 115,
+              "text": "\t\t\t\t\t\t\t\t\t<!--Names of two markers, the distance between which is used to compute a body scale factor.-->"
+            },
+            {
+              "line": 116,
+              "text": "\t\t\t\t\t\t\t\t\t<markers> LIPS CV7</markers>"
+            },
+            {
+              "line": 117,
+              "text": "\t\t\t\t\t\t\t\t</MarkerPair>"
+            },
+            {
+              "line": 118,
+              "text": "\t\t\t\t\t\t\t</objects>"
+            },
+            {
+              "line": 119,
+              "text": "\t\t\t\t\t\t\t<groups />"
+            },
+            {
+              "line": 120,
+              "text": "\t\t\t\t\t\t</MarkerPairSet>"
+            },
+            {
+              "line": 121,
+              "text": "\t\t\t\t\t\t<!--Set of bodies to be scaled by this measurement.-->"
+            },
+            {
+              "line": 134,
+              "text": "\t\t\t\t\t\t<apply>true</apply>"
+            },
+            {
+              "line": 135,
+              "text": "\t\t\t\t\t\t<!--Set of marker pairs used to determine the scale factors.-->"
+            },
+            {
+              "line": 136,
+              "text": "\t\t\t\t\t\t<MarkerPairSet>"
+            },
+            {
+              "line": 137,
+              "text": "\t\t\t\t\t\t\t<objects>"
+            },
+            {
+              "line": 138,
+              "text": "\t\t\t\t\t\t\t\t<MarkerPair>"
+            },
+            {
+              "line": 139,
+              "text": "\t\t\t\t\t\t\t\t\t<!--Names of two markers, the distance between which is used to compute a body scale factor.-->"
+            },
+            {
+              "line": 140,
+              "text": "\t\t\t\t\t\t\t\t\t<markers> RIAS LIAS</markers>"
+            },
+            {
+              "line": 141,
+              "text": "\t\t\t\t\t\t\t\t</MarkerPair>"
+            },
+            {
+              "line": 142,
+              "text": "\t\t\t\t\t\t\t\t<MarkerPair>"
+            },
+            {
+              "line": 143,
+              "text": "\t\t\t\t\t\t\t\t\t<!--Names of two markers, the distance between which is used to compute a body scale factor.-->"
+            },
+            {
+              "line": 144,
+              "text": "\t\t\t\t\t\t\t\t\t<markers> RFTC LFTC</markers>"
+            },
+            {
+              "line": 145,
+              "text": "\t\t\t\t\t\t\t\t</MarkerPair>"
+            },
+            {
+              "line": 146,
+              "text": "\t\t\t\t\t\t\t</objects>"
+            },
+            {
+              "line": 147,
+              "text": "\t\t\t\t\t\t\t<groups />"
+            },
+            {
+              "line": 148,
+              "text": "\t\t\t\t\t\t</MarkerPairSet>"
+            },
+            {
+              "line": 149,
+              "text": "\t\t\t\t\t\t<!--Set of bodies to be scaled by this measurement.-->"
+            },
+            {
+              "line": 162,
+              "text": "\t\t\t\t\t\t<apply>false</apply>"
+            },
+            {
+              "line": 163,
+              "text": "\t\t\t\t\t\t<!--Set of marker pairs used to determine the scale factors.-->"
+            },
+            {
+              "line": 164,
+              "text": "\t\t\t\t\t\t<MarkerPairSet>"
+            },
+            {
+              "line": 165,
+              "text": "\t\t\t\t\t\t\t<objects>"
+            },
+            {
+              "line": 166,
+              "text": "\t\t\t\t\t\t\t\t<MarkerPair>"
+            },
+            {
+              "line": 167,
+              "text": "\t\t\t\t\t\t\t\t\t<!--Names of two markers, the distance between which is used to compute a body scale factor.-->"
+            },
+            {
+              "line": 168,
+              "text": "\t\t\t\t\t\t\t\t\t<markers> RFTC RFLE</markers>"
+            },
+            {
+              "line": 169,
+              "text": "\t\t\t\t\t\t\t\t</MarkerPair>"
+            },
+            {
+              "line": 170,
+              "text": "\t\t\t\t\t\t\t</objects>"
+            },
+            {
+              "line": 171,
+              "text": "\t\t\t\t\t\t\t<groups />"
+            },
+            {
+              "line": 172,
+              "text": "\t\t\t\t\t\t</MarkerPairSet>"
+            },
+            {
+              "line": 173,
+              "text": "\t\t\t\t\t\t<!--Set of bodies to be scaled by this measurement.-->"
+            },
+            {
+              "line": 181,
+              "text": "\t\t\t\t\t\t<apply>false</apply>"
+            },
+            {
+              "line": 182,
+              "text": "\t\t\t\t\t\t<!--Set of marker pairs used to determine the scale factors.-->"
+            },
+            {
+              "line": 183,
+              "text": "\t\t\t\t\t\t<MarkerPairSet>"
+            },
+            {
+              "line": 184,
+              "text": "\t\t\t\t\t\t\t<objects>"
+            }
+          ]
+        },
+        {
+          "path": "Static\\1\\Setup\\Setup_Scale_GUI.xml",
+          "sha256": "9ae5f5959c2c748241c07979189514919679ffeb842ed55409d8c23454d05a16",
+          "bytes": 41410,
+          "lineCount": 931,
+          "excerpts": [
+            {
+              "line": 1,
+              "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>"
+            },
+            {
+              "line": 2,
+              "text": "<OpenSimDocument Version=\"40000\">"
+            },
+            {
+              "line": 3,
+              "text": "\t<ScaleTool name=\"FullBodyModel_MuscleActuatedLowerLimb_TorqueActuatedUpperBody-scaled\">"
+            },
+            {
+              "line": 4,
+              "text": "\t\t<!--Mass of the subject in kg.  Subject-specific model generated by scaling step will have this total mass.-->"
+            },
+            {
+              "line": 5,
+              "text": "\t\t<mass>49.81</mass>"
+            },
+            {
+              "line": 6,
+              "text": "\t\t<!--Height of the subject in mm.  For informational purposes only (not used by scaling).-->"
+            },
+            {
+              "line": 11,
+              "text": "\t\t<notes>Unassigned</notes>"
+            },
+            {
+              "line": 12,
+              "text": "\t\t<!--Specifies the name of the unscaled model (.osim) and the marker set.-->"
+            },
+            {
+              "line": 13,
+              "text": "\t\t<GenericModelMaker>"
+            },
+            {
+              "line": 14,
+              "text": "\t\t\t<!--Model file (.osim) for the unscaled model.-->"
+            },
+            {
+              "line": 15,
+              "text": "\t\t\t<model_file>Unassigned</model_file>"
+            },
+            {
+              "line": 16,
+              "text": "\t\t\t<!--Set of model markers used to scale the model. Scaling is done based on distances between model markers compared to the same distances between the corresponding experimental markers.-->"
+            },
+            {
+              "line": 17,
+              "text": "\t\t\t<marker_set_file>Unassigned</marker_set_file>"
+            },
+            {
+              "line": 18,
+              "text": "\t\t</GenericModelMaker>"
+            },
+            {
+              "line": 30,
+              "text": "\t\t\t\t\t\t<apply>false</apply>"
+            },
+            {
+              "line": 31,
+              "text": "\t\t\t\t\t\t<!--Set of marker pairs used to determine the scale factors.-->"
+            },
+            {
+              "line": 32,
+              "text": "\t\t\t\t\t\t<MarkerPairSet>"
+            },
+            {
+              "line": 33,
+              "text": "\t\t\t\t\t\t\t<objects>"
+            },
+            {
+              "line": 34,
+              "text": "\t\t\t\t\t\t\t\t<MarkerPair>"
+            },
+            {
+              "line": 35,
+              "text": "\t\t\t\t\t\t\t\t\t<!--Names of two markers, the distance between which is used to compute a body scale factor.-->"
+            },
+            {
+              "line": 36,
+              "text": "\t\t\t\t\t\t\t\t\t<markers> RCAJ RHLE</markers>"
+            },
+            {
+              "line": 37,
+              "text": "\t\t\t\t\t\t\t\t</MarkerPair>"
+            },
+            {
+              "line": 38,
+              "text": "\t\t\t\t\t\t\t</objects>"
+            },
+            {
+              "line": 39,
+              "text": "\t\t\t\t\t\t\t<groups />"
+            },
+            {
+              "line": 40,
+              "text": "\t\t\t\t\t\t</MarkerPairSet>"
+            },
+            {
+              "line": 41,
+              "text": "\t\t\t\t\t\t<!--Set of bodies to be scaled by this measurement.-->"
+            },
+            {
+              "line": 49,
+              "text": "\t\t\t\t\t\t<apply>false</apply>"
+            },
+            {
+              "line": 50,
+              "text": "\t\t\t\t\t\t<!--Set of marker pairs used to determine the scale factors.-->"
+            },
+            {
+              "line": 51,
+              "text": "\t\t\t\t\t\t<MarkerPairSet>"
+            },
+            {
+              "line": 52,
+              "text": "\t\t\t\t\t\t\t<objects>"
+            },
+            {
+              "line": 53,
+              "text": "\t\t\t\t\t\t\t\t<MarkerPair>"
+            },
+            {
+              "line": 54,
+              "text": "\t\t\t\t\t\t\t\t\t<!--Names of two markers, the distance between which is used to compute a body scale factor.-->"
+            },
+            {
+              "line": 55,
+              "text": "\t\t\t\t\t\t\t\t\t<markers> RHLE RRSP</markers>"
+            },
+            {
+              "line": 56,
+              "text": "\t\t\t\t\t\t\t\t</MarkerPair>"
+            },
+            {
+              "line": 57,
+              "text": "\t\t\t\t\t\t\t</objects>"
+            },
+            {
+              "line": 58,
+              "text": "\t\t\t\t\t\t\t<groups />"
+            },
+            {
+              "line": 59,
+              "text": "\t\t\t\t\t\t</MarkerPairSet>"
+            },
+            {
+              "line": 60,
+              "text": "\t\t\t\t\t\t<!--Set of bodies to be scaled by this measurement.-->"
+            },
+            {
+              "line": 68,
+              "text": "\t\t\t\t\t\t<apply>false</apply>"
+            },
+            {
+              "line": 69,
+              "text": "\t\t\t\t\t\t<!--Set of marker pairs used to determine the scale factors.-->"
+            },
+            {
+              "line": 70,
+              "text": "\t\t\t\t\t\t<MarkerPairSet>"
+            },
+            {
+              "line": 71,
+              "text": "\t\t\t\t\t\t\t<objects>"
+            },
+            {
+              "line": 72,
+              "text": "\t\t\t\t\t\t\t\t<MarkerPair>"
+            },
+            {
+              "line": 73,
+              "text": "\t\t\t\t\t\t\t\t\t<!--Names of two markers, the distance between which is used to compute a body scale factor.-->"
+            },
+            {
+              "line": 74,
+              "text": "\t\t\t\t\t\t\t\t\t<markers> LCAJ LHLE</markers>"
+            },
+            {
+              "line": 75,
+              "text": "\t\t\t\t\t\t\t\t</MarkerPair>"
+            },
+            {
+              "line": 76,
+              "text": "\t\t\t\t\t\t\t</objects>"
+            },
+            {
+              "line": 77,
+              "text": "\t\t\t\t\t\t\t<groups />"
+            },
+            {
+              "line": 78,
+              "text": "\t\t\t\t\t\t</MarkerPairSet>"
+            },
+            {
+              "line": 79,
+              "text": "\t\t\t\t\t\t<!--Set of bodies to be scaled by this measurement.-->"
+            },
+            {
+              "line": 87,
+              "text": "\t\t\t\t\t\t<apply>false</apply>"
+            },
+            {
+              "line": 88,
+              "text": "\t\t\t\t\t\t<!--Set of marker pairs used to determine the scale factors.-->"
+            },
+            {
+              "line": 89,
+              "text": "\t\t\t\t\t\t<MarkerPairSet>"
+            },
+            {
+              "line": 90,
+              "text": "\t\t\t\t\t\t\t<objects>"
+            },
+            {
+              "line": 91,
+              "text": "\t\t\t\t\t\t\t\t<MarkerPair>"
+            },
+            {
+              "line": 92,
+              "text": "\t\t\t\t\t\t\t\t\t<!--Names of two markers, the distance between which is used to compute a body scale factor.-->"
+            },
+            {
+              "line": 93,
+              "text": "\t\t\t\t\t\t\t\t\t<markers> LHLE LRSP</markers>"
+            },
+            {
+              "line": 94,
+              "text": "\t\t\t\t\t\t\t\t</MarkerPair>"
+            },
+            {
+              "line": 95,
+              "text": "\t\t\t\t\t\t\t</objects>"
+            },
+            {
+              "line": 96,
+              "text": "\t\t\t\t\t\t\t<groups />"
+            },
+            {
+              "line": 97,
+              "text": "\t\t\t\t\t\t</MarkerPairSet>"
+            },
+            {
+              "line": 98,
+              "text": "\t\t\t\t\t\t<!--Set of bodies to be scaled by this measurement.-->"
+            },
+            {
+              "line": 106,
+              "text": "\t\t\t\t\t\t<apply>true</apply>"
+            },
+            {
+              "line": 107,
+              "text": "\t\t\t\t\t\t<!--Set of marker pairs used to determine the scale factors.-->"
+            },
+            {
+              "line": 108,
+              "text": "\t\t\t\t\t\t<MarkerPairSet>"
+            },
+            {
+              "line": 109,
+              "text": "\t\t\t\t\t\t\t<objects>"
+            },
+            {
+              "line": 110,
+              "text": "\t\t\t\t\t\t\t\t<MarkerPair>"
+            },
+            {
+              "line": 111,
+              "text": "\t\t\t\t\t\t\t\t\t<!--Names of two markers, the distance between which is used to compute a body scale factor.-->"
+            },
+            {
+              "line": 112,
+              "text": "\t\t\t\t\t\t\t\t\t<markers> RIPS CV7</markers>"
+            },
+            {
+              "line": 113,
+              "text": "\t\t\t\t\t\t\t\t</MarkerPair>"
+            },
+            {
+              "line": 114,
+              "text": "\t\t\t\t\t\t\t\t<MarkerPair>"
+            },
+            {
+              "line": 115,
+              "text": "\t\t\t\t\t\t\t\t\t<!--Names of two markers, the distance between which is used to compute a body scale factor.-->"
+            },
+            {
+              "line": 116,
+              "text": "\t\t\t\t\t\t\t\t\t<markers> LIPS CV7</markers>"
+            },
+            {
+              "line": 117,
+              "text": "\t\t\t\t\t\t\t\t</MarkerPair>"
+            },
+            {
+              "line": 118,
+              "text": "\t\t\t\t\t\t\t</objects>"
+            },
+            {
+              "line": 119,
+              "text": "\t\t\t\t\t\t\t<groups />"
+            },
+            {
+              "line": 120,
+              "text": "\t\t\t\t\t\t</MarkerPairSet>"
+            },
+            {
+              "line": 121,
+              "text": "\t\t\t\t\t\t<!--Set of bodies to be scaled by this measurement.-->"
+            },
+            {
+              "line": 134,
+              "text": "\t\t\t\t\t\t<apply>true</apply>"
+            },
+            {
+              "line": 135,
+              "text": "\t\t\t\t\t\t<!--Set of marker pairs used to determine the scale factors.-->"
+            },
+            {
+              "line": 136,
+              "text": "\t\t\t\t\t\t<MarkerPairSet>"
+            },
+            {
+              "line": 137,
+              "text": "\t\t\t\t\t\t\t<objects>"
+            },
+            {
+              "line": 138,
+              "text": "\t\t\t\t\t\t\t\t<MarkerPair>"
+            },
+            {
+              "line": 139,
+              "text": "\t\t\t\t\t\t\t\t\t<!--Names of two markers, the distance between which is used to compute a body scale factor.-->"
+            },
+            {
+              "line": 140,
+              "text": "\t\t\t\t\t\t\t\t\t<markers> RIAS LIAS</markers>"
+            },
+            {
+              "line": 141,
+              "text": "\t\t\t\t\t\t\t\t</MarkerPair>"
+            },
+            {
+              "line": 142,
+              "text": "\t\t\t\t\t\t\t\t<MarkerPair>"
+            },
+            {
+              "line": 143,
+              "text": "\t\t\t\t\t\t\t\t\t<!--Names of two markers, the distance between which is used to compute a body scale factor.-->"
+            },
+            {
+              "line": 144,
+              "text": "\t\t\t\t\t\t\t\t\t<markers> RFTC LFTC</markers>"
+            },
+            {
+              "line": 145,
+              "text": "\t\t\t\t\t\t\t\t</MarkerPair>"
+            },
+            {
+              "line": 146,
+              "text": "\t\t\t\t\t\t\t</objects>"
+            },
+            {
+              "line": 147,
+              "text": "\t\t\t\t\t\t\t<groups />"
+            },
+            {
+              "line": 148,
+              "text": "\t\t\t\t\t\t</MarkerPairSet>"
+            },
+            {
+              "line": 149,
+              "text": "\t\t\t\t\t\t<!--Set of bodies to be scaled by this measurement.-->"
+            },
+            {
+              "line": 162,
+              "text": "\t\t\t\t\t\t<apply>false</apply>"
+            },
+            {
+              "line": 163,
+              "text": "\t\t\t\t\t\t<!--Set of marker pairs used to determine the scale factors.-->"
+            },
+            {
+              "line": 164,
+              "text": "\t\t\t\t\t\t<MarkerPairSet>"
+            },
+            {
+              "line": 165,
+              "text": "\t\t\t\t\t\t\t<objects>"
+            },
+            {
+              "line": 166,
+              "text": "\t\t\t\t\t\t\t\t<MarkerPair>"
+            },
+            {
+              "line": 167,
+              "text": "\t\t\t\t\t\t\t\t\t<!--Names of two markers, the distance between which is used to compute a body scale factor.-->"
+            },
+            {
+              "line": 168,
+              "text": "\t\t\t\t\t\t\t\t\t<markers> RFTC RFLE</markers>"
+            },
+            {
+              "line": 169,
+              "text": "\t\t\t\t\t\t\t\t</MarkerPair>"
+            },
+            {
+              "line": 170,
+              "text": "\t\t\t\t\t\t\t</objects>"
+            },
+            {
+              "line": 171,
+              "text": "\t\t\t\t\t\t\t<groups />"
+            },
+            {
+              "line": 172,
+              "text": "\t\t\t\t\t\t</MarkerPairSet>"
+            },
+            {
+              "line": 173,
+              "text": "\t\t\t\t\t\t<!--Set of bodies to be scaled by this measurement.-->"
+            },
+            {
+              "line": 181,
+              "text": "\t\t\t\t\t\t<apply>false</apply>"
+            },
+            {
+              "line": 182,
+              "text": "\t\t\t\t\t\t<!--Set of marker pairs used to determine the scale factors.-->"
+            },
+            {
+              "line": 183,
+              "text": "\t\t\t\t\t\t<MarkerPairSet>"
+            },
+            {
+              "line": 184,
+              "text": "\t\t\t\t\t\t\t<objects>"
+            }
+          ]
+        }
+      ],
+      "downloadedBytes": 1696477
+    }
+  ],
+  "dataset": {
+    "id": 28689221,
+    "doi": "10.7274/28689221.v1",
+    "version": 1,
+    "modified_date": "2025-10-20T14:49:51Z",
+    "license": {
+      "value": 1,
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "totalRangeBytes": 1876836
+}

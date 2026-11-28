@@ -1,0 +1,360 @@
+{
+  "referenceCommit": "71bae7d1ed34227b2fc2c1c4e79aa7fdf1be22f1",
+  "scope": "current local interpreter metadata, not claimed historical run environment",
+  "localPython": "3.11.2 (main, Apr  8 2026, 01:58:00) [GCC 12.2.0]",
+  "localPlatform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "pythonPackages": {
+    "numpy": "1.26.4",
+    "c3d": "0.6.0",
+    "scipy": "1.17.1",
+    "Pillow": "13.0.0",
+    "imageio-ffmpeg": "0.8.2",
+    "opensim": "inconnue / non installé dans cet interpréteur"
+  },
+  "node": "v22.22.3",
+  "npmLockSHA256": "997ac81140d0c4c3e9fe352a0b7fe74650489b7dc75a345dd543bdef752aa569",
+  "playwrightInstalled": "1.65.1",
+  "threeInstalled": "0.169.0",
+  "c3dMetadataOnly": {
+    "AB01/Squat/1/Data/squat_1.c3d": {
+      "sha256": "7d4adaf1ca565de3fc172cde1b92a6b607f7a90d1f22b37453fa0cd4b6e30482",
+      "groups": [
+        "POINT",
+        "ANALOG",
+        "FORCE_PLATFORM",
+        "MANUFACTURER",
+        "SUBJECTS"
+      ],
+      "manufacturer": {
+        "COMPANY": [
+          "OptiTrack"
+        ],
+        "SOFTWARE": [
+          "Motive"
+        ],
+        "VERSION_LABEL": [
+          "3.0.3 Final"
+        ]
+      },
+      "subjectNames": [
+        "Skeleton "
+      ],
+      "eventGroupPresent": false,
+      "trialGroupPresent": false,
+      "analogLabels": [
+        "Fx1",
+        "Fy1",
+        "Fz1",
+        "Mx1",
+        "My1",
+        "Mz1",
+        "Fx2",
+        "Fy2",
+        "Fz2",
+        "Mx2",
+        "My2",
+        "Mz2",
+        "Fx3",
+        "Fy3",
+        "Fz3",
+        "Mx3",
+        "My3",
+        "Mz3",
+        "Fx4",
+        "Fy4",
+        "Fz4",
+        "Mx4",
+        "My4",
+        "Mz4",
+        "Fx5",
+        "Fy5",
+        "Fz5",
+        "Mx5",
+        "My5",
+        "Mz5",
+        "Fx6",
+        "Fy6",
+        "Fz6",
+        "Mx6",
+        "My6",
+        "Mz6"
+      ],
+      "pointRate": 200.0,
+      "analogRate": 1000.0
+    },
+    "AB01/Static/1/Data/static.c3d": {
+      "sha256": "ba89054b8d0bb0cb18087be68b81e1a326dcf2719c012dff73a5591102b1b4b1",
+      "groups": [
+        "POINT",
+        "ANALOG",
+        "FORCE_PLATFORM",
+        "MANUFACTURER",
+        "SUBJECTS"
+      ],
+      "manufacturer": {
+        "COMPANY": [
+          "OptiTrack"
+        ],
+        "SOFTWARE": [
+          "Motive"
+        ],
+        "VERSION_LABEL": [
+          "3.0.3 Final"
+        ]
+      },
+      "subjectNames": [
+        "Skeleton "
+      ],
+      "eventGroupPresent": false,
+      "trialGroupPresent": false,
+      "analogLabels": [
+        "Fx1",
+        "Fy1",
+        "Fz1",
+        "Mx1",
+        "My1",
+        "Mz1",
+        "Fx2",
+        "Fy2",
+        "Fz2",
+        "Mx2",
+        "My2",
+        "Mz2",
+        "Fx3",
+        "Fy3",
+        "Fz3",
+        "Mx3",
+        "My3",
+        "Mz3",
+        "Fx4",
+        "Fy4",
+        "Fz4",
+        "Mx4",
+        "My4",
+        "Mz4",
+        "Fx5",
+        "Fy5",
+        "Fz5",
+        "Mx5",
+        "My5",
+        "Mz5",
+        "Fx6",
+        "Fy6",
+        "Fz6",
+        "Mx6",
+        "My6",
+        "Mz6"
+      ],
+      "pointRate": 200.0,
+      "analogRate": 1000.0
+    }
+  },
+  "pinnedRepoCommit": "a26fe4852a78f30c5e8a437b158847031cb8dc3c",
+  "pinnedTreeEntryCount": 8020,
+  "selectedTrialFiles": [
+    "AB01/Squat/1/Data/.gitkeep",
+    "AB01/Squat/1/Data/squat_1.c3d",
+    "AB01/Squat/1/Processing/process_force_data.m",
+    "AB01/Squat/1/Processing/process_trial_data.m",
+    "AB01/Squat/1/Results/.gitkeep",
+    "AB01/Squat/1/Results/Figures/.gitkeep",
+    "AB01/Squat/1/Setup/Setup_CoM_Analysis.xml",
+    "AB01/Squat/1/Setup/Setup_External_Forces.xml",
+    "AB01/Squat/1/Setup/Setup_ID.xml",
+    "AB01/Squat/1/Setup/Setup_IK.xml",
+    "AB01/Squat/1/generated/.gitkeep",
+    "AB01/Static/1/Data/.gitkeep",
+    "AB01/Static/1/Data/static.c3d",
+    "AB01/Static/1/Processing/process_force_data.m",
+    "AB01/Static/1/Processing/process_trial_data.m",
+    "AB01/Static/1/Results/.gitkeep",
+    "AB01/Static/1/Results/Figures/.gitkeep",
+    "AB01/Static/1/Setup/Setup_CoM_Analysis.xml",
+    "AB01/Static/1/Setup/Setup_External_Forces.xml",
+    "AB01/Static/1/Setup/Setup_ID.xml",
+    "AB01/Static/1/Setup/Setup_IK.xml",
+    "AB01/Static/1/Setup/Setup_Scale.xml",
+    "AB01/Static/1/Setup/Setup_Scale_GUI.xml",
+    "AB01/Static/1/generated/.gitkeep"
+  ],
+  "AB01LogCalibrationQualitySyncNameMatches": [],
+  "authorCodeExecuted": false,
+  "preservedReports": {
+    "docs/coach/phase9/blender-report.json": {
+      "sha256": "0a229e5ca6c4af31cd1a535b31d991d1e184bab519ad46e9459416d9da3801f1",
+      "report": {
+        "status": "EXPORTED_PENDING_THREEJS",
+        "dataKind": "CMU licensed optical control, NOT dedicated PARISFIT capture",
+        "sourceSHA256": "e75bcdec4d6fdeac91571020d0b75d45cd4b2532113e699f465b5b297373ac05",
+        "modelSHA256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+        "runtimeEnabled": false,
+        "professionalApproval": false,
+        "platform": "Linux-7.0.0-1018-aws-x86_64-with-glibc2.39",
+        "python": "3.12.3",
+        "steps": [
+          {
+            "step": "startup",
+            "seconds": 0.043,
+            "version": "4.0.2"
+          },
+          {
+            "step": "rocketbox-import",
+            "seconds": 0.285,
+            "armature": "Bip01",
+            "bones": 80
+          },
+          {
+            "step": "bvh-import",
+            "seconds": 1.009,
+            "bones": 31,
+            "nativeHz": 120.00048000192001
+          },
+          {
+            "step": "calibration-and-retarget",
+            "seconds": 1.852,
+            "mappedBones": 22,
+            "scale": 0.9469891623878913,
+            "frames": 145
+          },
+          {
+            "step": "glb-export",
+            "seconds": 3.025,
+            "bytes": 4961852
+          }
+        ],
+        "corrections": {
+          "IK": false,
+          "smoothing": false,
+          "manual": []
+        },
+        "numpyVersion": "1.26.4",
+        "blenderVersion": "4.0.2",
+        "duration": 2.4,
+        "samples": 145,
+        "mapping": {
+          "Pelvis": "Hips",
+          "Spine": "LowerBack",
+          "Spine1": "Spine",
+          "Spine2": "Spine1",
+          "Neck": "Neck",
+          "Head": "Head",
+          "L_Thigh": "LeftUpLeg",
+          "L_Calf": "LeftLeg",
+          "L_Foot": "LeftFoot",
+          "L_Toe0": "LeftToeBase",
+          "L_Clavicle": "LeftShoulder",
+          "L_UpperArm": "LeftArm",
+          "L_Forearm": "LeftForeArm",
+          "L_Hand": "LeftHand",
+          "R_Thigh": "RightUpLeg",
+          "R_Calf": "RightLeg",
+          "R_Foot": "RightFoot",
+          "R_Toe0": "RightToeBase",
+          "R_Clavicle": "RightShoulder",
+          "R_UpperArm": "RightArm",
+          "R_Forearm": "RightForeArm",
+          "R_Hand": "RightHand"
+        },
+        "scale": 0.9469891623878913,
+        "outputSHA256": "fac4d26f57590f99951058c2532d6a96c4195cd8d39fbb797b35b19e3fcb7e7e",
+        "groundCorrection": "none; floor/contact must be measured, not silently projected",
+        "elapsedSeconds": 3.039
+      }
+    },
+    "docs/coach/phase13/model-probe.json": {
+      "sha256": "573fe45a2e56c7854e896c0c9f187345e5ba870630a6ab6fac6153f66770dffa",
+      "report": {
+        "status": "VALIDÉ",
+        "subjectReconstruction": "NON TESTÉ",
+        "retarget": "NON TESTÉ",
+        "forcesUsedForGeometry": false,
+        "scope": "model library loading and schema check only; no scaling or IK",
+        "wheelSHA256": "6bb4983097323e60326f6f102ee9f385e470deba6cb3a666219bf27aacbefb6d",
+        "engine": "version 4.6-2026-06-22-85aaf64, build date 18:14:53 Jun 22 2026",
+        "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+        "modelSHA256": "42eca458626f42aa1e49d5925e14ec3c16fe81324293bacece643e11319ddbd9",
+        "modelName": "LaiUhlrich2022_generic",
+        "gravity": [
+          0.0,
+          -9.80665,
+          0.0
+        ],
+        "bodies": 22,
+        "coordinates": 39,
+        "constraints": 2,
+        "modelMarkers": 66,
+        "dataMarkers": 37,
+        "exactNameMatches": [],
+        "registrationGate": "REFUSÉ: no validated37-marker attachment/alias map or individualized model; do not silently match virtual joint-centre markers to skin markers",
+        "modelMarkerNames": [
+          "RACR",
+          "LACR",
+          "C7",
+          "CLAV",
+          "RASH",
+          "RPSH",
+          "LASH",
+          "LPSH",
+          "RSJC",
+          "RUA1",
+          "RUA2",
+          "RUA3",
+          "RLEL",
+          "RMEL",
+          "RFAsuperior",
+          "RFAradius",
+          "RFAulna",
+          "LSJC",
+          "LUA1",
+          "LUA2",
+          "LUA3",
+          "LLEL",
+          "LMEL",
+          "LFAsuperior",
+          "LFAradius",
+          "LFAulna",
+          "RASI",
+          "LASI",
+          "RPSI",
+          "LPSI",
+          "LHJC",
+          "RHJC",
+          "RTH1",
+          "RTH2",
+          "RTH3",
+          "RLFC",
+          "RMFC",
+          "RKJC",
+          "RTB1",
+          "RTB2",
+          "RTB3",
+          "RLMAL",
+          "RMMAL",
+          "RAJC",
+          "RCAL",
+          "RTOE",
+          "RMT5",
+          "LTH1",
+          "LTH2",
+          "LTH3",
+          "LLFC",
+          "LMFC",
+          "LKJC",
+          "LTB1",
+          "LTB2",
+          "LTB3",
+          "LLMAL",
+          "LMMAL",
+          "LAJC",
+          "LCAL",
+          "LTOE",
+          "LMT5",
+          "REJC",
+          "LEJC",
+          "R_tibial_plateau",
+          "L_tibial_plateau"
+        ]
+      }
+    }
+  }
+}
