@@ -5,3 +5,8 @@ const real={habits:[{id:'x',title:'Lire',done:true,frequency:'Chaque jour'}],wat
 const storage={getItem:()=>JSON.stringify(real),setItem:(k,v)=>{storage.value=v},removeItem:()=>{storage.value=null}};assert.deepEqual(S.load(storage).data,real);assert(S.persist(storage,real));assert.deepEqual(JSON.parse(storage.value),real);assert(S.clear(storage));assert.equal(storage.value,null);
 const denied={getItem(){throw Error('denied')},setItem(){throw Error('quota')},removeItem(){throw Error('denied')}};assert.equal(S.load(denied).issue,'storage-unavailable');assert.equal(S.persist(denied,real),false);assert.equal(S.clear(denied),false);
 console.log('PASS: independent defaults, invalid data fail-closed, no silent overwrite, valid/unknown fields preserved, denied storage, reset');
+const now=new Date(2026,10,27,12),old={...S.fresh(),energy:'low',water:4};
+assert.match(S.energyNote(old,now),/date inconnue/);assert.equal(old.energyRecordedAt,undefined);
+const recorded=S.recordEnergy(old,'medium',now);assert.equal(recorded.energyRecordedAt,now.toISOString());assert.equal(old.energy,'low');assert.equal(recorded.water,4);assert.match(S.energyNote(recorded,now),/aujourd’hui/);
+assert.match(S.energyNote(recorded,new Date(2026,10,28,12)),/à actualiser/);assert.match(S.energyNote(recorded,new Date(2026,10,26,12)),/date à vérifier/);assert.equal(S.decode(JSON.stringify(recorded)).data.energyRecordedAt,now.toISOString());assert.throws(()=>S.recordEnergy(old,'invented',now));
+console.log('PASS: dated self-report, unknown legacy date, stale day, future clock warning, no reset or invented historical timestamp');

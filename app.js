@@ -15,14 +15,14 @@ function dialog(html){$("#modal-content").innerHTML=html;$("#modal").showModal()
 $("#modal").addEventListener("close",()=>clearInterval(breath.timer));
 $("#modal").addEventListener("click",e=>{if(e.target===$("#modal"))$("#modal").close()});
 function canEdit(){if(storageIssue==='invalid-data'){toast('Exporte tes données depuis Mon espace, puis réinitialise-les avant de modifier.');return false;}return true;}
-function energy(){if(!canEdit())return;dialog('<p class="eyebrow">MON RESSENTI</p><h2>Comment est ton énergie aujourd’hui ?</h2><p>Il n’y a pas de bonne ou de mauvaise réponse.</p><div class="choices"><button data-e="low">🌿<br>Douce</button><button data-e="medium">☁<br>Modérée</button><button data-e="high">☀<br>Bonne</button></div>');$$("[data-e]").forEach(b=>b.onclick=()=>{data.energy=b.dataset.e;const stored=save();render();$("#modal").close();if(stored)toast("Ressenti enregistré.")})}
+function energy(){if(!canEdit())return;dialog('<p class="eyebrow">MON RESSENTI</p><h2>Comment est ton énergie aujourd’hui ?</h2><p>Il n’y a pas de bonne ou de mauvaise réponse.</p><div class="choices"><button data-e="low">🌿<br>Douce</button><button data-e="medium">☁<br>Modérée</button><button data-e="high">☀<br>Bonne</button></div>');$$("[data-e]").forEach(b=>b.onclick=()=>{data=PARISFIT_STATE.recordEnergy(data,b.dataset.e);const stored=save();render();$("#modal").close();if(stored)toast("Ressenti enregistré.")})}
 $$("[data-energy]").forEach(b=>b.onclick=energy);
 function render(){
  showStorageNotice();
  const labels={low:["Douce","Un peu de récupération fait du bien."],medium:["Modérée","Avance à ton rythme."],high:["Pleine","Ton ressenti, enregistré sur cet appareil."]};
  const feeling=labels[data.energy];
  $("#energy").textContent=feeling?feeling[0]:"À renseigner";
- $("#energy-note").textContent=feeling?(storageIssue?"Ressenti temporaire · non enregistré":"Ressenti enregistré sur cet appareil"):"Aucun ressenti enregistré";
+ $("#energy-note").textContent=feeling?(storageIssue?"Ressenti temporaire · non enregistré":PARISFIT_STATE.energyNote(data)):"Aucun ressenti enregistré";
  $("#score").innerHTML='—<small>/100</small>';
  $(".score-ring-progress").style.setProperty("--pct",0);
  $("#score-note").textContent="Indice non calculé · aucune mesure";
@@ -75,7 +75,7 @@ function coachInit(){
 function renderCoachStats(){
   const labels={low:["Énergie douce","Privilégie la récupération aujourd'hui."],medium:["Énergie modérée","Un rythme adapté peut te convenir."],high:["Bonne énergie","Choisis une activité qui te fait plaisir."]};
   const el=$("#coach-score"),note=$("#coach-score-note"),energy=$("#coach-energy");
-  if(data.energy){el.innerHTML="✓<small> noté</small>";note.textContent=labels[data.energy]?labels[data.energy][1]:"Ressenti déclaré par toi.";energy.textContent=labels[data.energy]?labels[data.energy][0]:"À renseigner";}
+  if(data.energy){el.innerHTML="✓<small> noté</small>";note.textContent=storageIssue?"Ressenti temporaire · non enregistré":PARISFIT_STATE.energyNote(data);energy.textContent=labels[data.energy]?labels[data.energy][0]:"À renseigner";}
   else{el.innerHTML="—<small>/100</small>";note.textContent="Complète ton ressenti pour démarrer";energy.textContent="À renseigner";}
 }
 function coachFigure(id){
@@ -138,7 +138,7 @@ function coachQuick(q){
   coachChatAdd(map[q],true);coachChatReply(map[q]);
 }
 coachInit();
-if("serviceWorker"in navigator&&location.protocol.startsWith("http"))addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js?v=20261127-29",{updateViaCache:"none"}).catch(()=>{}));
+if("serviceWorker"in navigator&&location.protocol.startsWith("http"))addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js?v=20261127-30",{updateViaCache:"none"}).catch(()=>{}));
 // Reuse existing journeys; no duplicate pages or persisted illustrative measurements.
 $("#water-quick").onclick=()=>$("#water-add").click();
 $("#workout").onclick=()=>view("coach");
