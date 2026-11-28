@@ -1,0 +1,62 @@
+{
+  "clips": [
+    {
+      "id": "squat",
+      "bonesMoved": true,
+      "pause": true,
+      "reset": true
+    },
+    {
+      "id": "pompes",
+      "bonesMoved": true,
+      "pause": true,
+      "reset": true
+    },
+    {
+      "id": "gainage",
+      "bonesMoved": true,
+      "pause": true,
+      "reset": true
+    },
+    {
+      "id": "fentes",
+      "bonesMoved": true,
+      "pause": true,
+      "reset": true
+    },
+    {
+      "id": "jumpingjacks",
+      "bonesMoved": true,
+      "pause": true,
+      "reset": true
+    },
+    {
+      "id": "mountainclimber",
+      "bonesMoved": true,
+      "pause": true,
+      "reset": true
+    },
+    {
+      "id": "etirementdos",
+      "bonesMoved": true,
+      "pause": true,
+      "reset": true
+    },
+    {
+      "id": "mobiliteepaules",
+      "bonesMoved": true,
+      "pause": true,
+      "reset": true
+    }
+  ],
+  "widths": [
+    320,
+    375,
+    390,
+    430
+  ],
+  "errors": [],
+  "auth": true,
+  "feedback": "persist/reload/export/erase PASS",
+  "status": "PASS"
+}
