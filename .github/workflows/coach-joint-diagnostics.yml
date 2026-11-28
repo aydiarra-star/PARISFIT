@@ -12,7 +12,7 @@ on:
       - '.github/workflows/coach-joint-diagnostics.yml'
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   diagnose:
@@ -21,6 +21,9 @@ jobs:
     steps:
       - name: Checkout isolated preview branch
         uses: actions/checkout@v4
+        with:
+          ref: arena/5aa3aaf8-parisfit
+          persist-credentials: true
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
@@ -32,7 +35,14 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Diagnose original coach clips
         run: node tools/motion-review/joint-diagnostics.cjs
-      - name: Publish diagnostic report
+      - name: Commit diagnostic report to isolated branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/development/motion-review/joint-diagnostics.json
+          git commit -m "Add coach joint diagnostic results" || echo "No report changes"
+          git push origin HEAD:arena/5aa3aaf8-parisfit
+      - name: Archive diagnostic report
         uses: actions/upload-artifact@v4
         with:
           name: parisfit-coach-joint-diagnostics
