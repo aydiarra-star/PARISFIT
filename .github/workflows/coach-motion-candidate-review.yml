@@ -1,0 +1,53 @@
+name: Coach motion candidate review
+
+on:
+  push:
+    branches:
+      - arena/5aa3aaf8-parisfit
+    paths:
+      - 'tools/motion-review/candidate.cjs'
+      - 'tools/motion-review/compare.cjs'
+      - 'tools/coach-lab.html'
+      - 'assets/coach/coach.glb'
+      - '.github/workflows/coach-motion-candidate-review.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: parisfit-motion-candidate-review
+  cancel-in-progress: false
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout isolated owner review branch
+        uses: actions/checkout@v4
+        with:
+          ref: arena/5aa3aaf8-parisfit
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Build isolated timing candidate
+        run: node tools/motion-review/candidate.cjs
+      - name: Capture original and candidate views
+        run: node tools/motion-review/compare.cjs
+      - name: Archive comparison frames
+        uses: actions/upload-artifact@v4
+        with:
+          name: parisfit-motion-candidate-comparison
+          path: |
+            docs/development/motion-review/before-*.jpg
+            docs/development/motion-review/candidate-*.jpg
+            .cache/motion-review/candidate.json
+          if-no-files-found: error
+          retention-days: 14
