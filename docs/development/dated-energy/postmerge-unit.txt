@@ -1,0 +1,59 @@
+
+> parisfit@0.1.0 test
+> node --check app.js && node --check demo-data.js && node --check service-worker.js && node --input-type=module --check < coach-3d.js && node --input-type=module --check < coach-content.js && node tests/coach-asset.cjs && node tests/coach-evidence.cjs && node tests/coach-transition-evidence.cjs && node tests/coach-transition-gate.cjs && node tests/coach-contact-evidence.cjs && node tests/coach-mocap-evidence.cjs && node tests/coach-cmu-evidence.cjs && node tests/coach-production-pipeline.cjs && node tests/coach-capture-readiness.cjs && node tests/coach-blender-evidence.cjs && node tests/coach-biomechanics-evidence.cjs && node tests/coach-anatomy-evidence.cjs && node tests/coach-source-qualification.cjs && node tests/coach-michaud-evidence.cjs && node tests/coach-model-qualification.cjs && node tests/coach-metadata-plan.cjs && node tests/coach-documentary-review.cjs && node tests/coach-passive-qualification.cjs && node tests/coach-independent-review.cjs && node tests/coach-animation-lock.cjs && node tests/phase24-preservation.cjs && node tests/app-state.cjs
+
+{
+  "bytes": 5789744,
+  "sha256": "1fc67dc3453d6c0eae589ef3203923f52b4db303c0c9e73714e174cba5d398bb",
+  "joints": 80,
+  "textures": 4,
+  "clips": [
+    "squat",
+    "pompes",
+    "gainage",
+    "fentes",
+    "jumpingjacks",
+    "mountainclimber",
+    "etirementdos",
+    "mobiliteepaules"
+  ]
+}
+PASS: 64 evidence videos, checksums and current-model provenance
+PASS: candidate provenance, 16 video hashes, 64 review links; motion acceptance remains HOLD
+PASS: fail-closed entry, supports, asset hashes, orientation, interruption and recovery; no runtime route approved
+PASS: phase4 provenance, 16 videos, separate HOLD/NOT_AVAILABLE states; corrected windows are not full-motion approval
+PASS: licensed-source hash, raw/filtered pose structure, 18 videos, two diagnostic GLBs, runtime isolation
+PASS: phase6 original-source/GLB/video hashes, full-cycle samples and fail-closed decision; not naturalness approval
+PASS phase7: hashes, 301-pose control roundtrip, 8 complete videos, blocked admission; no premium claim
+PASS phase8 readiness: no fabricated capture/GLB, unsigned intake blocked, runtime preserved; not motion validation
+PASS phase9: immutable licensed control, actual CI evidence, export transport verified; motion remains BLOCKED
+PASS phase10 evidence hashes, full-cycle transport, rejected motion and unchanged runtime; NOT biomechanical approval
+PASS phase11 provenance, 111 bones, three rejected methods, 21 decoded videos; no human/professional approval
+PASS phase12 hashes, separate branches, original-data limits, public marker benchmark and rejected admission
+PASS phase13 evidence hashes, limited scope, rejected anatomy, model probe, video playback and unchanged runtime
+PASS phase14 provenance, 37/66 matrix, original parameters, fail-closed IK and preserved runtime
+PASS phase15 hashes, exact six values, technical scope, unsent requests, blocked admission and unchanged runtime
+PASS phase16 provenance, document hashes, exact factors, non-execution and preserved Rocketbox
+PASS phase17: pinned sources, C3D discrepancy preserved, 57/49 markers, uncertain anatomy, closed gates and 552 protected files unchanged
+PASS phase18: preserved 44/13 statuses, 57 questions, unanswered expert form, raw-header erratum, historical diffs and protected baseline
+PASS: 8 clips unchanged, all unreviewed; fail-closed registry, synthetic hash invalidation, geometry-only public artifact
+{
+  "reference": "fc51383e1a28f649a700057bb4d19bcb420c8eaf",
+  "unchanged": 890,
+  "authorizedChanges": [
+    ".github/workflows/deploy-pages.yml",
+    ".github/workflows/validate.yml",
+    ".gitignore",
+    "app.js",
+    "coach-3d.js",
+    "index.html",
+    "package.json",
+    "service-worker.js",
+    "styles.css",
+    "tests/coach-independent-review.cjs",
+    "tests/coach-passive-qualification.cjs"
+  ],
+  "priorEvidenceUnchanged": true
+}
+PASS: independent defaults, invalid data fail-closed, no silent overwrite, valid/unknown fields preserved, denied storage, reset
+PASS: dated self-report, unknown legacy date, stale day, future clock warning, no reset or invented historical timestamp

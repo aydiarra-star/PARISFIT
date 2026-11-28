@@ -16,6 +16,19 @@
  function load(storage){try{return decode(storage.getItem(KEY));}catch{return {data:fresh(),issue:'storage-unavailable'};}}
  function persist(storage,data){try{storage.setItem(KEY,JSON.stringify(data));return true;}catch{return false;}}
  function clear(storage){try{storage.removeItem(KEY);return true;}catch{return false;}}
- const api={KEY,fresh,decode,load,persist,clear};
+ function recordEnergy(data,value,now=new Date()){
+  if(!['low','medium','high'].includes(value)||!Number.isFinite(now.getTime()))throw new TypeError('Invalid energy record');
+  return {...data,energy:value,energyRecordedAt:now.toISOString()};
+ }
+ function energyNote(data,now=new Date()){
+  if(!data.energy)return 'Aucun ressenti enregistré';
+  const raw=data.energyRecordedAt;
+  if(typeof raw!=='string'||!Number.isFinite(Date.parse(raw)))return 'Ressenti enregistré · date inconnue';
+  const when=new Date(raw);
+  if(when.getTime()>now.getTime()+300000)return 'Ressenti enregistré · date à vérifier';
+  const sameDay=when.getFullYear()===now.getFullYear()&&when.getMonth()===now.getMonth()&&when.getDate()===now.getDate();
+  return sameDay?'Ressenti saisi aujourd’hui · autoévaluation':'Ressenti du '+when.toLocaleDateString('fr-FR')+' · à actualiser';
+ }
+ const api={KEY,fresh,decode,load,persist,clear,recordEnergy,energyNote};
  if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.PARISFIT_STATE=Object.freeze(api);
 })(globalThis);

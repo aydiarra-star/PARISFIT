@@ -1,0 +1,26 @@
+[
+  {
+    "id": 46146636298,
+    "name": "PARISFIT \u2014 passive evidence only",
+    "head_sha": "70ecf1e9f243104bad9d36e1639c54361b6ecd1b",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/aydiarra-star/PARISFIT/actions/runs/46146636298"
+  },
+  {
+    "id": 46146636295,
+    "name": "PARISFIT \u2014 validation du socle",
+    "head_sha": "70ecf1e9f243104bad9d36e1639c54361b6ecd1b",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/aydiarra-star/PARISFIT/actions/runs/46146636295"
+  },
+  {
+    "id": 46146636331,
+    "name": "PARISFIT \u2014 passive review contracts",
+    "head_sha": "70ecf1e9f243104bad9d36e1639c54361b6ecd1b",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/aydiarra-star/PARISFIT/actions/runs/46146636331"
+  }
+]

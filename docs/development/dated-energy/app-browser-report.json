@@ -1,0 +1,26 @@
+{
+  "checks": [
+    "fresh state: no fabricated score/energy/streak or persisted demo",
+    "320px: five views no horizontal overflow",
+    "375px: five views no horizontal overflow",
+    "390px: five views no horizontal overflow",
+    "430px: five views no horizontal overflow",
+    "720px: five views no horizontal overflow",
+    "768px: five views no horizontal overflow",
+    "1024px: five views no horizontal overflow",
+    "1440px: five views no horizontal overflow",
+    "profile, hydration, energy, checked habit and escaped journal persist",
+    "explicit export and erase: no habits resurrected after reload",
+    "keyboard exercise selection, static human and truthful locked feedback",
+    "stored title/frequency/id/name markup inert",
+    "malformed existing records preserved; writes blocked, not replaced by empty defaults",
+    "denied storage: usable temporary session, explicit warning, no crash"
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "limitations": [
+    "Chromium viewport emulation, not physical iOS/Android",
+    "No clinical validation or real encrypted-backup restoration"
+  ],
+  "status": "PASS"
+}

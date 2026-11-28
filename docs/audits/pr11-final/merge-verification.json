@@ -1,0 +1,30 @@
+{
+  "pr": {
+    "headRefOid": "70ecf1e9f243104bad9d36e1639c54361b6ecd1b",
+    "isDraft": false,
+    "mergeCommit": {
+      "oid": "644508d1568bccfb737e1fd0ccd0a821b2caf1c9"
+    },
+    "mergedAt": "2026-11-28T12:52:15Z",
+    "mergedBy": {
+      "id": "U_kgDOEuVa-w",
+      "is_bot": false,
+      "login": "aydiarra-star",
+      "name": ""
+    },
+    "number": 11,
+    "state": "MERGED",
+    "url": "https://github.com/aydiarra-star/PARISFIT/pull/11"
+  },
+  "verifiedOriginMain": "644508d1568bccfb737e1fd0ccd0a821b2caf1c9",
+  "parents": [
+    "83f89f8727c1de1c65dbe1278676f1daafd173fc",
+    "70ecf1e9f243104bad9d36e1639c54361b6ecd1b"
+  ],
+  "candidate": "70ecf1e9f243104bad9d36e1639c54361b6ecd1b",
+  "candidateTree": "a742e53647d4c13335bc055a83f79ec6262c572a",
+  "mainTree": "a742e53647d4c13335bc055a83f79ec6262c572a",
+  "candidateVsMainDiff": "",
+  "allCandidateFilesInMain": true,
+  "branchDeleted": false
+}
